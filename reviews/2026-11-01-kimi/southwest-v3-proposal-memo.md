@@ -17,10 +17,24 @@ behalf, this is a consistency check across two framings, **not** independent
 replication. The Q1 note upgrades the anchor to a floor (≥ $1,100). §5 and §6
 updated.
 
+**Revision 4** (same commit date): corrections from the orchestrator's PR #2
+assessment, all accepted: (a) §4 now states the interpolation mathematics
+exactly (piecewise-linear in the log-discount f over loss L — i.e., log-price
+interpolation, not dollar-space); (b) the anchor pin-down is now stated as
+conditional on the locked tail factor (§3.1); (c) coverage counts corrected to
+46/42/37 (exact losses; revision 2–3's 44/44/37 came from truncated knot
+constants); (d) claims trimmed to the sampled evidence — the cliff contrast
+confounds vintage and tare, and near-top bands are interpolation artifacts, not
+observations (§3.2, §4, §6); (e) the exact frozen protocol is archived with its
+hash verified (`southwest-elicitation-protocol.json`).
+
 ## 1. Protocol
 
 Two-pin elicitation preregistered in chat before answers were given; protocol
-SHA-256 `a4caac25064138dacb8c6a5318df8b146318d4a4195921bdd0d5a80ac69bcc70`.
+SHA-256 `a4caac25064138dacb8c6a5318df8b146318d4a4195921bdd0d5a80ac69bcc70`,
+archived at `reviews/2026-11-01-kimi/southwest-elicitation-protocol.json` with
+its canonical-serialization note (hash re-verified against the archived object
+at revision 4).
 Frozen decision rule for shape transfer: SW amber 30/115 answer compared to
 pin 1 × 0.563077 (the locked factor); deviation ≤10% supports transfer, >20%
 questions it, between is inconclusive. A forced-choice refraction ladder
@@ -77,34 +91,48 @@ sought after in the entire domestic area."
 
 ## 3. Findings
 
-### 3.1 Level — resolved to a floor: A_SW = $1,100 (conservative point)
+### 3.1 Level — a floor: A_SW ≥ $1,100; $1,100 as chosen conservative scenario
 
-Pin 1 gives A_SW ∈ [$1,100, $1,200]. Pin 4 (brown 40/130 ≤ $300) coincides with
-the locked curve's prediction at A_SW = $1,100 **to the dollar** (locked range at
-A ∈ [1100, 1200]: $300.00–$327.27). The second-pass Q1 note ("could even be
-more, but no less than its northeast counterpart") upgrades the anchor to a
-**floor: A_SW ≥ $1,100**. The schedule below keeps $1,100 as the conservative
-point estimate — NE-equal at minimum, consistent with the informant's
-beach-premium rationale. This replaces (as a proposal) the retired v1
-`model_inferred` value 1050.002, which the review already bars from use.
+Pin 1 gives A_SW ∈ [$1,100, $1,200], and the second-pass Q1 note ("could even
+be more, but no less than its northeast counterpart") upgrades this to a floor:
+A_SW ≥ $1,100.
 
-### 3.2 Shape — locked transfer SUPPORTED through 30 years; a single cliff is the only departure
+The sharper claim that the anchor is *pinned at exactly $1,100* is
+**conditional**: pin 4 (brown 40/130 ≤ $300) coincides with $1,100 to the
+dollar only under the assumption that the locked tail factor (0.272727 at
+L = 8.154) holds for SW. If the SW tail also departs from the locked curve, the
+pin-down does not follow. Accordingly this memo treats **$1,100 as a chosen
+conservative scenario** — the floor of the elicited range, NE-equal at minimum,
+consistent with the informant's beach-premium rationale — not an identified
+point. This replaces (as a proposal) the retired v1 `model_inferred` value
+1050.002, which the review already bars from use.
+
+### 3.2 Shape — locked transfer SUPPORTED at the 30-year knot; one cliff contrast, attribution unresolved
 
 | Stretch | Informant evidence | Locked | Verdict |
 |---|---|---|---|
-| pale/straw 20/110 (L=0) | $1,100 | $1,100 | anchor, pinned |
-| amber 30/115 (L=3.154) | $605–$660 (pin 5) | $619 | **on the curve** — transfer supported |
+| pale/straw 20/110 (L=0) | $1,100 (floor) | $1,100 | anchor scenario (§3.1 — conditional) |
+| amber 30/115 (L=3.154) | $605–$660 (pin 5) | $619 | **on the curve** — transfer supported at this knot |
 | golden 30/115 (L=3.154) | $605–$660 (pin 6) | $619 | **on the curve**; shade-blind at fixed loss |
 | amber 35/120 (L=5.000) | ≤ $320 (pin 3) | $450 | **cliff** — 29% below curve |
 | copper 35/120 (L=5.231) | ≤ $320 (pin 7) | $437 | **cliff is shade-blind** at 35/120 |
-| brown 40/130 (L=8.154) | ≤ $300 (pin 4) | $300 | rejoins the curve at the corner |
+| brown 40/130 (L=8.154) | ≤ $300 (pin 4) | $300 | consistent with the locked corner |
 
 The revision-1 "flat mid-range" finding is reversed: it was a sequence-anchoring
 artifact (pin 2 given immediately after the top-profile figure) and is discarded
-per the frozen rule. The confirmed picture: SW rides the standard domestic curve
-from the anchor down to 30 years, falls off a **shade-blind cliff between 30 and
-35 years**, and lands back on the locked curve at the deep corner — matching the
-informant's demand-concentration rationale with no leftover anomalies.
+per the frozen rule.
+
+**What the sampled knots establish:** at the anchor, at the 30-year knot (two
+shades), and at the deep corner, SW evidence is consistent with the locked
+curve; between the 30/115 knot and the 35/120 knot there is a sharp,
+shade-blind drop ("cliff"). **What they do not establish:** that the cliff is
+specifically a *vintage* effect — the 30/115 → 35/120 contrast changes vintage
+and tare together, and no pin isolates either. The informant's Q3 note
+("redeemable only by its weight") is an interpretation, not a measurement.
+Equally, "the cliff is the *only* departure" is not established: no near-top
+profile other than the anchor was sampled, so departures between L=0 and
+L=3.154 would be invisible to this design (see §4 on the interpolation
+artifact).
 
 Loss-axis sufficiency check (preregistered): golden and amber 30/115 sit at
 identical loss in the locked curve (L = 3.154, factor 0.563 both); the informant
@@ -113,21 +141,39 @@ the cliff shade-blind (copper joins amber ≤ $320). Two slices, both consistent
 with the loss axis transferring to SW even where discount magnitudes do not.
 
 Backward-interpolation sanity check: golden 25/115 falls at $775–$816 under the
-confirmed knots; locked curve says $777 — inside the band.
+confirmed knots; locked curve says $777 — inside the band. (Interpolation
+output, not an observation.)
 
 Regional specificity: the four pre-disclosure regional judgments at amber 35/120
 (NE 450, SE 425, Central 400, NW 400; ratios 0.38–0.41) sit essentially on the
-locked curve (0.4091), so the cliff is SW-specific, not curve-generic. SW
-mid-tail would be the cheapest in the domestic set in absolute dollars despite
-the joint-highest anchor.
+locked curve (0.4091), so the cliff contrast is SW-specific at those knots, not
+curve-generic. SW mid-tail would be the cheapest in the domestic set in
+absolute dollars despite the joint-highest anchor floor.
 
-## 4. Expanded SW grid (A_SW = $1,100; confirmed knots)
+## 4. Expanded SW grid (A_SW = $1,100 scenario; confirmed knots)
 
-Interpolation is piecewise-linear in loss L between: (L=0, $1,100);
-(L=3.154, $605–$660 band); (L=5.000, ≤$320 bound); (L=8.154, ≤$300 bound).
-Coverage of the 125-profile domain: 44 profiles two-sided (L ≤ 3.154), 44 in the
-cliff zone (ceiling-only), 37 deep-tail (ceiling-only). Locked-shape prices shown
-for contrast.
+**Interpolation mathematics (exact):** piecewise-linear in the log-discount
+f = −ln(price / A_SW) over loss L — i.e., **log-price interpolation**, not
+dollar-space interpolation. Knots in (L, f): (0, 0);
+(3.1539423077, [−ln 0.60, −ln 0.55] = [0.5108, 0.5978]);
+(5.0001999962, ≥ ln(1100/320) = 1.2349, one-sided);
+(8.1541523039, ≥ ln(1100/300) = 1.2993, one-sided).
+Prices below are A_SW × exp(−f(L)) at A_SW = $1,100. Dollar-space linear
+interpolation would give different (higher) interior values; revision 2–3 text
+was ambiguous on this and is corrected here.
+
+**Coverage of the 125-profile domain (exact losses):** 46 profiles two-sided
+(L ≤ 3.1539423), 42 in the cliff zone (3.1539423 < L ≤ 5.0002000,
+ceiling-only), 37 deep-tail (L > 5.0002000, ceiling-only). Revision 2–3 stated
+44/44/37, an artifact of truncated knot constants; 46/42/37 is correct.
+
+**Interpolation-artifact notice:** the seg-1 bands are derived from the anchor
+and the 30-year bracket only; no near-top profile was sampled. Where the locked
+curve is convex in f near the top, the chord lies above it — e.g., locked
+golden 20/110 is $1,089, marginally *above* this grid's band top of $1,086.
+These near-top bands are artifacts of the bracket width, not elicited evidence,
+and must not be read as claims that SW near-top prices differ from the locked
+curve.
 
 | Profile | Locked | Confirmed SW band |
 |---|---|---|
@@ -180,13 +226,19 @@ answering directly, or transaction evidence).
 - One independent unit of observation throughout (one informant; the second
   pass was given on the partner's behalf and counts as a consistency framing,
   not replication). Rough-sense basis throughout.
-- The anchor is a floor (≥ $1,100); $1,100 is the conservative point, not a
-  measured central tendency.
+- The anchor is a floor (≥ $1,100). The "$1,100 exactly" reading is conditional
+  on the locked tail factor holding at brown 40/130; otherwise $1,100 is a
+  chosen conservative scenario, not an identified point (§3.1).
 - Three of five active pins are one-sided bounds; the cliff zone and deep tail
   are ceiling-only.
-- The cliff's exact position and steepness between L=3.154 and L=5.000 is
-  interpolated, not observed; no pin exists inside the cliff.
-- Interpolation in loss space assumes the locked loss *ordering* transfers to
-  SW; two shade-at-fixed-loss slices support this, but it is not exhaustively
-  tested.
+- The cliff contrast confounds vintage and tare (30/115 → 35/120 changes both);
+  attribution to either is unresolved. Its exact position and steepness between
+  L=3.154 and L=5.000 is interpolated, not observed; no pin exists inside the
+  cliff.
+- No near-top profile other than the anchor was sampled; seg-1 bands are
+  interpolation artifacts (§4 artifact notice), and departures between L=0 and
+  L=3.154 would be invisible to this design.
+- Interpolation is in the log-discount f over loss L (log-price), and assumes
+  the locked loss *ordering* transfers to SW; two shade-at-fixed-loss slices
+  support this, but it is not exhaustively tested.
 - No transaction data; nothing here is independently validated market pricing.
