@@ -1,0 +1,279 @@
+{
+  "A_weights_match_v28": true,
+  "A_loss_weights_nonneg": true,
+  "A_loss_weights": [
+    1.3077246153852071,
+    0.23073846153826455,
+    0.0,
+    0.07690615384578114,
+    0.5385030769234712,
+    1.3077646115898918,
+    1.307714615385207,
+    1.2308284615394256,
+    0.5384930769234713
+  ],
+  "B_knot_profile_losses": {
+    "knot1 golden20/110": {
+      "loss": 0.07690615384578114,
+      "knot_x": 0.07690615384578114,
+      "exact_float_equal": true
+    },
+    "knot2 pale20/115": {
+      "loss": 0.5384930769234713,
+      "knot_x": 0.5384930769234713,
+      "exact_float_equal": true
+    },
+    "knot3 pale25/110": {
+      "loss": 1.2308284615394256,
+      "knot_x": 1.2308284615394256,
+      "exact_float_equal": true
+    },
+    "knot4 golden25/115": {
+      "loss": 1.846227692308678,
+      "knot_x": 1.846227692308678,
+      "exact_float_equal": true
+    },
+    "knot5 amber35/120": {
+      "loss": 5.0001999962072485,
+      "knot_x": 5.0001999962072485,
+      "exact_float_equal": true
+    },
+    "knot6 brown40/130": {
+      "loss": 8.154152303901133,
+      "knot_x": 8.154152303901133,
+      "exact_float_equal": true
+    }
+  },
+  "C_knot5_y_equals_ln1100_450": true,
+  "C_knot6_y_equals_nextafter_ln1100_300": true,
+  "C_ne_brown40_130_price_locked": 299.99999999999994,
+  "C_ne_brown40_130_price_without_ulp": 300.0,
+  "C_overshoot_without_ulp": false,
+  "C_ne_amber35_120_price_locked": 449.99999999999994,
+  "D_max_grid_loss_equals_final_knot": true,
+  "D_min_grid_loss": 0.0,
+  "D_distinct_loss_values": 95,
+  "D_attribute_profiles_total": 125,
+  "D_profiles_within_prior_span": 23,
+  "D_profiles_beyond_prior_span": 102,
+  "D_in_span_prices_10_regions": 230,
+  "D_non_NE_transfer_profiles": 918,
+  "D_on_grid_extrapolations": 0,
+  "E_amber_equals_golden_all_vintages_tares": true,
+  "E_pale_equals_golden_at_130lb": true,
+  "E_distinct_prices_per_region": 95,
+  "E_golden_to_pale_increment_usd_at_top_ne": 10.500114731534268,
+  "F_anchors": {
+    "northeast": {
+      "recorded": 1100,
+      "recomputed": 1100.0
+    },
+    "southeast": {
+      "recorded": 1075,
+      "recomputed": 1075.0
+    },
+    "central": {
+      "recorded": 1050,
+      "recomputed": 1050.0
+    },
+    "northwest": {
+      "recorded": 1000,
+      "recomputed": 1000.0
+    }
+  },
+  "F_low_end_constraints": {
+    "ne_amber35_120_target_450": 449.99999999999994,
+    "ne_brown40_130_target_300_ceiling": 299.99999999999994
+  },
+  "F_regional_transfer": [
+    {
+      "id": "northwest-amber-35-120",
+      "recorded": 409.09090909090907,
+      "recomputed": 409.09090909090907,
+      "match": true
+    },
+    {
+      "id": "southeast-amber-35-120",
+      "recorded": 439.77272727272725,
+      "recomputed": 439.77272727272725,
+      "match": true
+    },
+    {
+      "id": "central-amber-35-120",
+      "recorded": 429.5454545454545,
+      "recomputed": 429.5454545454545,
+      "match": true
+    },
+    {
+      "id": "northwest-brown-40-130",
+      "recorded": 272.72727272727263,
+      "recomputed": 272.72727272727263,
+      "match": true
+    },
+    {
+      "id": "southeast-brown-40-130",
+      "recorded": 293.1818181818181,
+      "recomputed": 293.1818181818181,
+      "match": true
+    },
+    {
+      "id": "central-brown-40-130",
+      "recorded": 286.36363636363626,
+      "recomputed": 286.36363636363626,
+      "match": true
+    }
+  ],
+  "F_middle_range": [
+    {
+      "id": "middle-range-v1-1",
+      "recorded": 619.3855187325597,
+      "recomputed": 619.3855187325597,
+      "match": true
+    },
+    {
+      "id": "middle-range-v1-2",
+      "recorded": 618.0676698790571,
+      "recomputed": 618.0676698790571,
+      "match": true
+    },
+    {
+      "id": "middle-range-v1-3",
+      "recorded": 520.9593135868945,
+      "recomputed": 520.9593135868944,
+      "match": true
+    },
+    {
+      "id": "middle-range-v1-4",
+      "recorded": 563.077744302327,
+      "recomputed": 563.077744302327,
+      "match": true
+    },
+    {
+      "id": "middle-range-v1-5",
+      "recorded": 542.1910597169672,
+      "recomputed": 542.1910597169672,
+      "match": true
+    },
+    {
+      "id": "middle-range-v1-6",
+      "recorded": 492.8975520098941,
+      "recomputed": 492.8975520098941,
+      "match": true
+    }
+  ],
+  "G_transfer_amber_MAE": 17.803030303030273,
+  "G_transfer_amber_MAPE_pct": 4.378342245989297,
+  "G_transfer_all_predictions_high": true,
+  "G_transfer_expert_implied_regional_ratios_vs_model": {
+    "SE/NE": {
+      "expert": 0.9444444444444444,
+      "model": 0.9772727272727273
+    },
+    "Central/NE": {
+      "expert": 0.8888888888888888,
+      "model": 0.9545454545454546
+    },
+    "NW/NE": {
+      "expert": 0.8888888888888888,
+      "model": 0.9090909090909091
+    }
+  },
+  "G_middle_MAE_5pts": 105.0519698232954,
+  "G_middle_signed": -97.2977623302715,
+  "G_middle_MAPE_pct": 14.684180642308746,
+  "G_middle_n_underestimates": 4,
+  "G2_fit_MAE_stored": 5.9654632405103145,
+  "G2_fit_MAE_recomputed": 5.9654632405103145,
+  "G2_fit_max_abs_stored": 16.065062230468925,
+  "G2_single_slope_MAE_stored": 23.05921538850355,
+  "G2_lopo_MAE_stored": 39.729254601510455,
+  "G2_lopo_MAE_recomputed": 39.729254601510455,
+  "G2_combined_profile_holdout_errors": [
+    65.28,
+    70.84,
+    87.52,
+    76.4
+  ],
+  "G2_self_referential_targets": [
+    {
+      "id": "ne-golden-25-115",
+      "calibration_target": 790,
+      "rounded_model_frozen_estimate": 790,
+      "target_is_rounded_model_output": true,
+      "fit_residual": -13.328431546484126
+    },
+    {
+      "id": "se-golden-25-115",
+      "calibration_target": 765,
+      "rounded_model_frozen_estimate": 765,
+      "target_is_rounded_model_output": true,
+      "fit_residual": -5.980058102245835
+    },
+    {
+      "id": "nw-golden-25-115",
+      "calibration_target": 690,
+      "rounded_model_frozen_estimate": 690,
+      "target_is_rounded_model_output": true,
+      "fit_residual": 16.065062230468925
+    },
+    {
+      "id": "central-golden-25-115",
+      "calibration_target": 740,
+      "rounded_model_frozen_estimate": 740,
+      "target_is_rounded_model_output": true,
+      "fit_residual": 1.3683153419923428
+    }
+  ],
+  "G2_MAE_self_referential_subset": 9.185466805297807,
+  "G2_MAE_remaining_subset": 3.8187941973186526,
+  "H_NE_over_NW_ratio_set": [
+    1.0999999999999999,
+    1.1
+  ],
+  "I_telescoping_residual": 0.0,
+  "I_closed_loop_ratio": 0.9999999999999999,
+  "J_tail_sensitivity_endpoint_271_vs_300": {
+    "ne-brown-40-130": {
+      "loss": 8.154152,
+      "locked": 300.0,
+      "alt_tail_271": 271.0,
+      "pct_change": -9.67
+    },
+    "ne-copper-40-130": {
+      "loss": 6.846428,
+      "locked": 354.92,
+      "alt_tail_271": 334.42,
+      "pct_change": -5.78
+    },
+    "ne-brown-35-125": {
+      "loss": 7.077156,
+      "locked": 344.55,
+      "alt_tail_271": 322.24,
+      "pct_change": -6.48
+    },
+    "ne-amber-40-125": {
+      "loss": 6.077196,
+      "locked": 391.82,
+      "alt_tail_271": 378.45,
+      "pct_change": -3.41
+    },
+    "ne-brown-40-120": {
+      "loss": 7.077166,
+      "locked": 344.55,
+      "alt_tail_271": 322.24,
+      "pct_change": -6.48
+    }
+  },
+  "K_deep_tail_segment_span": {
+    "from_loss": 5.0001999962072485,
+    "to_loss": 8.154152303901133,
+    "profiles_in_segment": 37
+  },
+  "K_mid_segment_span": {
+    "from_loss": 1.846227692308678,
+    "to_loss": 5.0001999962072485,
+    "profiles_in_segment": 63
+  },
+  "L_zip_sha256": "05b316bf9ae1aa8c3c5140b0ba906d62deb4eae4d4caa18530cd8a041ce84727",
+  "L_config_v2_sha256": "5a12e1614975de7b0d390b42b8a00db0b4eed5658ae8322f0486902ffd968fb1"
+}
