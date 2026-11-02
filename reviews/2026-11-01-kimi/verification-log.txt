@@ -48,3 +48,28 @@ OK
 
 $ PYTHONDONTWRITEBYTECODE=1 OPENBLAS_NUM_THREADS=1 python reviews/2026-11-01-kimi/correction_checks_round2.py
 wrote receipts-round2.json (see that file)
+
+# ================= FINAL (round 5) — closing integrity verification ================
+# Same environment (.venv-review, Python 3.12.16, numpy 2.4.4 / scipy 1.17.1 / osqp 1.1.3)
+
+$ PYTHONDONTWRITEBYTECODE=1 python verify_packet.py
+PASS: 715 packet payload hashes
+
+$ PYTHONDONTWRITEBYTECODE=1 OPENBLAS_NUM_THREADS=1 python pricing/verify_pricing_lock.py
+PASS: 33 pricing artifact hashes; 500 domestic profile outputs unchanged; 4 anchors verified; unsupported regions rejected.
+
+$ PYTHONDONTWRITEBYTECODE=1 OPENBLAS_NUM_THREADS=1 python verify_model_lock.py
+PASS: 46 artifact hashes; V28 default; 691 unique evidence pairs and label counts verified.
+
+$ PYTHONDONTWRITEBYTECODE=1 OPENBLAS_NUM_THREADS=1 python pricing/test_consistent_pricing_v2.py -v
+Ran 14 tests in 0.042s
+
+OK
+
+$ PYTHONDONTWRITEBYTECODE=1 OPENBLAS_NUM_THREADS=1 python -m unittest test_reporting test_reporting_v2 -q
+Ran 9 tests in 0.152s
+
+OK
+
+$ shasum -a 256 ../pricing-peer-review-v2.zip
+05b316bf9ae1aa8c3c5140b0ba906d62deb4eae4d4caa18530cd8a041ce84727  ../pricing-peer-review-v2.zip
