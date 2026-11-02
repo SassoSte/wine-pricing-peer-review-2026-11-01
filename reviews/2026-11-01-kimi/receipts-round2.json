@@ -1,0 +1,129 @@
+{
+  "R2_1_direction": {
+    "model_NE_minus_region_usd": {
+      "southeast": 10.23,
+      "central": 20.45,
+      "northwest": 40.91
+    },
+    "expert_NE_minus_region_usd": {
+      "southeast": 25,
+      "central": 50,
+      "northwest": 50
+    },
+    "expert_ratios": {
+      "southeast": 0.9444444444444444,
+      "central": 0.8888888888888888,
+      "northwest": 0.8888888888888888
+    },
+    "model_ratios": {
+      "southeast": 0.9772727272727273,
+      "central": 0.9545454545454546,
+      "northwest": 0.9090909090909091
+    },
+    "expert_ratio_distance_from_1_exceeds_model": {
+      "southeast": true,
+      "central": true,
+      "northwest": true
+    },
+    "interpretation": "Expert-implied ratios are FARTHER from 1 than model ratios: larger relative NE premiums at this profile, not compressed spreads. Assessor correction verified; original review wording was wrong."
+  },
+  "R2_2_tail_sensitivity_full_grid": {
+    "profiles_in_segment": 37,
+    "min_pct_change": -9.666666666666647,
+    "max_pct_change": -3.223372690985826e-05,
+    "profile_nearest_knot5": [
+      "amber",
+      40,
+      115
+    ],
+    "nearest_loss_minus_knot5": 9.999999999621423e-06,
+    "endpoint_change_pct": -9.666666666666647,
+    "assessor_claim_min_approx": -3.2e-05,
+    "assessor_claim_max_approx": -9.67,
+    "note": "271 is the rounded slower-tail historical scenario (270.77), NOT an elicited lower bound; this is a labeled sensitivity scenario, not an admissible interval."
+  },
+  "R2_5_domestic_scope_tiers": {
+    "approved_outputs": 500,
+    "in_span_profiles_per_region": 23,
+    "domestic_in_span_incl_anchors": 92,
+    "domestic_in_span_excl_anchors": 88,
+    "domestic_beyond_span": 408,
+    "domestic_non_NE_transfers": 306,
+    "ten_region_grid_in_span": 230,
+    "ten_region_grid_non_NE_transfers": 918,
+    "categories_overlap_note": "anchor-exact (4) is a subset of in-span (92); non-NE transfers (306) is a subset of beyond-span (408); not a disjoint partition.",
+    "anchor_profile_in_span": true
+  },
+  "R2_E1_original_probe_losses": {
+    "amber30/120": {
+      "loss": 3.6924353846173563,
+      "on_mid_segment_1.846_to_5.000": true
+    },
+    "copper35/125": {
+      "loss": 5.769431534668984,
+      "on_mid_segment_1.846_to_5.000": false
+    },
+    "golden35/125": {
+      "loss": 5.53869307313072,
+      "on_mid_segment_1.846_to_5.000": false
+    }
+  },
+  "R2_E1_replacement_candidates_on_segment": {
+    "brown25/110": {
+      "loss": 2.8461976923086785,
+      "on_mid_segment": true
+    },
+    "copper30/115": {
+      "loss": 3.3846807692321494,
+      "on_mid_segment": true
+    },
+    "amber30/120": {
+      "loss": 3.6924353846173563,
+      "on_mid_segment": true
+    },
+    "pale35/115": {
+      "loss": 4.384800765437996,
+      "on_mid_segment": true
+    },
+    "amber35/115": {
+      "loss": 4.461706919283777,
+      "on_mid_segment": true
+    }
+  },
+  "R2_6_tolerances": {
+    "middle_range_max_abs_diff_recompute_vs_frozen": 1.1368683772161603e-13,
+    "transfer_max_abs_diff_recompute_vs_frozen": 0.0,
+    "anchor_recompute_abs_diff": 0.0,
+    "knot_x_float_equality": "exact == on parsed doubles for all six knots",
+    "NE_over_NW_ratio_values": [
+      1.0999999999999999,
+      1.1
+    ],
+    "closed_loop_ratio_product": 0.9999999999999999,
+    "provenance": {
+      "independently_recomputed_from_config_and_recorded_judgments": [
+        "all prices/losses (own implementation)",
+        "transfer amber MAE 17.80 / MAPE 4.38% (from frozen prices + recorded estimates)",
+        "middle-range 5-point MAE 105.05 / signed -97.30 / MAPE 14.68% (from frozen prices + recorded estimates)",
+        "tail sensitivity, tier counts, ratios, telescoping, collapses"
+      ],
+      "aggregated_from_stored_residuals_not_independently_refit": [
+        "fit MAE 5.9655 / max 16.0651 (mean/max of stored residual fields)",
+        "leave-profile-out MAE 39.7293 (mean of stored error fields)",
+        "combined-profile holdout errors 65.28..87.52 (copied from stored fields)"
+      ],
+      "copied_from_validation_json": [
+        "single_slope_fit_mae 23.0592 (stored; comparator not refit)"
+      ],
+      "not_reproduced": [
+        "workbook 6294-formula recalculation claim (accepted as reported)"
+      ]
+    }
+  },
+  "R2_4_middle_range_denominator": {
+    "total_questions": 6,
+    "point_estimates": 5,
+    "range_observations": 1,
+    "stats_basis": "5 point estimates only; the 6th is a range with preserved post-disclosure correction"
+  }
+}
