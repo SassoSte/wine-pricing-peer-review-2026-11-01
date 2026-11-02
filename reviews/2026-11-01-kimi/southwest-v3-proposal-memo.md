@@ -10,6 +10,13 @@ accepted review verdict and changes no finding in `reviews/2026-11-01-kimi.md`.
 been executed. Pin 2 is discarded per the frozen rule and replaced; findings and
 the grid are updated. Revision 1 remains in git history.
 
+**Revision 3** (same commit date): a five-question forced-choice consistency
+pass ("partner refraction") ran against the confirmed knots — 5/5 agreement.
+Because the answers were given by the original informant on his partner's
+behalf, this is a consistency check across two framings, **not** independent
+replication. The Q1 note upgrades the anchor to a floor (≥ $1,100). §5 and §6
+updated.
+
 ## 1. Protocol
 
 Two-pin elicitation preregistered in chat before answers were given; protocol
@@ -42,20 +49,44 @@ independent unit of observation throughout.
 | 6 | SW golden 30 yr 115 lb | "Same as amber, slightly above" | 55–60% of anchor → $605–$660 | active |
 | 7 | SW copper 35 yr 120 lb | "Shade blind at 35/120" | ≤ $320 (same zone as pin 3) | active |
 
+### 2.1 Second pass — "partner refraction" (consistency check, not replication)
+
+Five forced-choice questions, answered by the informant on his partner's behalf
+(one independent unit of observation, two framings). Frozen scoring: agreement
+with confirmed knots strengthens internal consistency; any disagreement becomes
+a reconciliation item with no averaging. Answers: **B, C, A, A, A — 5/5
+agreement.** Notes verbatim:
+
+| Q | Lens | Confirmed knot | Note (verbatim) |
+|---|---|---|---|
+| 1 anchor | B (about the same as NE $1,100) | A_SW = $1,100 | "could even be more, but no less than its northeast counterpart" |
+| 2 amber 30/115 | C (about half) | $605–$660 | "the 30-year vintage is no picnic, but certainly must be substantially lower than the SW 20/110 blend" |
+| 3 amber 35/120 | A (at most a third) | ≤ $320 | "the 35 vintage is forgetful redeemable only by its weight" |
+| 4 golden vs amber 30/115 | A (same money) | shade-blind | "golden/amber in this vintage is negligeable, ultimately a function of preference/mood/taste (this is where re-sellers can pad or trim margins)" |
+| 5 brown 40/130 | A (under $300) | ≤ $300 | "No higher than 300$ - on a good day" |
+
+Interpretation of notes: Q1 upgrades the anchor to a **floor** (A_SW ≥ $1,100;
+$1,100 retained as the conservative point, also where pin 4 pins it). Q4 frames
+shade-blindness at 30 yr as a property of the *market* (reseller margin noise),
+not only of the informant's perception. Q5 reads as an enthusiastic ceiling,
+not a midpoint.
+
 Informant's stated rationale (verbatim): "Southwest, because it consists of the
 beach cities, commands a high premium, and the 20/110 harvest are among the most
 sought after in the entire domestic area."
 
 ## 3. Findings
 
-### 3.1 Level — resolved to a point: A_SW = $1,100
+### 3.1 Level — resolved to a floor: A_SW = $1,100 (conservative point)
 
 Pin 1 gives A_SW ∈ [$1,100, $1,200]. Pin 4 (brown 40/130 ≤ $300) coincides with
 the locked curve's prediction at A_SW = $1,100 **to the dollar** (locked range at
-A ∈ [1100, 1200]: $300.00–$327.27). Intersection pins the anchor at exactly
-**$1,100 — NE-equal**, consistent with the informant's beach-premium rationale.
-This replaces (as a proposal) the retired v1 `model_inferred` value 1050.002,
-which the review already bars from use.
+A ∈ [1100, 1200]: $300.00–$327.27). The second-pass Q1 note ("could even be
+more, but no less than its northeast counterpart") upgrades the anchor to a
+**floor: A_SW ≥ $1,100**. The schedule below keeps $1,100 as the conservative
+point estimate — NE-equal at minimum, consistent with the informant's
+beach-premium rationale. This replaces (as a proposal) the retired v1
+`model_inferred` value 1050.002, which the review already bars from use.
 
 ### 3.2 Shape — locked transfer SUPPORTED through 30 years; a single cliff is the only departure
 
@@ -134,13 +165,23 @@ All four preregistered elements ran:
    ≤$320, joining amber (slice 2).
 4. Basis word captured for all pins ("rough sense"); ceilings recorded as
    bounds.
+5. **Second-pass consistency check (revision 3)**: five-question forced-choice
+   refraction against the confirmed knots — 5/5 agreement (B, C, A, A, A), zero
+   reconciliation items. Q1 note upgrades the anchor to a floor (§3.1). Recorded
+   as one independent unit of observation across two framings, **not**
+   independent replication (answers given by the informant on his partner's
+   behalf; the partner's own cold answers, if ever offered, supersede these).
 
-Remaining before any v3 lock: independent replication (a second informant or
-transaction evidence) — the entire set is one independent unit of observation.
+Remaining before any v3 lock: independent replication (a second informant
+answering directly, or transaction evidence).
 
 ## 6. Limitations
 
-- One informant, rough-sense basis throughout; zero independent replication.
+- One independent unit of observation throughout (one informant; the second
+  pass was given on the partner's behalf and counts as a consistency framing,
+  not replication). Rough-sense basis throughout.
+- The anchor is a floor (≥ $1,100); $1,100 is the conservative point, not a
+  measured central tendency.
 - Three of five active pins are one-sided bounds; the cliff zone and deep tail
   are ceiling-only.
 - The cliff's exact position and steepness between L=3.154 and L=5.000 is
