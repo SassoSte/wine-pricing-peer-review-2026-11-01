@@ -28,13 +28,22 @@ confounds vintage and tare, and near-top bands are interpolation artifacts, not
 observations (§3.2, §4, §6); (e) the exact frozen protocol is archived with its
 hash verified (`southwest-elicitation-protocol.json`).
 
+**Revision 5 — assessor precision pass:** exact loss boundaries and log-discount constant;
+protocol-hash scope; distinction between matched-shade and equal-loss comparisons;
+active-profile count; proposed age/tare replication contrast.
+
 ## 1. Protocol
 
 Two-pin elicitation preregistered in chat before answers were given; protocol
 SHA-256 `a4caac25064138dacb8c6a5318df8b146318d4a4195921bdd0d5a80ac69bcc70`,
 archived at `reviews/2026-11-01-kimi/southwest-elicitation-protocol.json` with
 its canonical-serialization note (hash re-verified against the archived object
-at revision 4).
+at revision 4). The archived digest covers the **initial two-pin protocol**.
+For replication, archive the exact later refraction-ladder questions/options,
+bisection/scoring rules and presentation order as a separately identified instrument.
+The initial protocol's historical evidence-class wording is preserved verbatim;
+the current classification is rough-sense elicited judgment, distinct from the
+four user-reported initial-release offers.
 Frozen decision rule for shape transfer: SW amber 30/115 answer compared to
 pin 1 × 0.563077 (the locked factor); deviation ≤10% supports transfer, >20%
 questions it, between is inconclusive. A forced-choice refraction ladder
@@ -118,9 +127,10 @@ point. This replaces (as a proposal) the retired v1 `model_inferred` value
 | copper 35/120 (L=5.231) | ≤ $320 (pin 7) | $437 | **cliff is shade-blind** at 35/120 |
 | brown 40/130 (L=8.154) | ≤ $300 (pin 4) | $300 | consistent with the locked corner |
 
-The revision-1 "flat mid-range" finding is reversed: it was a sequence-anchoring
-artifact (pin 2 given immediately after the top-profile figure) and is discarded
-per the frozen rule.
+The revision-1 "flat mid-range" finding is superseded: pin 2, given immediately
+after the top-profile figure, was replaced under the frozen sequence-anchoring
+classification rule. That rule records the response change and its prespecified
+treatment; causal attribution to anchoring remains a hypothesis.
 
 **What the sampled knots establish:** at the anchor, at the 30-year knot (two
 shades), and at the deep corner, SW evidence is consistent with the locked
@@ -136,9 +146,12 @@ artifact).
 
 Loss-axis sufficiency check (preregistered): golden and amber 30/115 sit at
 identical loss in the locked curve (L = 3.154, factor 0.563 both); the informant
-independently placed them in the same band. At 35/120 the informant again made
-the cliff shade-blind (copper joins amber ≤ $320). Two slices, both consistent
-with the loss axis transferring to SW even where discount magnitudes do not.
+placed them in the same band. At 35/120 the informant again made
+the cliff shade-blind (copper joins amber ≤ $320). These are two same-age/tare shade comparisons, only the first at equal loss:
+copper35/120 has L = 5.230938457745513, whereas amber35/120 has
+L = 5.0001999962072485. The verbal shade-blind judgment is recorded as such;
+a shared upper ceiling establishes bound compatibility rather than measured
+price equality. These slices offer limited support for the proposed ordering.
 
 Backward-interpolation sanity check: golden 25/115 falls at $775–$816 under the
 confirmed knots; locked curve says $777 — inside the band. (Interpolation
@@ -155,16 +168,19 @@ absolute dollars despite the joint-highest anchor floor.
 **Interpolation mathematics (exact):** piecewise-linear in the log-discount
 f = −ln(price / A_SW) over loss L — i.e., **log-price interpolation**, not
 dollar-space interpolation. Knots in (L, f): (0, 0);
-(3.1539423077, [−ln 0.60, −ln 0.55] = [0.5108, 0.5978]);
-(5.0001999962, ≥ ln(1100/320) = 1.2349, one-sided);
-(8.1541523039, ≥ ln(1100/300) = 1.2993, one-sided).
+(3.1539423076938853, [−ln 0.60, −ln 0.55]);
+(5.0001999962072485, ≥ ln(1100/320) = 1.2347444629926896, one-sided);
+(8.154152303901133, ≥ ln(1100/300), one-sided).
+Use these full-precision profile losses and evaluate logarithms from the stated
+ratios. Display rounding is separate from interpolation and domain classification.
 Prices below are A_SW × exp(−f(L)) at A_SW = $1,100. Dollar-space linear
 interpolation would give different (higher) interior values; revision 2–3 text
 was ambiguous on this and is corrected here.
 
-**Coverage of the 125-profile domain (exact losses):** 46 profiles two-sided
-(L ≤ 3.1539423), 42 in the cliff zone (3.1539423 < L ≤ 5.0002000,
-ceiling-only), 37 deep-tail (L > 5.0002000, ceiling-only). Revision 2–3 stated
+**Coverage of the 125-profile domain (exact losses):** let L1 and L2 be the
+full-precision middle and cliff losses above. There are 46 profiles with
+scenario-conditioned two-sided interpolation envelopes (L ≤ L1), 42 in the
+cliff zone (L1 < L ≤ L2, ceiling-only), and 37 deep-tail (L > L2, ceiling-only). Revision 2–3 stated
 44/44/37, an artifact of truncated knot constants; 46/42/37 is correct.
 
 **Interpolation-artifact notice:** the seg-1 bands are derived from the anchor
@@ -175,7 +191,7 @@ These near-top bands are artifacts of the bracket width, not elicited evidence,
 and must not be read as claims that SW near-top prices differ from the locked
 curve.
 
-| Profile | Locked | Confirmed SW band |
+| Profile | Locked | Scenario envelope / elicited ceiling |
 |---|---|---|
 | pale/straw 20/110 | $1,100 | $1,100 (pin 1) |
 | pale/straw 20/115 | $1,026 | $993–$1,008 |
@@ -221,6 +237,13 @@ All four preregistered elements ran:
 Remaining before any v3 lock: independent replication (a second informant
 answering directly, or transaction evidence).
 
+**Proposed attribution contrast for that replication:** SW amber35/115 and
+SW amber30/120 complete the 2×2 age/tare comparison with the existing
+amber30/115 and amber35/120 profiles. Compare age at fixed tare and tare at
+fixed age, allowing an interaction and an inconclusive outcome when bounds
+overlap. Ask the second informant directly and cold; archive their instrument
+and answers separately before comparing with this record.
+
 ## 6. Limitations
 
 - One independent unit of observation throughout (one informant; the second
@@ -229,8 +252,9 @@ answering directly, or transaction evidence).
 - The anchor is a floor (≥ $1,100). The "$1,100 exactly" reading is conditional
   on the locked tail factor holding at brown 40/130; otherwise $1,100 is a
   chosen conservative scenario, not an identified point (§3.1).
-- Three of five active pins are one-sided bounds; the cliff zone and deep tail
-  are ceiling-only.
+- Six profile judgments remain active after replacing pin 2: the anchor-level
+  judgment, two middle-bracket judgments and three ceiling judgments. The anchor
+  is retained as a floor; the cliff zone and deep tail are ceiling-only.
 - The cliff contrast confounds vintage and tare (30/115 → 35/120 changes both);
   attribution to either is unresolved. Its exact position and steepness between
   L=3.154 and L=5.000 is interpolated, not observed; no pin exists inside the
@@ -239,6 +263,6 @@ answering directly, or transaction evidence).
   interpolation artifacts (§4 artifact notice), and departures between L=0 and
   L=3.154 would be invisible to this design.
 - Interpolation is in the log-discount f over loss L (log-price), and assumes
-  the locked loss *ordering* transfers to SW; two shade-at-fixed-loss slices
-  support this, but it is not exhaustively tested.
+  the locked loss *ordering* transfers to SW. The two matched-shade comparisons
+  supply limited support; only the amber/golden30/115 comparison is equal-loss.
 - No transaction data; nothing here is independently validated market pricing.
