@@ -1,0 +1,4 @@
+SHA-256 of canonical serialization json.dumps(frozen, sort_keys=True) [UTF-8, default separators]:
+a4caac25064138dacb8c6a5318df8b146318d4a4195921bdd0d5a80ac69bcc70
+
+Canonical bytes are reproducible via reviews/2026-11-01-kimi/southwest-elicitation-protocol.json (same object, indent=2 for readability).

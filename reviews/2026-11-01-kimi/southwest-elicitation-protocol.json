@@ -1,0 +1,42 @@
+{
+  "protocol": "SW two-pin elicitation, frozen before answers; analysis plan preregistered",
+  "pin1": {
+    "offering": [
+      "southwest",
+      "pale/straw",
+      20,
+      110
+    ],
+    "loss": 0.0,
+    "locked_factor": 1.0,
+    "role": "level; A_SW := answer 1"
+  },
+  "pin2": {
+    "offering": [
+      "southwest",
+      "amber",
+      30,
+      115
+    ],
+    "loss": 3.1539423076938853,
+    "locked_factor": 0.563077744302327,
+    "role": "shape; consistency := answer2 / answer1 vs locked_factor"
+  },
+  "decision_rules": {
+    "shape_supported": "abs(answer2 - answer1*pin2_factor) <= 10% of answer1*pin2_factor",
+    "shape_questioned": "deviation > 20%",
+    "between": "inconclusive; retain bracket"
+  },
+  "evidence_class": "single shared informant (owner); same class as the four existing user-reported anchors; independent unit = 1 informant",
+  "output": "SW 125-profile grid = A_SW x factor(L), labeled provisional expert-elicited, v3 PROPOSAL only; v2 lock untouched",
+  "comparators": {
+    "NE_amber30_115_factor_note": "same loss as golden30/115 (3.153942)",
+    "NW_amber30_115_predisclosure_judgment_usd": 700,
+    "four_top_anchors_usd": [
+      1100,
+      1075,
+      1050,
+      1000
+    ]
+  }
+}
