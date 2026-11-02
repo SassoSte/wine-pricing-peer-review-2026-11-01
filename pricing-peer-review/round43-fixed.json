@@ -1,0 +1,115 @@
+{
+  "round": 43,
+  "created_at": "2026-10-27T23:58:53.061214+00:00",
+  "status": "complete",
+  "protocol": "Neutral revisit of two earlier115lb shade/vintage comparisons. Do not reveal prior answers or predictions. Fixed models; separate direction/meaningfulness; unresolved permitted. Retain prior evidence until explicit reconciliation into next evidence version. Repeated pairs, not prospective accuracy.",
+  "file_sha256": {
+    "evidence-v23.json": "e156fb5a7a96208c78c0b573fec9658516a9fcd9cec388c801261c1f743be473",
+    "benchmark-targets-v23.json": "357477281adadb66ef1a00ca03837884f7b204dd63bc4ce454872474b2687726",
+    "direct-joint-weights-delivery-v22.json": "66e365517bcf035a755fcd67bf05de3231bf6c5eb5d944f4682889347e3b4633",
+    "pricing_joint_weights_v22.py": "9afe46cc62c8132b56b2c5da62ab76550f8b9cfd11cfa9e709ab0c80d8261883",
+    "joint_weight_refit_v22.py": "de3cf99d34f965f0c890d9d2835366fd568aee5a6aa16b93896aa74877776958",
+    "shade_vintage_shared_v21.py": "0f535ccdc861f7b1487908dc278d9984cf67e7442ec881d36532275d9de9a7cc",
+    "contextual_fixes_v19.py": "a8233ff44ec8e98bad184e08f0ea82078c98e7caee02766dff47d34282bee748",
+    "contextual_meaningfulness.py": "3a81ecd7650c5ac5b2704c2a0b2fe7eea3bbc78539232e67734cca07ca40dad7",
+    "domestic_shade_model.py": "fdabc56fbde9f66365d565f94272675a7c45d6fb96bcfe444435436835b830ce",
+    "compare_models.py": "da2067d3d2ef99849ce2e30be16208bff0145bc6b036111535542c2daf00fa5f"
+  },
+  "freeze_fields": [
+    "id",
+    "number",
+    "revisits",
+    "a",
+    "b",
+    "predictions"
+  ],
+  "questions_and_predictions_sha256": "5e73d518ae30f14e02986ab13c69f92f414a11da6cc020861ec5aafdaf3ea8a1",
+  "questions": [
+    {
+      "id": "round43-1",
+      "number": 1,
+      "revisits": "round36-9",
+      "a": [
+        "Eastern Europe",
+        "pale/straw",
+        30,
+        115
+      ],
+      "b": [
+        "Eastern Europe",
+        "golden",
+        25,
+        115
+      ],
+      "predictions": {
+        "joint_weight_refit": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 9.999999999998899e-05,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v22_direct_joint_weights"
+        }
+      },
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "B, meaningful difference\u2014the five-year younger vintage outweighs the adjacent shade difference, with provenance and tare matching.",
+      "exact_price_instruction": false,
+      "interpretation": "Explicit B direction and meaningful difference. Eastern Europe golden25/115 preferred over pale30/115; preserve neutral revisit answer for later reconciliation, no model or frozen evidence changes."
+    },
+    {
+      "id": "round43-2",
+      "number": 2,
+      "revisits": "round36-12",
+      "a": [
+        "Western Europe",
+        "golden",
+        25,
+        115
+      ],
+      "b": [
+        "Western Europe",
+        "pale/straw",
+        30,
+        115
+      ],
+      "predictions": {
+        "joint_weight_refit": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -9.999999999998899e-05,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v22_direct_joint_weights"
+        }
+      },
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "A, meaningful difference\u2014the five-year younger vintage outweighs the adjacent shade difference, with provenance and tare matching.",
+      "exact_price_instruction": false,
+      "interpretation": "Explicit A direction and meaningful difference. Western Europe golden25/115 preferred over pale30/115; neutral revisit answer retained for next evidence reconciliation. Models and frozen evidence unchanged."
+    }
+  ],
+  "rule_statements": [
+    {
+      "source": "round43-1",
+      "revisits": "round36-9",
+      "statement": "Eastern Europe pale30/115 versus golden25/115: B meaningfully higher; five-year younger vintage outweighs adjacent shade with provenance and tare matching.",
+      "scope": "This repeated comparison; no earlier answers exposed, frozen models unchanged."
+    },
+    {
+      "source": "round43-2",
+      "revisits": "round36-12",
+      "statement": "Western Europe golden25/115 versus pale30/115: A meaningfully higher; five-year younger vintage outweighs adjacent shade with provenance and tare matching.",
+      "scope": "This repeated comparison; earlier answers not displayed, frozen models unchanged."
+    }
+  ],
+  "scores": null,
+  "scoring_note": "Neutral revisits, not fresh predictive validation. Clarifications saved for reconciliation into next evidence version; no refit or evidence-version changes."
+}

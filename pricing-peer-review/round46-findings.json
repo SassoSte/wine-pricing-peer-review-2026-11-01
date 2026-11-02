@@ -1,0 +1,59 @@
+{
+  "round": 46,
+  "scores": {
+    "v25": {
+      "direction_n": 11,
+      "direction_correct": 11,
+      "direction_misses": [],
+      "meaningfulness_n": 11,
+      "meaningfulness_correct": 11,
+      "meaningfulness_misses": [],
+      "both_axes_n": 10,
+      "both_axes_correct": 10,
+      "false_premiums": [],
+      "missed_meaningful": [],
+      "zero_shade_premium_n": 1,
+      "zero_shade_premium_correct": 1
+    },
+    "v24": {
+      "direction_n": 11,
+      "direction_correct": 8,
+      "direction_misses": [
+        1,
+        2,
+        7
+      ],
+      "meaningfulness_n": 11,
+      "meaningfulness_correct": 10,
+      "meaningfulness_misses": [
+        1
+      ],
+      "both_axes_n": 10,
+      "both_axes_correct": 7,
+      "false_premiums": [],
+      "missed_meaningful": [
+        1
+      ],
+      "zero_shade_premium_n": 1,
+      "zero_shade_premium_correct": 1
+    }
+  },
+  "scoring_exclusions": {
+    "meaningfulness_unspecified": [
+      6
+    ],
+    "no_direction_zero_shade": [
+      8
+    ]
+  },
+  "findings": [
+    "V25 matches all supplied axes:direction11/11,size11/11,both10/10,zero-shade1/1. V24 direction8/11,size10/11,both7/10,zero1/1.",
+    "V25 fixes Q1 older35vs40 shade/vintage direction+size and Q2/Q7 amber/copper slight directions without making meaningful premiums.",
+    "All other supplied judgments,including pure5lb,15lb,10year andcross-provenance mixed comparisons matched by both.",
+    "Q4 freshness fallback produced20vs25 instead of originally designed35vs40; actual frozen/presented pair and score verified. No changes after freeze."
+  ],
+  "models_unchanged": true,
+  "evidence_unchanged": "evidence-v25.json",
+  "prediction_rechecks": 24,
+  "qualification": "Small varied prospective exact-pair batch, familiar families; not universal accuracy. Does not establish resolution of earlier brown/amber missQ45-8 or prior unresolved tradeoffs."
+}

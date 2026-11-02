@@ -1,0 +1,1048 @@
+{
+  "status": "First global priority ranking test complete; baseline/default unchanged",
+  "semantic_clarification_answered": "reset-semantics-1",
+  "evidence": "evidence-v31.json",
+  "target_view": "benchmark-targets-v31.json",
+  "benchmark": "model-config-v28.json",
+  "active_round": null,
+  "next_question": null,
+  "baselines_unchanged": true,
+  "note": "User accordion framing saved. Initial targeted checks only; full spectrum audit not yet done. No weights/evidence changed. Compaction not claimed or forced. No new questionnaire authorized.",
+  "answered_questions": 18,
+  "round35_score": {
+    "n": 12,
+    "matched": 8,
+    "accuracy": 0.6666666666666666,
+    "answer_counts": {
+      "meaningful_A": 8,
+      "meaningful_B": 3,
+      "no_meaningful_difference": 1
+    },
+    "by_actual": {
+      "meaningful_A": {
+        "n": 8,
+        "matched": 4
+      },
+      "meaningful_B": {
+        "n": 3,
+        "matched": 3
+      },
+      "no_meaningful_difference": {
+        "n": 1,
+        "matched": 1
+      }
+    },
+    "by_category": {
+      "domestic_mixed": {
+        "n": 2,
+        "matched": 1
+      },
+      "foreign_mixed": {
+        "n": 2,
+        "matched": 0
+      },
+      "ordinary_mixed": {
+        "n": 3,
+        "matched": 3
+      },
+      "shade_tare_tradeoff": {
+        "n": 1,
+        "matched": 1
+      },
+      "vintage_tare_tradeoff": {
+        "n": 1,
+        "matched": 0
+      },
+      "wide_control": {
+        "n": 3,
+        "matched": 3
+      }
+    },
+    "misses": [
+      {
+        "id": "round35-3",
+        "a": [
+          "northwest",
+          "golden",
+          20,
+          130
+        ],
+        "b": [
+          "northwest",
+          "golden",
+          30,
+          110
+        ],
+        "materiality": "meaningful_A",
+        "prediction_before_answer": "no_meaningful_difference",
+        "secondary_model_direction": "B",
+        "margin": -0.09427296194264567
+      },
+      {
+        "id": "round35-4",
+        "a": [
+          "South/Eastern Asia",
+          "golden",
+          25,
+          115
+        ],
+        "b": [
+          "Eastern Europe",
+          "amber",
+          20,
+          125
+        ],
+        "materiality": "meaningful_A",
+        "prediction_before_answer": "no_meaningful_difference",
+        "secondary_model_direction": "B",
+        "margin": -0.4211537394568329
+      },
+      {
+        "id": "round35-6",
+        "a": [
+          "southeast",
+          "pale/straw",
+          25,
+          125
+        ],
+        "b": [
+          "northeast",
+          "amber",
+          20,
+          120
+        ],
+        "materiality": "meaningful_A",
+        "prediction_before_answer": "no_meaningful_difference",
+        "secondary_model_direction": "B",
+        "margin": -0.3808950719290942
+      },
+      {
+        "id": "round35-9",
+        "a": [
+          "West Central Asia",
+          "golden",
+          25,
+          125
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "amber",
+          30,
+          115
+        ],
+        "materiality": "meaningful_A",
+        "prediction_before_answer": "no_meaningful_difference",
+        "secondary_model_direction": "A",
+        "margin": 0.07571140348150285
+      }
+    ]
+  },
+  "frozen_test_benchmark": "meaningful-benchmark-v13.json",
+  "refitted_candidate": "precision-shade-candidate-v17.json",
+  "candidate_promoted": false,
+  "anchors": "price-anchors.json",
+  "numeric_anchor_available": false,
+  "clarification_note": "Original round35-3 A answer is directional; current very very close response qualifies materiality as practical similarity. Do not re-ask the pair or invent numeric price.",
+  "frozen_score_note": "8/12 remains the original coding receipt; no revised prospective accuracy claimed after clarification.",
+  "corrected_pair_primary_match": true,
+  "corrected_pair_model_direction_match": false,
+  "inference_entrypoint": "pricing_v17_precision.py",
+  "analysis": "mixed-miss-analysis-v16.json",
+  "weights_changed": false,
+  "validation": "v31-anchored-validation.json",
+  "promotion_scope": "Best under current exploratory direction/materiality and error safeguards; previous baselines preserved.",
+  "questionnaire": null,
+  "representation_audit": "minimal-context-conflict-audit-v16.json",
+  "round36_scores": {
+    "v16_additive": {
+      "n": 12,
+      "direction_correct": 6,
+      "meaningfulness_correct": 10,
+      "both_correct": 6,
+      "by_block": {
+        "domestic_foreign_age_shade": {
+          "n": 4,
+          "direction_correct": 2,
+          "meaningfulness_correct": 2
+        },
+        "northwest_shade_age": {
+          "n": 4,
+          "direction_correct": 4,
+          "meaningfulness_correct": 4
+        },
+        "west_central_asia_shade": {
+          "n": 4,
+          "direction_correct": 0,
+          "meaningfulness_correct": 4
+        }
+      }
+    },
+    "minimal_context_21": {
+      "n": 12,
+      "direction_correct": 5,
+      "meaningfulness_correct": 10,
+      "both_correct": 5,
+      "by_block": {
+        "domestic_foreign_age_shade": {
+          "n": 4,
+          "direction_correct": 2,
+          "meaningfulness_correct": 2
+        },
+        "northwest_shade_age": {
+          "n": 4,
+          "direction_correct": 3,
+          "meaningfulness_correct": 4
+        },
+        "west_central_asia_shade": {
+          "n": 4,
+          "direction_correct": 0,
+          "meaningfulness_correct": 4
+        }
+      }
+    }
+  },
+  "prospective_findings": "round37-findings.json",
+  "preferred_frozen_reference": "simple-benchmark-v16-delivery.json",
+  "retained_baseline": "simple-benchmark-v16-delivery.json",
+  "false_call_audit": "false-premium-audit-v17.json",
+  "round37_scores": {
+    "v16_additive": {
+      "questions": 12,
+      "direction_n": 6,
+      "direction_correct": 6,
+      "size_n": 12,
+      "size_correct": 8,
+      "false_meaningful": [
+        "round37-6",
+        "round37-7",
+        "round37-10"
+      ],
+      "missed_meaningful": [
+        "round37-2"
+      ],
+      "targeted_cases": {
+        "questions": 10,
+        "direction_n": 4,
+        "direction_correct": 4,
+        "size_n": 10,
+        "size_correct": 6,
+        "false_meaningful": [
+          "round37-6",
+          "round37-7",
+          "round37-10"
+        ],
+        "missed_meaningful": [
+          "round37-2"
+        ]
+      },
+      "wide_controls": {
+        "questions": 2,
+        "direction_n": 2,
+        "direction_correct": 2,
+        "size_n": 2,
+        "size_correct": 2,
+        "false_meaningful": [],
+        "missed_meaningful": []
+      }
+    },
+    "v17_precision": {
+      "questions": 12,
+      "direction_n": 6,
+      "direction_correct": 6,
+      "size_n": 12,
+      "size_correct": 8,
+      "false_meaningful": [
+        "round37-3",
+        "round37-4",
+        "round37-6",
+        "round37-10"
+      ],
+      "missed_meaningful": [],
+      "targeted_cases": {
+        "questions": 10,
+        "direction_n": 4,
+        "direction_correct": 4,
+        "size_n": 10,
+        "size_correct": 6,
+        "false_meaningful": [
+          "round37-3",
+          "round37-4",
+          "round37-6",
+          "round37-10"
+        ],
+        "missed_meaningful": []
+      },
+      "wide_controls": {
+        "questions": 2,
+        "direction_n": 2,
+        "direction_correct": 2,
+        "size_n": 2,
+        "size_correct": 2,
+        "false_meaningful": [],
+        "missed_meaningful": []
+      }
+    }
+  },
+  "runtime": "predictor_v28.py",
+  "round38_score": {
+    "v18": {
+      "direction_n": 7,
+      "direction_correct": 6,
+      "direction_misses": [
+        8
+      ],
+      "meaningfulness_n": 11,
+      "meaningfulness_correct": 9,
+      "meaningfulness_misses": [
+        5,
+        8
+      ],
+      "explicit_meaningfulness_n": 10,
+      "explicit_meaningfulness_correct": 9,
+      "false_premiums": [
+        5
+      ],
+      "missed_meaningful_premiums": [
+        8
+      ]
+    },
+    "improved_v17": {
+      "direction_n": 7,
+      "direction_correct": 6,
+      "direction_misses": [
+        8
+      ],
+      "meaningfulness_n": 11,
+      "meaningfulness_correct": 9,
+      "meaningfulness_misses": [
+        5,
+        8
+      ],
+      "explicit_meaningfulness_n": 10,
+      "explicit_meaningfulness_correct": 9,
+      "false_premiums": [
+        5
+      ],
+      "missed_meaningful_premiums": [
+        8
+      ]
+    }
+  },
+  "latest_experiment": "tare-compensation-validation-v27.json",
+  "round39_score": {
+    "v19": {
+      "direction_correct": 2,
+      "direction_n": 6,
+      "direction_misses": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "meaningfulness_correct": 1,
+      "meaningfulness_n": 6,
+      "meaningfulness_misses": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "narrow_shade_candidate": {
+      "direction_correct": 6,
+      "direction_n": 6,
+      "direction_misses": [],
+      "meaningfulness_correct": 4,
+      "meaningfulness_n": 6,
+      "meaningfulness_misses": [
+        1,
+        5
+      ]
+    }
+  },
+  "round40_score": {
+    "v20": {
+      "direction_n": 9,
+      "direction_correct": 6,
+      "direction_misses": [
+        3,
+        9,
+        12
+      ],
+      "meaningfulness_n": 12,
+      "meaningfulness_correct": 7,
+      "meaningfulness_misses": [
+        3,
+        5,
+        7,
+        10,
+        12
+      ],
+      "false_premiums": [],
+      "missed_meaningful": [
+        3,
+        5,
+        7,
+        10,
+        12
+      ],
+      "zero_shade_premium_n": 3,
+      "zero_shade_premium_correct": 0,
+      "zero_shade_premium_misses": [
+        1,
+        6,
+        8
+      ]
+    },
+    "v19": {
+      "direction_n": 9,
+      "direction_correct": 3,
+      "direction_misses": [
+        2,
+        3,
+        5,
+        9,
+        10,
+        12
+      ],
+      "meaningfulness_n": 12,
+      "meaningfulness_correct": 4,
+      "meaningfulness_misses": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8,
+        10,
+        12
+      ],
+      "false_premiums": [
+        1,
+        6,
+        8
+      ],
+      "missed_meaningful": [
+        2,
+        3,
+        7,
+        10,
+        12
+      ],
+      "zero_shade_premium_n": 3,
+      "zero_shade_premium_correct": 0,
+      "zero_shade_premium_misses": [
+        1,
+        6,
+        8
+      ]
+    }
+  },
+  "pending_corrections": [],
+  "round41_score": {
+    "v21": {
+      "direction_n": 9,
+      "direction_correct": 8,
+      "direction_misses": [
+        7
+      ],
+      "meaningfulness_n": 12,
+      "meaningfulness_correct": 10,
+      "meaningfulness_misses": [
+        6,
+        7
+      ],
+      "false_premiums": [],
+      "missed_meaningful": [
+        6,
+        7
+      ],
+      "no_direction_tie_checks_n": 3,
+      "no_direction_tie_checks_correct": 3,
+      "no_direction_tie_misses": [],
+      "explicit_zero_shade_check_ids": [
+        1,
+        8
+      ],
+      "taste_dependent_tie_check_ids": [
+        4
+      ]
+    },
+    "v20": {
+      "direction_n": 9,
+      "direction_correct": 3,
+      "direction_misses": [
+        2,
+        3,
+        5,
+        6,
+        7,
+        12
+      ],
+      "meaningfulness_n": 12,
+      "meaningfulness_correct": 9,
+      "meaningfulness_misses": [
+        2,
+        5,
+        7
+      ],
+      "false_premiums": [],
+      "missed_meaningful": [
+        2,
+        5,
+        7
+      ],
+      "no_direction_tie_checks_n": 3,
+      "no_direction_tie_checks_correct": 0,
+      "no_direction_tie_misses": [
+        1,
+        4,
+        8
+      ],
+      "explicit_zero_shade_check_ids": [
+        1,
+        8
+      ],
+      "taste_dependent_tie_check_ids": [
+        4
+      ]
+    }
+  },
+  "incorporated_corrections": [
+    {
+      "file": "revision-13-correction.json",
+      "evidence": "evidence-v22.json"
+    },
+    {
+      "source_id": "round36-9",
+      "clarification_file": "round43-fixed.json",
+      "evidence": "evidence-v24.json"
+    },
+    {
+      "source_id": "round36-12",
+      "clarification_file": "round43-fixed.json",
+      "evidence": "evidence-v24.json"
+    }
+  ],
+  "round42_score": {
+    "joint_weight_refit": {
+      "direction_n": 7,
+      "direction_correct": 6,
+      "direction_misses": [
+        1
+      ],
+      "meaningfulness_n": 9,
+      "meaningfulness_correct": 6,
+      "meaningfulness_misses": [
+        1,
+        6,
+        8
+      ],
+      "both_axes_n": 7,
+      "both_axes_correct": 4,
+      "false_premiums": [],
+      "missed_meaningful": [
+        1,
+        6,
+        8
+      ],
+      "zero_shade_premium_n": 2,
+      "zero_shade_premium_correct": 2,
+      "zero_shade_premium_misses": []
+    },
+    "v21": {
+      "direction_n": 7,
+      "direction_correct": 5,
+      "direction_misses": [
+        1,
+        6
+      ],
+      "meaningfulness_n": 9,
+      "meaningfulness_correct": 5,
+      "meaningfulness_misses": [
+        1,
+        2,
+        6,
+        8
+      ],
+      "both_axes_n": 7,
+      "both_axes_correct": 3,
+      "false_premiums": [],
+      "missed_meaningful": [
+        1,
+        2,
+        6,
+        8
+      ],
+      "zero_shade_premium_n": 2,
+      "zero_shade_premium_correct": 2,
+      "zero_shade_premium_misses": []
+    }
+  },
+  "unresolved_round42": [
+    3,
+    10,
+    12
+  ],
+  "latest_experiment_delivery": "five-year-premium-delivery-v23.json",
+  "round44_score": {
+    "v24": {
+      "direction_n": 10,
+      "direction_correct": 10,
+      "direction_misses": [],
+      "meaningfulness_n": 12,
+      "meaningfulness_correct": 12,
+      "meaningfulness_misses": [],
+      "both_axes_n": 10,
+      "both_axes_correct": 10,
+      "false_premiums": [],
+      "missed_meaningful": [],
+      "zero_shade_premium_n": 2,
+      "zero_shade_premium_correct": 2,
+      "zero_shade_premium_misses": []
+    },
+    "joint_weight_refit": {
+      "direction_n": 10,
+      "direction_correct": 8,
+      "direction_misses": [
+        1,
+        4
+      ],
+      "meaningfulness_n": 12,
+      "meaningfulness_correct": 8,
+      "meaningfulness_misses": [
+        1,
+        2,
+        4,
+        6
+      ],
+      "both_axes_n": 10,
+      "both_axes_correct": 6,
+      "false_premiums": [],
+      "missed_meaningful": [
+        1,
+        2,
+        4,
+        6
+      ],
+      "zero_shade_premium_n": 2,
+      "zero_shade_premium_correct": 2,
+      "zero_shade_premium_misses": []
+    }
+  },
+  "round45_score": {
+    "v24": {
+      "direction_n": 17,
+      "direction_correct": 13,
+      "direction_misses": [
+        3,
+        5,
+        8,
+        20
+      ],
+      "meaningfulness_n": 17,
+      "meaningfulness_correct": 13,
+      "meaningfulness_misses": [
+        5,
+        8,
+        15,
+        20
+      ],
+      "both_axes_n": 15,
+      "both_axes_correct": 10,
+      "false_premiums": [],
+      "missed_meaningful": [
+        5,
+        8,
+        15,
+        20
+      ],
+      "zero_shade_premium_n": 1,
+      "zero_shade_premium_correct": 1
+    },
+    "joint_weight_refit": {
+      "direction_n": 17,
+      "direction_correct": 13,
+      "direction_misses": [
+        3,
+        5,
+        8,
+        20
+      ],
+      "meaningfulness_n": 17,
+      "meaningfulness_correct": 12,
+      "meaningfulness_misses": [
+        5,
+        8,
+        13,
+        15,
+        20
+      ],
+      "both_axes_n": 15,
+      "both_axes_correct": 9,
+      "false_premiums": [],
+      "missed_meaningful": [
+        5,
+        8,
+        13,
+        15,
+        20
+      ],
+      "zero_shade_premium_n": 1,
+      "zero_shade_premium_correct": 1
+    }
+  },
+  "unresolved_round45": [
+    12
+  ],
+  "round46_score": {
+    "v25": {
+      "direction_n": 11,
+      "direction_correct": 11,
+      "direction_misses": [],
+      "meaningfulness_n": 11,
+      "meaningfulness_correct": 11,
+      "meaningfulness_misses": [],
+      "both_axes_n": 10,
+      "both_axes_correct": 10,
+      "false_premiums": [],
+      "missed_meaningful": [],
+      "zero_shade_premium_n": 1,
+      "zero_shade_premium_correct": 1
+    },
+    "v24": {
+      "direction_n": 11,
+      "direction_correct": 8,
+      "direction_misses": [
+        1,
+        2,
+        7
+      ],
+      "meaningfulness_n": 11,
+      "meaningfulness_correct": 10,
+      "meaningfulness_misses": [
+        1
+      ],
+      "both_axes_n": 10,
+      "both_axes_correct": 7,
+      "false_premiums": [],
+      "missed_meaningful": [
+        1
+      ],
+      "zero_shade_premium_n": 1,
+      "zero_shade_premium_correct": 1
+    }
+  },
+  "batch_size": 1,
+  "current_batch": [],
+  "round47_score": {
+    "v25": {
+      "direction_n": 15,
+      "direction_correct": 14,
+      "direction_misses": [
+        15
+      ],
+      "meaningfulness_n": 17,
+      "meaningfulness_correct": 15,
+      "meaningfulness_misses": [
+        13,
+        15
+      ],
+      "both_axes_n": 15,
+      "both_axes_correct": 13,
+      "zero_shade_n": 1,
+      "zero_shade_correct": 1
+    },
+    "v24": {
+      "direction_n": 15,
+      "direction_correct": 12,
+      "direction_misses": [
+        4,
+        15,
+        19
+      ],
+      "meaningfulness_n": 17,
+      "meaningfulness_correct": 14,
+      "meaningfulness_misses": [
+        10,
+        13,
+        15
+      ],
+      "both_axes_n": 15,
+      "both_axes_correct": 10,
+      "zero_shade_n": 1,
+      "zero_shade_correct": 1
+    }
+  },
+  "unresolved_round47": [
+    1,
+    12,
+    18
+  ],
+  "unresolved_revisit_total": 10,
+  "unresolved_revisit_outcomes": {
+    "still_unresolved": [
+      {
+        "number": 2,
+        "source_id": "round27-11",
+        "clarification_id": "round48-2"
+      },
+      {
+        "number": 4,
+        "source_id": "round42-3",
+        "clarification_id": "round48-4"
+      },
+      {
+        "number": 5,
+        "source_id": "round42-10",
+        "clarification_id": "round48-5"
+      },
+      {
+        "number": 6,
+        "source_id": "round42-12",
+        "clarification_id": "round48-6"
+      },
+      {
+        "number": 7,
+        "source_id": "round45-12",
+        "clarification_id": "round48-7"
+      },
+      {
+        "number": 8,
+        "source_id": "round47-1",
+        "clarification_id": "round48-8"
+      },
+      {
+        "number": 9,
+        "source_id": "round47-12",
+        "clarification_id": "round48-9"
+      },
+      {
+        "number": 10,
+        "source_id": "round47-18",
+        "clarification_id": "round48-10"
+      }
+    ],
+    "direction_resolved_size_unspecified": [
+      {
+        "number": 1,
+        "source_id": "round27-7",
+        "direction": "B",
+        "meaningfulness": null
+      }
+    ],
+    "practical_similarity_resolved": [
+      {
+        "number": 3,
+        "source_id": "round38-3",
+        "direction": null,
+        "meaningfulness": "no_meaningful_difference"
+      }
+    ]
+  },
+  "pending_reconciliation": null,
+  "candidate": null,
+  "candidate_runtime": "pricing_v26.py",
+  "remaining_unresolved": [],
+  "model_config": "model-config-v28.json",
+  "selected_model": "v28_tare_compensation",
+  "selection_audit": "model-selection-v31.json",
+  "equivalence_receipt": "tare-predictor-equivalence-v28.json",
+  "round49_score": {
+    "v26": {
+      "direction_n": 16,
+      "direction_correct": 13,
+      "direction_misses": [
+        2,
+        6,
+        16
+      ],
+      "meaningfulness_n": 17,
+      "meaningfulness_correct": 15,
+      "meaningfulness_misses": [
+        2,
+        16
+      ],
+      "both_axes_n": 15,
+      "both_axes_correct": 12,
+      "false_premiums": [],
+      "missed_meaningful": [
+        2,
+        16
+      ],
+      "zero_shade_n": 1,
+      "zero_shade_correct": 1
+    },
+    "v25": {
+      "direction_n": 16,
+      "direction_correct": 14,
+      "direction_misses": [
+        6,
+        16
+      ],
+      "meaningfulness_n": 17,
+      "meaningfulness_correct": 14,
+      "meaningfulness_misses": [
+        2,
+        16,
+        17
+      ],
+      "both_axes_n": 15,
+      "both_axes_correct": 11,
+      "false_premiums": [],
+      "missed_meaningful": [
+        2,
+        16,
+        17
+      ],
+      "zero_shade_n": 1,
+      "zero_shade_correct": 1
+    }
+  },
+  "unresolved_round49": [
+    9,
+    10
+  ],
+  "secondary_experiment": "additive-milp-validation-v27.json",
+  "round51_score": {
+    "tare_compensation": {
+      "direction_n": 16,
+      "direction_correct": 15,
+      "direction_misses": [
+        13
+      ],
+      "meaningfulness_n": 17,
+      "meaningfulness_correct": 13,
+      "meaningfulness_misses": [
+        7,
+        11,
+        13,
+        18
+      ],
+      "both_axes_n": 15,
+      "both_axes_correct": 11,
+      "false_premiums": [
+        7,
+        18
+      ],
+      "missed_meaningful": [
+        11,
+        13
+      ],
+      "zero_shade_n": 2,
+      "zero_shade_correct": 2
+    },
+    "v26": {
+      "direction_n": 16,
+      "direction_correct": 15,
+      "direction_misses": [
+        13
+      ],
+      "meaningfulness_n": 17,
+      "meaningfulness_correct": 13,
+      "meaningfulness_misses": [
+        7,
+        11,
+        13,
+        18
+      ],
+      "both_axes_n": 15,
+      "both_axes_correct": 11,
+      "false_premiums": [
+        7,
+        18
+      ],
+      "missed_meaningful": [
+        11,
+        13
+      ],
+      "zero_shade_n": 2,
+      "zero_shade_correct": 2
+    }
+  },
+  "unresolved_round51": [
+    2,
+    15
+  ],
+  "session_checkpoint": "SESSION-CHECKPOINT.md",
+  "latest_refinement_audit": "model-selection-v31.json",
+  "experimental_runtime": "predictor_v31.py",
+  "experimental_config": "model-config-v31.json",
+  "latest_round": "round57-consistent-misses-review.json",
+  "round56_score": {
+    "wca_threshold": {
+      "n": 12,
+      "direction_correct": 9,
+      "meaningfulness_correct": 6,
+      "both_correct": 5,
+      "false_premiums": 4,
+      "missed_meaningful": 2,
+      "direction_misses": [
+        7,
+        8,
+        9
+      ],
+      "meaningfulness_misses": [
+        1,
+        5,
+        7,
+        8,
+        11,
+        12
+      ],
+      "joint_misses": [
+        1,
+        5,
+        7,
+        8,
+        9,
+        11,
+        12
+      ]
+    },
+    "v28": {
+      "n": 12,
+      "direction_correct": 7,
+      "meaningfulness_correct": 8,
+      "both_correct": 6,
+      "false_premiums": 0,
+      "missed_meaningful": 4,
+      "direction_misses": [
+        2,
+        5,
+        7,
+        8,
+        12
+      ],
+      "meaningfulness_misses": [
+        2,
+        5,
+        6,
+        12
+      ],
+      "joint_misses": [
+        2,
+        5,
+        6,
+        7,
+        8,
+        12
+      ]
+    }
+  },
+  "latest_round_findings": "round57-findings.json",
+  "pending_semantic_clarification": null,
+  "previous_guarded_intrinsic_runtime": "predictor_vintage_tare_v30.py",
+  "semantic_clarification_applied": "premium-semantics-clarification.json",
+  "mini_handoff": "MINI-HANDOFF.md",
+  "resume_priority": "Separate remaining intrinsic ranking errors from mixed-provenance premium misses; tier extension remains diagnostic only.",
+  "latest_objective_audit": "premium-objective-audit-v30.json",
+  "premium_loss_configs": [
+    "premium-loss-equal_case-config-v30.json",
+    "premium-loss-false_premium_2x-config-v30.json"
+  ],
+  "latest_round_reconciliation": "round57-reconciled-v31.json",
+  "next_analysis": "Audit global ordered model residuals and extreme profiles; specialists require repeatable attribute-defined patterns and heldout benefit. No questionnaire authorized.",
+  "latest_global_priority_test": "global-priority-summary-v31.json"
+}

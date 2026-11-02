@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "model_id": "v26_joint_refit_candidate",
+  "selection_status": "selected",
+  "description": "Selected v26, flattened without altering prediction mathematics; legacy model_id retained for output compatibility.",
+  "domain": {
+    "provenances": [
+      "Eastern Europe",
+      "Western Europe",
+      "West Central Asia",
+      "South/Eastern Asia",
+      "West Asia / Middle East",
+      "central",
+      "northeast",
+      "northwest",
+      "southwest",
+      "southeast"
+    ],
+    "shades": [
+      "brown",
+      "copper",
+      "amber",
+      "golden",
+      "pale/straw"
+    ],
+    "vintage_years": [
+      40,
+      35,
+      30,
+      25,
+      20
+    ],
+    "tare_lb": [
+      110,
+      115,
+      120,
+      125,
+      130
+    ],
+    "domestic": [
+      "central",
+      "northwest",
+      "northeast",
+      "southwest",
+      "southeast"
+    ]
+  },
+  "feature_names": [
+    "provenance:Western Europe",
+    "provenance:West Central Asia",
+    "provenance:South/Eastern Asia",
+    "provenance:West Asia / Middle East",
+    "provenance:central",
+    "provenance:northeast",
+    "provenance:northwest",
+    "provenance:southwest",
+    "provenance:southeast",
+    "shade_increment:copper",
+    "shade_increment:amber",
+    "shade_increment:golden",
+    "shade_increment:pale/straw",
+    "vintage_increment:35",
+    "vintage_increment:30",
+    "vintage_increment:25",
+    "vintage_increment:20",
+    "lower_tare_per5lb",
+    "domestic_pale_adjustment"
+  ],
+  "weights": {
+    "fitted": [
+      0.30059251209596727,
+      -0.44214330676271746,
+      -0.44224330676271745,
+      -0.38452451224995704,
+      0.330840377189864,
+      0.35905432486711175,
+      0.30049251209596733,
+      0.41951645015728317,
+      0.6003492343852845,
+      0.7781002948078896,
+      0.0,
+      0.0,
+      0.21369564083180523,
+      0.242569770230164,
+      0.6270916207257354,
+      0.6650957913318052,
+      0.5100913028174753,
+      0.2416467561623201,
+      0.005304402168184757
+    ],
+    "offset_reference": [
+      0.30059251209596727,
+      -0.44364330726271745,
+      -0.44374330726271743,
+      -0.386024512749957,
+      0.398340399689864,
+      0.39955433836711174,
+      0.30049251209596733,
+      0.43001645365728314,
+      0.6003492343852845,
+      0.6266002443078896,
+      0.0,
+      0.0,
+      0.6636957908318052,
+      0.367069811730164,
+      0.9270917207257354,
+      0.6635957908318052,
+      0.5430913138174752,
+      0.2416467561623201,
+      -0.3636957208318152
+    ]
+  },
+  "shade_context": {
+    "foreign_120_discount": 0.9,
+    "foreign_125_discount": 0.9,
+    "youngest20_extra_discount": 1.0,
+    "zero_premium_tare": 130,
+    "context_tare": "minimum",
+    "contrast": [
+      "golden",
+      "pale/straw"
+    ]
+  },
+  "five_year": {
+    "fraction": 0.5,
+    "scope": "adjacent_shade",
+    "matching_provenance": true,
+    "gap_years": 5
+  },
+  "offsets": {
+    "older_vintage_scale": 1.4000000000000001,
+    "brown_step_scale": 0.0,
+    "microshade_scale": 0.1,
+    "older_vintages": [
+      35,
+      40
+    ],
+    "older_shades": [
+      "golden",
+      "pale/straw"
+    ],
+    "micro_shades": [
+      "amber",
+      "copper"
+    ],
+    "microshade_headroom_factor": 0.9999999
+  },
+  "boundary": {
+    "base_radius": 0.3000001,
+    "context_kind": "mature_shade",
+    "context_scale": 0.75,
+    "additional_context_scale": 0.35000000000000003,
+    "provenance_reference_weights": [
+      0.30059251209596727,
+      -0.4826433202627174,
+      -0.4827433202627174,
+      -0.4640245387499571,
+      0.395340398689864,
+      0.49105436886711173,
+      0.3004925120959673,
+      0.5335164881572831,
+      0.5073492033852847
+    ],
+    "matched_tare_limit": 5,
+    "old_vintage": 35,
+    "brown_vintage": 30
+  },
+  "classification": {
+    "direction_epsilon": 1e-07,
+    "meaningfulness_epsilon": 1e-08,
+    "exact_price_equality": null,
+    "units": "pair-comparison score, not a standalone price"
+  },
+  "arithmetic": "Preserve reference offset cancellation and separate boundary additions for legacy parity; do not algebraically simplify until equivalence is reverified.",
+  "source_hashes": {
+    "joint-refit-candidate-v26.json": "40cd7f74df54c4e0fd6cab9564c0bd803564142fd5a26719f3487b9c19457caf",
+    "joint-refit-validation-v26.json": "72faea0cb273f98eb5417272049640ef1103d32df2903aa4eff496aa94de7295",
+    "evidence-v26.json": "424ecd96ce04e5d4a70d2dba726ab618bffdbf0bbd8bd061624e9807f2405c4b",
+    "benchmark-targets-v26.json": "d29211f2355fc74d5e2d859e36aefc760d2e35488c8e49b470a752b1ed6743cc",
+    "pricing_v26.py": "c626d19894e2255d93f082bf64507f728f0cccb56fccc1017be47c3e22a416d4",
+    "joint_refit_v26.py": "0218f13f0f9347a22c754a98a0fe301e562e00daa3aa2a5abc776be2997d205f",
+    "older_dark_scoped_v25.py": "0a4059a700e2134cb2e0ed9f89c24f800a199f3a48b80826fd98e84987cb58c7",
+    "five_year_premium_v23.py": "75c11a41bf11fcc61f9fef2e883b18406a396909c4e80828f447275cd519ba4b",
+    "joint_weight_refit_v22.py": "de3cf99d34f965f0c890d9d2835366fd568aee5a6aa16b93896aa74877776958",
+    "shade_vintage_shared_v21.py": "0f535ccdc861f7b1487908dc278d9984cf67e7442ec881d36532275d9de9a7cc",
+    "contextual_shade_v20.py": "b629c2cdff1afd7c3f51d1d4485d83416c123313bfe88b7a0d30f6dd032be338",
+    "contextual_fixes_v19.py": "a8233ff44ec8e98bad184e08f0ea82078c98e7caee02766dff47d34282bee748",
+    "contextual_meaningfulness.py": "3a81ecd7650c5ac5b2704c2a0b2fe7eea3bbc78539232e67734cca07ca40dad7",
+    "domestic_shade_model.py": "fdabc56fbde9f66365d565f94272675a7c45d6fb96bcfe444435436835b830ce",
+    "compare_models.py": "da2067d3d2ef99849ce2e30be16208bff0145bc6b036111535542c2daf00fa5f"
+  }
+}

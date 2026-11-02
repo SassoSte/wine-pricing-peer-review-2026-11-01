@@ -1,0 +1,34 @@
+{
+  "status": "confirmed",
+  "source": "User corrected question11 after seeing results; resolved ambiguous question14 with explicit B slightly higher.",
+  "corrections": [
+    {
+      "number": 11,
+      "known_direction": 1,
+      "materiality_target": 0,
+      "value_relation": "A_higher",
+      "raw_answer": "On question11 model is correct; I was incorrect.",
+      "previous_materiality_target": 1,
+      "basis": "Assistant explicitly interpreted as A slightly higher; user clarified14only."
+    }
+  ],
+  "reaffirmations": [
+    {
+      "number": 5,
+      "known_direction": -1,
+      "materiality_target": 0
+    },
+    {
+      "number": 12,
+      "known_direction": -1,
+      "materiality_target": 0
+    },
+    {
+      "number": 14,
+      "known_direction": -1,
+      "materiality_target": 0,
+      "raw_answer": "B slightly higher."
+    }
+  ],
+  "reconciliation": "Preserve pre-disclosure responses and initialscore; supersedeQ11active label once at next evidence reconciliation, withoutduplicate weighting."
+}

@@ -1,0 +1,75 @@
+{
+  "round": 42,
+  "scores": {
+    "joint_weight_refit": {
+      "direction_n": 7,
+      "direction_correct": 6,
+      "direction_misses": [
+        1
+      ],
+      "meaningfulness_n": 9,
+      "meaningfulness_correct": 6,
+      "meaningfulness_misses": [
+        1,
+        6,
+        8
+      ],
+      "both_axes_n": 7,
+      "both_axes_correct": 4,
+      "false_premiums": [],
+      "missed_meaningful": [
+        1,
+        6,
+        8
+      ],
+      "zero_shade_premium_n": 2,
+      "zero_shade_premium_correct": 2,
+      "zero_shade_premium_misses": []
+    },
+    "v21": {
+      "direction_n": 7,
+      "direction_correct": 5,
+      "direction_misses": [
+        1,
+        6
+      ],
+      "meaningfulness_n": 9,
+      "meaningfulness_correct": 5,
+      "meaningfulness_misses": [
+        1,
+        2,
+        6,
+        8
+      ],
+      "both_axes_n": 7,
+      "both_axes_correct": 3,
+      "false_premiums": [],
+      "missed_meaningful": [
+        1,
+        2,
+        6,
+        8
+      ],
+      "zero_shade_premium_n": 2,
+      "zero_shade_premium_correct": 2,
+      "zero_shade_premium_misses": []
+    }
+  },
+  "unresolved_questions": [
+    3,
+    10,
+    12
+  ],
+  "findings": [
+    "Joint weight refit improves direction6/7 vs5/7, meaningfulness6/9 vs5/9, and both axes4/7 vs3/7 on supplied labels.",
+    "Q1 remains direction+size miss:EE golden25/110 vs pale30/110, userA meaningful, both predictB practical.",
+    "Q6 refit corrects direction but still understates size:WE golden30/115 vs pale35/115.",
+    "Q8 both models prefer younger domesticCentral golden20/125 correctly but understate meaningfulness versus pale25/125.",
+    "Q2 refit correctly captures meaningful younger-vintage advantage despite5lb higher tare.",
+    "Both zero-shade controlsQ4/Q9 and pure5lb controlsQ5/Q11 pass for both models."
+  ],
+  "semantics": "Q3/Q10/Q12 unresolved on both axes, never equal/practical labels. Q10/Q12 explicitly not ties; explanations preserved.",
+  "qualification": "Fresh exact pairs, targeted familiar families, small sample; no population accuracy claim. No refit or evidence incorporation.",
+  "prediction_rechecks": 24,
+  "evidence_unchanged": "evidence-v22.json"
+}

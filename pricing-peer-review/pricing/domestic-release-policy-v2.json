@@ -1,0 +1,38 @@
+{
+  "reference_name": "Domestic Release Pricing v2",
+  "status": "locked_provisional_reference",
+  "locked_date": "2026-11-01",
+  "pricing_config": "pricing/consistent-price-config-v2.json",
+  "approved_regions": [
+    "northeast",
+    "southeast",
+    "central",
+    "northwest"
+  ],
+  "scope": {
+    "price_covers": "entire filled cask",
+    "currency": "USD",
+    "batch_status": "seat-origin/reference-status",
+    "volume": "same as supplied release anchors; absolute quantity unspecified",
+    "condition": "mint",
+    "market_basis": "comparable initial-release distributor/insider terms",
+    "excluded": [
+      "fees",
+      "taxes",
+      "delivery"
+    ]
+  },
+  "limitations": [
+    "Expert-calibrated reference, not transaction-validated market price.",
+    "Regular-batch5\u201310%discount not automatically applied outside confirmedmatchingtopprofiles.",
+    "Southwest andforeignregions remain outside approvedpricing scope untilanchored.",
+    "Low-endsharedshape transfers fromNortheast; regional checks are expertjudgments,not independent sales.",
+    "Post-disclosure endorsements preserved separately frominitialestimates."
+  ],
+  "change_policy": "Use currentcurve without furtheradjustment. Collect observed pricingoutcomes; newcalibration requiresnewversion andexplicit scope, preservingthisreference andV28lock.",
+  "source_hashes": {
+    "pricing/consistent-price-config-v2.json": "5a12e1614975de7b0d390b42b8a00db0b4eed5658ae8322f0486902ffd968fb1",
+    "pricing/consistent_price_v2.py": "b277bd9cdcc6072278114df609d8ddb5930e50401ce819a59bfb622ec2266963",
+    "pricing/consistent_price_layer.py": "85d343200a8e93bb88b55d4bc742963b4e7f6e185b792f915513d29f0c2ebab0"
+  }
+}

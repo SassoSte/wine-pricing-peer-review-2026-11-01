@@ -1,0 +1,48 @@
+{
+  "rows": [
+    {
+      "id": "round45-5",
+      "a": [
+        "Eastern Europe",
+        "golden",
+        35,
+        115
+      ],
+      "b": [
+        "Eastern Europe",
+        "pale/straw",
+        40,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "strength": null,
+      "basis": "Explicit axes from round45-fixed.json; slightly alone remains size-unspecified"
+    },
+    {
+      "id": "round50-12",
+      "a": [
+        "Western Europe",
+        "amber",
+        35,
+        120
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        40,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "strength": "slightly",
+      "basis": "Latest explicit judgment from round50-12; repeated pair reconciled once, retracted answers excluded"
+    }
+  ],
+  "jointly_feasible": false,
+  "individual_feasibility": {
+    "round45-5": true,
+    "round50-12": true
+  },
+  "explanation": "At these ages, same-provenance fixed-tare comparisons cancel all contextual terms. Golden35 versuspale40 margin=V35-P, whereP>=0. Amber35 versusamber40 margin=V35. First requiresV35-P>1; second requires0<V35<1. Impossible for this feature family. This is a representation limitation, not contradictory user preferences."
+}

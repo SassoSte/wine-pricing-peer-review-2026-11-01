@@ -1,0 +1,54 @@
+{
+  "status": "complete_frozen_expert_check",
+  "point_n": 5,
+  "point_mae_usd": 105.05196982329538,
+  "point_mean_signed_error_usd": -97.2977623302715,
+  "point_mean_absolute_percent_error": 14.684180642308746,
+  "point_underestimates": 4,
+  "point_overestimates": 1,
+  "range_checks": [
+    {
+      "number": 2,
+      "range": {
+        "lower": 550,
+        "upper": 600,
+        "currency": "USD",
+        "precision": "approximate range; explicit typo correction"
+      },
+      "model_price": 618.0676698790571,
+      "comparison": {
+        "model_price": 618.0676698790571,
+        "within_expert_range": false,
+        "above_upper_bound": 18.06766987905712,
+        "below_lower_bound": 0,
+        "qualification": "Correction supplied after prediction disclosure; retain original range and score separately."
+      },
+      "original_history": [
+        {
+          "raw_answer": "around 450-500",
+          "expert_range": {
+            "lower": 450,
+            "upper": 500,
+            "currency": "USD",
+            "precision": "approximate range"
+          },
+          "comparison": {
+            "model_price": 618.0676698790571,
+            "within_expert_range": false,
+            "above_upper_bound": 118.06766987905712,
+            "below_lower_bound": 0,
+            "qualification": "Range membership assessed without replacing range with midpoint."
+          },
+          "status": "superseded_by_user_typo_correction_after_prediction_disclosure"
+        }
+      ]
+    }
+  ],
+  "qualification": "5point judgments and1range,not6exactprices. Q2typo corrected afterforecastdisclosure,originalpreserved. Sequentialexpert checks with earlierexamples visible,notmarkettransactions. Allforecasts andcurve remainedfixed.",
+  "post_disclosure_assessment": {
+    "user_and_partner_endorse_predictions": true,
+    "source": "User reports consultation with partner",
+    "interpretation": "Initial estimate differences retained for transparency, not treated as confirmed model pricing errors after user endorsement. This adds expert plausibility support, not independent market validation.",
+    "decision": "Keep current v2 curve; no corrective refit to initial guesses."
+  }
+}

@@ -1,0 +1,736 @@
+{
+  "round": 35,
+  "status": "complete; frozen predictions scored without refitting",
+  "protocol": "12 fresh preselected varied pairs, three wide controls and nine ordinary/mixed tradeoffs. No duplicate or reversed historical pair. Main target is meaningful price distinction; optional tiny direction retained separately. Exact equality and unresolved remain distinct. Choices1/2 meaningful A/B,3 practical similarity,4 deliberate identical pricing,5 unresolved. No updates during batch; keep predictions hidden until completion. Calibration diagnostics from historical proxy targets are not prospective results. No dollars or numeric meaningfulness tolerance inferred.",
+  "response_options": {
+    "1": "A deserves a meaningful premium",
+    "2": "B deserves a meaningful premium",
+    "3": "Practically similar; optionally add a tiny lean toward A or B",
+    "4": "Deliberately give them identical prices",
+    "5": "Unresolved"
+  },
+  "file_sha256": {
+    "evidence-v13.json": "41b3fc7030dc57cee18c91a7cbce47503368925579a59ffe7b7ee06d0a533fbf",
+    "benchmark-targets-v13.json": "cea5b8cdbf9353482fbd7ee8b5f955928dbd3f7bec31e593a78fc84780438932",
+    "meaningful-benchmark-v13.json": "a532346047d308fa76114363205525eaeb5832149b84f8f831016f1780c863ab",
+    "build_meaningful_benchmark.py": "32517ea5c19f7d11fc665fdef6b9c4a79f724ff899fdea2ec3c90bcc79c748f7",
+    "compare_models.py": "da2067d3d2ef99849ce2e30be16208bff0145bc6b036111535542c2daf00fa5f"
+  },
+  "model_snapshot": {
+    "status": "fitted simple benchmark; not prospectively validated",
+    "evidence": "evidence-v13.json",
+    "target_view": "benchmark-targets-v13.json",
+    "source_hashes": {
+      "evidence-v12.json": "76c2adb3a57301eb8ad136e2414b8621dc9ee22f9f7611ab4a923db91d468ba6",
+      "equality-wording-audit-v12.json": "224e5d350a1e45ea04b8b1cf793667700019cfa496c247e7c5b535e93b96316c",
+      "pricing-reset-plan.json": "5686c0c41896cd178ad0b29e215d02083b064ec0da7108bcaf7aaab1c7ec0c8c",
+      "compare_models.py": "da2067d3d2ef99849ce2e30be16208bff0145bc6b036111535542c2daf00fa5f",
+      "build_meaningful_benchmark.py": "32517ea5c19f7d11fc665fdef6b9c4a79f724ff899fdea2ec3c90bcc79c748f7"
+    },
+    "architecture": "18 additive coefficients:9 provenance offsets,4 monotone shade increments,4 monotone vintage increments,1 nonnegative lighter-tare slope. No regional hierarchy overlays, context curves, fusion, or hard zero-price constraints.",
+    "target_cautions": "Meaningfulness primary, known direction secondary. Historical ties are coarsened only to absence of expressed meaningful preference, never forced zero. Moderate/strong qualifiers are flagged positive proxies pending fresh direct validation. Unspecified meaningfulness remains missing, not silently converted. Exact-price semantics remain in original evidence/audit.",
+    "loss_conventions": {
+      "meaningful_proxy_unit_margin": 1,
+      "direction_only_numerical_margin": 0.05,
+      "practical_training_band": 0.25,
+      "note": "Model-scale conventions, not user-supplied percentages or prices. One observation can constrain direction and practical closeness without becoming two samples."
+    },
+    "alpha": 0.01,
+    "decision_radius": 0.5,
+    "coefficients": [
+      0.45153507136316856,
+      -0.6581964319340311,
+      -0.6246672684075063,
+      -0.5303270066775049,
+      0.41835315732092787,
+      0.6211245960985821,
+      0.41678964736699564,
+      0.6576060683782924,
+      0.6221975681693684,
+      0.9958170571006331,
+      0.0,
+      0.0,
+      0.3462771958564444,
+      0.36900439720431477,
+      0.6997963292553665,
+      0.7304130795460265,
+      0.41765898358732556,
+      0.31058625626899944
+    ],
+    "feature_names": [
+      "origin:Western Europe vs Eastern Europe",
+      "origin:West Central Asia vs Eastern Europe",
+      "origin:South/Eastern Asia vs Eastern Europe",
+      "origin:West Asia / Middle East vs Eastern Europe",
+      "origin:central vs Eastern Europe",
+      "origin:northeast vs Eastern Europe",
+      "origin:northwest vs Eastern Europe",
+      "origin:southwest vs Eastern Europe",
+      "origin:southeast vs Eastern Europe",
+      "shade increment:copper",
+      "shade increment:amber",
+      "shade increment:golden",
+      "shade increment:pale/straw",
+      "age increment:35",
+      "age increment:30",
+      "age increment:25",
+      "age increment:20",
+      "lightness per 5 lb"
+    ],
+    "inner_calibration_scores": {
+      "0.001/0.1": {
+        "known_n": 172,
+        "meaningful_proxy_n": 25,
+        "no_meaningful_preference_n": 147,
+        "balanced_accuracy": 0.7248979591836735,
+        "accuracy": 0.5581395348837209,
+        "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+      },
+      "0.001/0.2": {
+        "known_n": 172,
+        "meaningful_proxy_n": 25,
+        "no_meaningful_preference_n": 147,
+        "balanced_accuracy": 0.7657142857142857,
+        "accuracy": 0.627906976744186,
+        "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+      },
+      "0.001/0.25": {
+        "known_n": 172,
+        "meaningful_proxy_n": 25,
+        "no_meaningful_preference_n": 147,
+        "balanced_accuracy": 0.7725170068027211,
+        "accuracy": 0.6395348837209303,
+        "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+      },
+      "0.001/0.3": {
+        "known_n": 172,
+        "meaningful_proxy_n": 25,
+        "no_meaningful_preference_n": 147,
+        "balanced_accuracy": 0.8405442176870748,
+        "accuracy": 0.7558139534883721,
+        "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+      },
+      "0.001/0.5": {
+        "known_n": 172,
+        "meaningful_proxy_n": 25,
+        "no_meaningful_preference_n": 147,
+        "balanced_accuracy": 0.949795918367347,
+        "accuracy": 0.9709302325581395,
+        "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+      },
+      "0.001/0.75": {
+        "known_n": 172,
+        "meaningful_proxy_n": 25,
+        "no_meaningful_preference_n": 147,
+        "balanced_accuracy": 0.8365986394557823,
+        "accuracy": 0.9476744186046512,
+        "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+      },
+      "0.01/0.1": {
+        "known_n": 172,
+        "meaningful_proxy_n": 25,
+        "no_meaningful_preference_n": 147,
+        "balanced_accuracy": 0.7555102040816326,
+        "accuracy": 0.6104651162790697,
+        "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+      },
+      "0.01/0.2": {
+        "known_n": 172,
+        "meaningful_proxy_n": 25,
+        "no_meaningful_preference_n": 147,
+        "balanced_accuracy": 0.7657142857142857,
+        "accuracy": 0.627906976744186,
+        "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+      },
+      "0.01/0.25": {
+        "known_n": 172,
+        "meaningful_proxy_n": 25,
+        "no_meaningful_preference_n": 147,
+        "balanced_accuracy": 0.7725170068027211,
+        "accuracy": 0.6395348837209303,
+        "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+      },
+      "0.01/0.3": {
+        "known_n": 172,
+        "meaningful_proxy_n": 25,
+        "no_meaningful_preference_n": 147,
+        "balanced_accuracy": 0.8439455782312926,
+        "accuracy": 0.7616279069767442,
+        "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+      },
+      "0.01/0.5": {
+        "known_n": 172,
+        "meaningful_proxy_n": 25,
+        "no_meaningful_preference_n": 147,
+        "balanced_accuracy": 0.949795918367347,
+        "accuracy": 0.9709302325581395,
+        "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+      },
+      "0.01/0.75": {
+        "known_n": 172,
+        "meaningful_proxy_n": 25,
+        "no_meaningful_preference_n": 147,
+        "balanced_accuracy": 0.8365986394557823,
+        "accuracy": 0.9476744186046512,
+        "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+      },
+      "0.1/0.1": {
+        "known_n": 172,
+        "meaningful_proxy_n": 25,
+        "no_meaningful_preference_n": 147,
+        "balanced_accuracy": 0.7351020408163265,
+        "accuracy": 0.5755813953488372,
+        "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+      },
+      "0.1/0.2": {
+        "known_n": 172,
+        "meaningful_proxy_n": 25,
+        "no_meaningful_preference_n": 147,
+        "balanced_accuracy": 0.7759183673469388,
+        "accuracy": 0.6453488372093024,
+        "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+      },
+      "0.1/0.25": {
+        "known_n": 172,
+        "meaningful_proxy_n": 25,
+        "no_meaningful_preference_n": 147,
+        "balanced_accuracy": 0.7895238095238095,
+        "accuracy": 0.6686046511627907,
+        "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+      },
+      "0.1/0.3": {
+        "known_n": 172,
+        "meaningful_proxy_n": 25,
+        "no_meaningful_preference_n": 147,
+        "balanced_accuracy": 0.8609523809523809,
+        "accuracy": 0.7906976744186046,
+        "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+      },
+      "0.1/0.5": {
+        "known_n": 172,
+        "meaningful_proxy_n": 25,
+        "no_meaningful_preference_n": 147,
+        "balanced_accuracy": 0.929795918367347,
+        "accuracy": 0.9651162790697675,
+        "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+      },
+      "0.1/0.75": {
+        "known_n": 172,
+        "meaningful_proxy_n": 25,
+        "no_meaningful_preference_n": 147,
+        "balanced_accuracy": 0.76,
+        "accuracy": 0.9302325581395349,
+        "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+      },
+      "1.0/0.1": {
+        "known_n": 172,
+        "meaningful_proxy_n": 25,
+        "no_meaningful_preference_n": 147,
+        "balanced_accuracy": 0.6108843537414966,
+        "accuracy": 0.47674418604651164,
+        "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+      },
+      "1.0/0.2": {
+        "known_n": 172,
+        "meaningful_proxy_n": 25,
+        "no_meaningful_preference_n": 147,
+        "balanced_accuracy": 0.7095238095238096,
+        "accuracy": 0.6453488372093024,
+        "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+      },
+      "1.0/0.25": {
+        "known_n": 172,
+        "meaningful_proxy_n": 25,
+        "no_meaningful_preference_n": 147,
+        "balanced_accuracy": 0.7677551020408163,
+        "accuracy": 0.7732558139534884,
+        "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+      },
+      "1.0/0.3": {
+        "known_n": 172,
+        "meaningful_proxy_n": 25,
+        "no_meaningful_preference_n": 147,
+        "balanced_accuracy": 0.8493877551020408,
+        "accuracy": 0.9127906976744186,
+        "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+      },
+      "1.0/0.5": {
+        "known_n": 172,
+        "meaningful_proxy_n": 25,
+        "no_meaningful_preference_n": 147,
+        "balanced_accuracy": 0.7931972789115647,
+        "accuracy": 0.9302325581395349,
+        "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+      },
+      "1.0/0.75": {
+        "known_n": 172,
+        "meaningful_proxy_n": 25,
+        "no_meaningful_preference_n": 147,
+        "balanced_accuracy": 0.72,
+        "accuracy": 0.9186046511627907,
+        "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+      }
+    },
+    "materiality_counts": {
+      "unspecified": 229,
+      "no_meaningful_difference": 147,
+      "meaningful_proxy": 25
+    },
+    "next": "Freeze a short fresh batch with direct meaningfulness options; no model updates during it. No claimed new accuracy until those answers exist."
+  },
+  "freeze_fields": [
+    "id",
+    "a",
+    "b",
+    "category",
+    "prediction_before_answer",
+    "margin",
+    "secondary_model_direction"
+  ],
+  "questions_and_predictions_sha256": "3320d19270c4a446ee2499aaddbe5024cc58a29e484599e9cfe5d3a658e1fd73",
+  "questions": [
+    {
+      "id": "round35-1",
+      "a": [
+        "Western Europe",
+        "pale/straw",
+        20,
+        120
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "brown",
+        35,
+        120
+      ],
+      "category": "wide_control",
+      "prediction_before_answer": "meaningful_A",
+      "margin": 4.17182472338647,
+      "secondary_model_direction": "A",
+      "status": "answered",
+      "raw_answer": "a vy. lonf ahor.",
+      "materiality": "meaningful_A",
+      "direction": "A",
+      "exact_price_instruction": false,
+      "interpretation": "Read apparent typing errors as \"A, by a long shot\": meaningful premium for A. Original wording preserved; no numerical premium inferred."
+    },
+    {
+      "id": "round35-2",
+      "a": [
+        "central",
+        "amber",
+        25,
+        115
+      ],
+      "b": [
+        "southwest",
+        "golden",
+        30,
+        120
+      ],
+      "category": "ordinary_mixed",
+      "prediction_before_answer": "meaningful_A",
+      "margin": 0.8017464247576614,
+      "secondary_model_direction": "A",
+      "status": "answered",
+      "raw_answer": "A - premium Tare and vintage.",
+      "materiality": "meaningful_A",
+      "direction": "A",
+      "exact_price_instruction": false,
+      "interpretation": "A selected in response to meaningful-price-distinction question; lower tare and younger vintage cited as advantages. No numerical premium inferred."
+    },
+    {
+      "id": "round35-3",
+      "a": [
+        "northwest",
+        "golden",
+        20,
+        130
+      ],
+      "b": [
+        "northwest",
+        "golden",
+        30,
+        110
+      ],
+      "category": "vintage_tare_tradeoff",
+      "prediction_before_answer": "no_meaningful_difference",
+      "margin": -0.09427296194264567,
+      "secondary_model_direction": "B",
+      "status": "answered",
+      "raw_answer": "A",
+      "materiality": "meaningful_A",
+      "direction": "A",
+      "exact_price_instruction": false,
+      "interpretation": "A selected in response to explicit meaningful-premium options; no strength or additional rationale inferred."
+    },
+    {
+      "id": "round35-4",
+      "a": [
+        "South/Eastern Asia",
+        "golden",
+        25,
+        115
+      ],
+      "b": [
+        "Eastern Europe",
+        "amber",
+        20,
+        125
+      ],
+      "category": "foreign_mixed",
+      "prediction_before_answer": "no_meaningful_difference",
+      "margin": -0.4211537394568329,
+      "secondary_model_direction": "B",
+      "status": "answered",
+      "raw_answer": "a",
+      "materiality": "meaningful_A",
+      "direction": "A",
+      "exact_price_instruction": false,
+      "interpretation": "A selected under explicit meaningful-premium options; no additional strength or rationale inferred."
+    },
+    {
+      "id": "round35-5",
+      "a": [
+        "central",
+        "brown",
+        40,
+        125
+      ],
+      "b": [
+        "central",
+        "golden",
+        20,
+        115
+      ],
+      "category": "wide_control",
+      "prediction_before_answer": "meaningful_B",
+      "margin": -3.8338623592316656,
+      "secondary_model_direction": "B",
+      "status": "answered",
+      "raw_answer": "B",
+      "materiality": "meaningful_B",
+      "direction": "B",
+      "exact_price_instruction": false,
+      "interpretation": "B selected under explicit meaningful-premium options; no additional strength or rationale inferred."
+    },
+    {
+      "id": "round35-6",
+      "a": [
+        "southeast",
+        "pale/straw",
+        25,
+        125
+      ],
+      "b": [
+        "northeast",
+        "amber",
+        20,
+        120
+      ],
+      "category": "domestic_mixed",
+      "prediction_before_answer": "no_meaningful_difference",
+      "margin": -0.3808950719290942,
+      "secondary_model_direction": "B",
+      "status": "answered",
+      "raw_answer": "**A.**",
+      "materiality": "meaningful_A",
+      "direction": "A",
+      "exact_price_instruction": false,
+      "interpretation": "A selected under explicit meaningful-premium options; no additional strength or rationale inferred."
+    },
+    {
+      "id": "round35-7",
+      "a": [
+        "Western Europe",
+        "copper",
+        30,
+        110
+      ],
+      "b": [
+        "Western Europe",
+        "pale/straw",
+        30,
+        130
+      ],
+      "category": "shade_tare_tradeoff",
+      "prediction_before_answer": "meaningful_A",
+      "margin": 0.8960678292195534,
+      "secondary_model_direction": "A",
+      "status": "answered",
+      "raw_answer": "A",
+      "materiality": "meaningful_A",
+      "direction": "A",
+      "exact_price_instruction": false,
+      "interpretation": "A selected under explicit meaningful-premium options; no additional strength or rationale inferred."
+    },
+    {
+      "id": "round35-8",
+      "a": [
+        "southwest",
+        "amber",
+        30,
+        115
+      ],
+      "b": [
+        "northwest",
+        "golden",
+        25,
+        125
+      ],
+      "category": "ordinary_mixed",
+      "prediction_before_answer": "no_meaningful_difference",
+      "margin": 0.1315758540032691,
+      "secondary_model_direction": "A",
+      "status": "answered",
+      "raw_answer": "very very close.  #3",
+      "materiality": "no_meaningful_difference",
+      "direction": null,
+      "exact_price_instruction": false,
+      "interpretation": "Explicit option3 practical similarity; no directional lean or deliberate identical-price instruction supplied."
+    },
+    {
+      "id": "round35-9",
+      "a": [
+        "West Central Asia",
+        "golden",
+        25,
+        125
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "amber",
+        30,
+        115
+      ],
+      "category": "foreign_mixed",
+      "prediction_before_answer": "no_meaningful_difference",
+      "margin": 0.07571140348150285,
+      "secondary_model_direction": "A",
+      "status": "answered",
+      "raw_answer": "A",
+      "materiality": "meaningful_A",
+      "direction": "A",
+      "exact_price_instruction": false,
+      "interpretation": "A selected under explicit meaningful-premium options; no additional strength or rationale inferred."
+    },
+    {
+      "id": "round35-10",
+      "a": [
+        "central",
+        "copper",
+        20,
+        115
+      ],
+      "b": [
+        "southeast",
+        "golden",
+        25,
+        120
+      ],
+      "category": "domestic_mixed",
+      "prediction_before_answer": "meaningful_A",
+      "margin": 0.5244008290078844,
+      "secondary_model_direction": "A",
+      "status": "answered",
+      "raw_answer": "A",
+      "materiality": "meaningful_A",
+      "direction": "A",
+      "exact_price_instruction": false,
+      "interpretation": "A selected under explicit meaningful-premium options; no additional strength or rationale inferred."
+    },
+    {
+      "id": "round35-11",
+      "a": [
+        "West Asia / Middle East",
+        "copper",
+        40,
+        130
+      ],
+      "b": [
+        "Eastern Europe",
+        "pale/straw",
+        25,
+        110
+      ],
+      "category": "wide_control",
+      "prediction_before_answer": "meaningful_B",
+      "margin": -3.918163033615655,
+      "secondary_model_direction": "B",
+      "status": "answered",
+      "raw_answer": "B",
+      "materiality": "meaningful_B",
+      "direction": "B",
+      "exact_price_instruction": false,
+      "interpretation": "B selected under explicit meaningful-premium options; no additional strength or rationale inferred."
+    },
+    {
+      "id": "round35-12",
+      "a": [
+        "northeast",
+        "amber",
+        35,
+        110
+      ],
+      "b": [
+        "southwest",
+        "copper",
+        25,
+        120
+      ],
+      "category": "ordinary_mixed",
+      "prediction_before_answer": "meaningful_B",
+      "margin": -0.8455183685431046,
+      "secondary_model_direction": "B",
+      "status": "answered",
+      "raw_answer": "B - though slightly heavier, age and porveance facotr it",
+      "materiality": "meaningful_B",
+      "direction": "B",
+      "exact_price_instruction": false,
+      "interpretation": "B selected under meaningful-premium options; user cites vintage and provenance despite higher tare. Do not infer a universal Southwest-over-Northeast provenance ordering."
+    }
+  ],
+  "rule_statements": [
+    {
+      "source_question": "round35-2",
+      "raw_answer": "A - premium Tare and vintage.",
+      "scope": "Central amber25/115 versus Southwest golden30/120.",
+      "interpretation": "Meaningful A preference attributed to tare and vintage in this combined comparison; no universal dominance rule inferred."
+    },
+    {
+      "source_question": "round35-12",
+      "raw_answer": "B - though slightly heavier, age and porveance facotr it",
+      "scope": "Northeast amber35/110 versus Southwest copper25/120.",
+      "interpretation": "B selected under meaningful-premium options; user cites vintage and provenance despite higher tare. Do not infer a universal Southwest-over-Northeast provenance ordering."
+    }
+  ],
+  "scores": {
+    "n": 12,
+    "matched": 8,
+    "accuracy": 0.6666666666666666,
+    "answer_counts": {
+      "meaningful_A": 8,
+      "meaningful_B": 3,
+      "no_meaningful_difference": 1
+    },
+    "by_actual": {
+      "meaningful_A": {
+        "n": 8,
+        "matched": 4
+      },
+      "meaningful_B": {
+        "n": 3,
+        "matched": 3
+      },
+      "no_meaningful_difference": {
+        "n": 1,
+        "matched": 1
+      }
+    },
+    "by_category": {
+      "domestic_mixed": {
+        "n": 2,
+        "matched": 1
+      },
+      "foreign_mixed": {
+        "n": 2,
+        "matched": 0
+      },
+      "ordinary_mixed": {
+        "n": 3,
+        "matched": 3
+      },
+      "shade_tare_tradeoff": {
+        "n": 1,
+        "matched": 1
+      },
+      "vintage_tare_tradeoff": {
+        "n": 1,
+        "matched": 0
+      },
+      "wide_control": {
+        "n": 3,
+        "matched": 3
+      }
+    },
+    "misses": [
+      {
+        "id": "round35-3",
+        "a": [
+          "northwest",
+          "golden",
+          20,
+          130
+        ],
+        "b": [
+          "northwest",
+          "golden",
+          30,
+          110
+        ],
+        "materiality": "meaningful_A",
+        "prediction_before_answer": "no_meaningful_difference",
+        "secondary_model_direction": "B",
+        "margin": -0.09427296194264567
+      },
+      {
+        "id": "round35-4",
+        "a": [
+          "South/Eastern Asia",
+          "golden",
+          25,
+          115
+        ],
+        "b": [
+          "Eastern Europe",
+          "amber",
+          20,
+          125
+        ],
+        "materiality": "meaningful_A",
+        "prediction_before_answer": "no_meaningful_difference",
+        "secondary_model_direction": "B",
+        "margin": -0.4211537394568329
+      },
+      {
+        "id": "round35-6",
+        "a": [
+          "southeast",
+          "pale/straw",
+          25,
+          125
+        ],
+        "b": [
+          "northeast",
+          "amber",
+          20,
+          120
+        ],
+        "materiality": "meaningful_A",
+        "prediction_before_answer": "no_meaningful_difference",
+        "secondary_model_direction": "B",
+        "margin": -0.3808950719290942
+      },
+      {
+        "id": "round35-9",
+        "a": [
+          "West Central Asia",
+          "golden",
+          25,
+          125
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "amber",
+          30,
+          115
+        ],
+        "materiality": "meaningful_A",
+        "prediction_before_answer": "no_meaningful_difference",
+        "secondary_model_direction": "A",
+        "margin": 0.07571140348150285
+      }
+    ]
+  },
+  "scoring_notes": "12 fresh answers, one fixed18-coefficient benchmark. No model updates during the batch. Meaningful preference is primary; practical similarity and deliberate exact equality remain distinct. Small purposeful set, not population accuracy; historical proxy calibration is not this test. Preserve this receipt before any later training incorporation."
+}

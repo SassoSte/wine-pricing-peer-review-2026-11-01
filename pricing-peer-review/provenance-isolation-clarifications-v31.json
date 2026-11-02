@@ -1,0 +1,97 @@
+{
+  "status": "Pending next evidence reconciliation; frozen evidence unchanged",
+  "source": "Voice provenance isolation following shared shade-tare review",
+  "rows": [
+    {
+      "target_id": "round8-5",
+      "a": [
+        "Eastern Europe",
+        "copper",
+        30,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "copper",
+        30,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "value_relation": "A_higher",
+      "qualification": "Tentative very slight lean A; user said probably a tie leaning A, not worth a price discussion. Do not treat as strong directional evidence.",
+      "reasoning": "Provenance narrowly outweighs5lb tare difference in this bracket."
+    },
+    {
+      "target_id": "round8-4",
+      "a": [
+        "Eastern Europe",
+        "copper",
+        30,
+        120
+      ],
+      "b": [
+        "West Central Asia",
+        "copper",
+        30,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "value_relation": "unspecified",
+      "user_answer": "Practically similar, no clear price based direction. Not necessarily exact equality.",
+      "supersedes": "Round57 exact equality interpretation"
+    },
+    {
+      "clarification_id": "voice-provenance-isolation-110",
+      "a": [
+        "Eastern Europe",
+        "copper",
+        30,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "copper",
+        30,
+        110
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "value_relation": "B_higher",
+      "user_answer": "B would be higher. It would be a slight advantage.",
+      "reasoning": "User confirmed B higher and then explicitly slight in response to meaningful versus practically similar distinction. No further causal explanation elicited.",
+      "reconciliation": "Match unordered pair against evidence before adding; replace existing judgment if already present, otherwise add once."
+    },
+    {
+      "clarification_id": "voice-provenance-isolation-110-amber",
+      "a": [
+        "Eastern Europe",
+        "copper",
+        30,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "amber",
+        30,
+        110
+      ],
+      "known_direction": -1,
+      "materiality_target": -1,
+      "exact_price_equality": false,
+      "value_relation": "B_higher",
+      "user_answer": "It would be meaningfully higher.",
+      "elicitation_context": "B shade changed from copper to amber; all other attributes retained. This is a new comparison, not a correction to the copper/copper slight premium.",
+      "reconciliation": "Deduplicate unordered pair against evidence before incorporation; preserve raw history.",
+      "confirmation_status": "confirmed after user reviewed displayed table",
+      "exclude_from_reconciliation_until_confirmed": false,
+      "confirmation_answer": "Oh, right Yeah. This B is meaningfully higher"
+    }
+  ],
+  "implication": "Withdraw exact equality constraint for round8-4 in next evidence version. This removes this specific equality-plus-monotonicity contradiction; it does not prove a regional ranking or resolve other conflicts.",
+  "contextual_finding": "Confirmed: A Eastern Europe copper30/125 versus B West Central Asia copper30/110 yields B slightly higher; changing only B shade to amber yields B meaningfully higher. Evidence for contextual shade contribution in this pair, not a universal adjacent-shade premium."
+}

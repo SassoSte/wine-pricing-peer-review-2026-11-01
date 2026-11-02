@@ -1,0 +1,33 @@
+{
+  "status": "Pending next evidence reconciliation; models fixed",
+  "rows": [
+    {
+      "clarification_id": "voice-older-we-equal-tare",
+      "a": [
+        "Western Europe",
+        "brown",
+        35,
+        120
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        40,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "value_relation": "B_higher",
+      "raw_answer": "B is slightly more expensive",
+      "answer_history": [
+        "Practically similar; brown makes the other attributes less valuable.",
+        "User considered B then tie during spoken deliberation.",
+        "Final explicit clarification: B is slightly more expensive."
+      ],
+      "reasoning": "Brown reduces the contribution of other positive attributes in this comparison; the amber offering retains a slight edge despite its older vintage.",
+      "scope": "Do not infer numerical attenuation or a blanket rule that brown cancels all other attributes. Deduplicate against existing unordered pair before incorporation."
+    }
+  ],
+  "comparison_context": "Earlier confirmed equal-price pair has A brown35/115 versus B amber40/120; current pair changes only A tare to120. Together these judgments are consistent with A lower tare restoring balance, but do not establish a monetary exchange rate."
+}

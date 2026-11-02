@@ -1,0 +1,194 @@
+{
+  "scope": "Four anchored domesticregions; supportedvintages20/25,tares110/115/120/125,paleoramber.16profiles perregion. Wholefilledcask seat-origin/reference-status,mint,samevolume/initialrelease terms;fees/taxes/deliveryexcluded. Modelbounds acrossprofiles,notconfidenceintervals.",
+  "config_sha256": "5a12e1614975de7b0d390b42b8a00db0b4eed5658ae8322f0486902ffd968fb1",
+  "results": [
+    {
+      "region": "northeast",
+      "by_shade": {
+        "pale/straw": {
+          "minimum": {
+            "offering": [
+              "northeast",
+              "pale/straw",
+              25,
+              125
+            ],
+            "price": 653.2511254250132
+          },
+          "maximum": {
+            "offering": [
+              "northeast",
+              "pale/straw",
+              20,
+              110
+            ],
+            "price": 1100.0
+          }
+        },
+        "amber": {
+          "minimum": {
+            "offering": [
+              "northeast",
+              "amber",
+              25,
+              125
+            ],
+            "price": 644.615248560482
+          },
+          "maximum": {
+            "offering": [
+              "northeast",
+              "amber",
+              20,
+              110
+            ],
+            "price": 1089.4998852684657
+          }
+        }
+      },
+      "overall_min": 644.615248560482,
+      "overall_max": 1100.0
+    },
+    {
+      "region": "southeast",
+      "by_shade": {
+        "pale/straw": {
+          "minimum": {
+            "offering": [
+              "southeast",
+              "pale/straw",
+              25,
+              125
+            ],
+            "price": 638.4045089380811
+          },
+          "maximum": {
+            "offering": [
+              "southeast",
+              "pale/straw",
+              20,
+              110
+            ],
+            "price": 1075.0
+          }
+        },
+        "amber": {
+          "minimum": {
+            "offering": [
+              "southeast",
+              "amber",
+              25,
+              125
+            ],
+            "price": 629.9649020022893
+          },
+          "maximum": {
+            "offering": [
+              "southeast",
+              "amber",
+              20,
+              110
+            ],
+            "price": 1064.738524239637
+          }
+        }
+      },
+      "overall_min": 629.9649020022893,
+      "overall_max": 1075.0
+    },
+    {
+      "region": "central",
+      "by_shade": {
+        "pale/straw": {
+          "minimum": {
+            "offering": [
+              "central",
+              "pale/straw",
+              25,
+              125
+            ],
+            "price": 623.557892451149
+          },
+          "maximum": {
+            "offering": [
+              "central",
+              "pale/straw",
+              20,
+              110
+            ],
+            "price": 1050.0
+          }
+        },
+        "amber": {
+          "minimum": {
+            "offering": [
+              "central",
+              "amber",
+              25,
+              125
+            ],
+            "price": 615.3145554440964
+          },
+          "maximum": {
+            "offering": [
+              "central",
+              "amber",
+              20,
+              110
+            ],
+            "price": 1039.9771632108082
+          }
+        }
+      },
+      "overall_min": 615.3145554440964,
+      "overall_max": 1050.0
+    },
+    {
+      "region": "northwest",
+      "by_shade": {
+        "pale/straw": {
+          "minimum": {
+            "offering": [
+              "northwest",
+              "pale/straw",
+              25,
+              125
+            ],
+            "price": 593.8646594772847
+          },
+          "maximum": {
+            "offering": [
+              "northwest",
+              "pale/straw",
+              20,
+              110
+            ],
+            "price": 1000.0
+          }
+        },
+        "amber": {
+          "minimum": {
+            "offering": [
+              "northwest",
+              "amber",
+              25,
+              125
+            ],
+            "price": 586.013862327711
+          },
+          "maximum": {
+            "offering": [
+              "northwest",
+              "amber",
+              20,
+              110
+            ],
+            "price": 990.4544411531506
+          }
+        }
+      },
+      "overall_min": 586.013862327711,
+      "overall_max": 1000.0
+    }
+  ]
+}

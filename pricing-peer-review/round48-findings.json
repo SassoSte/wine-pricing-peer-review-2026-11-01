@@ -1,0 +1,67 @@
+{
+  "round": 48,
+  "outcomes": {
+    "still_unresolved": [
+      {
+        "number": 2,
+        "source_id": "round27-11",
+        "clarification_id": "round48-2"
+      },
+      {
+        "number": 4,
+        "source_id": "round42-3",
+        "clarification_id": "round48-4"
+      },
+      {
+        "number": 5,
+        "source_id": "round42-10",
+        "clarification_id": "round48-5"
+      },
+      {
+        "number": 6,
+        "source_id": "round42-12",
+        "clarification_id": "round48-6"
+      },
+      {
+        "number": 7,
+        "source_id": "round45-12",
+        "clarification_id": "round48-7"
+      },
+      {
+        "number": 8,
+        "source_id": "round47-1",
+        "clarification_id": "round48-8"
+      },
+      {
+        "number": 9,
+        "source_id": "round47-12",
+        "clarification_id": "round48-9"
+      },
+      {
+        "number": 10,
+        "source_id": "round47-18",
+        "clarification_id": "round48-10"
+      }
+    ],
+    "direction_resolved_size_unspecified": [
+      {
+        "number": 1,
+        "source_id": "round27-7",
+        "direction": "B",
+        "meaningfulness": null
+      }
+    ],
+    "practical_similarity_resolved": [
+      {
+        "number": 3,
+        "source_id": "round38-3",
+        "direction": null,
+        "meaningfulness": "no_meaningful_difference"
+      }
+    ]
+  },
+  "qualification": "Still-unresolved judgments are not equal-price or practical-similarity labels. User provided reasons for competing attributes; no forced conclusions or further questions.",
+  "models_unchanged": true,
+  "evidence_unchanged": "evidence-v25.json",
+  "prediction_rechecks": 20
+}

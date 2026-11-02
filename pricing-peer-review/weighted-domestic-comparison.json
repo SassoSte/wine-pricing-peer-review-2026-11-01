@@ -1,0 +1,5773 @@
+{
+  "method": {
+    "rows": 341,
+    "change": "Learn domestic shade/vintage/tare scaling jointly with soft regional hierarchy and contextual convergence; foreign scores unchanged. Tare curves scaled by positive factor, preserving exact pure-tare ties and score direction; classifier margins can change.",
+    "prior": "Same centered [2,1,1,0,0] tier template, context gains, 20-year shrinkage and weak 20-vs30 premium-region dominance scenarios as regional-only model; add a soft average hierarchy-order penalty. Exact prior margin conventions are not elicited prices.",
+    "validation": "Same outer family partitions and base offering settings; inner grouped training refits both offering and weighted hierarchy to select prior strength. Expanded prior explored after regional-only result, so this is exploratory repeated validation, not a pristine new test.",
+    "historical_file_hashes": {
+      "pricing.py": "70cf711fdd3322750ffd5cdab45e156e3bc47a136ddb2155bac04727e7900906",
+      "compare_models.py": "da2067d3d2ef99849ce2e30be16208bff0145bc6b036111535542c2daf00fa5f",
+      "compare_tare_models.py": "6ee6623380260502ea3b7b17621261ce413ccea3f7fdf2af835bb50bf4c716d2",
+      "provenance_tare_model.py": "c5aba387479f9581a4553fb10c6e660d000de6ea7783f351357717c9b94988b4",
+      "refit_provenance_v8.py": "27eaebf92f5508e4c19b0823c2112da4addb92b75806ddf664c41af94f814c07",
+      "evidence-v8.json": "595f0c2f12de8f6a6df300dc328693d0ff6307724f7e1d71382b66bcedb43a23",
+      "provenance-comparison-v8.json": "193fcdaaa7c94de5ec97986ea4aff5bad192dcf0ac158c0be8ba047c44b7af5c",
+      "domestic_hierarchy_model.py": "e4c03829d90fa945d319991d5fe84bc6f28106043c760951675c33ed6c34e3df",
+      "domestic-hierarchy-comparison.json": "87ffcde2a1d6574b11710a66bae57fd07e88816e83b6374894277d381928b128"
+    }
+  },
+  "nested_cv": {
+    "summary": {
+      "all": {
+        "n": 341,
+        "accuracy": 0.7571847507331378,
+        "balanced_accuracy": 0.740332216802805,
+        "opposite_winner_errors": 10.0,
+        "predicted_ties": 123.4,
+        "accuracy_range": [
+          0.7302052785923754,
+          0.7800586510263929
+        ],
+        "mean_recall": {
+          "B": 0.6878787878787879,
+          "tie": 0.7126050420168066,
+          "A": 0.8205128205128205
+        }
+      },
+      "pure_tare": {
+        "n": 60,
+        "accuracy": 0.8400000000000001,
+        "balanced_accuracy": 0.740660225442834,
+        "opposite_winner_errors": 0.0,
+        "predicted_ties": 17.0,
+        "accuracy_range": [
+          0.7666666666666667,
+          0.9166666666666666
+        ],
+        "mean_recall": {
+          "B": 0.6,
+          "tie": 0.6608695652173913,
+          "A": 0.961111111111111
+        }
+      },
+      "confirmed_pure_tare_ties": {
+        "n": 23,
+        "accuracy": 0.6608695652173913,
+        "balanced_accuracy": 0.6608695652173913,
+        "opposite_winner_errors": 0.0,
+        "predicted_ties": 15.2,
+        "accuracy_range": [
+          0.4782608695652174,
+          0.8695652173913043
+        ],
+        "mean_recall": {
+          "tie": 0.6608695652173913
+        }
+      },
+      "pure_tare_preferences": {
+        "n": 37,
+        "accuracy": 0.9513513513513514,
+        "balanced_accuracy": 0.7805555555555556,
+        "opposite_winner_errors": 0.0,
+        "predicted_ties": 1.8,
+        "accuracy_range": [
+          0.918918918918919,
+          1.0
+        ],
+        "mean_recall": {
+          "B": 0.6,
+          "A": 0.961111111111111
+        }
+      },
+      "provenance_plus_tare": {
+        "n": 76,
+        "accuracy": 0.65,
+        "balanced_accuracy": 0.645246913580247,
+        "opposite_winner_errors": 0.0,
+        "predicted_ties": 25.4,
+        "accuracy_range": [
+          0.618421052631579,
+          0.6842105263157895
+        ],
+        "mean_recall": {
+          "B": 0.72,
+          "tie": 0.475,
+          "A": 0.7407407407407407
+        }
+      },
+      "domestic_provenance_comparisons": {
+        "n": 84,
+        "accuracy": 0.7523809523809524,
+        "balanced_accuracy": 0.6820987654320988,
+        "opposite_winner_errors": 0.2,
+        "predicted_ties": 57.4,
+        "accuracy_range": [
+          0.7142857142857143,
+          0.8214285714285714
+        ],
+        "mean_recall": {
+          "B": 0.6500000000000001,
+          "tie": 0.8407407407407408,
+          "A": 0.5555555555555556
+        }
+      },
+      "domestic_20_same_other_attributes": {
+        "n": 16,
+        "accuracy": 0.775,
+        "balanced_accuracy": 0.5712121212121212,
+        "opposite_winner_errors": 0.0,
+        "predicted_ties": 13.8,
+        "accuracy_range": [
+          0.6875,
+          0.875
+        ],
+        "mean_recall": {
+          "B": 0.4,
+          "tie": 0.9636363636363636,
+          "A": 0.35
+        }
+      }
+    },
+    "runs": [
+      {
+        "seed": 11,
+        "predictions": [
+          -1,
+          -1,
+          1,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          -1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          -1,
+          -1,
+          1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          0,
+          -1,
+          -1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          -1,
+          0,
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          0,
+          1,
+          1,
+          -1,
+          0,
+          0,
+          -1,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          1,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          -1,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          1,
+          -1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          -1,
+          -1,
+          1,
+          1,
+          -1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          -1,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          -1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          -1,
+          -1,
+          1
+        ],
+        "metrics": {
+          "all": {
+            "n": 341,
+            "matched": 261,
+            "accuracy": 0.7653958944281525,
+            "balanced_accuracy": 0.7508537214419567,
+            "recall": {
+              "B": 0.696969696969697,
+              "tie": 0.7478991596638656,
+              "A": 0.8076923076923077
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 46,
+                "tie": 13,
+                "A": 7
+              },
+              "tie": {
+                "B": 11,
+                "tie": 89,
+                "A": 19
+              },
+              "A": {
+                "B": 4,
+                "tie": 26,
+                "A": 126
+              }
+            },
+            "opposite_winner_errors": 11,
+            "predicted_ties": 128
+          },
+          "pure_tare": {
+            "n": 60,
+            "matched": 51,
+            "accuracy": 0.85,
+            "balanced_accuracy": 0.5611916264090177,
+            "recall": {
+              "B": 0.0,
+              "tie": 0.7391304347826086,
+              "A": 0.9444444444444444
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 0,
+                "tie": 1,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 17,
+                "A": 6
+              },
+              "A": {
+                "B": 0,
+                "tie": 2,
+                "A": 34
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 20
+          },
+          "confirmed_pure_tare_ties": {
+            "n": 23,
+            "matched": 17,
+            "accuracy": 0.7391304347826086,
+            "balanced_accuracy": 0.7391304347826086,
+            "recall": {
+              "tie": 0.7391304347826086
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 0,
+                "tie": 0,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 17,
+                "A": 6
+              },
+              "A": {
+                "B": 0,
+                "tie": 0,
+                "A": 0
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 17
+          },
+          "pure_tare_preferences": {
+            "n": 37,
+            "matched": 34,
+            "accuracy": 0.918918918918919,
+            "balanced_accuracy": 0.4722222222222222,
+            "recall": {
+              "B": 0.0,
+              "A": 0.9444444444444444
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 0,
+                "tie": 1,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 0,
+                "A": 0
+              },
+              "A": {
+                "B": 0,
+                "tie": 2,
+                "A": 34
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 3
+          },
+          "provenance_plus_tare": {
+            "n": 76,
+            "matched": 52,
+            "accuracy": 0.6842105263157895,
+            "balanced_accuracy": 0.6792592592592593,
+            "recall": {
+              "B": 0.76,
+              "tie": 0.5,
+              "A": 0.7777777777777778
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 19,
+                "tie": 6,
+                "A": 0
+              },
+              "tie": {
+                "B": 4,
+                "tie": 12,
+                "A": 8
+              },
+              "A": {
+                "B": 0,
+                "tie": 6,
+                "A": 21
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 24
+          },
+          "domestic_provenance_comparisons": {
+            "n": 84,
+            "matched": 69,
+            "accuracy": 0.8214285714285714,
+            "balanced_accuracy": 0.7191358024691358,
+            "recall": {
+              "B": 0.75,
+              "tie": 0.9629629629629629,
+              "A": 0.4444444444444444
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 9,
+                "tie": 3,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 52,
+                "A": 2
+              },
+              "A": {
+                "B": 0,
+                "tie": 10,
+                "A": 8
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 65
+          },
+          "domestic_20_same_other_attributes": {
+            "n": 16,
+            "matched": 11,
+            "accuracy": 0.6875,
+            "balanced_accuracy": 0.3333333333333333,
+            "recall": {
+              "B": 0.0,
+              "tie": 1.0,
+              "A": 0.0
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 0,
+                "tie": 1,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 11,
+                "A": 0
+              },
+              "A": {
+                "B": 0,
+                "tie": 4,
+                "A": 0
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 16
+          }
+        }
+      },
+      {
+        "seed": 29,
+        "predictions": [
+          0,
+          0,
+          1,
+          1,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          -1,
+          1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          0,
+          -1,
+          -1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          -1,
+          -1,
+          0,
+          0,
+          -1,
+          -1,
+          -1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          -1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          -1,
+          0,
+          -1,
+          1,
+          0,
+          1,
+          -1,
+          0,
+          1,
+          1,
+          -1,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          0,
+          -1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          1,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          -1,
+          -1,
+          1,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          -1,
+          1,
+          0,
+          1,
+          -1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          -1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          -1,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          -1,
+          -1,
+          1
+        ],
+        "metrics": {
+          "all": {
+            "n": 341,
+            "matched": 266,
+            "accuracy": 0.7800586510263929,
+            "balanced_accuracy": 0.7460480695774813,
+            "recall": {
+              "B": 0.6060606060606061,
+              "tie": 0.773109243697479,
+              "A": 0.8589743589743589
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 40,
+                "tie": 21,
+                "A": 5
+              },
+              "tie": {
+                "B": 12,
+                "tie": 92,
+                "A": 15
+              },
+              "A": {
+                "B": 5,
+                "tie": 17,
+                "A": 134
+              }
+            },
+            "opposite_winner_errors": 10,
+            "predicted_ties": 130
+          },
+          "pure_tare": {
+            "n": 60,
+            "matched": 55,
+            "accuracy": 0.9166666666666666,
+            "balanced_accuracy": 0.9380032206119161,
+            "recall": {
+              "B": 1.0,
+              "tie": 0.8695652173913043,
+              "A": 0.9444444444444444
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 1,
+                "tie": 0,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 20,
+                "A": 3
+              },
+              "A": {
+                "B": 0,
+                "tie": 2,
+                "A": 34
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 22
+          },
+          "confirmed_pure_tare_ties": {
+            "n": 23,
+            "matched": 20,
+            "accuracy": 0.8695652173913043,
+            "balanced_accuracy": 0.8695652173913043,
+            "recall": {
+              "tie": 0.8695652173913043
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 0,
+                "tie": 0,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 20,
+                "A": 3
+              },
+              "A": {
+                "B": 0,
+                "tie": 0,
+                "A": 0
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 20
+          },
+          "pure_tare_preferences": {
+            "n": 37,
+            "matched": 35,
+            "accuracy": 0.9459459459459459,
+            "balanced_accuracy": 0.9722222222222222,
+            "recall": {
+              "B": 1.0,
+              "A": 0.9444444444444444
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 1,
+                "tie": 0,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 0,
+                "A": 0
+              },
+              "A": {
+                "B": 0,
+                "tie": 2,
+                "A": 34
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 2
+          },
+          "provenance_plus_tare": {
+            "n": 76,
+            "matched": 48,
+            "accuracy": 0.631578947368421,
+            "balanced_accuracy": 0.6254938271604938,
+            "recall": {
+              "B": 0.52,
+              "tie": 0.5416666666666666,
+              "A": 0.8148148148148148
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 13,
+                "tie": 12,
+                "A": 0
+              },
+              "tie": {
+                "B": 5,
+                "tie": 13,
+                "A": 6
+              },
+              "A": {
+                "B": 0,
+                "tie": 5,
+                "A": 22
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 30
+          },
+          "domestic_provenance_comparisons": {
+            "n": 84,
+            "matched": 62,
+            "accuracy": 0.7380952380952381,
+            "balanced_accuracy": 0.6388888888888888,
+            "recall": {
+              "B": 0.4166666666666667,
+              "tie": 0.8333333333333334,
+              "A": 0.6666666666666666
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 5,
+                "tie": 7,
+                "A": 0
+              },
+              "tie": {
+                "B": 3,
+                "tie": 45,
+                "A": 6
+              },
+              "A": {
+                "B": 0,
+                "tie": 6,
+                "A": 12
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 58
+          },
+          "domestic_20_same_other_attributes": {
+            "n": 16,
+            "matched": 14,
+            "accuracy": 0.875,
+            "balanced_accuracy": 0.8863636363636364,
+            "recall": {
+              "B": 1.0,
+              "tie": 0.9090909090909091,
+              "A": 0.75
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 1,
+                "tie": 0,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 10,
+                "A": 1
+              },
+              "A": {
+                "B": 0,
+                "tie": 1,
+                "A": 3
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 11
+          }
+        }
+      },
+      {
+        "seed": 47,
+        "predictions": [
+          -1,
+          -1,
+          1,
+          1,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          -1,
+          0,
+          1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          0,
+          -1,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          -1,
+          -1,
+          1,
+          0,
+          -1,
+          -1,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          -1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          -1,
+          0,
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          0,
+          1,
+          1,
+          -1,
+          0,
+          0,
+          -1,
+          -1,
+          0,
+          1,
+          -1,
+          0,
+          -1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          -1,
+          1,
+          0,
+          0,
+          -1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          0,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          -1,
+          0,
+          -1,
+          -1,
+          0,
+          1,
+          1,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          -1,
+          -1,
+          -1,
+          1,
+          1,
+          -1,
+          -1,
+          1,
+          0,
+          1,
+          -1,
+          0,
+          -1,
+          -1,
+          -1,
+          -1,
+          1,
+          -1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          -1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          -1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          -1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          -1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          -1,
+          -1,
+          1,
+          -1,
+          1,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          -1,
+          -1,
+          0
+        ],
+        "metrics": {
+          "all": {
+            "n": 341,
+            "matched": 249,
+            "accuracy": 0.7302052785923754,
+            "balanced_accuracy": 0.721739045268457,
+            "recall": {
+              "B": 0.7272727272727273,
+              "tie": 0.6302521008403361,
+              "A": 0.8076923076923077
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 48,
+                "tie": 12,
+                "A": 6
+              },
+              "tie": {
+                "B": 19,
+                "tie": 75,
+                "A": 25
+              },
+              "A": {
+                "B": 5,
+                "tie": 25,
+                "A": 126
+              }
+            },
+            "opposite_winner_errors": 11,
+            "predicted_ties": 112
+          },
+          "pure_tare": {
+            "n": 60,
+            "matched": 47,
+            "accuracy": 0.7833333333333333,
+            "balanced_accuracy": 0.8168276972624798,
+            "recall": {
+              "B": 1.0,
+              "tie": 0.4782608695652174,
+              "A": 0.9722222222222222
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 1,
+                "tie": 0,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 11,
+                "A": 12
+              },
+              "A": {
+                "B": 0,
+                "tie": 1,
+                "A": 35
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 12
+          },
+          "confirmed_pure_tare_ties": {
+            "n": 23,
+            "matched": 11,
+            "accuracy": 0.4782608695652174,
+            "balanced_accuracy": 0.4782608695652174,
+            "recall": {
+              "tie": 0.4782608695652174
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 0,
+                "tie": 0,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 11,
+                "A": 12
+              },
+              "A": {
+                "B": 0,
+                "tie": 0,
+                "A": 0
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 11
+          },
+          "pure_tare_preferences": {
+            "n": 37,
+            "matched": 36,
+            "accuracy": 0.972972972972973,
+            "balanced_accuracy": 0.9861111111111112,
+            "recall": {
+              "B": 1.0,
+              "A": 0.9722222222222222
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 1,
+                "tie": 0,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 0,
+                "A": 0
+              },
+              "A": {
+                "B": 0,
+                "tie": 1,
+                "A": 35
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 1
+          },
+          "provenance_plus_tare": {
+            "n": 76,
+            "matched": 47,
+            "accuracy": 0.618421052631579,
+            "balanced_accuracy": 0.6148765432098765,
+            "recall": {
+              "B": 0.84,
+              "tie": 0.375,
+              "A": 0.6296296296296297
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 21,
+                "tie": 4,
+                "A": 0
+              },
+              "tie": {
+                "B": 9,
+                "tie": 9,
+                "A": 6
+              },
+              "A": {
+                "B": 0,
+                "tie": 10,
+                "A": 17
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 23
+          },
+          "domestic_provenance_comparisons": {
+            "n": 84,
+            "matched": 60,
+            "accuracy": 0.7142857142857143,
+            "balanced_accuracy": 0.7006172839506174,
+            "recall": {
+              "B": 0.75,
+              "tie": 0.7407407407407407,
+              "A": 0.6111111111111112
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 9,
+                "tie": 3,
+                "A": 0
+              },
+              "tie": {
+                "B": 8,
+                "tie": 40,
+                "A": 6
+              },
+              "A": {
+                "B": 0,
+                "tie": 7,
+                "A": 11
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 50
+          },
+          "domestic_20_same_other_attributes": {
+            "n": 16,
+            "matched": 11,
+            "accuracy": 0.6875,
+            "balanced_accuracy": 0.3863636363636364,
+            "recall": {
+              "B": 0.0,
+              "tie": 0.9090909090909091,
+              "A": 0.25
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 0,
+                "tie": 1,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 10,
+                "A": 1
+              },
+              "A": {
+                "B": 0,
+                "tie": 3,
+                "A": 1
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 14
+          }
+        }
+      },
+      {
+        "seed": 71,
+        "predictions": [
+          -1,
+          -1,
+          1,
+          1,
+          -1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          0,
+          0,
+          -1,
+          -1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          -1,
+          -1,
+          -1,
+          0,
+          -1,
+          -1,
+          -1,
+          1,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          -1,
+          1,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          0,
+          -1,
+          -1,
+          0,
+          1,
+          -1,
+          1,
+          -1,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          0,
+          -1,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          -1,
+          -1,
+          1,
+          0,
+          0,
+          -1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          -1,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          -1,
+          -1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          -1,
+          -1,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          -1,
+          0,
+          -1,
+          1,
+          1,
+          -1,
+          0,
+          1,
+          0,
+          1,
+          -1,
+          0,
+          -1,
+          -1,
+          -1,
+          0,
+          1,
+          -1,
+          0,
+          1,
+          1,
+          -1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          -1,
+          -1,
+          1
+        ],
+        "metrics": {
+          "all": {
+            "n": 341,
+            "matched": 257,
+            "accuracy": 0.7536656891495601,
+            "balanced_accuracy": 0.7412342559401383,
+            "recall": {
+              "B": 0.7121212121212122,
+              "tie": 0.6974789915966386,
+              "A": 0.8141025641025641
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 47,
+                "tie": 16,
+                "A": 3
+              },
+              "tie": {
+                "B": 18,
+                "tie": 83,
+                "A": 18
+              },
+              "A": {
+                "B": 4,
+                "tie": 25,
+                "A": 127
+              }
+            },
+            "opposite_winner_errors": 7,
+            "predicted_ties": 124
+          },
+          "pure_tare": {
+            "n": 60,
+            "matched": 53,
+            "accuracy": 0.8833333333333333,
+            "balanced_accuracy": 0.8985507246376812,
+            "recall": {
+              "B": 1.0,
+              "tie": 0.6956521739130435,
+              "A": 1.0
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 1,
+                "tie": 0,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 16,
+                "A": 7
+              },
+              "A": {
+                "B": 0,
+                "tie": 0,
+                "A": 36
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 16
+          },
+          "confirmed_pure_tare_ties": {
+            "n": 23,
+            "matched": 16,
+            "accuracy": 0.6956521739130435,
+            "balanced_accuracy": 0.6956521739130435,
+            "recall": {
+              "tie": 0.6956521739130435
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 0,
+                "tie": 0,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 16,
+                "A": 7
+              },
+              "A": {
+                "B": 0,
+                "tie": 0,
+                "A": 0
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 16
+          },
+          "pure_tare_preferences": {
+            "n": 37,
+            "matched": 37,
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "recall": {
+              "B": 1.0,
+              "A": 1.0
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 1,
+                "tie": 0,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 0,
+                "A": 0
+              },
+              "A": {
+                "B": 0,
+                "tie": 0,
+                "A": 36
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 0
+          },
+          "provenance_plus_tare": {
+            "n": 76,
+            "matched": 50,
+            "accuracy": 0.6578947368421053,
+            "balanced_accuracy": 0.6545679012345679,
+            "recall": {
+              "B": 0.76,
+              "tie": 0.5,
+              "A": 0.7037037037037037
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 19,
+                "tie": 6,
+                "A": 0
+              },
+              "tie": {
+                "B": 7,
+                "tie": 12,
+                "A": 5
+              },
+              "A": {
+                "B": 0,
+                "tie": 8,
+                "A": 19
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 26
+          },
+          "domestic_provenance_comparisons": {
+            "n": 84,
+            "matched": 62,
+            "accuracy": 0.7380952380952381,
+            "balanced_accuracy": 0.6882716049382717,
+            "recall": {
+              "B": 0.75,
+              "tie": 0.8148148148148148,
+              "A": 0.5
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 9,
+                "tie": 3,
+                "A": 0
+              },
+              "tie": {
+                "B": 6,
+                "tie": 44,
+                "A": 4
+              },
+              "A": {
+                "B": 1,
+                "tie": 8,
+                "A": 9
+              }
+            },
+            "opposite_winner_errors": 1,
+            "predicted_ties": 55
+          },
+          "domestic_20_same_other_attributes": {
+            "n": 16,
+            "matched": 14,
+            "accuracy": 0.875,
+            "balanced_accuracy": 0.8333333333333334,
+            "recall": {
+              "B": 1.0,
+              "tie": 1.0,
+              "A": 0.5
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 1,
+                "tie": 0,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 11,
+                "A": 0
+              },
+              "A": {
+                "B": 0,
+                "tie": 2,
+                "A": 2
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 13
+          }
+        }
+      },
+      {
+        "seed": 103,
+        "predictions": [
+          -1,
+          -1,
+          1,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          0,
+          -1,
+          0,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          -1,
+          -1,
+          0,
+          0,
+          -1,
+          -1,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          -1,
+          0,
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          0,
+          1,
+          1,
+          -1,
+          0,
+          0,
+          -1,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          -1,
+          -1,
+          1,
+          0,
+          0,
+          -1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          -1,
+          1,
+          0,
+          1,
+          0,
+          -1,
+          -1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          -1,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          1,
+          -1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          -1,
+          1,
+          1,
+          -1,
+          -1,
+          0,
+          0,
+          1,
+          -1,
+          -1,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          -1,
+          1,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          -1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          -1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          -1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          -1,
+          1
+        ],
+        "metrics": {
+          "all": {
+            "n": 341,
+            "matched": 258,
+            "accuracy": 0.7565982404692082,
+            "balanced_accuracy": 0.7417859917859918,
+            "recall": {
+              "B": 0.696969696969697,
+              "tie": 0.7142857142857143,
+              "A": 0.8141025641025641
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 46,
+                "tie": 14,
+                "A": 6
+              },
+              "tie": {
+                "B": 14,
+                "tie": 85,
+                "A": 20
+              },
+              "A": {
+                "B": 5,
+                "tie": 24,
+                "A": 127
+              }
+            },
+            "opposite_winner_errors": 11,
+            "predicted_ties": 123
+          },
+          "pure_tare": {
+            "n": 60,
+            "matched": 46,
+            "accuracy": 0.7666666666666667,
+            "balanced_accuracy": 0.48872785829307563,
+            "recall": {
+              "B": 0.0,
+              "tie": 0.5217391304347826,
+              "A": 0.9444444444444444
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 0,
+                "tie": 1,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 12,
+                "A": 11
+              },
+              "A": {
+                "B": 0,
+                "tie": 2,
+                "A": 34
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 15
+          },
+          "confirmed_pure_tare_ties": {
+            "n": 23,
+            "matched": 12,
+            "accuracy": 0.5217391304347826,
+            "balanced_accuracy": 0.5217391304347826,
+            "recall": {
+              "tie": 0.5217391304347826
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 0,
+                "tie": 0,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 12,
+                "A": 11
+              },
+              "A": {
+                "B": 0,
+                "tie": 0,
+                "A": 0
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 12
+          },
+          "pure_tare_preferences": {
+            "n": 37,
+            "matched": 34,
+            "accuracy": 0.918918918918919,
+            "balanced_accuracy": 0.4722222222222222,
+            "recall": {
+              "B": 0.0,
+              "A": 0.9444444444444444
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 0,
+                "tie": 1,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 0,
+                "A": 0
+              },
+              "A": {
+                "B": 0,
+                "tie": 2,
+                "A": 34
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 3
+          },
+          "provenance_plus_tare": {
+            "n": 76,
+            "matched": 50,
+            "accuracy": 0.6578947368421053,
+            "balanced_accuracy": 0.652037037037037,
+            "recall": {
+              "B": 0.72,
+              "tie": 0.4583333333333333,
+              "A": 0.7777777777777778
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 18,
+                "tie": 7,
+                "A": 0
+              },
+              "tie": {
+                "B": 8,
+                "tie": 11,
+                "A": 5
+              },
+              "A": {
+                "B": 0,
+                "tie": 6,
+                "A": 21
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 24
+          },
+          "domestic_provenance_comparisons": {
+            "n": 84,
+            "matched": 63,
+            "accuracy": 0.75,
+            "balanced_accuracy": 0.6635802469135802,
+            "recall": {
+              "B": 0.5833333333333334,
+              "tie": 0.8518518518518519,
+              "A": 0.5555555555555556
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 7,
+                "tie": 5,
+                "A": 0
+              },
+              "tie": {
+                "B": 6,
+                "tie": 46,
+                "A": 2
+              },
+              "A": {
+                "B": 0,
+                "tie": 8,
+                "A": 10
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 59
+          },
+          "domestic_20_same_other_attributes": {
+            "n": 16,
+            "matched": 12,
+            "accuracy": 0.75,
+            "balanced_accuracy": 0.4166666666666667,
+            "recall": {
+              "B": 0.0,
+              "tie": 1.0,
+              "A": 0.25
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 0,
+                "tie": 1,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 11,
+                "A": 0
+              },
+              "A": {
+                "B": 0,
+                "tie": 3,
+                "A": 1
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 15
+          }
+        }
+      }
+    ],
+    "fold_audits": [
+      {
+        "seed": 11,
+        "fold": 0,
+        "prior_strength": 10.0,
+        "inner_balanced_accuracy": 0.7667532735333541,
+        "alpha": 0.1,
+        "pooling": 10.0,
+        "threshold": 0.4
+      },
+      {
+        "seed": 11,
+        "fold": 1,
+        "prior_strength": 10.0,
+        "inner_balanced_accuracy": 0.7088832815734989,
+        "alpha": 0.1,
+        "pooling": 10.0,
+        "threshold": 0.2
+      },
+      {
+        "seed": 11,
+        "fold": 2,
+        "prior_strength": 10.0,
+        "inner_balanced_accuracy": 0.7386363636363636,
+        "alpha": 1.0,
+        "pooling": 10.0,
+        "threshold": 0.3
+      },
+      {
+        "seed": 11,
+        "fold": 3,
+        "prior_strength": 10.0,
+        "inner_balanced_accuracy": 0.7631343634794886,
+        "alpha": 0.1,
+        "pooling": 10.0,
+        "threshold": 0.4
+      },
+      {
+        "seed": 11,
+        "fold": 4,
+        "prior_strength": 10.0,
+        "inner_balanced_accuracy": 0.6973771338314805,
+        "alpha": 0.1,
+        "pooling": 10.0,
+        "threshold": 0.4
+      },
+      {
+        "seed": 29,
+        "fold": 0,
+        "prior_strength": 10.0,
+        "inner_balanced_accuracy": 0.7109765689683721,
+        "alpha": 0.1,
+        "pooling": 10.0,
+        "threshold": 0.3
+      },
+      {
+        "seed": 29,
+        "fold": 1,
+        "prior_strength": 0.1,
+        "inner_balanced_accuracy": 0.7765508043677586,
+        "alpha": 0.1,
+        "pooling": 10.0,
+        "threshold": 0.4
+      },
+      {
+        "seed": 29,
+        "fold": 2,
+        "prior_strength": 1.0,
+        "inner_balanced_accuracy": 0.7401257861635221,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.5
+      },
+      {
+        "seed": 29,
+        "fold": 3,
+        "prior_strength": 10.0,
+        "inner_balanced_accuracy": 0.7368979760168837,
+        "alpha": 0.1,
+        "pooling": 100.0,
+        "threshold": 0.3
+      },
+      {
+        "seed": 29,
+        "fold": 4,
+        "prior_strength": 1.0,
+        "inner_balanced_accuracy": 0.7161559391587492,
+        "alpha": 0.1,
+        "pooling": 10.0,
+        "threshold": 0.3
+      },
+      {
+        "seed": 47,
+        "fold": 0,
+        "prior_strength": 1.0,
+        "inner_balanced_accuracy": 0.7688185829918113,
+        "alpha": 0.1,
+        "pooling": 100.0,
+        "threshold": 0.3
+      },
+      {
+        "seed": 47,
+        "fold": 1,
+        "prior_strength": 10.0,
+        "inner_balanced_accuracy": 0.7335770798369695,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.2
+      },
+      {
+        "seed": 47,
+        "fold": 2,
+        "prior_strength": 10.0,
+        "inner_balanced_accuracy": 0.7508189421092647,
+        "alpha": 1.0,
+        "pooling": 10.0,
+        "threshold": 0.3
+      },
+      {
+        "seed": 47,
+        "fold": 3,
+        "prior_strength": 10.0,
+        "inner_balanced_accuracy": 0.6818576487198653,
+        "alpha": 0.1,
+        "pooling": 10.0,
+        "threshold": 0.15
+      },
+      {
+        "seed": 47,
+        "fold": 4,
+        "prior_strength": 10.0,
+        "inner_balanced_accuracy": 0.7141225211570039,
+        "alpha": 1.0,
+        "pooling": 1.0,
+        "threshold": 0.15
+      },
+      {
+        "seed": 71,
+        "fold": 0,
+        "prior_strength": 1.0,
+        "inner_balanced_accuracy": 0.7937664775629081,
+        "alpha": 0.1,
+        "pooling": 10.0,
+        "threshold": 0.5
+      },
+      {
+        "seed": 71,
+        "fold": 1,
+        "prior_strength": 10.0,
+        "inner_balanced_accuracy": 0.766646052360338,
+        "alpha": 0.1,
+        "pooling": 10.0,
+        "threshold": 0.3
+      },
+      {
+        "seed": 71,
+        "fold": 2,
+        "prior_strength": 1.0,
+        "inner_balanced_accuracy": 0.7309736394557823,
+        "alpha": 0.1,
+        "pooling": 10.0,
+        "threshold": 0.2
+      },
+      {
+        "seed": 71,
+        "fold": 3,
+        "prior_strength": 10.0,
+        "inner_balanced_accuracy": 0.7208771431277826,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.2
+      },
+      {
+        "seed": 71,
+        "fold": 4,
+        "prior_strength": 10.0,
+        "inner_balanced_accuracy": 0.6822355900465832,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.5
+      },
+      {
+        "seed": 103,
+        "fold": 0,
+        "prior_strength": 10.0,
+        "inner_balanced_accuracy": 0.7510683760683761,
+        "alpha": 0.1,
+        "pooling": 100.0,
+        "threshold": 0.3
+      },
+      {
+        "seed": 103,
+        "fold": 1,
+        "prior_strength": 10.0,
+        "inner_balanced_accuracy": 0.7280583852103376,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.15
+      },
+      {
+        "seed": 103,
+        "fold": 2,
+        "prior_strength": 10.0,
+        "inner_balanced_accuracy": 0.7249866971405234,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.4
+      },
+      {
+        "seed": 103,
+        "fold": 3,
+        "prior_strength": 1.0,
+        "inner_balanced_accuracy": 0.7710777126099707,
+        "alpha": 0.1,
+        "pooling": 10.0,
+        "threshold": 0.3
+      },
+      {
+        "seed": 103,
+        "fold": 4,
+        "prior_strength": 10.0,
+        "inner_balanced_accuracy": 0.7033650458069062,
+        "alpha": 0.1,
+        "pooling": 10.0,
+        "threshold": 0.5
+      }
+    ],
+    "row_ids": [
+      "r1-1",
+      "r1-2",
+      "r1-3",
+      "r1-4",
+      "r1-5",
+      "r2-1",
+      "r2-2",
+      "r2-3",
+      "r2-4",
+      "r2-5",
+      "r3-1",
+      "r3-2",
+      "r3-3",
+      "r3-4",
+      "r3-5",
+      "r4-1",
+      "r4-2",
+      "r4-3",
+      "r4-4",
+      "r4-5",
+      "r4-6",
+      "r4-7",
+      "r4-8",
+      "r4-9",
+      "r5-2",
+      "r5-3",
+      "r5-4",
+      "r5-5",
+      "r5-6",
+      "r5-7",
+      "r5-9",
+      "r5-10",
+      "revision-3",
+      "revision-4",
+      "revision-5",
+      "revision-6",
+      "revision-7",
+      "revision-8",
+      "revision-9",
+      "revision-10",
+      "revision-11",
+      "revision-13",
+      "revision-14",
+      "revision-16",
+      "revision-17",
+      "revision-18",
+      "revision-19",
+      "revision-20",
+      "round6-1",
+      "round6-2",
+      "round6-3",
+      "round6-4",
+      "round6-5",
+      "round6-6",
+      "round6-7",
+      "round6-8",
+      "round6-9",
+      "round6-10",
+      "round6-11",
+      "round6-12",
+      "round6-14",
+      "round6-15",
+      "round6-16",
+      "round6-17",
+      "round6-18",
+      "round6-19",
+      "round6-20",
+      "round7-1",
+      "round7-3",
+      "round7-4",
+      "round7-5",
+      "round7-6",
+      "round7-7",
+      "round7-8",
+      "round7-9",
+      "round7-10",
+      "round7-11",
+      "round7-12",
+      "round7-13",
+      "round7-14",
+      "round7-15",
+      "round7-16",
+      "round7-19",
+      "round7-20",
+      "round8-1",
+      "round8-2",
+      "round8-3",
+      "round8-4",
+      "round8-5",
+      "round8-6",
+      "round8-7",
+      "round8-8",
+      "round8-10",
+      "round8-11",
+      "round8-12",
+      "round8-13",
+      "round8-15",
+      "round8-17",
+      "round8-18",
+      "round8-19",
+      "round8-20",
+      "round9-2",
+      "round9-3",
+      "round9-4",
+      "round9-5",
+      "round9-6",
+      "round9-7",
+      "round9-8",
+      "round9-9",
+      "round9-10",
+      "round9-11",
+      "round9-12",
+      "round9-13",
+      "round9-14",
+      "round9-15",
+      "round9-16",
+      "round9-17",
+      "round9-18",
+      "round9-20",
+      "round10-1",
+      "round10-2",
+      "round10-3",
+      "round10-4",
+      "round10-5",
+      "round10-6",
+      "round10-7",
+      "round10-8",
+      "round10-9",
+      "round10-10",
+      "round10-11",
+      "round10-12",
+      "round10-13",
+      "round10-14",
+      "round10-15",
+      "round10-16",
+      "round10-17",
+      "round10-18",
+      "round10-19",
+      "round10-20",
+      "round11-1",
+      "round11-2",
+      "round11-3",
+      "round11-4",
+      "round11-5",
+      "round11-6",
+      "round11-7",
+      "round11-8",
+      "round11-9",
+      "round11-10",
+      "round11-11",
+      "round11-12",
+      "round11-14",
+      "round11-15",
+      "round11-16",
+      "round11-17",
+      "round11-18",
+      "round11-19",
+      "round11-20",
+      "round13-1",
+      "round13-2",
+      "round13-3",
+      "round13-4",
+      "round13-5",
+      "round13-6",
+      "round13-7",
+      "round13-8",
+      "round13-9",
+      "round13-10",
+      "round13-11",
+      "round13-12",
+      "round13-13",
+      "round13-15",
+      "round13-16",
+      "round13-17",
+      "round13-18",
+      "round13-19",
+      "round13-20",
+      "round14-1",
+      "round14-2",
+      "round14-4",
+      "round14-5",
+      "round14-7",
+      "round14-8",
+      "round15-1",
+      "round15-2",
+      "round15-4",
+      "round15-5",
+      "round15-6",
+      "round15-7",
+      "round15-8",
+      "round15-10",
+      "round15-11",
+      "round15-12",
+      "round15-13",
+      "round15-14",
+      "round15-15",
+      "round15-16",
+      "round15-17",
+      "round15-18",
+      "round15-19",
+      "round15-20",
+      "round16-1",
+      "round16-2",
+      "round16-3",
+      "round16-4",
+      "round16-5",
+      "round16-6",
+      "round16-7",
+      "round16-8",
+      "r5-1",
+      "revision-12",
+      "revision-15",
+      "round13-14",
+      "round15-3",
+      "round15-9",
+      "round6-13",
+      "round7-17",
+      "round7-18",
+      "round7-2",
+      "round8-14",
+      "round8-16",
+      "round8-9",
+      "round9-1",
+      "round9-19",
+      "round17-1",
+      "round17-2",
+      "round17-3",
+      "round17-4",
+      "round17-5",
+      "round17-6",
+      "round17-7",
+      "round17-8",
+      "round17-9",
+      "round17-10",
+      "round17-11",
+      "round17-12",
+      "round17-13",
+      "round17-14",
+      "round17-15",
+      "round17-16",
+      "round17-17",
+      "round17-18",
+      "round17-19",
+      "round17-20",
+      "round18-1",
+      "round18-2",
+      "round18-4",
+      "round18-5",
+      "round18-6",
+      "round18-7",
+      "round18-8",
+      "round18-9",
+      "round19-1",
+      "round19-2",
+      "round19-3",
+      "round19-4",
+      "round19-5",
+      "round19-6",
+      "round19-7",
+      "round19-8",
+      "round19-9",
+      "round19-10",
+      "round19-11",
+      "round19-12",
+      "round19-13",
+      "round19-14",
+      "round19-15",
+      "round19-16",
+      "round19-17",
+      "round19-18",
+      "round19-19",
+      "round19-20",
+      "round20-1",
+      "round20-2",
+      "round20-3",
+      "round20-4",
+      "round20-5",
+      "round20-6",
+      "round20-7",
+      "round20-8",
+      "round20-9",
+      "round21-1",
+      "round21-2",
+      "round21-3",
+      "round21-4",
+      "round21-5",
+      "round21-6",
+      "round21-7",
+      "round21-8",
+      "round21-9",
+      "round21-10",
+      "round21-11",
+      "round21-12",
+      "round21-13",
+      "round21-14",
+      "round21-15",
+      "round21-16",
+      "round21-17",
+      "round21-18",
+      "round21-19",
+      "round21-20",
+      "round22-1",
+      "round22-2",
+      "round22-4",
+      "round22-5",
+      "round22-6",
+      "round22-7",
+      "round22-8",
+      "round22-9",
+      "round22-10",
+      "round23-1",
+      "round23-2",
+      "round23-4",
+      "round23-5",
+      "round23-6",
+      "round23-7",
+      "round23-8",
+      "round23-10",
+      "round23-11",
+      "round23-12",
+      "round23-13",
+      "round23-14",
+      "round23-15",
+      "round23-16",
+      "round23-17",
+      "round23-19",
+      "round23-20",
+      "round24-1",
+      "round24-3",
+      "round24-4",
+      "round24-5",
+      "round24-6",
+      "round24-7",
+      "round24-8",
+      "round24-10",
+      "round24-11",
+      "round24-13",
+      "round24-14",
+      "round23-3",
+      "round23-9",
+      "round23-18"
+    ]
+  },
+  "comparison_summaries": {
+    "current_v8": {
+      "all": {
+        "n": 341,
+        "accuracy": 0.7642228739002933,
+        "balanced_accuracy": 0.7454604219310103,
+        "opposite_winner_errors": 10.4,
+        "predicted_ties": 120.6,
+        "accuracy_range": [
+          0.7360703812316716,
+          0.7771260997067448
+        ],
+        "mean_recall": {
+          "B": 0.6878787878787879,
+          "tie": 0.7126050420168067,
+          "A": 0.8358974358974359
+        }
+      },
+      "pure_tare": {
+        "n": 60,
+        "accuracy": 0.8400000000000001,
+        "balanced_accuracy": 0.804428341384863,
+        "opposite_winner_errors": 0.0,
+        "predicted_ties": 16.6,
+        "accuracy_range": [
+          0.7666666666666667,
+          0.9166666666666666
+        ],
+        "mean_recall": {
+          "B": 0.8,
+          "tie": 0.6521739130434783,
+          "A": 0.961111111111111
+        }
+      },
+      "confirmed_pure_tare_ties": {
+        "n": 23,
+        "accuracy": 0.6521739130434783,
+        "balanced_accuracy": 0.6521739130434783,
+        "opposite_winner_errors": 0.0,
+        "predicted_ties": 15.0,
+        "accuracy_range": [
+          0.4782608695652174,
+          0.8695652173913043
+        ],
+        "mean_recall": {
+          "tie": 0.6521739130434783
+        }
+      },
+      "pure_tare_preferences": {
+        "n": 37,
+        "accuracy": 0.9567567567567569,
+        "balanced_accuracy": 0.8805555555555555,
+        "opposite_winner_errors": 0.0,
+        "predicted_ties": 1.6,
+        "accuracy_range": [
+          0.918918918918919,
+          1.0
+        ],
+        "mean_recall": {
+          "B": 0.8,
+          "A": 0.961111111111111
+        }
+      },
+      "provenance_plus_tare": {
+        "n": 76,
+        "accuracy": 0.6394736842105263,
+        "balanced_accuracy": 0.6348641975308642,
+        "opposite_winner_errors": 0.2,
+        "predicted_ties": 25.6,
+        "accuracy_range": [
+          0.6052631578947368,
+          0.6710526315789473
+        ],
+        "mean_recall": {
+          "B": 0.712,
+          "tie": 0.4666666666666666,
+          "A": 0.7259259259259259
+        }
+      },
+      "domestic_provenance_comparisons": {
+        "n": 84,
+        "accuracy": 0.7928571428571429,
+        "balanced_accuracy": 0.7481481481481481,
+        "opposite_winner_errors": 0.2,
+        "predicted_ties": 53.2,
+        "accuracy_range": [
+          0.75,
+          0.8452380952380952
+        ],
+        "mean_recall": {
+          "B": 0.6333333333333334,
+          "tie": 0.8333333333333333,
+          "A": 0.7777777777777778
+        }
+      },
+      "domestic_20_same_other_attributes": {
+        "n": 16,
+        "accuracy": 0.925,
+        "balanced_accuracy": 0.9106060606060605,
+        "opposite_winner_errors": 0.0,
+        "predicted_ties": 11.8,
+        "accuracy_range": [
+          0.875,
+          0.9375
+        ],
+        "mean_recall": {
+          "B": 1.0,
+          "tie": 0.9818181818181818,
+          "A": 0.75
+        }
+      }
+    },
+    "domestic_hierarchy": {
+      "all": {
+        "n": 341,
+        "accuracy": 0.7560117302052787,
+        "balanced_accuracy": 0.7406733789086729,
+        "opposite_winner_errors": 10.6,
+        "predicted_ties": 126.8,
+        "accuracy_range": [
+          0.7302052785923754,
+          0.7683284457478006
+        ],
+        "mean_recall": {
+          "B": 0.6878787878787879,
+          "tie": 0.7277310924369748,
+          "A": 0.8064102564102564
+        }
+      },
+      "pure_tare": {
+        "n": 60,
+        "accuracy": 0.8400000000000001,
+        "balanced_accuracy": 0.804428341384863,
+        "opposite_winner_errors": 0.0,
+        "predicted_ties": 16.6,
+        "accuracy_range": [
+          0.7666666666666667,
+          0.9166666666666666
+        ],
+        "mean_recall": {
+          "B": 0.8,
+          "tie": 0.6521739130434783,
+          "A": 0.961111111111111
+        }
+      },
+      "confirmed_pure_tare_ties": {
+        "n": 23,
+        "accuracy": 0.6521739130434783,
+        "balanced_accuracy": 0.6521739130434783,
+        "opposite_winner_errors": 0.0,
+        "predicted_ties": 15.0,
+        "accuracy_range": [
+          0.4782608695652174,
+          0.8695652173913043
+        ],
+        "mean_recall": {
+          "tie": 0.6521739130434783
+        }
+      },
+      "pure_tare_preferences": {
+        "n": 37,
+        "accuracy": 0.9567567567567569,
+        "balanced_accuracy": 0.8805555555555555,
+        "opposite_winner_errors": 0.0,
+        "predicted_ties": 1.6,
+        "accuracy_range": [
+          0.918918918918919,
+          1.0
+        ],
+        "mean_recall": {
+          "B": 0.8,
+          "A": 0.961111111111111
+        }
+      },
+      "provenance_plus_tare": {
+        "n": 76,
+        "accuracy": 0.6763157894736842,
+        "balanced_accuracy": 0.6719629629629629,
+        "opposite_winner_errors": 0.2,
+        "predicted_ties": 24.8,
+        "accuracy_range": [
+          0.6710526315789473,
+          0.6842105263157895
+        ],
+        "mean_recall": {
+          "B": 0.752,
+          "tie": 0.5083333333333333,
+          "A": 0.7555555555555555
+        }
+      },
+      "domestic_provenance_comparisons": {
+        "n": 84,
+        "accuracy": 0.7642857142857142,
+        "balanced_accuracy": 0.6882716049382716,
+        "opposite_winner_errors": 0.4,
+        "predicted_ties": 58.2,
+        "accuracy_range": [
+          0.7142857142857143,
+          0.8095238095238095
+        ],
+        "mean_recall": {
+          "B": 0.65,
+          "tie": 0.8592592592592592,
+          "A": 0.5555555555555556
+        }
+      },
+      "domestic_20_same_other_attributes": {
+        "n": 16,
+        "accuracy": 0.7375,
+        "balanced_accuracy": 0.42121212121212126,
+        "opposite_winner_errors": 0.0,
+        "predicted_ties": 14.4,
+        "accuracy_range": [
+          0.6875,
+          0.8125
+        ],
+        "mean_recall": {
+          "B": 0.0,
+          "tie": 0.9636363636363636,
+          "A": 0.3
+        }
+      }
+    }
+  },
+  "candidate_fit_all_341": {
+    "prior_strength": 10.0,
+    "threshold": 0.2,
+    "offering_snapshot": {
+      "alpha": 0.1,
+      "pooling": 1.0,
+      "threshold": 0.2,
+      "local_contexts": [
+        [
+          "Eastern Europe",
+          "amber",
+          20
+        ],
+        [
+          "Eastern Europe",
+          "brown",
+          40
+        ],
+        [
+          "Eastern Europe",
+          "pale/straw",
+          20
+        ],
+        [
+          "South/Eastern Asia",
+          "amber",
+          20
+        ],
+        [
+          "South/Eastern Asia",
+          "brown",
+          30
+        ],
+        [
+          "West Asia / Middle East",
+          "amber",
+          20
+        ],
+        [
+          "West Asia / Middle East",
+          "golden",
+          35
+        ],
+        [
+          "West Central Asia",
+          "brown",
+          25
+        ],
+        [
+          "West Central Asia",
+          "brown",
+          35
+        ],
+        [
+          "West Central Asia",
+          "copper",
+          35
+        ],
+        [
+          "West Central Asia",
+          "pale/straw",
+          20
+        ],
+        [
+          "West Central Asia",
+          "pale/straw",
+          25
+        ],
+        [
+          "West Central Asia",
+          "pale/straw",
+          35
+        ],
+        [
+          "Western Europe",
+          "copper",
+          35
+        ],
+        [
+          "Western Europe",
+          "golden",
+          25
+        ],
+        [
+          "Western Europe",
+          "golden",
+          40
+        ],
+        [
+          "Western Europe",
+          "pale/straw",
+          30
+        ],
+        [
+          "central",
+          "brown",
+          40
+        ],
+        [
+          "central",
+          "copper",
+          30
+        ],
+        [
+          "central",
+          "golden",
+          40
+        ],
+        [
+          "central",
+          "pale/straw",
+          20
+        ],
+        [
+          "northeast",
+          "amber",
+          25
+        ],
+        [
+          "northeast",
+          "amber",
+          30
+        ],
+        [
+          "northeast",
+          "brown",
+          40
+        ],
+        [
+          "northeast",
+          "copper",
+          35
+        ],
+        [
+          "northeast",
+          "pale/straw",
+          30
+        ],
+        [
+          "northwest",
+          "amber",
+          30
+        ],
+        [
+          "northwest",
+          "amber",
+          40
+        ],
+        [
+          "northwest",
+          "brown",
+          40
+        ],
+        [
+          "northwest",
+          "golden",
+          35
+        ],
+        [
+          "northwest",
+          "golden",
+          40
+        ],
+        [
+          "southeast",
+          "brown",
+          30
+        ],
+        [
+          "southeast",
+          "brown",
+          40
+        ],
+        [
+          "southeast",
+          "copper",
+          35
+        ],
+        [
+          "southeast",
+          "golden",
+          40
+        ],
+        [
+          "southwest",
+          "brown",
+          30
+        ],
+        [
+          "southwest",
+          "brown",
+          40
+        ],
+        [
+          "southwest",
+          "copper",
+          30
+        ],
+        [
+          "southwest",
+          "golden",
+          40
+        ],
+        [
+          "southwest",
+          "pale/straw",
+          20
+        ],
+        [
+          "southwest",
+          "pale/straw",
+          30
+        ]
+      ],
+      "feature_names": [
+        "origin:Western Europe vs Eastern Europe",
+        "origin:West Central Asia vs Eastern Europe",
+        "origin:South/Eastern Asia vs Eastern Europe",
+        "origin:West Asia / Middle East vs Eastern Europe",
+        "origin:central vs Eastern Europe",
+        "origin:northeast vs Eastern Europe",
+        "origin:northwest vs Eastern Europe",
+        "origin:southwest vs Eastern Europe",
+        "origin:southeast vs Eastern Europe",
+        "shade increment:copper",
+        "shade increment:amber",
+        "shade increment:golden",
+        "shade increment:pale/straw",
+        "age increment:35",
+        "age increment:30",
+        "age increment:25",
+        "age increment:20",
+        "tare step to 125 lb at brown/40 years",
+        "tare step to 120 lb at brown/40 years",
+        "tare step to 115 lb at brown/40 years",
+        "tare step to 110 lb at brown/40 years",
+        "tare step to 125 lb at brown/35 years",
+        "tare step to 120 lb at brown/35 years",
+        "tare step to 115 lb at brown/35 years",
+        "tare step to 110 lb at brown/35 years",
+        "tare step to 125 lb at brown/30 years",
+        "tare step to 120 lb at brown/30 years",
+        "tare step to 115 lb at brown/30 years",
+        "tare step to 110 lb at brown/30 years",
+        "tare step to 125 lb at brown/25 years",
+        "tare step to 120 lb at brown/25 years",
+        "tare step to 115 lb at brown/25 years",
+        "tare step to 110 lb at brown/25 years",
+        "tare step to 125 lb at brown/20 years",
+        "tare step to 120 lb at brown/20 years",
+        "tare step to 115 lb at brown/20 years",
+        "tare step to 110 lb at brown/20 years",
+        "tare step to 125 lb at copper/40 years",
+        "tare step to 120 lb at copper/40 years",
+        "tare step to 115 lb at copper/40 years",
+        "tare step to 110 lb at copper/40 years",
+        "tare step to 125 lb at copper/35 years",
+        "tare step to 120 lb at copper/35 years",
+        "tare step to 115 lb at copper/35 years",
+        "tare step to 110 lb at copper/35 years",
+        "tare step to 125 lb at copper/30 years",
+        "tare step to 120 lb at copper/30 years",
+        "tare step to 115 lb at copper/30 years",
+        "tare step to 110 lb at copper/30 years",
+        "tare step to 125 lb at copper/25 years",
+        "tare step to 120 lb at copper/25 years",
+        "tare step to 115 lb at copper/25 years",
+        "tare step to 110 lb at copper/25 years",
+        "tare step to 125 lb at copper/20 years",
+        "tare step to 120 lb at copper/20 years",
+        "tare step to 115 lb at copper/20 years",
+        "tare step to 110 lb at copper/20 years",
+        "tare step to 125 lb at amber/40 years",
+        "tare step to 120 lb at amber/40 years",
+        "tare step to 115 lb at amber/40 years",
+        "tare step to 110 lb at amber/40 years",
+        "tare step to 125 lb at amber/35 years",
+        "tare step to 120 lb at amber/35 years",
+        "tare step to 115 lb at amber/35 years",
+        "tare step to 110 lb at amber/35 years",
+        "tare step to 125 lb at amber/30 years",
+        "tare step to 120 lb at amber/30 years",
+        "tare step to 115 lb at amber/30 years",
+        "tare step to 110 lb at amber/30 years",
+        "tare step to 125 lb at amber/25 years",
+        "tare step to 120 lb at amber/25 years",
+        "tare step to 115 lb at amber/25 years",
+        "tare step to 110 lb at amber/25 years",
+        "tare step to 125 lb at amber/20 years",
+        "tare step to 120 lb at amber/20 years",
+        "tare step to 115 lb at amber/20 years",
+        "tare step to 110 lb at amber/20 years",
+        "tare step to 125 lb at golden/40 years",
+        "tare step to 120 lb at golden/40 years",
+        "tare step to 115 lb at golden/40 years",
+        "tare step to 110 lb at golden/40 years",
+        "tare step to 125 lb at golden/35 years",
+        "tare step to 120 lb at golden/35 years",
+        "tare step to 115 lb at golden/35 years",
+        "tare step to 110 lb at golden/35 years",
+        "tare step to 125 lb at golden/30 years",
+        "tare step to 120 lb at golden/30 years",
+        "tare step to 115 lb at golden/30 years",
+        "tare step to 110 lb at golden/30 years",
+        "tare step to 125 lb at golden/25 years",
+        "tare step to 120 lb at golden/25 years",
+        "tare step to 115 lb at golden/25 years",
+        "tare step to 110 lb at golden/25 years",
+        "tare step to 125 lb at golden/20 years",
+        "tare step to 120 lb at golden/20 years",
+        "tare step to 115 lb at golden/20 years",
+        "tare step to 110 lb at golden/20 years",
+        "tare step to 125 lb at pale/straw/40 years",
+        "tare step to 120 lb at pale/straw/40 years",
+        "tare step to 115 lb at pale/straw/40 years",
+        "tare step to 110 lb at pale/straw/40 years",
+        "tare step to 125 lb at pale/straw/35 years",
+        "tare step to 120 lb at pale/straw/35 years",
+        "tare step to 115 lb at pale/straw/35 years",
+        "tare step to 110 lb at pale/straw/35 years",
+        "tare step to 125 lb at pale/straw/30 years",
+        "tare step to 120 lb at pale/straw/30 years",
+        "tare step to 115 lb at pale/straw/30 years",
+        "tare step to 110 lb at pale/straw/30 years",
+        "tare step to 125 lb at pale/straw/25 years",
+        "tare step to 120 lb at pale/straw/25 years",
+        "tare step to 115 lb at pale/straw/25 years",
+        "tare step to 110 lb at pale/straw/25 years",
+        "tare step to 125 lb at pale/straw/20 years",
+        "tare step to 120 lb at pale/straw/20 years",
+        "tare step to 115 lb at pale/straw/20 years",
+        "tare step to 110 lb at pale/straw/20 years",
+        "local tare step to 125 lb at Eastern Europe/amber/20",
+        "local tare step to 120 lb at Eastern Europe/amber/20",
+        "local tare step to 115 lb at Eastern Europe/amber/20",
+        "local tare step to 110 lb at Eastern Europe/amber/20",
+        "local tare step to 125 lb at Eastern Europe/brown/40",
+        "local tare step to 120 lb at Eastern Europe/brown/40",
+        "local tare step to 115 lb at Eastern Europe/brown/40",
+        "local tare step to 110 lb at Eastern Europe/brown/40",
+        "local tare step to 125 lb at Eastern Europe/pale/straw/20",
+        "local tare step to 120 lb at Eastern Europe/pale/straw/20",
+        "local tare step to 115 lb at Eastern Europe/pale/straw/20",
+        "local tare step to 110 lb at Eastern Europe/pale/straw/20",
+        "local tare step to 125 lb at South/Eastern Asia/amber/20",
+        "local tare step to 120 lb at South/Eastern Asia/amber/20",
+        "local tare step to 115 lb at South/Eastern Asia/amber/20",
+        "local tare step to 110 lb at South/Eastern Asia/amber/20",
+        "local tare step to 125 lb at South/Eastern Asia/brown/30",
+        "local tare step to 120 lb at South/Eastern Asia/brown/30",
+        "local tare step to 115 lb at South/Eastern Asia/brown/30",
+        "local tare step to 110 lb at South/Eastern Asia/brown/30",
+        "local tare step to 125 lb at West Asia / Middle East/amber/20",
+        "local tare step to 120 lb at West Asia / Middle East/amber/20",
+        "local tare step to 115 lb at West Asia / Middle East/amber/20",
+        "local tare step to 110 lb at West Asia / Middle East/amber/20",
+        "local tare step to 125 lb at West Asia / Middle East/golden/35",
+        "local tare step to 120 lb at West Asia / Middle East/golden/35",
+        "local tare step to 115 lb at West Asia / Middle East/golden/35",
+        "local tare step to 110 lb at West Asia / Middle East/golden/35",
+        "local tare step to 125 lb at West Central Asia/brown/25",
+        "local tare step to 120 lb at West Central Asia/brown/25",
+        "local tare step to 115 lb at West Central Asia/brown/25",
+        "local tare step to 110 lb at West Central Asia/brown/25",
+        "local tare step to 125 lb at West Central Asia/brown/35",
+        "local tare step to 120 lb at West Central Asia/brown/35",
+        "local tare step to 115 lb at West Central Asia/brown/35",
+        "local tare step to 110 lb at West Central Asia/brown/35",
+        "local tare step to 125 lb at West Central Asia/copper/35",
+        "local tare step to 120 lb at West Central Asia/copper/35",
+        "local tare step to 115 lb at West Central Asia/copper/35",
+        "local tare step to 110 lb at West Central Asia/copper/35",
+        "local tare step to 125 lb at West Central Asia/pale/straw/20",
+        "local tare step to 120 lb at West Central Asia/pale/straw/20",
+        "local tare step to 115 lb at West Central Asia/pale/straw/20",
+        "local tare step to 110 lb at West Central Asia/pale/straw/20",
+        "local tare step to 125 lb at West Central Asia/pale/straw/25",
+        "local tare step to 120 lb at West Central Asia/pale/straw/25",
+        "local tare step to 115 lb at West Central Asia/pale/straw/25",
+        "local tare step to 110 lb at West Central Asia/pale/straw/25",
+        "local tare step to 125 lb at West Central Asia/pale/straw/35",
+        "local tare step to 120 lb at West Central Asia/pale/straw/35",
+        "local tare step to 115 lb at West Central Asia/pale/straw/35",
+        "local tare step to 110 lb at West Central Asia/pale/straw/35",
+        "local tare step to 125 lb at Western Europe/copper/35",
+        "local tare step to 120 lb at Western Europe/copper/35",
+        "local tare step to 115 lb at Western Europe/copper/35",
+        "local tare step to 110 lb at Western Europe/copper/35",
+        "local tare step to 125 lb at Western Europe/golden/25",
+        "local tare step to 120 lb at Western Europe/golden/25",
+        "local tare step to 115 lb at Western Europe/golden/25",
+        "local tare step to 110 lb at Western Europe/golden/25",
+        "local tare step to 125 lb at Western Europe/golden/40",
+        "local tare step to 120 lb at Western Europe/golden/40",
+        "local tare step to 115 lb at Western Europe/golden/40",
+        "local tare step to 110 lb at Western Europe/golden/40",
+        "local tare step to 125 lb at Western Europe/pale/straw/30",
+        "local tare step to 120 lb at Western Europe/pale/straw/30",
+        "local tare step to 115 lb at Western Europe/pale/straw/30",
+        "local tare step to 110 lb at Western Europe/pale/straw/30",
+        "local tare step to 125 lb at central/brown/40",
+        "local tare step to 120 lb at central/brown/40",
+        "local tare step to 115 lb at central/brown/40",
+        "local tare step to 110 lb at central/brown/40",
+        "local tare step to 125 lb at central/copper/30",
+        "local tare step to 120 lb at central/copper/30",
+        "local tare step to 115 lb at central/copper/30",
+        "local tare step to 110 lb at central/copper/30",
+        "local tare step to 125 lb at central/golden/40",
+        "local tare step to 120 lb at central/golden/40",
+        "local tare step to 115 lb at central/golden/40",
+        "local tare step to 110 lb at central/golden/40",
+        "local tare step to 125 lb at central/pale/straw/20",
+        "local tare step to 120 lb at central/pale/straw/20",
+        "local tare step to 115 lb at central/pale/straw/20",
+        "local tare step to 110 lb at central/pale/straw/20",
+        "local tare step to 125 lb at northeast/amber/25",
+        "local tare step to 120 lb at northeast/amber/25",
+        "local tare step to 115 lb at northeast/amber/25",
+        "local tare step to 110 lb at northeast/amber/25",
+        "local tare step to 125 lb at northeast/amber/30",
+        "local tare step to 120 lb at northeast/amber/30",
+        "local tare step to 115 lb at northeast/amber/30",
+        "local tare step to 110 lb at northeast/amber/30",
+        "local tare step to 125 lb at northeast/brown/40",
+        "local tare step to 120 lb at northeast/brown/40",
+        "local tare step to 115 lb at northeast/brown/40",
+        "local tare step to 110 lb at northeast/brown/40",
+        "local tare step to 125 lb at northeast/copper/35",
+        "local tare step to 120 lb at northeast/copper/35",
+        "local tare step to 115 lb at northeast/copper/35",
+        "local tare step to 110 lb at northeast/copper/35",
+        "local tare step to 125 lb at northeast/pale/straw/30",
+        "local tare step to 120 lb at northeast/pale/straw/30",
+        "local tare step to 115 lb at northeast/pale/straw/30",
+        "local tare step to 110 lb at northeast/pale/straw/30",
+        "local tare step to 125 lb at northwest/amber/30",
+        "local tare step to 120 lb at northwest/amber/30",
+        "local tare step to 115 lb at northwest/amber/30",
+        "local tare step to 110 lb at northwest/amber/30",
+        "local tare step to 125 lb at northwest/amber/40",
+        "local tare step to 120 lb at northwest/amber/40",
+        "local tare step to 115 lb at northwest/amber/40",
+        "local tare step to 110 lb at northwest/amber/40",
+        "local tare step to 125 lb at northwest/brown/40",
+        "local tare step to 120 lb at northwest/brown/40",
+        "local tare step to 115 lb at northwest/brown/40",
+        "local tare step to 110 lb at northwest/brown/40",
+        "local tare step to 125 lb at northwest/golden/35",
+        "local tare step to 120 lb at northwest/golden/35",
+        "local tare step to 115 lb at northwest/golden/35",
+        "local tare step to 110 lb at northwest/golden/35",
+        "local tare step to 125 lb at northwest/golden/40",
+        "local tare step to 120 lb at northwest/golden/40",
+        "local tare step to 115 lb at northwest/golden/40",
+        "local tare step to 110 lb at northwest/golden/40",
+        "local tare step to 125 lb at southeast/brown/30",
+        "local tare step to 120 lb at southeast/brown/30",
+        "local tare step to 115 lb at southeast/brown/30",
+        "local tare step to 110 lb at southeast/brown/30",
+        "local tare step to 125 lb at southeast/brown/40",
+        "local tare step to 120 lb at southeast/brown/40",
+        "local tare step to 115 lb at southeast/brown/40",
+        "local tare step to 110 lb at southeast/brown/40",
+        "local tare step to 125 lb at southeast/copper/35",
+        "local tare step to 120 lb at southeast/copper/35",
+        "local tare step to 115 lb at southeast/copper/35",
+        "local tare step to 110 lb at southeast/copper/35",
+        "local tare step to 125 lb at southeast/golden/40",
+        "local tare step to 120 lb at southeast/golden/40",
+        "local tare step to 115 lb at southeast/golden/40",
+        "local tare step to 110 lb at southeast/golden/40",
+        "local tare step to 125 lb at southwest/brown/30",
+        "local tare step to 120 lb at southwest/brown/30",
+        "local tare step to 115 lb at southwest/brown/30",
+        "local tare step to 110 lb at southwest/brown/30",
+        "local tare step to 125 lb at southwest/brown/40",
+        "local tare step to 120 lb at southwest/brown/40",
+        "local tare step to 115 lb at southwest/brown/40",
+        "local tare step to 110 lb at southwest/brown/40",
+        "local tare step to 125 lb at southwest/copper/30",
+        "local tare step to 120 lb at southwest/copper/30",
+        "local tare step to 115 lb at southwest/copper/30",
+        "local tare step to 110 lb at southwest/copper/30",
+        "local tare step to 125 lb at southwest/golden/40",
+        "local tare step to 120 lb at southwest/golden/40",
+        "local tare step to 115 lb at southwest/golden/40",
+        "local tare step to 110 lb at southwest/golden/40",
+        "local tare step to 125 lb at southwest/pale/straw/20",
+        "local tare step to 120 lb at southwest/pale/straw/20",
+        "local tare step to 115 lb at southwest/pale/straw/20",
+        "local tare step to 110 lb at southwest/pale/straw/20",
+        "local tare step to 125 lb at southwest/pale/straw/30",
+        "local tare step to 120 lb at southwest/pale/straw/30",
+        "local tare step to 115 lb at southwest/pale/straw/30",
+        "local tare step to 110 lb at southwest/pale/straw/30"
+      ],
+      "coefficients": [
+        0.7069793459987792,
+        -1.5853268871885784,
+        -1.6986826198763751,
+        -1.6517633326751684,
+        0.6465201551910468,
+        1.3439205801486567,
+        0.6651259855445312,
+        1.3355475431275865,
+        1.4191203258687222,
+        1.984207702980753,
+        1.2249902903423435,
+        0.38825162612391134,
+        1.096281321761975,
+        1.4190839740603478,
+        0.8722426725850239,
+        2.4733522897860447,
+        1.268796356174783,
+        1.257943569673543,
+        0.946268648407926,
+        0.16575959958032926,
+        0.8843011485238628,
+        1.2196855403970739,
+        0.6198070040469712,
+        0.7905790848785723,
+        0.7722430426774529,
+        1.3065371594931303,
+        0.2809453374303811,
+        0.7339307308489714,
+        0.7722760341522534,
+        0.8347535810684703,
+        0.0,
+        2.256705210375023,
+        0.6338257907665164,
+        1.8982128010971644,
+        0.07537651700533685,
+        1.4690558640315705,
+        0.7722684280587373,
+        1.1996744380155802,
+        0.6972364008983951,
+        0.7705279655310607,
+        0.7722642023411382,
+        2.1568952177631475,
+        0.5784523789301342,
+        0.8287394604744943,
+        0.7722694731465828,
+        1.8754420347569147,
+        0.637332005210295,
+        1.1009823146598017,
+        0.5922492909792751,
+        1.2845512543427748,
+        0.8549656255075918,
+        0.8287727039149865,
+        0.772262661984538,
+        1.443562288991746,
+        1.123201327505347,
+        0.8287703472958773,
+        0.7722696493293345,
+        0.8846008360425937,
+        0.8316094640171862,
+        0.9752131332745594,
+        0.7722702269333327,
+        1.017538754660622,
+        0.8803009227204365,
+        0.449623382874616,
+        1.191514863686367,
+        1.5054741016484408,
+        0.470204634312622,
+        0.7378154758841563,
+        0.45714404618679927,
+        0.48731336282427723,
+        0.6571079350833855,
+        0.7026406781246035,
+        1.182791144689965,
+        1.5997196375106084,
+        0.09782653045555427,
+        0.7192085125323078,
+        0.7722701438898812,
+        1.570295145444054,
+        0.9783173000026565,
+        0.20719384382387537,
+        0.7722566830064588,
+        1.4387032683644023,
+        0.07088478289271534,
+        0.649223455193598,
+        0.9919147913673972,
+        1.1172224755245235,
+        0.9031119468728305,
+        0.7257843735074094,
+        0.7722756795048201,
+        0.0990617367003581,
+        1.0807190512880753,
+        1.015991032760688,
+        0.7896239113154057,
+        1.3166306805830164,
+        0.7025320243203361,
+        0.8287774008056245,
+        0.7722729528137313,
+        0.819745944821366,
+        1.447837960018282,
+        0.0,
+        0.7722636632055953,
+        1.0036958627664503,
+        0.3589748880934542,
+        0.8287893553719656,
+        0.7722701641546045,
+        1.6338879379319735,
+        0.9559409526561512,
+        1.6173624836674851,
+        0.3375919268458969,
+        1.6473872903861562,
+        1.0475058498475667,
+        0.8287877019178888,
+        0.7722712216121912,
+        1.446212265690037,
+        0.14660538534507395,
+        0.8287632946481078,
+        0.7722711362241592,
+        1.538214590541105,
+        0.0,
+        0.8763826782197586,
+        0.7722696846438094,
+        1.2579436839165978,
+        0.9462638683791377,
+        0.0,
+        0.884293644342668,
+        1.4462083886967327,
+        0.1465987882512098,
+        0.8287608504665426,
+        0.772273303260395,
+        1.7048823067069316,
+        0.0,
+        0.7192078594053444,
+        0.7722700314942987,
+        1.3605212117553944,
+        0.3349184601529399,
+        0.7339187685875384,
+        0.7722743213380281,
+        1.5997123321926188,
+        0.0,
+        0.7192098560269812,
+        0.7722738983070305,
+        1.5095880512571354,
+        0.0,
+        0.4496233828746151,
+        1.1915148636863677,
+        2.9566193185578085,
+        2.432921946766064e-17,
+        1.7548222197510464,
+        0.6338227836418442,
+        1.1656938567666737,
+        0.5658399181779187,
+        0.7905885977961273,
+        0.772246017571325,
+        2.2425290450029665,
+        0.0,
+        0.8287315520094906,
+        0.7722700853088333,
+        1.4462044671377479,
+        0.0,
+        0.8287534367123736,
+        0.7722690501392745,
+        1.5934026329849793,
+        0.9935324035506734,
+        0.8287843412699211,
+        0.7722647770629382,
+        0.9732109157200297,
+        0.28363915974695825,
+        0.8287864705331713,
+        0.7722724443208867,
+        2.1568924929642685,
+        0.0,
+        0.8287307990846191,
+        0.77226998727731,
+        0.09906173670035823,
+        1.1652501365920258,
+        1.0159874779245635,
+        0.7896198079270955,
+        1.5573182315858023,
+        0.9653332388401527,
+        0.2071978303735672,
+        0.7722566678578331,
+        1.5368003298722768,
+        0.858850695424468,
+        1.520283624553414,
+        0.24050630047859725,
+        1.52126094519691,
+        1.20958112965945,
+        0.0,
+        0.9963571090249693,
+        1.9729015241779093,
+        0.7348066978764678,
+        1.098319715654037,
+        0.5896006106659502,
+        1.5832532987716725,
+        0.9992085567763843,
+        0.0,
+        0.7722565224525282,
+        1.447721307585403,
+        0.0,
+        0.8302734142515585,
+        0.7737846202453413,
+        0.4873133628242767,
+        1.035613470248967,
+        0.6852792943885082,
+        1.1654412307266937,
+        1.5044754881418112,
+        0.0,
+        0.8842905761428493,
+        0.5922492909792768,
+        1.2579463515132858,
+        0.9462665359758258,
+        0.16576574496126034,
+        0.8842987708831633,
+        2.1568924929642685,
+        0.0,
+        0.828730799084619,
+        0.77226998727731,
+        1.633888291825391,
+        0.955938657377582,
+        1.6173708743081254,
+        0.33759439270520386,
+        0.6504517444145689,
+        0.9332866940473379,
+        0.8978785047439566,
+        0.49939841205807967,
+        0.0,
+        0.8927996206966619,
+        0.9752077537285031,
+        0.7722738418668658,
+        1.2579488104570933,
+        0.946268994919633,
+        0.0,
+        0.8842987708831633,
+        1.509588051257139,
+        0.0,
+        0.6492218917117395,
+        0.9919189407117884,
+        1.69261067091319,
+        1.100619958783246,
+        0.0,
+        0.7722499428389418,
+        0.985655425279429,
+        0.0,
+        0.772173531458166,
+        0.7722842643004757,
+        0.9946277620153474,
+        0.9711773628513583,
+        0.0,
+        0.8842987708831633,
+        1.6952451507975588,
+        0.9592265408496287,
+        0.828732033220496,
+        0.7722719415040116,
+        1.7603299104297663,
+        1.1683421148877056,
+        0.20718464702421158,
+        0.7722550693794371,
+        1.3233068478700565,
+        0.0,
+        0.7339178218944357,
+        0.7722751648989965,
+        1.2579488104570933,
+        0.9462687906183778,
+        0.16576799960381255,
+        0.8842985665819081,
+        2.249528942873908,
+        0.0,
+        1.1009772240422087,
+        0.5922380387678846,
+        1.5742850041573362,
+        0.9823029203424931,
+        0.0,
+        0.7722573258216298,
+        1.5291440912888281,
+        0.0,
+        0.8988784476646359,
+        0.8423902557318974,
+        1.6612881429979773,
+        0.983338508550167,
+        1.6447671905149548,
+        0.0
+      ],
+      "in_sample": {
+        "n": 341,
+        "matched": 312,
+        "accuracy": 0.9149560117302052,
+        "balanced_accuracy": 0.9179986679986681,
+        "recall": {
+          "B": 0.9545454545454546,
+          "tie": 0.8571428571428571,
+          "A": 0.9423076923076923
+        },
+        "confusion_actual_to_predicted": {
+          "B": {
+            "B": 63,
+            "tie": 3,
+            "A": 0
+          },
+          "tie": {
+            "B": 11,
+            "tie": 102,
+            "A": 6
+          },
+          "A": {
+            "B": 0,
+            "tie": 9,
+            "A": 147
+          }
+        },
+        "opposite_winner_errors": 0,
+        "predicted_ties": 114
+      },
+      "forced_strict_preference_ids": [],
+      "pure_tare_tie_audit": {
+        "n": 23,
+        "exact_score_equalities": 23
+      },
+      "target_predictions": [
+        {
+          "id": "round14-2",
+          "answer": "B",
+          "answer_source": "round14-2",
+          "prediction": "B",
+          "margin": -0.9592265408496287,
+          "exact_score_equality": false
+        },
+        {
+          "id": "round21-12",
+          "answer": "tie",
+          "answer_source": "round21-12",
+          "prediction": "tie",
+          "margin": 0.0,
+          "exact_score_equality": true
+        },
+        {
+          "id": "round23-1",
+          "answer": "tie",
+          "answer_source": "round23-1",
+          "prediction": "tie",
+          "margin": 0.0,
+          "exact_score_equality": true
+        },
+        {
+          "id": "round23-7",
+          "answer": "tie",
+          "answer_source": "round23-7",
+          "prediction": "tie",
+          "margin": 0.0,
+          "exact_score_equality": true
+        },
+        {
+          "id": "round23-10",
+          "answer": "tie",
+          "answer_source": "round24-2",
+          "prediction": "tie",
+          "margin": 0.0,
+          "exact_score_equality": true
+        },
+        {
+          "id": "round23-13",
+          "answer": "tie",
+          "answer_source": "round23-13",
+          "prediction": "tie",
+          "margin": 0.0,
+          "exact_score_equality": true
+        },
+        {
+          "id": "round23-19",
+          "answer": "tie",
+          "answer_source": "round23-19",
+          "prediction": "tie",
+          "margin": 0.0,
+          "exact_score_equality": true
+        }
+      ]
+    },
+    "parameters": [
+      0.7190975641330867,
+      0.7759882364378221,
+      0.8266820575633135,
+      0.651821107056575,
+      0.5916426365787641,
+      0.19720926218073967,
+      0.12577532884407827,
+      0.15723076329987484,
+      0.1686417811118452,
+      0.04422126258348604,
+      0.12577536697803607,
+      0.13266352130633152,
+      0.13078417432333964,
+      0.14288688769953078,
+      0.039436899783198094,
+      0.11869983275033759,
+      0.16810369616256798,
+      0.19581990745094321,
+      0.1357548744745814,
+      0.052257014685137985,
+      0.1255710243541046,
+      0.12460311746702087,
+      0.151563555161113,
+      0.10919597707957901,
+      0.09884909561678928,
+      0.19110765697545143,
+      0.12501990045076794,
+      0.167880325092266,
+      0.13114430210882133,
+      0.12685383836383407,
+      1.0426379296835675,
+      1.0781836049614477,
+      0.9081875090740692
+    ],
+    "domestic_order": [
+      "northeast",
+      "southwest",
+      "southeast",
+      "central",
+      "northwest"
+    ],
+    "template": [
+      1.2,
+      0.19999999999999996,
+      0.19999999999999996,
+      -0.8,
+      -0.8
+    ],
+    "contexts": [
+      [
+        "brown",
+        40
+      ],
+      [
+        "brown",
+        35
+      ],
+      [
+        "brown",
+        30
+      ],
+      [
+        "brown",
+        25
+      ],
+      [
+        "brown",
+        20
+      ],
+      [
+        "copper",
+        40
+      ],
+      [
+        "copper",
+        35
+      ],
+      [
+        "copper",
+        30
+      ],
+      [
+        "copper",
+        25
+      ],
+      [
+        "copper",
+        20
+      ],
+      [
+        "amber",
+        40
+      ],
+      [
+        "amber",
+        35
+      ],
+      [
+        "amber",
+        30
+      ],
+      [
+        "amber",
+        25
+      ],
+      [
+        "amber",
+        20
+      ],
+      [
+        "golden",
+        40
+      ],
+      [
+        "golden",
+        35
+      ],
+      [
+        "golden",
+        30
+      ],
+      [
+        "golden",
+        25
+      ],
+      [
+        "golden",
+        20
+      ],
+      [
+        "pale/straw",
+        40
+      ],
+      [
+        "pale/straw",
+        35
+      ],
+      [
+        "pale/straw",
+        30
+      ],
+      [
+        "pale/straw",
+        25
+      ],
+      [
+        "pale/straw",
+        20
+      ]
+    ],
+    "domestic_component_scales": {
+      "shade": 1.0426379296835675,
+      "vintage": 1.0781836049614477,
+      "tare": 0.9081875090740692
+    },
+    "in_sample": {
+      "n": 341,
+      "matched": 306,
+      "accuracy": 0.8973607038123167,
+      "balanced_accuracy": 0.9005275769981652,
+      "recall": {
+        "B": 0.9545454545454546,
+        "tie": 0.7983193277310925,
+        "A": 0.9487179487179487
+      },
+      "confusion_actual_to_predicted": {
+        "B": {
+          "B": 63,
+          "tie": 3,
+          "A": 0
+        },
+        "tie": {
+          "B": 16,
+          "tie": 95,
+          "A": 8
+        },
+        "A": {
+          "B": 0,
+          "tie": 8,
+          "A": 148
+        }
+      },
+      "opposite_winner_errors": 0,
+      "predicted_ties": 106
+    },
+    "regional_diagnostics": [
+      {
+        "shade": "brown",
+        "vintage": 40,
+        "hierarchy_gain": 0.19720926218073967,
+        "regional_premiums": {
+          "northeast": 0.9557486787499743,
+          "southwest": 0.8154300888739701,
+          "southeast": 0.8661239099994614,
+          "central": 0.4940536973119833,
+          "northwest": 0.4338752268341724
+        },
+        "regional_spread": 0.5218734519158019,
+        "full_scores_at_120_lb": {
+          "northeast": 2.957587290507672,
+          "southwest": 2.8172729814519224,
+          "southeast": 2.6514435696771943,
+          "central": 2.974170358950444,
+          "northwest": 2.4357183049559725
+        },
+        "full_score_spread": 0.5384520539944715
+      },
+      {
+        "shade": "brown",
+        "vintage": 35,
+        "hierarchy_gain": 0.12577532884407827,
+        "regional_premiums": {
+          "northeast": 0.8700279587459806,
+          "southwest": 0.8011433022066378,
+          "southeast": 0.8518371233321291,
+          "central": 0.5512008439813124,
+          "northwest": 0.49102237350350153
+        },
+        "regional_spread": 0.37900558524247907,
+        "full_scores_at_120_lb": {
+          "northeast": 4.070665185540343,
+          "southwest": 4.0017805290010005,
+          "southeast": 4.0524743501264915,
+          "central": 3.751838070775675,
+          "northwest": 3.691659600297864
+        },
+        "full_score_spread": 0.3790055852424792
+      },
+      {
+        "shade": "brown",
+        "vintage": 30,
+        "hierarchy_gain": 0.15723076329987484,
+        "regional_premiums": {
+          "northeast": 0.9077744800929365,
+          "southwest": 0.8074343890977971,
+          "southeast": 0.8581282102232884,
+          "central": 0.5260364964166752,
+          "northwest": 0.4658580259388643
+        },
+        "regional_spread": 0.4419164541540722,
+        "full_scores_at_120_lb": {
+          "northeast": 4.819977078696915,
+          "southwest": 4.479715963029895,
+          "southeast": 4.223758979737488,
+          "central": 4.438239095020655,
+          "northwest": 4.378060624542844
+        },
+        "full_score_spread": 0.5962180989594277
+      },
+      {
+        "shade": "brown",
+        "vintage": 25,
+        "hierarchy_gain": 0.1686417811118452,
+        "regional_premiums": {
+          "northeast": 0.921467701467301,
+          "southwest": 0.8097165926601911,
+          "southeast": 0.8604104137856825,
+          "central": 0.5169076821670988,
+          "northwest": 0.456729211689288
+        },
+        "regional_spread": 0.46473848977801296,
+        "full_scores_at_120_lb": {
+          "northeast": 6.816779189114036,
+          "southwest": 6.705028080306926,
+          "southeast": 6.755721901432418,
+          "central": 6.4122191698138336,
+          "northwest": 6.3520406993360226
+        },
+        "full_score_spread": 0.46473848977801335
+      },
+      {
+        "shade": "brown",
+        "vintage": 20,
+        "hierarchy_gain": 0.04422126258348604,
+        "regional_premiums": {
+          "northeast": 0.7721630792332699,
+          "southwest": 0.7848324889545193,
+          "southeast": 0.8355263100800107,
+          "central": 0.6164440969897862,
+          "northwest": 0.5562656265119753
+        },
+        "regional_spread": 0.27926068356803535,
+        "full_scores_at_120_lb": {
+          "northeast": 9.06974638740395,
+          "southwest": 9.082415797125199,
+          "southeast": 9.13310961825069,
+          "central": 8.914027405160466,
+          "northwest": 8.853848934682656
+        },
+        "full_score_spread": 0.2792606835680349
+      },
+      {
+        "shade": "copper",
+        "vintage": 40,
+        "hierarchy_gain": 0.12577536697803607,
+        "regional_premiums": {
+          "northeast": 0.8700280045067299,
+          "southwest": 0.8011433098334293,
+          "southeast": 0.8518371309589207,
+          "central": 0.5512008134741462,
+          "northwest": 0.4910223429963353
+        },
+        "regional_spread": 0.3790056615103946,
+        "full_scores_at_120_lb": {
+          "northeast": 4.661588945733655,
+          "southwest": 4.592704251060355,
+          "southeast": 4.643398072185846,
+          "central": 4.342761754701072,
+          "northwest": 4.282583284223261
+        },
+        "full_score_spread": 0.3790056615103943
+      },
+      {
+        "shade": "copper",
+        "vintage": 35,
+        "hierarchy_gain": 0.13266352130633152,
+        "regional_premiums": {
+          "northeast": 0.8782937897006845,
+          "southwest": 0.8025209406990884,
+          "southeast": 0.8532147618245798,
+          "central": 0.5456902900115098,
+          "northwest": 0.48551181953369893
+        },
+        "regional_spread": 0.3927819701669856,
+        "full_scores_at_120_lb": {
+          "northeast": 6.435999896619906,
+          "southwest": 6.885572747385144,
+          "southeast": 6.862816081762713,
+          "central": 6.628742096697566,
+          "northwest": 6.568563626219754
+        },
+        "full_score_spread": 0.4495728507652377
+      },
+      {
+        "shade": "copper",
+        "vintage": 30,
+        "hierarchy_gain": 0.13078417432333964,
+        "regional_premiums": {
+          "northeast": 0.8760385733210942,
+          "southwest": 0.80214507130249,
+          "southeast": 0.8528388924279814,
+          "central": 0.5471937675979033,
+          "northwest": 0.48701529712009245
+        },
+        "regional_spread": 0.3890232762010018,
+        "full_scores_at_120_lb": {
+          "northeast": 7.697389605067271,
+          "southwest": 7.38442019404354,
+          "southeast": 7.674189924174158,
+          "central": 7.545581588607217,
+          "northwest": 7.308366328866269
+        },
+        "full_score_spread": 0.3890232762010024
+      },
+      {
+        "shade": "copper",
+        "vintage": 25,
+        "hierarchy_gain": 0.14288688769953078,
+        "regional_premiums": {
+          "northeast": 0.8905618293725236,
+          "southwest": 0.8045656139777283,
+          "southeast": 0.8552594351032197,
+          "central": 0.5375115968969504,
+          "northwest": 0.4773331264191395
+        },
+        "regional_spread": 0.4132287029533841,
+        "full_scores_at_120_lb": {
+          "northeast": 10.039653258769293,
+          "southwest": 9.953657043374498,
+          "southeast": 10.00435086449999,
+          "central": 9.68660302629372,
+          "northwest": 9.626424555815909
+        },
+        "full_score_spread": 0.41322870295338454
+      },
+      {
+        "shade": "copper",
+        "vintage": 20,
+        "hierarchy_gain": 0.039436899783198094,
+        "regional_premiums": {
+          "northeast": 0.7664218438729243,
+          "southwest": 0.7838756163944617,
+          "southeast": 0.834569437519953,
+          "central": 0.6202715872300165,
+          "northwest": 0.5600931167522056
+        },
+        "regional_spread": 0.2744763207677474,
+        "full_scores_at_120_lb": {
+          "northeast": 11.671528852047386,
+          "southwest": 11.688982624568922,
+          "southeast": 11.739676445694414,
+          "central": 11.52537859540448,
+          "northwest": 11.465200124926668
+        },
+        "full_score_spread": 0.27447632076774653
+      },
+      {
+        "shade": "amber",
+        "vintage": 40,
+        "hierarchy_gain": 0.11869983275033759,
+        "regional_premiums": {
+          "northeast": 0.8615373634334917,
+          "southwest": 0.7997282029878896,
+          "southeast": 0.850422024113381,
+          "central": 0.556861240856305,
+          "northwest": 0.49668277037849407
+        },
+        "regional_spread": 0.3648545930549977,
+        "full_scores_at_120_lb": {
+          "northeast": 5.766209672595096,
+          "southwest": 5.704400512149494,
+          "southeast": 5.755094333274986,
+          "central": 5.46153355001791,
+          "northwest": 4.653543785704322
+        },
+        "full_score_spread": 1.112665886890774
+      },
+      {
+        "shade": "amber",
+        "vintage": 35,
+        "hierarchy_gain": 0.16810369616256798,
+        "regional_premiums": {
+          "northeast": 0.9208219995281682,
+          "southwest": 0.8096089756703357,
+          "southeast": 0.8603027967958271,
+          "central": 0.5173381501265206,
+          "northwest": 0.45715967964870974
+        },
+        "regional_spread": 0.4636623198794585,
+        "full_scores_at_120_lb": {
+          "northeast": 7.520480915349262,
+          "southwest": 7.40926789149143,
+          "southeast": 7.459961712616922,
+          "central": 7.116997065947615,
+          "northwest": 7.056818595469805
+        },
+        "full_score_spread": 0.4636623198794574
+      },
+      {
+        "shade": "amber",
+        "vintage": 30,
+        "hierarchy_gain": 0.19581990745094321,
+        "regional_premiums": {
+          "northeast": 0.9540814530742185,
+          "southwest": 0.8151522179280107,
+          "southeast": 0.8658460390535021,
+          "central": 0.4951651810958204,
+          "northwest": 0.43498671061800953
+        },
+        "regional_spread": 0.519094742456209,
+        "full_scores_at_120_lb": {
+          "northeast": 8.136929674840108,
+          "southwest": 8.42594134359848,
+          "southeast": 8.47663516472397,
+          "central": 8.10595430676629,
+          "northwest": 7.689820553796969
+        },
+        "full_score_spread": 0.7868146109270002
+      },
+      {
+        "shade": "amber",
+        "vintage": 25,
+        "hierarchy_gain": 0.1357548744745814,
+        "regional_premiums": {
+          "northeast": 0.8820034135025844,
+          "southwest": 0.8031392113327384,
+          "southeast": 0.8538330324582297,
+          "central": 0.5432172074769099,
+          "northwest": 0.48303873699909905
+        },
+        "regional_spread": 0.3989646765034853,
+        "full_scores_at_120_lb": {
+          "northeast": 10.748336804401987,
+          "southwest": 10.325718603079366,
+          "southeast": 10.376412424204858,
+          "central": 10.065796599223537,
+          "northwest": 10.005618128745727
+        },
+        "full_score_spread": 0.7427186756562598
+      },
+      {
+        "shade": "amber",
+        "vintage": 20,
+        "hierarchy_gain": 0.052257014685137985,
+        "regional_premiums": {
+          "northeast": 0.7818059817552523,
+          "southwest": 0.7864396393748497,
+          "southeast": 0.8371334605003411,
+          "central": 0.6100154953084647,
+          "northwest": 0.5498370248306538
+        },
+        "regional_spread": 0.2872964356696873,
+        "full_scores_at_120_lb": {
+          "northeast": 12.174721900709702,
+          "southwest": 12.179355558329302,
+          "southeast": 12.230049379454794,
+          "central": 12.002931414262918,
+          "northwest": 11.942752943785106
+        },
+        "full_score_spread": 0.2872964356696883
+      },
+      {
+        "shade": "golden",
+        "vintage": 40,
+        "hierarchy_gain": 0.1255710243541046,
+        "regional_premiums": {
+          "northeast": 0.8697827933580122,
+          "southwest": 0.801102441308643,
+          "southeast": 0.8517962624341344,
+          "central": 0.5513642875732914,
+          "northwest": 0.4911858170954804
+        },
+        "regional_spread": 0.3785969762625318,
+        "full_scores_at_120_lb": {
+          "northeast": 6.935238205144598,
+          "southwest": 6.873801083550154,
+          "southeast": 7.262417037363285,
+          "central": 6.647561310803447,
+          "northwest": 6.7788004083100475
+        },
+        "full_score_spread": 0.6148557265598384
+      },
+      {
+        "shade": "golden",
+        "vintage": 35,
+        "hierarchy_gain": 0.12460311746702087,
+        "regional_premiums": {
+          "northeast": 0.8686213050935117,
+          "southwest": 0.8009088599312263,
+          "southeast": 0.8516026810567177,
+          "central": 0.5521386130829583,
+          "northwest": 0.4919601426051474
+        },
+        "regional_spread": 0.37666116248836423,
+        "full_scores_at_120_lb": {
+          "northeast": 7.520480815349261,
+          "southwest": 7.452768370186975,
+          "southeast": 7.503462191312467,
+          "central": 7.203998123338708,
+          "northwest": 7.143819652860916
+        },
+        "full_score_spread": 0.3766611624883449
+      },
+      {
+        "shade": "golden",
+        "vintage": 30,
+        "hierarchy_gain": 0.151563555161113,
+        "regional_premiums": {
+          "northeast": 0.9009738303264223,
+          "southwest": 0.8063009474700447,
+          "southeast": 0.856994768595536,
+          "central": 0.5305702629276846,
+          "northwest": 0.4703917924498737
+        },
+        "regional_spread": 0.4305820378765486,
+        "full_scores_at_120_lb": {
+          "northeast": 8.957124564285571,
+          "southwest": 8.862451681429194,
+          "southeast": 8.913145502554684,
+          "central": 8.586720996886834,
+          "northwest": 8.526542526409022
+        },
+        "full_score_spread": 0.43058203787654925
+      },
+      {
+        "shade": "golden",
+        "vintage": 25,
+        "hierarchy_gain": 0.10919597707957901,
+        "regional_premiums": {
+          "northeast": 0.8501327366285815,
+          "southwest": 0.797827431853738,
+          "southeast": 0.8485212529792293,
+          "central": 0.5644643253929118,
+          "northwest": 0.5042858549151009
+        },
+        "regional_spread": 0.34584688171348055,
+        "full_scores_at_120_lb": {
+          "northeast": 10.809631047251909,
+          "southwest": 10.757325742477065,
+          "southeast": 10.808019563602555,
+          "central": 10.523962636016236,
+          "northwest": 10.463784165538426
+        },
+        "full_score_spread": 0.34584688171348255
+      },
+      {
+        "shade": "golden",
+        "vintage": 20,
+        "hierarchy_gain": 0.09884909561678928,
+        "regional_premiums": {
+          "northeast": 0.8377164788732339,
+          "southwest": 0.79575805556118,
+          "southeast": 0.8464518766866713,
+          "central": 0.5727418305631435,
+          "northwest": 0.5125633600853328
+        },
+        "regional_spread": 0.33388851660133856,
+        "full_scores_at_120_lb": {
+          "northeast": 12.927526391043815,
+          "southwest": 12.88556796773176,
+          "southeast": 12.936261788857252,
+          "central": 12.662551742733722,
+          "northwest": 12.602373272255914
+        },
+        "full_score_spread": 0.33388851660133767
+      },
+      {
+        "shade": "pale/straw",
+        "vintage": 40,
+        "hierarchy_gain": 0.19110765697545143,
+        "regional_premiums": {
+          "northeast": 0.9484267525036284,
+          "southwest": 0.8142097678329124,
+          "southeast": 0.8649035889584038,
+          "central": 0.49893498147621385,
+          "northwest": 0.43875651099840296
+        },
+        "regional_spread": 0.5096702415052254,
+        "full_scores_at_120_lb": {
+          "northeast": 7.901680041690236,
+          "southwest": 7.767463057019521,
+          "southeast": 7.818156878145011,
+          "central": 7.4521882706628215,
+          "northwest": 7.392009800185011
+        },
+        "full_score_spread": 0.5096702415052246
+      },
+      {
+        "shade": "pale/straw",
+        "vintage": 35,
+        "hierarchy_gain": 0.12501990045076794,
+        "regional_premiums": {
+          "northeast": 0.8691214446740082,
+          "southwest": 0.8009922165279757,
+          "southeast": 0.8516860376534671,
+          "central": 0.5518051866959607,
+          "northwest": 0.4916267162181498
+        },
+        "regional_spread": 0.3774947284558584,
+        "full_scores_at_120_lb": {
+          "northeast": 8.530576985514797,
+          "southwest": 8.462447757368764,
+          "southeast": 8.513141578494256,
+          "central": 8.213260727536749,
+          "northwest": 8.153082257058939
+        },
+        "full_score_spread": 0.37749472845585785
+      },
+      {
+        "shade": "pale/straw",
+        "vintage": 30,
+        "hierarchy_gain": 0.167880325092266,
+        "regional_premiums": {
+          "northeast": 0.9205539542438059,
+          "southwest": 0.8095643014562753,
+          "southeast": 0.8602581225817667,
+          "central": 0.5175168469827622,
+          "northwest": 0.45733837650495135
+        },
+        "regional_spread": 0.4632155777388546,
+        "full_scores_at_120_lb": {
+          "northeast": 10.636935175231518,
+          "southwest": 10.57571392761485,
+          "southeast": 10.576641106711225,
+          "central": 10.233899831112222,
+          "northwest": 10.17372136063441
+        },
+        "full_score_spread": 0.46321381459710764
+      },
+      {
+        "shade": "pale/straw",
+        "vintage": 25,
+        "hierarchy_gain": 0.13114430210882133,
+        "regional_premiums": {
+          "northeast": 0.8764707266636722,
+          "southwest": 0.8022170968595864,
+          "southeast": 0.8529109179850778,
+          "central": 0.5469056653695179,
+          "northwest": 0.48672719489170707
+        },
+        "regional_spread": 0.38974353177196513,
+        "full_scores_at_120_lb": {
+          "northeast": 13.354999638112671,
+          "southwest": 13.280746008308586,
+          "southeast": 13.331439829434078,
+          "central": 13.025434576818519,
+          "northwest": 12.965256106340707
+        },
+        "full_score_spread": 0.3897435317719644
+      },
+      {
+        "shade": "pale/straw",
+        "vintage": 20,
+        "hierarchy_gain": 0.12685383836383407,
+        "regional_premiums": {
+          "northeast": 0.8713221701696876,
+          "southwest": 0.8013590041105889,
+          "southeast": 0.8520528252360803,
+          "central": 0.5503380363655077,
+          "northwest": 0.4901595658876969
+        },
+        "regional_spread": 0.3811626042819907,
+        "full_scores_at_120_lb": {
+          "northeast": 13.716955317534289,
+          "southwest": 13.589164619855335,
+          "southeast": 13.697685972600683,
+          "central": 13.264196496996764,
+          "northwest": 13.3357927132523
+        },
+        "full_score_spread": 0.45275882053752525
+      }
+    ],
+    "soft_dominance_prior_diagnostics": [
+      {
+        "a": [
+          "northeast",
+          "brown",
+          20,
+          130
+        ],
+        "b": [
+          "central",
+          "brown",
+          30,
+          110
+        ],
+        "margin": 1.471199955583618,
+        "note": "Prior scenario, not validation evidence"
+      },
+      {
+        "a": [
+          "northeast",
+          "copper",
+          20,
+          130
+        ],
+        "b": [
+          "central",
+          "copper",
+          30,
+          110
+        ],
+        "margin": 0.2618964515156872,
+        "note": "Prior scenario, not validation evidence"
+      },
+      {
+        "a": [
+          "northeast",
+          "amber",
+          20,
+          130
+        ],
+        "b": [
+          "central",
+          "amber",
+          30,
+          110
+        ],
+        "margin": 1.4418300563260331,
+        "note": "Prior scenario, not validation evidence"
+      },
+      {
+        "a": [
+          "northeast",
+          "golden",
+          20,
+          130
+        ],
+        "b": [
+          "central",
+          "golden",
+          30,
+          110
+        ],
+        "margin": 1.146507618787,
+        "note": "Prior scenario, not validation evidence"
+      },
+      {
+        "a": [
+          "northeast",
+          "pale/straw",
+          20,
+          130
+        ],
+        "b": [
+          "central",
+          "pale/straw",
+          30,
+          110
+        ],
+        "margin": 0.26101321508176767,
+        "note": "Prior scenario, not validation evidence"
+      },
+      {
+        "a": [
+          "northeast",
+          "brown",
+          20,
+          130
+        ],
+        "b": [
+          "northwest",
+          "brown",
+          30,
+          110
+        ],
+        "margin": 1.531378426061429,
+        "note": "Prior scenario, not validation evidence"
+      },
+      {
+        "a": [
+          "northeast",
+          "copper",
+          20,
+          130
+        ],
+        "b": [
+          "northwest",
+          "copper",
+          30,
+          110
+        ],
+        "margin": 0.49428807372183314,
+        "note": "Prior scenario, not validation evidence"
+      },
+      {
+        "a": [
+          "northeast",
+          "amber",
+          20,
+          130
+        ],
+        "b": [
+          "northwest",
+          "amber",
+          30,
+          110
+        ],
+        "margin": 1.6742216785321773,
+        "note": "Prior scenario, not validation evidence"
+      },
+      {
+        "a": [
+          "northeast",
+          "golden",
+          20,
+          130
+        ],
+        "b": [
+          "northwest",
+          "golden",
+          30,
+          110
+        ],
+        "margin": 1.206686089264812,
+        "note": "Prior scenario, not validation evidence"
+      },
+      {
+        "a": [
+          "northeast",
+          "pale/straw",
+          20,
+          130
+        ],
+        "b": [
+          "northwest",
+          "pale/straw",
+          30,
+          110
+        ],
+        "margin": 0.32119168555957955,
+        "note": "Prior scenario, not validation evidence"
+      },
+      {
+        "a": [
+          "southwest",
+          "brown",
+          20,
+          130
+        ],
+        "b": [
+          "central",
+          "brown",
+          30,
+          110
+        ],
+        "margin": 1.4838693653048676,
+        "note": "Prior scenario, not validation evidence"
+      },
+      {
+        "a": [
+          "southwest",
+          "copper",
+          20,
+          130
+        ],
+        "b": [
+          "central",
+          "copper",
+          30,
+          110
+        ],
+        "margin": 0.2793502240372234,
+        "note": "Prior scenario, not validation evidence"
+      },
+      {
+        "a": [
+          "southwest",
+          "amber",
+          20,
+          130
+        ],
+        "b": [
+          "central",
+          "amber",
+          30,
+          110
+        ],
+        "margin": 1.4464637139456311,
+        "note": "Prior scenario, not validation evidence"
+      },
+      {
+        "a": [
+          "southwest",
+          "golden",
+          20,
+          130
+        ],
+        "b": [
+          "central",
+          "golden",
+          30,
+          110
+        ],
+        "margin": 1.1045491954749451,
+        "note": "Prior scenario, not validation evidence"
+      },
+      {
+        "a": [
+          "southwest",
+          "pale/straw",
+          20,
+          130
+        ],
+        "b": [
+          "central",
+          "pale/straw",
+          30,
+          110
+        ],
+        "margin": 0.19105004902266742,
+        "note": "Prior scenario, not validation evidence"
+      },
+      {
+        "a": [
+          "southwest",
+          "brown",
+          20,
+          130
+        ],
+        "b": [
+          "northwest",
+          "brown",
+          30,
+          110
+        ],
+        "margin": 1.5440478357826786,
+        "note": "Prior scenario, not validation evidence"
+      },
+      {
+        "a": [
+          "southwest",
+          "copper",
+          20,
+          130
+        ],
+        "b": [
+          "northwest",
+          "copper",
+          30,
+          110
+        ],
+        "margin": 0.5117418462433694,
+        "note": "Prior scenario, not validation evidence"
+      },
+      {
+        "a": [
+          "southwest",
+          "amber",
+          20,
+          130
+        ],
+        "b": [
+          "northwest",
+          "amber",
+          30,
+          110
+        ],
+        "margin": 1.6788553361517753,
+        "note": "Prior scenario, not validation evidence"
+      },
+      {
+        "a": [
+          "southwest",
+          "golden",
+          20,
+          130
+        ],
+        "b": [
+          "northwest",
+          "golden",
+          30,
+          110
+        ],
+        "margin": 1.164727665952757,
+        "note": "Prior scenario, not validation evidence"
+      },
+      {
+        "a": [
+          "southwest",
+          "pale/straw",
+          20,
+          130
+        ],
+        "b": [
+          "northwest",
+          "pale/straw",
+          30,
+          110
+        ],
+        "margin": 0.2512285195004793,
+        "note": "Prior scenario, not validation evidence"
+      },
+      {
+        "a": [
+          "southeast",
+          "brown",
+          20,
+          130
+        ],
+        "b": [
+          "central",
+          "brown",
+          30,
+          110
+        ],
+        "margin": 1.5345631864303586,
+        "note": "Prior scenario, not validation evidence"
+      },
+      {
+        "a": [
+          "southeast",
+          "copper",
+          20,
+          130
+        ],
+        "b": [
+          "central",
+          "copper",
+          30,
+          110
+        ],
+        "margin": 0.33004404516271535,
+        "note": "Prior scenario, not validation evidence"
+      },
+      {
+        "a": [
+          "southeast",
+          "amber",
+          20,
+          130
+        ],
+        "b": [
+          "central",
+          "amber",
+          30,
+          110
+        ],
+        "margin": 1.4971575350711213,
+        "note": "Prior scenario, not validation evidence"
+      },
+      {
+        "a": [
+          "southeast",
+          "golden",
+          20,
+          130
+        ],
+        "b": [
+          "central",
+          "golden",
+          30,
+          110
+        ],
+        "margin": 1.155243016600437,
+        "note": "Prior scenario, not validation evidence"
+      },
+      {
+        "a": [
+          "southeast",
+          "pale/straw",
+          20,
+          130
+        ],
+        "b": [
+          "central",
+          "pale/straw",
+          30,
+          110
+        ],
+        "margin": 0.24174387014815935,
+        "note": "Prior scenario, not validation evidence"
+      },
+      {
+        "a": [
+          "southeast",
+          "brown",
+          20,
+          130
+        ],
+        "b": [
+          "northwest",
+          "brown",
+          30,
+          110
+        ],
+        "margin": 1.5947416569081696,
+        "note": "Prior scenario, not validation evidence"
+      },
+      {
+        "a": [
+          "southeast",
+          "copper",
+          20,
+          130
+        ],
+        "b": [
+          "northwest",
+          "copper",
+          30,
+          110
+        ],
+        "margin": 0.5624356673688613,
+        "note": "Prior scenario, not validation evidence"
+      },
+      {
+        "a": [
+          "southeast",
+          "amber",
+          20,
+          130
+        ],
+        "b": [
+          "northwest",
+          "amber",
+          30,
+          110
+        ],
+        "margin": 1.7295491572772654,
+        "note": "Prior scenario, not validation evidence"
+      },
+      {
+        "a": [
+          "southeast",
+          "golden",
+          20,
+          130
+        ],
+        "b": [
+          "northwest",
+          "golden",
+          30,
+          110
+        ],
+        "margin": 1.215421487078249,
+        "note": "Prior scenario, not validation evidence"
+      },
+      {
+        "a": [
+          "southeast",
+          "pale/straw",
+          20,
+          130
+        ],
+        "b": [
+          "northwest",
+          "pale/straw",
+          30,
+          110
+        ],
+        "margin": 0.30192234062597123,
+        "note": "Prior scenario, not validation evidence"
+      }
+    ]
+  }
+}

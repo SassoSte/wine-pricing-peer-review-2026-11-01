@@ -1,0 +1,33 @@
+{
+  "round": 55,
+  "status": "complete",
+  "judgments": 10,
+  "main_findings": {
+    "large_gap": "WCAgold30/115 versusgold25/130: A moderately more expensive;15lb gap andposition main driver.",
+    "completion_premium": "WE andNE pale20/110 versus115: meaningful A premium. Small/practical in WEpale20/115vs120,WEpale25/110vs115,WEgold20/110vs115,NWpale20/110vs115. These are scoped exceptions to prior blanket5lb cap, not all5lb steps.",
+    "crossed_profiles": "WEgold20/110 vsNWpale20/110 A/slight/practical; sameprofiles115lb no clear direction/practical.",
+    "intrinsic_value": "Premium belongs to offering itself relative to inventory/context; comparison reveals it rather than creates it. Pair-dependent current model does not guarantee this requirement.",
+    "source47_18": "No clear price-based direction/practically similar/not exacttie, superseding priorA/slight target at reconciliation."
+  },
+  "pending_reconciliation": [
+    {
+      "source_id": "round53-2",
+      "clarification_id": "round55-1",
+      "purpose": "enrich explanation/strength, same direction andsize"
+    },
+    {
+      "source_id": "round47-18",
+      "clarification_id": "round55-10",
+      "purpose": "replace strict direction with no cost-based preference; size remainspractical"
+    }
+  ],
+  "prediction_rechecks": 10,
+  "models_changed": false,
+  "evidence_unchanged": "evidence-v28.json",
+  "cautions": [
+    "Collector/rarity framing is user valuation rationale, not empirically verified market frequency.",
+    "No numerical premium or absolute-price anchor elicited.",
+    "Top-profile exception membership beyond testedWE/NE positive,NW negative not automatically inferred.",
+    "No exact-price equality inferred from approximately same."
+  ]
+}

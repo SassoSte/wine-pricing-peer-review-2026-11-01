@@ -1,0 +1,1042 @@
+{
+  "round": 56,
+  "created_at": "2026-10-28T05:49:01.739641+00:00",
+  "status": "complete",
+  "protocol": "12 fresh unordered pairs, reverse duplicates excluded from all saved round/evidence records and benchmark. Attribute design completed before predictions. Eight same-WCA15/20lb gap cases, including matched positive control and offsets from vintage/shade that may yield practical similarity or unresolved judgments; two WCA10lb boundary controls; two other-provenance controls. No desired answers assumed. One at a time; no interim predictions/scores disclosed. Direction,meaningfulness,exact equality and unresolved kept distinct. Fixed configurations/all24predictions before first answer. Targeted challenge set,not population accuracy; no refit until completed.",
+  "models": {
+    "wca_threshold": {
+      "kind": "intrinsic_v29",
+      "coefficients": [
+        0.37497375,
+        -0.6248262499999993,
+        -0.62501625,
+        -0.9999800000000435,
+        0.37489375000000025,
+        0.87502875,
+        -0.12501125000000005,
+        0.12501125000000013,
+        0.3750737500000001,
+        1.5000050000000003,
+        0.25006249999999985,
+        -0.0,
+        2.0000000000131024e-05,
+        1.0000300000000002,
+        1.2499625000000436,
+        1.5000250000000002,
+        1.2499025000000001,
+        0.37496375,
+        0.25012250000000025,
+        -1.0000000000131023e-05,
+        0.2500825000000001,
+        0.12503125000000004,
+        0.2499324999999999
+      ],
+      "decision_radius": 1.0,
+      "protected_training_ids": [
+        "round49-2",
+        "round49-17",
+        "round50-4"
+      ],
+      "solver_status": 0,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "mip_gap": 0.0008623806540367503,
+      "objective": 0.05579399866101114,
+      "time_limit_seconds": 45.0,
+      "domain": {
+        "provenances": [
+          "Eastern Europe",
+          "Western Europe",
+          "West Central Asia",
+          "South/Eastern Asia",
+          "West Asia / Middle East",
+          "central",
+          "northeast",
+          "northwest",
+          "southwest",
+          "southeast"
+        ],
+        "shades": [
+          "brown",
+          "copper",
+          "amber",
+          "golden",
+          "pale/straw"
+        ],
+        "vintage_years": [
+          40,
+          35,
+          30,
+          25,
+          20
+        ],
+        "tare_lb": [
+          110,
+          115,
+          120,
+          125,
+          130
+        ],
+        "domestic": [
+          "central",
+          "northwest",
+          "northeast",
+          "southwest",
+          "southeast"
+        ]
+      },
+      "extra_feature_names": [
+        "domestic_top_vintage",
+        "foreign_young_pale",
+        "premium_tare_hinge",
+        "young_tare_interaction",
+        "all_top_completion"
+      ],
+      "model_id": "intrinsic_v29_wca_threshold_experimental",
+      "status": "experimental_not_active",
+      "wca_wide_tare_threshold": 0.25,
+      "threshold_scope": {
+        "provenance": "West Central Asia",
+        "minimum_tare_gap_lb": 15
+      },
+      "qualification": "Only meaningfulness threshold changes. Intrinsic values remain exactly the original23-coefficient fit. Does not strengthen intrinsic tare contribution."
+    },
+    "v28": {
+      "schema_version": 1,
+      "model_id": "v28_tare_compensation",
+      "selection_status": "selected",
+      "domain": {
+        "provenances": [
+          "Eastern Europe",
+          "Western Europe",
+          "West Central Asia",
+          "South/Eastern Asia",
+          "West Asia / Middle East",
+          "central",
+          "northeast",
+          "northwest",
+          "southwest",
+          "southeast"
+        ],
+        "shades": [
+          "brown",
+          "copper",
+          "amber",
+          "golden",
+          "pale/straw"
+        ],
+        "vintage_years": [
+          40,
+          35,
+          30,
+          25,
+          20
+        ],
+        "tare_lb": [
+          110,
+          115,
+          120,
+          125,
+          130
+        ],
+        "domestic": [
+          "central",
+          "northwest",
+          "northeast",
+          "southwest",
+          "southeast"
+        ]
+      },
+      "feature_names": [
+        "provenance:Western Europe",
+        "provenance:West Central Asia",
+        "provenance:South/Eastern Asia",
+        "provenance:West Asia / Middle East",
+        "provenance:central",
+        "provenance:northeast",
+        "provenance:northwest",
+        "provenance:southwest",
+        "provenance:southeast",
+        "shade_increment:copper",
+        "shade_increment:amber",
+        "shade_increment:golden",
+        "shade_increment:pale/straw",
+        "vintage_increment:35",
+        "vintage_increment:30",
+        "vintage_increment:25",
+        "vintage_increment:20",
+        "lower_tare_per5lb",
+        "matched_provenance_five_year_golden_pale",
+        "younger_five_lb_heavier_compensation"
+      ],
+      "coefficients": [
+        0.3078046153853131,
+        -0.6921753846154004,
+        -0.6921853846146869,
+        -0.99999,
+        0.07700615384694243,
+        0.5385530769235776,
+        -0.23067846153815819,
+        0.1539523076927236,
+        0.07705615384704778,
+        1.3077246153852071,
+        0.23073846153826455,
+        0.0,
+        0.07690615384578114,
+        0.5385030769234712,
+        1.3077646115898918,
+        1.307714615385207,
+        1.2308284615394256,
+        0.5384930769234713,
+        0.53841307692231,
+        0.5384930769234713
+      ],
+      "offering_rules": {
+        "zero_golden_pale_tare": 130,
+        "tare_reference": 130,
+        "tare_step": 5
+      },
+      "matched_vintage": {
+        "age_gap": 5,
+        "shade_pair": [
+          "golden",
+          "pale/straw"
+        ],
+        "matching_provenance": true
+      },
+      "tare_compensation": {
+        "age_gap": 5,
+        "maximum_younger_age": 30,
+        "heavier_by_lb": 5,
+        "matching_provenance": true
+      },
+      "classification": {
+        "decision_radius": 1.0,
+        "direction_epsilon": 1e-07,
+        "meaningfulness_epsilon": 1e-08,
+        "exact_price_equality": null,
+        "units": "pair-comparison score, not a standalone price"
+      },
+      "qualification": "Two comparison-context coefficients over18 additive terms. Not a transitive standalone monetary price model. Uncertainty behaviour unchanged; no learned confidence claim.",
+      "source_hashes": {
+        "tare-refit-validation-v28.json": "570fa9ad6d6e0761e8099ec3d34f9c1dcc608169b3632cf5dd6a7180ff2b5e9b",
+        "tare-refit-candidate-v28.json": "411c6240bebc3c8d8d1c95c2089a4f8bf06b49373bc6561b70ed219afd96cd9d",
+        "evidence-v28.json": "13e64778ffe7458215211c666ffd3a48bbb10f37f8b6b51407f9e5e9850083f1",
+        "benchmark-targets-v28.json": "41a6558c7360c2827919b87ad60e2144945f14f11021f8c9cc53c31cadf00efd",
+        "model-config-v27.json": "38acf873fe5c333b8364cb677b438067b1a8f1cece7883ea39bb2008625d6ee6",
+        "predictor_v27.py": "293307f98d4c2434bfbbea8a73341a3522601604535647f3a7a6b0103b23f2ed",
+        "tare_compensation_v27.py": "321a974c6c96a81c9068e42f062a186ff2303bc901caac8f98ef3174a3c01aad"
+      },
+      "training_evidence": "evidence-v28.json",
+      "selection_audit": "model-selection-v28.json",
+      "validation_file": "tare-refit-validation-v28.json"
+    }
+  },
+  "file_sha256": {
+    "intrinsic-threshold-config-v29.json": "43edf468db0dbc176b424cf28b71031cf4549296991f2d2e16c79bd66b5f97cd",
+    "predictor_intrinsic_threshold_v29.py": "0c92bb2078c5e03d1f2c697e4d7934a90bea1133c3a46d56b5af37cf428bdddf",
+    "model-config-v28.json": "a9fed8e86977526c16e74ccdb0a6a75d919b3041bd602e5592d64e3086414dcf",
+    "predictor_v28.py": "c572cb63d47b531607efc66be1c65890b854d2f5a5087286858c25611191b7e3",
+    "predictor_v27.py": "293307f98d4c2434bfbbea8a73341a3522601604535647f3a7a6b0103b23f2ed",
+    "evidence-v29.json": "e38f401605e7f93728027218fe9f8e6a1c292b442ddf68a576fbcf8079df25b2",
+    "benchmark-targets-v29.json": "bc2d5ca449cb587b4521ff313366e9e03481a0c27c93f5fe146b7395a279dac1",
+    "freeze_round56.py": "7d63458373c3e003c2c341b250a27e3e3f5b652bdc2beff0ff8c16345e0312eb",
+    "freeze_round40.py": "6da26926a1023fa5bdb4c9a806200934d20d568407464b34825b45d8daee5ade"
+  },
+  "freshness_history_sha256": {
+    "benchmark-targets-v29.json": "bc2d5ca449cb587b4521ff313366e9e03481a0c27c93f5fe146b7395a279dac1",
+    "comparisons.json": "1a125dac50da322ea0bad27db4d8a19e1b241ce64c394793842b8f551ef4338c",
+    "evidence-v10.json": "f1961118c9e86d07eeaa011a2ff3a516496c4d6e0b66123c03d534efedad3188",
+    "evidence-v11.json": "c00cc06dbbf2eea2f0a1f3556a6c15f8dea0fa926a9359e8566af9ea8d42dd5b",
+    "evidence-v12.json": "76c2adb3a57301eb8ad136e2414b8621dc9ee22f9f7611ab4a923db91d468ba6",
+    "evidence-v13.json": "41b3fc7030dc57cee18c91a7cbce47503368925579a59ffe7b7ee06d0a533fbf",
+    "evidence-v14.json": "d20c26dc91ed7930123c50c9449002bdf8052f0e872254d119cb23612f7725c6",
+    "evidence-v15.json": "40ac084c3b4ab5cbbf4195879764ffd4f04fa011f822dbfcf10670c0e3919867",
+    "evidence-v16.json": "d3fe285003091b1125cc4ff306d52eb944ca84c3b101b67f03849c64e32b3eaa",
+    "evidence-v17.json": "71763a0f60f5725774af1f48e0010ad01ec8d04a57979e43d405f7d99a018697",
+    "evidence-v18.json": "b639452b95833a658d39ba2c54549f185599c1393ebf8f50172531fd6e2ebbf6",
+    "evidence-v19.json": "74856415ec8dd515b98d69d6ae04b89499eb2a2a0bed179fdb12023e00f2e262",
+    "evidence-v2.json": "8a512f572cf8ed4b5a2bd2655574762e5f5e548a5345627cf76513dc582aaa1f",
+    "evidence-v20.json": "52e79c6c05bd909dbc5a85452e3a94fcfed7ab7de6e5a9f228051ff7cb28edd5",
+    "evidence-v21.json": "86fa17d383d5a8c5db578a218299604ab121a6bcf0a9b4ad4ce86d793faab48c",
+    "evidence-v22.json": "77cda878cbe8e05b32d8f5319cd788245a85c7afd2f2e6caec513bb35fcb01a5",
+    "evidence-v23.json": "e156fb5a7a96208c78c0b573fec9658516a9fcd9cec388c801261c1f743be473",
+    "evidence-v24.json": "76028812efd185a1289a30db8d42b5cb0bc00b005aaf41e3c712cbf3be835646",
+    "evidence-v25.json": "9e142cfcf5ca017e506776e9d12276c837285df9990aebc5408f53281c31e070",
+    "evidence-v26.json": "424ecd96ce04e5d4a70d2dba726ab618bffdbf0bbd8bd061624e9807f2405c4b",
+    "evidence-v27.json": "9a7b2e61996a38317db321808ae02acf025d66451d0092f5a7d44462a2653ecb",
+    "evidence-v28.json": "13e64778ffe7458215211c666ffd3a48bbb10f37f8b6b51407f9e5e9850083f1",
+    "evidence-v29.json": "e38f401605e7f93728027218fe9f8e6a1c292b442ddf68a576fbcf8079df25b2",
+    "evidence-v3.json": "f5cc0483361938267e7f605811909939bc57d5bdbc963107392fcbcb4d525003",
+    "evidence-v4.json": "a06e40555faa9ff5509ee6d5d3708a77dd38efd7c2ae871574c9093025baf6ba",
+    "evidence-v5.json": "71a3f8fe0b656257eba4cb954589d238644e6430ab2e556d305403073dbc06af",
+    "evidence-v6.json": "bd4caa506b8774a1098302dc988ec1b5fbb2705f0fdb13d90a5f01082c6ce491",
+    "evidence-v7.json": "0422c64505c0507988c5511e0ea1c6f8a16b8ddf579899c323e082433e875ec6",
+    "evidence-v8.json": "595f0c2f12de8f6a6df300dc328693d0ff6307724f7e1d71382b66bcedb43a23",
+    "evidence-v9.json": "8e556698547b69d0756e2bf9df9f2d2830460632cc8fc9d2d9ea7b160e835956",
+    "round10-fixed.json": "91af42fcf3f54fbc0835672744238ea3c1e084c0f69ed3452dbce996be1f3476",
+    "round11-isolation.json": "ccae90400a912356a5452fd28866c3d9d028b6391da16a1dde1b816816e98d8b",
+    "round12-clarification.json": "0c933690bc1d79098e577d2aabbbe2ef1e0228a10df37706584b31478eaaf04c",
+    "round13-fixed.json": "3ec55feb8fc4e0235c48612cb0f630f983c4f6edbd783710af0e2d710ee756af",
+    "round14-isolation.json": "2459341287287d9ea2436bc6bcb561a63dcf1d18e7800ef2b1564eca0ae7355e",
+    "round15-fixed.json": "30ecfdaa122a6b0a1920216834b82f651ab83efe2d76c9cf828eafe3b5bc7eec",
+    "round16-isolation.json": "9d1240e630561f4d738b3f113e4c96ea1966c3df0d24531c084c3421a201941e",
+    "round17-fixed.json": "d9318d78c2d6ec10a2c83e9ba77634ad198d177e1f2e8a68a8b2a067a4c22881",
+    "round18-isolation.json": "6b7fd4e5d095ef04e3379851a5c66be15a88da12ea1c21378e0befbdb66120ca",
+    "round19-fixed.json": "a21b7d2b2712160222569b4157048d3cb05de1167ac094dbfa8a23e0ad6ba6ef",
+    "round20-isolation.json": "dc6b77179b615c5ac00eb19f504e3bd2c9c71458b4a98d7dbbcb6e1fe072e73a",
+    "round21-fixed.json": "591319b2a1b40972227c2d6b3ef5d0572590025fae832fd43e225b17a5f6b3fc",
+    "round22-isolation.json": "b5ee454906e55cbf8a85718cd5b5c1bc64bd3fa5bc7b2f3a199df5fc647213c9",
+    "round23-fixed.json": "34e87f4b2d8e1bc4e6d587b7a26c170258c583e69fd87dd963ac4d6574c567d0",
+    "round24-isolation.json": "df50118a37511b8814fb794b520817d0922275e138a1845c2a46bc74174c56e5",
+    "round25-fixed.json": "010486d450a3ac98dea7defc0da10361d3346efd8e06f78f183ec8600708647a",
+    "round26-isolation.json": "a94191b4863575db8b0badd6e1bd997b5329b90329e51bae51f1d6d046a6b652",
+    "round27-fixed.json": "726feaa52066f79e27be7e2b78f5582d3bcc55dee462bceddf9d2828551f5644",
+    "round28-isolation.json": "c3ccdd1494a30e3de04a622cb381a9b9cb490011ee8e854c73e954e85a11a4c6",
+    "round29-isolation.json": "93a77dc33caec4c9781fc67c7cb096bc5e89245c233e96a72b4ae3f929a68ac0",
+    "round30-isolation.json": "938e47ff3c3e3af31acd81f640f3f5960a81bce1f6b318bc03fad86df8681705",
+    "round31-isolation.json": "0e66641069c1e2c0f0975ad5d8e9acc23c94a1df4788405810ccf4a98cbe4128",
+    "round32-isolation.json": "ce7358dae677dac16b85de04f88430f497cbda398248a978c2b366c6b32fb7fb",
+    "round33-reconciliation.json": "6a65cde20920693f2df2e7d89ba1080a2684ef5ebfe6a0996d1b471e87045fa3",
+    "round34-reconciliation.json": "4aa59ba50dc8ee6ba2dcd93fb8958de6076d521d8b6cae13609c36adfa85cbc3",
+    "round35-fixed.json": "aee3bf1d39e697649bc02169ecb8fa5d8d85c08ae4cf97b05b706bf4a94b4d45",
+    "round36-findings.json": "ff267f62e0b4a255f2514eefb90e6a02ffa7e6c6d2a4e0d993148405a7f12b7b",
+    "round36-fixed.json": "8f0b34708efbaa8be0243f302a64ee014fac7453ba603774f5e6699ef1a7d18a",
+    "round37-findings.json": "e35c8dc4ccf414081e1fb0b38ff5ee8beafec9dd1babfd389c3768d195aded8b",
+    "round37-fixed.json": "15fe1bbffa2ed4755c835c8b61b970f49ba77578032316f056db6ce9e59640f6",
+    "round38-findings.json": "f63a67080f3ecaa5b9105365c2b30b07fce7db64c047662eeeaae07afe9c4759",
+    "round38-fixed.json": "4019ce1f1822cba2463fb2fd0fe88b04bd33d564aea7044cf3f4915b87dcddfb",
+    "round39-findings.json": "6140110cd08bc9c7838d0a2542510c78cf561b91ad112b26e4231cbc7520d407",
+    "round39-fixed.json": "d1f544552406c8d60ae94a73c9693bf0029d5f838a312362837af2d6efb24512",
+    "round40-findings.json": "f92e4d95f0ea1df5df716005bf2bed9c4a243f9fb08a83eeace04f616b1e775d",
+    "round40-fixed.json": "5a5006b9acfaf7a4f9ad9c41ab41e0f84bdcb780fb969cebadd27edaeb404e94",
+    "round41-findings.json": "6b4805d8287fe3c51f79048c264d95b1ccccef023b135f64ad97550cbd3fc342",
+    "round41-fixed.json": "56f4fb5e60aa3e5aa4cd136bf34baf03e995c4f0186baa9b697cbda26f2e803f",
+    "round42-findings.json": "64930cb717422ab3341b7244bde2551148601f2bae720df7381d2031984a2959",
+    "round42-fixed.json": "e78a406cee93af70e1a148afb961e1df7c1aa9c75782953f687ddc6c6c9aeb11",
+    "round43-findings.json": "e0ea69c5ef2b83ef1705250b947a2a8f04fe59ab5bc9923640d8ea2a487c70a4",
+    "round43-fixed.json": "d4766b9d08d70e70c4184ba148e5107a2fa6cd79f4a2f6f09d830da5a244f857",
+    "round44-findings.json": "3534852550e8d5d30118aa4f9a77100ab58bd7b2e45a3d9b96ca4632d38c2bcb",
+    "round44-fixed.json": "cdab11092f2122d1939286160037c5a469bcc1ddd7dfda1d5501d2d1f2a8c20e",
+    "round45-findings.json": "29f13b73a178229724bbb2fc359a2c8b019229b7f0bdc07d912c0f3729e17b53",
+    "round45-fixed.json": "f09689543f0acc7db554a680c4eff95d4f3987d6b1a4ebacbb6a7b56e28f97c6",
+    "round46-findings.json": "9ba90cd5e34af24006fd165c9a92a37815adebe065422d8d3d91ebb63e85ac02",
+    "round46-fixed.json": "5d820008b69e85ecfed757674853143d957c3653672dc1a66728feb641861042",
+    "round47-findings.json": "fe03a21dffbd1c82e3b1f6cc9a518e17f148449d3fcedcc8b2a39b8d3382ec59",
+    "round47-fixed.json": "02b3d28cf44e355ee4781993ad94c1e9f8055d1eb8b6475c26c3dadfa9a3d2cb",
+    "round48-findings.json": "d01eeea6bb705f7e9fe82b03c848c6d8b2669b6a7a9f765fc2f97d2f6d42ae01",
+    "round48-fixed.json": "30c54ade5dc8291c8df1050f21760de8a0244370fcaa491d03ce49275faad4ad",
+    "round49-findings.json": "d7a466128a1057efaa4ef7c172943be5a2ac72a983724541866a860b1bb62733",
+    "round49-fixed.json": "4a3059d749b51a6bc8fc463ff66cb9b983599a796709ccdf8a915fd3cb5cf870",
+    "round50-consistency-check.json": "eb2e567bdfa3ba7acbf394b5371b7c2f23c1c471a8c50202448de183ce87632e",
+    "round50-findings.json": "9a47bbc7c6ad380a3306104e348489ce7e4ed382824c060c79e60231698df50e",
+    "round50-first-family-check.json": "76f89d039f1f673440bf7fe84a136b494183d7301bcc084ad7bc16298694db8f",
+    "round50-isolation.json": "75dba4330e32db971f9a6e40b5c1df8691bd189255db75da0f9cea93ade7f87b",
+    "round50-second-family-check.json": "50794595dc8d3647039a8e5e6166f7be39c404f8759689e33f803939f2d631c3",
+    "round51-findings.json": "cdf3f4a125ebe36a2fa10508e3a84e1ea52b0f65a30599a8b5c06a3ba4516b99",
+    "round51-fixed.json": "127df9af1fd6c265a5f1b2756ceaae99b086a92c75300a0383e5f50a1666001f",
+    "round52-clarifications.json": "e58dc7438b325b270fd8789fd23fb3dc8e819b9266ea0769bfac152f4d5abdae",
+    "round52-findings.json": "68017308e6dbf507f24ee6c5e8ddad3d399b618409c3d4e06d85ff0ea4fbb91c",
+    "round53-findings.json": "15816e33ccb01b8fa68f8f8c3c93a8862cba1d6f95f33866b58cd000f8d204bb",
+    "round53-isolation.json": "47fc27c13990134bec5c764a08f7e478f412d8adadd3944cd69d728bb98a20d5",
+    "round54-findings.json": "acc22ea26206af35a09c83a35afbd2f29ec9b3c617a12e32e7c6f8d36d361594",
+    "round54-unresolved-isolation.json": "3485f5a2053bafa0e9318419941ebcaa53ebf63f5157ad8745c576774aa82f88",
+    "round55-findings.json": "3d0687d084bc384865f2260c1d66c01e622140aab6245a1e9dda8b5af2bcc0b7",
+    "round55-tare-context-isolation.json": "9c010d33ccf1c32d0b8c83ecbded5a24e132c3d4b0cba76c8be93e833fa4e20b",
+    "round9-fixed.json": "3281cec3694c5177a6dc78b36c2f9b6a1b80981033dcd2048d36b0ce805ce0a7"
+  },
+  "freeze_fields": [
+    "id",
+    "number",
+    "category",
+    "a",
+    "b",
+    "freshness_age_shift",
+    "predictions"
+  ],
+  "questions_and_predictions_sha256": "222c64c50d38b65e77000f3f93858dc28a63d84a18fceff620c5396a1c17e69b",
+  "questions": [
+    {
+      "id": "round56-1",
+      "number": 1,
+      "category": "wide_tare_ten_year_offset",
+      "a": [
+        "West Central Asia",
+        "amber",
+        35,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "amber",
+        25,
+        130
+      ],
+      "freshness_age_shift": 0,
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "B, slightly\u2014practically similar, not a tie. The 10-year younger vintage just outweighs A\u2019s 15 lb tare advantage, but it\u2019s very close.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "wca_threshold": {
+          "value_a": 3.5002450000000014,
+          "value_b": 4.875258750000045,
+          "margin": -1.3750137500000434,
+          "decision_radius": 0.25,
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "intrinsic utility; not calibrated money",
+          "model": "intrinsic_v29_wca_threshold_experimental"
+        },
+        "v28": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.999999996204685,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v28_tare_compensation"
+        }
+      },
+      "strength": "slightly",
+      "raw_explanation": "B, slightly\u2014practically similar, not a tie. The 10-year younger vintage just outweighs A\u2019s 15 lb tare advantage, but it\u2019s very close.",
+      "explicitly_not_tie": true,
+      "resolution_status": "resolved",
+      "interpretation": "B has a small positive price premium; practical similarity, not exact equality or unresolved. Ten-year younger vintage narrowly outweighs15lb tare advantage in this displayed context."
+    },
+    {
+      "id": "round56-2",
+      "number": 2,
+      "category": "wide_tare_shade_vintage_offset",
+      "a": [
+        "West Central Asia",
+        "golden",
+        30,
+        110
+      ],
+      "b": [
+        "West Central Asia",
+        "pale/straw",
+        25,
+        125
+      ],
+      "freshness_age_shift": 0,
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "A, meaningful difference\u2014the 15 lb tare advantage, especially at 110 lb, outweighs B\u2019s five-year younger vintage and adjacent shade advantage.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "wca_threshold": {
+          "value_a": 5.875378750000045,
+          "value_b": 5.375263750000045,
+          "margin": 0.5001150000000001,
+          "decision_radius": 0.25,
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "intrinsic utility; not calibrated money",
+          "model": "intrinsic_v29_wca_threshold_experimental"
+        },
+        "v28": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.3075546153828844,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v28_tare_compensation"
+        }
+      },
+      "raw_explanation": "A, meaningful difference\u2014the 15 lb tare advantage, especially at 110 lb, outweighs B\u2019s five-year younger vintage and adjacent shade advantage.",
+      "explicitly_not_tie": true,
+      "resolution_status": "resolved",
+      "interpretation": "A commands a meaningful premium. The15lb tare advantage and premium110lb endpoint outweigh B\u2019s five-year younger vintage and adjacent golden-to-pale shade advantage in this context; no numerical price or strength beyond meaningful inferred."
+    },
+    {
+      "id": "round56-3",
+      "number": 3,
+      "category": "wide_tare_matched_control",
+      "a": [
+        "West Central Asia",
+        "copper",
+        30,
+        130
+      ],
+      "b": [
+        "West Central Asia",
+        "copper",
+        30,
+        115
+      ],
+      "freshness_age_shift": 0,
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "B, meaningful difference\u2014the 15 lb lower tare gives B a clear advantage, with provenance, shade and vintage identical.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "wca_threshold": {
+          "value_a": 3.1251712500000446,
+          "value_b": 4.875238750000046,
+          "margin": -1.750067500000001,
+          "decision_radius": 0.25,
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "intrinsic utility; not calibrated money",
+          "model": "intrinsic_v29_wca_threshold_experimental"
+        },
+        "v28": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -1.6154792307704138,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v28_tare_compensation"
+        }
+      },
+      "raw_explanation": "B, meaningful difference\u2014the 15 lb lower tare gives B a clear advantage, with provenance, shade and vintage identical.",
+      "explicitly_not_tie": true,
+      "resolution_status": "resolved",
+      "interpretation": "B commands a meaningful premium from115lb versus130lb tare alone, with West Central Asia provenance,copper shade and30-year vintage matching. No additional numerical price or strength inferred."
+    },
+    {
+      "id": "round56-4",
+      "number": 4,
+      "category": "twenty_lb_ten_year_offset",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        20,
+        130
+      ],
+      "b": [
+        "West Central Asia",
+        "golden",
+        30,
+        110
+      ],
+      "freshness_age_shift": 0,
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "A, slightly\u2014practically similar, not a tie. The top-tier 20-year vintage and 10-year age advantage just outweigh B\u2019s 20 lb tare advantage, but 110 lb keeps it very close.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "wca_threshold": {
+          "value_a": 6.125161250000045,
+          "value_b": 5.875378750000045,
+          "margin": 0.24978250000000024,
+          "decision_radius": 0.25,
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "intrinsic utility; not calibrated money",
+          "model": "intrinsic_v29_wca_threshold_experimental"
+        },
+        "v28": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.3845707692307476,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v28_tare_compensation"
+        }
+      },
+      "strength": "slightly",
+      "raw_explanation": "A, slightly\u2014practically similar, not a tie. The top-tier 20-year vintage and 10-year age advantage just outweigh B\u2019s 20 lb tare advantage, but 110 lb keeps it very close.",
+      "explicitly_not_tie": true,
+      "resolution_status": "resolved",
+      "interpretation": "A has a small positive price premium, practically similar rather than exact equality or unresolved. Its top-tier20-year vintage and10-year age advantage narrowly outweigh B\u2019s20lb tare advantage and premium110lb endpoint. No separate shade contribution or numeric weights inferred."
+    },
+    {
+      "id": "round56-5",
+      "number": 5,
+      "category": "wide_tare_shade_vintage_offset",
+      "a": [
+        "West Central Asia",
+        "golden",
+        35,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "pale/straw",
+        30,
+        130
+      ],
+      "freshness_age_shift": 0,
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "A, meaningful difference\u2014the 15 lb tare advantage outweighs B\u2019s five-year younger vintage and adjacent shade advantage in this older vintage bracket.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "wca_threshold": {
+          "value_a": 3.5002450000000014,
+          "value_b": 3.375233750000045,
+          "margin": 0.1250112499999565,
+          "decision_radius": 0.25,
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "intrinsic utility; not calibrated money",
+          "model": "intrinsic_v29_wca_threshold_experimental"
+        },
+        "v28": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.2306984577417881,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v28_tare_compensation"
+        }
+      },
+      "raw_explanation": "A, meaningful difference\u2014the 15 lb tare advantage outweighs B\u2019s five-year younger vintage and adjacent shade advantage in this older vintage bracket.",
+      "explicitly_not_tie": true,
+      "resolution_status": "resolved",
+      "interpretation": "A commands a meaningful premium. Its115lb versus130lb tare advantage outweighs B\u2019s30-year versus35-year vintage and pale/straw versus golden shade advantage in this older vintage bracket. No numerical premium or universal age cutoff inferred."
+    },
+    {
+      "id": "round56-6",
+      "number": 6,
+      "category": "wide_tare_opposed_shade_vintage",
+      "a": [
+        "West Central Asia",
+        "copper",
+        30,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "amber",
+        35,
+        110
+      ],
+      "freshness_age_shift": 0,
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "B, meaningful difference\u2014the 15 lb tare advantage, especially at 110 lb, and lighter amber shade outweigh A\u2019s five-year younger vintage in this bracket.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "wca_threshold": {
+          "value_a": 3.625166250000045,
+          "value_b": 4.125291250000001,
+          "margin": -0.5001249999999557,
+          "decision_radius": 0.25,
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "intrinsic utility; not calibrated money",
+          "model": "intrinsic_v29_wca_threshold_experimental"
+        },
+        "v28": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.5384530807187866,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v28_tare_compensation"
+        }
+      },
+      "raw_explanation": "B, meaningful difference\u2014the 15 lb tare advantage, especially at 110 lb, and lighter amber shade outweigh A\u2019s five-year younger vintage in this bracket.",
+      "explicitly_not_tie": true,
+      "resolution_status": "resolved",
+      "interpretation": "B commands a meaningful premium. Its110lb versus125lb tare advantage, including the premium110lb endpoint, and amber versus copper shade outweigh A\u2019s30-year versus35-year vintage advantage in this context. No numeric premium or universal cutoff inferred."
+    },
+    {
+      "id": "round56-7",
+      "number": 7,
+      "category": "twenty_lb_ten_year_offset",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        35,
+        110
+      ],
+      "b": [
+        "West Central Asia",
+        "pale/straw",
+        25,
+        130
+      ],
+      "freshness_age_shift": 0,
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "A, slightly\u2014practically similar, not a tie. The 20 lb tare advantage, especially at 110 lb, just outweighs B\u2019s 10-year younger vintage in this bracket, but it\u2019s very close.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "wca_threshold": {
+          "value_a": 4.125311250000001,
+          "value_b": 4.875258750000045,
+          "margin": -0.7499475000000437,
+          "decision_radius": 0.25,
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "intrinsic utility; not calibrated money",
+          "model": "intrinsic_v29_wca_threshold_experimental"
+        },
+        "v28": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.38460076543543265,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v28_tare_compensation"
+        }
+      },
+      "strength": "slightly",
+      "raw_explanation": "A, slightly\u2014practically similar, not a tie. The 20 lb tare advantage, especially at 110 lb, just outweighs B\u2019s 10-year younger vintage in this bracket, but it\u2019s very close.",
+      "explicitly_not_tie": true,
+      "resolution_status": "resolved",
+      "interpretation": "A has a small positive price premium, practically similar rather than exact equality or unresolved. Its110lb versus130lb tare advantage and premium110lb endpoint narrowly outweigh B\u2019s25-year versus35-year vintage advantage with provenance and pale/straw shade matching. No numerical premium or general cutoff inferred."
+    },
+    {
+      "id": "round56-8",
+      "number": 8,
+      "category": "twenty_lb_dark_shade_offset",
+      "a": [
+        "West Central Asia",
+        "amber",
+        30,
+        130
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        35,
+        110
+      ],
+      "freshness_age_shift": 0,
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "B, slightly\u2014practically similar, not a tie. The 20 lb tare advantage, especially at 110 lb, just outweighs A\u2019s younger vintage and lighter amber shade, but brown keeps it very close.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "wca_threshold": {
+          "value_a": 3.375233750000045,
+          "value_b": 2.375223750000001,
+          "margin": 1.000010000000044,
+          "decision_radius": 0.25,
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "intrinsic utility; not calibrated money",
+          "model": "intrinsic_v29_wca_threshold_experimental"
+        },
+        "v28": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.6922553808194785,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v28_tare_compensation"
+        }
+      },
+      "strength": "slightly",
+      "raw_explanation": "B, slightly\u2014practically similar, not a tie. The 20 lb tare advantage, especially at 110 lb, just outweighs A\u2019s younger vintage and lighter amber shade, but brown keeps it very close.",
+      "explicitly_not_tie": true,
+      "resolution_status": "resolved",
+      "interpretation": "B has a small positive price premium, practically similar rather than exact equality or unresolved. Its110lb versus130lb tare advantage and premium110lb endpoint narrowly outweigh A\u2019s30-year versus35-year vintage and amber versus brown shade advantages. B\u2019s brown shade keeps the net premium small. No numeric price or universal cutoff inferred."
+    },
+    {
+      "id": "round56-9",
+      "number": 9,
+      "category": "below_threshold_ten_lb_control",
+      "a": [
+        "West Central Asia",
+        "golden",
+        25,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "pale/straw",
+        20,
+        125
+      ],
+      "freshness_age_shift": 0,
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "B, slightly\u2014practically similar, not a tie. The top-tier 20-year vintage and pale shade just outweigh A\u2019s 10 lb tare advantage, but 115 lb keeps it very close.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "wca_threshold": {
+          "value_a": 6.625326250000045,
+          "value_b": 6.625166250000046,
+          "margin": 0.00015999999999927184,
+          "decision_radius": 1.0,
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "intrinsic utility; not calibrated money",
+          "model": "intrinsic_v29_wca_threshold_experimental"
+        },
+        "v28": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.7691615384605743,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v28_tare_compensation"
+        }
+      },
+      "strength": "slightly",
+      "raw_explanation": "B, slightly\u2014practically similar, not a tie. The top-tier 20-year vintage and pale shade just outweigh A\u2019s 10 lb tare advantage, but 115 lb keeps it very close.",
+      "explicitly_not_tie": true,
+      "resolution_status": "resolved",
+      "interpretation": "B has a small positive price premium, practically similar rather than exact equality or unresolved. Its top-tier20-year vintage and pale/straw shade narrowly outweigh A\u2019s25-year golden offering with115lb versus125lb tare advantage. The115lb endpoint keeps the net premium small. No numeric price or universal cutoff inferred."
+    },
+    {
+      "id": "round56-10",
+      "number": 10,
+      "category": "below_threshold_shade_control",
+      "a": [
+        "West Central Asia",
+        "copper",
+        40,
+        120
+      ],
+      "b": [
+        "West Central Asia",
+        "amber",
+        40,
+        130
+      ],
+      "freshness_age_shift": 0,
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "A, slightly\u2014practically similar, not a tie. The 10 lb tare advantage just outweighs B\u2019s lighter amber shade at this vintage, but it\u2019s close.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "wca_threshold": {
+          "value_a": 1.625106250000001,
+          "value_b": 1.1252412500000009,
+          "margin": 0.4998650000000002,
+          "decision_radius": 1.0,
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "intrinsic utility; not calibrated money",
+          "model": "intrinsic_v29_wca_threshold_experimental"
+        },
+        "v28": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.8462476923086779,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v28_tare_compensation"
+        }
+      },
+      "strength": "slightly",
+      "raw_explanation": "A, slightly\u2014practically similar, not a tie. The 10 lb tare advantage just outweighs B\u2019s lighter amber shade at this vintage, but it\u2019s close.",
+      "explicitly_not_tie": true,
+      "resolution_status": "resolved",
+      "interpretation": "A has a small positive price premium, practically similar rather than exact equality or unresolved. Its120lb versus130lb tare advantage narrowly outweighs B\u2019s amber versus copper shade advantage at matching40-year vintage and West Central Asia provenance. No numeric price or universal cutoff inferred."
+    },
+    {
+      "id": "round56-11",
+      "number": 11,
+      "category": "other_provenance_control",
+      "a": [
+        "Western Europe",
+        "amber",
+        35,
+        115
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        25,
+        130
+      ],
+      "freshness_age_shift": 0,
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "B, slightly\u2014practically similar, not a tie. The 10-year younger vintage just outweighs A\u2019s 15 lb tare advantage, but it\u2019s very close.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "wca_threshold": {
+          "value_a": 4.500045,
+          "value_b": 5.8750587500000435,
+          "margin": -1.3750137500000434,
+          "decision_radius": 1.0,
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "intrinsic utility; not calibrated money",
+          "model": "intrinsic_v29_wca_threshold_experimental"
+        },
+        "v28": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.999999996204685,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v28_tare_compensation"
+        }
+      },
+      "strength": "slightly",
+      "raw_explanation": "B, slightly\u2014practically similar, not a tie. The 10-year younger vintage just outweighs A\u2019s 15 lb tare advantage, but it\u2019s very close.",
+      "explicitly_not_tie": true,
+      "resolution_status": "resolved",
+      "interpretation": "B has a small positive price premium, practically similar rather than exact equality or unresolved. Its25-year versus35-year vintage advantage narrowly outweighs A\u2019s115lb versus130lb tare advantage, with Western Europe provenance and amber shade matching. No numeric price or universal cutoff inferred."
+    },
+    {
+      "id": "round56-12",
+      "number": 12,
+      "category": "other_provenance_control",
+      "a": [
+        "Eastern Europe",
+        "golden",
+        30,
+        110
+      ],
+      "b": [
+        "Eastern Europe",
+        "pale/straw",
+        25,
+        125
+      ],
+      "freshness_age_shift": 0,
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "A, meaningful difference\u2014the 15 lb tare advantage, especially at 110 lb, outweighs B\u2019s five-year younger vintage and adjacent shade advantage.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "wca_threshold": {
+          "value_a": 6.500205000000044,
+          "value_b": 6.0000900000000446,
+          "margin": 0.5001149999999992,
+          "decision_radius": 1.0,
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "intrinsic utility; not calibrated money",
+          "model": "intrinsic_v29_wca_threshold_experimental"
+        },
+        "v28": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.3075546153828844,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v28_tare_compensation"
+        }
+      },
+      "raw_explanation": "A, meaningful difference\u2014the 15 lb tare advantage, especially at 110 lb, outweighs B\u2019s five-year younger vintage and adjacent shade advantage.",
+      "explicitly_not_tie": true,
+      "resolution_status": "resolved",
+      "interpretation": "A commands a meaningful premium. Its110lb versus125lb tare advantage, especially the110lb endpoint, outweighs B\u2019s25-year versus30-year vintage and pale/straw versus golden shade advantages in Eastern Europe. No numerical premium or universal cutoff inferred."
+    }
+  ],
+  "rule_statements": [],
+  "scores": {
+    "wca_threshold": {
+      "n": 12,
+      "direction_correct": 9,
+      "meaningfulness_correct": 6,
+      "both_correct": 5,
+      "false_premiums": 4,
+      "missed_meaningful": 2,
+      "direction_misses": [
+        7,
+        8,
+        9
+      ],
+      "meaningfulness_misses": [
+        1,
+        5,
+        7,
+        8,
+        11,
+        12
+      ],
+      "joint_misses": [
+        1,
+        5,
+        7,
+        8,
+        9,
+        11,
+        12
+      ]
+    },
+    "v28": {
+      "n": 12,
+      "direction_correct": 7,
+      "meaningfulness_correct": 8,
+      "both_correct": 6,
+      "false_premiums": 0,
+      "missed_meaningful": 4,
+      "direction_misses": [
+        2,
+        5,
+        7,
+        8,
+        12
+      ],
+      "meaningfulness_misses": [
+        2,
+        5,
+        6,
+        12
+      ],
+      "joint_misses": [
+        2,
+        5,
+        6,
+        7,
+        8,
+        12
+      ]
+    }
+  },
+  "completed_at": "2026-10-28T06:17:23.923955+00:00",
+  "reconciliation_pending": true
+}

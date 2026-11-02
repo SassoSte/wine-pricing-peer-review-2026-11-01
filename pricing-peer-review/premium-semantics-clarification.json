@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-28",
+  "timezone": "America/Phoenix",
+  "type": "valuation_semantics_clarification",
+  "raw_answer": "Well, I think a strong way to look at it is that a premium is something that taste and preference cannot overcome. In other words, there are consumers who will, despite the fact that they prefer, or that they know something might be more valuable, prefer the alternative for reasons that are not necessarily evident. They're more abstract. So where there is a premium is where there is something that is either so rare, scarce, or relatively distinctive compared to the alternative, that the premium is obvious. If it's just a question of a rating scale, numeric rating scale, then that's easy to rank, because as we established, the vintage and the weight are the two most important and valuable attributes, followed by provenance and shade. Think of provenance and shade as seasoning that amplifies the one or combined tar and vintage attributes. Provenance and shade only really matter when framing vintage and tar. So I hope maybe that clarifies it a little bit.",
+  "interpretation": {
+    "premium": "An evident and defensible value advantage grounded in rarity,scarcity or distinctiveness; ordinary taste/preferences do not erase that value justification.",
+    "purchase_choice": "A buyer may still choose the alternative despite recognizing which is more valuable. Do not equate premium with universal choice agreement.",
+    "direction": "Relative value ordering, potentially slight; separate from buyer preference and premium meaningfulness.",
+    "meaningfulness": "Robustness/clarity of the value justification against ordinary preference differences, rather than an elicited fixed dollar or percentage gap.",
+    "attribute_roles": "Vintage and tare are the primary value attributes. Provenance and shade frame or amplify vintage,tare,or their combination; model their contributions conditionally rather than automatically as universal additive bonuses."
+  },
+  "modeling_hypotheses_not_yet_tested": [
+    "Separate intrinsic value ranking from classification of an evident/defensible premium.",
+    "Consider provenance/shade interactions with the vintage-tare profile, retaining observed pure-shade/provenance comparisons as context-specific evidence.",
+    "Treat all-top completion premium as one example of joint distinctiveness,not proof of measured inventory scarcity."
+  ],
+  "do_not_infer": [
+    "No numerical weights,price multipliers,dollar thresholds orpercentage thresholds supplied.",
+    "No actual inventory frequency ormarket consensus established.",
+    "Do not set provenance/shade tozero universally or discard earlier pair judgments.",
+    "No pair direction/meaningfulness labels supplied in this clarification;do not add a synthetic training pair or retroactively relabel earlier answers.",
+    "No model improvement verified by this semantic clarification alone."
+  ],
+  "evidence_parent": "evidence-v30.json",
+  "pending_model_review": true
+}

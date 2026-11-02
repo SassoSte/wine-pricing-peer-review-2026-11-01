@@ -1,0 +1,78 @@
+{
+  "round": 49,
+  "scores": {
+    "v26": {
+      "direction_n": 16,
+      "direction_correct": 13,
+      "direction_misses": [
+        2,
+        6,
+        16
+      ],
+      "meaningfulness_n": 17,
+      "meaningfulness_correct": 15,
+      "meaningfulness_misses": [
+        2,
+        16
+      ],
+      "both_axes_n": 15,
+      "both_axes_correct": 12,
+      "false_premiums": [],
+      "missed_meaningful": [
+        2,
+        16
+      ],
+      "zero_shade_n": 1,
+      "zero_shade_correct": 1
+    },
+    "v25": {
+      "direction_n": 16,
+      "direction_correct": 14,
+      "direction_misses": [
+        6,
+        16
+      ],
+      "meaningfulness_n": 17,
+      "meaningfulness_correct": 14,
+      "meaningfulness_misses": [
+        2,
+        16,
+        17
+      ],
+      "both_axes_n": 15,
+      "both_axes_correct": 11,
+      "false_premiums": [],
+      "missed_meaningful": [
+        2,
+        16,
+        17
+      ],
+      "zero_shade_n": 1,
+      "zero_shade_correct": 1
+    }
+  },
+  "scoring_exclusions": {
+    "meaningfulness_unspecified": [
+      1
+    ],
+    "both_axes_unresolved": [
+      9,
+      10
+    ],
+    "known_practical_no_direction": [
+      8,
+      18
+    ]
+  },
+  "findings": [
+    "Mixed prospective result: v26 direction13/16 vs v25 14/16;meaningfulness15/17 vs14/17;both12/15 vs11/15. No clear dominance on every axis.",
+    "Q2 is v26 direction regression:WE copper25/120 vsSEA pale20/125,userB meaningful;v26 A practical,v25 B practical. It repeats the known cross-provenance copper/pale weakness at a fresh vintage pair.",
+    "Q6 both choose lighter Northwest but user slightly favors WesternEurope;size practical correct.",
+    "Q16 both choose lighter-shade Northwest amber40 over WE brown35 despite userA meaningful;direction+size miss.",
+    "Q17 v26 correctly captures meaningful younger-golden domestic advantage with5lb tare disadvantage, v25 undercalls size.",
+    "Zero-shadeQ8 and pure5lbQ11 pass; no false meaningful premiums."
+  ],
+  "prediction_rechecks": 40,
+  "qualification": "Broader fresh exact-pair test, selected familiar families, not random population accuracy. No refit or evidence incorporation.",
+  "evidence_unchanged": "evidence-v26.json"
+}

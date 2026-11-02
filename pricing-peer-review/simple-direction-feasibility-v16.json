@@ -1,0 +1,261 @@
+{
+  "scope": "Read-only diagnostic on all270 known directions using the unchanged18-feature additive design. Unit margin tests existence of any strict ordering by scale, not premium magnitude. No labels or model coefficients changed.",
+  "all_directions_linearly_feasible": false,
+  "solver_status": 2,
+  "identical_feature_direction_conflicts": [
+    [
+      {
+        "id": "r2-2",
+        "a": [
+          "northwest",
+          "amber",
+          30,
+          130
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          30,
+          130
+        ],
+        "direction": -1
+      },
+      {
+        "id": "r3-2",
+        "a": [
+          "northwest",
+          "pale/straw",
+          30,
+          130
+        ],
+        "b": [
+          "Western Europe",
+          "pale/straw",
+          30,
+          130
+        ],
+        "direction": 1
+      },
+      {
+        "id": "r4-7",
+        "a": [
+          "northwest",
+          "golden",
+          30,
+          130
+        ],
+        "b": [
+          "Western Europe",
+          "golden",
+          30,
+          130
+        ],
+        "direction": 1
+      },
+      {
+        "id": "r4-8",
+        "a": [
+          "northwest",
+          "copper",
+          30,
+          130
+        ],
+        "b": [
+          "Western Europe",
+          "copper",
+          30,
+          130
+        ],
+        "direction": 1
+      },
+      {
+        "id": "r5-5",
+        "a": [
+          "northwest",
+          "amber",
+          25,
+          130
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          25,
+          130
+        ],
+        "direction": 1
+      },
+      {
+        "id": "r5-6",
+        "a": [
+          "northwest",
+          "amber",
+          35,
+          130
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          35,
+          130
+        ],
+        "direction": -1
+      },
+      {
+        "id": "revision-18",
+        "a": [
+          "northwest",
+          "amber",
+          40,
+          120
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          40,
+          120
+        ],
+        "direction": -1
+      },
+      {
+        "id": "round14-4",
+        "a": [
+          "northwest",
+          "amber",
+          40,
+          125
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          40,
+          125
+        ],
+        "direction": -1
+      },
+      {
+        "id": "round24-7",
+        "a": [
+          "Western Europe",
+          "amber",
+          30,
+          125
+        ],
+        "b": [
+          "northwest",
+          "amber",
+          30,
+          125
+        ],
+        "direction": 1
+      }
+    ],
+    [
+      {
+        "id": "r4-9",
+        "a": [
+          "southeast",
+          "amber",
+          30,
+          120
+        ],
+        "b": [
+          "northwest",
+          "amber",
+          30,
+          115
+        ],
+        "direction": 1
+      },
+      {
+        "id": "r5-9",
+        "a": [
+          "southeast",
+          "pale/straw",
+          30,
+          120
+        ],
+        "b": [
+          "northwest",
+          "pale/straw",
+          30,
+          115
+        ],
+        "direction": -1
+      }
+    ],
+    [
+      {
+        "id": "r5-4",
+        "a": [
+          "West Central Asia",
+          "amber",
+          30,
+          120
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "amber",
+          30,
+          120
+        ],
+        "direction": -1
+      },
+      {
+        "id": "round8-2",
+        "a": [
+          "West Central Asia",
+          "golden",
+          30,
+          120
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "golden",
+          30,
+          120
+        ],
+        "direction": 1
+      }
+    ],
+    [
+      {
+        "id": "revision-13",
+        "a": [
+          "Eastern Europe",
+          "pale/straw",
+          30,
+          120
+        ],
+        "b": [
+          "Eastern Europe",
+          "golden",
+          25,
+          120
+        ],
+        "direction": 1
+      },
+      {
+        "id": "round21-8",
+        "a": [
+          "central",
+          "golden",
+          25,
+          120
+        ],
+        "b": [
+          "central",
+          "pale/straw",
+          30,
+          120
+        ],
+        "direction": 1
+      }
+    ]
+  ],
+  "source_hashes": {
+    "benchmark-targets-v16.json": "b10c1ffab6082acf832ca502931ee5349349071fbe09808d42dd659f2bdc4065",
+    "evidence-v16.json": "d3fe285003091b1125cc4ff306d52eb944ca84c3b101b67f03849c64e32b3eaa",
+    "compare_models.py": "da2067d3d2ef99849ce2e30be16208bff0145bc6b036111535542c2daf00fa5f"
+  },
+  "interpretation": "Different complete offerings collapse to identical additive feature differences but have opposite recorded directions. This is a representation conflict, not proof of contradictory user answers. Audit the old answer provenance before relying on them for a new context term; do not repeat questions merely to satisfy the model."
+}

@@ -1,0 +1,26 @@
+{
+  "source_question_ids": [
+    "round50-8",
+    "round50-9",
+    "round50-10",
+    "round50-11",
+    "round50-12"
+  ],
+  "feasible": true,
+  "diagnosis": "Active brown/amber judgments compatible with positive local provenance,shade,vintage,tare contributions. Shade-only premium meaningful; age-only older-bracket premium slight; offsets can leave small positive net differences on opposite sides. No need to erase slight premiums or treat them as equalities.",
+  "conditions": [
+    "0<P+V+T-S<boundary",
+    "0<S-V-T<boundary",
+    "0<S-T<boundary",
+    "S>boundary",
+    "0<V<boundary"
+  ],
+  "variables": [
+    "P WesternEurope overNW",
+    "S amber overbrown",
+    "V35 over40",
+    "T115 over120"
+  ],
+  "qualification": "Boundary1 and separation.01 used only for feasibility, not fitted prices. Local additive compatibility does not prove global additivity or unique weights; positive-small T is prior5lb rule, not a new isolated answer.",
+  "models_changed": false
+}

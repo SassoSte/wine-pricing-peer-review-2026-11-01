@@ -1,0 +1,136 @@
+{
+  "round": 57,
+  "status": "complete",
+  "n": 18,
+  "counts": {
+    "exact_equality": 3,
+    "practical_similarity_with_direction": 11,
+    "meaningful_premium_with_direction": 3,
+    "practical_similarity_without_direction": 1
+  },
+  "exact_price_equality_cases": [
+    1,
+    15,
+    18
+  ],
+  "meaningful_cases": [
+    3,
+    4,
+    9
+  ],
+  "no_clear_direction_practical_cases": [
+    11
+  ],
+  "changes": [
+    {
+      "case": 1,
+      "source_id": "round50-9",
+      "prior_direction": -1,
+      "prior_size_target": 0,
+      "new_direction": null,
+      "new_meaningfulness": "no_meaningful_difference",
+      "exact_price_equality": true,
+      "qualification": null,
+      "interpretation_basis": null
+    },
+    {
+      "case": 7,
+      "source_id": "round37-9",
+      "prior_direction": -1,
+      "prior_size_target": -1,
+      "new_direction": "B",
+      "new_meaningfulness": "no_meaningful_difference",
+      "exact_price_equality": false,
+      "qualification": "Potentially a tie on some days, depending on inventory; no inventory measurement or deterministic rule supplied.",
+      "interpretation_basis": null
+    },
+    {
+      "case": 9,
+      "source_id": "round50-2",
+      "prior_direction": -1,
+      "prior_size_target": 0,
+      "new_direction": "B",
+      "new_meaningfulness": "meaningful_difference",
+      "exact_price_equality": false,
+      "qualification": null,
+      "interpretation_basis": "Interpreted from the explicit premium relative to A and other offerings, and more-than-enough language in response to meaningful/slight/zero options; no numerical strength inferred."
+    },
+    {
+      "case": 11,
+      "source_id": "round51-7",
+      "prior_direction": -1,
+      "prior_size_target": 0,
+      "new_direction": null,
+      "new_meaningfulness": "no_meaningful_difference",
+      "exact_price_equality": false,
+      "qualification": null,
+      "interpretation_basis": null
+    },
+    {
+      "case": 14,
+      "source_id": "round6-10",
+      "prior_direction": 1,
+      "prior_size_target": 1,
+      "new_direction": "A",
+      "new_meaningfulness": "no_meaningful_difference",
+      "exact_price_equality": false,
+      "qualification": null,
+      "interpretation_basis": null
+    },
+    {
+      "case": 15,
+      "source_id": "round6-8",
+      "prior_direction": 1,
+      "prior_size_target": 1,
+      "new_direction": null,
+      "new_meaningfulness": "no_meaningful_difference",
+      "exact_price_equality": true,
+      "qualification": null,
+      "interpretation_basis": null
+    },
+    {
+      "case": 16,
+      "source_id": "round6-9",
+      "prior_direction": 1,
+      "prior_size_target": 1,
+      "new_direction": "A",
+      "new_meaningfulness": "no_meaningful_difference",
+      "exact_price_equality": false,
+      "qualification": null,
+      "interpretation_basis": null
+    },
+    {
+      "case": 17,
+      "source_id": "round7-1",
+      "prior_direction": 1,
+      "prior_size_target": 1,
+      "new_direction": "A",
+      "new_meaningfulness": "no_meaningful_difference",
+      "exact_price_equality": false,
+      "qualification": null,
+      "interpretation_basis": null
+    },
+    {
+      "case": 18,
+      "source_id": "round8-4",
+      "prior_direction": 1,
+      "prior_size_target": 1,
+      "new_direction": null,
+      "new_meaningfulness": "no_meaningful_difference",
+      "exact_price_equality": true,
+      "qualification": null,
+      "interpretation_basis": null
+    }
+  ],
+  "reaffirmed_without_axis_change": 9,
+  "key_findings": [
+    "Exactprice equality isexplicit in cases1,15,18; do notcoarsen into practicalsimilarity.",
+    "Case11 hasno clearprice direction butis practicalsimilarity,not exactequality. Case7 retainsa tinyB advantage withinventory-dependent possibilityoftie.",
+    "A relativeadvantage fromtheotherofferingbeingweak neednot justify ameaningfulpremium. Several olderprovenance-only premiums were revised downward.",
+    "Case9 describes top20-year vintage pluspale shade atmatching125lb as a premium; contrasted withcase10 atmatching25years whereprovenance onlycreates a tinyA edge.",
+    "Case9meaningfulsize isinterpreted from explicitpremium/more-than-enough language; verbatimwording andbasis retained.",
+    "No numericprovenance adjacency weights,inventoryscarcity rates ormoney thresholds elicited."
+  ],
+  "protocol": "Reviewofexistingpairs,not freshblindvalidation. Frozenmodels andsourcequestionhashes verified. Corrections andexplanations saved separately; evidencev30 andallmodels stillunchanged. Laterreconcile byunorderedpair withoutdoublecounting; retain rawhistories. Do not report revised-answer scores asprospective modelaccuracy.",
+  "source_round_sha256": "ef3b26d40cabeb359780866486cc6dc634fe4816ca2f93070f5922c0a050d29f"
+}

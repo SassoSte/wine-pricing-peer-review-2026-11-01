@@ -1,0 +1,54 @@
+{
+  "status": "Recorded clarification pending next evidence reconciliation; frozen evidence and model results not rewritten",
+  "source": "Current voice clarification after shared shade-tare experiment",
+  "rows": [
+    {
+      "target_id": "round42-12",
+      "a": [
+        "Western Europe",
+        "copper",
+        25,
+        125
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        30,
+        115
+      ],
+      "value_relation": "equal",
+      "exact_price_equality": true,
+      "known_direction": null,
+      "materiality_target": 0,
+      "supersedes": "B slightly, practically similar",
+      "interpretation": "User explicitly clarified both as ties, Southeast by reference to the preceding textbook equal-price Western Europe judgment. Not unresolved.",
+      "reasoning": "Within this bracket, five years of younger vintage balances the 10 lb tare improvement from125 to115. Copper versus amber does not decide the comparison. No dominant offering.",
+      "scope": "These two pairs; not a universal five-year/ten-pound exchange rate or global zero copper-amber effect."
+    },
+    {
+      "target_id": "round54-11",
+      "a": [
+        "southeast",
+        "copper",
+        25,
+        125
+      ],
+      "b": [
+        "southeast",
+        "amber",
+        30,
+        115
+      ],
+      "value_relation": "equal",
+      "exact_price_equality": true,
+      "known_direction": null,
+      "materiality_target": 0,
+      "supersedes": "B slightly, practically similar",
+      "interpretation": "User explicitly clarified both as ties, Southeast by reference to the preceding textbook equal-price Western Europe judgment. Not unresolved.",
+      "reasoning": "Within this bracket, five years of younger vintage balances the 10 lb tare improvement from125 to115. Copper versus amber does not decide the comparison. No dominant offering.",
+      "scope": "These two pairs; not a universal five-year/ten-pound exchange rate or global zero copper-amber effect."
+    }
+  ],
+  "endpoint_note": "User distinguished reaching110lb from115lb; no new numerical outcome elicited for110-versus120.",
+  "experiment_implication": "The two B-direction targets used to motivate the interaction are superseded for future evidence. Historical experiment remains scored against its frozen v31 labels."
+}

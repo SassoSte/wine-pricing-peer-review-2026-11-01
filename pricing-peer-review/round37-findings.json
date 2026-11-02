@@ -1,0 +1,70 @@
+{
+  "source": "round37-fixed.json",
+  "source_sha256": "15fe1bbffa2ed4755c835c8b61b970f49ba77578032316f056db6ce9e59640f6",
+  "models_changed": false,
+  "refit_performed": false,
+  "coverage": {
+    "direction_scored": 6,
+    "size_scored": 12,
+    "direction_missing": [
+      "round37-4",
+      "round37-5",
+      "round37-6",
+      "round37-7",
+      "round37-8",
+      "round37-10"
+    ],
+    "size_missing": []
+  },
+  "size_labels": {
+    "meaningful": 5,
+    "practically_similar": 7
+  },
+  "finding": "Both models get all6 supplied directions right and8/12 size judgments. V17 catches one meaningful vintage tradeoff missed by v16 but makes4 false-premium calls versus3. This targeted batch does not demonstrate lower false-premium frequency.",
+  "main_remaining_contexts": [
+    {
+      "ids": [
+        "round37-6",
+        "round37-9"
+      ],
+      "finding": "Central versus Eastern Europe is practically similar at brown30/110, but meaningful at amber30/125. Both existing feature maps cancel the common shade/vintage/tare and give these the same regional contrast. A single global boundary cannot satisfy both judgments.",
+      "proof": {
+        "v16_additive": {
+          "same_central_minus_eastern_europe_feature_vector": true,
+          "nonzero_indices": [
+            4
+          ],
+          "nonzero_values": [
+            1.0
+          ]
+        },
+        "v17_precision": {
+          "same_central_minus_eastern_europe_feature_vector": true,
+          "nonzero_indices": [
+            4
+          ],
+          "nonzero_values": [
+            1.0
+          ]
+        }
+      },
+      "causal_limit": "Shade and shared tare level both change between these cases, so this pair alone cannot identify which context variable drives the materiality difference."
+    },
+    {
+      "ids": [
+        "round37-3",
+        "round37-4"
+      ],
+      "finding": "Improved v17 overstates matched domestic/foreign comparisons with5lb tare differences at pale30 and golden40; v16 stays within practical similarity."
+    },
+    {
+      "ids": [
+        "round37-7",
+        "round37-10"
+      ],
+      "finding": "Brown older domestic comparisons with5lb differences remain practical; both overstate Q10, while only v16 overstates Q7."
+    }
+  ],
+  "clarifications": "Q2 and Q9 now explicitly meaningful B; no other response altered. Initial incomplete-axis score retained separately. No clear direction is not exact equality.",
+  "next_math_target": "Context-sensitive materiality of regional differences; avoid forcing a global threshold to distinguish identical feature contrasts. Do not infer a universal shade-only or age-only rule from correlated context changes. Use existing statements first; no new questionnaire initiated."
+}

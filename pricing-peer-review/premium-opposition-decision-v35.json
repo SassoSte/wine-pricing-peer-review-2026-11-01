@@ -1,0 +1,67 @@
+{
+  "recommendation": "KEEP V28 reference and existing large-tare candidate. STOP generic opposition penalties and per-question exceptions. Questions4and6 remain size misses.",
+  "baseline": {
+    "all": {
+      "n": 413,
+      "correct": 388,
+      "false_premiums": 10,
+      "missed_premiums": 15,
+      "both_n": 232,
+      "both_correct": 208
+    },
+    "direct": {
+      "n": 245,
+      "correct": 226,
+      "false_premiums": 6,
+      "missed_premiums": 13,
+      "both_n": 206,
+      "both_correct": 184
+    }
+  },
+  "large_tare_conditional_heldout_mean": {
+    "all": {
+      "n": 413,
+      "correct": 390.2,
+      "false_premiums": 10,
+      "missed_premiums": 12.8,
+      "both_n": 232,
+      "both_correct": 210.2
+    },
+    "direct": {
+      "n": 245,
+      "correct": 228.2,
+      "false_premiums": 6,
+      "missed_premiums": 10.8,
+      "both_n": 206,
+      "both_correct": 186.2
+    }
+  },
+  "opposition_penalties_selected_zero": {
+    "absolute": 25,
+    "relative": 25
+  },
+  "forced_fix": {
+    "absolute_penalty": 0.75,
+    "size_correct_before": 391,
+    "size_correct_after": 366,
+    "false_premiums_before": 10,
+    "false_premiums_after": 6,
+    "missed_meaningful_before": 12,
+    "missed_meaningful_after": 41,
+    "effect": "Fixes Q4andQ6 but suppresses Q9 meaningfulpremium and manyother confirmedpremiums."
+  },
+  "diagnosis": [
+    "Q4 vintage/tare nearly cancel; brown-to-copper fixedshade contribution drives an overstated premium.",
+    "Q6 vintage/provenance advantage only just crosses global premium threshold after tare offset.",
+    "Q9 has larger opposing contribution than Q4orQ6, yet meritsmeaningful premium. Amountofcompetition alone is not sufficient distinction."
+  ],
+  "scope": "655pairs reviewed,413sizelabels scored,245explicitlymarked direct. Same25familyfolds conditionalonfrozen historicalv28. No freshprospective validation, no questionnaire, no defaultchange.",
+  "baseline_hashes_verified": {
+    "evidence-v35.json": true,
+    "benchmark-targets-v35.json": true,
+    "model-config-v28.json": true,
+    "premium-config-v35.json": true,
+    "premium_opposition_test_v35.py": true,
+    "premium-winning-gap-validation-v35.json": true
+  }
+}

@@ -1,0 +1,330 @@
+{
+  "status": "complete",
+  "rows": [
+    {
+      "clarification_id": "prospective-reporting-v1-1",
+      "a": [
+        "Eastern Europe",
+        "pale/straw",
+        30,
+        110
+      ],
+      "b": [
+        "Eastern Europe",
+        "pale/straw",
+        40,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "exact_price_equality": false,
+      "raw_answer": "A meaningful.",
+      "source": "prospective-reporting-v1-progress.json"
+    },
+    {
+      "clarification_id": "prospective-reporting-v1-2",
+      "a": [
+        "central",
+        "copper",
+        20,
+        110
+      ],
+      "b": [
+        "central",
+        "copper",
+        40,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "exact_price_equality": false,
+      "raw_answer": "A meaningfully more expensive\u2014the 20-year younger vintage and lower tare both favor A, with provenance and shade matching.",
+      "source": "prospective-reporting-v1-progress.json"
+    },
+    {
+      "clarification_id": "prospective-reporting-v1-3",
+      "a": [
+        "central",
+        "golden",
+        20,
+        115
+      ],
+      "b": [
+        "central",
+        "copper",
+        40,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "exact_price_equality": false,
+      "raw_answer": "A meaningful.",
+      "source": "prospective-reporting-v1-progress.json"
+    },
+    {
+      "clarification_id": "prospective-reporting-v1-4",
+      "a": [
+        "northeast",
+        "brown",
+        35,
+        115
+      ],
+      "b": [
+        "northeast",
+        "brown",
+        40,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "raw_answer": "A slightly",
+      "source": "prospective-reporting-v1-progress.json"
+    },
+    {
+      "clarification_id": "prospective-reporting-v1-5",
+      "a": [
+        "central",
+        "brown",
+        40,
+        125
+      ],
+      "b": [
+        "central",
+        "amber",
+        35,
+        130
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "raw_answer": "B slightly more expensive\u2014the younger vintage and amber shade outweigh A\u2019s 5 lb lower tare, but in this older bracket it\u2019s not a meaningful premium.",
+      "source": "prospective-reporting-v1-progress.json"
+    },
+    {
+      "clarification_id": "prospective-reporting-v1-6",
+      "a": [
+        "northeast",
+        "golden",
+        40,
+        120
+      ],
+      "b": [
+        "northeast",
+        "amber",
+        30,
+        130
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "raw_answer": "B slightly more expensive\u2014the 10-year younger vintage outweighs A\u2019s lighter shade and 10 lb lower tare, but it\u2019s close.",
+      "source": "prospective-reporting-v1-progress.json"
+    },
+    {
+      "clarification_id": "prospective-reporting-v1-7",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        25,
+        130
+      ],
+      "b": [
+        "West Central Asia",
+        "amber",
+        35,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "exact_price_equality": false,
+      "raw_answer": "A meaningful",
+      "source": "prospective-reporting-v1-progress.json"
+    },
+    {
+      "clarification_id": "prospective-reporting-v1-8",
+      "a": [
+        "northeast",
+        "golden",
+        40,
+        110
+      ],
+      "b": [
+        "northeast",
+        "brown",
+        30,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "exact_price_equality": false,
+      "raw_answer": "A meaningfully more expensive\u2014the 20 lb tare advantage and golden shade outweigh B\u2019s 10-year younger vintage, especially with B\u2019s brown shade.",
+      "source": "prospective-reporting-v1-progress.json"
+    },
+    {
+      "clarification_id": "prospective-reporting-v1-9",
+      "a": [
+        "Eastern Europe",
+        "pale/straw",
+        25,
+        110
+      ],
+      "b": [
+        "northwest",
+        "golden",
+        25,
+        110
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "raw_answer": "B very slightly",
+      "source": "prospective-reporting-v1-progress.json"
+    },
+    {
+      "clarification_id": "prospective-reporting-v1-10",
+      "a": [
+        "South/Eastern Asia",
+        "copper",
+        25,
+        115
+      ],
+      "b": [
+        "central",
+        "copper",
+        25,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "raw_answer": "a slightly",
+      "source": "prospective-reporting-v1-progress.json"
+    },
+    {
+      "clarification_id": "prospective-reporting-v1-11",
+      "a": [
+        "West Asia / Middle East",
+        "pale/straw",
+        20,
+        115
+      ],
+      "b": [
+        "southwest",
+        "brown",
+        20,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "raw_answer": "Post-result correction: A slightly higher.",
+      "source": "prospective-reporting-v1-progress.json",
+      "answer_history": [
+        "A meaningfully more expensive\u2014the pale/straw shade outweighs Southwest\u2019s provenance advantage, with vintage and tare matching.",
+        "User corrected question11 to model answer, A slight; see prospective-reporting-v1-clarifications.json"
+      ]
+    },
+    {
+      "clarification_id": "prospective-reporting-v1-12",
+      "a": [
+        "West Central Asia",
+        "brown",
+        35,
+        130
+      ],
+      "b": [
+        "northeast",
+        "copper",
+        35,
+        130
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "raw_answer": "B slightly",
+      "source": "prospective-reporting-v1-progress.json"
+    },
+    {
+      "clarification_id": "prospective-reporting-v1-13",
+      "a": [
+        "southwest",
+        "pale/straw",
+        35,
+        130
+      ],
+      "b": [
+        "northeast",
+        "pale/straw",
+        40,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "raw_answer": "A slightly more expensive\u2014the five-year younger vintage gives A the edge, but at this vintage and tare it\u2019s not a meaningful premium.",
+      "source": "prospective-reporting-v1-progress.json"
+    },
+    {
+      "clarification_id": "prospective-reporting-v1-14",
+      "a": [
+        "northwest",
+        "brown",
+        30,
+        110
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        25,
+        125
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "raw_answer": "B slightly",
+      "source": "prospective-reporting-v1-progress.json"
+    },
+    {
+      "clarification_id": "prospective-reporting-v1-15",
+      "a": [
+        "southwest",
+        "brown",
+        35,
+        120
+      ],
+      "b": [
+        "central",
+        "copper",
+        35,
+        115
+      ],
+      "known_direction": -1,
+      "materiality_target": -1,
+      "exact_price_equality": false,
+      "raw_answer": "B meaningful.",
+      "source": "prospective-reporting-v1-progress.json"
+    },
+    {
+      "clarification_id": "prospective-reporting-v1-16",
+      "a": [
+        "southwest",
+        "pale/straw",
+        25,
+        115
+      ],
+      "b": [
+        "northwest",
+        "pale/straw",
+        35,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "exact_price_equality": false,
+      "raw_answer": "A meaningfully.",
+      "source": "prospective-reporting-v1-progress.json"
+    }
+  ],
+  "protocol": "Prospective answers now development evidence; original frozen result preserved; Q11 post-disclosure correction explicit."
+}

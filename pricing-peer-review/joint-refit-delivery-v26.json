@@ -1,0 +1,136 @@
+{
+  "selected_model": "v25",
+  "model": {
+    "base_model": {
+      "base_model": {
+        "coefficients": [
+          0.30059251209596727,
+          -0.44364330726271745,
+          -0.44374330726271743,
+          -0.386024512749957,
+          0.398340399689864,
+          0.39955433836711174,
+          0.30049251209596733,
+          0.43001645365728314,
+          0.6003492343852845,
+          0.6266002443078896,
+          0.0,
+          0.0,
+          0.6636957908318052,
+          0.367069811730164,
+          0.9270917207257354,
+          0.6635957908318052,
+          0.5430913138174752,
+          0.2416467561623201,
+          -0.3636957208318152
+        ],
+        "training_joint_balanced_accuracy": 0.964875319594,
+        "training_both_axes_accuracy": 0.975308641975,
+        "training_signed_joint_loss": 0.027726171643,
+        "optimizer": "two-start constrained coordinate search; no global optimality claim",
+        "reference_context": {
+          "kind": "contextual_meaningfulness",
+          "underlying_source": "precision-shade-candidate-v17.json",
+          "underlying_coefficients": [
+            0.30059251209596727,
+            -0.4826433202627174,
+            -0.4827433202627174,
+            -0.4640245387499571,
+            0.395340398689864,
+            0.49105436886711173,
+            0.3004925120959673,
+            0.5335164881572831,
+            0.5073492033852847,
+            0.7556002873078896,
+            6.256835180915935e-22,
+            3.461062096949336e-21,
+            0.6636957908318052,
+            0.37156981323016397,
+            0.6270916207257354,
+            0.6635957908318052,
+            0.3330912438174751,
+            0.2491467586623201,
+            -0.36369579083180525
+          ],
+          "base_radius": 0.3000001,
+          "context_kind": "mature_shade",
+          "context_coefficient": 0.75,
+          "direction_weights_changed": false,
+          "calibration_evidence": "evidence-v21.json",
+          "shade_fraction": 0.0,
+          "boundary_increment": 0.35000000000000003,
+          "training_objective": 0.960558173251178,
+          "shade_coefficients": [
+            0.55,
+            0.0
+          ],
+          "shade_parameters": [
+            0.9,
+            0.9,
+            1.0
+          ],
+          "grid_size": 441,
+          "selected_arm": "pooled"
+        }
+      },
+      "five_year_fraction": 0.5,
+      "scope": "adjacent_shade",
+      "training_joint_balanced": 0.9692637924735112,
+      "training_joint_loss": 0.029223340078707125
+    },
+    "adjustments": [
+      1.4000000000000001,
+      0.0,
+      0.1
+    ],
+    "training_joint_balanced": 0.9658246566651739,
+    "training_joint_loss": 0.04183103056798594
+  },
+  "evidence": "evidence-v26.json",
+  "validation_file": "joint-refit-validation-v26.json",
+  "validation": {
+    "direction": {
+      "n": 380,
+      "correct": 346.0,
+      "accuracy": 0.9105263157894736,
+      "reversals": 30.8,
+      "zero_or_abstain": 3.2
+    },
+    "materiality": {
+      "n": 307,
+      "meaningful_n": 103,
+      "no_meaningful_n": 204,
+      "accuracy": 0.9302931596091206,
+      "balanced_accuracy": 0.9259185227489054,
+      "meaningful_recall": 0.9126213592233011,
+      "no_meananingful_recall": 0.9392156862745098,
+      "false_meaningful": 12.4,
+      "missed_meaningful": 9.0,
+      "correct_meaningful_direction": 92.8
+    },
+    "directly_supported_materiality": {
+      "n": 172,
+      "meaningful_n": 77,
+      "no_meaningful_n": 95,
+      "accuracy": 0.9290697674418604,
+      "balanced_accuracy": 0.9276691729323309,
+      "meaningful_recall": 0.9142857142857143,
+      "no_meananingful_recall": 0.9410526315789474,
+      "false_meaningful": 5.6,
+      "missed_meaningful": 6.6,
+      "correct_meaningful_direction": 70.0
+    },
+    "unknown_materiality_n": 249
+  },
+  "joint_validation": {
+    "supported_n": 549,
+    "correct": 494.8,
+    "accuracy": 0.9012750455373407,
+    "both_axes_n": 138,
+    "both_axes_correct": 120.8,
+    "both_axes_accuracy": 0.8753623188405797,
+    "balanced_accuracy": 0.8822002713831758,
+    "signed_joint_loss": 0.08868115703800357
+  },
+  "baselines_unchanged": true
+}

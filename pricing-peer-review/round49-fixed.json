@@ -1,0 +1,1401 @@
+{
+  "round": 49,
+  "created_at": "2026-10-28T01:10:18.444086+00:00",
+  "status": "complete",
+  "protocol": "20 fresh unordered pairs, reversed duplicates excluded from all saved rounds/evidence. Broader attribute-stratified domestic/foreign/mixed-provenance,shade/vintage/tare and controls across all10 provenances. Design and freshness choices precede prediction calls; not selected by prediction agreement. Four batches of5, no adaptive substitutions. Frozen consolidatedv26 versusv25; hide predictions and interim scoring. Direction/meaningfulness separate, unresolved allowed. Tie/practical/unresolved not conflated; no inferred missing sizes. Small selected sample, not random population accuracy.",
+  "models": {
+    "v26": {
+      "schema_version": 1,
+      "model_id": "v26_joint_refit_candidate",
+      "selection_status": "selected",
+      "description": "Selected v26, flattened without altering prediction mathematics; legacy model_id retained for output compatibility.",
+      "domain": {
+        "provenances": [
+          "Eastern Europe",
+          "Western Europe",
+          "West Central Asia",
+          "South/Eastern Asia",
+          "West Asia / Middle East",
+          "central",
+          "northeast",
+          "northwest",
+          "southwest",
+          "southeast"
+        ],
+        "shades": [
+          "brown",
+          "copper",
+          "amber",
+          "golden",
+          "pale/straw"
+        ],
+        "vintage_years": [
+          40,
+          35,
+          30,
+          25,
+          20
+        ],
+        "tare_lb": [
+          110,
+          115,
+          120,
+          125,
+          130
+        ],
+        "domestic": [
+          "central",
+          "northwest",
+          "northeast",
+          "southwest",
+          "southeast"
+        ]
+      },
+      "feature_names": [
+        "provenance:Western Europe",
+        "provenance:West Central Asia",
+        "provenance:South/Eastern Asia",
+        "provenance:West Asia / Middle East",
+        "provenance:central",
+        "provenance:northeast",
+        "provenance:northwest",
+        "provenance:southwest",
+        "provenance:southeast",
+        "shade_increment:copper",
+        "shade_increment:amber",
+        "shade_increment:golden",
+        "shade_increment:pale/straw",
+        "vintage_increment:35",
+        "vintage_increment:30",
+        "vintage_increment:25",
+        "vintage_increment:20",
+        "lower_tare_per5lb",
+        "domestic_pale_adjustment"
+      ],
+      "weights": {
+        "fitted": [
+          0.30059251209596727,
+          -0.44214330676271746,
+          -0.44224330676271745,
+          -0.38452451224995704,
+          0.330840377189864,
+          0.35905432486711175,
+          0.30049251209596733,
+          0.41951645015728317,
+          0.6003492343852845,
+          0.7781002948078896,
+          0.0,
+          0.0,
+          0.21369564083180523,
+          0.242569770230164,
+          0.6270916207257354,
+          0.6650957913318052,
+          0.5100913028174753,
+          0.2416467561623201,
+          0.005304402168184757
+        ],
+        "offset_reference": [
+          0.30059251209596727,
+          -0.44364330726271745,
+          -0.44374330726271743,
+          -0.386024512749957,
+          0.398340399689864,
+          0.39955433836711174,
+          0.30049251209596733,
+          0.43001645365728314,
+          0.6003492343852845,
+          0.6266002443078896,
+          0.0,
+          0.0,
+          0.6636957908318052,
+          0.367069811730164,
+          0.9270917207257354,
+          0.6635957908318052,
+          0.5430913138174752,
+          0.2416467561623201,
+          -0.3636957208318152
+        ]
+      },
+      "shade_context": {
+        "foreign_120_discount": 0.9,
+        "foreign_125_discount": 0.9,
+        "youngest20_extra_discount": 1.0,
+        "zero_premium_tare": 130,
+        "context_tare": "minimum",
+        "contrast": [
+          "golden",
+          "pale/straw"
+        ]
+      },
+      "five_year": {
+        "fraction": 0.5,
+        "scope": "adjacent_shade",
+        "matching_provenance": true,
+        "gap_years": 5
+      },
+      "offsets": {
+        "older_vintage_scale": 1.4000000000000001,
+        "brown_step_scale": 0.0,
+        "microshade_scale": 0.1,
+        "older_vintages": [
+          35,
+          40
+        ],
+        "older_shades": [
+          "golden",
+          "pale/straw"
+        ],
+        "micro_shades": [
+          "amber",
+          "copper"
+        ],
+        "microshade_headroom_factor": 0.9999999
+      },
+      "boundary": {
+        "base_radius": 0.3000001,
+        "context_kind": "mature_shade",
+        "context_scale": 0.75,
+        "additional_context_scale": 0.35000000000000003,
+        "provenance_reference_weights": [
+          0.30059251209596727,
+          -0.4826433202627174,
+          -0.4827433202627174,
+          -0.4640245387499571,
+          0.395340398689864,
+          0.49105436886711173,
+          0.3004925120959673,
+          0.5335164881572831,
+          0.5073492033852847
+        ],
+        "matched_tare_limit": 5,
+        "old_vintage": 35,
+        "brown_vintage": 30
+      },
+      "classification": {
+        "direction_epsilon": 1e-07,
+        "meaningfulness_epsilon": 1e-08,
+        "exact_price_equality": null,
+        "units": "pair-comparison score, not a standalone price"
+      },
+      "arithmetic": "Preserve reference offset cancellation and separate boundary additions for legacy parity; do not algebraically simplify until equivalence is reverified.",
+      "source_hashes": {
+        "joint-refit-candidate-v26.json": "40cd7f74df54c4e0fd6cab9564c0bd803564142fd5a26719f3487b9c19457caf",
+        "joint-refit-validation-v26.json": "72faea0cb273f98eb5417272049640ef1103d32df2903aa4eff496aa94de7295",
+        "evidence-v26.json": "424ecd96ce04e5d4a70d2dba726ab618bffdbf0bbd8bd061624e9807f2405c4b",
+        "benchmark-targets-v26.json": "d29211f2355fc74d5e2d859e36aefc760d2e35488c8e49b470a752b1ed6743cc",
+        "pricing_v26.py": "c626d19894e2255d93f082bf64507f728f0cccb56fccc1017be47c3e22a416d4",
+        "joint_refit_v26.py": "0218f13f0f9347a22c754a98a0fe301e562e00daa3aa2a5abc776be2997d205f",
+        "older_dark_scoped_v25.py": "0a4059a700e2134cb2e0ed9f89c24f800a199f3a48b80826fd98e84987cb58c7",
+        "five_year_premium_v23.py": "75c11a41bf11fcc61f9fef2e883b18406a396909c4e80828f447275cd519ba4b",
+        "joint_weight_refit_v22.py": "de3cf99d34f965f0c890d9d2835366fd568aee5a6aa16b93896aa74877776958",
+        "shade_vintage_shared_v21.py": "0f535ccdc861f7b1487908dc278d9984cf67e7442ec881d36532275d9de9a7cc",
+        "contextual_shade_v20.py": "b629c2cdff1afd7c3f51d1d4485d83416c123313bfe88b7a0d30f6dd032be338",
+        "contextual_fixes_v19.py": "a8233ff44ec8e98bad184e08f0ea82078c98e7caee02766dff47d34282bee748",
+        "contextual_meaningfulness.py": "3a81ecd7650c5ac5b2704c2a0b2fe7eea3bbc78539232e67734cca07ca40dad7",
+        "domestic_shade_model.py": "fdabc56fbde9f66365d565f94272675a7c45d6fb96bcfe444435436835b830ce",
+        "compare_models.py": "da2067d3d2ef99849ce2e30be16208bff0145bc6b036111535542c2daf00fa5f"
+      }
+    },
+    "v25": {
+      "selected_model": "combined",
+      "model": {
+        "base_model": {
+          "base_model": {
+            "coefficients": [
+              0.30059251209596727,
+              -0.44364330726271745,
+              -0.44374330726271743,
+              -0.386024512749957,
+              0.398340399689864,
+              0.39955433836711174,
+              0.30049251209596733,
+              0.43001645365728314,
+              0.6003492343852845,
+              0.6266002443078896,
+              0.0,
+              0.0,
+              0.6636957908318052,
+              0.367069811730164,
+              0.9270917207257354,
+              0.6635957908318052,
+              0.5430913138174752,
+              0.2416467561623201,
+              -0.3636957208318152
+            ],
+            "training_joint_balanced_accuracy": 0.964875319594,
+            "training_both_axes_accuracy": 0.975308641975,
+            "training_signed_joint_loss": 0.027726171643,
+            "optimizer": "two-start constrained coordinate search; no global optimality claim",
+            "reference_context": {
+              "kind": "contextual_meaningfulness",
+              "underlying_source": "precision-shade-candidate-v17.json",
+              "underlying_coefficients": [
+                0.30059251209596727,
+                -0.4826433202627174,
+                -0.4827433202627174,
+                -0.4640245387499571,
+                0.395340398689864,
+                0.49105436886711173,
+                0.3004925120959673,
+                0.5335164881572831,
+                0.5073492033852847,
+                0.7556002873078896,
+                6.256835180915935e-22,
+                3.461062096949336e-21,
+                0.6636957908318052,
+                0.37156981323016397,
+                0.6270916207257354,
+                0.6635957908318052,
+                0.3330912438174751,
+                0.2491467586623201,
+                -0.36369579083180525
+              ],
+              "base_radius": 0.3000001,
+              "context_kind": "mature_shade",
+              "context_coefficient": 0.75,
+              "direction_weights_changed": false,
+              "calibration_evidence": "evidence-v21.json",
+              "shade_fraction": 0.0,
+              "boundary_increment": 0.35000000000000003,
+              "training_objective": 0.960558173251178,
+              "shade_coefficients": [
+                0.55,
+                0.0
+              ],
+              "shade_parameters": [
+                0.9,
+                0.9,
+                1.0
+              ],
+              "grid_size": 441,
+              "selected_arm": "pooled"
+            }
+          },
+          "five_year_fraction": 0.5,
+          "scope": "adjacent_shade",
+          "training_joint_balanced": 0.9692637924735112,
+          "training_joint_loss": 0.029223340078707125
+        },
+        "adjustments": [
+          1.4000000000000001,
+          0.0,
+          0.1
+        ],
+        "training_joint_balanced": 0.9658246566651739,
+        "training_joint_loss": 0.04183103056798594
+      },
+      "evidence": "evidence-v25.json",
+      "validation_file": "older-dark-scoped-validation-v25.json",
+      "validation": {
+        "direction": {
+          "n": 353,
+          "correct": 322.6,
+          "accuracy": 0.9138810198300282,
+          "reversals": 29.0,
+          "zero_or_abstain": 1.4
+        },
+        "materiality": {
+          "n": 278,
+          "meaningful_n": 84,
+          "no_meaningful_n": 194,
+          "accuracy": 0.9345323741007194,
+          "balanced_accuracy": 0.9281173294059892,
+          "meaningful_recall": 0.9119047619047619,
+          "no_meananingful_recall": 0.9443298969072165,
+          "false_meaningful": 10.8,
+          "missed_meaningful": 7.4,
+          "correct_meaningful_direction": 75.6
+        },
+        "directly_supported_materiality": {
+          "n": 143,
+          "meaningful_n": 58,
+          "no_meaningful_n": 85,
+          "accuracy": 0.9370629370629372,
+          "balanced_accuracy": 0.9333671399594321,
+          "meaningful_recall": 0.913793103448276,
+          "no_meananingful_recall": 0.9529411764705882,
+          "false_meaningful": 4.0,
+          "missed_meaningful": 5.0,
+          "correct_meaningful_direction": 52.8
+        },
+        "unknown_materiality_n": 245
+      },
+      "joint_validation": {
+        "both_axes_correct": 99.4,
+        "both_axes_accuracy": 0.879646017699115,
+        "balanced_accuracy": 0.8899830198537095,
+        "signed_joint_loss": 0.08930486920774694
+      },
+      "baselines_unchanged": true
+    }
+  },
+  "file_sha256": {
+    "model-config.json": "a3bb8c74df3a5cef51ab71dee54a35113b2df8146a7fbdc76054cd5b0bd48e4c",
+    "predictor.py": "03d6d4f3d8fe47f31eb047832e578c4179fa545b85251f67362bc7d76f350166",
+    "older-dark-scoped-delivery-v25.json": "19bbd28c26bdb27a83c6424fb537dee184e3eb26af35fa494358127f7399dbba",
+    "evidence-v26.json": "424ecd96ce04e5d4a70d2dba726ab618bffdbf0bbd8bd061624e9807f2405c4b",
+    "benchmark-targets-v26.json": "d29211f2355fc74d5e2d859e36aefc760d2e35488c8e49b470a752b1ed6743cc",
+    "pricing_v25.py": "b8fea5a096309ee9942aa0eabb65faa2be9fb7d484cb32e36e2e0f2fee685d4b",
+    "older_dark_scoped_v25.py": "0a4059a700e2134cb2e0ed9f89c24f800a199f3a48b80826fd98e84987cb58c7",
+    "five_year_premium_v23.py": "75c11a41bf11fcc61f9fef2e883b18406a396909c4e80828f447275cd519ba4b",
+    "joint_weight_refit_v22.py": "de3cf99d34f965f0c890d9d2835366fd568aee5a6aa16b93896aa74877776958",
+    "joint_objective_v22.py": "5b02b658801bc14502c20eac66763f03a8add4079734c12756d3f6dd5f9236e6",
+    "residual_fixes_v22.py": "28d57cdd0bb04ad8be33acbc3405f5ba920394fe38a578ece699a261d6604b7d",
+    "shade_vintage_shared_v21.py": "0f535ccdc861f7b1487908dc278d9984cf67e7442ec881d36532275d9de9a7cc",
+    "contextual_shade_v20.py": "b629c2cdff1afd7c3f51d1d4485d83416c123313bfe88b7a0d30f6dd032be338",
+    "contextual_fixes_v19.py": "a8233ff44ec8e98bad184e08f0ea82078c98e7caee02766dff47d34282bee748",
+    "contextual_meaningfulness.py": "3a81ecd7650c5ac5b2704c2a0b2fe7eea3bbc78539232e67734cca07ca40dad7",
+    "domestic_shade_model.py": "fdabc56fbde9f66365d565f94272675a7c45d6fb96bcfe444435436835b830ce",
+    "compare_models.py": "da2067d3d2ef99849ce2e30be16208bff0145bc6b036111535542c2daf00fa5f",
+    "freeze_round49.py": "62a735ba736634eadc3eab5514e1453704c2fef62bc574785915dc0aadd55d07",
+    "freeze_round40.py": "6da26926a1023fa5bdb4c9a806200934d20d568407464b34825b45d8daee5ade"
+  },
+  "freshness_history_sha256": {
+    "comparisons.json": "1a125dac50da322ea0bad27db4d8a19e1b241ce64c394793842b8f551ef4338c",
+    "evidence-v10.json": "f1961118c9e86d07eeaa011a2ff3a516496c4d6e0b66123c03d534efedad3188",
+    "evidence-v11.json": "c00cc06dbbf2eea2f0a1f3556a6c15f8dea0fa926a9359e8566af9ea8d42dd5b",
+    "evidence-v12.json": "76c2adb3a57301eb8ad136e2414b8621dc9ee22f9f7611ab4a923db91d468ba6",
+    "evidence-v13.json": "41b3fc7030dc57cee18c91a7cbce47503368925579a59ffe7b7ee06d0a533fbf",
+    "evidence-v14.json": "d20c26dc91ed7930123c50c9449002bdf8052f0e872254d119cb23612f7725c6",
+    "evidence-v15.json": "40ac084c3b4ab5cbbf4195879764ffd4f04fa011f822dbfcf10670c0e3919867",
+    "evidence-v16.json": "d3fe285003091b1125cc4ff306d52eb944ca84c3b101b67f03849c64e32b3eaa",
+    "evidence-v17.json": "71763a0f60f5725774af1f48e0010ad01ec8d04a57979e43d405f7d99a018697",
+    "evidence-v18.json": "b639452b95833a658d39ba2c54549f185599c1393ebf8f50172531fd6e2ebbf6",
+    "evidence-v19.json": "74856415ec8dd515b98d69d6ae04b89499eb2a2a0bed179fdb12023e00f2e262",
+    "evidence-v2.json": "8a512f572cf8ed4b5a2bd2655574762e5f5e548a5345627cf76513dc582aaa1f",
+    "evidence-v20.json": "52e79c6c05bd909dbc5a85452e3a94fcfed7ab7de6e5a9f228051ff7cb28edd5",
+    "evidence-v21.json": "86fa17d383d5a8c5db578a218299604ab121a6bcf0a9b4ad4ce86d793faab48c",
+    "evidence-v22.json": "77cda878cbe8e05b32d8f5319cd788245a85c7afd2f2e6caec513bb35fcb01a5",
+    "evidence-v23.json": "e156fb5a7a96208c78c0b573fec9658516a9fcd9cec388c801261c1f743be473",
+    "evidence-v24.json": "76028812efd185a1289a30db8d42b5cb0bc00b005aaf41e3c712cbf3be835646",
+    "evidence-v25.json": "9e142cfcf5ca017e506776e9d12276c837285df9990aebc5408f53281c31e070",
+    "evidence-v26.json": "424ecd96ce04e5d4a70d2dba726ab618bffdbf0bbd8bd061624e9807f2405c4b",
+    "evidence-v3.json": "f5cc0483361938267e7f605811909939bc57d5bdbc963107392fcbcb4d525003",
+    "evidence-v4.json": "a06e40555faa9ff5509ee6d5d3708a77dd38efd7c2ae871574c9093025baf6ba",
+    "evidence-v5.json": "71a3f8fe0b656257eba4cb954589d238644e6430ab2e556d305403073dbc06af",
+    "evidence-v6.json": "bd4caa506b8774a1098302dc988ec1b5fbb2705f0fdb13d90a5f01082c6ce491",
+    "evidence-v7.json": "0422c64505c0507988c5511e0ea1c6f8a16b8ddf579899c323e082433e875ec6",
+    "evidence-v8.json": "595f0c2f12de8f6a6df300dc328693d0ff6307724f7e1d71382b66bcedb43a23",
+    "evidence-v9.json": "8e556698547b69d0756e2bf9df9f2d2830460632cc8fc9d2d9ea7b160e835956",
+    "round10-fixed.json": "91af42fcf3f54fbc0835672744238ea3c1e084c0f69ed3452dbce996be1f3476",
+    "round13-fixed.json": "3ec55feb8fc4e0235c48612cb0f630f983c4f6edbd783710af0e2d710ee756af",
+    "round15-fixed.json": "30ecfdaa122a6b0a1920216834b82f651ab83efe2d76c9cf828eafe3b5bc7eec",
+    "round17-fixed.json": "d9318d78c2d6ec10a2c83e9ba77634ad198d177e1f2e8a68a8b2a067a4c22881",
+    "round19-fixed.json": "a21b7d2b2712160222569b4157048d3cb05de1167ac094dbfa8a23e0ad6ba6ef",
+    "round21-fixed.json": "591319b2a1b40972227c2d6b3ef5d0572590025fae832fd43e225b17a5f6b3fc",
+    "round23-fixed.json": "34e87f4b2d8e1bc4e6d587b7a26c170258c583e69fd87dd963ac4d6574c567d0",
+    "round25-fixed.json": "010486d450a3ac98dea7defc0da10361d3346efd8e06f78f183ec8600708647a",
+    "round27-fixed.json": "726feaa52066f79e27be7e2b78f5582d3bcc55dee462bceddf9d2828551f5644",
+    "round35-fixed.json": "aee3bf1d39e697649bc02169ecb8fa5d8d85c08ae4cf97b05b706bf4a94b4d45",
+    "round36-fixed.json": "8f0b34708efbaa8be0243f302a64ee014fac7453ba603774f5e6699ef1a7d18a",
+    "round37-fixed.json": "15fe1bbffa2ed4755c835c8b61b970f49ba77578032316f056db6ce9e59640f6",
+    "round38-fixed.json": "4019ce1f1822cba2463fb2fd0fe88b04bd33d564aea7044cf3f4915b87dcddfb",
+    "round39-fixed.json": "d1f544552406c8d60ae94a73c9693bf0029d5f838a312362837af2d6efb24512",
+    "round40-fixed.json": "5a5006b9acfaf7a4f9ad9c41ab41e0f84bdcb780fb969cebadd27edaeb404e94",
+    "round41-fixed.json": "56f4fb5e60aa3e5aa4cd136bf34baf03e995c4f0186baa9b697cbda26f2e803f",
+    "round42-fixed.json": "e78a406cee93af70e1a148afb961e1df7c1aa9c75782953f687ddc6c6c9aeb11",
+    "round43-fixed.json": "d4766b9d08d70e70c4184ba148e5107a2fa6cd79f4a2f6f09d830da5a244f857",
+    "round44-fixed.json": "cdab11092f2122d1939286160037c5a469bcc1ddd7dfda1d5501d2d1f2a8c20e",
+    "round45-fixed.json": "f09689543f0acc7db554a680c4eff95d4f3987d6b1a4ebacbb6a7b56e28f97c6",
+    "round46-fixed.json": "5d820008b69e85ecfed757674853143d957c3653672dc1a66728feb641861042",
+    "round47-fixed.json": "02b3d28cf44e355ee4781993ad94c1e9f8055d1eb8b6475c26c3dadfa9a3d2cb",
+    "round48-fixed.json": "30c54ade5dc8291c8df1050f21760de8a0244370fcaa491d03ce49275faad4ad",
+    "round9-fixed.json": "3281cec3694c5177a6dc78b36c2f9b6a1b80981033dcd2048d36b0ce805ce0a7"
+  },
+  "freeze_fields": [
+    "id",
+    "number",
+    "category",
+    "a",
+    "b",
+    "predictions"
+  ],
+  "questions_and_predictions_sha256": "2643d0ed3c6acc5dc6f9a216b6791dd6ac9dd2340ab4109c4a4caf51fadccb3e",
+  "questions": [
+    {
+      "id": "round49-1",
+      "number": 1,
+      "category": "domestic_tradeoff",
+      "a": [
+        "central",
+        "amber",
+        25,
+        120
+      ],
+      "b": [
+        "northeast",
+        "amber",
+        30,
+        115
+      ],
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": null,
+      "raw_answer": "A, slightly.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "v26": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 0.3952350874922373,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        },
+        "v25": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 0.42073509599223735,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v25_combined"
+        }
+      },
+      "interpretation": "Explicit A direction qualified slightly; meaningfulness unspecified, no size label inferred.",
+      "strength": "slightly"
+    },
+    {
+      "id": "round49-2",
+      "number": 2,
+      "category": "foreign_shade_tradeoff",
+      "a": [
+        "Western Europe",
+        "copper",
+        25,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "pale/straw",
+        20,
+        125
+      ],
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "B, meaningful difference.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "v26": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.26069563137172436,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        },
+        "v25": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.22080452912827567,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v25_combined"
+        }
+      },
+      "interpretation": "Explicit direction and meaningfulness supplied; no additional attribute rationale inferred."
+    },
+    {
+      "id": "round49-3",
+      "number": 3,
+      "category": "older_vintage",
+      "a": [
+        "West Central Asia",
+        "golden",
+        35,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "pale/straw",
+        40,
+        120
+      ],
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "A, meaningful difference.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "v26": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 0.8118059106757608,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        },
+        "v25": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 0.5485558229257609,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v25_combined"
+        }
+      },
+      "interpretation": "Explicit direction and meaningfulness supplied; no additional attribute rationale inferred."
+    },
+    {
+      "id": "round49-4",
+      "number": 4,
+      "category": "microshade",
+      "a": [
+        "southwest",
+        "amber",
+        20,
+        125
+      ],
+      "b": [
+        "southwest",
+        "copper",
+        20,
+        125
+      ],
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "A, practically similar.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "v26": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.030000006999999003,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        },
+        "v25": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.030000006999999003,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v25_combined"
+        }
+      },
+      "interpretation": "Explicit direction and meaningfulness supplied; no additional attribute rationale inferred."
+    },
+    {
+      "id": "round49-5",
+      "number": 5,
+      "category": "large_tare",
+      "a": [
+        "Eastern Europe",
+        "brown",
+        30,
+        110
+      ],
+      "b": [
+        "Eastern Europe",
+        "brown",
+        30,
+        130
+      ],
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "A, meaningful difference.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "v26": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 0.9665870246492804,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        },
+        "v25": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 0.9665870246492804,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v25_combined"
+        }
+      },
+      "interpretation": "Explicit direction and meaningfulness supplied; no additional attribute rationale inferred."
+    },
+    {
+      "id": "round49-6",
+      "number": 6,
+      "category": "provenance_tare",
+      "a": [
+        "northwest",
+        "golden",
+        25,
+        115
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        25,
+        120
+      ],
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "B, practically similar.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "v26": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.24154675616232016,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        },
+        "v25": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.24154675616232016,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v25_combined"
+        }
+      },
+      "interpretation": "Explicit direction and meaningfulness supplied; no additional attribute rationale inferred."
+    },
+    {
+      "id": "round49-7",
+      "number": 7,
+      "category": "foreign_tradeoff",
+      "a": [
+        "West Asia / Middle East",
+        "amber",
+        35,
+        125
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "amber",
+        30,
+        115
+      ],
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "B, meaningful difference.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "v26": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -1.0526663385376152,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        },
+        "v25": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -1.3526664385376153,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v25_combined"
+        }
+      },
+      "interpretation": "Explicit direction and meaningfulness supplied; no additional attribute rationale inferred."
+    },
+    {
+      "id": "round49-8",
+      "number": 8,
+      "category": "zero_shade",
+      "a": [
+        "central",
+        "golden",
+        35,
+        130
+      ],
+      "b": [
+        "central",
+        "pale/straw",
+        35,
+        130
+      ],
+      "status": "answered",
+      "direction": null,
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "Tie\u2014no golden-to-pale premium at 130 lbs.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "v26": {
+          "predicted_direction": null,
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.0,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        },
+        "v25": {
+          "predicted_direction": null,
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.0,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v25_combined"
+        }
+      },
+      "interpretation": "Explicit tie and zero golden-to-pale shade premium at130lb; no clear direction and no meaningful difference, separate zero-shade check retained.",
+      "shade_premium_statement": "no premium at130lb"
+    },
+    {
+      "id": "round49-9",
+      "number": 9,
+      "category": "brown_tradeoff",
+      "a": [
+        "northeast",
+        "brown",
+        25,
+        115
+      ],
+      "b": [
+        "southeast",
+        "amber",
+        30,
+        120
+      ],
+      "status": "answered",
+      "direction": null,
+      "meaningfulness": null,
+      "raw_answer": "Unresolved\u2014very close, not a tie.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "v26": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.11265265683193704,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        },
+        "v25": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.07784740666806289,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v25_combined"
+        }
+      },
+      "interpretation": "Explicit unresolved on both axes, very close and not a tie. No winner, meaningfulness or equality inferred.",
+      "resolution_status": "unresolved",
+      "explicitly_not_tie": true
+    },
+    {
+      "id": "round49-10",
+      "number": 10,
+      "category": "five_year_ten_lb",
+      "a": [
+        "Eastern Europe",
+        "golden",
+        25,
+        125
+      ],
+      "b": [
+        "Eastern Europe",
+        "pale/straw",
+        30,
+        115
+      ],
+      "status": "answered",
+      "direction": null,
+      "meaningfulness": null,
+      "raw_answer": "Unresolved\u2014very close, not a tie.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "v26": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 0.3006545338412625,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        },
+        "v25": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.15159561690873757,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v25_combined"
+        }
+      },
+      "interpretation": "Explicit unresolved on both axes, very close and not a tie. No winner, meaningfulness or equality inferred.",
+      "resolution_status": "unresolved",
+      "explicitly_not_tie": true
+    },
+    {
+      "id": "round49-11",
+      "number": 11,
+      "category": "pure_five_lb",
+      "a": [
+        "Western Europe",
+        "pale/straw",
+        35,
+        120
+      ],
+      "b": [
+        "Western Europe",
+        "pale/straw",
+        35,
+        125
+      ],
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "A, practically similar.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "v26": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.2416467561623201,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        },
+        "v25": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.2416467561623201,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v25_combined"
+        }
+      },
+      "interpretation": "Explicit direction and meaningfulness supplied; no additional attribute rationale inferred."
+    },
+    {
+      "id": "round49-12",
+      "number": 12,
+      "category": "ten_year_fifteen_lb",
+      "a": [
+        "southwest",
+        "golden",
+        20,
+        130
+      ],
+      "b": [
+        "central",
+        "golden",
+        30,
+        115
+      ],
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "A, meaningful difference.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "v26": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 0.5389228986297394,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        },
+        "v25": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 0.5134228901297393,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v25_combined"
+        }
+      },
+      "interpretation": "Explicit direction and meaningfulness supplied; no additional attribute rationale inferred."
+    },
+    {
+      "id": "round49-13",
+      "number": 13,
+      "category": "foreign_tradeoff",
+      "a": [
+        "West Central Asia",
+        "copper",
+        30,
+        120
+      ],
+      "b": [
+        "Eastern Europe",
+        "amber",
+        25,
+        125
+      ],
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "B, meaningful difference.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "v26": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -0.8655923419322025,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        },
+        "v25": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -0.8655923419322025,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v25_combined"
+        }
+      },
+      "interpretation": "Explicit direction and meaningfulness supplied; no additional attribute rationale inferred."
+    },
+    {
+      "id": "round49-14",
+      "number": 14,
+      "category": "reinforcing",
+      "a": [
+        "northwest",
+        "golden",
+        30,
+        110
+      ],
+      "b": [
+        "northwest",
+        "golden",
+        35,
+        125
+      ],
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "A, meaningful difference.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "v26": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 1.3520318892126957,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        },
+        "v25": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 1.6520319892126958,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v25_combined"
+        }
+      },
+      "interpretation": "Explicit direction and meaningfulness supplied; no additional attribute rationale inferred."
+    },
+    {
+      "id": "round49-15",
+      "number": 15,
+      "category": "microshade",
+      "a": [
+        "South/Eastern Asia",
+        "amber",
+        25,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "copper",
+        25,
+        120
+      ],
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "A, practically similar.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "v26": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.030000006999999003,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        },
+        "v25": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.030000006999999003,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v25_combined"
+        }
+      },
+      "interpretation": "Explicit direction and meaningfulness supplied; no additional attribute rationale inferred."
+    },
+    {
+      "id": "round49-16",
+      "number": 16,
+      "category": "brown_cross_provenance",
+      "a": [
+        "Western Europe",
+        "brown",
+        35,
+        115
+      ],
+      "b": [
+        "northwest",
+        "amber",
+        40,
+        120
+      ],
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "A, meaningful difference.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "v26": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.2937837684154055,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        },
+        "v25": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.01778367641540557,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v25_combined"
+        }
+      },
+      "interpretation": "Explicit direction and meaningfulness supplied; no additional rationale inferred."
+    },
+    {
+      "id": "round49-17",
+      "number": 17,
+      "category": "domestic_vintage",
+      "a": [
+        "central",
+        "golden",
+        20,
+        125
+      ],
+      "b": [
+        "central",
+        "pale/straw",
+        25,
+        120
+      ],
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "A, meaningful difference.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "v26": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 0.30449015506390276,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        },
+        "v25": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.2729901445639027,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v25_combined"
+        }
+      },
+      "interpretation": "Explicit direction and meaningfulness supplied; no additional rationale inferred."
+    },
+    {
+      "id": "round49-18",
+      "number": 18,
+      "category": "provenance_only",
+      "a": [
+        "northeast",
+        "copper",
+        35,
+        120
+      ],
+      "b": [
+        "southwest",
+        "copper",
+        35,
+        120
+      ],
+      "status": "answered",
+      "direction": null,
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "Tie\u2014provenance adds no meaningful premium here.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "v26": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.06046212529017142,
+          "decision_radius": 0.5890832759637911,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        },
+        "v25": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.0304621152901714,
+          "decision_radius": 0.5890832759637911,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v25_combined"
+        }
+      },
+      "interpretation": "User says tie because provenance adds no meaningful premium here. No clear direction and no meaningful difference; do not infer exact mathematical equality or zero latent provenance effect.",
+      "practical_tie_statement": true
+    },
+    {
+      "id": "round49-19",
+      "number": 19,
+      "category": "foreign_tradeoff",
+      "a": [
+        "West Asia / Middle East",
+        "pale/straw",
+        30,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "golden",
+        25,
+        120
+      ],
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "B, meaningful difference.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "v26": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -0.8277541888981844,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        },
+        "v25": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -0.7812541733981844,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v25_combined"
+        }
+      },
+      "interpretation": "Explicit direction and meaningfulness supplied; no additional rationale inferred."
+    },
+    {
+      "id": "round49-20",
+      "number": 20,
+      "category": "vintage_only",
+      "a": [
+        "Eastern Europe",
+        "golden",
+        40,
+        125
+      ],
+      "b": [
+        "Eastern Europe",
+        "golden",
+        30,
+        125
+      ],
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "B, meaningful difference.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "v26": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -0.8696613909558994,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        },
+        "v25": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -1.2941615324558995,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v25_combined"
+        }
+      },
+      "interpretation": "Explicit direction and meaningfulness supplied; no additional rationale inferred."
+    }
+  ],
+  "rule_statements": [
+    {
+      "source": "round49-8",
+      "statement": "Domestic Central golden35/130 versus pale35/130: tie; no golden-to-pale premium at130lb.",
+      "scope": "This comparison and repeated zero-shade-premium rule; models fixed."
+    },
+    {
+      "source": "round49-9",
+      "statement": "Domestic Northeast brown25/115 versus Southeast amber30/120 is very close and explicitly unresolved, not a tie.",
+      "scope": "Both axes unresolved; models fixed."
+    },
+    {
+      "source": "round49-10",
+      "statement": "Eastern Europe golden25/125 versus pale30/115 is very close and explicitly unresolved, not a tie.",
+      "scope": "Both axes unresolved; models fixed."
+    },
+    {
+      "source": "round49-18",
+      "statement": "Domestic Northeast copper35/120 versus Southwest copper35/120: tie; provenance adds no meaningful premium here.",
+      "scope": "This matched-shade/vintage/tare comparison; no exact-price instruction inferred."
+    }
+  ],
+  "scores": {
+    "v26": {
+      "direction_n": 16,
+      "direction_correct": 13,
+      "direction_misses": [
+        2,
+        6,
+        16
+      ],
+      "meaningfulness_n": 17,
+      "meaningfulness_correct": 15,
+      "meaningfulness_misses": [
+        2,
+        16
+      ],
+      "both_axes_n": 15,
+      "both_axes_correct": 12,
+      "false_premiums": [],
+      "missed_meaningful": [
+        2,
+        16
+      ],
+      "zero_shade_n": 1,
+      "zero_shade_correct": 1
+    },
+    "v25": {
+      "direction_n": 16,
+      "direction_correct": 14,
+      "direction_misses": [
+        6,
+        16
+      ],
+      "meaningfulness_n": 17,
+      "meaningfulness_correct": 14,
+      "meaningfulness_misses": [
+        2,
+        16,
+        17
+      ],
+      "both_axes_n": 15,
+      "both_axes_correct": 11,
+      "false_premiums": [],
+      "missed_meaningful": [
+        2,
+        16,
+        17
+      ],
+      "zero_shade_n": 1,
+      "zero_shade_correct": 1
+    }
+  },
+  "unresolved_question_numbers": [
+    9,
+    10
+  ],
+  "scoring_note": "Q1 A/slightly direction-only, size unspecified. Q9/Q10 unresolved, not ties, excluded. Q18 no meaningful provenance premium is practical similarity, not zero latent provenance instruction. Q8 zero-shade separate. Magnitude score alone not joint correctness. Broader fresh exact-pair test, familiar families, not random population sample. No refit/evidence incorporation."
+}

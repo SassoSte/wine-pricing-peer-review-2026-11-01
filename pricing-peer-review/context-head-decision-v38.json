@@ -1,0 +1,96 @@
+{
+  "decision": "REJECT candidate; stop declared architecture after singleplannedrun. No promotion, no post-resultfeature/thresholdsearch.",
+  "baseline_metrics": {
+    "v28": {
+      "all": {
+        "n": 453,
+        "correct": 418,
+        "false_premiums": 20,
+        "missed_premiums": 15,
+        "both_n": 271,
+        "both_correct": 235
+      },
+      "direct": {
+        "n": 285,
+        "correct": 256,
+        "false_premiums": 16,
+        "missed_premiums": 13,
+        "both_n": 245,
+        "both_correct": 211
+      }
+    },
+    "v37": {
+      "all": {
+        "n": 453,
+        "correct": 425,
+        "false_premiums": 16,
+        "missed_premiums": 12,
+        "both_n": 271,
+        "both_correct": 242
+      },
+      "direct": {
+        "n": 285,
+        "correct": 263,
+        "false_premiums": 12,
+        "missed_premiums": 10,
+        "both_n": 245,
+        "both_correct": 218
+      }
+    }
+  },
+  "candidate_mean": {
+    "all": {
+      "n": 453.0,
+      "correct": 397.8,
+      "false_premiums": 25.0,
+      "missed_premiums": 30.2,
+      "both_n": 271.0,
+      "both_correct": 216.0
+    },
+    "direct": {
+      "n": 285.0,
+      "correct": 239.2,
+      "false_premiums": 20.8,
+      "missed_premiums": 25.0,
+      "both_n": 245.0,
+      "both_correct": 195.2
+    }
+  },
+  "candidate_full_fit": {
+    "all": {
+      "n": 453,
+      "correct": 411,
+      "false_premiums": 17,
+      "missed_premiums": 25,
+      "both_n": 271,
+      "both_correct": 227
+    },
+    "direct": {
+      "n": 285,
+      "correct": 249,
+      "false_premiums": 15,
+      "missed_premiums": 21,
+      "both_n": 245,
+      "both_correct": 205
+    }
+  },
+  "target_size_correct_repeats": {
+    "13": 1,
+    "14": 0,
+    "16": 0
+  },
+  "control_regressions": [],
+  "hyperparameter_counts": {
+    "0.001": 17,
+    "0.01": 8
+  },
+  "checks": {
+    "feature_shape": [
+      691,
+      22
+    ],
+    "swap_invariance": true,
+    "baseline_hashes_verified": true
+  },
+  "qualification": "Thisonepredeclaredcontextualheadfailed. Notproof allcontextualmodelscannotwork orlabelsareirreduciblenoise. Frozenhistoricalbaselines sawsomeevaluationlabels,whileheadhasfamilyholdouts; comparisonisconditionaloperationalgate,notfairfreshwholemodelcontest. Bothrecentprospectivesets nowdevelopmentmaterial; preservesoriginalfrozenresults separately."
+}

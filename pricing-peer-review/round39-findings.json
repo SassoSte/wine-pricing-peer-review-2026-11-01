@@ -1,0 +1,49 @@
+{
+  "round": 39,
+  "scores": {
+    "v19": {
+      "direction_correct": 2,
+      "direction_n": 6,
+      "direction_misses": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "meaningfulness_correct": 1,
+      "meaningfulness_n": 6,
+      "meaningfulness_misses": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "narrow_shade_candidate": {
+      "direction_correct": 6,
+      "direction_n": 6,
+      "direction_misses": [],
+      "meaningfulness_correct": 4,
+      "meaningfulness_n": 6,
+      "meaningfulness_misses": [
+        1,
+        5
+      ]
+    }
+  },
+  "findings": [
+    "Five-year younger golden is meaningfully preferred to older pale for Western Europe at120 and130lb, with earlier round38-8 at125lb; no reversal across tested120-130lb range.",
+    "At125lb, same tradeoff favors younger golden meaningfully in Eastern Europe and West Central Asia too; preference not unique to Western Europe among tested provenances.",
+    "Western Europe25years125lb shade-only comparison favors pale slightly but not meaningfully; current model overvalues this adjacent shade increment.",
+    "Ten-year younger golden also meaningful, consistent with five-year preference.",
+    "Rejected narrow candidate gets all6 directions but misses size at120lb and the equal-age shade-only case. Its tradeoff-only gate excludes the latter, so it cannot fix the isolated shade effect."
+  ],
+  "limits": [
+    "Diagnostic selected set, not representative predictive accuracy.",
+    "115lb prior Western Europe preference was not re-asked; preserve it, do not infer universal tare independence.",
+    "Earlier Eastern Europe120lb pale preference also preserved; current EE125lb answer does not overwrite it.",
+    "No model or evidence version modified."
+  ],
+  "next_modeling_implication": "Consider contextual adjacent-shade magnitude itself rather than only gating opposing shade/vintage pairs, with explicit protection of negligible5lb tare effects. Fit/validate only when requested."
+}

@@ -1,0 +1,379 @@
+{
+  "round": 20,
+  "status": "complete diagnostic checkpoint; no refit",
+  "protocol": "Isolate Round19 misses Q14/Q15/Q20 sequentially, one question at a time; explicit A higher/B higher/exact equality/unresolved. Use single-factor and wider matched contrasts as needed. Models fixed; verify hashes and record hidden predictions before answers. No refit; adaptive diagnosis, not fresh validation.",
+  "file_sha256": {
+    "pricing.py": "70cf711fdd3322750ffd5cdab45e156e3bc47a136ddb2155bac04727e7900906",
+    "compare_models.py": "da2067d3d2ef99849ce2e30be16208bff0145bc6b036111535542c2daf00fa5f",
+    "additive-comparison-v5.json": "e780968fbe9b68b040cad183aa0f0dc4bcb1240e21cba6a6735bde7039a10d00",
+    "evidence-v5.json": "71a3f8fe0b656257eba4cb954589d238644e6430ab2e556d305403073dbc06af"
+  },
+  "additive_v5_snapshot": {
+    "evidence_version": 5,
+    "training_rows": 252,
+    "alpha": 1.0,
+    "pooling": 1.0,
+    "threshold": 0.3,
+    "inner_balanced_accuracy": 0.7446408877860491,
+    "feature_names": [
+      "origin:Western Europe vs Eastern Europe",
+      "origin:West Central Asia vs Eastern Europe",
+      "origin:South/Eastern Asia vs Eastern Europe",
+      "origin:West Asia / Middle East vs Eastern Europe",
+      "origin:central vs Eastern Europe",
+      "origin:northeast vs Eastern Europe",
+      "origin:northwest vs Eastern Europe",
+      "origin:southwest vs Eastern Europe",
+      "origin:southeast vs Eastern Europe",
+      "shade increment:copper",
+      "shade increment:amber",
+      "shade increment:golden",
+      "shade increment:pale/straw",
+      "age increment:35",
+      "age increment:30",
+      "age increment:25",
+      "age increment:20",
+      "lightness per 5 lb"
+    ],
+    "coefficients": [
+      0.43150532406929315,
+      -0.6346644320193475,
+      -0.6525514842728269,
+      -0.6829688381120518,
+      0.439538974073883,
+      0.738672709643073,
+      0.22498361085075055,
+      0.7191462135520561,
+      0.723720300555076,
+      1.3056844411706514,
+      0.0,
+      0.0,
+      0.714078475274611,
+      0.9788416110212124,
+      0.968383400893503,
+      1.0911992848718655,
+      1.025593843375176,
+      0.44221363554707943
+    ],
+    "in_sample": {
+      "n": 252,
+      "matched": 195,
+      "accuracy": 0.7738095238095238,
+      "balanced_accuracy": 0.7660084091535705,
+      "recall": {
+        "B": 0.7419354838709677,
+        "tie": 0.7435897435897436,
+        "A": 0.8125
+      },
+      "confusion_actual_to_predicted": {
+        "B": {
+          "B": 46,
+          "tie": 16,
+          "A": 0
+        },
+        "tie": {
+          "B": 8,
+          "tie": 58,
+          "A": 12
+        },
+        "A": {
+          "B": 2,
+          "tie": 19,
+          "A": 91
+        }
+      },
+      "opposite_winner_errors": 2,
+      "predicted_ties": 93
+    },
+    "constraint_audit": {
+      "strict_rank_sign_violations": 11,
+      "ties_not_exactly_equal": 78
+    },
+    "target_predictions": [
+      {
+        "id": "round17-3",
+        "answer": "tie",
+        "answer_source": "round17-3",
+        "prediction": "B",
+        "margin": -0.4529219470248657
+      },
+      {
+        "id": "round17-13",
+        "answer": "tie",
+        "answer_source": "round17-13",
+        "prediction": "B",
+        "margin": -0.42268713945606257
+      },
+      {
+        "id": "round17-15",
+        "answer": "tie",
+        "answer_source": "round17-15",
+        "prediction": "tie",
+        "margin": 0.23569192232853683
+      }
+    ]
+  },
+  "response_options": [
+    "Price A higher than B",
+    "Price B higher than A",
+    "Give them exactly the same price",
+    "Leave this unresolved"
+  ],
+  "target_pairs": [
+    "round19-14",
+    "round19-15",
+    "round19-20"
+  ],
+  "current_target": null,
+  "questions": [
+    {
+      "id": "round20-1",
+      "target": "round19-14",
+      "a": [
+        "southwest",
+        "pale/straw",
+        20,
+        125
+      ],
+      "b": [
+        "southeast",
+        "pale/straw",
+        20,
+        125
+      ],
+      "factor": "provenance only; equal tare",
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "predictions_before_answer": {
+        "revision_e": "tie",
+        "additive_v5": "tie"
+      },
+      "additive_v5_margin": -0.004574087003019867,
+      "raw_answer": "3. Give them exactly the same price."
+    },
+    {
+      "id": "round20-2",
+      "target": "round19-14",
+      "a": [
+        "southwest",
+        "pale/straw",
+        20,
+        120
+      ],
+      "b": [
+        "southwest",
+        "pale/straw",
+        20,
+        125
+      ],
+      "factor": "tare only within southwest",
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_v5": "A"
+      },
+      "additive_v5_margin": 0.44221363554707943,
+      "raw_answer": "3. Give them exactly the same price."
+    },
+    {
+      "id": "round20-3",
+      "target": "round19-14",
+      "a": [
+        "southwest",
+        "pale/straw",
+        20,
+        120
+      ],
+      "b": [
+        "southwest",
+        "pale/straw",
+        20,
+        130
+      ],
+      "factor": "tare only; widen from 5 lb to 10 lb",
+      "winner": "A",
+      "strength": "very slightly",
+      "status": "answered",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_v5": "A"
+      },
+      "additive_v5_margin": 0.8844272710941589,
+      "raw_answer": "1. Price A higher than B, but only very slightly."
+    },
+    {
+      "id": "round20-4",
+      "target": "round19-15",
+      "a": [
+        "Western Europe",
+        "golden",
+        40,
+        120
+      ],
+      "b": [
+        "central",
+        "golden",
+        40,
+        120
+      ],
+      "factor": "provenance only; equal tare",
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_v5": "tie"
+      },
+      "additive_v5_margin": -0.008033650004589832,
+      "raw_answer": "3"
+    },
+    {
+      "id": "round20-5",
+      "target": "round19-15",
+      "a": [
+        "central",
+        "golden",
+        40,
+        115
+      ],
+      "b": [
+        "central",
+        "golden",
+        40,
+        120
+      ],
+      "factor": "tare only within central",
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_v5": "A"
+      },
+      "additive_v5_margin": 0.44221363554707943,
+      "raw_answer": "3. Give them exactly the same price."
+    },
+    {
+      "id": "round20-6",
+      "target": "round19-15",
+      "a": [
+        "central",
+        "golden",
+        40,
+        115
+      ],
+      "b": [
+        "central",
+        "golden",
+        40,
+        125
+      ],
+      "factor": "tare only; widen from 5 lb to 10 lb",
+      "winner": "A",
+      "strength": "very slightly",
+      "status": "answered",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_v5": "A"
+      },
+      "additive_v5_margin": 0.8844272710941589,
+      "raw_answer": "1. Price A higher than B, but only very slightly."
+    },
+    {
+      "id": "round20-7",
+      "target": "round19-20",
+      "a": [
+        "West Central Asia",
+        "amber",
+        20,
+        125
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "amber",
+        20,
+        125
+      ],
+      "factor": "provenance only; equal tare",
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "predictions_before_answer": {
+        "revision_e": "B",
+        "additive_v5": "tie"
+      },
+      "additive_v5_margin": 0.01788705225347942,
+      "raw_answer": "3. Give them exactly the same price."
+    },
+    {
+      "id": "round20-8",
+      "target": "round19-20",
+      "a": [
+        "South/Eastern Asia",
+        "amber",
+        20,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "amber",
+        20,
+        125
+      ],
+      "factor": "tare only within South/Eastern Asia",
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_v5": "A"
+      },
+      "additive_v5_margin": 0.44221363554707943,
+      "raw_answer": "3. Give them exactly the same price."
+    },
+    {
+      "id": "round20-9",
+      "target": "round19-20",
+      "a": [
+        "South/Eastern Asia",
+        "amber",
+        20,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "amber",
+        20,
+        130
+      ],
+      "factor": "tare only; widen from 5 lb to 10 lb",
+      "winner": "A",
+      "strength": "very slightly",
+      "status": "answered",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_v5": "A"
+      },
+      "additive_v5_margin": 0.8844272710941589,
+      "raw_answer": "1. Price A higher than B, but only very slightly."
+    }
+  ],
+  "target_findings": {
+    "round19-14": "Original tie consistent with southwest125=southeast125 and southwest120=southwest125 at pale/straw/20-year. Southwest120 exceeds southwest130 very slightly; context-specific, not a universal tare threshold.",
+    "round19-15": "Original tie consistent with Western Europe120=central120 and central115=central120 at golden/40-year. Central115 exceeds central125 very slightly. Context-specific findings, not a universal tare threshold.",
+    "round19-20": "Original tie consistent with West Central Asia125=South/Eastern Asia125 and South/Eastern Asia120=South/Eastern Asia125 at amber/20-year. South/Eastern Asia120 exceeds South/Eastern Asia130 very slightly. Context-specific, not a universal tare threshold."
+  },
+  "summary": {
+    "responses": 9,
+    "new_component_pairs": 9,
+    "original_pair_rechecks": 0,
+    "corrections": 0,
+    "unresolved": 0,
+    "models_unchanged": true,
+    "scope": "Adaptive isolation, not fresh validation. All three original ties are consistent with the separately answered equalities. No original answers replaced.",
+    "implication": "In each tested context, equal provenance prices and a specific 5 lb tare equality coexist with a small premium at 10 lb; no universal tare cutoff or numerical adjective scale established."
+  }
+}

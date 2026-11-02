@@ -1,0 +1,123 @@
+{
+  "selected_model": "v16_baseline",
+  "model": {
+    "kind": "v16_blended",
+    "trained_evidence": "evidence-v16.json",
+    "alpha": 0.1,
+    "decision_radius": 0.320940715979069,
+    "coefficients": [
+      0.41029310215104803,
+      -0.5807681589416427,
+      -0.476193905283125,
+      -0.5116505377097532,
+      0.3937784453249939,
+      0.5578855782727229,
+      0.376609404634807,
+      0.6098620813001897,
+      0.5922682206846925,
+      0.9046626230993391,
+      0.0,
+      0.0,
+      0.40827364214126277,
+      0.42868212234802283,
+      0.6232082015720347,
+      0.7959165332589401,
+      0.3271430131718139,
+      0.3031770769642259
+    ],
+    "feature_names": [
+      "origin:Western Europe vs Eastern Europe",
+      "origin:West Central Asia vs Eastern Europe",
+      "origin:South/Eastern Asia vs Eastern Europe",
+      "origin:West Asia / Middle East vs Eastern Europe",
+      "origin:central vs Eastern Europe",
+      "origin:northeast vs Eastern Europe",
+      "origin:northwest vs Eastern Europe",
+      "origin:southwest vs Eastern Europe",
+      "origin:southeast vs Eastern Europe",
+      "shade increment:copper",
+      "shade increment:amber",
+      "shade increment:golden",
+      "shade increment:pale/straw",
+      "age increment:35",
+      "age increment:30",
+      "age increment:25",
+      "age increment:20",
+      "lightness per 5 lb"
+    ],
+    "training_score": {
+      "direction": {
+        "n": 270,
+        "correct": 255,
+        "accuracy": 0.9444444444444444,
+        "reversals": 15,
+        "zero_or_abstain": 0
+      },
+      "materiality": {
+        "n": 175,
+        "meaningful_n": 26,
+        "no_meaningful_n": 149,
+        "accuracy": 0.96,
+        "balanced_accuracy": 0.9606350025813113,
+        "meaningful_recall": 0.9615384615384616,
+        "no_meananingful_recall": 0.959731543624161,
+        "false_meaningful": 6,
+        "missed_meaningful": 1,
+        "correct_meaningful_direction": 25
+      },
+      "unknown_materiality_n": 238,
+      "directly_supported_materiality": {
+        "n": 41,
+        "meaningful_n": 1,
+        "no_meaningful_n": 40,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "meaningful_recall": 1.0,
+        "no_meananingful_recall": 1.0,
+        "false_meaningful": 0,
+        "missed_meaningful": 0,
+        "correct_meaningful_direction": 1
+      }
+    }
+  },
+  "evidence": "evidence-v16.json",
+  "target_view": "benchmark-targets-v16.json",
+  "validation_file": "minimal-context-validation-v16.json",
+  "validation_sha256": "d0ac193e599b10b613e9344951b9384783637c27f651c4f39b3d43a7a2651987",
+  "validation": {
+    "direction": {
+      "n": 270,
+      "correct": 244.8,
+      "accuracy": 0.9066666666666666,
+      "reversals": 25.2,
+      "zero_or_abstain": 0.0
+    },
+    "materiality": {
+      "n": 175,
+      "meaningful_n": 26,
+      "no_meaningful_n": 149,
+      "accuracy": 0.9302857142857143,
+      "balanced_accuracy": 0.8987351574599897,
+      "meaningful_recall": 0.853846153846154,
+      "no_meananingful_recall": 0.9436241610738255,
+      "false_meaningful": 8.4,
+      "missed_meaningful": 3.8,
+      "correct_meaningful_direction": 21.4
+    },
+    "directly_supported_materiality": {
+      "n": 41,
+      "meaningful_n": 1,
+      "no_meaningful_n": 40,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "meaningful_recall": 1.0,
+      "no_meananingful_recall": 1.0,
+      "false_meaningful": 0.0,
+      "missed_meaningful": 0.0,
+      "correct_meaningful_direction": 1.0
+    },
+    "unknown_materiality_n": 238
+  },
+  "prediction_source": "model coefficients only; no answer lookup",
+  "qualification": "Best retained under prespecified direction/materiality/error safeguards on exploratory family validation; not monetary calibration."
+}

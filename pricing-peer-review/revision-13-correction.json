@@ -1,0 +1,43 @@
+{
+  "source_id": "revision-13",
+  "source_evidence": "evidence-v21.json",
+  "a": [
+    "Eastern Europe",
+    "pale/straw",
+    30,
+    120
+  ],
+  "b": [
+    "Eastern Europe",
+    "golden",
+    25,
+    120
+  ],
+  "previous_record": {
+    "id": "revision-13",
+    "a": [
+      "Eastern Europe",
+      "pale/straw",
+      30,
+      120
+    ],
+    "b": [
+      "Eastern Europe",
+      "golden",
+      25,
+      120
+    ],
+    "winner": "A",
+    "strength": "slightly",
+    "status": "active",
+    "judgment_type": "strict_preference",
+    "direction": "A"
+  },
+  "corrected_direction": "B",
+  "corrected_meaningfulness": null,
+  "raw_clarification": "To be sure, eastern europe at 120 lb, pale, versus golden 25 year ... the 25 year vintage must win unless I mistyped or was confused.",
+  "interpretation": "User corrects earlier direction: golden25 wins over pale30 at matched Eastern Europe120lb. Strength/meaningfulness not supplied; do not carry forward old slightly qualifier.",
+  "status": "pending_next_evidence_version",
+  "models_refit": false,
+  "recorded_at": "2026-10-27T23:14:06.858175+00:00"
+}

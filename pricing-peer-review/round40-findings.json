@@ -1,0 +1,93 @@
+{
+  "round": 40,
+  "scores": {
+    "v20": {
+      "direction_n": 9,
+      "direction_correct": 6,
+      "direction_misses": [
+        3,
+        9,
+        12
+      ],
+      "meaningfulness_n": 12,
+      "meaningfulness_correct": 7,
+      "meaningfulness_misses": [
+        3,
+        5,
+        7,
+        10,
+        12
+      ],
+      "false_premiums": [],
+      "missed_meaningful": [
+        3,
+        5,
+        7,
+        10,
+        12
+      ],
+      "zero_shade_premium_n": 3,
+      "zero_shade_premium_correct": 0,
+      "zero_shade_premium_misses": [
+        1,
+        6,
+        8
+      ]
+    },
+    "v19": {
+      "direction_n": 9,
+      "direction_correct": 3,
+      "direction_misses": [
+        2,
+        3,
+        5,
+        9,
+        10,
+        12
+      ],
+      "meaningfulness_n": 12,
+      "meaningfulness_correct": 4,
+      "meaningfulness_misses": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8,
+        10,
+        12
+      ],
+      "false_premiums": [
+        1,
+        6,
+        8
+      ],
+      "missed_meaningful": [
+        2,
+        3,
+        7,
+        10,
+        12
+      ],
+      "zero_shade_premium_n": 3,
+      "zero_shade_premium_correct": 0,
+      "zero_shade_premium_misses": [
+        1,
+        6,
+        8
+      ]
+    }
+  },
+  "qualification": "Fresh exact pairs but targeted familiar families. Meaningfulness metric is magnitude-only; wrong-direction meaningful calls are not overall correct predictions. Zero-shade premium checked separately.",
+  "findings": [
+    "V20 improves over v19 on this targeted batch but remains incomplete.",
+    "Q1/6/8 establish no adjacent golden/pale premium at130lb across EE/WE/WCA. V20 predicts practically similar but retains nonzero shade preference; zero-premium condition failed all3.",
+    "Q3 WE120lb andQ9 EE115lb are direction reversals below current gate. Q9 meaningfulness magnitude is correct but favors wrong offering.",
+    "Q5 andQ10 have correct vintage direction but underestimate meaningfulness across different age intervals.",
+    "Q7/Q12 show equal-tare-only correction misses mixed vintage/shade/5lb comparisons. Pure5lb controls Q4/Q11 both correct for both models."
+  ],
+  "models_unchanged": true,
+  "evidence_unchanged": "evidence-v20.json",
+  "prediction_rechecks": 24,
+  "active_questionnaire": false
+}

@@ -1,0 +1,42 @@
+{
+  "model": {
+    "kind": "matched_vintage_tare_compensation",
+    "coefficients": [
+      0.3078046153853131,
+      -0.6921753846154004,
+      -0.6921853846146869,
+      -0.99999,
+      0.07700615384694243,
+      0.5385530769235776,
+      -0.23067846153815819,
+      0.1539523076927236,
+      0.07705615384704778,
+      1.3077246153852071,
+      0.23073846153826455,
+      0.0,
+      0.07690615384578114,
+      0.5385030769234712,
+      1.3077646115898918,
+      1.307714615385207,
+      1.2308284615394256,
+      0.5384930769234713,
+      0.53841307692231,
+      0.5384930769234713
+    ],
+    "decision_radius": 1.0,
+    "protected_training_ids": [
+      "round49-2",
+      "round49-17",
+      "round50-4"
+    ],
+    "solver_status": 0,
+    "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "mip_gap": 0.0008898628210541692,
+    "objective": 0.041049492110241954,
+    "time_limit_seconds": 12.0,
+    "solver_tolerance_met": true,
+    "exact_optimum_proven": false
+  },
+  "validation_file": "tare-refit-validation-v28.json",
+  "evidence": "evidence-v28.json"
+}

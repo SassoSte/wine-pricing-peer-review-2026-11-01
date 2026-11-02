@@ -1,0 +1,8549 @@
+{
+  "evidence": "evidence-v19.json",
+  "evidence_sha256": "74856415ec8dd515b98d69d6ae04b89499eb2a2a0bed179fdb12023e00f2e262",
+  "source_hashes": {
+    "evidence-v18.json": "b639452b95833a658d39ba2c54549f185599c1393ebf8f50172531fd6e2ebbf6",
+    "benchmark-targets-v18.json": "73bbd3e4771a6dc3b2d6072b34ee1ffba5a143ef338eea2894664106424336af",
+    "round38-fixed.json": "4019ce1f1822cba2463fb2fd0fe88b04bd33d564aea7044cf3f4915b87dcddfb",
+    "build_evidence_v19.py": "772c405994ffba072a0c7c67fc4da1b34ace1e925fa602a1b151651e62b6a888"
+  },
+  "protocol": "All437 parent rows unchanged.12 added;Q3 both scoring axes missing and remains retained, not relabeled tie. Q8 strongly is a qualifier-derived positive, not directly explicit meaningfulness. No prior answers overwritten.",
+  "materiality_counts": {
+    "unspecified": 239,
+    "no_meaningful_difference": 172,
+    "meaningful_direct_or_proxy": 38
+  },
+  "rows": [
+    {
+      "id": "r1-1",
+      "a": [
+        "northeast",
+        "amber",
+        30,
+        115
+      ],
+      "b": [
+        "southwest",
+        "amber",
+        30,
+        110
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "r1-2",
+      "a": [
+        "southwest",
+        "amber",
+        30,
+        120
+      ],
+      "b": [
+        "central",
+        "amber",
+        30,
+        110
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "r1-3",
+      "a": [
+        "northeast",
+        "amber",
+        30,
+        120
+      ],
+      "b": [
+        "northwest",
+        "amber",
+        30,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "r1-4",
+      "a": [
+        "northeast",
+        "amber",
+        30,
+        110
+      ],
+      "b": [
+        "northeast",
+        "amber",
+        30,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "r1-5",
+      "a": [
+        "Eastern Europe",
+        "amber",
+        30,
+        115
+      ],
+      "b": [
+        "central",
+        "amber",
+        30,
+        115
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "r2-1",
+      "a": [
+        "Western Europe",
+        "amber",
+        30,
+        120
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "amber",
+        30,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "r2-2",
+      "a": [
+        "northwest",
+        "amber",
+        30,
+        130
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        30,
+        130
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "r2-3",
+      "a": [
+        "West Asia / Middle East",
+        "amber",
+        30,
+        110
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        30,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "r2-4",
+      "a": [
+        "Eastern Europe",
+        "amber",
+        30,
+        110
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        30,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "r2-5",
+      "a": [
+        "southeast",
+        "amber",
+        30,
+        115
+      ],
+      "b": [
+        "northwest",
+        "amber",
+        30,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "r3-1",
+      "a": [
+        "northwest",
+        "pale/straw",
+        30,
+        120
+      ],
+      "b": [
+        "northwest",
+        "brown",
+        30,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "r3-2",
+      "a": [
+        "northwest",
+        "pale/straw",
+        30,
+        130
+      ],
+      "b": [
+        "Western Europe",
+        "pale/straw",
+        30,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "r3-3",
+      "a": [
+        "West Asia / Middle East",
+        "brown",
+        30,
+        110
+      ],
+      "b": [
+        "Western Europe",
+        "pale/straw",
+        30,
+        130
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "r3-4",
+      "a": [
+        "West Asia / Middle East",
+        "pale/straw",
+        30,
+        120
+      ],
+      "b": [
+        "Western Europe",
+        "brown",
+        30,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "r3-5",
+      "a": [
+        "southeast",
+        "brown",
+        30,
+        115
+      ],
+      "b": [
+        "northwest",
+        "pale/straw",
+        30,
+        115
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "r4-1",
+      "a": [
+        "central",
+        "amber",
+        20,
+        120
+      ],
+      "b": [
+        "central",
+        "amber",
+        40,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "r4-2",
+      "a": [
+        "central",
+        "amber",
+        40,
+        110
+      ],
+      "b": [
+        "central",
+        "amber",
+        20,
+        130
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "r4-3",
+      "a": [
+        "Eastern Europe",
+        "golden",
+        30,
+        120
+      ],
+      "b": [
+        "Eastern Europe",
+        "amber",
+        25,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "r4-4",
+      "a": [
+        "Eastern Europe",
+        "amber",
+        30,
+        120
+      ],
+      "b": [
+        "West Central Asia",
+        "amber",
+        30,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "r4-5",
+      "a": [
+        "South/Eastern Asia",
+        "amber",
+        30,
+        120
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "amber",
+        30,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "r4-6",
+      "a": [
+        "southeast",
+        "pale/straw",
+        30,
+        120
+      ],
+      "b": [
+        "northwest",
+        "pale/straw",
+        30,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "r4-7",
+      "a": [
+        "northwest",
+        "golden",
+        30,
+        130
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        30,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "r4-8",
+      "a": [
+        "northwest",
+        "copper",
+        30,
+        130
+      ],
+      "b": [
+        "Western Europe",
+        "copper",
+        30,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "r4-9",
+      "a": [
+        "southeast",
+        "amber",
+        30,
+        120
+      ],
+      "b": [
+        "northwest",
+        "amber",
+        30,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "r5-2",
+      "a": [
+        "central",
+        "copper",
+        30,
+        120
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "copper",
+        30,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "r5-3",
+      "a": [
+        "southeast",
+        "brown",
+        30,
+        120
+      ],
+      "b": [
+        "northwest",
+        "brown",
+        30,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "r5-4",
+      "a": [
+        "West Central Asia",
+        "amber",
+        30,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "amber",
+        30,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "leaning"
+    },
+    {
+      "id": "r5-5",
+      "a": [
+        "northwest",
+        "amber",
+        25,
+        130
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        25,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "r5-6",
+      "a": [
+        "northwest",
+        "amber",
+        35,
+        130
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        35,
+        130
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "leaning"
+    },
+    {
+      "id": "r5-7",
+      "a": [
+        "Eastern Europe",
+        "copper",
+        30,
+        120
+      ],
+      "b": [
+        "Eastern Europe",
+        "brown",
+        25,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "r5-9",
+      "a": [
+        "southeast",
+        "pale/straw",
+        30,
+        120
+      ],
+      "b": [
+        "northwest",
+        "pale/straw",
+        30,
+        115
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "leaning"
+    },
+    {
+      "id": "r5-10",
+      "a": [
+        "central",
+        "golden",
+        30,
+        120
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "golden",
+        30,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "revision-3",
+      "a": [
+        "southeast",
+        "amber",
+        30,
+        125
+      ],
+      "b": [
+        "northwest",
+        "amber",
+        30,
+        115
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly to moderately"
+    },
+    {
+      "id": "revision-4",
+      "a": [
+        "Eastern Europe",
+        "copper",
+        35,
+        120
+      ],
+      "b": [
+        "Eastern Europe",
+        "brown",
+        25,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly"
+    },
+    {
+      "id": "revision-5",
+      "a": [
+        "Eastern Europe",
+        "copper",
+        40,
+        120
+      ],
+      "b": [
+        "Eastern Europe",
+        "brown",
+        25,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "revision-6",
+      "a": [
+        "Eastern Europe",
+        "amber",
+        30,
+        115
+      ],
+      "b": [
+        "Eastern Europe",
+        "amber",
+        25,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "revision-7",
+      "a": [
+        "Eastern Europe",
+        "amber",
+        40,
+        115
+      ],
+      "b": [
+        "Eastern Europe",
+        "amber",
+        35,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "revision-8",
+      "a": [
+        "Eastern Europe",
+        "amber",
+        35,
+        115
+      ],
+      "b": [
+        "Eastern Europe",
+        "amber",
+        30,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "revision-9",
+      "a": [
+        "Eastern Europe",
+        "amber",
+        25,
+        115
+      ],
+      "b": [
+        "Eastern Europe",
+        "amber",
+        20,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "revision-10",
+      "a": [
+        "Eastern Europe",
+        "golden",
+        30,
+        120
+      ],
+      "b": [
+        "Eastern Europe",
+        "amber",
+        30,
+        115
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "revision-11",
+      "a": [
+        "Eastern Europe",
+        "pale/straw",
+        30,
+        120
+      ],
+      "b": [
+        "Eastern Europe",
+        "golden",
+        30,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly"
+    },
+    {
+      "id": "revision-13",
+      "a": [
+        "Eastern Europe",
+        "pale/straw",
+        30,
+        120
+      ],
+      "b": [
+        "Eastern Europe",
+        "golden",
+        25,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly"
+    },
+    {
+      "id": "revision-14",
+      "a": [
+        "Eastern Europe",
+        "pale/straw",
+        30,
+        125
+      ],
+      "b": [
+        "Eastern Europe",
+        "golden",
+        30,
+        115
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "revision-16",
+      "a": [
+        "northwest",
+        "amber",
+        25,
+        125
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        25,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "revision-17",
+      "a": [
+        "northwest",
+        "amber",
+        20,
+        120
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        20,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "revision-18",
+      "a": [
+        "northwest",
+        "amber",
+        40,
+        120
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        40,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "revision-19",
+      "a": [
+        "northwest",
+        "amber",
+        20,
+        120
+      ],
+      "b": [
+        "northwest",
+        "amber",
+        25,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly"
+    },
+    {
+      "id": "revision-20",
+      "a": [
+        "West Central Asia",
+        "amber",
+        30,
+        115
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "amber",
+        30,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round6-1",
+      "a": [
+        "southeast",
+        "pale/straw",
+        20,
+        110
+      ],
+      "b": [
+        "southwest",
+        "pale/straw",
+        20,
+        110
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round6-2",
+      "a": [
+        "southeast",
+        "pale/straw",
+        20,
+        110
+      ],
+      "b": [
+        "northeast",
+        "pale/straw",
+        20,
+        110
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round6-3",
+      "a": [
+        "northeast",
+        "pale/straw",
+        20,
+        110
+      ],
+      "b": [
+        "central",
+        "pale/straw",
+        20,
+        110
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly"
+    },
+    {
+      "id": "round6-4",
+      "a": [
+        "northwest",
+        "pale/straw",
+        20,
+        110
+      ],
+      "b": [
+        "northeast",
+        "pale/straw",
+        20,
+        110
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round6-5",
+      "a": [
+        "northwest",
+        "pale/straw",
+        20,
+        110
+      ],
+      "b": [
+        "central",
+        "pale/straw",
+        20,
+        110
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round6-6",
+      "a": [
+        "central",
+        "brown",
+        40,
+        130
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "brown",
+        40,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round6-7",
+      "a": [
+        "central",
+        "brown",
+        40,
+        120
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "brown",
+        40,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly"
+    },
+    {
+      "id": "round6-8",
+      "a": [
+        "central",
+        "brown",
+        35,
+        120
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "brown",
+        35,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+      "strength": "moderately"
+    },
+    {
+      "id": "round6-9",
+      "a": [
+        "central",
+        "brown",
+        25,
+        120
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "brown",
+        25,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+      "strength": "moderately"
+    },
+    {
+      "id": "round6-10",
+      "a": [
+        "central",
+        "brown",
+        20,
+        120
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "brown",
+        20,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+      "strength": "moderately"
+    },
+    {
+      "id": "round6-11",
+      "a": [
+        "central",
+        "brown",
+        25,
+        125
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "brown",
+        25,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round6-12",
+      "a": [
+        "central",
+        "brown",
+        25,
+        130
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "brown",
+        25,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round6-14",
+      "a": [
+        "Western Europe",
+        "golden",
+        30,
+        115
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        25,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round6-15",
+      "a": [
+        "Western Europe",
+        "brown",
+        30,
+        115
+      ],
+      "b": [
+        "Western Europe",
+        "brown",
+        25,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round6-16",
+      "a": [
+        "southeast",
+        "pale/straw",
+        30,
+        115
+      ],
+      "b": [
+        "southeast",
+        "pale/straw",
+        25,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round6-17",
+      "a": [
+        "southeast",
+        "pale/straw",
+        40,
+        115
+      ],
+      "b": [
+        "southeast",
+        "pale/straw",
+        35,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round6-18",
+      "a": [
+        "southeast",
+        "brown",
+        40,
+        115
+      ],
+      "b": [
+        "southeast",
+        "brown",
+        35,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round6-19",
+      "a": [
+        "southeast",
+        "amber",
+        40,
+        115
+      ],
+      "b": [
+        "southeast",
+        "amber",
+        35,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round6-20",
+      "a": [
+        "southwest",
+        "amber",
+        40,
+        115
+      ],
+      "b": [
+        "southwest",
+        "amber",
+        35,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round7-1",
+      "a": [
+        "central",
+        "brown",
+        30,
+        120
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "brown",
+        30,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+      "strength": "moderately"
+    },
+    {
+      "id": "round7-3",
+      "a": [
+        "southeast",
+        "pale/straw",
+        40,
+        120
+      ],
+      "b": [
+        "southwest",
+        "pale/straw",
+        40,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round7-4",
+      "a": [
+        "southeast",
+        "pale/straw",
+        40,
+        120
+      ],
+      "b": [
+        "northeast",
+        "pale/straw",
+        40,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round7-5",
+      "a": [
+        "southeast",
+        "pale/straw",
+        40,
+        120
+      ],
+      "b": [
+        "northwest",
+        "pale/straw",
+        40,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round7-6",
+      "a": [
+        "northwest",
+        "pale/straw",
+        40,
+        120
+      ],
+      "b": [
+        "central",
+        "pale/straw",
+        40,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round7-7",
+      "a": [
+        "southeast",
+        "pale/straw",
+        20,
+        130
+      ],
+      "b": [
+        "northeast",
+        "pale/straw",
+        20,
+        130
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round7-8",
+      "a": [
+        "southeast",
+        "pale/straw",
+        20,
+        120
+      ],
+      "b": [
+        "northeast",
+        "pale/straw",
+        20,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round7-9",
+      "a": [
+        "southeast",
+        "pale/straw",
+        20,
+        115
+      ],
+      "b": [
+        "northeast",
+        "pale/straw",
+        20,
+        115
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round7-10",
+      "a": [
+        "southeast",
+        "pale/straw",
+        20,
+        125
+      ],
+      "b": [
+        "northeast",
+        "pale/straw",
+        20,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round7-11",
+      "a": [
+        "northeast",
+        "pale/straw",
+        20,
+        130
+      ],
+      "b": [
+        "northwest",
+        "pale/straw",
+        20,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round7-12",
+      "a": [
+        "southeast",
+        "golden",
+        20,
+        120
+      ],
+      "b": [
+        "southwest",
+        "golden",
+        20,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round7-13",
+      "a": [
+        "southeast",
+        "golden",
+        20,
+        120
+      ],
+      "b": [
+        "northeast",
+        "golden",
+        20,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "explicit practical similarity",
+      "strength": null
+    },
+    {
+      "id": "round7-14",
+      "a": [
+        "northeast",
+        "golden",
+        20,
+        120
+      ],
+      "b": [
+        "northwest",
+        "golden",
+        20,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly"
+    },
+    {
+      "id": "round7-15",
+      "a": [
+        "northwest",
+        "golden",
+        20,
+        120
+      ],
+      "b": [
+        "central",
+        "golden",
+        20,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round7-16",
+      "a": [
+        "southeast",
+        "golden",
+        20,
+        120
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        20,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "explicit practical similarity",
+      "strength": null
+    },
+    {
+      "id": "round7-19",
+      "a": [
+        "Western Europe",
+        "golden",
+        20,
+        120
+      ],
+      "b": [
+        "Eastern Europe",
+        "golden",
+        20,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly"
+    },
+    {
+      "id": "round7-20",
+      "a": [
+        "Western Europe",
+        "golden",
+        20,
+        125
+      ],
+      "b": [
+        "Eastern Europe",
+        "golden",
+        20,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round8-1",
+      "a": [
+        "West Central Asia",
+        "copper",
+        30,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "copper",
+        30,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "explicit practical similarity",
+      "strength": null
+    },
+    {
+      "id": "round8-2",
+      "a": [
+        "West Central Asia",
+        "golden",
+        30,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "golden",
+        30,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round8-3",
+      "a": [
+        "West Central Asia",
+        "brown",
+        30,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "brown",
+        30,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round8-4",
+      "a": [
+        "Eastern Europe",
+        "copper",
+        30,
+        120
+      ],
+      "b": [
+        "West Central Asia",
+        "copper",
+        30,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+      "strength": "moderately"
+    },
+    {
+      "id": "round8-5",
+      "a": [
+        "Eastern Europe",
+        "copper",
+        30,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "copper",
+        30,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round8-6",
+      "a": [
+        "Eastern Europe",
+        "copper",
+        30,
+        130
+      ],
+      "b": [
+        "West Central Asia",
+        "copper",
+        30,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round8-7",
+      "a": [
+        "Eastern Europe",
+        "copper",
+        20,
+        120
+      ],
+      "b": [
+        "West Central Asia",
+        "copper",
+        20,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly"
+    },
+    {
+      "id": "round8-8",
+      "a": [
+        "Eastern Europe",
+        "copper",
+        20,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "copper",
+        20,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round8-10",
+      "a": [
+        "southwest",
+        "copper",
+        30,
+        120
+      ],
+      "b": [
+        "northeast",
+        "copper",
+        30,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round8-11",
+      "a": [
+        "southeast",
+        "copper",
+        30,
+        120
+      ],
+      "b": [
+        "southwest",
+        "copper",
+        30,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round8-12",
+      "a": [
+        "northeast",
+        "copper",
+        30,
+        120
+      ],
+      "b": [
+        "northwest",
+        "copper",
+        30,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly"
+    },
+    {
+      "id": "round8-13",
+      "a": [
+        "northwest",
+        "copper",
+        30,
+        120
+      ],
+      "b": [
+        "central",
+        "copper",
+        30,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round8-15",
+      "a": [
+        "southwest",
+        "brown",
+        30,
+        120
+      ],
+      "b": [
+        "northeast",
+        "brown",
+        30,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round8-17",
+      "a": [
+        "West Central Asia",
+        "copper",
+        30,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "copper",
+        25,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round8-18",
+      "a": [
+        "West Central Asia",
+        "copper",
+        40,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "copper",
+        35,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round8-19",
+      "a": [
+        "South/Eastern Asia",
+        "copper",
+        40,
+        115
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "copper",
+        35,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round8-20",
+      "a": [
+        "South/Eastern Asia",
+        "copper",
+        30,
+        115
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "copper",
+        25,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round9-2",
+      "a": [
+        "West Asia / Middle East",
+        "golden",
+        35,
+        115
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "golden",
+        30,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round9-3",
+      "a": [
+        "northeast",
+        "pale/straw",
+        35,
+        125
+      ],
+      "b": [
+        "southeast",
+        "pale/straw",
+        35,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round9-4",
+      "a": [
+        "Western Europe",
+        "brown",
+        25,
+        130
+      ],
+      "b": [
+        "Eastern Europe",
+        "brown",
+        25,
+        115
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly"
+    },
+    {
+      "id": "round9-5",
+      "a": [
+        "West Central Asia",
+        "copper",
+        35,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "copper",
+        35,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round9-6",
+      "a": [
+        "northwest",
+        "golden",
+        40,
+        115
+      ],
+      "b": [
+        "northwest",
+        "pale/straw",
+        40,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round9-7",
+      "a": [
+        "central",
+        "brown",
+        35,
+        125
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "brown",
+        35,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round9-8",
+      "a": [
+        "southeast",
+        "amber",
+        20,
+        125
+      ],
+      "b": [
+        "southwest",
+        "amber",
+        20,
+        115
+      ],
+      "known_direction": -1,
+      "materiality_target": -1,
+      "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+      "strength": "moderately"
+    },
+    {
+      "id": "round9-9",
+      "a": [
+        "Eastern Europe",
+        "golden",
+        35,
+        120
+      ],
+      "b": [
+        "Eastern Europe",
+        "pale/straw",
+        40,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round9-10",
+      "a": [
+        "South/Eastern Asia",
+        "amber",
+        25,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "amber",
+        25,
+        110
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round9-11",
+      "a": [
+        "northeast",
+        "copper",
+        25,
+        120
+      ],
+      "b": [
+        "southwest",
+        "copper",
+        25,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round9-12",
+      "a": [
+        "Western Europe",
+        "pale/straw",
+        30,
+        110
+      ],
+      "b": [
+        "central",
+        "pale/straw",
+        30,
+        115
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round9-13",
+      "a": [
+        "northwest",
+        "brown",
+        20,
+        115
+      ],
+      "b": [
+        "northwest",
+        "brown",
+        25,
+        110
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round9-14",
+      "a": [
+        "West Asia / Middle East",
+        "copper",
+        25,
+        120
+      ],
+      "b": [
+        "Eastern Europe",
+        "copper",
+        25,
+        125
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round9-15",
+      "a": [
+        "southwest",
+        "golden",
+        40,
+        120
+      ],
+      "b": [
+        "northeast",
+        "golden",
+        40,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round9-16",
+      "a": [
+        "West Central Asia",
+        "brown",
+        35,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "brown",
+        35,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round9-17",
+      "a": [
+        "central",
+        "golden",
+        25,
+        125
+      ],
+      "b": [
+        "central",
+        "copper",
+        20,
+        115
+      ],
+      "known_direction": -1,
+      "materiality_target": -1,
+      "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+      "strength": "moderately"
+    },
+    {
+      "id": "round9-18",
+      "a": [
+        "southeast",
+        "pale/straw",
+        25,
+        130
+      ],
+      "b": [
+        "southeast",
+        "golden",
+        25,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round9-20",
+      "a": [
+        "northeast",
+        "amber",
+        20,
+        110
+      ],
+      "b": [
+        "southwest",
+        "amber",
+        20,
+        110
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round10-1",
+      "a": [
+        "Eastern Europe",
+        "pale/straw",
+        20,
+        130
+      ],
+      "b": [
+        "Eastern Europe",
+        "pale/straw",
+        40,
+        110
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+      "strength": "moderately"
+    },
+    {
+      "id": "round10-2",
+      "a": [
+        "southwest",
+        "copper",
+        20,
+        125
+      ],
+      "b": [
+        "central",
+        "copper",
+        20,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round10-3",
+      "a": [
+        "West Central Asia",
+        "golden",
+        40,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "golden",
+        40,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round10-4",
+      "a": [
+        "Western Europe",
+        "pale/straw",
+        40,
+        130
+      ],
+      "b": [
+        "Western Europe",
+        "brown",
+        20,
+        110
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly"
+    },
+    {
+      "id": "round10-5",
+      "a": [
+        "northeast",
+        "amber",
+        35,
+        115
+      ],
+      "b": [
+        "southwest",
+        "amber",
+        35,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round10-6",
+      "a": [
+        "Eastern Europe",
+        "brown",
+        20,
+        130
+      ],
+      "b": [
+        "Eastern Europe",
+        "brown",
+        40,
+        110
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+      "strength": "moderately"
+    },
+    {
+      "id": "round10-7",
+      "a": [
+        "northwest",
+        "pale/straw",
+        25,
+        120
+      ],
+      "b": [
+        "central",
+        "pale/straw",
+        25,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round10-8",
+      "a": [
+        "West Asia / Middle East",
+        "copper",
+        35,
+        110
+      ],
+      "b": [
+        "Eastern Europe",
+        "copper",
+        35,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+      "strength": "moderately"
+    },
+    {
+      "id": "round10-9",
+      "a": [
+        "southeast",
+        "golden",
+        35,
+        125
+      ],
+      "b": [
+        "northeast",
+        "golden",
+        35,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round10-10",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        35,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        25,
+        115
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round10-11",
+      "a": [
+        "South/Eastern Asia",
+        "brown",
+        20,
+        125
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "brown",
+        20,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round10-12",
+      "a": [
+        "central",
+        "pale/straw",
+        20,
+        125
+      ],
+      "b": [
+        "central",
+        "pale/straw",
+        35,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+      "strength": "overwhelmingly"
+    },
+    {
+      "id": "round10-13",
+      "a": [
+        "Western Europe",
+        "golden",
+        35,
+        125
+      ],
+      "b": [
+        "Eastern Europe",
+        "golden",
+        35,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round10-14",
+      "a": [
+        "southwest",
+        "brown",
+        35,
+        120
+      ],
+      "b": [
+        "northeast",
+        "brown",
+        35,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round10-15",
+      "a": [
+        "northwest",
+        "copper",
+        25,
+        130
+      ],
+      "b": [
+        "Western Europe",
+        "copper",
+        25,
+        110
+      ],
+      "known_direction": -1,
+      "materiality_target": -1,
+      "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+      "strength": "overwhelmingly"
+    },
+    {
+      "id": "round10-16",
+      "a": [
+        "Eastern Europe",
+        "amber",
+        20,
+        120
+      ],
+      "b": [
+        "West Central Asia",
+        "amber",
+        20,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round10-17",
+      "a": [
+        "central",
+        "brown",
+        20,
+        125
+      ],
+      "b": [
+        "central",
+        "brown",
+        35,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+      "strength": "strongly"
+    },
+    {
+      "id": "round10-18",
+      "a": [
+        "southeast",
+        "pale/straw",
+        35,
+        115
+      ],
+      "b": [
+        "southwest",
+        "pale/straw",
+        35,
+        115
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round10-19",
+      "a": [
+        "South/Eastern Asia",
+        "golden",
+        25,
+        125
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "copper",
+        30,
+        115
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round10-20",
+      "a": [
+        "northwest",
+        "golden",
+        20,
+        130
+      ],
+      "b": [
+        "northwest",
+        "golden",
+        40,
+        110
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+      "strength": "strongly"
+    },
+    {
+      "id": "round11-1",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        35,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        35,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+      "strength": "overwhelmingly"
+    },
+    {
+      "id": "round11-2",
+      "a": [
+        "West Central Asia",
+        "brown",
+        25,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        35,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+      "strength": "overwhelmingly"
+    },
+    {
+      "id": "round11-3",
+      "a": [
+        "West Central Asia",
+        "brown",
+        25,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        25,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+      "strength": "strongly"
+    },
+    {
+      "id": "round11-4",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        25,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "pale/straw",
+        35,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+      "strength": "overwhelmingly"
+    },
+    {
+      "id": "round11-5",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        25,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        25,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+      "strength": "overwhelmingly"
+    },
+    {
+      "id": "round11-6",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        25,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "pale/straw",
+        25,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly"
+    },
+    {
+      "id": "round11-7",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        35,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "pale/straw",
+        35,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+      "strength": "moderately"
+    },
+    {
+      "id": "round11-8",
+      "a": [
+        "West Central Asia",
+        "brown",
+        35,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        35,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly"
+    },
+    {
+      "id": "round11-9",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        35,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "golden",
+        35,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round11-10",
+      "a": [
+        "West Central Asia",
+        "golden",
+        35,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        35,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+      "strength": "moderately"
+    },
+    {
+      "id": "round11-11",
+      "a": [
+        "West Central Asia",
+        "brown",
+        25,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        30,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly"
+    },
+    {
+      "id": "round11-12",
+      "a": [
+        "West Central Asia",
+        "brown",
+        30,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        35,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly"
+    },
+    {
+      "id": "round11-14",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        35,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        25,
+        125
+      ],
+      "known_direction": -1,
+      "materiality_target": -1,
+      "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+      "strength": "much more"
+    },
+    {
+      "id": "round11-15",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        35,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        30,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+      "strength": "much more valuable"
+    },
+    {
+      "id": "round11-16",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        30,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        25,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round11-17",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        25,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        20,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round11-18",
+      "a": [
+        "central",
+        "pale/straw",
+        25,
+        125
+      ],
+      "b": [
+        "central",
+        "brown",
+        20,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round11-19",
+      "a": [
+        "southeast",
+        "pale/straw",
+        25,
+        125
+      ],
+      "b": [
+        "southeast",
+        "brown",
+        20,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+      "strength": "strongly"
+    },
+    {
+      "id": "round11-20",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        35,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        25,
+        115
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round13-1",
+      "a": [
+        "northeast",
+        "golden",
+        25,
+        120
+      ],
+      "b": [
+        "southwest",
+        "golden",
+        25,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round13-2",
+      "a": [
+        "West Central Asia",
+        "brown",
+        20,
+        130
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        40,
+        110
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round13-3",
+      "a": [
+        "Western Europe",
+        "copper",
+        40,
+        125
+      ],
+      "b": [
+        "Eastern Europe",
+        "copper",
+        40,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round13-4",
+      "a": [
+        "central",
+        "pale/straw",
+        30,
+        125
+      ],
+      "b": [
+        "northwest",
+        "pale/straw",
+        30,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round13-5",
+      "a": [
+        "South/Eastern Asia",
+        "golden",
+        20,
+        130
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "golden",
+        35,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round13-6",
+      "a": [
+        "southeast",
+        "copper",
+        35,
+        125
+      ],
+      "b": [
+        "southwest",
+        "copper",
+        35,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very very slightly"
+    },
+    {
+      "id": "round13-7",
+      "a": [
+        "West Asia / Middle East",
+        "brown",
+        30,
+        110
+      ],
+      "b": [
+        "Eastern Europe",
+        "brown",
+        30,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round13-8",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        25,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "pale/straw",
+        25,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round13-9",
+      "a": [
+        "northwest",
+        "amber",
+        40,
+        120
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        40,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round13-10",
+      "a": [
+        "southwest",
+        "golden",
+        30,
+        125
+      ],
+      "b": [
+        "southwest",
+        "copper",
+        25,
+        115
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round13-11",
+      "a": [
+        "Eastern Europe",
+        "brown",
+        35,
+        115
+      ],
+      "b": [
+        "Eastern Europe",
+        "copper",
+        35,
+        125
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round13-12",
+      "a": [
+        "central",
+        "amber",
+        20,
+        120
+      ],
+      "b": [
+        "central",
+        "amber",
+        30,
+        110
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round13-13",
+      "a": [
+        "southeast",
+        "pale/straw",
+        40,
+        130
+      ],
+      "b": [
+        "northeast",
+        "pale/straw",
+        40,
+        130
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round13-15",
+      "a": [
+        "West Asia / Middle East",
+        "copper",
+        30,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "copper",
+        30,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round13-16",
+      "a": [
+        "southwest",
+        "brown",
+        20,
+        115
+      ],
+      "b": [
+        "central",
+        "brown",
+        20,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round13-17",
+      "a": [
+        "Eastern Europe",
+        "pale/straw",
+        25,
+        125
+      ],
+      "b": [
+        "Western Europe",
+        "pale/straw",
+        25,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round13-18",
+      "a": [
+        "northeast",
+        "copper",
+        20,
+        130
+      ],
+      "b": [
+        "northeast",
+        "copper",
+        35,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round13-19",
+      "a": [
+        "West Central Asia",
+        "amber",
+        35,
+        110
+      ],
+      "b": [
+        "Eastern Europe",
+        "amber",
+        35,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round13-20",
+      "a": [
+        "southeast",
+        "golden",
+        30,
+        120
+      ],
+      "b": [
+        "southeast",
+        "pale/straw",
+        35,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round14-1",
+      "a": [
+        "southeast",
+        "copper",
+        35,
+        120
+      ],
+      "b": [
+        "southwest",
+        "copper",
+        35,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round14-2",
+      "a": [
+        "southeast",
+        "copper",
+        35,
+        125
+      ],
+      "b": [
+        "southeast",
+        "copper",
+        35,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "basis": "user clarified matched5lb tare differences as not meaningful; any known direction retained",
+      "strength": "very very slightly"
+    },
+    {
+      "id": "round14-4",
+      "a": [
+        "northwest",
+        "amber",
+        40,
+        125
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        40,
+        125
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round14-5",
+      "a": [
+        "northwest",
+        "amber",
+        40,
+        120
+      ],
+      "b": [
+        "northwest",
+        "amber",
+        40,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "basis": "user clarified matched5lb tare differences as not meaningful; any known direction retained",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round14-7",
+      "a": [
+        "southeast",
+        "golden",
+        35,
+        120
+      ],
+      "b": [
+        "southeast",
+        "pale/straw",
+        35,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round14-8",
+      "a": [
+        "southeast",
+        "golden",
+        30,
+        120
+      ],
+      "b": [
+        "southeast",
+        "golden",
+        35,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round15-1",
+      "a": [
+        "northeast",
+        "golden",
+        30,
+        125
+      ],
+      "b": [
+        "southwest",
+        "golden",
+        30,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round15-2",
+      "a": [
+        "West Asia / Middle East",
+        "pale/straw",
+        20,
+        130
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "pale/straw",
+        35,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round15-4",
+      "a": [
+        "southeast",
+        "brown",
+        40,
+        115
+      ],
+      "b": [
+        "central",
+        "brown",
+        40,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round15-5",
+      "a": [
+        "West Central Asia",
+        "golden",
+        25,
+        125
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "golden",
+        25,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round15-6",
+      "a": [
+        "northwest",
+        "pale/straw",
+        35,
+        130
+      ],
+      "b": [
+        "northwest",
+        "golden",
+        30,
+        115
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round15-7",
+      "a": [
+        "central",
+        "copper",
+        30,
+        120
+      ],
+      "b": [
+        "northwest",
+        "copper",
+        30,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round15-8",
+      "a": [
+        "Western Europe",
+        "brown",
+        20,
+        125
+      ],
+      "b": [
+        "Western Europe",
+        "brown",
+        35,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round15-10",
+      "a": [
+        "South/Eastern Asia",
+        "copper",
+        20,
+        120
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "copper",
+        20,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round15-11",
+      "a": [
+        "Eastern Europe",
+        "golden",
+        25,
+        115
+      ],
+      "b": [
+        "Eastern Europe",
+        "pale/straw",
+        30,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round15-12",
+      "a": [
+        "northeast",
+        "brown",
+        25,
+        130
+      ],
+      "b": [
+        "northeast",
+        "brown",
+        40,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round15-13",
+      "a": [
+        "West Central Asia",
+        "amber",
+        40,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "amber",
+        40,
+        115
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round15-14",
+      "a": [
+        "southwest",
+        "pale/straw",
+        30,
+        110
+      ],
+      "b": [
+        "southeast",
+        "pale/straw",
+        30,
+        115
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round15-15",
+      "a": [
+        "Western Europe",
+        "copper",
+        30,
+        125
+      ],
+      "b": [
+        "northwest",
+        "copper",
+        30,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round15-16",
+      "a": [
+        "central",
+        "golden",
+        35,
+        110
+      ],
+      "b": [
+        "central",
+        "golden",
+        20,
+        130
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round15-17",
+      "a": [
+        "northeast",
+        "copper",
+        40,
+        125
+      ],
+      "b": [
+        "southwest",
+        "copper",
+        40,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round15-18",
+      "a": [
+        "West Asia / Middle East",
+        "brown",
+        25,
+        110
+      ],
+      "b": [
+        "Eastern Europe",
+        "brown",
+        25,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round15-19",
+      "a": [
+        "southeast",
+        "copper",
+        25,
+        120
+      ],
+      "b": [
+        "southeast",
+        "golden",
+        35,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round15-20",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        20,
+        125
+      ],
+      "b": [
+        "Western Europe",
+        "pale/straw",
+        20,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round16-1",
+      "a": [
+        "southeast",
+        "brown",
+        40,
+        120
+      ],
+      "b": [
+        "central",
+        "brown",
+        40,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round16-2",
+      "a": [
+        "southeast",
+        "brown",
+        40,
+        115
+      ],
+      "b": [
+        "southeast",
+        "brown",
+        40,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "user clarified matched5lb tare differences as not meaningful; any known direction retained",
+      "strength": null
+    },
+    {
+      "id": "round16-3",
+      "a": [
+        "southeast",
+        "brown",
+        40,
+        115
+      ],
+      "b": [
+        "southeast",
+        "brown",
+        40,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly"
+    },
+    {
+      "id": "round16-4",
+      "a": [
+        "southeast",
+        "brown",
+        40,
+        115
+      ],
+      "b": [
+        "southeast",
+        "brown",
+        40,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round16-5",
+      "a": [
+        "southwest",
+        "pale/straw",
+        30,
+        115
+      ],
+      "b": [
+        "southeast",
+        "pale/straw",
+        30,
+        115
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round16-6",
+      "a": [
+        "southwest",
+        "pale/straw",
+        30,
+        110
+      ],
+      "b": [
+        "southwest",
+        "pale/straw",
+        30,
+        115
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "user clarified matched5lb tare differences as not meaningful; any known direction retained",
+      "strength": null
+    },
+    {
+      "id": "round16-7",
+      "a": [
+        "southwest",
+        "pale/straw",
+        30,
+        110
+      ],
+      "b": [
+        "southwest",
+        "pale/straw",
+        30,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly"
+    },
+    {
+      "id": "round16-8",
+      "a": [
+        "southwest",
+        "pale/straw",
+        30,
+        110
+      ],
+      "b": [
+        "southwest",
+        "pale/straw",
+        30,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "r5-1",
+      "a": [
+        "central",
+        "amber",
+        30,
+        115
+      ],
+      "b": [
+        "central",
+        "amber",
+        25,
+        125
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "revision-12",
+      "a": [
+        "Eastern Europe",
+        "amber",
+        30,
+        120
+      ],
+      "b": [
+        "Eastern Europe",
+        "copper",
+        30,
+        115
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "revision-15",
+      "a": [
+        "Eastern Europe",
+        "amber",
+        30,
+        125
+      ],
+      "b": [
+        "Eastern Europe",
+        "copper",
+        30,
+        115
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round13-14",
+      "a": [
+        "Western Europe",
+        "golden",
+        20,
+        130
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        30,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round15-3",
+      "a": [
+        "Eastern Europe",
+        "amber",
+        25,
+        120
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        25,
+        130
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round15-9",
+      "a": [
+        "southeast",
+        "amber",
+        35,
+        130
+      ],
+      "b": [
+        "southwest",
+        "amber",
+        35,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round6-13",
+      "a": [
+        "central",
+        "brown",
+        25,
+        130
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "brown",
+        25,
+        115
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round7-17",
+      "a": [
+        "northwest",
+        "golden",
+        20,
+        120
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        20,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "explicit practical similarity",
+      "strength": null
+    },
+    {
+      "id": "round7-18",
+      "a": [
+        "South/Eastern Asia",
+        "pale/straw",
+        20,
+        120
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "pale/straw",
+        20,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round7-2",
+      "a": [
+        "central",
+        "brown",
+        30,
+        120
+      ],
+      "b": [
+        "Eastern Europe",
+        "brown",
+        30,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round8-14",
+      "a": [
+        "northeast",
+        "copper",
+        30,
+        125
+      ],
+      "b": [
+        "northwest",
+        "copper",
+        30,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round8-16",
+      "a": [
+        "southeast",
+        "brown",
+        30,
+        120
+      ],
+      "b": [
+        "southwest",
+        "brown",
+        30,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round8-9",
+      "a": [
+        "Eastern Europe",
+        "copper",
+        20,
+        130
+      ],
+      "b": [
+        "West Central Asia",
+        "copper",
+        20,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round9-1",
+      "a": [
+        "southwest",
+        "amber",
+        25,
+        120
+      ],
+      "b": [
+        "central",
+        "amber",
+        25,
+        115
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round9-19",
+      "a": [
+        "Western Europe",
+        "amber",
+        35,
+        120
+      ],
+      "b": [
+        "northwest",
+        "amber",
+        35,
+        115
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round17-1",
+      "a": [
+        "southwest",
+        "golden",
+        35,
+        125
+      ],
+      "b": [
+        "northeast",
+        "golden",
+        35,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round17-2",
+      "a": [
+        "West Central Asia",
+        "copper",
+        20,
+        130
+      ],
+      "b": [
+        "West Central Asia",
+        "copper",
+        35,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round17-3",
+      "a": [
+        "Western Europe",
+        "amber",
+        20,
+        125
+      ],
+      "b": [
+        "Eastern Europe",
+        "amber",
+        20,
+        115
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round17-4",
+      "a": [
+        "central",
+        "brown",
+        40,
+        110
+      ],
+      "b": [
+        "southeast",
+        "brown",
+        40,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round17-5",
+      "a": [
+        "West Asia / Middle East",
+        "golden",
+        30,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "golden",
+        30,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round17-6",
+      "a": [
+        "northwest",
+        "pale/straw",
+        20,
+        130
+      ],
+      "b": [
+        "northwest",
+        "golden",
+        30,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round17-7",
+      "a": [
+        "southeast",
+        "copper",
+        25,
+        125
+      ],
+      "b": [
+        "northeast",
+        "copper",
+        25,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round17-8",
+      "a": [
+        "Eastern Europe",
+        "brown",
+        20,
+        125
+      ],
+      "b": [
+        "Eastern Europe",
+        "brown",
+        35,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round17-9",
+      "a": [
+        "southwest",
+        "amber",
+        40,
+        115
+      ],
+      "b": [
+        "central",
+        "amber",
+        40,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round17-10",
+      "a": [
+        "South/Eastern Asia",
+        "pale/straw",
+        35,
+        120
+      ],
+      "b": [
+        "West Central Asia",
+        "pale/straw",
+        35,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round17-11",
+      "a": [
+        "Western Europe",
+        "golden",
+        30,
+        115
+      ],
+      "b": [
+        "Western Europe",
+        "pale/straw",
+        35,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round17-12",
+      "a": [
+        "central",
+        "copper",
+        20,
+        130
+      ],
+      "b": [
+        "central",
+        "copper",
+        40,
+        110
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round17-13",
+      "a": [
+        "northeast",
+        "brown",
+        30,
+        125
+      ],
+      "b": [
+        "southwest",
+        "brown",
+        30,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round17-14",
+      "a": [
+        "West Central Asia",
+        "amber",
+        25,
+        110
+      ],
+      "b": [
+        "Eastern Europe",
+        "amber",
+        25,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round17-15",
+      "a": [
+        "northwest",
+        "golden",
+        35,
+        120
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        35,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round17-16",
+      "a": [
+        "southeast",
+        "pale/straw",
+        20,
+        125
+      ],
+      "b": [
+        "southeast",
+        "pale/straw",
+        30,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round17-17",
+      "a": [
+        "West Asia / Middle East",
+        "copper",
+        40,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "copper",
+        40,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round17-18",
+      "a": [
+        "southwest",
+        "brown",
+        25,
+        115
+      ],
+      "b": [
+        "central",
+        "brown",
+        25,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round17-19",
+      "a": [
+        "Eastern Europe",
+        "copper",
+        25,
+        125
+      ],
+      "b": [
+        "Eastern Europe",
+        "amber",
+        35,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round17-20",
+      "a": [
+        "southeast",
+        "golden",
+        40,
+        120
+      ],
+      "b": [
+        "northwest",
+        "golden",
+        40,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round18-1",
+      "a": [
+        "Western Europe",
+        "amber",
+        20,
+        125
+      ],
+      "b": [
+        "Eastern Europe",
+        "amber",
+        20,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round18-2",
+      "a": [
+        "Eastern Europe",
+        "amber",
+        20,
+        115
+      ],
+      "b": [
+        "Eastern Europe",
+        "amber",
+        20,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round18-4",
+      "a": [
+        "northeast",
+        "brown",
+        30,
+        125
+      ],
+      "b": [
+        "southwest",
+        "brown",
+        30,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round18-5",
+      "a": [
+        "southwest",
+        "brown",
+        30,
+        120
+      ],
+      "b": [
+        "southwest",
+        "brown",
+        30,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "user clarified matched5lb tare differences as not meaningful; any known direction retained",
+      "strength": null
+    },
+    {
+      "id": "round18-6",
+      "a": [
+        "southwest",
+        "brown",
+        30,
+        120
+      ],
+      "b": [
+        "southwest",
+        "brown",
+        30,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round18-7",
+      "a": [
+        "northwest",
+        "golden",
+        35,
+        125
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        35,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round18-8",
+      "a": [
+        "northwest",
+        "golden",
+        35,
+        120
+      ],
+      "b": [
+        "northwest",
+        "golden",
+        35,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "user clarified matched5lb tare differences as not meaningful; any known direction retained",
+      "strength": null
+    },
+    {
+      "id": "round18-9",
+      "a": [
+        "northwest",
+        "golden",
+        35,
+        120
+      ],
+      "b": [
+        "northwest",
+        "golden",
+        35,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round19-1",
+      "a": [
+        "central",
+        "pale/straw",
+        35,
+        120
+      ],
+      "b": [
+        "northwest",
+        "pale/straw",
+        35,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round19-2",
+      "a": [
+        "South/Eastern Asia",
+        "brown",
+        20,
+        130
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "brown",
+        35,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round19-3",
+      "a": [
+        "Eastern Europe",
+        "golden",
+        30,
+        115
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        30,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round19-4",
+      "a": [
+        "southwest",
+        "copper",
+        40,
+        110
+      ],
+      "b": [
+        "northeast",
+        "copper",
+        40,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round19-5",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        30,
+        125
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "pale/straw",
+        30,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round19-6",
+      "a": [
+        "southeast",
+        "golden",
+        25,
+        130
+      ],
+      "b": [
+        "southeast",
+        "pale/straw",
+        40,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round19-7",
+      "a": [
+        "central",
+        "amber",
+        35,
+        115
+      ],
+      "b": [
+        "southwest",
+        "amber",
+        35,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round19-8",
+      "a": [
+        "Western Europe",
+        "copper",
+        20,
+        125
+      ],
+      "b": [
+        "Western Europe",
+        "copper",
+        35,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round19-9",
+      "a": [
+        "northwest",
+        "brown",
+        30,
+        120
+      ],
+      "b": [
+        "southeast",
+        "brown",
+        30,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round19-10",
+      "a": [
+        "South/Eastern Asia",
+        "golden",
+        35,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "golden",
+        35,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round19-11",
+      "a": [
+        "Eastern Europe",
+        "pale/straw",
+        20,
+        130
+      ],
+      "b": [
+        "Eastern Europe",
+        "golden",
+        30,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round19-12",
+      "a": [
+        "northeast",
+        "amber",
+        25,
+        125
+      ],
+      "b": [
+        "northeast",
+        "amber",
+        40,
+        110
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round19-13",
+      "a": [
+        "West Asia / Middle East",
+        "brown",
+        35,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        35,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round19-14",
+      "a": [
+        "southwest",
+        "pale/straw",
+        20,
+        120
+      ],
+      "b": [
+        "southeast",
+        "pale/straw",
+        20,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round19-15",
+      "a": [
+        "Western Europe",
+        "golden",
+        40,
+        120
+      ],
+      "b": [
+        "central",
+        "golden",
+        40,
+        115
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round19-16",
+      "a": [
+        "northwest",
+        "copper",
+        25,
+        130
+      ],
+      "b": [
+        "northwest",
+        "copper",
+        40,
+        110
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round19-17",
+      "a": [
+        "southeast",
+        "brown",
+        35,
+        125
+      ],
+      "b": [
+        "southwest",
+        "brown",
+        35,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round19-18",
+      "a": [
+        "Eastern Europe",
+        "copper",
+        30,
+        130
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "copper",
+        30,
+        115
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round19-19",
+      "a": [
+        "central",
+        "amber",
+        25,
+        120
+      ],
+      "b": [
+        "central",
+        "golden",
+        35,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round19-20",
+      "a": [
+        "West Central Asia",
+        "amber",
+        20,
+        125
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "amber",
+        20,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round20-1",
+      "a": [
+        "southwest",
+        "pale/straw",
+        20,
+        125
+      ],
+      "b": [
+        "southeast",
+        "pale/straw",
+        20,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round20-2",
+      "a": [
+        "southwest",
+        "pale/straw",
+        20,
+        120
+      ],
+      "b": [
+        "southwest",
+        "pale/straw",
+        20,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "user clarified matched5lb tare differences as not meaningful; any known direction retained",
+      "strength": null
+    },
+    {
+      "id": "round20-3",
+      "a": [
+        "southwest",
+        "pale/straw",
+        20,
+        120
+      ],
+      "b": [
+        "southwest",
+        "pale/straw",
+        20,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round20-4",
+      "a": [
+        "Western Europe",
+        "golden",
+        40,
+        120
+      ],
+      "b": [
+        "central",
+        "golden",
+        40,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round20-5",
+      "a": [
+        "central",
+        "golden",
+        40,
+        115
+      ],
+      "b": [
+        "central",
+        "golden",
+        40,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "user clarified matched5lb tare differences as not meaningful; any known direction retained",
+      "strength": null
+    },
+    {
+      "id": "round20-6",
+      "a": [
+        "central",
+        "golden",
+        40,
+        115
+      ],
+      "b": [
+        "central",
+        "golden",
+        40,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round20-7",
+      "a": [
+        "West Central Asia",
+        "amber",
+        20,
+        125
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "amber",
+        20,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round20-8",
+      "a": [
+        "South/Eastern Asia",
+        "amber",
+        20,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "amber",
+        20,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "user clarified matched5lb tare differences as not meaningful; any known direction retained",
+      "strength": null
+    },
+    {
+      "id": "round20-9",
+      "a": [
+        "South/Eastern Asia",
+        "amber",
+        20,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "amber",
+        20,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round21-1",
+      "a": [
+        "central",
+        "brown",
+        40,
+        115
+      ],
+      "b": [
+        "central",
+        "brown",
+        40,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "user clarified matched5lb tare differences as not meaningful; any known direction retained",
+      "strength": null
+    },
+    {
+      "id": "round21-2",
+      "a": [
+        "Western Europe",
+        "golden",
+        40,
+        115
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        40,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round21-3",
+      "a": [
+        "southeast",
+        "copper",
+        30,
+        125
+      ],
+      "b": [
+        "southwest",
+        "copper",
+        30,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round21-4",
+      "a": [
+        "Eastern Europe",
+        "amber",
+        20,
+        120
+      ],
+      "b": [
+        "Eastern Europe",
+        "amber",
+        20,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "user clarified matched5lb tare differences as not meaningful; any known direction retained",
+      "strength": null
+    },
+    {
+      "id": "round21-5",
+      "a": [
+        "northeast",
+        "pale/straw",
+        30,
+        110
+      ],
+      "b": [
+        "northeast",
+        "pale/straw",
+        30,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round21-6",
+      "a": [
+        "West Central Asia",
+        "golden",
+        25,
+        115
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "golden",
+        25,
+        115
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round21-7",
+      "a": [
+        "West Asia / Middle East",
+        "golden",
+        35,
+        120
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "golden",
+        35,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "user clarified matched5lb tare differences as not meaningful; any known direction retained",
+      "strength": null
+    },
+    {
+      "id": "round21-8",
+      "a": [
+        "central",
+        "golden",
+        25,
+        120
+      ],
+      "b": [
+        "central",
+        "pale/straw",
+        30,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round21-9",
+      "a": [
+        "northwest",
+        "brown",
+        40,
+        115
+      ],
+      "b": [
+        "northwest",
+        "brown",
+        40,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "user clarified matched5lb tare differences as not meaningful; any known direction retained",
+      "strength": null
+    },
+    {
+      "id": "round21-10",
+      "a": [
+        "Eastern Europe",
+        "pale/straw",
+        20,
+        120
+      ],
+      "b": [
+        "Eastern Europe",
+        "pale/straw",
+        20,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round21-11",
+      "a": [
+        "southwest",
+        "amber",
+        30,
+        125
+      ],
+      "b": [
+        "northeast",
+        "amber",
+        30,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round21-12",
+      "a": [
+        "Western Europe",
+        "copper",
+        35,
+        120
+      ],
+      "b": [
+        "Western Europe",
+        "copper",
+        35,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "user clarified matched5lb tare differences as not meaningful; any known direction retained",
+      "strength": null
+    },
+    {
+      "id": "round21-13",
+      "a": [
+        "southeast",
+        "pale/straw",
+        30,
+        120
+      ],
+      "b": [
+        "southeast",
+        "pale/straw",
+        35,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round21-14",
+      "a": [
+        "South/Eastern Asia",
+        "brown",
+        30,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "brown",
+        30,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round21-15",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        20,
+        120
+      ],
+      "b": [
+        "West Central Asia",
+        "pale/straw",
+        20,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "user clarified matched5lb tare differences as not meaningful; any known direction retained",
+      "strength": null
+    },
+    {
+      "id": "round21-16",
+      "a": [
+        "central",
+        "amber",
+        35,
+        120
+      ],
+      "b": [
+        "northwest",
+        "amber",
+        35,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round21-17",
+      "a": [
+        "southwest",
+        "golden",
+        40,
+        115
+      ],
+      "b": [
+        "southwest",
+        "golden",
+        40,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "user clarified matched5lb tare differences as not meaningful; any known direction retained",
+      "strength": null
+    },
+    {
+      "id": "round21-18",
+      "a": [
+        "West Asia / Middle East",
+        "copper",
+        25,
+        120
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "copper",
+        30,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round21-19",
+      "a": [
+        "northeast",
+        "brown",
+        40,
+        115
+      ],
+      "b": [
+        "northeast",
+        "brown",
+        40,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round21-20",
+      "a": [
+        "northwest",
+        "copper",
+        30,
+        125
+      ],
+      "b": [
+        "Western Europe",
+        "copper",
+        30,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round22-1",
+      "a": [
+        "central",
+        "golden",
+        30,
+        120
+      ],
+      "b": [
+        "central",
+        "pale/straw",
+        30,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round22-2",
+      "a": [
+        "central",
+        "golden",
+        25,
+        120
+      ],
+      "b": [
+        "central",
+        "golden",
+        30,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round22-4",
+      "a": [
+        "southeast",
+        "copper",
+        30,
+        125
+      ],
+      "b": [
+        "southwest",
+        "copper",
+        30,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round22-5",
+      "a": [
+        "southwest",
+        "copper",
+        30,
+        120
+      ],
+      "b": [
+        "southwest",
+        "copper",
+        30,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "user clarified matched5lb tare differences as not meaningful; any known direction retained",
+      "strength": null
+    },
+    {
+      "id": "round22-6",
+      "a": [
+        "southwest",
+        "copper",
+        30,
+        120
+      ],
+      "b": [
+        "southwest",
+        "copper",
+        30,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round22-7",
+      "a": [
+        "southwest",
+        "amber",
+        30,
+        125
+      ],
+      "b": [
+        "northeast",
+        "amber",
+        30,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round22-8",
+      "a": [
+        "northeast",
+        "amber",
+        30,
+        120
+      ],
+      "b": [
+        "northeast",
+        "amber",
+        30,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "user clarified matched5lb tare differences as not meaningful; any known direction retained",
+      "strength": null
+    },
+    {
+      "id": "round22-9",
+      "a": [
+        "northeast",
+        "amber",
+        30,
+        120
+      ],
+      "b": [
+        "northeast",
+        "amber",
+        30,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round22-10",
+      "a": [
+        "Western Europe",
+        "copper",
+        35,
+        120
+      ],
+      "b": [
+        "Western Europe",
+        "copper",
+        35,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round23-1",
+      "a": [
+        "northeast",
+        "copper",
+        35,
+        120
+      ],
+      "b": [
+        "northeast",
+        "copper",
+        35,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "user clarified matched5lb tare differences as not meaningful; any known direction retained",
+      "strength": null
+    },
+    {
+      "id": "round23-2",
+      "a": [
+        "southeast",
+        "golden",
+        40,
+        115
+      ],
+      "b": [
+        "southeast",
+        "golden",
+        40,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round23-4",
+      "a": [
+        "Eastern Europe",
+        "brown",
+        40,
+        115
+      ],
+      "b": [
+        "Eastern Europe",
+        "brown",
+        40,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "user clarified matched5lb tare differences as not meaningful; any known direction retained",
+      "strength": null
+    },
+    {
+      "id": "round23-5",
+      "a": [
+        "West Asia / Middle East",
+        "golden",
+        25,
+        125
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "golden",
+        25,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round23-6",
+      "a": [
+        "central",
+        "pale/straw",
+        20,
+        130
+      ],
+      "b": [
+        "central",
+        "golden",
+        30,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round23-7",
+      "a": [
+        "West Central Asia",
+        "copper",
+        35,
+        120
+      ],
+      "b": [
+        "West Central Asia",
+        "copper",
+        35,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "user clarified matched5lb tare differences as not meaningful; any known direction retained",
+      "strength": null
+    },
+    {
+      "id": "round23-8",
+      "a": [
+        "southwest",
+        "brown",
+        40,
+        110
+      ],
+      "b": [
+        "southwest",
+        "brown",
+        40,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round23-10",
+      "a": [
+        "central",
+        "pale/straw",
+        20,
+        120
+      ],
+      "b": [
+        "central",
+        "pale/straw",
+        20,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "user clarified matched5lb tare differences as not meaningful; any known direction retained",
+      "strength": null
+    },
+    {
+      "id": "round23-11",
+      "a": [
+        "Eastern Europe",
+        "copper",
+        20,
+        125
+      ],
+      "b": [
+        "Eastern Europe",
+        "amber",
+        30,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round23-12",
+      "a": [
+        "Western Europe",
+        "pale/straw",
+        30,
+        110
+      ],
+      "b": [
+        "Western Europe",
+        "pale/straw",
+        30,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round23-13",
+      "a": [
+        "northwest",
+        "golden",
+        40,
+        115
+      ],
+      "b": [
+        "northwest",
+        "golden",
+        40,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "user clarified matched5lb tare differences as not meaningful; any known direction retained",
+      "strength": null
+    },
+    {
+      "id": "round23-14",
+      "a": [
+        "South/Eastern Asia",
+        "brown",
+        25,
+        125
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "brown",
+        35,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round23-15",
+      "a": [
+        "southwest",
+        "golden",
+        25,
+        120
+      ],
+      "b": [
+        "southeast",
+        "golden",
+        25,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round23-16",
+      "a": [
+        "West Asia / Middle East",
+        "amber",
+        20,
+        120
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "amber",
+        20,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "user clarified matched5lb tare differences as not meaningful; any known direction retained",
+      "strength": null
+    },
+    {
+      "id": "round23-17",
+      "a": [
+        "central",
+        "copper",
+        30,
+        120
+      ],
+      "b": [
+        "central",
+        "copper",
+        30,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round23-19",
+      "a": [
+        "southeast",
+        "brown",
+        30,
+        120
+      ],
+      "b": [
+        "southeast",
+        "brown",
+        30,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "user clarified matched5lb tare differences as not meaningful; any known direction retained",
+      "strength": null
+    },
+    {
+      "id": "round23-20",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        25,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "golden",
+        35,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round24-1",
+      "a": [
+        "central",
+        "pale/straw",
+        20,
+        120
+      ],
+      "b": [
+        "central",
+        "pale/straw",
+        20,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round24-3",
+      "a": [
+        "northeast",
+        "copper",
+        35,
+        120
+      ],
+      "b": [
+        "northeast",
+        "copper",
+        35,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round24-4",
+      "a": [
+        "West Central Asia",
+        "copper",
+        35,
+        120
+      ],
+      "b": [
+        "West Central Asia",
+        "copper",
+        35,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round24-5",
+      "a": [
+        "northwest",
+        "golden",
+        40,
+        115
+      ],
+      "b": [
+        "northwest",
+        "golden",
+        40,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round24-6",
+      "a": [
+        "southeast",
+        "brown",
+        30,
+        120
+      ],
+      "b": [
+        "southeast",
+        "brown",
+        30,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round24-7",
+      "a": [
+        "Western Europe",
+        "amber",
+        30,
+        125
+      ],
+      "b": [
+        "northwest",
+        "amber",
+        30,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round24-8",
+      "a": [
+        "northwest",
+        "amber",
+        30,
+        120
+      ],
+      "b": [
+        "northwest",
+        "amber",
+        30,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "basis": "user clarified matched5lb tare differences as not meaningful; any known direction retained",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round24-10",
+      "a": [
+        "southeast",
+        "amber",
+        25,
+        125
+      ],
+      "b": [
+        "northeast",
+        "amber",
+        25,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round24-11",
+      "a": [
+        "northeast",
+        "amber",
+        25,
+        120
+      ],
+      "b": [
+        "northeast",
+        "amber",
+        25,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "basis": "user clarified matched5lb tare differences as not meaningful; any known direction retained",
+      "strength": null
+    },
+    {
+      "id": "round24-13",
+      "a": [
+        "Western Europe",
+        "golden",
+        25,
+        125
+      ],
+      "b": [
+        "northwest",
+        "golden",
+        25,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round24-14",
+      "a": [
+        "Western Europe",
+        "golden",
+        25,
+        120
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        25,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "basis": "user clarified matched5lb tare differences as not meaningful; any known direction retained",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round23-3",
+      "a": [
+        "Western Europe",
+        "amber",
+        30,
+        125
+      ],
+      "b": [
+        "northwest",
+        "amber",
+        30,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round23-9",
+      "a": [
+        "southeast",
+        "amber",
+        25,
+        125
+      ],
+      "b": [
+        "northeast",
+        "amber",
+        25,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round23-18",
+      "a": [
+        "Western Europe",
+        "golden",
+        25,
+        120
+      ],
+      "b": [
+        "northwest",
+        "golden",
+        25,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round25-1",
+      "a": [
+        "northeast",
+        "golden",
+        20,
+        115
+      ],
+      "b": [
+        "southwest",
+        "golden",
+        20,
+        115
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round25-2",
+      "a": [
+        "southeast",
+        "amber",
+        20,
+        130
+      ],
+      "b": [
+        "central",
+        "amber",
+        30,
+        110
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round25-3",
+      "a": [
+        "northwest",
+        "brown",
+        35,
+        120
+      ],
+      "b": [
+        "central",
+        "brown",
+        35,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round25-4",
+      "a": [
+        "southwest",
+        "pale/straw",
+        25,
+        120
+      ],
+      "b": [
+        "northeast",
+        "pale/straw",
+        25,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round25-5",
+      "a": [
+        "central",
+        "copper",
+        25,
+        115
+      ],
+      "b": [
+        "central",
+        "copper",
+        25,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round25-6",
+      "a": [
+        "northeast",
+        "brown",
+        20,
+        125
+      ],
+      "b": [
+        "northwest",
+        "brown",
+        30,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round25-7",
+      "a": [
+        "southeast",
+        "golden",
+        20,
+        130
+      ],
+      "b": [
+        "southwest",
+        "golden",
+        20,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round25-8",
+      "a": [
+        "Western Europe",
+        "amber",
+        25,
+        115
+      ],
+      "b": [
+        "Eastern Europe",
+        "amber",
+        25,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round25-9",
+      "a": [
+        "northwest",
+        "pale/straw",
+        20,
+        120
+      ],
+      "b": [
+        "central",
+        "pale/straw",
+        20,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round25-10",
+      "a": [
+        "southwest",
+        "copper",
+        20,
+        125
+      ],
+      "b": [
+        "central",
+        "copper",
+        35,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round25-11",
+      "a": [
+        "northeast",
+        "amber",
+        25,
+        120
+      ],
+      "b": [
+        "southeast",
+        "amber",
+        25,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round25-12",
+      "a": [
+        "central",
+        "golden",
+        20,
+        115
+      ],
+      "b": [
+        "southeast",
+        "golden",
+        30,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round25-13",
+      "a": [
+        "northwest",
+        "copper",
+        40,
+        120
+      ],
+      "b": [
+        "northwest",
+        "copper",
+        40,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "user clarified matched5lb tare differences as not meaningful; any known direction retained",
+      "strength": null
+    },
+    {
+      "id": "round25-14",
+      "a": [
+        "southwest",
+        "brown",
+        20,
+        130
+      ],
+      "b": [
+        "northwest",
+        "brown",
+        25,
+        110
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round25-15",
+      "a": [
+        "West Central Asia",
+        "golden",
+        30,
+        110
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "golden",
+        30,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round25-16",
+      "a": [
+        "southeast",
+        "pale/straw",
+        35,
+        120
+      ],
+      "b": [
+        "northeast",
+        "pale/straw",
+        35,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round25-17",
+      "a": [
+        "northeast",
+        "golden",
+        20,
+        130
+      ],
+      "b": [
+        "central",
+        "golden",
+        25,
+        110
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round25-18",
+      "a": [
+        "central",
+        "brown",
+        20,
+        120
+      ],
+      "b": [
+        "southwest",
+        "brown",
+        20,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round25-19",
+      "a": [
+        "northwest",
+        "amber",
+        25,
+        115
+      ],
+      "b": [
+        "southeast",
+        "amber",
+        35,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round25-20",
+      "a": [
+        "southwest",
+        "golden",
+        30,
+        115
+      ],
+      "b": [
+        "southeast",
+        "golden",
+        30,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round26-1",
+      "a": [
+        "northeast",
+        "amber",
+        25,
+        120
+      ],
+      "b": [
+        "central",
+        "amber",
+        25,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round26-2",
+      "a": [
+        "northeast",
+        "amber",
+        30,
+        120
+      ],
+      "b": [
+        "central",
+        "amber",
+        30,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round26-3",
+      "a": [
+        "northwest",
+        "copper",
+        40,
+        120
+      ],
+      "b": [
+        "northwest",
+        "copper",
+        40,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round26-4",
+      "a": [
+        "central",
+        "brown",
+        30,
+        120
+      ],
+      "b": [
+        "southwest",
+        "brown",
+        30,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round26-5",
+      "a": [
+        "central",
+        "brown",
+        25,
+        120
+      ],
+      "b": [
+        "southwest",
+        "brown",
+        25,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly"
+    },
+    {
+      "id": "round27-1",
+      "a": [
+        "northeast",
+        "copper",
+        25,
+        115
+      ],
+      "b": [
+        "southwest",
+        "copper",
+        25,
+        115
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round27-2",
+      "a": [
+        "central",
+        "amber",
+        30,
+        110
+      ],
+      "b": [
+        "southeast",
+        "amber",
+        20,
+        125
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very close call"
+    },
+    {
+      "id": "round27-3",
+      "a": [
+        "northeast",
+        "golden",
+        35,
+        125
+      ],
+      "b": [
+        "central",
+        "golden",
+        35,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round27-4",
+      "a": [
+        "northwest",
+        "copper",
+        40,
+        110
+      ],
+      "b": [
+        "northwest",
+        "copper",
+        40,
+        115
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "user clarified matched5lb tare differences as not meaningful; any known direction retained",
+      "strength": null
+    },
+    {
+      "id": "round27-5",
+      "a": [
+        "southwest",
+        "pale/straw",
+        25,
+        130
+      ],
+      "b": [
+        "southwest",
+        "amber",
+        25,
+        110
+      ],
+      "known_direction": -1,
+      "materiality_target": -1,
+      "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+      "strength": "easily"
+    },
+    {
+      "id": "round27-6",
+      "a": [
+        "Eastern Europe",
+        "copper",
+        30,
+        120
+      ],
+      "b": [
+        "Western Europe",
+        "copper",
+        30,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "ever so slightly"
+    },
+    {
+      "id": "round27-8",
+      "a": [
+        "southeast",
+        "amber",
+        20,
+        125
+      ],
+      "b": [
+        "southwest",
+        "amber",
+        20,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round27-9",
+      "a": [
+        "central",
+        "brown",
+        35,
+        115
+      ],
+      "b": [
+        "southwest",
+        "brown",
+        35,
+        115
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round27-10",
+      "a": [
+        "northwest",
+        "copper",
+        40,
+        110
+      ],
+      "b": [
+        "northwest",
+        "copper",
+        40,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round27-12",
+      "a": [
+        "northeast",
+        "copper",
+        20,
+        130
+      ],
+      "b": [
+        "northwest",
+        "copper",
+        30,
+        110
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round27-13",
+      "a": [
+        "Western Europe",
+        "copper",
+        35,
+        110
+      ],
+      "b": [
+        "Western Europe",
+        "copper",
+        35,
+        115
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "user clarified matched5lb tare differences as not meaningful; any known direction retained",
+      "strength": null
+    },
+    {
+      "id": "round27-14",
+      "a": [
+        "northeast",
+        "amber",
+        35,
+        110
+      ],
+      "b": [
+        "central",
+        "amber",
+        35,
+        110
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round27-16",
+      "a": [
+        "South/Eastern Asia",
+        "amber",
+        25,
+        110
+      ],
+      "b": [
+        "West Central Asia",
+        "amber",
+        25,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round27-17",
+      "a": [
+        "southwest",
+        "pale/straw",
+        30,
+        125
+      ],
+      "b": [
+        "northeast",
+        "pale/straw",
+        30,
+        115
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly"
+    },
+    {
+      "id": "round27-18",
+      "a": [
+        "southeast",
+        "copper",
+        35,
+        110
+      ],
+      "b": [
+        "southeast",
+        "copper",
+        35,
+        115
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "user clarified matched5lb tare differences as not meaningful; any known direction retained",
+      "strength": null
+    },
+    {
+      "id": "round27-19",
+      "a": [
+        "southwest",
+        "amber",
+        25,
+        130
+      ],
+      "b": [
+        "northwest",
+        "amber",
+        30,
+        110
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round27-2-provenance-swap",
+      "a": [
+        "southeast",
+        "amber",
+        30,
+        110
+      ],
+      "b": [
+        "central",
+        "amber",
+        20,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly"
+    },
+    {
+      "id": "round28-1",
+      "a": [
+        "central",
+        "golden",
+        25,
+        110
+      ],
+      "b": [
+        "northeast",
+        "golden",
+        25,
+        110
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly"
+    },
+    {
+      "id": "round28-2",
+      "a": [
+        "northeast",
+        "golden",
+        25,
+        110
+      ],
+      "b": [
+        "northeast",
+        "golden",
+        20,
+        110
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly"
+    },
+    {
+      "id": "round28-3",
+      "a": [
+        "northeast",
+        "golden",
+        20,
+        110
+      ],
+      "b": [
+        "northeast",
+        "golden",
+        20,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round28-5",
+      "a": [
+        "central",
+        "golden",
+        25,
+        110
+      ],
+      "b": [
+        "northeast",
+        "golden",
+        20,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly"
+    },
+    {
+      "id": "round29-1",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        30,
+        120
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        30,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round29-2",
+      "a": [
+        "West Central Asia",
+        "brown",
+        30,
+        120
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        20,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null
+    },
+    {
+      "id": "round29-4",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        25,
+        120
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        20,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly"
+    },
+    {
+      "id": "round30-1",
+      "a": [
+        "southeast",
+        "copper",
+        20,
+        120
+      ],
+      "b": [
+        "southeast",
+        "golden",
+        20,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round30-2",
+      "a": [
+        "southeast",
+        "golden",
+        20,
+        120
+      ],
+      "b": [
+        "southeast",
+        "golden",
+        25,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly"
+    },
+    {
+      "id": "round27-15",
+      "a": [
+        "southeast",
+        "copper",
+        20,
+        120
+      ],
+      "b": [
+        "southeast",
+        "golden",
+        25,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly"
+    },
+    {
+      "id": "round31-1",
+      "a": [
+        "northeast",
+        "golden",
+        35,
+        120
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        35,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null
+    },
+    {
+      "id": "round31-2",
+      "a": [
+        "northeast",
+        "golden",
+        20,
+        120
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        20,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "explicit practical similarity",
+      "strength": null
+    },
+    {
+      "id": "round27-20",
+      "a": [
+        "northeast",
+        "golden",
+        25,
+        120
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        25,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "explicit practical similarity",
+      "strength": null
+    },
+    {
+      "id": "round32-3",
+      "a": [
+        "central",
+        "pale/straw",
+        25,
+        110
+      ],
+      "b": [
+        "northeast",
+        "golden",
+        20,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly"
+    },
+    {
+      "id": "round32-4",
+      "a": [
+        "central",
+        "golden",
+        25,
+        110
+      ],
+      "b": [
+        "northeast",
+        "pale/straw",
+        20,
+        125
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly"
+    },
+    {
+      "id": "round32-5",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        35,
+        120
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        20,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly"
+    },
+    {
+      "id": "round32-7",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        30,
+        110
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        20,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly"
+    },
+    {
+      "id": "round32-8",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        30,
+        120
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        20,
+        110
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly"
+    },
+    {
+      "id": "round35-1",
+      "a": [
+        "Western Europe",
+        "pale/straw",
+        20,
+        120
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "brown",
+        35,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "basis": "direct meaningfulness response in frozen Round35; not an adjective-derived proxy",
+      "strength": null
+    },
+    {
+      "id": "round35-2",
+      "a": [
+        "central",
+        "amber",
+        25,
+        115
+      ],
+      "b": [
+        "southwest",
+        "golden",
+        30,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction confirmed; materiality inferred from prompt but unconfirmed in response; prior interpretation retained in evidence, not a verified magnitude target",
+      "strength": null
+    },
+    {
+      "id": "round35-3",
+      "a": [
+        "northwest",
+        "golden",
+        20,
+        130
+      ],
+      "b": [
+        "northwest",
+        "golden",
+        30,
+        110
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "basis": "Direct subsequent qualitative clarification: very very close, interpreted as practical similarity; prior A direction retained.",
+      "strength": null
+    },
+    {
+      "id": "round35-4",
+      "a": [
+        "South/Eastern Asia",
+        "golden",
+        25,
+        115
+      ],
+      "b": [
+        "Eastern Europe",
+        "amber",
+        20,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction confirmed; materiality inferred from prompt but unconfirmed in response; prior interpretation retained in evidence, not a verified magnitude target",
+      "strength": null
+    },
+    {
+      "id": "round35-5",
+      "a": [
+        "central",
+        "brown",
+        40,
+        125
+      ],
+      "b": [
+        "central",
+        "golden",
+        20,
+        115
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction confirmed; materiality inferred from prompt but unconfirmed in response; prior interpretation retained in evidence, not a verified magnitude target",
+      "strength": null
+    },
+    {
+      "id": "round35-6",
+      "a": [
+        "southeast",
+        "pale/straw",
+        25,
+        125
+      ],
+      "b": [
+        "northeast",
+        "amber",
+        20,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction confirmed; materiality inferred from prompt but unconfirmed in response; prior interpretation retained in evidence, not a verified magnitude target",
+      "strength": null
+    },
+    {
+      "id": "round35-7",
+      "a": [
+        "Western Europe",
+        "copper",
+        30,
+        110
+      ],
+      "b": [
+        "Western Europe",
+        "pale/straw",
+        30,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction confirmed; materiality inferred from prompt but unconfirmed in response; prior interpretation retained in evidence, not a verified magnitude target",
+      "strength": null
+    },
+    {
+      "id": "round35-8",
+      "a": [
+        "southwest",
+        "amber",
+        30,
+        115
+      ],
+      "b": [
+        "northwest",
+        "golden",
+        25,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "direct meaningfulness response in frozen Round35; not an adjective-derived proxy",
+      "strength": null
+    },
+    {
+      "id": "round35-9",
+      "a": [
+        "West Central Asia",
+        "golden",
+        25,
+        125
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "amber",
+        30,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction confirmed; materiality inferred from prompt but unconfirmed in response; prior interpretation retained in evidence, not a verified magnitude target",
+      "strength": null
+    },
+    {
+      "id": "round35-10",
+      "a": [
+        "central",
+        "copper",
+        20,
+        115
+      ],
+      "b": [
+        "southeast",
+        "golden",
+        25,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction confirmed; materiality inferred from prompt but unconfirmed in response; prior interpretation retained in evidence, not a verified magnitude target",
+      "strength": null
+    },
+    {
+      "id": "round35-11",
+      "a": [
+        "West Asia / Middle East",
+        "copper",
+        40,
+        130
+      ],
+      "b": [
+        "Eastern Europe",
+        "pale/straw",
+        25,
+        110
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction confirmed; materiality inferred from prompt but unconfirmed in response; prior interpretation retained in evidence, not a verified magnitude target",
+      "strength": null
+    },
+    {
+      "id": "round35-12",
+      "a": [
+        "northeast",
+        "amber",
+        35,
+        110
+      ],
+      "b": [
+        "southwest",
+        "copper",
+        25,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction confirmed; materiality inferred from prompt but unconfirmed in response; prior interpretation retained in evidence, not a verified magnitude target",
+      "strength": null
+    },
+    {
+      "id": "round36-1",
+      "a": [
+        "northwest",
+        "amber",
+        30,
+        115
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        30,
+        115
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "basis": "Direct separate direction and meaningfulness answers in frozen Round36; no size inferred from bare A/B.",
+      "strength": "slightly"
+    },
+    {
+      "id": "round36-2",
+      "a": [
+        "Western Europe",
+        "copper",
+        30,
+        115
+      ],
+      "b": [
+        "northwest",
+        "copper",
+        30,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "basis": "Direct separate direction and meaningfulness answers in frozen Round36; no size inferred from bare A/B.",
+      "strength": "slightly"
+    },
+    {
+      "id": "round36-3",
+      "a": [
+        "northwest",
+        "amber",
+        25,
+        115
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        25,
+        115
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "basis": "Direct separate direction and meaningfulness answers in frozen Round36; no size inferred from bare A/B.",
+      "strength": "slightly"
+    },
+    {
+      "id": "round36-4",
+      "a": [
+        "Western Europe",
+        "amber",
+        35,
+        115
+      ],
+      "b": [
+        "northwest",
+        "amber",
+        35,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "basis": "Direct separate direction and meaningfulness answers in frozen Round36; no size inferred from bare A/B.",
+      "strength": "slightly"
+    },
+    {
+      "id": "round36-5",
+      "a": [
+        "West Central Asia",
+        "amber",
+        25,
+        110
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "amber",
+        25,
+        110
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "basis": "Direct separate direction and meaningfulness answers in frozen Round36; no size inferred from bare A/B.",
+      "strength": "slightly"
+    },
+    {
+      "id": "round36-6",
+      "a": [
+        "South/Eastern Asia",
+        "golden",
+        25,
+        110
+      ],
+      "b": [
+        "West Central Asia",
+        "golden",
+        25,
+        110
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "basis": "Direct separate direction and meaningfulness answers in frozen Round36; no size inferred from bare A/B.",
+      "strength": "slightly"
+    },
+    {
+      "id": "round36-7",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        25,
+        110
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "pale/straw",
+        25,
+        110
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "basis": "Direct separate direction and meaningfulness answers in frozen Round36; no size inferred from bare A/B.",
+      "strength": "slightly"
+    },
+    {
+      "id": "round36-8",
+      "a": [
+        "South/Eastern Asia",
+        "copper",
+        25,
+        110
+      ],
+      "b": [
+        "West Central Asia",
+        "copper",
+        25,
+        110
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "basis": "Direct separate direction and meaningfulness answers in frozen Round36; no size inferred from bare A/B.",
+      "strength": "slightly"
+    },
+    {
+      "id": "round36-9",
+      "a": [
+        "Eastern Europe",
+        "pale/straw",
+        30,
+        115
+      ],
+      "b": [
+        "Eastern Europe",
+        "golden",
+        25,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "basis": "Direct separate direction and meaningfulness answers in frozen Round36; no size inferred from bare A/B.",
+      "strength": "slightly"
+    },
+    {
+      "id": "round36-10",
+      "a": [
+        "central",
+        "golden",
+        25,
+        115
+      ],
+      "b": [
+        "central",
+        "pale/straw",
+        30,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "basis": "Direct separate direction and meaningfulness answers in frozen Round36; no size inferred from bare A/B.",
+      "strength": null
+    },
+    {
+      "id": "round36-11",
+      "a": [
+        "southwest",
+        "pale/straw",
+        30,
+        115
+      ],
+      "b": [
+        "southwest",
+        "golden",
+        25,
+        115
+      ],
+      "known_direction": -1,
+      "materiality_target": -1,
+      "basis": "Direct separate direction and meaningfulness answers in frozen Round36; no size inferred from bare A/B.",
+      "strength": null
+    },
+    {
+      "id": "round36-12",
+      "a": [
+        "Western Europe",
+        "golden",
+        25,
+        115
+      ],
+      "b": [
+        "Western Europe",
+        "pale/straw",
+        30,
+        115
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "basis": "Direct separate direction and meaningfulness answers in frozen Round36; no size inferred from bare A/B.",
+      "strength": "slightly"
+    },
+    {
+      "id": "round37-1",
+      "a": [
+        "Eastern Europe",
+        "amber",
+        30,
+        115
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        30,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "basis": "Explicit Round37 size, including Q2/Q9 clarifications. No clear direction stays missing; not an equality or guessed winner.",
+      "strength": null
+    },
+    {
+      "id": "round37-2",
+      "a": [
+        "Eastern Europe",
+        "amber",
+        35,
+        120
+      ],
+      "b": [
+        "Eastern Europe",
+        "amber",
+        30,
+        125
+      ],
+      "known_direction": -1,
+      "materiality_target": -1,
+      "basis": "Explicit Round37 size, including Q2/Q9 clarifications. No clear direction stays missing; not an equality or guessed winner.",
+      "strength": null
+    },
+    {
+      "id": "round37-3",
+      "a": [
+        "Western Europe",
+        "pale/straw",
+        30,
+        120
+      ],
+      "b": [
+        "central",
+        "pale/straw",
+        30,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "basis": "Explicit Round37 size, including Q2/Q9 clarifications. No clear direction stays missing; not an equality or guessed winner.",
+      "strength": "slightly"
+    },
+    {
+      "id": "round37-4",
+      "a": [
+        "central",
+        "golden",
+        40,
+        110
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        40,
+        115
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "Explicit Round37 size, including Q2/Q9 clarifications. No clear direction stays missing; not an equality or guessed winner.",
+      "strength": null
+    },
+    {
+      "id": "round37-5",
+      "a": [
+        "southeast",
+        "golden",
+        20,
+        110
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        20,
+        110
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "Explicit Round37 size, including Q2/Q9 clarifications. No clear direction stays missing; not an equality or guessed winner.",
+      "strength": null
+    },
+    {
+      "id": "round37-6",
+      "a": [
+        "central",
+        "brown",
+        30,
+        110
+      ],
+      "b": [
+        "Eastern Europe",
+        "brown",
+        30,
+        110
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "Explicit Round37 size, including Q2/Q9 clarifications. No clear direction stays missing; not an equality or guessed winner.",
+      "strength": null
+    },
+    {
+      "id": "round37-7",
+      "a": [
+        "northeast",
+        "brown",
+        30,
+        115
+      ],
+      "b": [
+        "southwest",
+        "brown",
+        30,
+        110
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "Explicit Round37 size, including Q2/Q9 clarifications. No clear direction stays missing; not an equality or guessed winner.",
+      "strength": null
+    },
+    {
+      "id": "round37-8",
+      "a": [
+        "southwest",
+        "copper",
+        30,
+        115
+      ],
+      "b": [
+        "southeast",
+        "copper",
+        30,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "Explicit Round37 size, including Q2/Q9 clarifications. No clear direction stays missing; not an equality or guessed winner.",
+      "strength": null
+    },
+    {
+      "id": "round37-9",
+      "a": [
+        "Eastern Europe",
+        "amber",
+        30,
+        125
+      ],
+      "b": [
+        "central",
+        "amber",
+        30,
+        125
+      ],
+      "known_direction": -1,
+      "materiality_target": -1,
+      "basis": "Explicit Round37 size, including Q2/Q9 clarifications. No clear direction stays missing; not an equality or guessed winner.",
+      "strength": null
+    },
+    {
+      "id": "round37-10",
+      "a": [
+        "southeast",
+        "brown",
+        40,
+        120
+      ],
+      "b": [
+        "central",
+        "brown",
+        40,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "Explicit Round37 size, including Q2/Q9 clarifications. No clear direction stays missing; not an equality or guessed winner.",
+      "strength": null
+    },
+    {
+      "id": "round37-11",
+      "a": [
+        "Western Europe",
+        "pale/straw",
+        20,
+        110
+      ],
+      "b": [
+        "Eastern Europe",
+        "copper",
+        35,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "basis": "Explicit Round37 size, including Q2/Q9 clarifications. No clear direction stays missing; not an equality or guessed winner.",
+      "strength": null
+    },
+    {
+      "id": "round37-12",
+      "a": [
+        "Western Europe",
+        "golden",
+        35,
+        130
+      ],
+      "b": [
+        "central",
+        "golden",
+        25,
+        110
+      ],
+      "known_direction": -1,
+      "materiality_target": -1,
+      "basis": "Explicit Round37 size, including Q2/Q9 clarifications. No clear direction stays missing; not an equality or guessed winner.",
+      "strength": null
+    },
+    {
+      "id": "round38-1",
+      "a": [
+        "northwest",
+        "amber",
+        35,
+        120
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        35,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "Round38 explicit axes; missing axes remain missing",
+      "strength": null
+    },
+    {
+      "id": "round38-2",
+      "a": [
+        "southeast",
+        "golden",
+        25,
+        120
+      ],
+      "b": [
+        "southeast",
+        "pale/straw",
+        30,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "basis": "Round38 explicit axes; missing axes remain missing",
+      "strength": null
+    },
+    {
+      "id": "round38-3",
+      "a": [
+        "central",
+        "brown",
+        35,
+        120
+      ],
+      "b": [
+        "Eastern Europe",
+        "brown",
+        35,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": null,
+      "basis": "Round38 explicit axes; missing axes remain missing",
+      "strength": null
+    },
+    {
+      "id": "round38-4",
+      "a": [
+        "Western Europe",
+        "copper",
+        25,
+        115
+      ],
+      "b": [
+        "central",
+        "copper",
+        25,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "basis": "Round38 explicit axes; missing axes remain missing",
+      "strength": null
+    },
+    {
+      "id": "round38-5",
+      "a": [
+        "southwest",
+        "golden",
+        40,
+        115
+      ],
+      "b": [
+        "northwest",
+        "golden",
+        40,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "basis": "Round38 explicit axes; missing axes remain missing",
+      "strength": null
+    },
+    {
+      "id": "round38-6",
+      "a": [
+        "Eastern Europe",
+        "amber",
+        25,
+        115
+      ],
+      "b": [
+        "northeast",
+        "amber",
+        35,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "basis": "Round38 explicit axes; missing axes remain missing",
+      "strength": null
+    },
+    {
+      "id": "round38-7",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        35,
+        125
+      ],
+      "b": [
+        "Western Europe",
+        "pale/straw",
+        35,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": -1,
+      "basis": "Round38 explicit axes; missing axes remain missing",
+      "strength": null
+    },
+    {
+      "id": "round38-8",
+      "a": [
+        "Western Europe",
+        "golden",
+        25,
+        125
+      ],
+      "b": [
+        "Western Europe",
+        "pale/straw",
+        30,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "basis": "Strength-derived meaningfulness from strongly",
+      "strength": "strongly"
+    },
+    {
+      "id": "round38-9",
+      "a": [
+        "southeast",
+        "brown",
+        30,
+        125
+      ],
+      "b": [
+        "central",
+        "brown",
+        30,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "Round38 explicit axes; missing axes remain missing",
+      "strength": null
+    },
+    {
+      "id": "round38-10",
+      "a": [
+        "northeast",
+        "amber",
+        20,
+        125
+      ],
+      "b": [
+        "southwest",
+        "amber",
+        20,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "Round38 explicit axes; missing axes remain missing",
+      "strength": null
+    },
+    {
+      "id": "round38-11",
+      "a": [
+        "West Central Asia",
+        "copper",
+        25,
+        130
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "golden",
+        30,
+        110
+      ],
+      "known_direction": -1,
+      "materiality_target": -1,
+      "basis": "Round38 explicit axes; missing axes remain missing",
+      "strength": null
+    },
+    {
+      "id": "round38-12",
+      "a": [
+        "Eastern Europe",
+        "golden",
+        40,
+        125
+      ],
+      "b": [
+        "central",
+        "golden",
+        40,
+        130
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "Round38 explicit axes; missing axes remain missing",
+      "strength": null
+    }
+  ]
+}

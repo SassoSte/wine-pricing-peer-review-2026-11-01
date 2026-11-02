@@ -1,0 +1,64 @@
+{
+  "scope": "Direct strict-preference conflicts with newlyconfirmed exactequalities plus own-provenance age/tare/shade monotonicity. Not a fullminimal-conflict search.",
+  "conflicts": [
+    {
+      "equality_id": "round6-8",
+      "strict_preference_id": "round9-7",
+      "equal_a": [
+        "central",
+        "brown",
+        35,
+        120
+      ],
+      "equal_b": [
+        "West Asia / Middle East",
+        "brown",
+        35,
+        120
+      ],
+      "preferred": [
+        "central",
+        "brown",
+        35,
+        125
+      ],
+      "less_preferred": [
+        "West Asia / Middle East",
+        "brown",
+        35,
+        120
+      ],
+      "reason": "EqualA dominatespreferredW; lesspreferredL dominatesEqualB. Monotonicity plusA=B forbidsW>L."
+    },
+    {
+      "equality_id": "round8-4",
+      "strict_preference_id": "round8-5",
+      "equal_a": [
+        "Eastern Europe",
+        "copper",
+        30,
+        120
+      ],
+      "equal_b": [
+        "West Central Asia",
+        "copper",
+        30,
+        120
+      ],
+      "preferred": [
+        "Eastern Europe",
+        "copper",
+        30,
+        125
+      ],
+      "less_preferred": [
+        "West Central Asia",
+        "copper",
+        30,
+        120
+      ],
+      "reason": "EqualA dominatespreferredW; lesspreferredL dominatesEqualB. Monotonicity plusA=B forbidsW>L."
+    }
+  ],
+  "handling": "Preserve all originalrecords. Latestexplicitexactequalities arehard trainingconstraints; olderconflicting directions remainsoftlabels andtheir unavoidableerrors are reported. No silentrelabelling."
+}

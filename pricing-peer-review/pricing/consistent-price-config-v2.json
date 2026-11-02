@@ -1,0 +1,240 @@
+{
+  "model_id": "consistent-price-layer-v2",
+  "status": "experimental_calibrated_to_plausibility_not_market_data",
+  "domain": {
+    "provenances": [
+      "Eastern Europe",
+      "Western Europe",
+      "West Central Asia",
+      "South/Eastern Asia",
+      "West Asia / Middle East",
+      "central",
+      "northeast",
+      "northwest",
+      "southwest",
+      "southeast"
+    ],
+    "shades": [
+      "brown",
+      "copper",
+      "amber",
+      "golden",
+      "pale/straw"
+    ],
+    "vintage_years": [
+      40,
+      35,
+      30,
+      25,
+      20
+    ],
+    "tare_lb": [
+      110,
+      115,
+      120,
+      125,
+      130
+    ],
+    "domestic": [
+      "central",
+      "northwest",
+      "northeast",
+      "southwest",
+      "southeast"
+    ]
+  },
+  "base_coefficients": [
+    0.3078046153853131,
+    -0.6921753846154004,
+    -0.6921853846146869,
+    -0.99999,
+    0.07700615384694243,
+    0.5385530769235776,
+    -0.23067846153815819,
+    0.1539523076927236,
+    0.07705615384704778,
+    1.3077246153852071,
+    0.23073846153826455,
+    0.0,
+    0.07690615384578114,
+    0.5385030769234712,
+    1.3077646115898918,
+    1.307714615385207,
+    1.2308284615394256,
+    0.5384930769234713,
+    0.53841307692231,
+    0.5384930769234713
+  ],
+  "regional_anchors": {
+    "Eastern Europe": {
+      "price": 1029.9881700117828,
+      "status": "model_inferred"
+    },
+    "Western Europe": {
+      "price": 1070.0027299973033,
+      "status": "model_inferred"
+    },
+    "West Central Asia": {
+      "price": 940.0054599945139,
+      "status": "model_inferred"
+    },
+    "South/Eastern Asia": {
+      "price": 940.0041599959067,
+      "status": "model_inferred"
+    },
+    "West Asia / Middle East": {
+      "price": 899.9896000103862,
+      "status": "model_inferred"
+    },
+    "central": {
+      "price": 1050,
+      "status": "user_established"
+    },
+    "northeast": {
+      "price": 1100,
+      "status": "user_established"
+    },
+    "northwest": {
+      "price": 1000,
+      "status": "user_established"
+    },
+    "southwest": {
+      "price": 1050.0019499980517,
+      "status": "model_inferred"
+    },
+    "southeast": {
+      "price": 1075,
+      "status": "user_established"
+    }
+  },
+  "calibration_offerings": [
+    [
+      "northeast",
+      "pale/straw",
+      20,
+      115
+    ],
+    [
+      "northeast",
+      "pale/straw",
+      25,
+      110
+    ],
+    [
+      "northeast",
+      "golden",
+      20,
+      110
+    ],
+    [
+      "northwest",
+      "pale/straw",
+      20,
+      115
+    ],
+    [
+      "northwest",
+      "pale/straw",
+      25,
+      110
+    ],
+    [
+      "northwest",
+      "golden",
+      20,
+      110
+    ],
+    [
+      "northeast",
+      "golden",
+      25,
+      115
+    ],
+    [
+      "southeast",
+      "golden",
+      25,
+      115
+    ],
+    [
+      "northwest",
+      "golden",
+      25,
+      115
+    ],
+    [
+      "central",
+      "golden",
+      25,
+      115
+    ]
+  ],
+  "log_discount_knots": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.07690615384578114,
+      0.00959140970838699
+    ],
+    [
+      0.5384930769234713,
+      0.0691610351988079
+    ],
+    [
+      1.2308284615394256,
+      0.16576948533359503
+    ],
+    [
+      1.846227692308678,
+      0.34804788960120187
+    ],
+    [
+      5.0001999962072485,
+      0.8938178760220965
+    ],
+    [
+      8.154152303901133,
+      1.299282984130261
+    ]
+  ],
+  "price_basis": "Wholefilledcask; seat/reference-status assumed comparable; samevolume,mint,initialrelease/distributorterms; fees/taxes/deliveryexcluded. Regularbatchdiscount notapplied.",
+  "source_hashes": {
+    "pricing/consistent-price-config-v1.json": "438852c9b2b17a1bf86e0b9b71ef64436cc5b336f1b1a13e6ad3a5800b86839d",
+    "pricing/consistent_price_layer.py": "85d343200a8e93bb88b55d4bc742963b4e7f6e185b792f915513d29f0c2ebab0",
+    "pricing/consistent_price_v2.py": "b277bd9cdcc6072278114df609d8ddb5930e50401ce819a59bfb622ec2266963",
+    "pricing/low-end-checks-v1.json": "8746340f20fdad121a9a41af21deb8ee2f6da093a6579d8cb1eb86f3f42309fe",
+    "pricing/refine_low_end_v2.py": "beadd069e15540d9ad81a4cbef70c1184036436620afba91558e880176aa0660",
+    "model-config-v28.json": "a9fed8e86977526c16e74ccdb0a6a75d919b3041bd602e5592d64e3086414dcf"
+  },
+  "parent_config": "consistent-price-config-v1.json",
+  "prior_supported_loss": 1.846227692308678,
+  "low_end_constraints": [
+    {
+      "id": "ne-amber-35-120",
+      "offering": [
+        "northeast",
+        "amber",
+        35,
+        120
+      ],
+      "type": "approximate_center",
+      "amount_usd": 450.0,
+      "treatment": "Fit to approximate450center"
+    },
+    {
+      "id": "ne-brown-40-130",
+      "offering": [
+        "northeast",
+        "brown",
+        40,
+        130
+      ],
+      "type": "upper_bound",
+      "amount_usd": 300.0,
+      "treatment": "Use300as ceiling-active endpoint, consistentwithnear300guidance; not a claimedexacttransactionprice orverifiedcostfloor."
+    }
+  ],
+  "qualification": "Provisionalmonetarylayer. Original5knots andregionalanchors unchanged;2Northeastexpertjudgments extend curve. Otherregions inheritsharedrelativecurve asanassumption. Full domain interpolation isnotindependentmarketvalidation. No regularbatchdiscount orfees added."
+}

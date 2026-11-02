@@ -1,0 +1,868 @@
+{
+  "arms": {
+    "unchanged_structure": {
+      "ranking_accuracy": 0.9398268398268399,
+      "targets": {
+        "round50-9": {
+          "heldout_gaps": [
+            0.011156871220618314,
+            0.25937046421786925,
+            0.2151182939387426,
+            -0.13612237237746005,
+            0.08329656076545966
+          ],
+          "correct_count": 0
+        },
+        "voice-older-we-equal-tare": {
+          "heldout_gaps": [
+            -0.3657277584302823,
+            -0.4447194064695058,
+            -0.13011013804421928,
+            -0.8896400331118266,
+            -0.28442405787340747
+          ],
+          "correct_count": 5
+        }
+      },
+      "full_fit_metrics": {
+        "direction_n": 462,
+        "direction_correct": 438,
+        "exact_n": 3,
+        "exact_correct": 3
+      }
+    },
+    "brown25": {
+      "ranking_accuracy": 0.9320346320346321,
+      "targets": {
+        "round50-9": {
+          "heldout_gaps": [
+            -0.503028324110888,
+            -0.2722918428522225,
+            -0.1653679621717584,
+            -0.5676102873149605,
+            -0.483234775088657
+          ],
+          "correct_count": 0
+        },
+        "voice-older-we-equal-tare": {
+          "heldout_gaps": [
+            -1.0475570329565902,
+            -0.7807059343001344,
+            -0.39877739491747943,
+            -1.0735908442123647,
+            -0.9487909667785537
+          ],
+          "correct_count": 5
+        }
+      },
+      "full_fit_metrics": {
+        "direction_n": 462,
+        "direction_correct": 442,
+        "exact_n": 3,
+        "exact_correct": 3
+      }
+    },
+    "brown50": {
+      "ranking_accuracy": 0.906060606060606,
+      "targets": {
+        "round50-9": {
+          "heldout_gaps": [
+            -0.9229552429181556,
+            -0.8607590211262099,
+            -0.524496798331634,
+            -0.7362624235040389,
+            -0.7518427313201889
+          ],
+          "correct_count": 0
+        },
+        "voice-older-we-equal-tare": {
+          "heldout_gaps": [
+            -1.2072513671730793,
+            -1.1003608168800088,
+            -0.6640515119922975,
+            -0.8911774210310056,
+            -0.9956647814879787
+          ],
+          "correct_count": 5
+        }
+      },
+      "full_fit_metrics": {
+        "direction_n": 462,
+        "direction_correct": 426,
+        "exact_n": 3,
+        "exact_correct": 3
+      }
+    }
+  },
+  "brown25_changes": [
+    {
+      "id": "r3-4",
+      "before": 5,
+      "after": 0,
+      "a": [
+        "West Asia / Middle East",
+        "pale/straw",
+        30,
+        120
+      ],
+      "b": [
+        "Western Europe",
+        "brown",
+        30,
+        120
+      ]
+    },
+    {
+      "id": "round6-2",
+      "before": 1,
+      "after": 4,
+      "a": [
+        "southeast",
+        "pale/straw",
+        20,
+        110
+      ],
+      "b": [
+        "northeast",
+        "pale/straw",
+        20,
+        110
+      ]
+    },
+    {
+      "id": "round6-12",
+      "before": 2,
+      "after": 3,
+      "a": [
+        "central",
+        "brown",
+        25,
+        130
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "brown",
+        25,
+        120
+      ]
+    },
+    {
+      "id": "round8-5",
+      "before": 0,
+      "after": 3,
+      "a": [
+        "Eastern Europe",
+        "copper",
+        30,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "copper",
+        30,
+        120
+      ]
+    },
+    {
+      "id": "round8-8",
+      "before": 0,
+      "after": 3,
+      "a": [
+        "Eastern Europe",
+        "copper",
+        20,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "copper",
+        20,
+        120
+      ]
+    },
+    {
+      "id": "round9-2",
+      "before": 5,
+      "after": 4,
+      "a": [
+        "West Asia / Middle East",
+        "golden",
+        35,
+        115
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "golden",
+        30,
+        120
+      ]
+    },
+    {
+      "id": "round10-13",
+      "before": 0,
+      "after": 1,
+      "a": [
+        "Western Europe",
+        "golden",
+        35,
+        125
+      ],
+      "b": [
+        "Eastern Europe",
+        "golden",
+        35,
+        120
+      ]
+    },
+    {
+      "id": "round10-16",
+      "before": 2,
+      "after": 4,
+      "a": [
+        "Eastern Europe",
+        "amber",
+        20,
+        120
+      ],
+      "b": [
+        "West Central Asia",
+        "amber",
+        20,
+        115
+      ]
+    },
+    {
+      "id": "round11-14",
+      "before": 4,
+      "after": 5,
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        35,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        25,
+        125
+      ]
+    },
+    {
+      "id": "round11-16",
+      "before": 5,
+      "after": 2,
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        30,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        25,
+        125
+      ]
+    },
+    {
+      "id": "round11-17",
+      "before": 5,
+      "after": 3,
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        25,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        20,
+        125
+      ]
+    },
+    {
+      "id": "round11-19",
+      "before": 5,
+      "after": 4,
+      "a": [
+        "southeast",
+        "pale/straw",
+        25,
+        125
+      ],
+      "b": [
+        "southeast",
+        "brown",
+        20,
+        125
+      ]
+    },
+    {
+      "id": "round11-20",
+      "before": 4,
+      "after": 5,
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        35,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        25,
+        115
+      ]
+    },
+    {
+      "id": "round13-6",
+      "before": 5,
+      "after": 3,
+      "a": [
+        "southeast",
+        "copper",
+        35,
+        125
+      ],
+      "b": [
+        "southwest",
+        "copper",
+        35,
+        120
+      ]
+    },
+    {
+      "id": "round13-11",
+      "before": 0,
+      "after": 2,
+      "a": [
+        "Eastern Europe",
+        "brown",
+        35,
+        115
+      ],
+      "b": [
+        "Eastern Europe",
+        "copper",
+        35,
+        125
+      ]
+    },
+    {
+      "id": "round15-13",
+      "before": 5,
+      "after": 4,
+      "a": [
+        "West Central Asia",
+        "amber",
+        40,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "amber",
+        40,
+        115
+      ]
+    },
+    {
+      "id": "round15-15",
+      "before": 2,
+      "after": 4,
+      "a": [
+        "Western Europe",
+        "copper",
+        30,
+        125
+      ],
+      "b": [
+        "northwest",
+        "copper",
+        30,
+        120
+      ]
+    },
+    {
+      "id": "round17-4",
+      "before": 5,
+      "after": 4,
+      "a": [
+        "central",
+        "brown",
+        40,
+        110
+      ],
+      "b": [
+        "southeast",
+        "brown",
+        40,
+        120
+      ]
+    },
+    {
+      "id": "round17-5",
+      "before": 5,
+      "after": 3,
+      "a": [
+        "West Asia / Middle East",
+        "golden",
+        30,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "golden",
+        30,
+        125
+      ]
+    },
+    {
+      "id": "round19-5",
+      "before": 4,
+      "after": 5,
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        30,
+        125
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "pale/straw",
+        30,
+        120
+      ]
+    },
+    {
+      "id": "round19-13",
+      "before": 5,
+      "after": 4,
+      "a": [
+        "West Asia / Middle East",
+        "brown",
+        35,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        35,
+        125
+      ]
+    },
+    {
+      "id": "round27-2-provenance-swap",
+      "before": 1,
+      "after": 3,
+      "a": [
+        "southeast",
+        "amber",
+        30,
+        110
+      ],
+      "b": [
+        "central",
+        "amber",
+        20,
+        125
+      ]
+    },
+    {
+      "id": "round29-4",
+      "before": 5,
+      "after": 3,
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        25,
+        120
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        20,
+        120
+      ]
+    },
+    {
+      "id": "round32-3",
+      "before": 5,
+      "after": 4,
+      "a": [
+        "central",
+        "pale/straw",
+        25,
+        110
+      ],
+      "b": [
+        "northeast",
+        "golden",
+        20,
+        125
+      ]
+    },
+    {
+      "id": "round32-4",
+      "before": 3,
+      "after": 4,
+      "a": [
+        "central",
+        "golden",
+        25,
+        110
+      ],
+      "b": [
+        "northeast",
+        "pale/straw",
+        20,
+        125
+      ]
+    },
+    {
+      "id": "round32-7",
+      "before": 5,
+      "after": 2,
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        30,
+        110
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        20,
+        120
+      ]
+    },
+    {
+      "id": "round35-3",
+      "before": 5,
+      "after": 3,
+      "a": [
+        "northwest",
+        "golden",
+        20,
+        130
+      ],
+      "b": [
+        "northwest",
+        "golden",
+        30,
+        110
+      ]
+    },
+    {
+      "id": "round35-10",
+      "before": 5,
+      "after": 4,
+      "a": [
+        "central",
+        "copper",
+        20,
+        115
+      ],
+      "b": [
+        "southeast",
+        "golden",
+        25,
+        120
+      ]
+    },
+    {
+      "id": "round35-12",
+      "before": 5,
+      "after": 4,
+      "a": [
+        "northeast",
+        "amber",
+        35,
+        110
+      ],
+      "b": [
+        "southwest",
+        "copper",
+        25,
+        120
+      ]
+    },
+    {
+      "id": "round44-8",
+      "before": 5,
+      "after": 3,
+      "a": [
+        "Western Europe",
+        "golden",
+        30,
+        125
+      ],
+      "b": [
+        "Western Europe",
+        "pale/straw",
+        35,
+        120
+      ]
+    },
+    {
+      "id": "round45-2",
+      "before": 5,
+      "after": 3,
+      "a": [
+        "South/Eastern Asia",
+        "pale/straw",
+        25,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "golden",
+        20,
+        125
+      ]
+    },
+    {
+      "id": "round45-8",
+      "before": 5,
+      "after": 4,
+      "a": [
+        "southwest",
+        "brown",
+        30,
+        120
+      ],
+      "b": [
+        "central",
+        "amber",
+        35,
+        115
+      ]
+    },
+    {
+      "id": "round45-11",
+      "before": 5,
+      "after": 3,
+      "a": [
+        "Western Europe",
+        "copper",
+        30,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "pale/straw",
+        25,
+        125
+      ]
+    },
+    {
+      "id": "round46-6",
+      "before": 1,
+      "after": 0,
+      "a": [
+        "central",
+        "golden",
+        30,
+        120
+      ],
+      "b": [
+        "northeast",
+        "golden",
+        35,
+        115
+      ]
+    },
+    {
+      "id": "round27-7",
+      "before": 0,
+      "after": 1,
+      "a": [
+        "central",
+        "golden",
+        25,
+        110
+      ],
+      "b": [
+        "northeast",
+        "golden",
+        20,
+        125
+      ]
+    },
+    {
+      "id": "round49-1",
+      "before": 5,
+      "after": 3,
+      "a": [
+        "central",
+        "amber",
+        25,
+        120
+      ],
+      "b": [
+        "northeast",
+        "amber",
+        30,
+        115
+      ]
+    },
+    {
+      "id": "round49-2",
+      "before": 1,
+      "after": 2,
+      "a": [
+        "Western Europe",
+        "copper",
+        25,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "pale/straw",
+        20,
+        125
+      ]
+    },
+    {
+      "id": "round49-6",
+      "before": 3,
+      "after": 5,
+      "a": [
+        "northwest",
+        "golden",
+        25,
+        115
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        25,
+        120
+      ]
+    },
+    {
+      "id": "round49-10",
+      "before": 5,
+      "after": 4,
+      "a": [
+        "Eastern Europe",
+        "golden",
+        25,
+        125
+      ],
+      "b": [
+        "Eastern Europe",
+        "pale/straw",
+        30,
+        115
+      ]
+    },
+    {
+      "id": "round50-3",
+      "before": 4,
+      "after": 5,
+      "a": [
+        "Western Europe",
+        "copper",
+        25,
+        125
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "pale/straw",
+        25,
+        125
+      ]
+    },
+    {
+      "id": "round51-2",
+      "before": 3,
+      "after": 2,
+      "a": [
+        "northeast",
+        "amber",
+        30,
+        115
+      ],
+      "b": [
+        "southwest",
+        "amber",
+        25,
+        125
+      ]
+    },
+    {
+      "id": "round54-1",
+      "before": 4,
+      "after": 5,
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        30,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        20,
+        120
+      ]
+    },
+    {
+      "id": "round55-7",
+      "before": 3,
+      "after": 2,
+      "a": [
+        "Western Europe",
+        "golden",
+        20,
+        110
+      ],
+      "b": [
+        "northwest",
+        "pale/straw",
+        20,
+        110
+      ]
+    },
+    {
+      "id": "round56-4",
+      "before": 5,
+      "after": 4,
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        20,
+        130
+      ],
+      "b": [
+        "West Central Asia",
+        "golden",
+        30,
+        110
+      ]
+    },
+    {
+      "id": "round56-8",
+      "before": 4,
+      "after": 0,
+      "a": [
+        "West Central Asia",
+        "amber",
+        30,
+        130
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        35,
+        110
+      ]
+    }
+  ],
+  "decision": "Reject blanket25/50percent older-brown vintage/tare attenuation. New equal-tare B preference already generalizes under unchanged architecture; attenuation does not solve withheld older equality and reduces aggregate ranking. Preserve prior improved experimental ranking and default predictor.",
+  "profile_checks": 97500,
+  "interpretation": "This tests only uniform attenuation of both contributions at age35+, not every possible brown interaction. Two linked judgments alone do not identify nonlinear attenuation: additive weights can satisfy both. Context may affect premium justification rather than ranking, but that is not established by this experiment.",
+  "baseline_hashes_verified": true
+}

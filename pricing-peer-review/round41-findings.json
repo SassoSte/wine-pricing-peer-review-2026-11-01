@@ -1,0 +1,85 @@
+{
+  "round": 41,
+  "scores": {
+    "v21": {
+      "direction_n": 9,
+      "direction_correct": 8,
+      "direction_misses": [
+        7
+      ],
+      "meaningfulness_n": 12,
+      "meaningfulness_correct": 10,
+      "meaningfulness_misses": [
+        6,
+        7
+      ],
+      "false_premiums": [],
+      "missed_meaningful": [
+        6,
+        7
+      ],
+      "no_direction_tie_checks_n": 3,
+      "no_direction_tie_checks_correct": 3,
+      "no_direction_tie_misses": [],
+      "explicit_zero_shade_check_ids": [
+        1,
+        8
+      ],
+      "taste_dependent_tie_check_ids": [
+        4
+      ]
+    },
+    "v20": {
+      "direction_n": 9,
+      "direction_correct": 3,
+      "direction_misses": [
+        2,
+        3,
+        5,
+        6,
+        7,
+        12
+      ],
+      "meaningfulness_n": 12,
+      "meaningfulness_correct": 9,
+      "meaningfulness_misses": [
+        2,
+        5,
+        7
+      ],
+      "false_premiums": [],
+      "missed_meaningful": [
+        2,
+        5,
+        7
+      ],
+      "no_direction_tie_checks_n": 3,
+      "no_direction_tie_checks_correct": 0,
+      "no_direction_tie_misses": [
+        1,
+        4,
+        8
+      ],
+      "explicit_zero_shade_check_ids": [
+        1,
+        8
+      ],
+      "taste_dependent_tie_check_ids": [
+        4
+      ]
+    }
+  },
+  "findings": [
+    "V21 improves supplied direction8/9 versus3/9 and size10/12 versus9/12. Size-only successes in v20 include wrong-direction predictions; do not imply joint correctness.",
+    "V21 matches both explicit zero-shade statements Q1/Q8 and taste-dependent no-direction tie Q4;v20 retains direction in all3.",
+    "Q6: v21 correctly favors younger golden20/130 over pale25/125 in WCA but underestimates meaningfulness.",
+    "Q7: both models wrongly favor older pale35 over golden30 at EasternEurope115lb and classify practical; low-tare older-vintage context remains unresolved.",
+    "Pure5lb Q10 and domestic shade/vintage Q11 correct on both axes for both models."
+  ],
+  "qualification": "Targeted fresh exact pairs from familiar families, not a representative population sample. No refit.",
+  "pending_corrections": [
+    "revision-13-correction.json"
+  ],
+  "evidence_unchanged": "evidence-v21.json",
+  "prediction_rechecks": 24
+}

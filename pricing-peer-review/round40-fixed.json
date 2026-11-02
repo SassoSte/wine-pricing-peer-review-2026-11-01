@@ -1,0 +1,905 @@
+{
+  "round": 40,
+  "created_at": "2026-10-27T22:54:35.473431+00:00",
+  "status": "complete",
+  "protocol": "12 fresh unordered pairs, checked including reversed orientation against saved rounds/evidence.6 targeted eligible shade-only/vintage contrasts;2 below-boundary,2 pure5lb,2 unequal-tare controls. Design and freshness substitutions precede prediction calls; no selection for agreement/disagreement. Familiar families: not independent random sample. All questions and predictions frozen before answers. No refit or interim scoring. Direction and meaningfulness separate; missing/unresolved axes excluded, practical similarity not exact equality.",
+  "models": {
+    "v20": {
+      "selected_model": "heavy_only",
+      "model": {
+        "kind": "contextual_meaningfulness",
+        "underlying_source": "precision-shade-candidate-v17.json",
+        "underlying_coefficients": [
+          0.30059251209596727,
+          -0.4826433202627174,
+          -0.4827433202627174,
+          -0.4640245387499571,
+          0.395340398689864,
+          0.49105436886711173,
+          0.3004925120959673,
+          0.5335164881572831,
+          0.5073492033852847,
+          0.7556002873078896,
+          6.256835180915935e-22,
+          3.461062096949336e-21,
+          0.6636957908318052,
+          0.37156981323016397,
+          0.6270916207257354,
+          0.6635957908318052,
+          0.3330912438174751,
+          0.2491467586623201,
+          -0.36369579083180525
+        ],
+        "base_radius": 0.3000001,
+        "context_kind": "mature_shade",
+        "context_coefficient": 0.75,
+        "direction_weights_changed": false,
+        "calibration_evidence": "evidence-v20.json",
+        "shade_fraction": 0.0,
+        "boundary_increment": 0.35000000000000003,
+        "training_objective": 0.9545685864075433,
+        "shade_coefficients": [
+          0.55,
+          0.0
+        ]
+      },
+      "evidence": "evidence-v20.json",
+      "validation_file": "contextual-shade-validation-v20.json",
+      "validation": {
+        "direction": {
+          "n": 301,
+          "correct": 272.8,
+          "accuracy": 0.906312292358804,
+          "reversals": 28.0,
+          "zero_or_abstain": 0.2
+        },
+        "materiality": {
+          "n": 216,
+          "meaningful_n": 43,
+          "no_meaningful_n": 173,
+          "accuracy": 0.9092592592592593,
+          "balanced_accuracy": 0.8996639333243716,
+          "meaningful_recall": 0.8837209302325582,
+          "no_meananingful_recall": 0.915606936416185,
+          "false_meaningful": 14.6,
+          "missed_meaningful": 5.0,
+          "correct_meaningful_direction": 37.0
+        },
+        "directly_supported_materiality": {
+          "n": 81,
+          "meaningful_n": 17,
+          "no_meaningful_n": 64,
+          "accuracy": 0.8987654320987654,
+          "balanced_accuracy": 0.8927389705882354,
+          "meaningful_recall": 0.8823529411764705,
+          "no_meananingful_recall": 0.903125,
+          "false_meaningful": 6.2,
+          "missed_meaningful": 2.0,
+          "correct_meaningful_direction": 15.0
+        },
+        "unknown_materiality_n": 239
+      },
+      "baselines_unchanged": true
+    },
+    "v19": {
+      "selected_model": "boundary",
+      "model": {
+        "kind": "contextual_meaningfulness",
+        "underlying_source": "precision-shade-candidate-v17.json",
+        "underlying_coefficients": [
+          0.30059251209596727,
+          -0.4826433202627174,
+          -0.4827433202627174,
+          -0.4640245387499571,
+          0.395340398689864,
+          0.49105436886711173,
+          0.3004925120959673,
+          0.5335164881572831,
+          0.5073492033852847,
+          0.7556002873078896,
+          6.256835180915935e-22,
+          3.461062096949336e-21,
+          0.6636957908318052,
+          0.37156981323016397,
+          0.6270916207257354,
+          0.6635957908318052,
+          0.3330912438174751,
+          0.2491467586623201,
+          -0.36369579083180525
+        ],
+        "base_radius": 0.3000001,
+        "context_kind": "mature_shade",
+        "context_coefficient": 0.75,
+        "direction_weights_changed": false,
+        "calibration_evidence": "evidence-v19.json",
+        "shade_fraction": 0.0,
+        "boundary_increment": 0.35000000000000003,
+        "training_objective": 0.9524560193348961
+      },
+      "evidence": "evidence-v19.json",
+      "validation": {
+        "direction": {
+          "n": 295,
+          "correct": 267.0,
+          "accuracy": 0.9050847457627119,
+          "reversals": 28.0,
+          "zero_or_abstain": 0.0
+        },
+        "materiality": {
+          "n": 210,
+          "meaningful_n": 38,
+          "no_meaningful_n": 172,
+          "accuracy": 0.9076190476190475,
+          "balanced_accuracy": 0.8923500611995104,
+          "meaningful_recall": 0.868421052631579,
+          "no_meananingful_recall": 0.9162790697674419,
+          "false_meaningful": 14.4,
+          "missed_meaningful": 5.0,
+          "correct_meaningful_direction": 32.0
+        },
+        "directly_supported_materiality": {
+          "n": 75,
+          "meaningful_n": 12,
+          "no_meaningful_n": 63,
+          "accuracy": 0.9040000000000001,
+          "balanced_accuracy": 0.9023809523809524,
+          "meaningful_recall": 0.9,
+          "no_meananingful_recall": 0.9047619047619048,
+          "false_meaningful": 6.0,
+          "missed_meaningful": 1.2,
+          "correct_meaningful_direction": 10.8
+        },
+        "unknown_materiality_n": 239
+      },
+      "validation_file": "contextual-fixes-validation-v19.json",
+      "baselines_unchanged": true
+    }
+  },
+  "file_sha256": {
+    "contextual-shade-delivery-v20.json": "dd9533814a93324d83c00a89569b62109b44a87597762543cc9de8f388d47a65",
+    "contextual-fixes-delivery-v19.json": "167bc84a0ada3a7af0861de0669ae5d90e3dd07580505bce7dd2da580cfc01e2",
+    "evidence-v20.json": "52e79c6c05bd909dbc5a85452e3a94fcfed7ab7de6e5a9f228051ff7cb28edd5",
+    "benchmark-targets-v20.json": "0642ac9e33b8e12ee65d3342f30687d87879ee7e0badda98e110f463b0fa8088",
+    "pricing_v20.py": "ff710792ec90b64214ee256889d474ea9dedae34e483b5c05ad84dcff66c2e18",
+    "pricing_v19.py": "e8e98e1a2697826d951588e62bb462a6040cd4005a4be9fde7da9209066c6f37",
+    "contextual_shade_v20.py": "b629c2cdff1afd7c3f51d1d4485d83416c123313bfe88b7a0d30f6dd032be338",
+    "contextual_fixes_v19.py": "a8233ff44ec8e98bad184e08f0ea82078c98e7caee02766dff47d34282bee748",
+    "contextual_meaningfulness.py": "3a81ecd7650c5ac5b2704c2a0b2fe7eea3bbc78539232e67734cca07ca40dad7",
+    "domestic_shade_model.py": "fdabc56fbde9f66365d565f94272675a7c45d6fb96bcfe444435436835b830ce",
+    "compare_models.py": "da2067d3d2ef99849ce2e30be16208bff0145bc6b036111535542c2daf00fa5f",
+    "freeze_round40.py": "6da26926a1023fa5bdb4c9a806200934d20d568407464b34825b45d8daee5ade"
+  },
+  "freshness_history_sha256": {
+    "comparisons.json": "1a125dac50da322ea0bad27db4d8a19e1b241ce64c394793842b8f551ef4338c",
+    "evidence-v10.json": "f1961118c9e86d07eeaa011a2ff3a516496c4d6e0b66123c03d534efedad3188",
+    "evidence-v11.json": "c00cc06dbbf2eea2f0a1f3556a6c15f8dea0fa926a9359e8566af9ea8d42dd5b",
+    "evidence-v12.json": "76c2adb3a57301eb8ad136e2414b8621dc9ee22f9f7611ab4a923db91d468ba6",
+    "evidence-v13.json": "41b3fc7030dc57cee18c91a7cbce47503368925579a59ffe7b7ee06d0a533fbf",
+    "evidence-v14.json": "d20c26dc91ed7930123c50c9449002bdf8052f0e872254d119cb23612f7725c6",
+    "evidence-v15.json": "40ac084c3b4ab5cbbf4195879764ffd4f04fa011f822dbfcf10670c0e3919867",
+    "evidence-v16.json": "d3fe285003091b1125cc4ff306d52eb944ca84c3b101b67f03849c64e32b3eaa",
+    "evidence-v17.json": "71763a0f60f5725774af1f48e0010ad01ec8d04a57979e43d405f7d99a018697",
+    "evidence-v18.json": "b639452b95833a658d39ba2c54549f185599c1393ebf8f50172531fd6e2ebbf6",
+    "evidence-v19.json": "74856415ec8dd515b98d69d6ae04b89499eb2a2a0bed179fdb12023e00f2e262",
+    "evidence-v2.json": "8a512f572cf8ed4b5a2bd2655574762e5f5e548a5345627cf76513dc582aaa1f",
+    "evidence-v20.json": "52e79c6c05bd909dbc5a85452e3a94fcfed7ab7de6e5a9f228051ff7cb28edd5",
+    "evidence-v3.json": "f5cc0483361938267e7f605811909939bc57d5bdbc963107392fcbcb4d525003",
+    "evidence-v4.json": "a06e40555faa9ff5509ee6d5d3708a77dd38efd7c2ae871574c9093025baf6ba",
+    "evidence-v5.json": "71a3f8fe0b656257eba4cb954589d238644e6430ab2e556d305403073dbc06af",
+    "evidence-v6.json": "bd4caa506b8774a1098302dc988ec1b5fbb2705f0fdb13d90a5f01082c6ce491",
+    "evidence-v7.json": "0422c64505c0507988c5511e0ea1c6f8a16b8ddf579899c323e082433e875ec6",
+    "evidence-v8.json": "595f0c2f12de8f6a6df300dc328693d0ff6307724f7e1d71382b66bcedb43a23",
+    "evidence-v9.json": "8e556698547b69d0756e2bf9df9f2d2830460632cc8fc9d2d9ea7b160e835956",
+    "round10-fixed.json": "91af42fcf3f54fbc0835672744238ea3c1e084c0f69ed3452dbce996be1f3476",
+    "round13-fixed.json": "3ec55feb8fc4e0235c48612cb0f630f983c4f6edbd783710af0e2d710ee756af",
+    "round15-fixed.json": "30ecfdaa122a6b0a1920216834b82f651ab83efe2d76c9cf828eafe3b5bc7eec",
+    "round17-fixed.json": "d9318d78c2d6ec10a2c83e9ba77634ad198d177e1f2e8a68a8b2a067a4c22881",
+    "round19-fixed.json": "a21b7d2b2712160222569b4157048d3cb05de1167ac094dbfa8a23e0ad6ba6ef",
+    "round21-fixed.json": "591319b2a1b40972227c2d6b3ef5d0572590025fae832fd43e225b17a5f6b3fc",
+    "round23-fixed.json": "34e87f4b2d8e1bc4e6d587b7a26c170258c583e69fd87dd963ac4d6574c567d0",
+    "round25-fixed.json": "010486d450a3ac98dea7defc0da10361d3346efd8e06f78f183ec8600708647a",
+    "round27-fixed.json": "726feaa52066f79e27be7e2b78f5582d3bcc55dee462bceddf9d2828551f5644",
+    "round35-fixed.json": "aee3bf1d39e697649bc02169ecb8fa5d8d85c08ae4cf97b05b706bf4a94b4d45",
+    "round36-fixed.json": "8f0b34708efbaa8be0243f302a64ee014fac7453ba603774f5e6699ef1a7d18a",
+    "round37-fixed.json": "15fe1bbffa2ed4755c835c8b61b970f49ba77578032316f056db6ce9e59640f6",
+    "round38-fixed.json": "4019ce1f1822cba2463fb2fd0fe88b04bd33d564aea7044cf3f4915b87dcddfb",
+    "round39-fixed.json": "d1f544552406c8d60ae94a73c9693bf0029d5f838a312362837af2d6efb24512",
+    "round9-fixed.json": "3281cec3694c5177a6dc78b36c2f9b6a1b80981033dcd2048d36b0ce805ce0a7"
+  },
+  "freeze_fields": [
+    "id",
+    "number",
+    "category",
+    "a",
+    "b",
+    "predictions"
+  ],
+  "questions_and_predictions_sha256": "711576bb02ff548a83443d59cd60712c1620162185f3ac80d5482334edc40e14",
+  "questions": [
+    {
+      "id": "round40-1",
+      "number": 1,
+      "category": "shade_only",
+      "a": [
+        "Eastern Europe",
+        "golden",
+        25,
+        130
+      ],
+      "b": [
+        "Eastern Europe",
+        "pale/straw",
+        25,
+        130
+      ],
+      "status": "answered",
+      "direction": null,
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "Tie.  Here's the thing - at >=130 lbs, shade adjascent from golden to pale carries no premium.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "v20": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.29866310587431233,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v20_heavy_only"
+        },
+        "v19": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -0.6636957908318052,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "model score, not money",
+          "model": "v19_boundary"
+        }
+      },
+      "shade_premium_statement": "no premium",
+      "interpretation": "User says tie and explicitly no golden-to-pale shade premium at>=130lb. Record no direction and no meaningful difference, preserving stronger zero-shade-premium statement separately. No explicit instruction to impose mathematical exact price equality. Do not turn this into a tiny directional lean."
+    },
+    {
+      "id": "round40-2",
+      "number": 2,
+      "category": "shade_vintage",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        35,
+        130
+      ],
+      "b": [
+        "West Central Asia",
+        "golden",
+        30,
+        130
+      ],
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "B, meaningful difference\u2014the five-year younger vintage gives B the advantage, since at 130 lbs the adjacent golden-to-pale shade difference carries no premium.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "v20": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -0.3284285148514231,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v20_heavy_only"
+        },
+        "v19": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.036604170106069756,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "model score, not money",
+          "model": "v19_boundary"
+        }
+      },
+      "shade_premium_statement": "no premium at130lb",
+      "interpretation": "Explicit B direction and meaningful difference. Five-year younger golden is favored; adjacent golden/pale shade carries no premium at130lb. Frozen models unchanged."
+    },
+    {
+      "id": "round40-3",
+      "number": 3,
+      "category": "below_boundary",
+      "a": [
+        "Western Europe",
+        "golden",
+        30,
+        120
+      ],
+      "b": [
+        "Western Europe",
+        "pale/straw",
+        35,
+        120
+      ],
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "A, meaningful difference\u2014the five-year younger vintage outweighs the adjacent shade difference at this provenance and tare level.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "v20": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.036604170106069756,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v20_heavy_only"
+        },
+        "v19": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.036604170106069756,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "model score, not money",
+          "model": "v19_boundary"
+        }
+      },
+      "interpretation": "Explicit A direction and meaningful difference. Western Europe golden30/120 preferred over pale35/120 due to five-year younger vintage. No generalized zero shade premium inferred."
+    },
+    {
+      "id": "round40-4",
+      "number": 4,
+      "category": "pure_five_lb",
+      "a": [
+        "Western Europe",
+        "pale/straw",
+        25,
+        130
+      ],
+      "b": [
+        "Western Europe",
+        "pale/straw",
+        25,
+        125
+      ],
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "B, practically similar\u2014the 5 lb lower tare gives B a slight advantage, but with provenance, shade and vintage identical, it isn't enough to create a meaningful premium.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "v20": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.2491467586623201,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v20_heavy_only"
+        },
+        "v19": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.2491467586623201,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "model score, not money",
+          "model": "v19_boundary"
+        }
+      },
+      "interpretation": "Explicit B direction and practical similarity. Five-pound lower tare gives B a slight advantage with all other attributes matching; not exact equality."
+    },
+    {
+      "id": "round40-5",
+      "number": 5,
+      "category": "shade_vintage",
+      "a": [
+        "Eastern Europe",
+        "golden",
+        20,
+        125
+      ],
+      "b": [
+        "Eastern Europe",
+        "pale/straw",
+        25,
+        125
+      ],
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "A, meaningful difference\u2014the five-year younger vintage outweighs the adjacent shade difference, with provenance and tare matching.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "v20": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.034428137943162795,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v20_heavy_only"
+        },
+        "v19": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -0.33060454701433006,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "model score, not money",
+          "model": "v19_boundary"
+        }
+      },
+      "interpretation": "Explicit A direction and meaningful difference. Eastern Europe golden20/125 preferred over pale25/125 due to five-year younger vintage. No universal zero shade premium inferred."
+    },
+    {
+      "id": "round40-6",
+      "number": 6,
+      "category": "shade_only",
+      "a": [
+        "Western Europe",
+        "pale/straw",
+        35,
+        130
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        35,
+        130
+      ],
+      "status": "answered",
+      "direction": null,
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "Tie\u2014at 130 lbs, the adjacent golden-to-pale shade difference carries no premium, with provenance, vintage and tare identical.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "v20": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.29866310587431233,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v20_heavy_only"
+        },
+        "v19": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 0.6636957908318052,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "model score, not money",
+          "model": "v19_boundary"
+        }
+      },
+      "shade_premium_statement": "no premium at130lb",
+      "interpretation": "User explicitly calls this a tie and states zero golden-to-pale shade premium at130lb. No direction and no meaningful difference; preserve zero-shade-premium statement separately, without inferring an explicit mathematical equal-price instruction."
+    },
+    {
+      "id": "round40-7",
+      "number": 7,
+      "category": "unequal_tare",
+      "a": [
+        "West Central Asia",
+        "golden",
+        25,
+        120
+      ],
+      "b": [
+        "West Central Asia",
+        "pale/straw",
+        30,
+        125
+      ],
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "A, meaningful difference\u2014the five-year younger vintage and 5 lb lower tare outweigh the adjacent shade difference, with provenance matching.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "v20": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.24904675866232007,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v20_heavy_only"
+        },
+        "v19": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.24904675866232007,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "model score, not money",
+          "model": "v19_boundary"
+        }
+      },
+      "interpretation": "Explicit A direction and meaningful difference. Five-year younger vintage and5lb lower tare jointly outweigh adjacent shade in West Central Asia. Does not imply5lb alone is meaningful."
+    },
+    {
+      "id": "round40-8",
+      "number": 8,
+      "category": "shade_only",
+      "a": [
+        "West Central Asia",
+        "golden",
+        30,
+        130
+      ],
+      "b": [
+        "West Central Asia",
+        "pale/straw",
+        30,
+        130
+      ],
+      "status": "answered",
+      "direction": null,
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "Tie\u2014at 130 lbs, the adjacent golden-to-pale shade difference carries no premium, with provenance, vintage and tare identical.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "v20": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.29866310587431233,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v20_heavy_only"
+        },
+        "v19": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -0.6636957908318052,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "model score, not money",
+          "model": "v19_boundary"
+        }
+      },
+      "shade_premium_statement": "no premium at130lb",
+      "interpretation": "User explicitly calls this a tie and states zero adjacent golden-to-pale shade premium at130lb. No direction and no meaningful difference; preserve zero-shade-premium statement separately without inventing an explicit mathematical equal-price instruction."
+    },
+    {
+      "id": "round40-9",
+      "number": 9,
+      "category": "below_boundary",
+      "a": [
+        "Eastern Europe",
+        "pale/straw",
+        25,
+        115
+      ],
+      "b": [
+        "Eastern Europe",
+        "golden",
+        20,
+        115
+      ],
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "B, meaningful difference\u2014the five-year younger vintage outweighs the adjacent shade difference, with provenance and tare matching.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "v20": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 0.33060454701433006,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v20_heavy_only"
+        },
+        "v19": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 0.33060454701433006,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "model score, not money",
+          "model": "v19_boundary"
+        }
+      },
+      "interpretation": "Explicit B direction and meaningful difference. Eastern Europe golden20/115 preferred over pale25/115 due to five-year younger vintage. Preserve prior answers in different vintage/provenance contexts; no universal zero shade premium inferred."
+    },
+    {
+      "id": "round40-10",
+      "number": 10,
+      "category": "shade_vintage",
+      "a": [
+        "Western Europe",
+        "pale/straw",
+        40,
+        125
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        35,
+        125
+      ],
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "B, meaningful difference\u2014the five-year younger vintage outweighs the adjacent shade difference, with provenance and tare matching.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "v20": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.07290670735585164,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v20_heavy_only"
+        },
+        "v19": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.2921259776016412,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "model score, not money",
+          "model": "v19_boundary"
+        }
+      },
+      "interpretation": "Explicit B direction and meaningful difference. Western Europe golden35/125 preferred over pale40/125 due to five-year younger vintage. No universal zero shade premium inferred."
+    },
+    {
+      "id": "round40-11",
+      "number": 11,
+      "category": "pure_five_lb",
+      "a": [
+        "Eastern Europe",
+        "golden",
+        35,
+        125
+      ],
+      "b": [
+        "Eastern Europe",
+        "golden",
+        35,
+        130
+      ],
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "A, practically similar\u2014the 5 lb lower tare gives A a slight advantage, but with provenance, shade and vintage identical, it isn't enough to create a meaningful premium.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "v20": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.2491467586623201,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v20_heavy_only"
+        },
+        "v19": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.2491467586623201,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "model score, not money",
+          "model": "v19_boundary"
+        }
+      },
+      "interpretation": "Explicit A direction and practical similarity. Five-pound lower tare gives A a slight advantage with all other attributes matching; not exact equality."
+    },
+    {
+      "id": "round40-12",
+      "number": 12,
+      "category": "unequal_tare",
+      "a": [
+        "Eastern Europe",
+        "pale/straw",
+        30,
+        125
+      ],
+      "b": [
+        "Eastern Europe",
+        "golden",
+        25,
+        130
+      ],
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "B, meaningful difference\u2014the five-year younger vintage outweighs A\u2019s adjacent shade advantage and 5 lb lower tare, with provenance matching.",
+      "exact_price_instruction": false,
+      "predictions": {
+        "v20": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.2492467586623201,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v20_heavy_only"
+        },
+        "v19": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.2492467586623201,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "model score, not money",
+          "model": "v19_boundary"
+        }
+      },
+      "interpretation": "Explicit B direction and meaningful difference. Five-year younger golden outweighs pale shade and5lb tare advantages in Eastern Europe. No separate5lb meaningful premium inferred."
+    }
+  ],
+  "rule_statements": [
+    {
+      "source": "round40-1",
+      "statement": "At tare>=130lb, adjacent golden-to-pale shade carries no premium. User calls this pair a tie.",
+      "scope": "User states threshold rule for the adjacent shade increment. Only130lb is in current model domain; above130 not extrapolated numerically. No model changes during frozen round."
+    },
+    {
+      "source": "round40-2",
+      "statement": "West Central Asia pale35/130 versus golden30/130: B meaningfully higher because of younger vintage; adjacent golden-to-pale shade carries no premium at130lb.",
+      "scope": "This comparison plus user repeated no-shade-premium statement; no refit during round."
+    },
+    {
+      "source": "round40-3",
+      "statement": "Western Europe golden30/120 versus pale35/120: A meaningfully higher; five-year younger vintage outweighs adjacent shade difference.",
+      "scope": "This provenance, vintage and tare context; frozen models unchanged."
+    },
+    {
+      "source": "round40-4",
+      "statement": "Western Europe pale25/130 versus pale25/125: B slightly higher but practically similar; pure5lb lower tare insufficient for meaningful premium.",
+      "scope": "This matched-provenance/shade/vintage comparison; frozen models unchanged."
+    },
+    {
+      "source": "round40-5",
+      "statement": "Eastern Europe golden20/125 versus pale25/125: A meaningfully higher; five-year younger vintage outweighs adjacent shade with provenance and tare matching.",
+      "scope": "This comparison; frozen models unchanged."
+    },
+    {
+      "source": "round40-6",
+      "statement": "Western Europe pale35/130 versus golden35/130: tie; adjacent golden-to-pale shade carries no premium when other attributes match at130lb.",
+      "scope": "This comparison and repeated no-shade-premium rule; frozen models unchanged."
+    },
+    {
+      "source": "round40-7",
+      "statement": "West Central Asia golden25/120 versus pale30/125: A meaningfully higher; younger vintage and lower tare outweigh adjacent shade with provenance matching.",
+      "scope": "This combined vintage/tare advantage; no separate meaningful5lb premium inferred."
+    },
+    {
+      "source": "round40-8",
+      "statement": "West Central Asia golden30/130 versus pale30/130: tie; adjacent golden-to-pale shade carries no premium with provenance, vintage and tare matching.",
+      "scope": "This comparison and repeated no-shade-premium rule at130lb; frozen models unchanged."
+    },
+    {
+      "source": "round40-9",
+      "statement": "Eastern Europe pale25/115 versus golden20/115: B meaningfully higher; five-year younger vintage outweighs adjacent shade with provenance and tare matching.",
+      "scope": "This115lb,20-versus25-year comparison; earlier evidence and frozen models unchanged."
+    },
+    {
+      "source": "round40-10",
+      "statement": "Western Europe pale40/125 versus golden35/125: B meaningfully higher; five-year younger vintage outweighs adjacent shade with provenance and tare matching.",
+      "scope": "This125lb,35-versus40-year comparison; frozen models unchanged."
+    },
+    {
+      "source": "round40-11",
+      "statement": "Eastern Europe golden35/125 versus golden35/130: A slightly higher but practically similar; pure5lb lower tare insufficient for meaningful premium.",
+      "scope": "This matched-provenance/shade/vintage comparison; frozen models unchanged."
+    },
+    {
+      "source": "round40-12",
+      "statement": "Eastern Europe pale30/125 versus golden25/130: B meaningfully higher; younger vintage outweighs A adjacent shade and5lb lower tare advantages.",
+      "scope": "This combined tradeoff; frozen models unchanged."
+    }
+  ],
+  "scores": {
+    "v20": {
+      "direction_n": 9,
+      "direction_correct": 6,
+      "direction_misses": [
+        3,
+        9,
+        12
+      ],
+      "meaningfulness_n": 12,
+      "meaningfulness_correct": 7,
+      "meaningfulness_misses": [
+        3,
+        5,
+        7,
+        10,
+        12
+      ],
+      "false_premiums": [],
+      "missed_meaningful": [
+        3,
+        5,
+        7,
+        10,
+        12
+      ],
+      "zero_shade_premium_n": 3,
+      "zero_shade_premium_correct": 0,
+      "zero_shade_premium_misses": [
+        1,
+        6,
+        8
+      ]
+    },
+    "v19": {
+      "direction_n": 9,
+      "direction_correct": 3,
+      "direction_misses": [
+        2,
+        3,
+        5,
+        9,
+        10,
+        12
+      ],
+      "meaningfulness_n": 12,
+      "meaningfulness_correct": 4,
+      "meaningfulness_misses": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8,
+        10,
+        12
+      ],
+      "false_premiums": [
+        1,
+        6,
+        8
+      ],
+      "missed_meaningful": [
+        2,
+        3,
+        7,
+        10,
+        12
+      ],
+      "zero_shade_premium_n": 3,
+      "zero_shade_premium_correct": 0,
+      "zero_shade_premium_misses": [
+        1,
+        6,
+        8
+      ]
+    }
+  },
+  "scoring_note": "Nine explicit A/B directions,12 sizes. Q1/6/8 tie/no adjacent shade premium evaluated separately as zero-shade-premium checks, not silently counted as tiny-direction successes. No equal-price instruction invented. Targeted fresh pairs, not random population sample. All models remain frozen; no evidence incorporation."
+}

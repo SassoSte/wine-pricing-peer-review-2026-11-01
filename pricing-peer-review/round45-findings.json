@@ -1,0 +1,90 @@
+{
+  "round": 45,
+  "scores": {
+    "v24": {
+      "direction_n": 17,
+      "direction_correct": 13,
+      "direction_misses": [
+        3,
+        5,
+        8,
+        20
+      ],
+      "meaningfulness_n": 17,
+      "meaningfulness_correct": 13,
+      "meaningfulness_misses": [
+        5,
+        8,
+        15,
+        20
+      ],
+      "both_axes_n": 15,
+      "both_axes_correct": 10,
+      "false_premiums": [],
+      "missed_meaningful": [
+        5,
+        8,
+        15,
+        20
+      ],
+      "zero_shade_premium_n": 1,
+      "zero_shade_premium_correct": 1
+    },
+    "joint_weight_refit": {
+      "direction_n": 17,
+      "direction_correct": 13,
+      "direction_misses": [
+        3,
+        5,
+        8,
+        20
+      ],
+      "meaningfulness_n": 17,
+      "meaningfulness_correct": 12,
+      "meaningfulness_misses": [
+        5,
+        8,
+        13,
+        15,
+        20
+      ],
+      "both_axes_n": 15,
+      "both_axes_correct": 9,
+      "false_premiums": [],
+      "missed_meaningful": [
+        5,
+        8,
+        13,
+        15,
+        20
+      ],
+      "zero_shade_premium_n": 1,
+      "zero_shade_premium_correct": 1
+    }
+  },
+  "scoring_exclusions": {
+    "meaningfulness_unspecified": [
+      1,
+      2
+    ],
+    "both_axes_unresolved": [
+      12
+    ],
+    "no_clear_direction_with_known_practical_size": [
+      7,
+      16
+    ]
+  },
+  "findings": [
+    "V24 direction13/17,size13/17,both10/15 versus joint-refit13/17,size12/17,both9/15. Broader test shows modest benefit, not prior narrow-round perfection.",
+    "Q5/Q20:35-versus40-year golden/pale low-tare tradeoffs still wrong direction and size.",
+    "Q8:domestic brown/amber plus provenance/vintage/tare tradeoff reverses user preference and misses meaningfulness.",
+    "Q3:amber/copper slight advantage lost to model zero gap, though practical size correct.",
+    "Q15:cross-provenance younger/lighter golden correctly favored but meaningfulness underestimated.",
+    "V24 fixes Q13 size; pure5lb controlQ10,zero-shadeQ16,pure20lbQ6,pure10yearQ17 allcorrect."
+  ],
+  "models_unchanged": true,
+  "evidence_unchanged": "evidence-v24.json",
+  "prediction_rechecks": 40,
+  "qualification": "Broader attribute-stratified fresh exact pairs from familiar domain; small selected batch, not random population accuracy. No refit or incorporation."
+}

@@ -1,0 +1,19 @@
+{
+  "status": "defined_before_calibration",
+  "objective": "Fix structural pathdependence, nonpositiveoutputs and shadeorderingviolations in separatepricinglayer; V28unchanged.",
+  "model": "Canonical regionalanchor times exp(-f(baseattribute loss)). Lossuses V28monotone shade/vintage/tare base terms only; provenance representedbyregionalanchor, pair-context coefficients excluded. f ismonotone piecewiselinear logdiscount anchoredf(0)=0, fittedtoprofile-group means ofacceptedprice/anchor ratios. Singlelog-slope comparator also evaluated.",
+  "data": "4userinitialreleaseanchors;10post-disclosureacceptedhypotheticalprices at4unique non-topprofiles. Originalpre-disclosure estimates retainedseparately. Acceptedpricesareplausibilitytargets, notindependent sales.",
+  "pooling": "Within eachattributeprofile average normalizedlogdiscount acrossregions; equalprofile weight. Isotonic pooling ifprofile means violate monotonicity.",
+  "extrapolation": "Continue final nonnegativelogdiscount slope beyondmaxsupportedloss, flaggedasextrapolation; not an invented dollarfloor. Sixunanchoredregionaltopvalues remainmodelinferred andflagged.",
+  "tests": [
+    "4anchor reproduction",
+    "fitresiduals for10acceptedprices",
+    "leaveoneprofileout, holdingout allregionalcopies toavoidduplicateleakage",
+    "all1250prices finitepositive",
+    "singleattribute improvements neverlowerprice",
+    "referenceindependence includingcrossregionreferences",
+    "comparison additivity/telescoping",
+    "report disagreementwithV28pairrank ratherthan claiming preservedallrankings"
+  ],
+  "no_claim": "This establishes coherentpricearithmetic andcalibrationbehavior,notmarketaccuracy. Noquestionnaire orrefittoV28."
+}

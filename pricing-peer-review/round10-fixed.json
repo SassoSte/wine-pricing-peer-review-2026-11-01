@@ -1,0 +1,729 @@
+{
+  "round": 10,
+  "status": "complete; scored without refitting",
+  "protocol": "Fixed 20 questions; models, parameters, order, and predictions frozen until every question answered or deferred. Hide predictions while eliciting. Score wide and smaller-gap strata separately. Widened pairs diagnose direction and shade dependence, not representative accuracy. No adaptive substitutions.",
+  "file_sha256": {
+    "pricing.py": "70cf711fdd3322750ffd5cdab45e156e3bc47a136ddb2155bac04727e7900906",
+    "compare_models.py": "da2067d3d2ef99849ce2e30be16208bff0145bc6b036111535542c2daf00fa5f",
+    "model-comparison.json": "121ed749ee62b681c1395809d4d416a4d797aaa385851abfd8325a2a6e35f412"
+  },
+  "near_tie_snapshot": {
+    "features": [
+      "origin:Western Europe vs Eastern Europe",
+      "origin:West Central Asia vs Eastern Europe",
+      "origin:South/Eastern Asia vs Eastern Europe",
+      "origin:West Asia / Middle East vs Eastern Europe",
+      "origin:central vs Eastern Europe",
+      "origin:northeast vs Eastern Europe",
+      "origin:northwest vs Eastern Europe",
+      "origin:southwest vs Eastern Europe",
+      "origin:southeast vs Eastern Europe",
+      "shade increment:copper",
+      "shade increment:amber",
+      "shade increment:golden",
+      "shade increment:pale/straw",
+      "age increment:35",
+      "age increment:30",
+      "age increment:25",
+      "age increment:20",
+      "lightness per 5 lb"
+    ],
+    "coefficients": {
+      "origin:Western Europe vs Eastern Europe": 0.13442996417870073,
+      "origin:West Central Asia vs Eastern Europe": -0.6925126275387569,
+      "origin:South/Eastern Asia vs Eastern Europe": -0.8213376709090335,
+      "origin:West Asia / Middle East vs Eastern Europe": -0.9261363981916,
+      "origin:central vs Eastern Europe": 0.2236892969901537,
+      "origin:northeast vs Eastern Europe": 0.7781531417082969,
+      "origin:northwest vs Eastern Europe": 0.1609789151018895,
+      "origin:southwest vs Eastern Europe": 0.8066038458128788,
+      "origin:southeast vs Eastern Europe": 0.8465839001199865,
+      "shade increment:copper": 1.0030778976246726,
+      "shade increment:amber": 2.3869455398345774e-13,
+      "shade increment:golden": 3.3167828898535655e-13,
+      "shade increment:pale/straw": 0.8321939662776723,
+      "age increment:35": 0.9137803749076202,
+      "age increment:30": 8.587341632681243e-14,
+      "age increment:25": 0.7962530414353742,
+      "age increment:20": 0.6626914133328764,
+      "lightness per 5 lb": 0.36562111350403376
+    },
+    "alpha": 0.1,
+    "threshold": 0.3,
+    "training_rows": 119
+  },
+  "questions": [
+    {
+      "id": "round10-1",
+      "a": [
+        "Eastern Europe",
+        "pale/straw",
+        20,
+        130
+      ],
+      "b": [
+        "Eastern Europe",
+        "pale/straw",
+        40,
+        110
+      ],
+      "stratum": "wide",
+      "purpose": "age versus tare; matched with Q6",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "A"
+      },
+      "near_tie_margin": 0.9102403756598216,
+      "winner": "A",
+      "strength": "moderately",
+      "status": "answered",
+      "raw_answer": "A moderately"
+    },
+    {
+      "id": "round10-2",
+      "a": [
+        "southwest",
+        "copper",
+        20,
+        125
+      ],
+      "b": [
+        "central",
+        "copper",
+        20,
+        120
+      ],
+      "stratum": "smaller-gap",
+      "purpose": "domestic copper transfer",
+      "predictions_before_answer": {
+        "revision_e": "B",
+        "additive_near_tie": "tie"
+      },
+      "near_tie_margin": 0.21729343531869136,
+      "winner": "B",
+      "strength": "very slightly",
+      "status": "answered",
+      "raw_answer": "B very slightly"
+    },
+    {
+      "id": "round10-3",
+      "a": [
+        "West Central Asia",
+        "golden",
+        40,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "golden",
+        40,
+        120
+      ],
+      "stratum": "smaller-gap",
+      "purpose": "foreign provenance age transfer",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "tie"
+      },
+      "near_tie_margin": 0.12882504337027667,
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "Tie."
+    },
+    {
+      "id": "round10-4",
+      "a": [
+        "Western Europe",
+        "pale/straw",
+        40,
+        130
+      ],
+      "b": [
+        "Western Europe",
+        "brown",
+        20,
+        110
+      ],
+      "stratum": "wide",
+      "purpose": "full shade span against age and tare",
+      "predictions_before_answer": {
+        "revision_e": "B",
+        "additive_near_tie": "B"
+      },
+      "near_tie_margin": -1.9999374197891766,
+      "winner": "B",
+      "strength": "slightly",
+      "status": "answered",
+      "raw_answer": "B slightly"
+    },
+    {
+      "id": "round10-5",
+      "a": [
+        "northeast",
+        "amber",
+        35,
+        115
+      ],
+      "b": [
+        "southwest",
+        "amber",
+        35,
+        120
+      ],
+      "stratum": "smaller-gap",
+      "purpose": "domestic amber trade-off",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "A"
+      },
+      "near_tie_margin": 0.33717040939945186,
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "Tie."
+    },
+    {
+      "id": "round10-6",
+      "a": [
+        "Eastern Europe",
+        "brown",
+        20,
+        130
+      ],
+      "b": [
+        "Eastern Europe",
+        "brown",
+        40,
+        110
+      ],
+      "stratum": "wide",
+      "purpose": "age versus tare; matched with Q1",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "A"
+      },
+      "near_tie_margin": 0.9102403756598216,
+      "winner": "A",
+      "strength": "moderately",
+      "status": "answered",
+      "raw_answer": "A moderately"
+    },
+    {
+      "id": "round10-7",
+      "a": [
+        "northwest",
+        "pale/straw",
+        25,
+        120
+      ],
+      "b": [
+        "central",
+        "pale/straw",
+        25,
+        120
+      ],
+      "stratum": "smaller-gap",
+      "purpose": "domestic pale tie transfer",
+      "predictions_before_answer": {
+        "revision_e": "tie",
+        "additive_near_tie": "tie"
+      },
+      "near_tie_margin": -0.0627103818882642,
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "tie."
+    },
+    {
+      "id": "round10-8",
+      "a": [
+        "West Asia / Middle East",
+        "copper",
+        35,
+        110
+      ],
+      "b": [
+        "Eastern Europe",
+        "copper",
+        35,
+        130
+      ],
+      "stratum": "wide",
+      "purpose": "foreign provenance versus full tare span",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "A"
+      },
+      "near_tie_margin": 0.536348055824535,
+      "winner": "A",
+      "strength": "moderately",
+      "status": "answered",
+      "raw_answer": "A moderatel."
+    },
+    {
+      "id": "round10-9",
+      "a": [
+        "southeast",
+        "golden",
+        35,
+        125
+      ],
+      "b": [
+        "northeast",
+        "golden",
+        35,
+        120
+      ],
+      "stratum": "smaller-gap",
+      "purpose": "domestic golden trade-off",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "tie"
+      },
+      "near_tie_margin": -0.29719035509234415,
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "tie."
+    },
+    {
+      "id": "round10-10",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        35,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        25,
+        115
+      ],
+      "stratum": "wide",
+      "purpose": "full shade span versus ten years and ten lb",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "A"
+      },
+      "near_tie_margin": 0.3077765954593875,
+      "winner": "B",
+      "strength": "very slightly",
+      "status": "answered",
+      "raw_answer": "B very slightly"
+    },
+    {
+      "id": "round10-11",
+      "a": [
+        "South/Eastern Asia",
+        "brown",
+        20,
+        125
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "brown",
+        20,
+        120
+      ],
+      "stratum": "smaller-gap",
+      "purpose": "foreign brown provenance and tare",
+      "predictions_before_answer": {
+        "revision_e": "B",
+        "additive_near_tie": "tie"
+      },
+      "near_tie_margin": -0.26082238622146725,
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "Tie"
+    },
+    {
+      "id": "round10-12",
+      "a": [
+        "central",
+        "pale/straw",
+        20,
+        125
+      ],
+      "b": [
+        "central",
+        "pale/straw",
+        35,
+        115
+      ],
+      "stratum": "wide",
+      "purpose": "age/tare by shade; matched with Q17",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "A"
+      },
+      "near_tie_margin": 0.7277022277602689,
+      "winner": "A",
+      "strength": "overwhelmingly",
+      "status": "answered",
+      "raw_answer": "A overwhelmingly"
+    },
+    {
+      "id": "round10-13",
+      "a": [
+        "Western Europe",
+        "golden",
+        35,
+        125
+      ],
+      "b": [
+        "Eastern Europe",
+        "golden",
+        35,
+        120
+      ],
+      "stratum": "smaller-gap",
+      "purpose": "European golden premium at older age",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "tie"
+      },
+      "near_tie_margin": -0.23119114932533302,
+      "winner": "A",
+      "strength": "very slightly",
+      "status": "answered",
+      "raw_answer": "A very slightly"
+    },
+    {
+      "id": "round10-14",
+      "a": [
+        "southwest",
+        "brown",
+        35,
+        120
+      ],
+      "b": [
+        "northeast",
+        "brown",
+        35,
+        120
+      ],
+      "stratum": "smaller-gap",
+      "purpose": "domestic brown tie transfer",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "tie"
+      },
+      "near_tie_margin": 0.028450704104581948,
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "Tie."
+    },
+    {
+      "id": "round10-15",
+      "a": [
+        "northwest",
+        "copper",
+        25,
+        130
+      ],
+      "b": [
+        "Western Europe",
+        "copper",
+        25,
+        110
+      ],
+      "stratum": "wide",
+      "purpose": "provenance versus full tare span",
+      "predictions_before_answer": {
+        "revision_e": "B",
+        "additive_near_tie": "B"
+      },
+      "near_tie_margin": -1.4359355030929462,
+      "winner": "B",
+      "strength": "overwhelmingly",
+      "status": "answered",
+      "raw_answer": "B overwhelmingly"
+    },
+    {
+      "id": "round10-16",
+      "a": [
+        "Eastern Europe",
+        "amber",
+        20,
+        120
+      ],
+      "b": [
+        "West Central Asia",
+        "amber",
+        20,
+        115
+      ],
+      "stratum": "smaller-gap",
+      "purpose": "European/Asian amber trade-off",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "A"
+      },
+      "near_tie_margin": 0.3268915140347231,
+      "winner": "A",
+      "strength": "very slightly",
+      "status": "answered",
+      "raw_answer": "A very slightly"
+    },
+    {
+      "id": "round10-17",
+      "a": [
+        "central",
+        "brown",
+        20,
+        125
+      ],
+      "b": [
+        "central",
+        "brown",
+        35,
+        115
+      ],
+      "stratum": "wide",
+      "purpose": "age/tare by shade; matched with Q12",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "A"
+      },
+      "near_tie_margin": 0.7277022277602689,
+      "winner": "A",
+      "strength": "strongly",
+      "status": "answered",
+      "raw_answer": "A strongly"
+    },
+    {
+      "id": "round10-18",
+      "a": [
+        "southeast",
+        "pale/straw",
+        35,
+        115
+      ],
+      "b": [
+        "southwest",
+        "pale/straw",
+        35,
+        115
+      ],
+      "stratum": "smaller-gap",
+      "purpose": "domestic pale tie transfer",
+      "predictions_before_answer": {
+        "revision_e": "tie",
+        "additive_near_tie": "tie"
+      },
+      "near_tie_margin": 0.039980054307107715,
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "tie"
+    },
+    {
+      "id": "round10-19",
+      "a": [
+        "South/Eastern Asia",
+        "golden",
+        25,
+        125
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "copper",
+        30,
+        115
+      ],
+      "stratum": "smaller-gap",
+      "purpose": "shade/age versus tare",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "tie"
+      },
+      "near_tie_margin": 0.06501081442787704,
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "tie"
+    },
+    {
+      "id": "round10-20",
+      "a": [
+        "northwest",
+        "golden",
+        20,
+        130
+      ],
+      "b": [
+        "northwest",
+        "golden",
+        40,
+        110
+      ],
+      "stratum": "wide",
+      "purpose": "age versus full tare span outside Eastern Europe",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "A"
+      },
+      "near_tie_margin": 0.9102403756598216,
+      "winner": "A",
+      "strength": "strongly",
+      "status": "answered",
+      "raw_answer": "A stongly"
+    }
+  ],
+  "questions_and_predictions_sha256": "89581cc31829eb2d43f7e3ae8e6037c7ab01068b41d1e80f0978e1b292203df9",
+  "scores": {
+    "revision_e": {
+      "all": {
+        "n": 20,
+        "matched": 13,
+        "opposite_winner_errors": 1,
+        "predicted_ties": 2,
+        "actual_ties": 8,
+        "confusion": {
+          "A": {
+            "A": 8,
+            "B": 0,
+            "tie": 0
+          },
+          "B": {
+            "A": 1,
+            "B": 3,
+            "tie": 0
+          },
+          "tie": {
+            "A": 5,
+            "B": 1,
+            "tie": 2
+          }
+        }
+      },
+      "wide": {
+        "n": 9,
+        "matched": 8,
+        "opposite_winner_errors": 1,
+        "predicted_ties": 0,
+        "actual_ties": 0,
+        "confusion": {
+          "A": {
+            "A": 6,
+            "B": 0,
+            "tie": 0
+          },
+          "B": {
+            "A": 1,
+            "B": 2,
+            "tie": 0
+          },
+          "tie": {
+            "A": 0,
+            "B": 0,
+            "tie": 0
+          }
+        }
+      },
+      "smaller-gap": {
+        "n": 11,
+        "matched": 5,
+        "opposite_winner_errors": 0,
+        "predicted_ties": 2,
+        "actual_ties": 8,
+        "confusion": {
+          "A": {
+            "A": 2,
+            "B": 0,
+            "tie": 0
+          },
+          "B": {
+            "A": 0,
+            "B": 1,
+            "tie": 0
+          },
+          "tie": {
+            "A": 5,
+            "B": 1,
+            "tie": 2
+          }
+        }
+      }
+    },
+    "additive_near_tie": {
+      "all": {
+        "n": 20,
+        "matched": 16,
+        "opposite_winner_errors": 1,
+        "predicted_ties": 9,
+        "actual_ties": 8,
+        "confusion": {
+          "A": {
+            "A": 7,
+            "B": 0,
+            "tie": 1
+          },
+          "B": {
+            "A": 1,
+            "B": 2,
+            "tie": 1
+          },
+          "tie": {
+            "A": 1,
+            "B": 0,
+            "tie": 7
+          }
+        }
+      },
+      "wide": {
+        "n": 9,
+        "matched": 8,
+        "opposite_winner_errors": 1,
+        "predicted_ties": 0,
+        "actual_ties": 0,
+        "confusion": {
+          "A": {
+            "A": 6,
+            "B": 0,
+            "tie": 0
+          },
+          "B": {
+            "A": 1,
+            "B": 2,
+            "tie": 0
+          },
+          "tie": {
+            "A": 0,
+            "B": 0,
+            "tie": 0
+          }
+        }
+      },
+      "smaller-gap": {
+        "n": 11,
+        "matched": 8,
+        "opposite_winner_errors": 0,
+        "predicted_ties": 9,
+        "actual_ties": 8,
+        "confusion": {
+          "A": {
+            "A": 1,
+            "B": 0,
+            "tie": 1
+          },
+          "B": {
+            "A": 0,
+            "B": 0,
+            "tie": 1
+          },
+          "tie": {
+            "A": 1,
+            "B": 0,
+            "tie": 7
+          }
+        }
+      }
+    }
+  },
+  "scoring_notes": "Exact A/B/tie only; qualitative strengths unscored. Nine wide and eleven smaller-gap questions preselected; not a random representative accuracy estimate. Both models and plan hashes verified unchanged."
+}

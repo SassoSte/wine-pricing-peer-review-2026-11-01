@@ -1,0 +1,189 @@
+{
+  "status": "complete_with_post_disclosure_expert_endorsement_no_refit",
+  "protocol": "Six distinct attribute-selected middle-range expert pricing checks,3NE/3NW. All questions andpredictions frozenbeforefirstanswer. Ask expectedprice/range before each estimate; earlierpricingexamples visible. Not markettransactionvalidation. No curve/V28 refit during round.",
+  "price_basis": "Wholefilledcask; comparable seat-origin status,samevolume,mint,initialrelease/distributorterms;fees,taxes,deliveryexcluded.",
+  "source_hashes": {
+    "pricing/consistent-price-config-v2.json": "5a12e1614975de7b0d390b42b8a00db0b4eed5658ae8322f0486902ffd968fb1",
+    "pricing/consistent_price_v2.py": "b277bd9cdcc6072278114df609d8ddb5930e50401ce819a59bfb622ec2266963",
+    "pricing/consistent_price_layer.py": "85d343200a8e93bb88b55d4bc742963b4e7f6e185b792f915513d29f0c2ebab0",
+    "model-config-v28.json": "a9fed8e86977526c16e74ccdb0a6a75d919b3041bd602e5592d64e3086414dcf"
+  },
+  "frozen_fields": [
+    "number",
+    "id",
+    "offering",
+    "frozen_price_usd"
+  ],
+  "frozen_payload_sha256": "c4538ced4efed9d7d0697843f592dfc2b4a0c696a859e2709dc954408d8e2223",
+  "questions": [
+    {
+      "number": 1,
+      "id": "middle-range-v1-1",
+      "offering": [
+        "northeast",
+        "golden",
+        30,
+        115
+      ],
+      "frozen_price_usd": 619.3855187325597,
+      "status": "answered_before_specific_prediction_disclosure",
+      "raw_answer": "I'd say around US$600.",
+      "expert_estimate": {
+        "amount": 600,
+        "currency": "USD",
+        "precision": "approximate; no interval supplied"
+      },
+      "comparison": {
+        "model_price": 619.3855187325597,
+        "difference": 19.385518732559717,
+        "absolute_percent_difference": 3.2309197887599526
+      }
+    },
+    {
+      "number": 2,
+      "id": "middle-range-v1-2",
+      "offering": [
+        "northwest",
+        "copper",
+        25,
+        120
+      ],
+      "frozen_price_usd": 618.0676698790571,
+      "status": "answered_before_specific_prediction_disclosure",
+      "raw_answer": "sorry, that was a typo, I meant 550-600.",
+      "expert_range": {
+        "lower": 550,
+        "upper": 600,
+        "currency": "USD",
+        "precision": "approximate range; explicit typo correction"
+      },
+      "comparison": {
+        "model_price": 618.0676698790571,
+        "within_expert_range": false,
+        "above_upper_bound": 18.06766987905712,
+        "below_lower_bound": 0,
+        "qualification": "Correction supplied after prediction disclosure; retain original range and score separately."
+      },
+      "answer_history": [
+        {
+          "raw_answer": "around 450-500",
+          "expert_range": {
+            "lower": 450,
+            "upper": 500,
+            "currency": "USD",
+            "precision": "approximate range"
+          },
+          "comparison": {
+            "model_price": 618.0676698790571,
+            "within_expert_range": false,
+            "above_upper_bound": 118.06766987905712,
+            "below_lower_bound": 0,
+            "qualification": "Range membership assessed without replacing range with midpoint."
+          },
+          "status": "superseded_by_user_typo_correction_after_prediction_disclosure"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "id": "middle-range-v1-3",
+      "offering": [
+        "northeast",
+        "pale/straw",
+        30,
+        125
+      ],
+      "frozen_price_usd": 520.9593135868945,
+      "status": "answered_before_specific_prediction_disclosure",
+      "raw_answer": "As for question 3, around 800",
+      "expert_estimate": {
+        "amount": 800,
+        "currency": "USD",
+        "precision": "approximate; no interval supplied"
+      },
+      "comparison": {
+        "model_price": 520.9593135868945,
+        "difference": -279.0406864131055,
+        "absolute_percent_difference": 34.88008580163819
+      }
+    },
+    {
+      "number": 4,
+      "id": "middle-range-v1-4",
+      "offering": [
+        "northwest",
+        "amber",
+        30,
+        115
+      ],
+      "frozen_price_usd": 563.077744302327,
+      "status": "answered_before_specific_prediction_disclosure",
+      "raw_answer": "700",
+      "expert_estimate": {
+        "amount": 700,
+        "currency": "USD",
+        "precision": "point estimate as supplied; no interval supplied"
+      },
+      "comparison": {
+        "model_price": 563.077744302327,
+        "difference": -136.922255697673,
+        "absolute_percent_difference": 19.560322242524713
+      }
+    },
+    {
+      "number": 5,
+      "id": "middle-range-v1-5",
+      "offering": [
+        "northeast",
+        "copper",
+        30,
+        120
+      ],
+      "frozen_price_usd": 542.1910597169672,
+      "status": "answered_before_specific_prediction_disclosure",
+      "raw_answer": "600",
+      "expert_estimate": {
+        "amount": 600,
+        "currency": "USD",
+        "precision": "point estimate as supplied; no interval supplied"
+      },
+      "comparison": {
+        "model_price": 542.1910597169672,
+        "difference": -57.808940283032825,
+        "absolute_percent_difference": 9.634823380505471
+      }
+    },
+    {
+      "number": 6,
+      "id": "middle-range-v1-6",
+      "offering": [
+        "northwest",
+        "golden",
+        35,
+        110
+      ],
+      "frozen_price_usd": 492.8975520098941,
+      "status": "answered_before_specific_prediction_disclosure",
+      "raw_answer": "525",
+      "expert_estimate": {
+        "amount": 525,
+        "currency": "USD",
+        "precision": "point estimate as supplied; no interval supplied"
+      },
+      "comparison": {
+        "model_price": 492.8975520098941,
+        "difference": -32.10244799010587,
+        "absolute_percent_difference": 6.114751998115405
+      }
+    }
+  ],
+  "next_question": null,
+  "post_disclosure_round_feedback": [
+    {
+      "raw_answer": "Model's right. I'm wrong, I consulted with my partner. He agrees. The model has actually made very strong predictions.",
+      "interpretation": "User endorses the model predictions after consulting partner and withdraws earlier concerns based on initial estimates. Round-level expert endorsement; no invented transaction prices or claim of blind partner assessment.",
+      "partner_confirmation": "Reported by user; not separately elicited",
+      "scope": "Overall middle-range round; do not manufacture individual exact replacement valuations."
+    }
+  ]
+}

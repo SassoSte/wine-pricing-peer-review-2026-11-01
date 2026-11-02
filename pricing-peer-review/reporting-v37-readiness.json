@@ -1,0 +1,27 @@
+{
+  "status": "complete",
+  "calibration": "reporting-calibration-v37.json",
+  "configuration": "reporting-config-v2.json",
+  "runtime": "predictor_reporting_v2.py",
+  "selected_bands": {
+    "v28": [
+      1.0,
+      1.5
+    ],
+    "v37": [
+      1.0,
+      1.5
+    ]
+  },
+  "interpretation": "Both selected[1,1.5),but scores differ;v37uses correctedpremiumdecision+1. No rank/modelrefit. Conditionalbandvalidation only,notpopulationconfidence.",
+  "default": "v28",
+  "tests": "9reporting tests pass;671pair parity/swap perbackend,correctedscore andboundaries,legacytests unchanged",
+  "sealed_validation": {
+    "file": "prospective-v37-sealed.json",
+    "n": 20,
+    "status": "unasked",
+    "source_hashes_verified": true,
+    "freshness": "unorderedpairs checkedagainst latest evidence,roundfiles,previoussealedsets,andpriorcombinedpilot"
+  },
+  "baseline_hashes_verified": true
+}

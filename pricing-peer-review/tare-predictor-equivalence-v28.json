@@ -1,0 +1,30 @@
+{
+  "model": "v28_tare_compensation",
+  "historical_unique_pairs_exact_scalar": 648,
+  "random_pairs_exact_scalar": 2000,
+  "supported_offerings": 1250,
+  "ordered_pairs_checked": 1562500,
+  "feature_mismatches": 0,
+  "numeric_score_mismatches": 0,
+  "decision_rules_identical": true,
+  "classification_mismatches": 0,
+  "source_hashes": {
+    "tare-refit-validation-v28.json": "570fa9ad6d6e0761e8099ec3d34f9c1dcc608169b3632cf5dd6a7180ff2b5e9b",
+    "tare-refit-candidate-v28.json": "411c6240bebc3c8d8d1c95c2089a4f8bf06b49373bc6561b70ed219afd96cd9d",
+    "evidence-v28.json": "13e64778ffe7458215211c666ffd3a48bbb10f37f8b6b51407f9e5e9850083f1",
+    "benchmark-targets-v28.json": "41a6558c7360c2827919b87ad60e2144945f14f11021f8c9cc53c31cadf00efd",
+    "model-config-v27.json": "38acf873fe5c333b8364cb677b438067b1a8f1cece7883ea39bb2008625d6ee6",
+    "predictor_v27.py": "293307f98d4c2434bfbbea8a73341a3522601604535647f3a7a6b0103b23f2ed",
+    "tare_compensation_v27.py": "321a974c6c96a81c9068e42f062a186ff2303bc901caac8f98ef3174a3c01aad"
+  },
+  "runtime_hashes": {
+    "predictor_v28.py": "c572cb63d47b531607efc66be1c65890b854d2f5a5087286858c25611191b7e3",
+    "predictor_v27.py": "293307f98d4c2434bfbbea8a73341a3522601604535647f3a7a6b0103b23f2ed",
+    "model-config-v28.json": "a9fed8e86977526c16e74ccdb0a6a75d919b3041bd602e5592d64e3086414dcf",
+    "tare-refit-candidate-v28.json": "411c6240bebc3c8d8d1c95c2089a4f8bf06b49373bc6561b70ed219afd96cd9d",
+    "verify_tare_predictor_v28.py": "204c9dbcfe18d5d329d420eb9773a366d2a0b85f8d4acb15f222dd427d1dd02b"
+  },
+  "math_changed": false,
+  "output_metadata_change": "New model identifier only; all prediction fields match.",
+  "elapsed_seconds": 24.199213415849954
+}

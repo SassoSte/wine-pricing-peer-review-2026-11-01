@@ -1,0 +1,422 @@
+{
+  "protocol": "Post-result user correction rescore. Original sealed answers and original prospective score retained in separate original files. Question11 corrected to A slight after predictions revealed; questions5,12,14 reaffirmed slight. Not a new independent prospective test. Models and reporting band unchanged.",
+  "freeze_verified": true,
+  "summary": {
+    "total": 16,
+    "direction_correct": 14,
+    "legacy_size_correct": 12,
+    "legacy_both_correct": 10,
+    "retained_n": 15,
+    "retained_size_correct": 12,
+    "retained_both_correct": 10,
+    "withheld_n": 1,
+    "true_premiums_withheld": 0,
+    "false_premiums_retained": 3,
+    "missed_premiums_retained": 0,
+    "boundary_questions": [
+      4
+    ]
+  },
+  "details": [
+    {
+      "number": 1,
+      "a": [
+        "Eastern Europe",
+        "pale/straw",
+        30,
+        110
+      ],
+      "b": [
+        "Eastern Europe",
+        "pale/straw",
+        40,
+        130
+      ],
+      "actual_direction": "A",
+      "actual_meaningful": true,
+      "predicted_direction": "A",
+      "zone": "meaningful_premium",
+      "direction_correct": true,
+      "legacy_size_correct": true,
+      "legacy_both_correct": true,
+      "retained": true,
+      "reported_size_correct": true,
+      "reported_both_correct": true
+    },
+    {
+      "number": 2,
+      "a": [
+        "central",
+        "copper",
+        20,
+        110
+      ],
+      "b": [
+        "central",
+        "copper",
+        40,
+        115
+      ],
+      "actual_direction": "A",
+      "actual_meaningful": true,
+      "predicted_direction": "A",
+      "zone": "meaningful_premium",
+      "direction_correct": true,
+      "legacy_size_correct": true,
+      "legacy_both_correct": true,
+      "retained": true,
+      "reported_size_correct": true,
+      "reported_both_correct": true
+    },
+    {
+      "number": 3,
+      "a": [
+        "central",
+        "golden",
+        20,
+        115
+      ],
+      "b": [
+        "central",
+        "copper",
+        40,
+        125
+      ],
+      "actual_direction": "A",
+      "actual_meaningful": true,
+      "predicted_direction": "A",
+      "zone": "meaningful_premium",
+      "direction_correct": true,
+      "legacy_size_correct": true,
+      "legacy_both_correct": true,
+      "retained": true,
+      "reported_size_correct": true,
+      "reported_both_correct": true
+    },
+    {
+      "number": 4,
+      "a": [
+        "northeast",
+        "brown",
+        35,
+        115
+      ],
+      "b": [
+        "northeast",
+        "brown",
+        40,
+        120
+      ],
+      "actual_direction": "A",
+      "actual_meaningful": false,
+      "predicted_direction": "A",
+      "zone": "borderline_premium",
+      "direction_correct": true,
+      "legacy_size_correct": false,
+      "legacy_both_correct": false,
+      "retained": false,
+      "reported_size_correct": null,
+      "reported_both_correct": null
+    },
+    {
+      "number": 5,
+      "a": [
+        "central",
+        "brown",
+        40,
+        125
+      ],
+      "b": [
+        "central",
+        "amber",
+        35,
+        130
+      ],
+      "actual_direction": "B",
+      "actual_meaningful": false,
+      "predicted_direction": "B",
+      "zone": "meaningful_premium",
+      "direction_correct": true,
+      "legacy_size_correct": false,
+      "legacy_both_correct": false,
+      "retained": true,
+      "reported_size_correct": false,
+      "reported_both_correct": false
+    },
+    {
+      "number": 6,
+      "a": [
+        "northeast",
+        "golden",
+        40,
+        120
+      ],
+      "b": [
+        "northeast",
+        "amber",
+        30,
+        130
+      ],
+      "actual_direction": "B",
+      "actual_meaningful": false,
+      "predicted_direction": "B",
+      "zone": "small_directional_advantage",
+      "direction_correct": true,
+      "legacy_size_correct": true,
+      "legacy_both_correct": true,
+      "retained": true,
+      "reported_size_correct": true,
+      "reported_both_correct": true
+    },
+    {
+      "number": 7,
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        25,
+        130
+      ],
+      "b": [
+        "West Central Asia",
+        "amber",
+        35,
+        125
+      ],
+      "actual_direction": "A",
+      "actual_meaningful": true,
+      "predicted_direction": "A",
+      "zone": "meaningful_premium",
+      "direction_correct": true,
+      "legacy_size_correct": true,
+      "legacy_both_correct": true,
+      "retained": true,
+      "reported_size_correct": true,
+      "reported_both_correct": true
+    },
+    {
+      "number": 8,
+      "a": [
+        "northeast",
+        "golden",
+        40,
+        110
+      ],
+      "b": [
+        "northeast",
+        "brown",
+        30,
+        130
+      ],
+      "actual_direction": "A",
+      "actual_meaningful": true,
+      "predicted_direction": "A",
+      "zone": "meaningful_premium",
+      "direction_correct": true,
+      "legacy_size_correct": true,
+      "legacy_both_correct": true,
+      "retained": true,
+      "reported_size_correct": true,
+      "reported_both_correct": true
+    },
+    {
+      "number": 9,
+      "a": [
+        "Eastern Europe",
+        "pale/straw",
+        25,
+        110
+      ],
+      "b": [
+        "northwest",
+        "golden",
+        25,
+        110
+      ],
+      "actual_direction": "B",
+      "actual_meaningful": false,
+      "predicted_direction": "A",
+      "zone": "small_directional_advantage",
+      "direction_correct": false,
+      "legacy_size_correct": true,
+      "legacy_both_correct": false,
+      "retained": true,
+      "reported_size_correct": true,
+      "reported_both_correct": false
+    },
+    {
+      "number": 10,
+      "a": [
+        "South/Eastern Asia",
+        "copper",
+        25,
+        115
+      ],
+      "b": [
+        "central",
+        "copper",
+        25,
+        115
+      ],
+      "actual_direction": "A",
+      "actual_meaningful": false,
+      "predicted_direction": "B",
+      "zone": "small_directional_advantage",
+      "direction_correct": false,
+      "legacy_size_correct": true,
+      "legacy_both_correct": false,
+      "retained": true,
+      "reported_size_correct": true,
+      "reported_both_correct": false
+    },
+    {
+      "number": 11,
+      "a": [
+        "West Asia / Middle East",
+        "pale/straw",
+        20,
+        115
+      ],
+      "b": [
+        "southwest",
+        "brown",
+        20,
+        115
+      ],
+      "actual_direction": "A",
+      "actual_meaningful": false,
+      "predicted_direction": "A",
+      "zone": "small_directional_advantage",
+      "direction_correct": true,
+      "legacy_size_correct": true,
+      "legacy_both_correct": true,
+      "retained": true,
+      "reported_size_correct": true,
+      "reported_both_correct": true
+    },
+    {
+      "number": 12,
+      "a": [
+        "West Central Asia",
+        "brown",
+        35,
+        130
+      ],
+      "b": [
+        "northeast",
+        "copper",
+        35,
+        130
+      ],
+      "actual_direction": "B",
+      "actual_meaningful": false,
+      "predicted_direction": "B",
+      "zone": "meaningful_premium",
+      "direction_correct": true,
+      "legacy_size_correct": false,
+      "legacy_both_correct": false,
+      "retained": true,
+      "reported_size_correct": false,
+      "reported_both_correct": false
+    },
+    {
+      "number": 13,
+      "a": [
+        "southwest",
+        "pale/straw",
+        35,
+        130
+      ],
+      "b": [
+        "northeast",
+        "pale/straw",
+        40,
+        130
+      ],
+      "actual_direction": "A",
+      "actual_meaningful": false,
+      "predicted_direction": "A",
+      "zone": "small_directional_advantage",
+      "direction_correct": true,
+      "legacy_size_correct": true,
+      "legacy_both_correct": true,
+      "retained": true,
+      "reported_size_correct": true,
+      "reported_both_correct": true
+    },
+    {
+      "number": 14,
+      "a": [
+        "northwest",
+        "brown",
+        30,
+        110
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        25,
+        125
+      ],
+      "actual_direction": "B",
+      "actual_meaningful": false,
+      "predicted_direction": "B",
+      "zone": "meaningful_premium",
+      "direction_correct": true,
+      "legacy_size_correct": false,
+      "legacy_both_correct": false,
+      "retained": true,
+      "reported_size_correct": false,
+      "reported_both_correct": false
+    },
+    {
+      "number": 15,
+      "a": [
+        "southwest",
+        "brown",
+        35,
+        120
+      ],
+      "b": [
+        "central",
+        "copper",
+        35,
+        115
+      ],
+      "actual_direction": "B",
+      "actual_meaningful": true,
+      "predicted_direction": "B",
+      "zone": "meaningful_premium",
+      "direction_correct": true,
+      "legacy_size_correct": true,
+      "legacy_both_correct": true,
+      "retained": true,
+      "reported_size_correct": true,
+      "reported_both_correct": true
+    },
+    {
+      "number": 16,
+      "a": [
+        "southwest",
+        "pale/straw",
+        25,
+        115
+      ],
+      "b": [
+        "northwest",
+        "pale/straw",
+        35,
+        130
+      ],
+      "actual_direction": "A",
+      "actual_meaningful": true,
+      "predicted_direction": "A",
+      "zone": "meaningful_premium",
+      "direction_correct": true,
+      "legacy_size_correct": true,
+      "legacy_both_correct": true,
+      "retained": true,
+      "reported_size_correct": true,
+      "reported_both_correct": true
+    }
+  ]
+}

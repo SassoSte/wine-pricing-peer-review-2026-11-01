@@ -1,0 +1,560 @@
+{
+  "round": 12,
+  "status": "complete clarification checkpoint; overrides recorded, no refit",
+  "protocol": "Clarify exact price ordering vs uncertainty with concrete endpoint wording. Explicit repeated questions, not fresh validation. No automatic label supersession or model refit.",
+  "questions": [
+    {
+      "id": "round12-1",
+      "revisits": "round7-8",
+      "a": [
+        "southeast",
+        "pale/straw",
+        20,
+        120
+      ],
+      "b": [
+        "northeast",
+        "pale/straw",
+        20,
+        120
+      ],
+      "status": "answered",
+      "winner": "tie",
+      "strength": null,
+      "response_options": [
+        "A higher price",
+        "B higher price",
+        "exact same price",
+        "not confident enough to set an order"
+      ],
+      "predictions_before_answer": {
+        "revision_e": "tie",
+        "original_near_tie": "tie",
+        "ranking_additive": "tie",
+        "ranking_shade": "tie",
+        "ranking_vintage": "tie"
+      },
+      "raw_answer": "3. Give them exactly the same price.",
+      "interpretation": "Explicit equal-price instruction; confirms round7-8, not uncertainty."
+    },
+    {
+      "id": "round12-2",
+      "revisits": "round6-2",
+      "a": [
+        "southeast",
+        "pale/straw",
+        20,
+        110
+      ],
+      "b": [
+        "northeast",
+        "pale/straw",
+        20,
+        110
+      ],
+      "status": "answered",
+      "winner": "A",
+      "strength": "very slightly",
+      "response_options": [
+        "A higher price",
+        "B higher price",
+        "exact same price",
+        "not confident enough to set an order"
+      ],
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "original_near_tie": "tie",
+        "ranking_additive": "tie",
+        "ranking_shade": "tie",
+        "ranking_vintage": "tie"
+      },
+      "raw_answer": "1. Price A higher than B, but only very slightly.",
+      "interpretation": "Explicit strict price preference; confirms round6-2."
+    },
+    {
+      "id": "round12-3",
+      "revisits": "round7-9",
+      "a": [
+        "southeast",
+        "pale/straw",
+        20,
+        115
+      ],
+      "b": [
+        "northeast",
+        "pale/straw",
+        20,
+        115
+      ],
+      "status": "answered",
+      "winner": "tie",
+      "strength": null,
+      "response_options": [
+        "A higher price",
+        "B higher price",
+        "exact same price",
+        "not confident enough to set an order"
+      ],
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "original_near_tie": "tie",
+        "ranking_additive": "tie",
+        "ranking_shade": "tie",
+        "ranking_vintage": "tie"
+      },
+      "raw_answer": "3",
+      "interpretation": "Explicit equal-price instruction; supersedes earlier slight A preference in round7-9.",
+      "supersedes": "round7-9"
+    },
+    {
+      "id": "round12-4",
+      "revisits": "round11-17",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        25,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        20,
+        125
+      ],
+      "status": "answered",
+      "winner": "A",
+      "strength": null,
+      "response_options": [
+        "A higher price",
+        "B higher price",
+        "exact same price",
+        "not confident enough to set an order"
+      ],
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "original_near_tie": "A",
+        "ranking_additive": "A",
+        "ranking_shade": "tie",
+        "ranking_vintage": "tie"
+      },
+      "purpose": "Reframe shared-reference premium comparison as a direct price instruction for final offerings.",
+      "raw_answer": "1",
+      "interpretation": "Direct endpoint price instruction; replaces earlier B in shared-reference framing.",
+      "supersedes": "round11-17"
+    },
+    {
+      "id": "round12-5",
+      "revisits": "round11-14",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        35,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        25,
+        125
+      ],
+      "status": "answered",
+      "winner": "B",
+      "strength": null,
+      "response_options": [
+        "A higher price",
+        "B higher price",
+        "exact same price",
+        "not confident enough to set an order"
+      ],
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "original_near_tie": "A",
+        "ranking_additive": "tie",
+        "ranking_shade": "tie",
+        "ranking_vintage": "tie"
+      },
+      "purpose": "Direct endpoint clarification of the ten-year shared-reference comparison; tare equal.",
+      "raw_answer": "2. Price B higher than A.",
+      "interpretation": "Direct endpoint instruction confirms direction in round11-14; no relative magnitude supplied."
+    },
+    {
+      "id": "round12-6",
+      "revisits": "round10-10",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        35,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        25,
+        115
+      ],
+      "status": "answered",
+      "winner": "B",
+      "strength": null,
+      "response_options": [
+        "A higher price",
+        "B higher price",
+        "exact same price",
+        "not confident enough to set an order"
+      ],
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "original_near_tie": "A",
+        "ranking_additive": "B",
+        "ranking_shade": "B",
+        "ranking_vintage": "B"
+      },
+      "purpose": "Direct pricing-instruction confirmation of original target including tare difference.",
+      "raw_answer": "Price B higher than A, even if only a little.",
+      "interpretation": "Confirms original round10-10 direction; option wording supplies no independently stated magnitude."
+    },
+    {
+      "id": "round12-7",
+      "revisits": "round9-6",
+      "a": [
+        "northwest",
+        "golden",
+        40,
+        115
+      ],
+      "b": [
+        "northwest",
+        "pale/straw",
+        40,
+        125
+      ],
+      "status": "answered",
+      "winner": "A",
+      "strength": "very slightly",
+      "response_options": [
+        "A higher price",
+        "B higher price",
+        "exact same price",
+        "not confident enough to set an order"
+      ],
+      "predictions_before_answer": {
+        "revision_e": "B",
+        "original_near_tie": "tie",
+        "ranking_additive": "tie",
+        "ranking_shade": "tie",
+        "ranking_vintage": "tie"
+      },
+      "purpose": "Clarify a previous shade-versus-tare disagreement outside the West Central Asia cluster.",
+      "raw_answer": "1. Price A higher than B, but only very slightly.",
+      "interpretation": "Confirms round9-6 direction and strength; not an independent new sample."
+    },
+    {
+      "id": "round12-8",
+      "revisits": "round9-7",
+      "a": [
+        "central",
+        "brown",
+        35,
+        125
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "brown",
+        35,
+        120
+      ],
+      "status": "answered",
+      "winner": "A",
+      "strength": "very slightly",
+      "response_options": [
+        "A higher price",
+        "B higher price",
+        "exact same price",
+        "not confident enough to set an order"
+      ],
+      "predictions_before_answer": {
+        "revision_e": "B",
+        "original_near_tie": "A",
+        "ranking_additive": "A",
+        "ranking_shade": "A",
+        "ranking_vintage": "A"
+      },
+      "purpose": "Clarify prior provenance-versus-tare comparison with explicit endpoint pricing instructions.",
+      "raw_answer": "1. Price A higher than B, but only very slightly.",
+      "interpretation": "Confirms round9-7 direction and strength; not an independent new sample."
+    },
+    {
+      "id": "round12-9",
+      "revisits": "round9-4",
+      "a": [
+        "Western Europe",
+        "brown",
+        25,
+        130
+      ],
+      "b": [
+        "Eastern Europe",
+        "brown",
+        25,
+        115
+      ],
+      "status": "answered",
+      "winner": "B",
+      "strength": "slightly",
+      "response_options": [
+        "A higher price",
+        "B higher price",
+        "exact same price",
+        "not confident enough to set an order"
+      ],
+      "predictions_before_answer": {
+        "revision_e": "tie",
+        "original_near_tie": "B",
+        "ranking_additive": "B",
+        "ranking_shade": "B",
+        "ranking_vintage": "B"
+      },
+      "purpose": "Clarify European provenance premium against a 15 lb tare difference.",
+      "raw_answer": "2. Price B higher than A, but only slightly.",
+      "interpretation": "Confirms round9-4 direction and strength; not an independent new sample."
+    },
+    {
+      "id": "round12-10",
+      "revisits": "round9-8",
+      "a": [
+        "southeast",
+        "amber",
+        20,
+        125
+      ],
+      "b": [
+        "southwest",
+        "amber",
+        20,
+        115
+      ],
+      "status": "answered",
+      "winner": "B",
+      "strength": "moderately",
+      "response_options": [
+        "A higher price",
+        "B higher price",
+        "exact same price",
+        "not confident enough to set an order"
+      ],
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "original_near_tie": "B",
+        "ranking_additive": "B",
+        "ranking_shade": "B",
+        "ranking_vintage": "B"
+      },
+      "purpose": "Clarify domestic amber provenance-versus-tare trade-off.",
+      "raw_answer": "2. Price B higher than A, moderately.",
+      "interpretation": "Confirms round9-8 direction and strength; not an independent new sample."
+    },
+    {
+      "id": "round12-11",
+      "revisits": "round9-14",
+      "a": [
+        "West Asia / Middle East",
+        "copper",
+        25,
+        120
+      ],
+      "b": [
+        "Eastern Europe",
+        "copper",
+        25,
+        125
+      ],
+      "status": "answered",
+      "winner": "B",
+      "strength": "very slightly",
+      "response_options": [
+        "A higher price",
+        "B higher price",
+        "exact same price",
+        "not confident enough to set an order"
+      ],
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "original_near_tie": "B",
+        "ranking_additive": "B",
+        "ranking_shade": "B",
+        "ranking_vintage": "B"
+      },
+      "purpose": "Clarify foreign copper provenance premium against a 5 lb tare difference.",
+      "raw_answer": "2. Price B higher than A, but only very slightly.",
+      "interpretation": "Confirms round9-14 direction and strength; not an independent new sample."
+    },
+    {
+      "id": "round12-12",
+      "revisits": "round9-17",
+      "a": [
+        "central",
+        "golden",
+        25,
+        125
+      ],
+      "b": [
+        "central",
+        "copper",
+        20,
+        115
+      ],
+      "status": "answered",
+      "winner": "B",
+      "strength": "moderately",
+      "response_options": [
+        "A higher price",
+        "B higher price",
+        "exact same price",
+        "not confident enough to set an order"
+      ],
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "original_near_tie": "B",
+        "ranking_additive": "B",
+        "ranking_shade": "B",
+        "ranking_vintage": "B"
+      },
+      "purpose": "Clarify a domestic shade/vintage/tare trade-off with explicit final offerings.",
+      "raw_answer": "2. Price B higher than A, moderately.",
+      "interpretation": "Confirms round9-17 direction and strength; not an independent new sample."
+    },
+    {
+      "id": "round12-13",
+      "revisits": "round9-18",
+      "a": [
+        "southeast",
+        "pale/straw",
+        25,
+        130
+      ],
+      "b": [
+        "southeast",
+        "golden",
+        25,
+        120
+      ],
+      "status": "answered",
+      "winner": "tie",
+      "strength": null,
+      "response_options": [
+        "A higher price",
+        "B higher price",
+        "exact same price",
+        "not confident enough to set an order"
+      ],
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "original_near_tie": "tie",
+        "ranking_additive": "tie",
+        "ranking_shade": "tie",
+        "ranking_vintage": "tie"
+      },
+      "purpose": "Clarify exact-price tie versus uncertainty in shade/tare trade-off.",
+      "raw_answer": "3. Give them exactly the same price.",
+      "interpretation": "Explicit equal-price instruction confirms round9-18; not uncertainty or an independent sample."
+    },
+    {
+      "id": "round12-14",
+      "revisits": "round9-5",
+      "a": [
+        "West Central Asia",
+        "copper",
+        35,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "copper",
+        35,
+        120
+      ],
+      "status": "answered",
+      "winner": "tie",
+      "strength": null,
+      "response_options": [
+        "A higher price",
+        "B higher price",
+        "exact same price",
+        "not confident enough to set an order"
+      ],
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "original_near_tie": "tie",
+        "ranking_additive": "tie",
+        "ranking_shade": "tie",
+        "ranking_vintage": "tie"
+      },
+      "purpose": "Clarify exact equal-price intent for a provenance-only copper comparison.",
+      "raw_answer": "3. Give them exactly the same price.",
+      "interpretation": "Explicit equal-price instruction confirms round9-5; not uncertainty or an independent sample."
+    },
+    {
+      "id": "round12-15",
+      "revisits": "round9-16",
+      "a": [
+        "West Central Asia",
+        "brown",
+        35,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "brown",
+        35,
+        120
+      ],
+      "status": "answered",
+      "winner": "tie",
+      "strength": null,
+      "response_options": [
+        "A higher price",
+        "B higher price",
+        "exact same price",
+        "not confident enough to set an order"
+      ],
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "original_near_tie": "tie",
+        "ranking_additive": "tie",
+        "ranking_shade": "tie",
+        "ranking_vintage": "tie"
+      },
+      "purpose": "Clarify exact equal-price intent for the same provenance pair at brown.",
+      "raw_answer": "3. Give them exactly the same price.",
+      "interpretation": "Explicit equal-price instruction confirms round9-16; not uncertainty or an independent sample."
+    }
+  ],
+  "model_hashes": {
+    "pricing.py": "70cf711fdd3322750ffd5cdab45e156e3bc47a136ddb2155bac04727e7900906",
+    "model-comparison.json": "121ed749ee62b681c1395809d4d416a4d797aaa385851abfd8325a2a6e35f412",
+    "interaction-comparison.json": "077c03d6c3f6e5e99b1b9ebee7a8c21a41ff5a8a4898d5583b8de8be9f59b858",
+    "objective-comparison.json": "3860a4e6fa1e9a029a95de52217b5261a89d7e0327e9ab633714dcb6689ef4b6"
+  },
+  "evidence_overrides": [
+    {
+      "source_id": "round7-9",
+      "replacement_id": "round12-3",
+      "winner": "tie",
+      "note": "Original ledger preserved as baseline snapshot; use this correction instead of old A in any future reconciled fit. Do not add as independent duplicate."
+    },
+    {
+      "source_id": "round11-17",
+      "replacement_id": "round12-4",
+      "winner": "A",
+      "note": "Use direct endpoint correction instead of old B in future reconciled fits. Earlier shared-reference framing does not remain an independent constraint."
+    }
+  ],
+  "summary": {
+    "answered": 15,
+    "direction_confirmations": 13,
+    "direction_corrections": 2,
+    "explicit_equal_price_answers": 5,
+    "uncertain_answers": 0,
+    "model_state": "All baseline model hashes unchanged. Historical evidence remains immutable; apply evidence_overrides before future fits and replace, never append duplicates.",
+    "implication": "Exact ties were reaffirmed, but reframing changed two choices. The previously inferred West Central Asia versus domestic 25-to-20/shade reversal is no longer supported by the latest endpoint answer."
+  }
+}

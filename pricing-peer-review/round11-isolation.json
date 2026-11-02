@@ -1,0 +1,677 @@
+{
+  "round": 11,
+  "status": "complete diagnostic checkpoint; no refit",
+  "protocol": "Adaptive single-factor isolation of Round 10 Q10. Keep both models fixed; verify source hashes before every question; record predictions before answers and hide them. Change only shade, age, or tare within each pair; widen ranges as needed. No refitting.",
+  "file_sha256": {
+    "pricing.py": "70cf711fdd3322750ffd5cdab45e156e3bc47a136ddb2155bac04727e7900906",
+    "compare_models.py": "da2067d3d2ef99849ce2e30be16208bff0145bc6b036111535542c2daf00fa5f",
+    "model-comparison.json": "121ed749ee62b681c1395809d4d416a4d797aaa385851abfd8325a2a6e35f412"
+  },
+  "near_tie_snapshot": {
+    "features": [
+      "origin:Western Europe vs Eastern Europe",
+      "origin:West Central Asia vs Eastern Europe",
+      "origin:South/Eastern Asia vs Eastern Europe",
+      "origin:West Asia / Middle East vs Eastern Europe",
+      "origin:central vs Eastern Europe",
+      "origin:northeast vs Eastern Europe",
+      "origin:northwest vs Eastern Europe",
+      "origin:southwest vs Eastern Europe",
+      "origin:southeast vs Eastern Europe",
+      "shade increment:copper",
+      "shade increment:amber",
+      "shade increment:golden",
+      "shade increment:pale/straw",
+      "age increment:35",
+      "age increment:30",
+      "age increment:25",
+      "age increment:20",
+      "lightness per 5 lb"
+    ],
+    "coefficients": {
+      "origin:Western Europe vs Eastern Europe": 0.13442996417870073,
+      "origin:West Central Asia vs Eastern Europe": -0.6925126275387569,
+      "origin:South/Eastern Asia vs Eastern Europe": -0.8213376709090335,
+      "origin:West Asia / Middle East vs Eastern Europe": -0.9261363981916,
+      "origin:central vs Eastern Europe": 0.2236892969901537,
+      "origin:northeast vs Eastern Europe": 0.7781531417082969,
+      "origin:northwest vs Eastern Europe": 0.1609789151018895,
+      "origin:southwest vs Eastern Europe": 0.8066038458128788,
+      "origin:southeast vs Eastern Europe": 0.8465839001199865,
+      "shade increment:copper": 1.0030778976246726,
+      "shade increment:amber": 2.3869455398345774e-13,
+      "shade increment:golden": 3.3167828898535655e-13,
+      "shade increment:pale/straw": 0.8321939662776723,
+      "age increment:35": 0.9137803749076202,
+      "age increment:30": 8.587341632681243e-14,
+      "age increment:25": 0.7962530414353742,
+      "age increment:20": 0.6626914133328764,
+      "lightness per 5 lb": 0.36562111350403376
+    },
+    "alpha": 0.1,
+    "threshold": 0.3,
+    "training_rows": 119
+  },
+  "target_pair_id": "round10-10",
+  "questions": [
+    {
+      "id": "round11-1",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        35,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        35,
+        125
+      ],
+      "factor": "shade",
+      "winner": "A",
+      "strength": "overwhelmingly",
+      "status": "answered",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "A"
+      },
+      "near_tie_margin": 1.8352718639029153,
+      "raw_answer": "A overwhelmingly"
+    },
+    {
+      "id": "round11-2",
+      "a": [
+        "West Central Asia",
+        "brown",
+        25,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        35,
+        125
+      ],
+      "factor": "vintage",
+      "winner": "A",
+      "strength": "overwhelmingly",
+      "status": "answered",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "A"
+      },
+      "near_tie_margin": 0.79625304143546,
+      "raw_answer": "A overwhelmingly"
+    },
+    {
+      "id": "round11-3",
+      "a": [
+        "West Central Asia",
+        "brown",
+        25,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        25,
+        125
+      ],
+      "factor": "tare",
+      "winner": "A",
+      "strength": "strongly",
+      "status": "answered",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "A"
+      },
+      "near_tie_margin": 0.7312422270080675,
+      "raw_answer": "A stongly"
+    },
+    {
+      "id": "round11-4",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        25,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "pale/straw",
+        35,
+        125
+      ],
+      "factor": "vintage",
+      "purpose": "Matched to question 2 at pale/straw instead of brown",
+      "winner": "A",
+      "strength": "overwhelmingly",
+      "status": "answered",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "A"
+      },
+      "near_tie_margin": 0.79625304143546,
+      "raw_answer": "A overwhelmingly"
+    },
+    {
+      "id": "round11-5",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        25,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        25,
+        125
+      ],
+      "factor": "shade",
+      "purpose": "Matched to question 1 at 25 years instead of 35",
+      "winner": "A",
+      "strength": "overwhelmingly",
+      "status": "answered",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "A"
+      },
+      "near_tie_margin": 1.8352718639029153,
+      "raw_answer": "A overwhelmingly"
+    },
+    {
+      "id": "round11-6",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        25,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "pale/straw",
+        25,
+        125
+      ],
+      "factor": "tare",
+      "purpose": "Matched to question 3 at pale/straw instead of brown",
+      "winner": "A",
+      "strength": "slightly",
+      "status": "answered",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "A"
+      },
+      "near_tie_margin": 0.7312422270080675,
+      "raw_answer": "A slightly"
+    },
+    {
+      "id": "round11-7",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        35,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "pale/straw",
+        35,
+        125
+      ],
+      "factor": "tare",
+      "purpose": "Matched to question 6 at 35 years instead of 25",
+      "winner": "A",
+      "strength": "moderately",
+      "status": "answered",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "A"
+      },
+      "near_tie_margin": 0.7312422270080675,
+      "raw_answer": "A moderately"
+    },
+    {
+      "id": "round11-8",
+      "a": [
+        "West Central Asia",
+        "brown",
+        35,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        35,
+        125
+      ],
+      "factor": "tare",
+      "purpose": "Complete matched tare contrasts at brown/pale and 25/35 years",
+      "winner": "A",
+      "strength": "slightly",
+      "status": "answered",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "A"
+      },
+      "near_tie_margin": 0.7312422270080675,
+      "raw_answer": "A slightly"
+    },
+    {
+      "id": "round11-9",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        35,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "golden",
+        35,
+        125
+      ],
+      "factor": "shade",
+      "purpose": "Narrow the full shade-span result to its lightest adjacent step",
+      "winner": "A",
+      "strength": "very slightly",
+      "status": "answered",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "A"
+      },
+      "near_tie_margin": 0.8321939662776723,
+      "raw_answer": "A very slightly"
+    },
+    {
+      "id": "round11-10",
+      "a": [
+        "West Central Asia",
+        "golden",
+        35,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        35,
+        125
+      ],
+      "factor": "shade",
+      "purpose": "Locate the full shade-span premium below golden after the small pale-to-golden preference",
+      "winner": "A",
+      "strength": "moderately",
+      "status": "answered",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "A"
+      },
+      "near_tie_margin": 1.003077897625243,
+      "raw_answer": "A moderatel"
+    },
+    {
+      "id": "round11-11",
+      "a": [
+        "West Central Asia",
+        "brown",
+        25,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        30,
+        125
+      ],
+      "factor": "vintage",
+      "purpose": "Narrow the ten-year brown vintage contrast to 25 versus 30 years",
+      "winner": "A",
+      "strength": "slightly",
+      "status": "answered",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "A"
+      },
+      "near_tie_margin": 0.7962530414353742,
+      "raw_answer": "A slightly"
+    },
+    {
+      "id": "round11-12",
+      "a": [
+        "West Central Asia",
+        "brown",
+        30,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        35,
+        125
+      ],
+      "factor": "vintage",
+      "purpose": "Measure the other five-year part of the 25-versus-35-year brown contrast",
+      "winner": "A",
+      "strength": "slightly",
+      "status": "answered",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "tie"
+      },
+      "near_tie_margin": 8.587341632681243e-14,
+      "raw_answer": "A slightly"
+    },
+    {
+      "id": "round11-13",
+      "a": [
+        "West Central Asia",
+        "brown",
+        25,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        35,
+        125
+      ],
+      "factor": "vintage",
+      "purpose": "Explicit clarification repeat of Q2 after both component five-year steps were described as slightly; do not count as fresh independent evidence",
+      "revisits": "round11-2",
+      "winner": "A",
+      "strength": "overwhelmingly",
+      "status": "answered",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "A"
+      },
+      "near_tie_margin": 0.79625304143546,
+      "raw_answer": "A overwhelmingly",
+      "confirms": "round11-2"
+    },
+    {
+      "id": "round11-14",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        35,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        25,
+        125
+      ],
+      "shared_reference": [
+        "West Central Asia",
+        "brown",
+        35,
+        125
+      ],
+      "question_type": "compare_single_factor_premiums_from_shared_reference",
+      "factor": "relative shade/vintage premium",
+      "purpose": "Compare two independently isolated changes, each from brown/35-year/125 lb; determine relative size without assigning numeric meanings to overwhelmingly",
+      "winner": "B",
+      "strength": "much more",
+      "status": "answered",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "A"
+      },
+      "near_tie_margin": 1.039018822467455,
+      "raw_answer": "35 to 25 would add much more."
+    },
+    {
+      "id": "round11-15",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        35,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        30,
+        125
+      ],
+      "shared_reference": [
+        "West Central Asia",
+        "brown",
+        35,
+        125
+      ],
+      "question_type": "compare_single_factor_premiums_from_shared_reference",
+      "factor": "relative shade/vintage premium",
+      "purpose": "Narrow vintage premium from ten years to five against the same full shade-span premium",
+      "winner": "A",
+      "strength": "much more valuable",
+      "status": "answered",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "A"
+      },
+      "near_tie_margin": 1.8352718639028294,
+      "raw_answer": "From 35 to 30 no. Brown to pale is much more valuable if the vintage difference is over 30 and within 5 years."
+    },
+    {
+      "id": "round11-16",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        30,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        25,
+        125
+      ],
+      "shared_reference": [
+        "West Central Asia",
+        "brown",
+        30,
+        125
+      ],
+      "question_type": "compare_single_factor_premiums_from_shared_reference",
+      "factor": "relative shade/vintage premium",
+      "purpose": "Test 30-to-25 boundary of stated older-vintage five-year rule",
+      "winner": "A",
+      "strength": "very slightly",
+      "status": "answered",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "A"
+      },
+      "near_tie_margin": 1.039018822467541,
+      "raw_answer": "A but very slightly"
+    },
+    {
+      "id": "round11-17",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        25,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        20,
+        125
+      ],
+      "shared_reference": [
+        "West Central Asia",
+        "brown",
+        25,
+        125
+      ],
+      "question_type": "compare_single_factor_premiums_from_shared_reference",
+      "factor": "relative shade/vintage premium",
+      "purpose": "Test youngest five-year step against same full shade change",
+      "winner": "B",
+      "strength": null,
+      "status": "answered",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "A"
+      },
+      "near_tie_margin": 1.172580450570039,
+      "raw_answer": "For west central Asia, the vintage is more valuable; however, domestically, this would not be true."
+    },
+    {
+      "id": "round11-18",
+      "a": [
+        "central",
+        "pale/straw",
+        25,
+        125
+      ],
+      "b": [
+        "central",
+        "brown",
+        20,
+        125
+      ],
+      "shared_reference": [
+        "central",
+        "brown",
+        25,
+        125
+      ],
+      "question_type": "compare_single_factor_premiums_from_shared_reference",
+      "factor": "relative shade/vintage premium",
+      "purpose": "Clarify domestic qualification using central, holding the prior comparison otherwise fixed",
+      "winner": "A",
+      "strength": null,
+      "status": "answered",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "A"
+      },
+      "near_tie_margin": 1.172580450570039,
+      "raw_answer": "Here, it's A."
+    },
+    {
+      "id": "round11-19",
+      "a": [
+        "southeast",
+        "pale/straw",
+        25,
+        125
+      ],
+      "b": [
+        "southeast",
+        "brown",
+        20,
+        125
+      ],
+      "shared_reference": [
+        "southeast",
+        "brown",
+        25,
+        125
+      ],
+      "question_type": "compare_single_factor_premiums_from_shared_reference",
+      "factor": "relative shade/vintage premium",
+      "purpose": "Check domestic qualification in southeast, matching the central and West Central Asia contrasts",
+      "winner": "A",
+      "strength": "strongly",
+      "status": "answered",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "A"
+      },
+      "near_tie_margin": 1.172580450570039,
+      "raw_answer": "A, stongly"
+    },
+    {
+      "id": "round11-20",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        35,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        25,
+        115
+      ],
+      "shared_reference": [
+        "West Central Asia",
+        "brown",
+        35,
+        115
+      ],
+      "question_type": "compare_single_factor_premiums_from_shared_reference",
+      "factor": "relative shade/vintage premium",
+      "purpose": "Match Q14 at 115 lb instead of 125 lb, connecting premium comparison to original target tare",
+      "winner": "B",
+      "strength": null,
+      "status": "answered",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "additive_near_tie": "A"
+      },
+      "near_tie_margin": 1.039018822467455,
+      "raw_answer": "B",
+      "clarification_history": [
+        "for the region you've specified, they both add significant values respectively.",
+        "Assistant clarified larger premium versus equal premium; user chose B."
+      ]
+    }
+  ],
+  "rule_statements": [
+    {
+      "source": "round11-15",
+      "verbatim": "From 35 to 30 no. Brown to pale is much more valuable if the vintage difference is over 30 and within 5 years.",
+      "confirmed_scope": "At West Central Asia, 125 lb, shared brown/35-year baseline, brown-to-pale shade premium exceeds 35-to-30 vintage premium.",
+      "broader_scope": "User mentions over-30 vintages within five years; exact boundary and transfer to other provenances/tares remain to clarify."
+    },
+    {
+      "source": "round11-17",
+      "verbatim": "For west central Asia, the vintage is more valuable; however, domestically, this would not be true.",
+      "confirmed_scope": "West Central Asia at 125 lb: from brown/25-year, vintage to 20 adds more than shade to pale/straw.",
+      "broader_scope": "User states domestic offerings do not share this vintage advantage. Do not infer strict shade preference versus tie or identical magnitudes across all domestic zones."
+    }
+  ],
+  "diagnostic_score": {
+    "revision_e": {
+      "unique_comparisons": 19,
+      "matched": 16,
+      "misses": [
+        "round11-14",
+        "round11-17",
+        "round11-20"
+      ]
+    },
+    "additive_near_tie": {
+      "unique_comparisons": 19,
+      "matched": 15,
+      "misses": [
+        "round11-12",
+        "round11-14",
+        "round11-17",
+        "round11-20"
+      ]
+    }
+  },
+  "interpretation": {
+    "scope": "20 responses, 19 unique comparisons plus one explicit repeat; adaptive diagnostic, not generalization accuracy.",
+    "findings": [
+      "At West Central Asia and equal tare, the 35-to-25-year premium exceeds brown-to-pale shade premium at both 125 and 115 lb.",
+      "At 125 lb, shade wins against 35-to-30 vintage and narrowly against 30-to-25, but vintage wins for 25-to-20 in West Central Asia.",
+      "For the identical 25-to-20 versus shade comparison at 125 lb, domestic central and southeast favor shade (southeast strongly).",
+      "A global additive model with independent provenance offsets cannot express that provenance-dependent reversal: provenance cancels in each premium comparison.",
+      "These comparisons require provenance-dependent shade and/or vintage effects but do not uniquely identify which component changes.",
+      "Qualitative strengths are context-sensitive and not established numerical or additive units."
+    ],
+    "model_state": "Both models and source hashes unchanged; none of these answers fitted."
+  }
+}

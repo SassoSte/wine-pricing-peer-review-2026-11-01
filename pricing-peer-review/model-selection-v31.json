@@ -1,0 +1,206 @@
+{
+  "evidence": "evidence-v31.json",
+  "default_retained": "v28_tare_compensation",
+  "active_runtime": "predictor_v28.py",
+  "active_config": "model-config-v28.json",
+  "best_frozen_benchmark_on_v31": "frozen_v30_candidate",
+  "best_refit": "v31_anchored",
+  "refit_runtime": "predictor_v31.py",
+  "refit_config": "model-config-v31.json",
+  "promotion_status": "not_promoted",
+  "comparison": {
+    "v28": {
+      "relation_and_size_n": 219,
+      "relation_and_size_correct": 186.4,
+      "relation_and_size_accuracy": 0.8511415525114157,
+      "strict_direction_n": 460,
+      "strict_direction_accuracy": 0.9291304347826088,
+      "false_premiums": 15.8,
+      "missed_premiums": 14.6,
+      "exact_ties_n": 3,
+      "exact_ties_correct_per_repeat": 0.0,
+      "repeat_correct": [
+        185,
+        190,
+        187,
+        183,
+        187
+      ]
+    },
+    "frozen_v30_candidate": {
+      "relation_and_size_n": 219,
+      "relation_and_size_correct": 192.6,
+      "relation_and_size_accuracy": 0.8794520547945206,
+      "strict_direction_n": 460,
+      "strict_direction_accuracy": 0.9278260869565218,
+      "false_premiums": 13.4,
+      "missed_premiums": 9.0,
+      "exact_ties_n": 3,
+      "exact_ties_correct_per_repeat": 0.0,
+      "repeat_correct": [
+        194,
+        190,
+        190,
+        195,
+        194
+      ]
+    },
+    "v31_coupled": {
+      "relation_and_size_n": 219,
+      "relation_and_size_correct": 184.2,
+      "relation_and_size_accuracy": 0.8410958904109588,
+      "strict_direction_n": 460,
+      "strict_direction_accuracy": 0.9204347826086957,
+      "false_premiums": 12.8,
+      "missed_premiums": 17.0,
+      "exact_ties_n": 3,
+      "exact_ties_correct_per_repeat": 0.0,
+      "repeat_correct": [
+        186,
+        184,
+        181,
+        184,
+        186
+      ]
+    },
+    "v31_legacy_reference": {
+      "relation_and_size_n": 219,
+      "relation_and_size_correct": 186.6,
+      "relation_and_size_accuracy": 0.8520547945205479,
+      "strict_direction_n": 460,
+      "strict_direction_accuracy": 0.9204347826086957,
+      "false_premiums": 13.4,
+      "missed_premiums": 16.2,
+      "exact_ties_n": 3,
+      "exact_ties_correct_per_repeat": 0.0,
+      "repeat_correct": [
+        186,
+        184,
+        188,
+        186,
+        189
+      ]
+    },
+    "v31_anchored": {
+      "relation_and_size_n": 219,
+      "relation_and_size_correct": 186.8,
+      "relation_and_size_accuracy": 0.8529680365296803,
+      "strict_direction_n": 460,
+      "strict_direction_accuracy": 0.9234782608695651,
+      "false_premiums": 13.4,
+      "missed_premiums": 16.2,
+      "exact_ties_n": 3,
+      "exact_ties_correct_per_repeat": 0.0,
+      "repeat_correct": [
+        188,
+        184,
+        188,
+        187,
+        187
+      ]
+    }
+  },
+  "full_refit": {
+    "supported_n": 640,
+    "correct": 590,
+    "accuracy": 0.921875,
+    "both_relation_and_size_n": 219,
+    "both_relation_and_size_correct": 202,
+    "both_relation_and_size_accuracy": 0.9223744292237442,
+    "balanced_joint_accuracy": 0.928621679499147,
+    "exact_ties_n": 3,
+    "exact_ties_correct": 3,
+    "exact_tie_gaps": [
+      {
+        "id": "round6-8",
+        "gap": 5.551115123125783e-17,
+        "premium": false
+      },
+      {
+        "id": "round8-4",
+        "gap": -2.7755575615628914e-17,
+        "premium": false
+      },
+      {
+        "id": "round50-9",
+        "gap": 2.220446049250313e-16,
+        "premium": false
+      }
+    ]
+  },
+  "full_review_fit": {
+    "supported_n": 18,
+    "correct": 18,
+    "accuracy": 1.0,
+    "both_relation_and_size_n": 17,
+    "both_relation_and_size_correct": 17,
+    "both_relation_and_size_accuracy": 1.0,
+    "balanced_joint_accuracy": 1.0,
+    "exact_ties_n": 3,
+    "exact_ties_correct": 3,
+    "exact_tie_gaps": [
+      {
+        "id": "round6-8",
+        "gap": 5.551115123125783e-17,
+        "premium": false
+      },
+      {
+        "id": "round8-4",
+        "gap": -2.7755575615628914e-17,
+        "premium": false
+      },
+      {
+        "id": "round50-9",
+        "gap": 2.220446049250313e-16,
+        "premium": false
+      }
+    ]
+  },
+  "reconciliation": {
+    "unique_pairs": 640,
+    "reviewed_pairs_superseded": 18,
+    "new_pairs": 0,
+    "strict_directions": 460,
+    "exact_ties": 3,
+    "known_size": 396,
+    "meaningful": 130,
+    "nonmeaningful": 266,
+    "complete_value_relation_and_size": 219
+  },
+  "structural_change": "Existing23valuebasis cannotrepresent Central/MiddleEast priceequality at35 whilekeepingstrictsmall advantages at25/30. Addedone sharedmaturity/darkness interaction expandedacross9provenances (32valuecoefficients),training-only exactequalities,oldercore monotonicity andgold/pale130identity. Conditionalregionmaturity feature uses effectivegoldshade forpale at130. Premiumhead14features unchanged,refit onv31 labels; legacyreferenceencoder retained inbestrefit.",
+  "conflicts_file": "v31-equality-conflicts.json",
+  "direct_conflict_count": 2,
+  "handling": "Newreview exactties andstrictdirections protected intraining. Oldercontradictory preferences retained assofttargets andflagged; no silent relabeling.",
+  "interpretation": [
+    "All18review judgments fit in-sample on their suppliedaxes:17complete relation/size judgments pluscase11size-only; all3exactties are numericalequalities,not practicalbands.",
+    "None ofthe3exactties isrecovered withitsfamily heldout. Exactprice equality hasnotgeneralized; fittingknownconstraints isnotfreshaccuracy.",
+    "Frozenv30candidate scores87.95%on revisedv31 labels. Its increase reflects revisedtargets/metricdefinition,not improvedweights orfreshvalidation.",
+    "Bestrefit85.30%isapproximatelyv28 85.11%,butbelowfrozenv30candidate87.95%. No refitpromotion.",
+    "Initialprovisional runs were rejected because the newweaknessfeature hadnot carriedthrough the130lb gold/pale equivalence; allreported results usecorrectedfeatures andfreshcaches."
+  ],
+  "tests_passed": 59,
+  "runtime_verification": {
+    "domain_offerings": 1250,
+    "reference_pair_checks": 1640,
+    "equality_clusters_consistent": true,
+    "full_exact_constraints": 3
+  },
+  "qualification": "Same25reusedfamily folds. Mainmetric includes exactprice relations andmeaningfulness over219cases,so not directlycomparable toolder220-case strict-direction metrics. No near-tie band creditedas equality. Architecturechoice andreview informed byexistingerrors; exploratory,not prospective. Frozenbaseline files/evidencev30 preserved.",
+  "source_hashes": {
+    "evidence-v31.json": "a55bcb7fe6586c2503916fb8c97b4d4f27a6642c932660248da31f7c2c298ace",
+    "benchmark-targets-v31.json": "7173f949f241fb9a14374bbdc7e14f70da48e0a8ea2306e5ce942369513a35a7",
+    "round57-consistent-misses-review.json": "ef3b26d40cabeb359780866486cc6dc634fe4816ca2f93070f5922c0a050d29f",
+    "evidence-v30.json": "3c659e9756b1ea612210a61bc9bae730a82bb5b845131508c218466ab91efd22",
+    "model-config-v28.json": "a9fed8e86977526c16e74ccdb0a6a75d919b3041bd602e5592d64e3086414dcf",
+    "predictor_v28.py": "c572cb63d47b531607efc66be1c65890b854d2f5a5087286858c25611191b7e3",
+    "predictor_v27.py": "293307f98d4c2434bfbbea8a73341a3522601604535647f3a7a6b0103b23f2ed",
+    "rank-soft-order-frozen-premium-config-v30.json": "727a0cad0c6524bc08c5a923587d5680b3c57ba7262180b2cdda1b81fffea356",
+    "predictor_rank_soft_order_v30.py": "3e5ab7717daab708b14e59354af15d807cc45fbd98233f94868087eacbd2e845",
+    "v31-refit-validation.json": "aa61addf5c75172df5c8a6cc3b8d2f2ca43ec82bd597b8d1c2ca283ddaa389de",
+    "v31-anchored-validation.json": "2d5cd028a41e688477c02f16a17047d9b49592d660da591e04b42c63e5673cb9",
+    "predictor_v31.py": "7f8a69971bc59ead55d1bf58ff3a67e92a6a98b5f11077d64f7237b7ac34a0a6",
+    "model-config-v31.json": "1f037f394fc0f1fa68c211d42eceab3506507ee881f485719c340b5e6042b583",
+    "test_evidence_refit_v31.py": "8ecd6b45a5bcc8b3d581bcb35fb62bb96c7cfd65c27f1a1188d79f7236dac779",
+    "v31-equality-conflicts.json": "ce31a5d4f58948ffd3cc595c54295bb365909404004e8c8a33f21eb5046e31df"
+  }
+}

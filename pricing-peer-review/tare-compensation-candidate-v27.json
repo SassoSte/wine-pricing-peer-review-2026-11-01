@@ -1,0 +1,42 @@
+{
+  "model": {
+    "kind": "matched_vintage_tare_compensation",
+    "coefficients": [
+      0.49970500000000473,
+      -0.5002549999999953,
+      -0.5002649999999953,
+      -0.9999899999999983,
+      0.0005099999999841343,
+      0.0013099999999579054,
+      8.999999999581565e-05,
+      0.0008399999999730845,
+      0.0013199999999574663,
+      1.5002249999999924,
+      1e-05,
+      0.000249999999992756,
+      0.4997450000000079,
+      0.5003849999999916,
+      1.0001399999999991,
+      2.0002199999999917,
+      1.0001999999999915,
+      0.5002449999999922,
+      0.999370000000015,
+      0.500114999999991
+    ],
+    "decision_radius": 1.0,
+    "protected_training_ids": [
+      "round49-2",
+      "round49-17",
+      "round50-4"
+    ],
+    "solver_status": 0,
+    "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "mip_gap": 0.0,
+    "objective": 0.02959490029063471,
+    "time_limit_seconds": 12.0,
+    "solver_tolerance_met": true,
+    "exact_optimum_proven": true
+  },
+  "promoted": false,
+  "validation_file": "tare-compensation-validation-v27.json"
+}

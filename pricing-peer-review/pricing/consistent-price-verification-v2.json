@@ -1,0 +1,53 @@
+{
+  "status": "refined_curve_verified",
+  "source_config_sha256": "5a12e1614975de7b0d390b42b8a00db0b4eed5658ae8322f0486902ffd968fb1",
+  "tests_passed": 14,
+  "new_layer_tests": 8,
+  "prior_layer_tests": 6,
+  "formula_count": 6294,
+  "formula_errors": 0,
+  "all1250spreadsheetprices_match_runtime": true,
+  "judgments": [
+    {
+      "id": "ne-amber-35-120",
+      "offering": [
+        "northeast",
+        "amber",
+        35,
+        120
+      ],
+      "type": "approximate_center",
+      "target": 450.0,
+      "price_usd": 449.99999999999994
+    },
+    {
+      "id": "ne-brown-40-130",
+      "offering": [
+        "northeast",
+        "brown",
+        40,
+        130
+      ],
+      "type": "upper_bound",
+      "target": 300.0,
+      "price_usd": 299.99999999999994
+    }
+  ],
+  "preserved": {
+    "supplied_anchors": 4,
+    "all_regional_anchor_values": 10,
+    "prior_calibrated_knots": 5,
+    "previous_accepted_fit_prices": 10,
+    "previous_in_span_prices": 230
+  },
+  "validation_scope": "Newexpertjudgments usedforcalibration,notindependenttest.300ceiling endpoint notverifiedcostfloor. Sharedcurve appliedtootherregions assumptively.",
+  "checks": {
+    "finite_positive_prices": 1250,
+    "adjacent_monotonic_checks": 3000,
+    "reference_independence_checks": 3750,
+    "prior_in_span_prices_unchanged": 230,
+    "accepted_model_prices_preserved": 10,
+    "current_grid_extrapolations": 0,
+    "non_NE_low_end_transfer_profiles": 918
+  }
+}

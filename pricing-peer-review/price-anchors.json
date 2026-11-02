@@ -1,0 +1,32 @@
+{
+  "status": "first anchor answered qualitatively; do not force a numerical premium",
+  "units": "reference value units; no currency or monetary calibration implied",
+  "purpose": "Quantify magnitude of an already settled preference, not re-ask the direction. No model update from an unanswered anchor.",
+  "questions": [
+    {
+      "id": "anchor-1",
+      "source_comparison": "round35-3",
+      "reference_offering": [
+        "northwest",
+        "golden",
+        30,
+        110
+      ],
+      "reference_value": 100,
+      "offering_to_value": [
+        "northwest",
+        "golden",
+        20,
+        130
+      ],
+      "question": "With the reference offering valued at100 units, what value would you assign to the20-year,130 lb offering?",
+      "raw_answer": "very very close.",
+      "value": null,
+      "status": "qualitative answer recorded; no numeric value assigned",
+      "materiality": "no_meaningful_difference",
+      "direction": "A",
+      "direction_basis": "Retain earlier round35-3 A preference; current response supplies closeness, not a new winner.",
+      "interpretation": "Practical similarity in the established response semantics. No percentage, currency amount or exact equality inferred."
+    }
+  ]
+}

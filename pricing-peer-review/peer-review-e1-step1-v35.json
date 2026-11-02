@@ -1,0 +1,986 @@
+{
+  "experiment": "E1 step 1: three-zone premium output on frozen V28 score; no weights fitted",
+  "protocol": "Zone = slight if |score|<lo, borderline if lo<=|score|<hi, meaningful if |score|>=hi. Section A uses the band [0.9,1.5) chosen by inspection in the review (in-sample, optimistic). Section C selects (lo,hi) on the training rows of the 25 saved v35 family folds (premium-winning-gap-validation-v35.json), maximising outside-band accuracy subject to a band-share cap, then scores validation rows; V28 margins are in-sample for 620 of 655 rows, so C is conditional calibration, as in the project protocol. Section D applies the fixed band to V28 nested-CV held-out margins (620 rows) under v28 and v35 labels. Direction outputs are unchanged by construction.",
+  "source_hashes": {
+    "evidence-v35.json": "e43ef0ba4dcb4a2bee056a34685056cb703f621cf32d275cdc905f476a263dd3",
+    "benchmark-targets-v35.json": "36550003f17f7b1b20123f2ae26a945a8ad0e7d102209303542df2189ee86ba6",
+    "model-config-v28.json": "a9fed8e86977526c16e74ccdb0a6a75d919b3041bd602e5592d64e3086414dcf",
+    "predictor_v27.py": "293307f98d4c2434bfbbea8a73341a3522601604535647f3a7a6b0103b23f2ed",
+    "premium-winning-gap-validation-v35.json": "31b74328ef72bfa1bda2cd3a015d5ddf28d4697284c15b4b4c9b7c0cb296fd1c",
+    "tare-refit-validation-v28.json": "570fa9ad6d6e0761e8099ec3d34f9c1dcc608169b3632cf5dd6a7180ff2b5e9b",
+    "benchmark-targets-v28.json": "41a6558c7360c2827919b87ad60e2144945f14f11021f8c9cc53c31cadf00efd"
+  },
+  "A_fixed_band_full_v35": {
+    "band": [
+      0.9,
+      1.5
+    ],
+    "all_413": {
+      "n": 413,
+      "band_n": 54,
+      "band_share": 0.1308,
+      "outside_n": 359,
+      "outside_correct": 344,
+      "outside_acc": 0.9582,
+      "false_premiums": 0,
+      "missed_premiums": 15,
+      "band_label_meaningful": 30,
+      "band_label_not": 24,
+      "two_zone_acc_same_rows": 0.9395
+    },
+    "explicit_245": {
+      "n": 245,
+      "band_n": 42,
+      "band_share": 0.1714,
+      "outside_n": 203,
+      "outside_correct": 190,
+      "outside_acc": 0.936,
+      "false_premiums": 0,
+      "missed_premiums": 13,
+      "band_label_meaningful": 25,
+      "band_label_not": 17,
+      "two_zone_acc_same_rows": 0.9224
+    },
+    "post_v28_35": {
+      "n": 35,
+      "band_n": 7,
+      "band_share": 0.2,
+      "outside_n": 28,
+      "outside_correct": 21,
+      "outside_acc": 0.75,
+      "false_premiums": 0,
+      "missed_premiums": 7,
+      "band_label_meaningful": 1,
+      "band_label_not": 6,
+      "two_zone_acc_same_rows": 0.7429
+    },
+    "post_v28_nonpilot_23": {
+      "n": 23,
+      "band_n": 5,
+      "band_share": 0.2174,
+      "outside_n": 18,
+      "outside_correct": 12,
+      "outside_acc": 0.6667,
+      "false_premiums": 0,
+      "missed_premiums": 6,
+      "band_label_meaningful": 1,
+      "band_label_not": 4,
+      "two_zone_acc_same_rows": 0.7391
+    },
+    "pilot_12": {
+      "n": 12,
+      "band_n": 2,
+      "band_share": 0.1667,
+      "outside_n": 10,
+      "outside_correct": 9,
+      "outside_acc": 0.9,
+      "false_premiums": 0,
+      "missed_premiums": 1,
+      "band_label_meaningful": 0,
+      "band_label_not": 2,
+      "two_zone_acc_same_rows": 0.75
+    }
+  },
+  "B_band_sweep_full_v35": [
+    {
+      "lo": 0.7,
+      "hi": 1.1,
+      "band_share": 0.1114,
+      "outside_acc": 0.951,
+      "false_premiums": 3,
+      "missed_premiums": 15
+    },
+    {
+      "lo": 0.7,
+      "hi": 1.3,
+      "band_share": 0.1235,
+      "outside_acc": 0.9503,
+      "false_premiums": 3,
+      "missed_premiums": 15
+    },
+    {
+      "lo": 0.7,
+      "hi": 1.5,
+      "band_share": 0.1525,
+      "outside_acc": 0.9571,
+      "false_premiums": 0,
+      "missed_premiums": 15
+    },
+    {
+      "lo": 0.7,
+      "hi": 1.7,
+      "band_share": 0.2203,
+      "outside_acc": 0.9534,
+      "false_premiums": 0,
+      "missed_premiums": 15
+    },
+    {
+      "lo": 0.7,
+      "hi": 2.0,
+      "band_share": 0.3123,
+      "outside_acc": 0.9472,
+      "false_premiums": 0,
+      "missed_premiums": 15
+    },
+    {
+      "lo": 0.8,
+      "hi": 1.1,
+      "band_share": 0.0944,
+      "outside_acc": 0.9519,
+      "false_premiums": 3,
+      "missed_premiums": 15
+    },
+    {
+      "lo": 0.8,
+      "hi": 1.3,
+      "band_share": 0.1065,
+      "outside_acc": 0.9512,
+      "false_premiums": 3,
+      "missed_premiums": 15
+    },
+    {
+      "lo": 0.8,
+      "hi": 1.5,
+      "band_share": 0.1356,
+      "outside_acc": 0.958,
+      "false_premiums": 0,
+      "missed_premiums": 15
+    },
+    {
+      "lo": 0.8,
+      "hi": 1.7,
+      "band_share": 0.2034,
+      "outside_acc": 0.9544,
+      "false_premiums": 0,
+      "missed_premiums": 15
+    },
+    {
+      "lo": 0.8,
+      "hi": 2.0,
+      "band_share": 0.2954,
+      "outside_acc": 0.9485,
+      "false_premiums": 0,
+      "missed_premiums": 15
+    },
+    {
+      "lo": 0.9,
+      "hi": 1.1,
+      "band_share": 0.0896,
+      "outside_acc": 0.9521,
+      "false_premiums": 3,
+      "missed_premiums": 15
+    },
+    {
+      "lo": 0.9,
+      "hi": 1.3,
+      "band_share": 0.1017,
+      "outside_acc": 0.9515,
+      "false_premiums": 3,
+      "missed_premiums": 15
+    },
+    {
+      "lo": 0.9,
+      "hi": 1.5,
+      "band_share": 0.1308,
+      "outside_acc": 0.9582,
+      "false_premiums": 0,
+      "missed_premiums": 15
+    },
+    {
+      "lo": 0.9,
+      "hi": 1.7,
+      "band_share": 0.1985,
+      "outside_acc": 0.9547,
+      "false_premiums": 0,
+      "missed_premiums": 15
+    },
+    {
+      "lo": 0.9,
+      "hi": 2.0,
+      "band_share": 0.2906,
+      "outside_acc": 0.9488,
+      "false_premiums": 0,
+      "missed_premiums": 15
+    },
+    {
+      "lo": 0.95,
+      "hi": 1.1,
+      "band_share": 0.0775,
+      "outside_acc": 0.9528,
+      "false_premiums": 3,
+      "missed_premiums": 15
+    },
+    {
+      "lo": 0.95,
+      "hi": 1.3,
+      "band_share": 0.0896,
+      "outside_acc": 0.9521,
+      "false_premiums": 3,
+      "missed_premiums": 15
+    },
+    {
+      "lo": 0.95,
+      "hi": 1.5,
+      "band_share": 0.1186,
+      "outside_acc": 0.9588,
+      "false_premiums": 0,
+      "missed_premiums": 15
+    },
+    {
+      "lo": 0.95,
+      "hi": 1.7,
+      "band_share": 0.1864,
+      "outside_acc": 0.9554,
+      "false_premiums": 0,
+      "missed_premiums": 15
+    },
+    {
+      "lo": 0.95,
+      "hi": 2.0,
+      "band_share": 0.2785,
+      "outside_acc": 0.9497,
+      "false_premiums": 0,
+      "missed_premiums": 15
+    },
+    {
+      "lo": 1.0,
+      "hi": 1.1,
+      "band_share": 0.0557,
+      "outside_acc": 0.9538,
+      "false_premiums": 3,
+      "missed_premiums": 15
+    },
+    {
+      "lo": 1.0,
+      "hi": 1.3,
+      "band_share": 0.0678,
+      "outside_acc": 0.9532,
+      "false_premiums": 3,
+      "missed_premiums": 15
+    },
+    {
+      "lo": 1.0,
+      "hi": 1.5,
+      "band_share": 0.0969,
+      "outside_acc": 0.9598,
+      "false_premiums": 0,
+      "missed_premiums": 15
+    },
+    {
+      "lo": 1.0,
+      "hi": 1.7,
+      "band_share": 0.1646,
+      "outside_acc": 0.9565,
+      "false_premiums": 0,
+      "missed_premiums": 15
+    },
+    {
+      "lo": 1.0,
+      "hi": 2.0,
+      "band_share": 0.2567,
+      "outside_acc": 0.9511,
+      "false_premiums": 0,
+      "missed_premiums": 15
+    }
+  ],
+  "C_training_fold_selected_band": {
+    "cap_0.1": {
+      "per_seed": [
+        {
+          "seed": 11,
+          "bands": [
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.1
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.1
+            ]
+          ],
+          "band_share": 0.0896,
+          "outside_acc": 0.9574,
+          "false_premiums": 1,
+          "missed_premiums": 15,
+          "band_n": 37,
+          "explicit_outside_acc": 0.9395,
+          "explicit_band_share": 0.1224
+        },
+        {
+          "seed": 29,
+          "bands": [
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.1
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.1
+            ]
+          ],
+          "band_share": 0.0896,
+          "outside_acc": 0.9601,
+          "false_premiums": 0,
+          "missed_premiums": 15,
+          "band_n": 37,
+          "explicit_outside_acc": 0.9401,
+          "explicit_band_share": 0.1143
+        },
+        {
+          "seed": 47,
+          "bands": [
+            [
+              1.0,
+              1.1
+            ],
+            [
+              1.0,
+              1.1
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.1
+            ]
+          ],
+          "band_share": 0.0775,
+          "outside_acc": 0.958,
+          "false_premiums": 1,
+          "missed_premiums": 15,
+          "band_n": 32,
+          "explicit_outside_acc": 0.9409,
+          "explicit_band_share": 0.102
+        },
+        {
+          "seed": 71,
+          "bands": [
+            [
+              1.0,
+              1.1
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.1
+            ]
+          ],
+          "band_share": 0.0896,
+          "outside_acc": 0.9574,
+          "false_premiums": 1,
+          "missed_premiums": 15,
+          "band_n": 37,
+          "explicit_outside_acc": 0.9398,
+          "explicit_band_share": 0.1184
+        },
+        {
+          "seed": 103,
+          "bands": [
+            [
+              1.0,
+              1.1
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.1
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ]
+          ],
+          "band_share": 0.0896,
+          "outside_acc": 0.9601,
+          "false_premiums": 0,
+          "missed_premiums": 15,
+          "band_n": 37,
+          "explicit_outside_acc": 0.9398,
+          "explicit_band_share": 0.1184
+        }
+      ],
+      "mean": {
+        "band_share": 0.0872,
+        "outside_acc": 0.9586,
+        "false_premiums": 0.6,
+        "missed_premiums": 15.0,
+        "explicit_outside_acc": 0.94,
+        "explicit_band_share": 0.1151
+      }
+    },
+    "cap_0.15": {
+      "per_seed": [
+        {
+          "seed": 11,
+          "bands": [
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ]
+          ],
+          "band_share": 0.0969,
+          "outside_acc": 0.9598,
+          "false_premiums": 0,
+          "missed_premiums": 15,
+          "band_n": 40,
+          "explicit_outside_acc": 0.9393,
+          "explicit_band_share": 0.1265
+        },
+        {
+          "seed": 29,
+          "bands": [
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ]
+          ],
+          "band_share": 0.0969,
+          "outside_acc": 0.9598,
+          "false_premiums": 0,
+          "missed_premiums": 15,
+          "band_n": 40,
+          "explicit_outside_acc": 0.9393,
+          "explicit_band_share": 0.1265
+        },
+        {
+          "seed": 47,
+          "bands": [
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ]
+          ],
+          "band_share": 0.0969,
+          "outside_acc": 0.9598,
+          "false_premiums": 0,
+          "missed_premiums": 15,
+          "band_n": 40,
+          "explicit_outside_acc": 0.9393,
+          "explicit_band_share": 0.1265
+        },
+        {
+          "seed": 71,
+          "bands": [
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ]
+          ],
+          "band_share": 0.0969,
+          "outside_acc": 0.9598,
+          "false_premiums": 0,
+          "missed_premiums": 15,
+          "band_n": 40,
+          "explicit_outside_acc": 0.9393,
+          "explicit_band_share": 0.1265
+        },
+        {
+          "seed": 103,
+          "bands": [
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ]
+          ],
+          "band_share": 0.0969,
+          "outside_acc": 0.9598,
+          "false_premiums": 0,
+          "missed_premiums": 15,
+          "band_n": 40,
+          "explicit_outside_acc": 0.9393,
+          "explicit_band_share": 0.1265
+        }
+      ],
+      "mean": {
+        "band_share": 0.0969,
+        "outside_acc": 0.9598,
+        "false_premiums": 0.0,
+        "missed_premiums": 15.0,
+        "explicit_outside_acc": 0.9393,
+        "explicit_band_share": 0.1265
+      }
+    },
+    "cap_0.2": {
+      "per_seed": [
+        {
+          "seed": 11,
+          "bands": [
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ]
+          ],
+          "band_share": 0.0969,
+          "outside_acc": 0.9598,
+          "false_premiums": 0,
+          "missed_premiums": 15,
+          "band_n": 40,
+          "explicit_outside_acc": 0.9393,
+          "explicit_band_share": 0.1265
+        },
+        {
+          "seed": 29,
+          "bands": [
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ]
+          ],
+          "band_share": 0.0969,
+          "outside_acc": 0.9598,
+          "false_premiums": 0,
+          "missed_premiums": 15,
+          "band_n": 40,
+          "explicit_outside_acc": 0.9393,
+          "explicit_band_share": 0.1265
+        },
+        {
+          "seed": 47,
+          "bands": [
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ]
+          ],
+          "band_share": 0.0969,
+          "outside_acc": 0.9598,
+          "false_premiums": 0,
+          "missed_premiums": 15,
+          "band_n": 40,
+          "explicit_outside_acc": 0.9393,
+          "explicit_band_share": 0.1265
+        },
+        {
+          "seed": 71,
+          "bands": [
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ]
+          ],
+          "band_share": 0.0969,
+          "outside_acc": 0.9598,
+          "false_premiums": 0,
+          "missed_premiums": 15,
+          "band_n": 40,
+          "explicit_outside_acc": 0.9393,
+          "explicit_band_share": 0.1265
+        },
+        {
+          "seed": 103,
+          "bands": [
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ],
+            [
+              1.0,
+              1.5
+            ]
+          ],
+          "band_share": 0.0969,
+          "outside_acc": 0.9598,
+          "false_premiums": 0,
+          "missed_premiums": 15,
+          "band_n": 40,
+          "explicit_outside_acc": 0.9393,
+          "explicit_band_share": 0.1265
+        }
+      ],
+      "mean": {
+        "band_share": 0.0969,
+        "outside_acc": 0.9598,
+        "false_premiums": 0.0,
+        "missed_premiums": 15.0,
+        "explicit_outside_acc": 0.9393,
+        "explicit_band_share": 0.1265
+      }
+    }
+  },
+  "D_v28_nested_cv_heldout_margins": {
+    "v28_labels": {
+      "per_seed": [
+        {
+          "n": 376,
+          "band_n": 52,
+          "band_share": 0.1383,
+          "outside_n": 324,
+          "outside_correct": 310,
+          "outside_acc": 0.9568,
+          "false_premiums": 3,
+          "missed_premiums": 11,
+          "band_label_meaningful": 38,
+          "band_label_not": 14,
+          "two_zone_acc_same_rows": 0.9282
+        },
+        {
+          "n": 376,
+          "band_n": 58,
+          "band_share": 0.1543,
+          "outside_n": 318,
+          "outside_correct": 308,
+          "outside_acc": 0.9686,
+          "false_premiums": 1,
+          "missed_premiums": 9,
+          "band_label_meaningful": 43,
+          "band_label_not": 15,
+          "two_zone_acc_same_rows": 0.9335
+        },
+        {
+          "n": 376,
+          "band_n": 48,
+          "band_share": 0.1277,
+          "outside_n": 328,
+          "outside_correct": 311,
+          "outside_acc": 0.9482,
+          "false_premiums": 2,
+          "missed_premiums": 15,
+          "band_label_meaningful": 30,
+          "band_label_not": 18,
+          "two_zone_acc_same_rows": 0.9176
+        },
+        {
+          "n": 376,
+          "band_n": 49,
+          "band_share": 0.1303,
+          "outside_n": 327,
+          "outside_correct": 315,
+          "outside_acc": 0.9633,
+          "false_premiums": 3,
+          "missed_premiums": 9,
+          "band_label_meaningful": 30,
+          "band_label_not": 19,
+          "two_zone_acc_same_rows": 0.9388
+        },
+        {
+          "n": 376,
+          "band_n": 53,
+          "band_share": 0.141,
+          "outside_n": 323,
+          "outside_correct": 308,
+          "outside_acc": 0.9536,
+          "false_premiums": 1,
+          "missed_premiums": 14,
+          "band_label_meaningful": 37,
+          "band_label_not": 16,
+          "two_zone_acc_same_rows": 0.9282
+        }
+      ],
+      "mean": {
+        "band_share": 0.1383,
+        "outside_acc": 0.9581,
+        "false_premiums": 2.0,
+        "missed_premiums": 11.6,
+        "two_zone_acc_same_rows": 0.9293
+      }
+    },
+    "v35_labels": {
+      "per_seed": [
+        {
+          "n": 378,
+          "band_n": 52,
+          "band_share": 0.1376,
+          "outside_n": 326,
+          "outside_correct": 313,
+          "outside_acc": 0.9601,
+          "false_premiums": 3,
+          "missed_premiums": 10,
+          "band_label_meaningful": 34,
+          "band_label_not": 18,
+          "two_zone_acc_same_rows": 0.9206
+        },
+        {
+          "n": 378,
+          "band_n": 58,
+          "band_share": 0.1534,
+          "outside_n": 320,
+          "outside_correct": 312,
+          "outside_acc": 0.975,
+          "false_premiums": 1,
+          "missed_premiums": 7,
+          "band_label_meaningful": 40,
+          "band_label_not": 18,
+          "two_zone_acc_same_rows": 0.9524
+        },
+        {
+          "n": 378,
+          "band_n": 48,
+          "band_share": 0.127,
+          "outside_n": 330,
+          "outside_correct": 319,
+          "outside_acc": 0.9667,
+          "false_premiums": 2,
+          "missed_premiums": 9,
+          "band_label_meaningful": 31,
+          "band_label_not": 17,
+          "two_zone_acc_same_rows": 0.9365
+        },
+        {
+          "n": 378,
+          "band_n": 50,
+          "band_share": 0.1323,
+          "outside_n": 328,
+          "outside_correct": 319,
+          "outside_acc": 0.9726,
+          "false_premiums": 2,
+          "missed_premiums": 7,
+          "band_label_meaningful": 26,
+          "band_label_not": 24,
+          "two_zone_acc_same_rows": 0.9365
+        },
+        {
+          "n": 378,
+          "band_n": 53,
+          "band_share": 0.1402,
+          "outside_n": 325,
+          "outside_correct": 316,
+          "outside_acc": 0.9723,
+          "false_premiums": 1,
+          "missed_premiums": 8,
+          "band_label_meaningful": 38,
+          "band_label_not": 15,
+          "two_zone_acc_same_rows": 0.9471
+        }
+      ],
+      "mean": {
+        "band_share": 0.1381,
+        "outside_acc": 0.9693,
+        "false_premiums": 1.8,
+        "missed_premiums": 8.2,
+        "two_zone_acc_same_rows": 0.9386
+      }
+    }
+  },
+  "E_protected_behaviours": {
+    "direction_outputs_changed": 0,
+    "pure_5lb_rows_in_evidence": {
+      "slight": 53
+    },
+    "exact_ties": {
+      "round42-12": "slight",
+      "round50-9": "slight",
+      "round54-11": "slight"
+    },
+    "pilot_cases": {
+      "combined-pilot-v34-4": {
+        "score": -1.3077,
+        "zone": "borderline",
+        "label": "slight"
+      },
+      "combined-pilot-v34-6": {
+        "score": 1.0769,
+        "zone": "borderline",
+        "label": "slight"
+      },
+      "combined-pilot-v34-9": {
+        "score": 0.3078,
+        "zone": "slight",
+        "label": "meaningful"
+      }
+    }
+  }
+}

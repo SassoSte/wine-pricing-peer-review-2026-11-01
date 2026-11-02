@@ -1,0 +1,68 @@
+{
+  "source_question_ids": [
+    "round50-1",
+    "round50-2",
+    "round50-3",
+    "round50-4",
+    "round50-5",
+    "round50-6",
+    "round50-7"
+  ],
+  "active_judgments": [
+    [
+      "round50-1",
+      "A",
+      "no_meaningful_difference"
+    ],
+    [
+      "round50-2",
+      "B",
+      "no_meaningful_difference"
+    ],
+    [
+      "round50-3",
+      "A",
+      "no_meaningful_difference"
+    ],
+    [
+      "round50-4",
+      "A",
+      "no_meaningful_difference"
+    ],
+    [
+      "round50-5",
+      "B",
+      "no_meaningful_difference"
+    ],
+    [
+      "round50-6",
+      "B",
+      "meaningful_difference"
+    ],
+    [
+      "round50-7",
+      "A",
+      "no_meaningful_difference"
+    ]
+  ],
+  "diagnosis": "All seven active judgments are compatible with a locally additive set of positive provenance,shade,vintage,tare contributions. No algebraic contradiction or requirement to set small premiums to zero. This does not prove global additivity or identify unique weights.",
+  "variables": [
+    "WesternEurope provenance over South/EasternAsia",
+    "pale over copper",
+    "20years over25years",
+    "120lb over125lb"
+  ],
+  "conditions": [
+    "0 < P+T-S-V < meaningful boundary",
+    "0 < S+V-P < meaningful boundary",
+    "0 < P-S < meaningful boundary",
+    "0 < P < meaningful boundary",
+    "0 < S < meaningful boundary",
+    "V > meaningful boundary",
+    "0 < T < meaningful boundary"
+  ],
+  "feasible": true,
+  "normalization": "Boundary1 and strictness.01 are feasibility-test conventions, not elicited prices or parameter estimates. No witness used to modify model.",
+  "retracted_answer_excluded": "round50-4 initial meaningful answer explicitly retracted; active answer A/practical.",
+  "models_changed": false
+}

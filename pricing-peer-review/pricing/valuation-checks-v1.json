@@ -1,0 +1,151 @@
+{
+  "status": "six_near_anchor_plausibility_checks_complete",
+  "protocol": "Expert plausibility checks after model-derived price disclosure. Not independent observed sales or blind pricing validation. Keep separate from initial-release anchors. V28 unchanged.",
+  "checks": [
+    {
+      "id": "ne-pale-20-115",
+      "offering": [
+        "northeast",
+        "pale/straw",
+        20,
+        115
+      ],
+      "proposed_price": 1030,
+      "currency": "USD",
+      "price_covers": "entire filled cask",
+      "comparison_anchor": "D-NEP20T10",
+      "assumptions": [
+        "same seat-origin/batch status",
+        "same volume",
+        "mint",
+        "same release period and comparable distributor terms",
+        "fees/taxes/delivery excluded"
+      ],
+      "raw_answer": "Yes.",
+      "assessment": "User accepts proposed amount as plausible. Not a separately observed transaction or independently supplied exact valuation.",
+      "proposal_source": "endpoint-price-test-v1.json",
+      "proposal_source_sha256": "9e7a5e0eef2c915c7108d9a1448a1762b8e8fbac9c67a011801682ad166c97a1"
+    },
+    {
+      "id": "ne-pale-25-110",
+      "offering": [
+        "northeast",
+        "pale/straw",
+        25,
+        110
+      ],
+      "proposed_price": 940,
+      "currency": "USD",
+      "price_covers": "entire filled cask",
+      "comparison_anchor": "D-NEP20T10",
+      "assumptions": [
+        "same seat-origin/batch status",
+        "same volume",
+        "mint",
+        "same release period and comparable distributor terms",
+        "fees/taxes/delivery excluded"
+      ],
+      "raw_answer": "Yes.",
+      "assessment": "User accepts disclosed model-derived amount as plausible; not an independent transaction or blind validation.",
+      "proposal_source": "endpoint-price-test-v1.json",
+      "proposal_source_sha256": "9e7a5e0eef2c915c7108d9a1448a1762b8e8fbac9c67a011801682ad166c97a1"
+    },
+    {
+      "id": "ne-golden-20-110",
+      "offering": [
+        "northeast",
+        "golden",
+        20,
+        110
+      ],
+      "proposed_price": 1090,
+      "currency": "USD",
+      "price_covers": "entire filled cask",
+      "comparison_anchor": "D-NEP20T10",
+      "assumptions": [
+        "same seat-origin/batch status",
+        "same volume",
+        "mint",
+        "same release period and comparable distributor terms",
+        "fees/taxes/delivery excluded"
+      ],
+      "raw_answer": "Yes.",
+      "assessment": "User accepts disclosed model-derived amount as plausible; not an independent transaction or blind validation.",
+      "proposal_source": "endpoint-price-test-v1.json",
+      "proposal_source_sha256": "9e7a5e0eef2c915c7108d9a1448a1762b8e8fbac9c67a011801682ad166c97a1"
+    },
+    {
+      "id": "nw-pale-20-115",
+      "offering": [
+        "northwest",
+        "pale/straw",
+        20,
+        115
+      ],
+      "proposed_price": 930,
+      "currency": "USD",
+      "price_covers": "entire filled cask",
+      "comparison_anchor": "D-NWP20T10",
+      "assumptions": [
+        "same seat-origin/batch status",
+        "same volume",
+        "mint",
+        "same release period and comparable distributor terms",
+        "fees/taxes/delivery excluded"
+      ],
+      "raw_answer": "Yes.",
+      "assessment": "User accepts disclosed model-derived amount as plausible; not an independent transaction or blind validation.",
+      "proposal_source": "endpoint-price-test-v1.json",
+      "proposal_source_sha256": "9e7a5e0eef2c915c7108d9a1448a1762b8e8fbac9c67a011801682ad166c97a1"
+    },
+    {
+      "id": "nw-pale-25-110",
+      "offering": [
+        "northwest",
+        "pale/straw",
+        25,
+        110
+      ],
+      "proposed_price": 840,
+      "currency": "USD",
+      "price_covers": "entire filled cask",
+      "comparison_anchor": "D-NWP20T10",
+      "assumptions": [
+        "same seat-origin/batch status",
+        "same volume",
+        "mint",
+        "same release period and comparable distributor terms",
+        "fees/taxes/delivery excluded"
+      ],
+      "raw_answer": "Yes.",
+      "assessment": "User accepts disclosed model-derived amount as plausible; not an independent transaction or blind validation.",
+      "proposal_source": "endpoint-price-test-v1.json",
+      "proposal_source_sha256": "9e7a5e0eef2c915c7108d9a1448a1762b8e8fbac9c67a011801682ad166c97a1"
+    },
+    {
+      "id": "nw-golden-20-110",
+      "offering": [
+        "northwest",
+        "golden",
+        20,
+        110
+      ],
+      "proposed_price": 990,
+      "currency": "USD",
+      "price_covers": "entire filled cask",
+      "comparison_anchor": "D-NWP20T10",
+      "assumptions": [
+        "same seat-origin/batch status",
+        "same volume",
+        "mint",
+        "same release period and comparable distributor terms",
+        "fees/taxes/delivery excluded"
+      ],
+      "raw_answer": "Yes.",
+      "assessment": "User accepts disclosed model-derived amount as plausible; not an independent transaction or blind validation.",
+      "proposal_source": "endpoint-price-test-v1.json",
+      "proposal_source_sha256": "9e7a5e0eef2c915c7108d9a1448a1762b8e8fbac9c67a011801682ad166c97a1"
+    }
+  ],
+  "next_check": null
+}

@@ -1,0 +1,101 @@
+{
+  "status": "two_low_end_judgments_with_near_ceiling_clarification_no_refit",
+  "protocol": "Existing canonicalpricingconfig and3tail scenarios frozen. Ask expert range before revealing prices for this specificprofile. Not a transaction unless explicitlyprovided asone. No automaticfit fromanswer.",
+  "checks": [
+    {
+      "id": "ne-amber-35-120",
+      "offering": [
+        "northeast",
+        "amber",
+        35,
+        120
+      ],
+      "price_basis": "wholefilledcask; same seat-origin reference status,volume,mintcondition,initialrelease/distributorterms;fees/taxes/deliveryexcluded",
+      "status": "answered_before_specific_prediction_disclosure",
+      "frozen_scenario_prices": {
+        "current_exponential": 305.15674676841763,
+        "slower_tail": 401.5483303354063,
+        "slowest_tested_tail": 458.5838557307929
+      },
+      "source_sha256": "a0d503ca8c8d43c4b9863b3092a32341fe362a66637d254a8cb2089c90189a12",
+      "raw_answer": "I'd say around US$450 range",
+      "expert_estimate": {
+        "amount": 450,
+        "currency": "USD",
+        "precision": "approximate center; no numerical interval endpoints supplied"
+      },
+      "comparison": {
+        "current_exponential": {
+          "estimate": 305.15674676841763,
+          "difference_from_450": -144.84325323158237,
+          "absolute_percent_difference": 32.187389607018304
+        },
+        "slower_tail": {
+          "estimate": 401.5483303354063,
+          "difference_from_450": -48.45166966459368,
+          "absolute_percent_difference": 10.76703770324304
+        },
+        "slowest_tested_tail": {
+          "estimate": 458.5838557307929,
+          "difference_from_450": 8.58385573079289,
+          "absolute_percent_difference": 1.9075234957317535
+        }
+      },
+      "qualification": "Expert valuation before this profile\u2019s predictions were shown; other low-end scenario examples had been disclosed. Not an observed sale or sufficient evidence to select a tail globally."
+    },
+    {
+      "id": "ne-brown-40-130",
+      "offering": [
+        "northeast",
+        "brown",
+        40,
+        130
+      ],
+      "price_basis": "wholefilledcask; same seat-origin reference status,volume,mintcondition,initialrelease/distributorterms;fees/taxes/deliveryexcluded",
+      "status": "upper_bound_recorded_after_prior_scenario_disclosure",
+      "raw_answer": "I can't imagine paying more than 300 US$",
+      "expert_price_constraint": {
+        "type": "upper_bound",
+        "amount": 300,
+        "currency": "USD",
+        "lower_bound": null,
+        "point_estimate": null,
+        "qualitative_location": "near the300USD ceiling",
+        "pricing_rationale": "cost and margin considerations",
+        "cost_amount": null,
+        "margin_amount": null,
+        "margin_percent": null
+      },
+      "frozen_scenario_prices": {
+        "current_exponential": 119.89777328750263,
+        "slower_tail": 270.7702914795861,
+        "slowest_tested_tail": 356.85919633391933
+      },
+      "comparison": {
+        "current_exponential": {
+          "estimate": 119.89777328750263,
+          "within_stated_ceiling": true,
+          "excess_above_ceiling": 0
+        },
+        "slower_tail": {
+          "estimate": 270.7702914795861,
+          "within_stated_ceiling": true,
+          "excess_above_ceiling": 0
+        },
+        "slowest_tested_tail": {
+          "estimate": 356.85919633391933,
+          "within_stated_ceiling": false,
+          "excess_above_ceiling": 56.85919633391933
+        }
+      },
+      "qualification": "Expert near-ceiling price guidance, not exact300USD valuation, disclosed cost data, or completed transaction. Earlier scenario prices were visible. No numerical lower bound or margin inferred.",
+      "source_sha256": "a0d503ca8c8d43c4b9863b3092a32341fe362a66637d254a8cb2089c90189a12",
+      "clarifications": [
+        {
+          "raw_answer": "got to be close to that ... can't imagine it fetching more than cost but for margin considerations.",
+          "interpretation": "Expert expects a reasonable price near previously stated300USD ceiling, explaining it in terms of cost and margin rather than attribute premium. No numeric cost, margin percentage, or lower bound supplied."
+        }
+      ]
+    }
+  ]
+}

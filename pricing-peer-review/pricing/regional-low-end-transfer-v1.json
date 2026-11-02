@@ -1,0 +1,166 @@
+{
+  "status": "complete_no_refit",
+  "protocol": "Six expert valuation checks, one at a time; current v2 curve frozen before all answers. Three non-NE regions with supplied topanchors, two lowend profiles calibrated only inNE. Ask expectedprice/range before each price disclosed. Not markettransactions; earlierNEprices andsharedcurve assumption alreadyvisible. No refit duringround.",
+  "price_basis": "Entire filled cask, matching seat/reference status, same volume,mint,comparable initial-release/distributor terms; excludesfees,taxes,delivery.",
+  "source_hashes": {
+    "pricing/consistent_price_v2.py": "b277bd9cdcc6072278114df609d8ddb5930e50401ce819a59bfb622ec2266963",
+    "pricing/consistent_price_layer.py": "85d343200a8e93bb88b55d4bc742963b4e7f6e185b792f915513d29f0c2ebab0",
+    "pricing/consistent-price-config-v2.json": "5a12e1614975de7b0d390b42b8a00db0b4eed5658ae8322f0486902ffd968fb1",
+    "model-config-v28.json": "a9fed8e86977526c16e74ccdb0a6a75d919b3041bd602e5592d64e3086414dcf"
+  },
+  "questions": [
+    {
+      "number": 1,
+      "id": "northwest-amber-35-120",
+      "offering": [
+        "northwest",
+        "amber",
+        35,
+        120
+      ],
+      "status": "answered_before_specific_prediction_disclosure",
+      "frozen_price_usd": 409.09090909090907,
+      "anchor_price_usd": 1000,
+      "raw_answer": "Around 400 US$",
+      "expert_estimate": {
+        "amount": 400,
+        "currency": "USD",
+        "precision": "approximate; no interval supplied"
+      },
+      "comparison": {
+        "model_price": 409.09090909090907,
+        "difference": 9.090909090909065,
+        "absolute_percent_difference": 2.2727272727272663
+      }
+    },
+    {
+      "number": 2,
+      "id": "southeast-amber-35-120",
+      "offering": [
+        "southeast",
+        "amber",
+        35,
+        120
+      ],
+      "status": "answered_before_specific_prediction_disclosure",
+      "frozen_price_usd": 439.77272727272725,
+      "anchor_price_usd": 1075,
+      "raw_answer": "Around 425 US$",
+      "expert_estimate": {
+        "amount": 425,
+        "currency": "USD",
+        "precision": "approximate; no interval supplied"
+      },
+      "comparison": {
+        "model_price": 439.77272727272725,
+        "difference": 14.772727272727252,
+        "absolute_percent_difference": 3.4759358288770006
+      }
+    },
+    {
+      "number": 3,
+      "id": "central-amber-35-120",
+      "offering": [
+        "central",
+        "amber",
+        35,
+        120
+      ],
+      "status": "answered_before_specific_prediction_disclosure",
+      "frozen_price_usd": 429.5454545454545,
+      "anchor_price_usd": 1050,
+      "raw_answer": "Around 400 US$",
+      "expert_estimate": {
+        "amount": 400,
+        "currency": "USD",
+        "precision": "approximate; no interval supplied"
+      },
+      "comparison": {
+        "model_price": 429.5454545454545,
+        "difference": 29.545454545454504,
+        "absolute_percent_difference": 7.386363636363626
+      }
+    },
+    {
+      "number": 4,
+      "id": "northwest-brown-40-130",
+      "offering": [
+        "northwest",
+        "brown",
+        40,
+        130
+      ],
+      "status": "answered_before_specific_prediction_disclosure",
+      "frozen_price_usd": 272.72727272727263,
+      "anchor_price_usd": 1000,
+      "raw_answer": "No more than 300",
+      "expert_price_constraint": {
+        "type": "upper_bound",
+        "amount": 300,
+        "currency": "USD",
+        "point_estimate": null,
+        "lower_bound": null
+      },
+      "comparison": {
+        "model_price": 272.72727272727263,
+        "within_stated_ceiling": true,
+        "headroom_below_ceiling": 27.272727272727366,
+        "qualification": "Ceiling compliance only, not error against an exact300USD valuation."
+      }
+    },
+    {
+      "number": 5,
+      "id": "southeast-brown-40-130",
+      "offering": [
+        "southeast",
+        "brown",
+        40,
+        130
+      ],
+      "status": "answered_before_specific_prediction_disclosure",
+      "frozen_price_usd": 293.1818181818181,
+      "anchor_price_usd": 1075,
+      "raw_answer": "No more than 300",
+      "expert_price_constraint": {
+        "type": "upper_bound",
+        "amount": 300,
+        "currency": "USD",
+        "point_estimate": null,
+        "lower_bound": null
+      },
+      "comparison": {
+        "model_price": 293.1818181818181,
+        "within_stated_ceiling": true,
+        "headroom_below_ceiling": 6.818181818181927,
+        "qualification": "Ceiling compliance only, not error against an exact300USD valuation."
+      }
+    },
+    {
+      "number": 6,
+      "id": "central-brown-40-130",
+      "offering": [
+        "central",
+        "brown",
+        40,
+        130
+      ],
+      "status": "answered_before_specific_prediction_disclosure",
+      "frozen_price_usd": 286.36363636363626,
+      "anchor_price_usd": 1050,
+      "raw_answer": "No more than $300 US",
+      "expert_price_constraint": {
+        "type": "upper_bound",
+        "amount": 300,
+        "currency": "USD",
+        "point_estimate": null,
+        "lower_bound": null
+      },
+      "comparison": {
+        "model_price": 286.36363636363626,
+        "within_stated_ceiling": true,
+        "headroom_below_ceiling": 13.63636363636374,
+        "qualification": "Ceiling compliance only, not error against an exact300USD valuation."
+      }
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "status": "audit complete; one high-impact semantic clarification pending before benchmark fitting",
+  "primary_target": "meaningful preference versus practical similarity",
+  "secondary_target": "retain known tiny preference directions without upgrading them to meaningful premiums",
+  "exact_equality": "only deliberate identical pricing; audit remains separate from current labels",
+  "unresolved": "excluded from labeled accuracy; never coerced into similarity or equality",
+  "known_directions": 259,
+  "known_practical_similarity": 6,
+  "meaningfulness_caution": "Existing direction-only answers and verbal strengths do not all establish a meaningful economic premium. Keep unspecified meaningfulness missing; do not create a binary target from every A/B label.",
+  "workflow": "Finish the few high-impact semantic clarifications, build one simple benchmark with explicit target rules, freeze a genuinely fresh practical evaluation, then obtain limited price anchors. Stop architecture search and repeated marginal-pair elicitation.",
+  "pending_question": {
+    "id": "reset-semantics-1",
+    "topic": "five-pound tare differences judged not meaningful",
+    "affected_ids": [
+      "round16-2",
+      "round16-6",
+      "round18-5",
+      "round18-8",
+      "round20-2",
+      "round20-5",
+      "round20-8",
+      "round21-1",
+      "round21-4",
+      "round21-7",
+      "round21-9",
+      "round21-12",
+      "round21-15",
+      "round21-17",
+      "round22-5",
+      "round22-8",
+      "round23-1",
+      "round23-4",
+      "round23-7",
+      "round23-10",
+      "round23-13",
+      "round23-16",
+      "round23-19",
+      "round25-13",
+      "round27-4",
+      "round27-13",
+      "round27-18"
+    ],
+    "options": {
+      "1": "Deliberately identical prices",
+      "2": "Practical similarity; a tiny lower-tare premium may still exist",
+      "3": "Context-dependent; do not apply one interpretation to the group"
+    },
+    "answer": null
+  }
+}

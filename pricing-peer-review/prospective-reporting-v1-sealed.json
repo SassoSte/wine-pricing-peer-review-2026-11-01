@@ -1,0 +1,703 @@
+{
+  "status": "sealed_unasked_not_used_for_fitting",
+  "protocol": "16 attribute-stratified fresh pairs,4perstratum; deterministicselection before predictions. Not population sample. Keep entire set and predictions frozen until all responses supplied. No elicitation started. Report direction, size coverage, retained errors, withheld true premiums separately. No retuning on these answers; inconclusive small-sample results remain inconclusive.",
+  "source_hashes": {
+    "predictor_reporting.py": "34b3974827ad69dce3054ccd23ef672bdc28e09b00a4007b6e5a801be81a39c3",
+    "reporting-config-v1.json": "0335ced3f45ffe4358647943835cc4d956fa07d7b576b2bac0275bc9fe283b47",
+    "model-config-v28.json": "a9fed8e86977526c16e74ccdb0a6a75d919b3041bd602e5592d64e3086414dcf",
+    "predictor_v27.py": "293307f98d4c2434bfbbea8a73341a3522601604535647f3a7a6b0103b23f2ed"
+  },
+  "payload_sha256": "0d60ca7544da5772b7b8149a327f89d0a5fd50a61c45c74b8c7326572e6e1b45",
+  "questions": [
+    {
+      "id": "prospective-reporting-v1-1",
+      "stratum": "aligned",
+      "a": [
+        "Eastern Europe",
+        "pale/straw",
+        30,
+        110
+      ],
+      "b": [
+        "Eastern Europe",
+        "pale/straw",
+        40,
+        130
+      ],
+      "status": "sealed_unasked"
+    },
+    {
+      "id": "prospective-reporting-v1-2",
+      "stratum": "aligned",
+      "a": [
+        "central",
+        "copper",
+        20,
+        110
+      ],
+      "b": [
+        "central",
+        "copper",
+        40,
+        115
+      ],
+      "status": "sealed_unasked"
+    },
+    {
+      "id": "prospective-reporting-v1-3",
+      "stratum": "aligned",
+      "a": [
+        "central",
+        "golden",
+        20,
+        115
+      ],
+      "b": [
+        "central",
+        "copper",
+        40,
+        125
+      ],
+      "status": "sealed_unasked"
+    },
+    {
+      "id": "prospective-reporting-v1-4",
+      "stratum": "aligned",
+      "a": [
+        "northeast",
+        "brown",
+        35,
+        115
+      ],
+      "b": [
+        "northeast",
+        "brown",
+        40,
+        120
+      ],
+      "status": "sealed_unasked"
+    },
+    {
+      "id": "prospective-reporting-v1-5",
+      "stratum": "opposing_vintage_tare",
+      "a": [
+        "central",
+        "brown",
+        40,
+        125
+      ],
+      "b": [
+        "central",
+        "amber",
+        35,
+        130
+      ],
+      "status": "sealed_unasked"
+    },
+    {
+      "id": "prospective-reporting-v1-6",
+      "stratum": "opposing_vintage_tare",
+      "a": [
+        "northeast",
+        "golden",
+        40,
+        120
+      ],
+      "b": [
+        "northeast",
+        "amber",
+        30,
+        130
+      ],
+      "status": "sealed_unasked"
+    },
+    {
+      "id": "prospective-reporting-v1-7",
+      "stratum": "opposing_vintage_tare",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        25,
+        130
+      ],
+      "b": [
+        "West Central Asia",
+        "amber",
+        35,
+        125
+      ],
+      "status": "sealed_unasked"
+    },
+    {
+      "id": "prospective-reporting-v1-8",
+      "stratum": "opposing_vintage_tare",
+      "a": [
+        "northeast",
+        "golden",
+        40,
+        110
+      ],
+      "b": [
+        "northeast",
+        "brown",
+        30,
+        130
+      ],
+      "status": "sealed_unasked"
+    },
+    {
+      "id": "prospective-reporting-v1-9",
+      "stratum": "matched_core",
+      "a": [
+        "Eastern Europe",
+        "pale/straw",
+        25,
+        110
+      ],
+      "b": [
+        "northwest",
+        "golden",
+        25,
+        110
+      ],
+      "status": "sealed_unasked"
+    },
+    {
+      "id": "prospective-reporting-v1-10",
+      "stratum": "matched_core",
+      "a": [
+        "South/Eastern Asia",
+        "copper",
+        25,
+        115
+      ],
+      "b": [
+        "central",
+        "copper",
+        25,
+        115
+      ],
+      "status": "sealed_unasked"
+    },
+    {
+      "id": "prospective-reporting-v1-11",
+      "stratum": "matched_core",
+      "a": [
+        "West Asia / Middle East",
+        "pale/straw",
+        20,
+        115
+      ],
+      "b": [
+        "southwest",
+        "brown",
+        20,
+        115
+      ],
+      "status": "sealed_unasked"
+    },
+    {
+      "id": "prospective-reporting-v1-12",
+      "stratum": "matched_core",
+      "a": [
+        "West Central Asia",
+        "brown",
+        35,
+        130
+      ],
+      "b": [
+        "northeast",
+        "copper",
+        35,
+        130
+      ],
+      "status": "sealed_unasked"
+    },
+    {
+      "id": "prospective-reporting-v1-13",
+      "stratum": "broad",
+      "a": [
+        "southwest",
+        "pale/straw",
+        35,
+        130
+      ],
+      "b": [
+        "northeast",
+        "pale/straw",
+        40,
+        130
+      ],
+      "status": "sealed_unasked"
+    },
+    {
+      "id": "prospective-reporting-v1-14",
+      "stratum": "broad",
+      "a": [
+        "northwest",
+        "brown",
+        30,
+        110
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        25,
+        125
+      ],
+      "status": "sealed_unasked"
+    },
+    {
+      "id": "prospective-reporting-v1-15",
+      "stratum": "broad",
+      "a": [
+        "southwest",
+        "brown",
+        35,
+        120
+      ],
+      "b": [
+        "central",
+        "copper",
+        35,
+        115
+      ],
+      "status": "sealed_unasked"
+    },
+    {
+      "id": "prospective-reporting-v1-16",
+      "stratum": "broad",
+      "a": [
+        "southwest",
+        "pale/straw",
+        25,
+        115
+      ],
+      "b": [
+        "northwest",
+        "pale/straw",
+        35,
+        130
+      ],
+      "status": "sealed_unasked"
+    }
+  ],
+  "predictions": [
+    {
+      "backend": "v28",
+      "direction": "A",
+      "premium_zone": "meaningful_premium",
+      "meaningful_premium": true,
+      "exact_price_equality": null,
+      "uncertainty": {
+        "premium_boundary": false,
+        "premium_assessment_withheld": false,
+        "calibrated_probability": null,
+        "direction_confidence": "not_calibrated",
+        "band_status": "conditional_family_calibration_not_probability"
+      },
+      "equality_status": "not_established_by_pair_comparator",
+      "legacy_prediction": {
+        "predicted_direction": "A",
+        "predicted_meaningfulness": "meaningful_difference",
+        "margin": 4.077146150053029,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      },
+      "units": "preference score, not money"
+    },
+    {
+      "backend": "v28",
+      "direction": "A",
+      "premium_zone": "meaningful_premium",
+      "meaningful_premium": true,
+      "exact_price_equality": null,
+      "uncertainty": {
+        "premium_boundary": false,
+        "premium_assessment_withheld": false,
+        "calibrated_probability": null,
+        "direction_confidence": "not_calibrated",
+        "band_status": "conditional_family_calibration_not_probability"
+      },
+      "equality_status": "not_established_by_pair_comparator",
+      "legacy_prediction": {
+        "predicted_direction": "A",
+        "predicted_meaningfulness": "meaningful_difference",
+        "margin": 4.923303842361467,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      },
+      "units": "preference score, not money"
+    },
+    {
+      "backend": "v28",
+      "direction": "A",
+      "premium_zone": "meaningful_premium",
+      "meaningful_premium": true,
+      "exact_price_equality": null,
+      "uncertainty": {
+        "premium_boundary": false,
+        "premium_assessment_withheld": false,
+        "calibrated_probability": null,
+        "direction_confidence": "not_calibrated",
+        "band_status": "conditional_family_calibration_not_probability"
+      },
+      "equality_status": "not_established_by_pair_comparator",
+      "legacy_prediction": {
+        "predicted_direction": "A",
+        "predicted_meaningfulness": "meaningful_difference",
+        "margin": 5.692535380823203,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      },
+      "units": "preference score, not money"
+    },
+    {
+      "backend": "v28",
+      "direction": "A",
+      "premium_zone": "borderline_premium",
+      "meaningful_premium": null,
+      "exact_price_equality": null,
+      "uncertainty": {
+        "premium_boundary": true,
+        "premium_assessment_withheld": true,
+        "calibrated_probability": null,
+        "direction_confidence": "not_calibrated",
+        "band_status": "conditional_family_calibration_not_probability"
+      },
+      "equality_status": "not_established_by_pair_comparator",
+      "legacy_prediction": {
+        "predicted_direction": "A",
+        "predicted_meaningfulness": "meaningful_difference",
+        "margin": 1.0769961538469426,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      },
+      "units": "preference score, not money"
+    },
+    {
+      "backend": "v28",
+      "direction": "B",
+      "premium_zone": "meaningful_premium",
+      "meaningful_premium": true,
+      "exact_price_equality": null,
+      "uncertainty": {
+        "premium_boundary": false,
+        "premium_assessment_withheld": false,
+        "calibrated_probability": null,
+        "direction_confidence": "not_calibrated",
+        "band_status": "conditional_family_calibration_not_probability"
+      },
+      "equality_status": "not_established_by_pair_comparator",
+      "legacy_prediction": {
+        "predicted_direction": "B",
+        "predicted_meaningfulness": "meaningful_difference",
+        "margin": -1.5384730769234718,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      },
+      "units": "preference score, not money"
+    },
+    {
+      "backend": "v28",
+      "direction": "B",
+      "premium_zone": "small_directional_advantage",
+      "meaningful_premium": false,
+      "exact_price_equality": null,
+      "uncertainty": {
+        "premium_boundary": false,
+        "premium_assessment_withheld": false,
+        "calibrated_probability": null,
+        "direction_confidence": "not_calibrated",
+        "band_status": "conditional_family_calibration_not_probability"
+      },
+      "equality_status": "not_established_by_pair_comparator",
+      "legacy_prediction": {
+        "predicted_direction": "B",
+        "predicted_meaningfulness": "no_meaningful_difference",
+        "margin": -0.7692815346664205,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      },
+      "units": "preference score, not money"
+    },
+    {
+      "backend": "v28",
+      "direction": "A",
+      "premium_zone": "meaningful_premium",
+      "meaningful_premium": true,
+      "exact_price_equality": null,
+      "uncertainty": {
+        "premium_boundary": false,
+        "premium_assessment_withheld": false,
+        "calibrated_probability": null,
+        "direction_confidence": "not_calibrated",
+        "band_status": "conditional_family_calibration_not_probability"
+      },
+      "equality_status": "not_established_by_pair_comparator",
+      "legacy_prediction": {
+        "predicted_direction": "A",
+        "predicted_meaningfulness": "meaningful_difference",
+        "margin": 2.076986150051628,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      },
+      "units": "preference score, not money"
+    },
+    {
+      "backend": "v28",
+      "direction": "A",
+      "premium_zone": "meaningful_premium",
+      "meaningful_premium": true,
+      "exact_price_equality": null,
+      "uncertainty": {
+        "premium_boundary": false,
+        "premium_assessment_withheld": false,
+        "calibrated_probability": null,
+        "direction_confidence": "not_calibrated",
+        "band_status": "conditional_family_calibration_not_probability"
+      },
+      "equality_status": "not_established_by_pair_comparator",
+      "legacy_prediction": {
+        "predicted_direction": "A",
+        "predicted_meaningfulness": "meaningful_difference",
+        "margin": 1.846167696103994,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      },
+      "units": "preference score, not money"
+    },
+    {
+      "backend": "v28",
+      "direction": "A",
+      "premium_zone": "small_directional_advantage",
+      "meaningful_premium": false,
+      "exact_price_equality": null,
+      "uncertainty": {
+        "premium_boundary": false,
+        "premium_assessment_withheld": false,
+        "calibrated_probability": null,
+        "direction_confidence": "not_calibrated",
+        "band_status": "conditional_family_calibration_not_probability"
+      },
+      "equality_status": "not_established_by_pair_comparator",
+      "legacy_prediction": {
+        "predicted_direction": "A",
+        "predicted_meaningfulness": "no_meaningful_difference",
+        "margin": 0.30758461538393933,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      },
+      "units": "preference score, not money"
+    },
+    {
+      "backend": "v28",
+      "direction": "B",
+      "premium_zone": "small_directional_advantage",
+      "meaningful_premium": false,
+      "exact_price_equality": null,
+      "uncertainty": {
+        "premium_boundary": false,
+        "premium_assessment_withheld": false,
+        "calibrated_probability": null,
+        "direction_confidence": "not_calibrated",
+        "band_status": "conditional_family_calibration_not_probability"
+      },
+      "equality_status": "not_established_by_pair_comparator",
+      "legacy_prediction": {
+        "predicted_direction": "B",
+        "predicted_meaningfulness": "no_meaningful_difference",
+        "margin": -0.7691915384616294,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      },
+      "units": "preference score, not money"
+    },
+    {
+      "backend": "v28",
+      "direction": "A",
+      "premium_zone": "small_directional_advantage",
+      "meaningful_premium": false,
+      "exact_price_equality": null,
+      "uncertainty": {
+        "premium_boundary": false,
+        "premium_assessment_withheld": false,
+        "calibrated_probability": null,
+        "direction_confidence": "not_calibrated",
+        "band_status": "conditional_family_calibration_not_probability"
+      },
+      "equality_status": "not_established_by_pair_comparator",
+      "legacy_prediction": {
+        "predicted_direction": "A",
+        "predicted_meaningfulness": "no_meaningful_difference",
+        "margin": 0.46142692307652927,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      },
+      "units": "preference score, not money"
+    },
+    {
+      "backend": "v28",
+      "direction": "B",
+      "premium_zone": "meaningful_premium",
+      "meaningful_premium": true,
+      "exact_price_equality": null,
+      "uncertainty": {
+        "premium_boundary": false,
+        "premium_assessment_withheld": false,
+        "calibrated_probability": null,
+        "direction_confidence": "not_calibrated",
+        "band_status": "conditional_family_calibration_not_probability"
+      },
+      "equality_status": "not_established_by_pair_comparator",
+      "legacy_prediction": {
+        "predicted_direction": "B",
+        "predicted_meaningfulness": "meaningful_difference",
+        "margin": -2.538453076924185,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      },
+      "units": "preference score, not money"
+    },
+    {
+      "backend": "v28",
+      "direction": "A",
+      "premium_zone": "small_directional_advantage",
+      "meaningful_premium": false,
+      "exact_price_equality": null,
+      "uncertainty": {
+        "premium_boundary": false,
+        "premium_assessment_withheld": false,
+        "calibrated_probability": null,
+        "direction_confidence": "not_calibrated",
+        "band_status": "conditional_family_calibration_not_probability"
+      },
+      "equality_status": "not_established_by_pair_comparator",
+      "legacy_prediction": {
+        "predicted_direction": "A",
+        "predicted_meaningfulness": "no_meaningful_difference",
+        "margin": 0.15390230769261726,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      },
+      "units": "preference score, not money"
+    },
+    {
+      "backend": "v28",
+      "direction": "B",
+      "premium_zone": "meaningful_premium",
+      "meaningful_premium": true,
+      "exact_price_equality": null,
+      "uncertainty": {
+        "premium_boundary": false,
+        "premium_assessment_withheld": false,
+        "calibrated_probability": null,
+        "direction_confidence": "not_calibrated",
+        "band_status": "conditional_family_calibration_not_probability"
+      },
+      "equality_status": "not_established_by_pair_comparator",
+      "legacy_prediction": {
+        "predicted_direction": "B",
+        "predicted_meaningfulness": "meaningful_difference",
+        "margin": -1.7691815384617362,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      },
+      "units": "preference score, not money"
+    },
+    {
+      "backend": "v28",
+      "direction": "B",
+      "premium_zone": "meaningful_premium",
+      "meaningful_premium": true,
+      "exact_price_equality": null,
+      "uncertainty": {
+        "premium_boundary": false,
+        "premium_assessment_withheld": false,
+        "calibrated_probability": null,
+        "direction_confidence": "not_calibrated",
+        "band_status": "conditional_family_calibration_not_probability"
+      },
+      "equality_status": "not_established_by_pair_comparator",
+      "legacy_prediction": {
+        "predicted_direction": "B",
+        "predicted_meaningfulness": "meaningful_difference",
+        "margin": -1.7692715384628972,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      },
+      "units": "preference score, not money"
+    },
+    {
+      "backend": "v28",
+      "direction": "A",
+      "premium_zone": "meaningful_premium",
+      "meaningful_premium": true,
+      "exact_price_equality": null,
+      "uncertainty": {
+        "premium_boundary": false,
+        "premium_assessment_withheld": false,
+        "calibrated_probability": null,
+        "direction_confidence": "not_calibrated",
+        "band_status": "conditional_family_calibration_not_probability"
+      },
+      "equality_status": "not_established_by_pair_comparator",
+      "legacy_prediction": {
+        "predicted_direction": "A",
+        "predicted_meaningfulness": "meaningful_difference",
+        "margin": 4.692495380822176,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      },
+      "units": "preference score, not money"
+    }
+  ]
+}

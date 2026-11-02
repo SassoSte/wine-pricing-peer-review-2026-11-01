@@ -1,0 +1,73 @@
+{
+  "selected_model": "boundary",
+  "model": {
+    "kind": "contextual_meaningfulness",
+    "underlying_source": "precision-shade-candidate-v17.json",
+    "underlying_coefficients": [
+      0.30059251209596727,
+      -0.4826433202627174,
+      -0.4827433202627174,
+      -0.4640245387499571,
+      0.395340398689864,
+      0.49105436886711173,
+      0.3004925120959673,
+      0.5335164881572831,
+      0.5073492033852847,
+      0.7556002873078896,
+      6.256835180915935e-22,
+      3.461062096949336e-21,
+      0.6636957908318052,
+      0.37156981323016397,
+      0.6270916207257354,
+      0.6635957908318052,
+      0.3330912438174751,
+      0.2491467586623201,
+      -0.36369579083180525
+    ],
+    "base_radius": 0.3000001,
+    "context_kind": "mature_shade",
+    "context_coefficient": 0.75,
+    "direction_weights_changed": false,
+    "calibration_evidence": "evidence-v19.json",
+    "shade_fraction": 0.0,
+    "boundary_increment": 0.35000000000000003,
+    "training_objective": 0.9524560193348961
+  },
+  "evidence": "evidence-v19.json",
+  "validation": {
+    "direction": {
+      "n": 295,
+      "correct": 267.0,
+      "accuracy": 0.9050847457627119,
+      "reversals": 28.0,
+      "zero_or_abstain": 0.0
+    },
+    "materiality": {
+      "n": 210,
+      "meaningful_n": 38,
+      "no_meaningful_n": 172,
+      "accuracy": 0.9076190476190475,
+      "balanced_accuracy": 0.8923500611995104,
+      "meaningful_recall": 0.868421052631579,
+      "no_meananingful_recall": 0.9162790697674419,
+      "false_meaningful": 14.4,
+      "missed_meaningful": 5.0,
+      "correct_meaningful_direction": 32.0
+    },
+    "directly_supported_materiality": {
+      "n": 75,
+      "meaningful_n": 12,
+      "no_meaningful_n": 63,
+      "accuracy": 0.9040000000000001,
+      "balanced_accuracy": 0.9023809523809524,
+      "meaningful_recall": 0.9,
+      "no_meananingful_recall": 0.9047619047619048,
+      "false_meaningful": 6.0,
+      "missed_meaningful": 1.2,
+      "correct_meaningful_direction": 10.8
+    },
+    "unknown_materiality_n": 239
+  },
+  "validation_file": "contextual-fixes-validation-v19.json",
+  "baselines_unchanged": true
+}

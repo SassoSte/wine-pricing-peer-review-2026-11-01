@@ -1,0 +1,189 @@
+{
+  "source_hashes": {
+    "evidence-v15.json": "40ac084c3b4ab5cbbf4195879764ffd4f04fa011f822dbfcf10670c0e3919867",
+    "benchmark-targets-v15.json": "67a883f8c9993b186da398c64fc455ce55ca501182beaec612e963b803aac188",
+    "meaningful-benchmark-v13.json": "a532346047d308fa76114363205525eaeb5832149b84f8f831016f1780c863ab",
+    "meaningful-benchmark-v15.json": "0a5e00a07aadb321c06a71cd8e9013d24283413230e71eea64eef41c06fd2ecd",
+    "round35-fixed.json": "aee3bf1d39e697649bc02169ecb8fa5d8d85c08ae4cf97b05b706bf4a94b4d45",
+    "compare_models.py": "da2067d3d2ef99849ce2e30be16208bff0145bc6b036111535542c2daf00fa5f",
+    "resolve_mixed_misses.py": "34ef2e54dc150179fa77eb7b6f09c79ef5240137c24987176e875e0926719650"
+  },
+  "cases": [
+    {
+      "id": "round35-4",
+      "a": [
+        "South/Eastern Asia",
+        "golden",
+        25,
+        115
+      ],
+      "b": [
+        "Eastern Europe",
+        "amber",
+        20,
+        125
+      ],
+      "raw_answer": "a",
+      "verified_direction": "A",
+      "magnitude": "unconfirmed; prior meaningful-A interpretation retained as tentative",
+      "frozen_v13_contributions": {
+        "provenance": -0.6246672684075063,
+        "shade": 0.0,
+        "vintage": -0.41765898358732556,
+        "tare": 0.6211725125379989,
+        "total": -0.4211537394568329
+      },
+      "current_v15_contributions": {
+        "provenance": -0.26619811643517854,
+        "shade": 0.027576070702462433,
+        "vintage": -0.23367900455512636,
+        "tare": 0.6418111615079891,
+        "total": 0.16951011122014664
+      },
+      "current_threshold": 0.5,
+      "diagnosis": "The frozen direction was wrong, but the current fit now favors A; remaining mismatch concerns an unconfirmed magnitude interpretation."
+    },
+    {
+      "id": "round35-6",
+      "a": [
+        "southeast",
+        "pale/straw",
+        25,
+        125
+      ],
+      "b": [
+        "northeast",
+        "amber",
+        20,
+        120
+      ],
+      "raw_answer": "**A.**",
+      "verified_direction": "A",
+      "magnitude": "unconfirmed; prior meaningful-A interpretation retained as tentative",
+      "frozen_v13_contributions": {
+        "provenance": 0.0010729720707863821,
+        "shade": 0.3462771958564444,
+        "vintage": -0.41765898358732556,
+        "tare": -0.31058625626899944,
+        "total": -0.3808950719290942
+      },
+      "current_v15_contributions": {
+        "provenance": 0.13029139930936745,
+        "shade": 0.5953370767128718,
+        "vintage": -0.23367900455512636,
+        "tare": -0.32090558075399456,
+        "total": 0.17104389071311832
+      },
+      "current_threshold": 0.5,
+      "diagnosis": "The frozen direction was wrong, but the current fit now favors A; remaining mismatch concerns an unconfirmed magnitude interpretation."
+    },
+    {
+      "id": "round35-9",
+      "a": [
+        "West Central Asia",
+        "golden",
+        25,
+        125
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "amber",
+        30,
+        115
+      ],
+      "raw_answer": "A",
+      "verified_direction": "A",
+      "magnitude": "unconfirmed; prior meaningful-A interpretation retained as tentative",
+      "frozen_v13_contributions": {
+        "provenance": -0.0335291635265248,
+        "shade": 0.0,
+        "vintage": 0.7304130795460265,
+        "tare": -0.6211725125379989,
+        "total": 0.07571140348150285
+      },
+      "current_v15_contributions": {
+        "provenance": -0.041434415134312896,
+        "shade": 0.027576070702462433,
+        "vintage": 0.9994548612125781,
+        "tare": -0.6418111615079891,
+        "total": 0.34378535527273857
+      },
+      "current_threshold": 0.5,
+      "diagnosis": "Direction was and remains A; the mismatch is solely the unconfirmed meaningfulness threshold."
+    }
+  ],
+  "threshold_sensitivity": {
+    "scope": "In-sample target sensitivity only, not a selected calibration or generalization score. Includes coarsened/proxy labels.",
+    "no_meaningful_target_n": 149,
+    "called_meaningful_at_current_0_5": 1,
+    "called_meaningful_at_target_fitting_0_15": 67,
+    "action": "Do not lower threshold solely to make these three inferred labels appear correct."
+  },
+  "implemented_fix": "Preserve all observed directions, distinguish tentative magnitude interpretations, and expose recorded judgment separately from model estimates. No weight changes, lookup-inflated validation, new accuracy claims or baseline modifications.",
+  "uniform_round_audit": [
+    {
+      "id": "round35-2",
+      "raw_answer": "A - premium Tare and vintage.",
+      "direction_retained": "A",
+      "previous_materiality": "meaningful_A",
+      "current_materiality": "unconfirmed"
+    },
+    {
+      "id": "round35-4",
+      "raw_answer": "a",
+      "direction_retained": "A",
+      "previous_materiality": "meaningful_A",
+      "current_materiality": "unconfirmed"
+    },
+    {
+      "id": "round35-5",
+      "raw_answer": "B",
+      "direction_retained": "B",
+      "previous_materiality": "meaningful_B",
+      "current_materiality": "unconfirmed"
+    },
+    {
+      "id": "round35-6",
+      "raw_answer": "**A.**",
+      "direction_retained": "A",
+      "previous_materiality": "meaningful_A",
+      "current_materiality": "unconfirmed"
+    },
+    {
+      "id": "round35-7",
+      "raw_answer": "A",
+      "direction_retained": "A",
+      "previous_materiality": "meaningful_A",
+      "current_materiality": "unconfirmed"
+    },
+    {
+      "id": "round35-9",
+      "raw_answer": "A",
+      "direction_retained": "A",
+      "previous_materiality": "meaningful_A",
+      "current_materiality": "unconfirmed"
+    },
+    {
+      "id": "round35-10",
+      "raw_answer": "A",
+      "direction_retained": "A",
+      "previous_materiality": "meaningful_A",
+      "current_materiality": "unconfirmed"
+    },
+    {
+      "id": "round35-11",
+      "raw_answer": "B",
+      "direction_retained": "B",
+      "previous_materiality": "meaningful_B",
+      "current_materiality": "unconfirmed"
+    },
+    {
+      "id": "round35-12",
+      "raw_answer": "B - though slightly heavier, age and porveance facotr it",
+      "direction_retained": "B",
+      "previous_materiality": "meaningful_B",
+      "current_materiality": "unconfirmed"
+    }
+  ],
+  "model_limit": "The current18-coefficient model is trained on the preceding target view; estimates are provisional. This fix does not claim improved generalization or numerical price calibration."
+}

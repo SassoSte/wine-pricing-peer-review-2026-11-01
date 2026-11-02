@@ -1,0 +1,131 @@
+{
+  "selected_model": "minimal_context_with_rule",
+  "model": {
+    "kind": "minimal_context",
+    "trained_evidence": "evidence-v16.json",
+    "alpha": 0.1,
+    "decision_radius": 0.3246266204284317,
+    "coefficients": [
+      0.3967218908717883,
+      -0.5848232368110959,
+      -0.4992750968661111,
+      -0.5080258065764072,
+      0.38512922973640684,
+      0.5456475501408995,
+      0.3717948626479772,
+      0.5990822476905712,
+      0.5852531670612814,
+      0.9067508709553815,
+      3.65864954323403e-16,
+      0.03430455221998784,
+      0.39893994113511866,
+      0.437698720605684,
+      0.6374955268529754,
+      0.7715237877690004,
+      0.31148958070610383,
+      0.3061180870457,
+      6.381600719230665e-17,
+      0.07705976666439247,
+      -0.03430455221998766
+    ],
+    "feature_names": [
+      "origin:Western Europe vs Eastern Europe",
+      "origin:West Central Asia vs Eastern Europe",
+      "origin:South/Eastern Asia vs Eastern Europe",
+      "origin:West Asia / Middle East vs Eastern Europe",
+      "origin:central vs Eastern Europe",
+      "origin:northeast vs Eastern Europe",
+      "origin:northwest vs Eastern Europe",
+      "origin:southwest vs Eastern Europe",
+      "origin:southeast vs Eastern Europe",
+      "shade increment:copper",
+      "shade increment:amber",
+      "shade increment:golden",
+      "shade increment:pale/straw",
+      "age increment:35",
+      "age increment:30",
+      "age increment:25",
+      "age increment:20",
+      "lightness per 5 lb",
+      "northwest x amber",
+      "domestic x (30-vintage)/10",
+      "West Central Asia x golden-or-pale"
+    ],
+    "training_score": {
+      "direction": {
+        "n": 270,
+        "correct": 255,
+        "accuracy": 0.9444444444444444,
+        "reversals": 15,
+        "zero_or_abstain": 0
+      },
+      "materiality": {
+        "n": 175,
+        "meaningful_n": 26,
+        "no_meaningful_n": 149,
+        "accuracy": 0.9542857142857143,
+        "balanced_accuracy": 0.9572792978833247,
+        "meaningful_recall": 0.9615384615384616,
+        "no_meananingful_recall": 0.9530201342281879,
+        "false_meaningful": 7,
+        "missed_meaningful": 1,
+        "correct_meaningful_direction": 25
+      },
+      "unknown_materiality_n": 238,
+      "directly_supported_materiality": {
+        "n": 41,
+        "meaningful_n": 1,
+        "no_meaningful_n": 40,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "meaningful_recall": 1.0,
+        "no_meananingful_recall": 1.0,
+        "false_meaningful": 0,
+        "missed_meaningful": 0,
+        "correct_meaningful_direction": 1
+      }
+    },
+    "uncorrected_calibrated_radius": 0.3246266204284317,
+    "tare_rule_applied": true
+  },
+  "evidence": "evidence-v16.json",
+  "target_view": "benchmark-targets-v16.json",
+  "validation_file": "minimal-context-rule-validation-v16.json",
+  "validation_sha256": "3ab71cd29d0a52029f7001aa402496e6c95713668919249d4e7854bc603dc6e1",
+  "validation": {
+    "direction": {
+      "n": 270,
+      "correct": 245.0,
+      "accuracy": 0.9074074074074074,
+      "reversals": 25.0,
+      "zero_or_abstain": 0.0
+    },
+    "materiality": {
+      "n": 175,
+      "meaningful_n": 26,
+      "no_meaningful_n": 149,
+      "accuracy": 0.9417142857142856,
+      "balanced_accuracy": 0.9213216313887456,
+      "meaningful_recall": 0.8923076923076924,
+      "no_meananingful_recall": 0.9503355704697987,
+      "false_meaningful": 7.4,
+      "missed_meaningful": 2.8,
+      "correct_meaningful_direction": 22.2
+    },
+    "directly_supported_materiality": {
+      "n": 41,
+      "meaningful_n": 1,
+      "no_meaningful_n": 40,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "meaningful_recall": 1.0,
+      "no_meananingful_recall": 1.0,
+      "false_meaningful": 0.0,
+      "missed_meaningful": 0.0,
+      "correct_meaningful_direction": 1.0
+    },
+    "unknown_materiality_n": 238
+  },
+  "prediction_source": "model coefficients only; no answer lookup",
+  "qualification": "Three context terms plus prior5lb materiality rule. Exploratory grouped validation; positive materiality proxies remain limited."
+}

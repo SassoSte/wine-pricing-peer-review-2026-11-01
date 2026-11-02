@@ -1,0 +1,82 @@
+{
+  "finding": "Five collapsed preferences are the same copper-to-amber increment zeroed by pooled squared hinge plus ridge, despite three explicit positive single-step training examples in offending fold.",
+  "fix": "Add training-only single-feature strict margin>=1e-4 to existing hard-equality global fit. Numerical positive sign safeguard, not meaningful premium or dollars.",
+  "direction_before": 0.9388286334056399,
+  "direction_after": 0.940997830802603,
+  "changed_cases": [
+    {
+      "id": "round45-3",
+      "old_correct_repeats": 4,
+      "new_correct_repeats": 5
+    },
+    {
+      "id": "round46-2",
+      "old_correct_repeats": 4,
+      "new_correct_repeats": 5
+    },
+    {
+      "id": "round46-7",
+      "old_correct_repeats": 4,
+      "new_correct_repeats": 5
+    },
+    {
+      "id": "round47-4",
+      "old_correct_repeats": 4,
+      "new_correct_repeats": 5
+    },
+    {
+      "id": "round51-14",
+      "old_correct_repeats": 4,
+      "new_correct_repeats": 5
+    }
+  ],
+  "training_positive_checks": 1100,
+  "profile_checks": 32500,
+  "exact_correct_by_repeat": [
+    0,
+    0,
+    0,
+    2,
+    0
+  ],
+  "older_tie_components": [
+    {
+      "seed": 11,
+      "shade_penalty": -1.1315528536425108,
+      "vintage_advantage": 0.7658250952122284,
+      "tare_advantage": 0.37688462965090064,
+      "net": 0.011156871220618314
+    },
+    {
+      "seed": 29,
+      "shade_penalty": -1.8542027132131036,
+      "vintage_advantage": 1.4094833067435977,
+      "tare_advantage": 0.704089870687375,
+      "net": 0.25937046421786925
+    },
+    {
+      "seed": 47,
+      "shade_penalty": -0.9771802347350481,
+      "vintage_advantage": 0.8470700966908289,
+      "tare_advantage": 0.3452284319829619,
+      "net": 0.2151182939387426
+    },
+    {
+      "seed": 71,
+      "shade_penalty": -2.41591363243089,
+      "vintage_advantage": 1.5262735993190637,
+      "tare_advantage": 0.7535176607343665,
+      "net": -0.13612237237746
+    },
+    {
+      "seed": 103,
+      "shade_penalty": -1.162146194254254,
+      "vintage_advantage": 0.8777221363808464,
+      "tare_advantage": 0.3677206186388671,
+      "net": 0.08329656076545966
+    }
+  ],
+  "older_tie_diagnosis": "Requires exact identity vintage35-vintage40 + tare115-tare120 = shadeAmber-shadeBrown. Other two equalities constrain a different combination (25/30,125/115,copper/amber). When this unique family is withheld there is no hard equality requiring the older identity. Full fit can represent it, but heldout residual varies in sign. This is evidence support/transfer limitation, not demonstrated representational impossibility. Do not impose equality from heldout answer.",
+  "decision": "Keep positive-sign guarded model as improved experimental ranking candidate. No default premium model replacement; older tie generalization remains unsolved.",
+  "baseline_hashes_verified": true
+}

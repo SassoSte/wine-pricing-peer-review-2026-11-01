@@ -1,0 +1,190 @@
+{
+  "status": "four_region_same_profile_checks_complete",
+  "protocol": "Model-derived estimate frozen before requesting an undisclosed expert estimate. Expert estimates are not market transactions. KeepV28 andendpoint mapping fixed.",
+  "checks": [
+    {
+      "id": "ne-golden-25-115",
+      "offering": [
+        "northeast",
+        "golden",
+        25,
+        115
+      ],
+      "reference_offering": [
+        "northeast",
+        "pale/straw",
+        20,
+        110
+      ],
+      "reference_price": 1100,
+      "currency": "USD",
+      "frozen_estimate": 789.997010003041,
+      "status": "answered_before_prediction_disclosure",
+      "price_basis": "same seat-origin status,wholefilledcask,samevolume,mint,samerelease/distributorterms,fees/taxes/deliveryexcluded",
+      "source_hashes": {
+        "model-config-v28.json": "a9fed8e86977526c16e74ccdb0a6a75d919b3041bd602e5592d64e3086414dcf",
+        "predictor_v27.py": "293307f98d4c2434bfbbea8a73341a3522601604535647f3a7a6b0103b23f2ed",
+        "pricing/endpoint-price-test-v1.json": "9e7a5e0eef2c915c7108d9a1448a1762b8e8fbac9c67a011801682ad166c97a1"
+      },
+      "raw_answer": "I'd say around US$850\u2013900.",
+      "expert_range": {
+        "lower": 850,
+        "upper": 900,
+        "currency": "USD"
+      },
+      "comparison": {
+        "within_expert_range": false,
+        "below_lower_bound": 60.002989996958945,
+        "difference_from_range_midpoint": -85.00298999695895,
+        "qualification": "One expert range elicited before this prediction was disclosed; not an observed transaction or representative accuracy estimate."
+      },
+      "post_answer_diagnostic": {
+        "components": {
+          "base_attribute_price": 859.9906400092934,
+          "matched_vintage_context_adjustment": -69.99363000625233,
+          "tare_compensation_adjustment": 0.0
+        },
+        "qualification": "Decomposition after expert answer; additive-only value is a diagnostic hypothesis, not a predeclared prediction or model change."
+      },
+      "post_disclosure_feedback": [
+        {
+          "raw_answer": "I think the model's correct. Let's try the same exercise on the Southeast",
+          "interpretation": "User accepts approximately790USD after predictiondisclosure. Preserve original850\u2013900range and originalcomparison; do not rescore asblindprediction success."
+        }
+      ]
+    },
+    {
+      "id": "se-golden-25-115",
+      "offering": [
+        "southeast",
+        "golden",
+        25,
+        115
+      ],
+      "reference_offering": [
+        "southeast",
+        "pale/straw",
+        20,
+        110
+      ],
+      "reference_anchor_id": "D-SEP20T10",
+      "reference_price": 1075,
+      "currency": "USD",
+      "frozen_estimate": 764.997010003041,
+      "status": "answered_before_prediction_disclosure",
+      "method": "Unchanged130approxUSD-per-score-unit mapping fromNE/NW calibration, applied against suppliedSE1075anchor; no refit.",
+      "price_basis": "same seat-origin status,wholefilledcask,samevolume,mint,samerelease/distributorterms,fees/taxes/deliveryexcluded",
+      "source_hashes": {
+        "model-config-v28.json": "a9fed8e86977526c16e74ccdb0a6a75d919b3041bd602e5592d64e3086414dcf",
+        "predictor_v27.py": "293307f98d4c2434bfbbea8a73341a3522601604535647f3a7a6b0103b23f2ed",
+        "pricing/endpoint-price-test-v1.json": "9e7a5e0eef2c915c7108d9a1448a1762b8e8fbac9c67a011801682ad166c97a1"
+      },
+      "raw_answer": "I'd say around US$725",
+      "expert_estimate": {
+        "amount": 725,
+        "currency": "USD",
+        "precision": "approximate; no range supplied"
+      },
+      "comparison": {
+        "difference_from_expert_estimate": 39.997010003041055,
+        "percent_above_expert_estimate": 5.516828965936697,
+        "qualification": "One approximate expert estimate elicited before current prediction disclosure; not an observed transaction or calibrated accuracy estimate."
+      },
+      "post_disclosure_feedback": [
+        {
+          "raw_answer": "Yes, US$765 is reasonable. Let's try the same offering in Northwest next.",
+          "interpretation": "User accepts disclosed estimate as reasonable. Original approximate725USD estimate and its pre-disclosure comparison remain preserved."
+        }
+      ]
+    },
+    {
+      "id": "nw-golden-25-115",
+      "offering": [
+        "northwest",
+        "golden",
+        25,
+        115
+      ],
+      "reference_offering": [
+        "northwest",
+        "pale/straw",
+        20,
+        110
+      ],
+      "reference_anchor_id": "D-NWP20T10",
+      "reference_price": 1000,
+      "currency": "USD",
+      "frozen_estimate": 689.997010003041,
+      "status": "answered_before_prediction_disclosure",
+      "method": "Unchanged NE/NW-calibrated linear scale applied against Northwest1000USD anchor; no refit.",
+      "price_basis": "same seat-origin status,wholefilledcask,samevolume,mint,samerelease/distributorterms,fees/taxes/deliveryexcluded",
+      "source_hashes": {
+        "model-config-v28.json": "a9fed8e86977526c16e74ccdb0a6a75d919b3041bd602e5592d64e3086414dcf",
+        "predictor_v27.py": "293307f98d4c2434bfbbea8a73341a3522601604535647f3a7a6b0103b23f2ed",
+        "pricing/endpoint-price-test-v1.json": "9e7a5e0eef2c915c7108d9a1448a1762b8e8fbac9c67a011801682ad166c97a1"
+      },
+      "raw_answer": "I'd say around US$625",
+      "expert_estimate": {
+        "amount": 625,
+        "currency": "USD",
+        "precision": "approximate; no range supplied"
+      },
+      "comparison": {
+        "difference_from_expert_estimate": 64.99701000304105,
+        "percent_above_expert_estimate": 10.399521600486569,
+        "qualification": "Approximate expert estimate before current prediction disclosure; earlier analogous regional outputs were visible, so not a fully blind independent test. Not a transaction price."
+      },
+      "post_disclosure_feedback": [
+        {
+          "raw_answer": "Yes, US$690 is reasonable. Let's try the same offering in Central next.",
+          "interpretation": "User accepts disclosed estimate as reasonable. Original approximate625USD estimate and its pre-disclosure comparison remain preserved."
+        }
+      ]
+    },
+    {
+      "id": "central-golden-25-115",
+      "offering": [
+        "central",
+        "golden",
+        25,
+        115
+      ],
+      "reference_offering": [
+        "central",
+        "pale/straw",
+        20,
+        110
+      ],
+      "reference_anchor_id": "D-CEP20T10",
+      "reference_price": 1050,
+      "currency": "USD",
+      "frozen_estimate": 739.997010003041,
+      "status": "answered_before_prediction_disclosure",
+      "method": "Unchanged NE/NW-calibrated linear scale applied against Central1050USD anchor; no refit.",
+      "price_basis": "same seat-origin status,wholefilledcask,samevolume,mint,samerelease/distributorterms,fees/taxes/deliveryexcluded",
+      "source_hashes": {
+        "model-config-v28.json": "a9fed8e86977526c16e74ccdb0a6a75d919b3041bd602e5592d64e3086414dcf",
+        "predictor_v27.py": "293307f98d4c2434bfbbea8a73341a3522601604535647f3a7a6b0103b23f2ed",
+        "pricing/endpoint-price-test-v1.json": "9e7a5e0eef2c915c7108d9a1448a1762b8e8fbac9c67a011801682ad166c97a1"
+      },
+      "raw_answer": "I'd say around 875 US$",
+      "expert_estimate": {
+        "amount": 875,
+        "currency": "USD",
+        "precision": "approximate; no range supplied"
+      },
+      "comparison": {
+        "difference_from_expert_estimate": -135.00298999695895,
+        "percent_below_expert_estimate": 15.428913142509593,
+        "qualification": "Approximate expert estimate before current prediction disclosure; analogous regional outputs already visible. Not a completed transaction or independent market validation."
+      },
+      "post_disclosure_feedback": [
+        {
+          "raw_answer": "Yes, US$740 is reasonable. What do these checks tell us about how well the pricing model is working across the four regions?",
+          "interpretation": "User accepts disclosed model-derived Central estimate as reasonable; original875USD estimate remains preserved."
+        }
+      ]
+    }
+  ],
+  "next_check": null
+}

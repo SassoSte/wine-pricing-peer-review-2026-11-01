@@ -1,0 +1,220 @@
+{
+  "status": "complete",
+  "sealed_source": "prospective-v37-sealed.json",
+  "source_sha256": "e46aa7109f78b41e386c9d853ff288c238f41f04334fd21269421638d6a3c62a",
+  "next_question": null,
+  "answers": [
+    {
+      "id": "prospective-v37-1",
+      "number": 1,
+      "raw_answer": "A meaningfully more expensive\u2014the 10-year younger vintage outweighs B\u2019s 5 lb lower tare, with provenance and shade matching.",
+      "known_direction": 1,
+      "materiality_target": 1,
+      "exact_price_equality": false,
+      "value_relation": "A_higher",
+      "status": "answered"
+    },
+    {
+      "id": "prospective-v37-2",
+      "number": 2,
+      "raw_answer": "A slightly more.",
+      "known_direction": 1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "value_relation": "A_higher",
+      "status": "answered"
+    },
+    {
+      "id": "prospective-v37-3",
+      "number": 3,
+      "raw_answer": "Very tricky; I'd say equal.",
+      "known_direction": null,
+      "materiality_target": 0,
+      "exact_price_equality": true,
+      "value_relation": "equal",
+      "status": "answered",
+      "interpretation": "Explicit equal judgment; difficulty noted, not treated as unresolved."
+    },
+    {
+      "id": "prospective-v37-4",
+      "number": 4,
+      "raw_answer": "A meaningfully more expensive\u2014the younger vintage, lighter shade and lower tare all favor A, with provenance matching.",
+      "known_direction": 1,
+      "materiality_target": 1,
+      "exact_price_equality": false,
+      "value_relation": "A_higher",
+      "status": "answered"
+    },
+    {
+      "id": "prospective-v37-5",
+      "number": 5,
+      "raw_answer": "A meaningful.",
+      "known_direction": 1,
+      "materiality_target": 1,
+      "exact_price_equality": false,
+      "value_relation": "A_higher",
+      "status": "answered"
+    },
+    {
+      "id": "prospective-v37-6",
+      "number": 6,
+      "raw_answer": "A slightly more expensive\u2014the amber shade outweighs B\u2019s provenance and 5 lb tare advantage, but at 35 years it\u2019s not a meaningful premium.",
+      "known_direction": 1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "value_relation": "A_higher",
+      "status": "answered"
+    },
+    {
+      "id": "prospective-v37-7",
+      "number": 7,
+      "raw_answer": "A meaningful.",
+      "known_direction": 1,
+      "materiality_target": 1,
+      "exact_price_equality": false,
+      "value_relation": "A_higher",
+      "status": "answered"
+    },
+    {
+      "id": "prospective-v37-8",
+      "number": 8,
+      "raw_answer": "B slightly more expensive\u2014the younger vintage and lower tare outweigh A\u2019s provenance advantage, but it\u2019s close.",
+      "known_direction": -1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "value_relation": "B_higher",
+      "status": "answered"
+    },
+    {
+      "id": "prospective-v37-9",
+      "number": 9,
+      "raw_answer": "A slightly more expensive\u2014the five-year younger vintage outweighs B\u2019s 5 lb lower tare, but with brown shade it\u2019s not a meaningful premium.",
+      "known_direction": 1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "value_relation": "A_higher",
+      "status": "answered"
+    },
+    {
+      "id": "prospective-v37-10",
+      "number": 10,
+      "raw_answer": "B slightly .",
+      "known_direction": -1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "value_relation": "B_higher",
+      "status": "answered"
+    },
+    {
+      "id": "prospective-v37-11",
+      "number": 11,
+      "raw_answer": "B slightly more expensive\u2014Southeast has a small provenance edge, but with shade, vintage and tare identical, it\u2019s not a meaningful premium.",
+      "known_direction": -1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "value_relation": "B_higher",
+      "status": "answered"
+    },
+    {
+      "id": "prospective-v37-12",
+      "number": 12,
+      "raw_answer": "B meaningfully more expensive\u2014the 15-year younger vintage and 10 lb lower tare both favor B, with provenance and shade matching.",
+      "known_direction": -1,
+      "materiality_target": -1,
+      "exact_price_equality": false,
+      "value_relation": "B_higher",
+      "status": "answered"
+    },
+    {
+      "id": "prospective-v37-13",
+      "number": 13,
+      "raw_answer": "B slightly - A's shade is a minus in this pairing.",
+      "known_direction": -1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "value_relation": "B_higher",
+      "status": "answered"
+    },
+    {
+      "id": "prospective-v37-14",
+      "number": 14,
+      "raw_answer": "A slightly.",
+      "known_direction": 1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "value_relation": "A_higher",
+      "status": "answered",
+      "correction_note": "User-requested correction afterquestion20, before scoring orpredictiondisclosure.",
+      "answer_history": [
+        {
+          "raw_answer": "A meaningful",
+          "known_direction": 1,
+          "materiality_target": 1,
+          "status": "superseded_before_predictions_revealed"
+        }
+      ]
+    },
+    {
+      "id": "prospective-v37-15",
+      "number": 15,
+      "raw_answer": "B meaningful; I need to correct question 14; circle back around last.",
+      "known_direction": -1,
+      "materiality_target": -1,
+      "exact_price_equality": false,
+      "value_relation": "B_higher",
+      "status": "answered"
+    },
+    {
+      "id": "prospective-v37-16",
+      "number": 16,
+      "raw_answer": "A slightly more expensive\u2014the younger vintage and lower tare outweigh Central\u2019s provenance advantage, but it\u2019s close.",
+      "known_direction": 1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "value_relation": "A_higher",
+      "status": "answered"
+    },
+    {
+      "id": "prospective-v37-17",
+      "number": 17,
+      "raw_answer": "A slightly.",
+      "known_direction": 1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "value_relation": "A_higher",
+      "status": "answered"
+    },
+    {
+      "id": "prospective-v37-18",
+      "number": 18,
+      "raw_answer": "B meaningfully more expensive\u2014the copper shade and lower tare both favor B, with provenance and vintage matching.",
+      "known_direction": -1,
+      "materiality_target": -1,
+      "exact_price_equality": false,
+      "value_relation": "B_higher",
+      "status": "answered"
+    },
+    {
+      "id": "prospective-v37-19",
+      "number": 19,
+      "raw_answer": "A meaningful",
+      "known_direction": 1,
+      "materiality_target": 1,
+      "exact_price_equality": false,
+      "value_relation": "A_higher",
+      "status": "answered"
+    },
+    {
+      "id": "prospective-v37-20",
+      "number": 20,
+      "raw_answer": "A slightly",
+      "known_direction": 1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "value_relation": "A_higher",
+      "status": "answered"
+    }
+  ],
+  "protocol": "Keep both models,bandrules andsealedforecasts fixed until all20answers complete. Answersstoredseparately; no interim scoring exposed.",
+  "revisit_after_round": []
+}

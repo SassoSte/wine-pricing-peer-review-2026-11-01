@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "default_backend": "v28",
+  "backends": {
+    "v28": {
+      "config": "model-config-v28.json",
+      "source_hashes": {
+        "predictor_v28.py": "c572cb63d47b531607efc66be1c65890b854d2f5a5087286858c25611191b7e3",
+        "predictor_v27.py": "293307f98d4c2434bfbbea8a73341a3522601604535647f3a7a6b0103b23f2ed",
+        "model-config-v28.json": "a9fed8e86977526c16e74ccdb0a6a75d919b3041bd602e5592d64e3086414dcf"
+      },
+      "band": {
+        "lower": 1.0,
+        "upper": 1.5
+      },
+      "band_status": "conditional_family_calibration_not_probability"
+    },
+    "large_tare_candidate": {
+      "config": "premium-config-v35.json",
+      "source_hashes": {
+        "predictor_premium_v35.py": "edbb4810fc2b6fc8ca8780a7b96a5538b8caef369ec9ab54cc0d0de80ea7399d",
+        "predictor_v27.py": "293307f98d4c2434bfbbea8a73341a3522601604535647f3a7a6b0103b23f2ed",
+        "premium-config-v35.json": "07a295a8f69cb5adf4d5a998fc0ddb00f5e56bcaf90e1e591518ccd3fd0a48a4"
+      },
+      "band": null,
+      "band_status": "not_calibrated_for_candidate"
+    }
+  }
+}

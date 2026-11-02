@@ -1,0 +1,281 @@
+{
+  "selected_model": "v17_precision_weighted",
+  "status": "precision-improved v17 candidate; residual false-call gap versus v16 disclosed",
+  "model": {
+    "kind": "v17_precision_weighted",
+    "trained_evidence": "evidence-v17.json",
+    "alpha": 0.01,
+    "legacy_negative_weight": 4.0,
+    "training_radius": 0.3,
+    "decision_radius": 0.3000001,
+    "coefficients": [
+      0.30059251209596727,
+      -0.4826433202627174,
+      -0.4827433202627174,
+      -0.4640245387499571,
+      0.395340398689864,
+      0.49105436886711173,
+      0.3004925120959673,
+      0.5335164881572831,
+      0.5073492033852847,
+      0.7556002873078896,
+      6.256835180915935e-22,
+      3.461062096949336e-21,
+      0.6636957908318052,
+      0.37156981323016397,
+      0.6270916207257354,
+      0.6635957908318052,
+      0.3330912438174751,
+      0.2491467586623201,
+      -0.36369579083180525
+    ],
+    "feature_names": [
+      "origin:Western Europe vs Eastern Europe",
+      "origin:West Central Asia vs Eastern Europe",
+      "origin:South/Eastern Asia vs Eastern Europe",
+      "origin:West Asia / Middle East vs Eastern Europe",
+      "origin:central vs Eastern Europe",
+      "origin:northeast vs Eastern Europe",
+      "origin:northwest vs Eastern Europe",
+      "origin:southwest vs Eastern Europe",
+      "origin:southeast vs Eastern Europe",
+      "shade increment:copper",
+      "shade increment:amber",
+      "shade increment:golden",
+      "shade increment:pale/straw",
+      "age increment:35",
+      "age increment:30",
+      "age increment:25",
+      "age increment:20",
+      "lightness per 5 lb",
+      "domestic x pale/straw"
+    ],
+    "training_score": {
+      "direction": {
+        "n": 282,
+        "correct": 267,
+        "accuracy": 0.9468085106382979,
+        "reversals": 15,
+        "zero_or_abstain": 0
+      },
+      "materiality": {
+        "n": 187,
+        "meaningful_n": 28,
+        "no_meaningful_n": 159,
+        "accuracy": 0.9572192513368984,
+        "balanced_accuracy": 0.9601302785265049,
+        "meaningful_recall": 0.9642857142857143,
+        "no_meananingful_recall": 0.9559748427672956,
+        "false_meaningful": 7,
+        "missed_meaningful": 1,
+        "correct_meaningful_direction": 27
+      },
+      "unknown_materiality_n": 238,
+      "directly_supported_materiality": {
+        "n": 53,
+        "meaningful_n": 3,
+        "no_meaningful_n": 50,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "meaningful_recall": 1.0,
+        "no_meananingful_recall": 1.0,
+        "false_meaningful": 0,
+        "missed_meaningful": 0,
+        "correct_meaningful_direction": 3
+      },
+      "provenance_round36": {
+        "direction": {
+          "n": 8,
+          "correct": 8,
+          "accuracy": 1.0,
+          "reversals": 0,
+          "zero_or_abstain": 0
+        },
+        "materiality": {
+          "n": 8,
+          "meaningful_n": 0,
+          "no_meaningful_n": 8,
+          "accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "meaningful_recall": null,
+          "no_meananingful_recall": 1.0,
+          "false_meaningful": 0,
+          "missed_meaningful": 0,
+          "correct_meaningful_direction": 0
+        },
+        "unknown_materiality_n": 0,
+        "directly_supported_materiality": {
+          "n": 8,
+          "meaningful_n": 0,
+          "no_meaningful_n": 8,
+          "accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "meaningful_recall": null,
+          "no_meananingful_recall": 1.0,
+          "false_meaningful": 0,
+          "missed_meaningful": 0,
+          "correct_meaningful_direction": 0
+        },
+        "joint_correct": 8
+      },
+      "shade_vintage_round36": {
+        "direction": {
+          "n": 4,
+          "correct": 4,
+          "accuracy": 1.0,
+          "reversals": 0,
+          "zero_or_abstain": 0
+        },
+        "materiality": {
+          "n": 4,
+          "meaningful_n": 2,
+          "no_meaningful_n": 2,
+          "accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "meaningful_recall": 1.0,
+          "no_meananingful_recall": 1.0,
+          "false_meaningful": 0,
+          "missed_meaningful": 0,
+          "correct_meaningful_direction": 2
+        },
+        "unknown_materiality_n": 0,
+        "directly_supported_materiality": {
+          "n": 4,
+          "meaningful_n": 2,
+          "no_meaningful_n": 2,
+          "accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "meaningful_recall": 1.0,
+          "no_meananingful_recall": 1.0,
+          "false_meaningful": 0,
+          "missed_meaningful": 0,
+          "correct_meaningful_direction": 2
+        },
+        "joint_correct": 4
+      }
+    },
+    "round36_training_predictions": [
+      {
+        "id": "round36-1",
+        "direction": "B",
+        "materiality": "no_meaningful_difference"
+      },
+      {
+        "id": "round36-2",
+        "direction": "A",
+        "materiality": "no_meaningful_difference"
+      },
+      {
+        "id": "round36-3",
+        "direction": "B",
+        "materiality": "no_meaningful_difference"
+      },
+      {
+        "id": "round36-4",
+        "direction": "A",
+        "materiality": "no_meaningful_difference"
+      },
+      {
+        "id": "round36-5",
+        "direction": "A",
+        "materiality": "no_meaningful_difference"
+      },
+      {
+        "id": "round36-6",
+        "direction": "B",
+        "materiality": "no_meaningful_difference"
+      },
+      {
+        "id": "round36-7",
+        "direction": "A",
+        "materiality": "no_meaningful_difference"
+      },
+      {
+        "id": "round36-8",
+        "direction": "B",
+        "materiality": "no_meaningful_difference"
+      },
+      {
+        "id": "round36-9",
+        "direction": "A",
+        "materiality": "no_meaningful_difference"
+      },
+      {
+        "id": "round36-10",
+        "direction": "A",
+        "materiality": "meaningful_difference"
+      },
+      {
+        "id": "round36-11",
+        "direction": "B",
+        "materiality": "meaningful_difference"
+      },
+      {
+        "id": "round36-12",
+        "direction": "B",
+        "materiality": "no_meaningful_difference"
+      }
+    ]
+  },
+  "evidence": "evidence-v17.json",
+  "validation_file": "precision-shade-validation-v17.json",
+  "validation_sha256": "b46f662e140267e2b33d2e24493a846f21c2b83ed13670120e34b03a7ca473ce",
+  "validation": {
+    "direction": {
+      "n": 282,
+      "correct": 254.8,
+      "accuracy": 0.9035460992907801,
+      "reversals": 27.2,
+      "zero_or_abstain": 0.0
+    },
+    "materiality": {
+      "n": 187,
+      "meaningful_n": 28,
+      "no_meaningful_n": 159,
+      "accuracy": 0.9272727272727274,
+      "balanced_accuracy": 0.9130952380952382,
+      "meaningful_recall": 0.8928571428571429,
+      "no_meananingful_recall": 0.9333333333333333,
+      "false_meaningful": 10.6,
+      "missed_meaningful": 3.0,
+      "correct_meaningful_direction": 24.0
+    },
+    "directly_supported_materiality": {
+      "n": 53,
+      "meaningful_n": 3,
+      "no_meaningful_n": 50,
+      "accuracy": 0.9773584905660376,
+      "balanced_accuracy": 0.9880000000000001,
+      "meaningful_recall": 1.0,
+      "no_meananingful_recall": 0.976,
+      "false_meaningful": 1.2,
+      "missed_meaningful": 0.0,
+      "correct_meaningful_direction": 3.0
+    },
+    "unknown_materiality_n": 238,
+    "provenance_round36": {
+      "n": 8,
+      "direction_accuracy": 0.8,
+      "materiality_accuracy": 1.0,
+      "joint_correct": 6.4
+    },
+    "shade_vintage_round36": {
+      "n": 4,
+      "direction_accuracy": 0.9,
+      "materiality_accuracy": 0.9,
+      "joint_correct": 3.6
+    }
+  },
+  "residual_baseline_gap": {
+    "false_meaningful_candidate": 10.6,
+    "false_meaningful_v16": 10.2,
+    "note": "Strict no-regression gate against v16 not fully met; does improve original v17 false14.4 while preserving tested corrected behavior."
+  },
+  "prediction_source": "19 learned coefficients only; no stored-answer lookup",
+  "round36_training_consistency": {
+    "direction_correct": 12,
+    "meaningfulness_correct": 12,
+    "n": 12,
+    "note": "Training consistency, not a new prospective test."
+  }
+}

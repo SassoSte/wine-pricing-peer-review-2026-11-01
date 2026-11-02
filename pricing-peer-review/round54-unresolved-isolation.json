@@ -1,0 +1,1530 @@
+{
+  "round": 54,
+  "created_at": "2026-10-28T02:46:56.796657+00:00",
+  "status": "complete",
+  "purpose": "User requests one-at-a-time deconstruction of remaining unresolved comparisons.10 remaining original pairs; adaptive single-factor probes rather than repeated requests to force winner. First source27-11 previously requested provenance/tare differentiator, so change only A tare120to115. Retain original unresolved until user explicitly resolves it; probe answers do not automatically label anchor. Models fixed; preserve raw explanations and no missing axes inferred.",
+  "source_unresolved_ids": [
+    "round27-11",
+    "round42-3",
+    "round42-10",
+    "round42-12",
+    "round45-12",
+    "round47-1",
+    "round47-12",
+    "round47-18",
+    "round49-9",
+    "round49-10"
+  ],
+  "anchor_queue": [
+    {
+      "id": "round27-11",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        30,
+        120
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        20,
+        120
+      ]
+    },
+    {
+      "id": "round42-3",
+      "a": [
+        "southwest",
+        "golden",
+        20,
+        125
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        25,
+        115
+      ]
+    },
+    {
+      "id": "round42-10",
+      "a": [
+        "northeast",
+        "amber",
+        30,
+        120
+      ],
+      "b": [
+        "northwest",
+        "amber",
+        25,
+        125
+      ]
+    },
+    {
+      "id": "round42-12",
+      "a": [
+        "Western Europe",
+        "copper",
+        25,
+        125
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        30,
+        115
+      ]
+    },
+    {
+      "id": "round45-12",
+      "a": [
+        "northwest",
+        "golden",
+        20,
+        125
+      ],
+      "b": [
+        "northeast",
+        "golden",
+        25,
+        115
+      ]
+    },
+    {
+      "id": "round47-1",
+      "a": [
+        "southeast",
+        "copper",
+        25,
+        125
+      ],
+      "b": [
+        "central",
+        "amber",
+        30,
+        115
+      ]
+    },
+    {
+      "id": "round47-12",
+      "a": [
+        "Eastern Europe",
+        "copper",
+        20,
+        125
+      ],
+      "b": [
+        "northwest",
+        "amber",
+        25,
+        120
+      ]
+    },
+    {
+      "id": "round47-18",
+      "a": [
+        "southwest",
+        "golden",
+        30,
+        125
+      ],
+      "b": [
+        "northwest",
+        "golden",
+        25,
+        130
+      ]
+    },
+    {
+      "id": "round49-9",
+      "a": [
+        "northeast",
+        "brown",
+        25,
+        115
+      ],
+      "b": [
+        "southeast",
+        "amber",
+        30,
+        120
+      ]
+    },
+    {
+      "id": "round49-10",
+      "a": [
+        "Eastern Europe",
+        "golden",
+        25,
+        125
+      ],
+      "b": [
+        "Eastern Europe",
+        "pale/straw",
+        30,
+        115
+      ]
+    }
+  ],
+  "current_anchor": "round49-10",
+  "file_sha256": {
+    "evidence-v27.json": "9a7b2e61996a38317db321808ae02acf025d66451d0092f5a7d44462a2653ecb",
+    "round48-fixed.json": "30c54ade5dc8291c8df1050f21760de8a0244370fcaa491d03ce49275faad4ad",
+    "round51-fixed.json": "127df9af1fd6c265a5f1b2756ceaae99b086a92c75300a0383e5f50a1666001f",
+    "round52-clarifications.json": "e58dc7438b325b270fd8789fd23fb3dc8e819b9266ea0769bfac152f4d5abdae",
+    "round53-isolation.json": "47fc27c13990134bec5c764a08f7e478f412d8adadd3944cd69d728bb98a20d5",
+    "predictor_v27.py": "293307f98d4c2434bfbbea8a73341a3522601604535647f3a7a6b0103b23f2ed",
+    "model-config-v27.json": "38acf873fe5c333b8364cb677b438067b1a8f1cece7883ea39bb2008625d6ee6",
+    "predictor.py": "03d6d4f3d8fe47f31eb047832e578c4179fa545b85251f67362bc7d76f350166",
+    "model-config.json": "a3bb8c74df3a5cef51ab71dee54a35113b2df8146a7fbdc76054cd5b0bd48e4c"
+  },
+  "questions": [
+    {
+      "id": "round54-1",
+      "number": 1,
+      "anchor": "round27-11",
+      "anchor_a": [
+        "West Central Asia",
+        "pale/straw",
+        30,
+        120
+      ],
+      "anchor_b": [
+        "West Central Asia",
+        "brown",
+        20,
+        120
+      ],
+      "factor_changed": "A tare120->115, adding only5lb tare advantage to pale offering",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        30,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        20,
+        120
+      ],
+      "predictions": {
+        "tare_compensation": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.4999449999999982,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v27_tare_compensation"
+        },
+        "v26": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.05825559765273436,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        }
+      },
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "Yes. B, slightly\u2014practically similar overall, not a tie. The top-tier vintage gives B the edge, but A\u2019s pale shade and lower tare keep it very close.",
+      "exact_price_instruction": false,
+      "existing_evidence_pair_ids": [],
+      "strength": "slightly",
+      "raw_explanation": "B ever close. - the top tier Vintage of B trumps the top tier tare of A - the only reason it's not more of a route, is because of A's top tier shade and tare.  That both are of the same provenance also keeps it close.",
+      "interpretation": "Explicit B direction and practical similarity, not tie. Modified-tare probe at pale30/115 versus brown20/120 resolved; original equal120 pair still requires its own user judgment. Earlier raw explanation retained.",
+      "contextual_explanation": {
+        "vintage": "B20years is top tier and decisive over A30years here.",
+        "shade": "A pale is top tier and counters B brown shade.",
+        "tare": "A115lb lower tare counters B120lb; user emphasizes high-value light end.",
+        "provenance": "MatchedWCA, no origin advantage; user says this helps keep it close.",
+        "net_judgment": "B slightly higher, practically similar overall, explicitly not tied."
+      },
+      "explicitly_not_tie": true
+    },
+    {
+      "id": "round54-2",
+      "number": 2,
+      "revisits": "round27-11",
+      "anchor": "round54-1",
+      "factor_changed": "A tare115->120; restore original equal-tare unresolved pair",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        30,
+        120
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        20,
+        120
+      ],
+      "predictions": {
+        "tare_compensation": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -1.0001899999999901,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v27_tare_compensation"
+        },
+        "v26": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.18339115850958565,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        }
+      },
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "B, slightly\u2014practically similar, not a tie. With tare equal, B\u2019s top-tier vintage gives it the edge, but A\u2019s pale shade keeps the difference small.",
+      "exact_price_instruction": false,
+      "strength": "slightly",
+      "explicitly_not_tie": true,
+      "interpretation": "Original unresolved round27-11 now explicitly resolved B/practical similarity, not tie. At equal120lb,top-tier20-year vintage narrowly outweighs pale30-year shade benefit. Prior unresolved history must be preserved at reconciliation."
+    },
+    {
+      "id": "round54-3",
+      "number": 3,
+      "anchor": "round42-3",
+      "factor_changed": "B provenance WesternEurope->DomesticSouthwest; provenance now matched",
+      "anchor_a": [
+        "southwest",
+        "golden",
+        20,
+        125
+      ],
+      "anchor_b": [
+        "Western Europe",
+        "golden",
+        25,
+        115
+      ],
+      "a": [
+        "southwest",
+        "golden",
+        20,
+        125
+      ],
+      "b": [
+        "southwest",
+        "golden",
+        25,
+        115
+      ],
+      "predictions": {
+        "tare_compensation": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.000289999999992796,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v27_tare_compensation"
+        },
+        "v26": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.026797790492835094,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        }
+      },
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "A, slightly\u2014practically similar, not a tie. The top-tier 20-year vintage gives A the edge, but B\u2019s 10 lb lower tare keeps it close, with provenance and shade matching.",
+      "exact_price_instruction": false,
+      "strength": "slightly",
+      "explicitly_not_tie": true,
+      "interpretation": "Explicit A direction and practical similarity, not tie. At matchingSouthwest/golden,20-year vintage narrowly outweighs10lb heavier tare. This probe does not automatically resolve original cross-provenance pair."
+    },
+    {
+      "id": "round54-4",
+      "number": 4,
+      "revisits": "round42-3",
+      "anchor": "round54-3",
+      "factor_changed": "B provenance DomesticSouthwest->WesternEurope; restore original unresolved pair",
+      "a": [
+        "southwest",
+        "golden",
+        20,
+        125
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        25,
+        115
+      ],
+      "predictions": {
+        "tare_compensation": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.49915500000002444,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v27_tare_compensation"
+        },
+        "v26": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.145721728554151,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        }
+      },
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "B, slightly\u2014practically similar, not a tie. Western Europe\u2019s provenance and 10 lb lower tare just outweigh A\u2019s top-tier vintage, but it\u2019s very close.",
+      "exact_price_instruction": false,
+      "strength": "slightly",
+      "explicitly_not_tie": true,
+      "interpretation": "Original round42-3 explicitly resolved B/practical similarity, not tie. WesternEurope provenance plus10lb lower tare narrowly outweigh Southwest top-tier20-year vintage. Prior unresolved history retained for later reconciliation."
+    },
+    {
+      "id": "round54-5",
+      "number": 5,
+      "anchor": "round42-10",
+      "factor_changed": "B provenance DomesticNorthwest->DomesticNortheast; provenance now matched",
+      "anchor_a": [
+        "northeast",
+        "amber",
+        30,
+        120
+      ],
+      "anchor_b": [
+        "northwest",
+        "amber",
+        25,
+        125
+      ],
+      "a": [
+        "northeast",
+        "amber",
+        30,
+        120
+      ],
+      "b": [
+        "northeast",
+        "amber",
+        25,
+        125
+      ],
+      "predictions": {
+        "tare_compensation": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -2.0000899999999904,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v27_tare_compensation"
+        },
+        "v26": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -0.42344903516948507,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        }
+      },
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "B, meaningful difference\u2014the five-year younger vintage outweighs A\u2019s 5 lb lower tare, with provenance and shade matching.",
+      "exact_price_instruction": false,
+      "interpretation": "Explicit B direction and meaningful difference in matchedNortheast amber30/120 versus amber25/125 probe. Five-year younger vintage outweighs5lb heavier tare. Original cross-provenance anchor not automatically resolved."
+    },
+    {
+      "id": "round54-6",
+      "number": 6,
+      "revisits": "round42-10",
+      "anchor": "round54-5",
+      "factor_changed": "B provenance DomesticNortheast->DomesticNorthwest; restore original unresolved pair",
+      "a": [
+        "northeast",
+        "amber",
+        30,
+        120
+      ],
+      "b": [
+        "northwest",
+        "amber",
+        25,
+        125
+      ],
+      "predictions": {
+        "tare_compensation": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -1.4987550000000374,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v27_tare_compensation"
+        },
+        "v26": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -0.36488722239834065,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        }
+      },
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "A, slightly\u2014practically similar, not a tie. Northeast\u2019s provenance advantage and 5 lb lower tare just outweigh B\u2019s younger vintage, but it\u2019s very close.",
+      "exact_price_instruction": false,
+      "strength": "slightly",
+      "explicitly_not_tie": true,
+      "interpretation": "Original round42-10 explicitly resolved A/practical similarity, not tie. Northeast provenance plus5lb lower tare narrowly outweigh Northwest younger vintage. Prior unresolved history retained for later reconciliation."
+    },
+    {
+      "id": "round54-7",
+      "number": 7,
+      "anchor": "round42-12",
+      "factor_changed": "B shade amber->copper; shade now matched",
+      "anchor_a": [
+        "Western Europe",
+        "copper",
+        25,
+        125
+      ],
+      "anchor_b": [
+        "Western Europe",
+        "amber",
+        30,
+        115
+      ],
+      "a": [
+        "Western Europe",
+        "copper",
+        25,
+        125
+      ],
+      "b": [
+        "Western Europe",
+        "copper",
+        30,
+        115
+      ],
+      "predictions": {
+        "tare_compensation": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.9997300000000073,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v27_tare_compensation"
+        },
+        "v26": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.181802279007165,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        }
+      },
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "A, slightly\u2014practically similar, not a tie. The five-year younger vintage gives A the edge, but B\u2019s 10 lb lower tare keeps it close, with provenance and shade matching.",
+      "exact_price_instruction": false,
+      "strength": "slightly",
+      "explicitly_not_tie": true,
+      "interpretation": "Explicit A direction and practical similarity, not tie. At matchedWesternEurope/copper,25-year vintage narrowly outweighs10lb heavier tare versus30years. Original amber comparison remains unresolved until direct judgment."
+    },
+    {
+      "id": "round54-8",
+      "number": 8,
+      "revisits": "round42-12",
+      "anchor": "round54-7",
+      "factor_changed": "B shade copper->amber; restore original unresolved pair",
+      "a": [
+        "Western Europe",
+        "copper",
+        25,
+        125
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        30,
+        115
+      ],
+      "predictions": {
+        "tare_compensation": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.9997200000000074,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v27_tare_compensation"
+        },
+        "v26": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.181802279007165,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        }
+      },
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "B, slightly\u2014practically similar, not a tie. The lighter amber shade and 10 lb lower tare just outweigh A\u2019s five-year younger vintage, but it\u2019s very close.",
+      "exact_price_instruction": false,
+      "strength": "slightly",
+      "explicitly_not_tie": true,
+      "interpretation": "Original round42-12 explicitly resolved B/practical similarity, not tie. Lighter amber and10lb lower tare narrowly outweigh younger copper vintage. Prior unresolved history retained for later reconciliation."
+    },
+    {
+      "id": "round54-9",
+      "number": 9,
+      "anchor": "round45-12",
+      "factor_changed": "B provenance DomesticNortheast->DomesticNorthwest; provenance now matched",
+      "anchor_a": [
+        "northwest",
+        "golden",
+        20,
+        125
+      ],
+      "anchor_b": [
+        "northeast",
+        "golden",
+        25,
+        115
+      ],
+      "a": [
+        "northwest",
+        "golden",
+        20,
+        125
+      ],
+      "b": [
+        "northwest",
+        "golden",
+        25,
+        115
+      ],
+      "predictions": {
+        "tare_compensation": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.000289999999992796,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v27_tare_compensation"
+        },
+        "v26": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.026797790492835094,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        }
+      },
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "A, slightly\u2014practically similar, not a tie. The top-tier 20-year vintage gives A the edge, but B\u2019s 10 lb lower tare keeps it close, with provenance and shade matching.",
+      "exact_price_instruction": false,
+      "strength": "slightly",
+      "explicitly_not_tie": true,
+      "interpretation": "Explicit A direction and practical similarity, not tie. At matchedNorthwest/golden,20-year vintage narrowly outweighs10lb heavier tare. Original Northeast comparison remains unresolved until direct judgment."
+    },
+    {
+      "id": "round54-10",
+      "number": 10,
+      "revisits": "round45-12",
+      "anchor": "round54-9",
+      "factor_changed": "B provenance DomesticNorthwest->DomesticNortheast; restore original unresolved pair",
+      "a": [
+        "northwest",
+        "golden",
+        20,
+        125
+      ],
+      "b": [
+        "northeast",
+        "golden",
+        25,
+        115
+      ],
+      "predictions": {
+        "tare_compensation": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.0015099999999550473,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v27_tare_compensation"
+        },
+        "v26": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.03176402227830932,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        }
+      },
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "B, slightly\u2014practically similar, not a tie. Northeast\u2019s provenance advantage and 10 lb lower tare just outweigh A\u2019s top-tier vintage, but it\u2019s very close.",
+      "exact_price_instruction": false,
+      "strength": "slightly",
+      "explicitly_not_tie": true,
+      "interpretation": "Original round45-12 explicitly resolved B/practical similarity, not tie. Northeast provenance plus10lb lower tare narrowly outweigh Northwest top-tier vintage. Prior unresolved history retained for later reconciliation."
+    },
+    {
+      "id": "round54-11",
+      "number": 11,
+      "anchor": "round47-1",
+      "factor_changed": "B provenance DomesticCentral->DomesticSoutheast; provenance now matched",
+      "anchor_a": [
+        "southeast",
+        "copper",
+        25,
+        125
+      ],
+      "anchor_b": [
+        "central",
+        "amber",
+        30,
+        115
+      ],
+      "a": [
+        "southeast",
+        "copper",
+        25,
+        125
+      ],
+      "b": [
+        "southeast",
+        "amber",
+        30,
+        115
+      ],
+      "predictions": {
+        "tare_compensation": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.9997200000000074,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v27_tare_compensation"
+        },
+        "v26": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.181802279007165,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        }
+      },
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "B, slightly\u2014practically similar, not a tie. The lighter amber shade and 10 lb lower tare just outweigh A\u2019s younger vintage, with provenance matching, but it\u2019s very close.",
+      "exact_price_instruction": false,
+      "strength": "slightly",
+      "explicitly_not_tie": true,
+      "interpretation": "Explicit B direction and practical similarity, not tie. At matchedSoutheast provenance, lighter amber and10lb lower tare narrowly outweigh younger copper vintage. Original Central comparison not automatically resolved."
+    },
+    {
+      "id": "round54-12",
+      "number": 12,
+      "revisits": "round47-1",
+      "anchor": "round54-11",
+      "factor_changed": "B provenance DomesticSoutheast->DomesticCentral; restore original unresolved pair",
+      "a": [
+        "southeast",
+        "copper",
+        25,
+        125
+      ],
+      "b": [
+        "central",
+        "amber",
+        30,
+        115
+      ],
+      "predictions": {
+        "tare_compensation": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 1.0005299999999806,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v27_tare_compensation"
+        },
+        "v26": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 0.45131113620258556,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        }
+      },
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "A, slightly\u2014practically similar, not a tie. Southeast\u2019s provenance advantage and younger vintage just outweigh B\u2019s lighter shade and 10 lb lower tare, but it\u2019s very close.",
+      "exact_price_instruction": false,
+      "strength": "slightly",
+      "explicitly_not_tie": true,
+      "interpretation": "Original round47-1 explicitly resolved A/practical similarity, not tie. Southeast provenance and younger vintage narrowly outweigh Central lighter amber shade and10lb lower tare. Prior unresolved history retained for later reconciliation."
+    },
+    {
+      "id": "round54-13",
+      "number": 13,
+      "anchor": "round47-12",
+      "factor_changed": "B provenance DomesticNorthwest->EasternEurope; provenance now matched",
+      "anchor_a": [
+        "Eastern Europe",
+        "copper",
+        20,
+        125
+      ],
+      "anchor_b": [
+        "northwest",
+        "amber",
+        25,
+        120
+      ],
+      "a": [
+        "Eastern Europe",
+        "copper",
+        20,
+        125
+      ],
+      "b": [
+        "Eastern Europe",
+        "amber",
+        25,
+        120
+      ],
+      "predictions": {
+        "tare_compensation": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 1.0000599999999902,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v27_tare_compensation"
+        },
+        "v26": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.26844454665515516,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        }
+      },
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "A, meaningful difference\u2014the top-tier 20-year vintage outweighs B\u2019s lighter amber shade and 5 lb lower tare, with provenance matching.",
+      "exact_price_instruction": false,
+      "interpretation": "Explicit A direction and meaningful difference at matchedEasternEurope provenance. Top-tier20-year copper outweighs25-year amber plus5lb lower tare. Original Northwest comparison remains unresolved until direct judgment."
+    },
+    {
+      "id": "round54-14",
+      "number": 14,
+      "revisits": "round47-12",
+      "anchor": "round54-13",
+      "factor_changed": "B provenance EasternEurope->DomesticNorthwest; restore original unresolved pair",
+      "a": [
+        "Eastern Europe",
+        "copper",
+        20,
+        125
+      ],
+      "b": [
+        "northwest",
+        "amber",
+        25,
+        120
+      ],
+      "predictions": {
+        "tare_compensation": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.4998550000000036,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v27_tare_compensation"
+        },
+        "v26": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.03204796544081215,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        }
+      },
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "A, slightly\u2014practically similar, not a tie. The top-tier 20-year vintage gives A the edge, but Northwest\u2019s provenance advantage, lighter amber shade and 5 lb lower tare keep it very close.",
+      "exact_price_instruction": false,
+      "strength": "slightly",
+      "explicitly_not_tie": true,
+      "interpretation": "Original round47-12 explicitly resolved A/practical similarity, not tie. EasternEurope top-tier20-year vintage narrowly outweighs Northwest provenance,amber shade and5lb lower tare advantages. Prior unresolved history retained for reconciliation."
+    },
+    {
+      "id": "round54-15",
+      "number": 15,
+      "anchor": "round47-18",
+      "factor_changed": "B provenance DomesticNorthwest->DomesticSouthwest; provenance now matched",
+      "anchor_a": [
+        "southwest",
+        "golden",
+        30,
+        125
+      ],
+      "anchor_b": [
+        "northwest",
+        "golden",
+        25,
+        130
+      ],
+      "a": [
+        "southwest",
+        "golden",
+        30,
+        125
+      ],
+      "b": [
+        "southwest",
+        "golden",
+        25,
+        130
+      ],
+      "predictions": {
+        "tare_compensation": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -2.0000899999999904,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v27_tare_compensation"
+        },
+        "v26": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -0.42344903516948507,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        }
+      },
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "B, meaningful difference\u2014the five-year younger vintage outweighs A\u2019s 5 lb lower tare, with provenance and shade matching.",
+      "exact_price_instruction": false,
+      "interpretation": "Explicit B direction and meaningful difference in matchedSouthwest golden30/125 versus golden25/130 probe. Five-year younger vintage outweighs5lb heavier tare. Original Northwest comparison not automatically resolved."
+    },
+    {
+      "id": "round54-16",
+      "number": 16,
+      "revisits": "round47-18",
+      "anchor": "round54-15",
+      "factor_changed": "B provenance DomesticSouthwest->DomesticNorthwest; restore original unresolved pair",
+      "a": [
+        "southwest",
+        "golden",
+        30,
+        125
+      ],
+      "b": [
+        "northwest",
+        "golden",
+        25,
+        130
+      ],
+      "predictions": {
+        "tare_compensation": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -1.4992250000000222,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v27_tare_compensation"
+        },
+        "v26": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -0.30442509710816923,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        }
+      },
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "A, slightly\u2014practically similar, not a tie. Southwest\u2019s provenance advantage and 5 lb lower tare just outweigh B\u2019s younger vintage, but it\u2019s very close.",
+      "exact_price_instruction": false,
+      "strength": "slightly",
+      "explicitly_not_tie": true,
+      "interpretation": "Original round47-18 explicitly resolved A/practical similarity, not tie. Southwest provenance plus5lb lower tare narrowly outweigh Northwest younger vintage. Prior unresolved history retained for reconciliation."
+    },
+    {
+      "id": "round54-17",
+      "number": 17,
+      "anchor": "round49-9",
+      "factor_changed": "B provenance DomesticSoutheast->DomesticNortheast; provenance now matched",
+      "anchor_a": [
+        "northeast",
+        "brown",
+        25,
+        115
+      ],
+      "anchor_b": [
+        "southeast",
+        "amber",
+        30,
+        120
+      ],
+      "a": [
+        "northeast",
+        "brown",
+        25,
+        115
+      ],
+      "b": [
+        "northeast",
+        "amber",
+        30,
+        120
+      ],
+      "predictions": {
+        "tare_compensation": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 1.0002299999999913,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v27_tare_compensation"
+        },
+        "v26": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.12864225268623575,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        }
+      },
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": null,
+      "raw_answer": "A slightly because of vintage and tare absolutew dominance.",
+      "exact_price_instruction": false,
+      "resolution_status": "direction_resolved_size_unspecified",
+      "interpretation": "User resolves previously unresolved matchedNortheast probe in favor of A, slightly, because younger vintage and lower tare dominate lighter amber shade here. Preserve slightly as strength; absolute dominance describes attribute reasoning, not explicit overall meaningfulness. No binary size label inferred.",
+      "answer_history": [
+        {
+          "direction": null,
+          "meaningfulness": null,
+          "raw_answer": "To close to call.",
+          "resolution_status": "unresolved",
+          "interpretation": "User says too close to call. Following established distinction between uncertainty and ties, both axes remain unresolved; no equality or practical-similarity label inferred. Original cross-provenance anchor also remains unresolved."
+        }
+      ],
+      "strength": "slightly"
+    },
+    {
+      "id": "round54-18",
+      "number": 18,
+      "anchor": "round49-9",
+      "probe_parent": "round54-17",
+      "factor_changed": "A vintage25->30; provenance and vintage now matched",
+      "a": [
+        "northeast",
+        "brown",
+        30,
+        115
+      ],
+      "b": [
+        "northeast",
+        "amber",
+        30,
+        120
+      ],
+      "predictions": {
+        "tare_compensation": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.9999900000000002,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v27_tare_compensation"
+        },
+        "v26": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -0.5364535386455694,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        }
+      },
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "B, slightly\u2014practically similar, not a tie. The lighter amber shade outweighs A\u2019s 5 lb lower tare with provenance and vintage matching, but the overall premium is small.",
+      "exact_price_instruction": false,
+      "strength": "slightly",
+      "explicitly_not_tie": true,
+      "interpretation": "Explicit B direction and practical similarity, not tie. At matchedNortheast30years, amber shade narrowly outweighs5lb tare disadvantage. Original cross-provenance comparison and earlier matched-provenance25vs30 probe remain unlabelled unless directly resolved."
+    },
+    {
+      "id": "round54-19",
+      "number": 19,
+      "revisits": "round49-9",
+      "anchor": "round54-17",
+      "factor_changed": "Relative to25vs30 matched-provenance probe17, B provenance Northeast->Southeast; restore original pair. Relative to immediately prior probe18, also restore A vintage30->25.",
+      "a": [
+        "northeast",
+        "brown",
+        25,
+        115
+      ],
+      "b": [
+        "southeast",
+        "amber",
+        30,
+        120
+      ],
+      "predictions": {
+        "tare_compensation": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 1.000219999999992,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v27_tare_compensation"
+        },
+        "v26": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.11265265683193704,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        }
+      },
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "A, slightly\u2014practically similar, not a tie. Northeast\u2019s provenance advantage, younger vintage and lower tare just outweigh B\u2019s lighter amber shade, but it\u2019s very close.",
+      "exact_price_instruction": false,
+      "strength": "slightly",
+      "explicitly_not_tie": true,
+      "interpretation": "Original round49-9 explicitly resolved A/practical similarity, not tie. Northeast provenance,younger vintage and5lb lower tare narrowly outweigh Southeast lighter amber shade. Prior unresolved history retained; earlier matched-provenance probe17 remains unresolved."
+    },
+    {
+      "id": "round54-20",
+      "number": 20,
+      "anchor": "round49-10",
+      "factor_changed": "B shade pale/straw->golden; shade now matched",
+      "anchor_a": [
+        "Eastern Europe",
+        "golden",
+        25,
+        125
+      ],
+      "anchor_b": [
+        "Eastern Europe",
+        "pale/straw",
+        30,
+        115
+      ],
+      "a": [
+        "Eastern Europe",
+        "golden",
+        25,
+        125
+      ],
+      "b": [
+        "Eastern Europe",
+        "golden",
+        30,
+        115
+      ],
+      "predictions": {
+        "tare_compensation": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.9997300000000073,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v27_tare_compensation"
+        },
+        "v26": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.181802279007165,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        }
+      },
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "A, slightly\u2014practically similar, not a tie. The five-year younger vintage gives A the edge, but B\u2019s 10 lb lower tare keeps it close, with provenance and shade matching.",
+      "exact_price_instruction": false,
+      "strength": "slightly",
+      "explicitly_not_tie": true,
+      "interpretation": "Explicit A direction and practical similarity, not tie. At matchedEasternEurope/golden,25-year vintage narrowly outweighs10lb heavier tare versus30years. Original pale comparison remains unresolved until direct judgment."
+    },
+    {
+      "id": "round54-21",
+      "number": 21,
+      "revisits": "round49-10",
+      "anchor": "round54-20",
+      "factor_changed": "B shade golden->pale/straw; restore original unresolved pair",
+      "a": [
+        "Eastern Europe",
+        "golden",
+        25,
+        125
+      ],
+      "b": [
+        "Eastern Europe",
+        "pale/straw",
+        30,
+        115
+      ],
+      "predictions": {
+        "tare_compensation": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 1.4993550000000144,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v27_tare_compensation"
+        },
+        "v26": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 0.3006545338412625,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        }
+      },
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "A, slightly\u2014practically similar, not a tie. The pale shade and 10 lb lower tare keep it close, but not close enough to overcome five-year younger vintage, but it\u2019s very close.",
+      "exact_price_instruction": false,
+      "strength": "slightly",
+      "explicitly_not_tie": true,
+      "interpretation": "Original round49-10 explicitly resolved A/practical similarity, not tie. Five-year younger golden vintage narrowly outweighs pale shade and10lb lower tare advantages. Prior unresolved history retained for later reconciliation."
+    }
+  ],
+  "rule_statements": [
+    {
+      "source": "round54-1-explanation",
+      "statement": "WCA pale30/115 versus brown20/120: user chooses B, very close; top-tier vintage outweighs top-tier shade/lower tare, with equal provenance.",
+      "scope": "This modified-tare probe only; original equal120lb comparison not automatically resolved, no numerical weights inferred."
+    },
+    {
+      "source": "round54-1",
+      "statement": "WCA pale30/115 versus brown20/120: B slightly higher, practically similar, not tied; top-tier vintage edge narrowly exceeds pale shade and lower tare benefits.",
+      "scope": "Modified-tare probe; no automatic label for original anchor."
+    },
+    {
+      "source": "round54-2",
+      "revisits": "round27-11",
+      "statement": "WCA pale30/120 versus brown20/120: B slightly higher, practically similar, not tied; vintage edge narrowly outweighs pale shade with tare equal.",
+      "scope": "Explicit resolution of original anchor, not merely inference from probe."
+    },
+    {
+      "source": "round54-3",
+      "statement": "DomesticSouthwest golden20/125 versus golden25/115: A slightly higher, practically similar, not tied; top-tier vintage edge narrowly outweighs10lb tare disadvantage.",
+      "scope": "Matched-provenance probe; original cross-provenance anchor remains unresolved until direct judgment."
+    },
+    {
+      "source": "round54-4",
+      "revisits": "round42-3",
+      "statement": "DomesticSouthwest golden20/125 versus WesternEurope golden25/115: B slightly higher, practically similar, not tied; provenance and10lb lower tare narrowly outweigh top-tier vintage.",
+      "scope": "Explicit resolution of original anchor, not inferred from probe."
+    },
+    {
+      "source": "round54-5",
+      "statement": "DomesticNortheast amber30/120 versus amber25/125: B meaningfully higher; younger vintage outweighs5lb tare disadvantage with provenance/shade matched.",
+      "scope": "Matched-provenance probe only; original anchor requires direct judgment."
+    },
+    {
+      "source": "round54-6",
+      "revisits": "round42-10",
+      "statement": "DomesticNortheast amber30/120 versus Northwest amber25/125: A slightly higher, practically similar, not tied; provenance and lower tare narrowly outweigh younger vintage.",
+      "scope": "Explicit original-anchor resolution."
+    },
+    {
+      "source": "round54-7",
+      "statement": "WesternEurope copper25/125 versus copper30/115: A slightly higher, practically similar, not tied; younger vintage edge narrowly outweighs10lb tare disadvantage.",
+      "scope": "Shade-matched probe; original anchor not automatically resolved."
+    },
+    {
+      "source": "round54-8",
+      "revisits": "round42-12",
+      "statement": "WesternEurope copper25/125 versus amber30/115: B slightly higher, practically similar, not tied; lighter shade and10lb tare advantage narrowly outweigh younger vintage.",
+      "scope": "Explicit original-anchor resolution."
+    },
+    {
+      "source": "round54-9",
+      "statement": "DomesticNorthwest golden20/125 versus golden25/115: A slightly higher, practically similar, not tied; top-tier vintage edge narrowly outweighs10lb tare disadvantage.",
+      "scope": "Matched-provenance probe only; original anchor not automatically resolved."
+    },
+    {
+      "source": "round54-10",
+      "revisits": "round45-12",
+      "statement": "DomesticNorthwest golden20/125 versus Northeast golden25/115: B slightly higher, practically similar, not tied; provenance and10lb lower tare narrowly outweigh top-tier vintage.",
+      "scope": "Explicit original-anchor resolution."
+    },
+    {
+      "source": "round54-11",
+      "statement": "DomesticSoutheast copper25/125 versus amber30/115: B slightly higher, practically similar, not tied; shade and10lb lower tare narrowly outweigh younger vintage.",
+      "scope": "Matched-provenance probe only; original anchor requires direct judgment."
+    },
+    {
+      "source": "round54-12",
+      "revisits": "round47-1",
+      "statement": "DomesticSoutheast copper25/125 versus Central amber30/115: A slightly higher, practically similar, not tied; provenance and younger vintage narrowly outweigh lighter shade and10lb tare advantage.",
+      "scope": "Explicit original-anchor resolution."
+    },
+    {
+      "source": "round54-13",
+      "statement": "EasternEurope copper20/125 versus amber25/120: A meaningfully higher; top-tier vintage outweighs lighter shade and5lb tare advantage with provenance equal.",
+      "scope": "Matched-provenance probe only; original anchor not automatically resolved."
+    },
+    {
+      "source": "round54-14",
+      "revisits": "round47-12",
+      "statement": "EasternEurope copper20/125 versus DomesticNorthwest amber25/120: A slightly higher, practically similar, not tied; top-tier vintage edge narrowly outweighs provenance,shade andtare advantages.",
+      "scope": "Explicit original-anchor resolution."
+    },
+    {
+      "source": "round54-15",
+      "statement": "DomesticSouthwest golden30/125 versus golden25/130: B meaningfully higher; younger vintage outweighs5lb tare disadvantage with provenance/shade matched.",
+      "scope": "Matched-provenance probe only; original anchor requires direct judgment."
+    },
+    {
+      "source": "round54-16",
+      "revisits": "round47-18",
+      "statement": "DomesticSouthwest golden30/125 versus Northwest golden25/130: A slightly higher, practically similar, not tied; provenance and lower tare narrowly outweigh younger vintage.",
+      "scope": "Explicit original-anchor resolution."
+    },
+    {
+      "source": "round54-17",
+      "statement": "DomesticNortheast brown25/115 versus amber30/120 is too close to call.",
+      "scope": "Matched-provenance probe unresolved; no winner or meaningfulness label inferred."
+    },
+    {
+      "source": "round54-18",
+      "statement": "DomesticNortheast brown30/115 versus amber30/120: B slightly higher, practically similar, not tied; lighter shade narrowly outweighs5lb lower tare with vintage equal.",
+      "scope": "Shade-versus-tare probe; no inferred winner for original anchor."
+    },
+    {
+      "source": "round54-19",
+      "revisits": "round49-9",
+      "statement": "DomesticNortheast brown25/115 versus Southeast amber30/120: A slightly higher, practically similar, not tied; provenance,vintage,tare narrowly outweigh lighter shade.",
+      "scope": "Explicit original-anchor resolution; does not retroactively resolve different probe17."
+    },
+    {
+      "source": "round54-20",
+      "statement": "EasternEurope golden25/125 versus golden30/115: A slightly higher, practically similar, not tied; younger vintage edge narrowly outweighs10lb tare disadvantage.",
+      "scope": "Shade-matched probe only; original anchor not automatically resolved."
+    },
+    {
+      "source": "round54-21",
+      "revisits": "round49-10",
+      "statement": "EasternEurope golden25/125 versus pale30/115: A slightly higher, practically similar, not tied; younger vintage narrowly outweighs pale shade and10lb lower tare advantages.",
+      "scope": "Explicit original-anchor resolution."
+    },
+    {
+      "source": "round54-17-clarification",
+      "statement": "DomesticNortheast brown25/115 versus amber30/120: A slightly higher because younger vintage and lower tare outweigh lighter shade.",
+      "scope": "Explicit direction clarification after original unresolved response. Meaningfulness category unspecified; positive preference retained."
+    }
+  ],
+  "resolved_anchors": [
+    {
+      "source_id": "round27-11",
+      "clarification_id": "round54-2",
+      "direction": "B",
+      "meaningfulness": "no_meaningful_difference"
+    },
+    {
+      "source_id": "round42-3",
+      "clarification_id": "round54-4",
+      "direction": "B",
+      "meaningfulness": "no_meaningful_difference"
+    },
+    {
+      "source_id": "round42-10",
+      "clarification_id": "round54-6",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference"
+    },
+    {
+      "source_id": "round42-12",
+      "clarification_id": "round54-8",
+      "direction": "B",
+      "meaningfulness": "no_meaningful_difference"
+    },
+    {
+      "source_id": "round45-12",
+      "clarification_id": "round54-10",
+      "direction": "B",
+      "meaningfulness": "no_meaningful_difference"
+    },
+    {
+      "source_id": "round47-1",
+      "clarification_id": "round54-12",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference"
+    },
+    {
+      "source_id": "round47-12",
+      "clarification_id": "round54-14",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference"
+    },
+    {
+      "source_id": "round47-18",
+      "clarification_id": "round54-16",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference"
+    },
+    {
+      "source_id": "round49-9",
+      "clarification_id": "round54-19",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference"
+    },
+    {
+      "source_id": "round49-10",
+      "clarification_id": "round54-21",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference"
+    }
+  ],
+  "remaining_unresolved_probes": [],
+  "reconciliation_pending": true,
+  "qualification": "Ten original anchors resolved with strict direction/practical similarity. Probe17 subsequently resolved A/slightly; binary meaningfulness unspecified. All21 judgments have a direction; do not infer missing size. Models/evidence unchanged; preserve histories and deduplicate at reconciliation.",
+  "direction_resolved_size_unspecified": [
+    "round54-17"
+  ]
+}

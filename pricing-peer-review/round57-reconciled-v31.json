@@ -1,0 +1,13 @@
+{
+  "round": 57,
+  "status": "reconciled",
+  "evidence": "evidence-v31.json",
+  "canonical_pairs_updated": 18,
+  "new_pairs": 0,
+  "exact_tie_cases": [
+    1,
+    15,
+    18
+  ],
+  "history": "The sourceRound57file is an immutableprereconciliation snapshot; its oldpendingfield ishistorical. Currentstatus liveshere andinprogress."
+}

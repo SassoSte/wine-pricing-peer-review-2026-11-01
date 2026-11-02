@@ -1,0 +1,262 @@
+{
+  "status": "fitted simple benchmark; not prospectively validated",
+  "evidence": "evidence-v13.json",
+  "target_view": "benchmark-targets-v13.json",
+  "source_hashes": {
+    "evidence-v12.json": "76c2adb3a57301eb8ad136e2414b8621dc9ee22f9f7611ab4a923db91d468ba6",
+    "equality-wording-audit-v12.json": "224e5d350a1e45ea04b8b1cf793667700019cfa496c247e7c5b535e93b96316c",
+    "pricing-reset-plan.json": "5686c0c41896cd178ad0b29e215d02083b064ec0da7108bcaf7aaab1c7ec0c8c",
+    "compare_models.py": "da2067d3d2ef99849ce2e30be16208bff0145bc6b036111535542c2daf00fa5f",
+    "build_meaningful_benchmark.py": "32517ea5c19f7d11fc665fdef6b9c4a79f724ff899fdea2ec3c90bcc79c748f7"
+  },
+  "architecture": "18 additive coefficients:9 provenance offsets,4 monotone shade increments,4 monotone vintage increments,1 nonnegative lighter-tare slope. No regional hierarchy overlays, context curves, fusion, or hard zero-price constraints.",
+  "target_cautions": "Meaningfulness primary, known direction secondary. Historical ties are coarsened only to absence of expressed meaningful preference, never forced zero. Moderate/strong qualifiers are flagged positive proxies pending fresh direct validation. Unspecified meaningfulness remains missing, not silently converted. Exact-price semantics remain in original evidence/audit.",
+  "loss_conventions": {
+    "meaningful_proxy_unit_margin": 1,
+    "direction_only_numerical_margin": 0.05,
+    "practical_training_band": 0.25,
+    "note": "Model-scale conventions, not user-supplied percentages or prices. One observation can constrain direction and practical closeness without becoming two samples."
+  },
+  "alpha": 0.01,
+  "decision_radius": 0.5,
+  "coefficients": [
+    0.45153507136316856,
+    -0.6581964319340311,
+    -0.6246672684075063,
+    -0.5303270066775049,
+    0.41835315732092787,
+    0.6211245960985821,
+    0.41678964736699564,
+    0.6576060683782924,
+    0.6221975681693684,
+    0.9958170571006331,
+    0.0,
+    0.0,
+    0.3462771958564444,
+    0.36900439720431477,
+    0.6997963292553665,
+    0.7304130795460265,
+    0.41765898358732556,
+    0.31058625626899944
+  ],
+  "feature_names": [
+    "origin:Western Europe vs Eastern Europe",
+    "origin:West Central Asia vs Eastern Europe",
+    "origin:South/Eastern Asia vs Eastern Europe",
+    "origin:West Asia / Middle East vs Eastern Europe",
+    "origin:central vs Eastern Europe",
+    "origin:northeast vs Eastern Europe",
+    "origin:northwest vs Eastern Europe",
+    "origin:southwest vs Eastern Europe",
+    "origin:southeast vs Eastern Europe",
+    "shade increment:copper",
+    "shade increment:amber",
+    "shade increment:golden",
+    "shade increment:pale/straw",
+    "age increment:35",
+    "age increment:30",
+    "age increment:25",
+    "age increment:20",
+    "lightness per 5 lb"
+  ],
+  "inner_calibration_scores": {
+    "0.001/0.1": {
+      "known_n": 172,
+      "meaningful_proxy_n": 25,
+      "no_meaningful_preference_n": 147,
+      "balanced_accuracy": 0.7248979591836735,
+      "accuracy": 0.5581395348837209,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+    },
+    "0.001/0.2": {
+      "known_n": 172,
+      "meaningful_proxy_n": 25,
+      "no_meaningful_preference_n": 147,
+      "balanced_accuracy": 0.7657142857142857,
+      "accuracy": 0.627906976744186,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+    },
+    "0.001/0.25": {
+      "known_n": 172,
+      "meaningful_proxy_n": 25,
+      "no_meaningful_preference_n": 147,
+      "balanced_accuracy": 0.7725170068027211,
+      "accuracy": 0.6395348837209303,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+    },
+    "0.001/0.3": {
+      "known_n": 172,
+      "meaningful_proxy_n": 25,
+      "no_meaningful_preference_n": 147,
+      "balanced_accuracy": 0.8405442176870748,
+      "accuracy": 0.7558139534883721,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+    },
+    "0.001/0.5": {
+      "known_n": 172,
+      "meaningful_proxy_n": 25,
+      "no_meaningful_preference_n": 147,
+      "balanced_accuracy": 0.949795918367347,
+      "accuracy": 0.9709302325581395,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+    },
+    "0.001/0.75": {
+      "known_n": 172,
+      "meaningful_proxy_n": 25,
+      "no_meaningful_preference_n": 147,
+      "balanced_accuracy": 0.8365986394557823,
+      "accuracy": 0.9476744186046512,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+    },
+    "0.01/0.1": {
+      "known_n": 172,
+      "meaningful_proxy_n": 25,
+      "no_meaningful_preference_n": 147,
+      "balanced_accuracy": 0.7555102040816326,
+      "accuracy": 0.6104651162790697,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+    },
+    "0.01/0.2": {
+      "known_n": 172,
+      "meaningful_proxy_n": 25,
+      "no_meaningful_preference_n": 147,
+      "balanced_accuracy": 0.7657142857142857,
+      "accuracy": 0.627906976744186,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+    },
+    "0.01/0.25": {
+      "known_n": 172,
+      "meaningful_proxy_n": 25,
+      "no_meaningful_preference_n": 147,
+      "balanced_accuracy": 0.7725170068027211,
+      "accuracy": 0.6395348837209303,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+    },
+    "0.01/0.3": {
+      "known_n": 172,
+      "meaningful_proxy_n": 25,
+      "no_meaningful_preference_n": 147,
+      "balanced_accuracy": 0.8439455782312926,
+      "accuracy": 0.7616279069767442,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+    },
+    "0.01/0.5": {
+      "known_n": 172,
+      "meaningful_proxy_n": 25,
+      "no_meaningful_preference_n": 147,
+      "balanced_accuracy": 0.949795918367347,
+      "accuracy": 0.9709302325581395,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+    },
+    "0.01/0.75": {
+      "known_n": 172,
+      "meaningful_proxy_n": 25,
+      "no_meaningful_preference_n": 147,
+      "balanced_accuracy": 0.8365986394557823,
+      "accuracy": 0.9476744186046512,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+    },
+    "0.1/0.1": {
+      "known_n": 172,
+      "meaningful_proxy_n": 25,
+      "no_meaningful_preference_n": 147,
+      "balanced_accuracy": 0.7351020408163265,
+      "accuracy": 0.5755813953488372,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+    },
+    "0.1/0.2": {
+      "known_n": 172,
+      "meaningful_proxy_n": 25,
+      "no_meaningful_preference_n": 147,
+      "balanced_accuracy": 0.7759183673469388,
+      "accuracy": 0.6453488372093024,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+    },
+    "0.1/0.25": {
+      "known_n": 172,
+      "meaningful_proxy_n": 25,
+      "no_meaningful_preference_n": 147,
+      "balanced_accuracy": 0.7895238095238095,
+      "accuracy": 0.6686046511627907,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+    },
+    "0.1/0.3": {
+      "known_n": 172,
+      "meaningful_proxy_n": 25,
+      "no_meaningful_preference_n": 147,
+      "balanced_accuracy": 0.8609523809523809,
+      "accuracy": 0.7906976744186046,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+    },
+    "0.1/0.5": {
+      "known_n": 172,
+      "meaningful_proxy_n": 25,
+      "no_meaningful_preference_n": 147,
+      "balanced_accuracy": 0.929795918367347,
+      "accuracy": 0.9651162790697675,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+    },
+    "0.1/0.75": {
+      "known_n": 172,
+      "meaningful_proxy_n": 25,
+      "no_meaningful_preference_n": 147,
+      "balanced_accuracy": 0.76,
+      "accuracy": 0.9302325581395349,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+    },
+    "1.0/0.1": {
+      "known_n": 172,
+      "meaningful_proxy_n": 25,
+      "no_meaningful_preference_n": 147,
+      "balanced_accuracy": 0.6108843537414966,
+      "accuracy": 0.47674418604651164,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+    },
+    "1.0/0.2": {
+      "known_n": 172,
+      "meaningful_proxy_n": 25,
+      "no_meaningful_preference_n": 147,
+      "balanced_accuracy": 0.7095238095238096,
+      "accuracy": 0.6453488372093024,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+    },
+    "1.0/0.25": {
+      "known_n": 172,
+      "meaningful_proxy_n": 25,
+      "no_meaningful_preference_n": 147,
+      "balanced_accuracy": 0.7677551020408163,
+      "accuracy": 0.7732558139534884,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+    },
+    "1.0/0.3": {
+      "known_n": 172,
+      "meaningful_proxy_n": 25,
+      "no_meaningful_preference_n": 147,
+      "balanced_accuracy": 0.8493877551020408,
+      "accuracy": 0.9127906976744186,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+    },
+    "1.0/0.5": {
+      "known_n": 172,
+      "meaningful_proxy_n": 25,
+      "no_meaningful_preference_n": 147,
+      "balanced_accuracy": 0.7931972789115647,
+      "accuracy": 0.9302325581395349,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+    },
+    "1.0/0.75": {
+      "known_n": 172,
+      "meaningful_proxy_n": 25,
+      "no_meaningful_preference_n": 147,
+      "balanced_accuracy": 0.72,
+      "accuracy": 0.9186046511627907,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation."
+    }
+  },
+  "materiality_counts": {
+    "unspecified": 229,
+    "no_meaningful_difference": 147,
+    "meaningful_proxy": 25
+  },
+  "next": "Freeze a short fresh batch with direct meaningfulness options; no model updates during it. No claimed new accuracy until those answers exist."
+}

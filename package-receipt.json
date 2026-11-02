@@ -1,0 +1,19 @@
+{
+  "zip": "pricing-peer-review-v2.zip",
+  "bytes": 20737750,
+  "sha256": "05b316bf9ae1aa8c3c5140b0ba906d62deb4eae4d4caa18530cd8a041ce84727",
+  "project_files": 712,
+  "total_payload_files": 716,
+  "locked_inputs_unchanged": true,
+  "checks": [
+    "ZIP CRC",
+    "allpayloadSHA256",
+    "extracted33artifactpricinglock",
+    "extracted46artifactcomparativelock",
+    "14pricingtests",
+    "9reportingtests",
+    "originalsourcehashesunchanged",
+    "credentialpatternscan_nohits"
+  ],
+  "entry": "pricing-peer-review/start-here.md"
+}

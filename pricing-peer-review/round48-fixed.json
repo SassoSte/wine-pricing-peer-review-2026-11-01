@@ -1,0 +1,642 @@
+{
+  "round": 48,
+  "created_at": "2026-10-28T00:50:09.624139+00:00",
+  "status": "complete",
+  "protocol": "Neutral revisit of all10 remaining unresolved unique pairs. Reconciled evidence registry, active unresolved rows, all saved round statuses and original deferred comparisons. Historical deferred pairs resolved in evidence are excluded. Includes round38-3 with no supplied direction/size, rather than silently omitting it. Ordinary direction-only strength labels are partial evidence, not automatically unresolved pairs. Present one at a time; no prior answers/predictions shown. Both models fixed; unanswered axes remain missing, not ties. Repeated comparisons not prospective accuracy.",
+  "audit_sources": [
+    "evidence-v25.json",
+    "comparisons.json",
+    "all round*-fixed.json"
+  ],
+  "source_ids": [
+    "round27-7",
+    "round27-11",
+    "round38-3",
+    "round42-3",
+    "round42-10",
+    "round42-12",
+    "round45-12",
+    "round47-1",
+    "round47-12",
+    "round47-18"
+  ],
+  "file_sha256": {
+    "evidence-v25.json": "9e142cfcf5ca017e506776e9d12276c837285df9990aebc5408f53281c31e070",
+    "benchmark-targets-v25.json": "6edc3e2607f4c2bb448ff2989c9fbfa3e976b9a2263d46102fce9f169360b29f",
+    "round47-fixed.json": "02b3d28cf44e355ee4781993ad94c1e9f8055d1eb8b6475c26c3dadfa9a3d2cb",
+    "older-dark-scoped-delivery-v25.json": "19bbd28c26bdb27a83c6424fb537dee184e3eb26af35fa494358127f7399dbba",
+    "five-year-premium-delivery-v24.json": "85ee21170bb8ce63f64cb0338cc235ea1acccc2043ef43fe2e09c28b66d383ae",
+    "pricing_v25.py": "b8fea5a096309ee9942aa0eabb65faa2be9fb7d484cb32e36e2e0f2fee685d4b",
+    "pricing_v24.py": "4eddfa429ddfaf867b9c9a00fc0da8e7da2e01fc3c996fb03fc29507a4af5aea",
+    "older_dark_scoped_v25.py": "0a4059a700e2134cb2e0ed9f89c24f800a199f3a48b80826fd98e84987cb58c7",
+    "five_year_premium_v23.py": "75c11a41bf11fcc61f9fef2e883b18406a396909c4e80828f447275cd519ba4b",
+    "joint_weight_refit_v22.py": "de3cf99d34f965f0c890d9d2835366fd568aee5a6aa16b93896aa74877776958",
+    "shade_vintage_shared_v21.py": "0f535ccdc861f7b1487908dc278d9984cf67e7442ec881d36532275d9de9a7cc",
+    "contextual_fixes_v19.py": "a8233ff44ec8e98bad184e08f0ea82078c98e7caee02766dff47d34282bee748",
+    "contextual_meaningfulness.py": "3a81ecd7650c5ac5b2704c2a0b2fe7eea3bbc78539232e67734cca07ca40dad7",
+    "domestic_shade_model.py": "fdabc56fbde9f66365d565f94272675a7c45d6fb96bcfe444435436835b830ce",
+    "compare_models.py": "da2067d3d2ef99849ce2e30be16208bff0145bc6b036111535542c2daf00fa5f"
+  },
+  "freeze_fields": [
+    "id",
+    "number",
+    "revisits",
+    "a",
+    "b",
+    "predictions"
+  ],
+  "questions_and_predictions_sha256": "943482aada3cebce1bac316ab6d0223969733af848e1bd35323fb2924bec0aef",
+  "questions": [
+    {
+      "id": "round48-1",
+      "number": 1,
+      "revisits": "round27-7",
+      "a": [
+        "central",
+        "golden",
+        25,
+        110
+      ],
+      "b": [
+        "northeast",
+        "golden",
+        20,
+        125
+      ],
+      "predictions": {
+        "v25": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.1806350159922373,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v25_combined"
+        },
+        "v24": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.1806350159922373,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v24_adjacent_shade"
+        }
+      },
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": null,
+      "raw_answer": "Going with B; provenance, vintage enough in this case to lean B.",
+      "exact_price_instruction": false,
+      "strength": "lean B",
+      "interpretation": "Explicit B direction qualified as a lean. Northeast provenance and younger vintage are sufficient for B in this case. Meaningfulness not supplied; no practical-similarity or meaningful-difference label inferred. Direction resolved, size remains unspecified."
+    },
+    {
+      "id": "round48-2",
+      "number": 2,
+      "revisits": "round27-11",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        30,
+        120
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        20,
+        120
+      ],
+      "predictions": {
+        "v25": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.0836089304904144,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v25_combined"
+        },
+        "v24": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.0836089304904144,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v24_adjacent_shade"
+        }
+      },
+      "status": "answered",
+      "direction": null,
+      "meaningfulness": null,
+      "raw_answer": "Still very close\u2014the pale shade favors A, but B\u2019s 10-year younger vintage is significant. I\u2019d need a provenance or tare differentiator; leave this unresolved, not a tie.",
+      "exact_price_instruction": false,
+      "resolution_status": "unresolved",
+      "explicitly_not_tie": true,
+      "interpretation": "Explicitly still unresolved on both axes, not a tie. Pale shade favors A;10-year younger vintage favors B. User needs provenance or tare differentiator. No equality, practical-similarity or winner inferred."
+    },
+    {
+      "id": "round48-3",
+      "number": 3,
+      "revisits": "round38-3",
+      "a": [
+        "central",
+        "brown",
+        35,
+        120
+      ],
+      "b": [
+        "Eastern Europe",
+        "brown",
+        35,
+        120
+      ],
+      "predictions": {
+        "v25": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.398340399689864,
+          "decision_radius": 0.4423764842125454,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v25_combined"
+        },
+        "v24": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.398340399689864,
+          "decision_radius": 0.4423764842125454,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v24_adjacent_shade"
+        }
+      },
+      "status": "answered",
+      "direction": null,
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "No clear direction, practically similar\u2014at 35 years with brown shade and matching tare, provenance alone isn't enough for a meaningful premium. It comes down to taste/preference.",
+      "exact_price_instruction": false,
+      "interpretation": "Explicit no clear direction and practical similarity. At35years with brown shade and matching tare, provenance alone does not justify meaningful premium; taste determines preference. Size is resolved, no strict direction or exact equality inferred."
+    },
+    {
+      "id": "round48-4",
+      "number": 4,
+      "revisits": "round42-3",
+      "a": [
+        "southwest",
+        "golden",
+        20,
+        125
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        25,
+        115
+      ],
+      "predictions": {
+        "v25": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.1892217430541509,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v25_combined"
+        },
+        "v24": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.1892217430541509,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v24_adjacent_shade"
+        }
+      },
+      "status": "answered",
+      "direction": null,
+      "meaningfulness": null,
+      "raw_answer": "Still unresolved\u2014A has the younger vintage, but B\u2019s 10 lb lower tare matters, and both are premium provenances. It\u2019s very close, but I wouldn\u2019t call it a tie.",
+      "exact_price_instruction": false,
+      "resolution_status": "unresolved",
+      "explicitly_not_tie": true,
+      "interpretation": "Explicitly still unresolved on both axes, not a tie. Younger vintage favors A,10lb lower tare favors B, both premium provenances. No winner, equality or practical-similarity label inferred."
+    },
+    {
+      "id": "round48-5",
+      "number": 5,
+      "revisits": "round42-10",
+      "a": [
+        "northeast",
+        "amber",
+        30,
+        120
+      ],
+      "b": [
+        "northwest",
+        "amber",
+        25,
+        125
+      ],
+      "predictions": {
+        "v25": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -0.3228872083983407,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v25_combined"
+        },
+        "v24": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -0.3228872083983407,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v24_adjacent_shade"
+        }
+      },
+      "status": "answered",
+      "direction": null,
+      "meaningfulness": null,
+      "raw_answer": "Still unresolved\u2014A has northeast\u2019s provenance advantage and 5 lb lower tare, while B has the five-year younger vintage. It could go either way, but I wouldn\u2019t call it a tie.",
+      "exact_price_instruction": false,
+      "resolution_status": "unresolved",
+      "explicitly_not_tie": true,
+      "interpretation": "Explicitly still unresolved on both axes, not a tie. Northeast provenance and5lb lower tare favor A; five-year younger vintage favors B. No winner, equality or practical-similarity label inferred."
+    },
+    {
+      "id": "round48-6",
+      "number": 6,
+      "revisits": "round42-12",
+      "a": [
+        "Western Europe",
+        "copper",
+        25,
+        125
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        30,
+        115
+      ],
+      "predictions": {
+        "v25": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.18030227850716501,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v25_combined"
+        },
+        "v24": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.18030227850716501,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v24_adjacent_shade"
+        }
+      },
+      "status": "answered",
+      "direction": null,
+      "meaningfulness": null,
+      "raw_answer": "Still unresolved\u2014A has the younger vintage, but B\u2019s lighter amber shade and 10 lb lower tare matter. It\u2019s very close, but I wouldn\u2019t call it a tie.",
+      "exact_price_instruction": false,
+      "resolution_status": "unresolved",
+      "explicitly_not_tie": true,
+      "interpretation": "Explicitly still unresolved on both axes, not a tie. Younger vintage favors A; lighter amber shade and10lb lower tare favor B. No winner, equality or practical-similarity label inferred."
+    },
+    {
+      "id": "round48-7",
+      "number": 7,
+      "revisits": "round45-12",
+      "a": [
+        "northwest",
+        "golden",
+        20,
+        125
+      ],
+      "b": [
+        "northeast",
+        "golden",
+        25,
+        115
+      ],
+      "predictions": {
+        "v25": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.03926402477830937,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v25_combined"
+        },
+        "v24": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.03926402477830937,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v24_adjacent_shade"
+        }
+      },
+      "status": "answered",
+      "direction": null,
+      "meaningfulness": null,
+      "raw_answer": "Still unresolved\u2014A has the younger vintage, but B has northeast\u2019s provenance advantage and 10 lb lower tare. It\u2019s very close, but I wouldn\u2019t call it a tie.",
+      "exact_price_instruction": false,
+      "resolution_status": "unresolved",
+      "explicitly_not_tie": true,
+      "interpretation": "Explicitly still unresolved on both axes, not a tie. Northwest younger vintage favors A; Northeast provenance and10lb lower tare favor B. No winner, equality or practical-similarity label inferred."
+    },
+    {
+      "id": "round48-8",
+      "number": 8,
+      "revisits": "round47-1",
+      "a": [
+        "southeast",
+        "copper",
+        25,
+        125
+      ],
+      "b": [
+        "central",
+        "amber",
+        30,
+        115
+      ],
+      "predictions": {
+        "v25": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 0.38231111320258554,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v25_combined"
+        },
+        "v24": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 0.38231111320258554,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v24_adjacent_shade"
+        }
+      },
+      "status": "answered",
+      "direction": null,
+      "meaningfulness": null,
+      "raw_answer": "Still unresolved\u2014A has the younger vintage and southeast\u2019s provenance advantage, but B\u2019s lighter amber shade and 10 lb lower tare matter. It\u2019s very close, but I wouldn\u2019t call it a tie.",
+      "exact_price_instruction": false,
+      "resolution_status": "unresolved",
+      "explicitly_not_tie": true,
+      "interpretation": "Explicitly still unresolved on both axes, not a tie. Southeast younger vintage and provenance favor A; Central lighter amber shade and10lb lower tare favor B. No winner, equality or practical-similarity label inferred."
+    },
+    {
+      "id": "round48-9",
+      "number": 9,
+      "revisits": "round47-12",
+      "a": [
+        "Eastern Europe",
+        "copper",
+        20,
+        125
+      ],
+      "b": [
+        "northwest",
+        "amber",
+        25,
+        120
+      ],
+      "predictions": {
+        "v25": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.0009520455591877919,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v25_combined"
+        },
+        "v24": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.0009520455591877919,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v24_adjacent_shade"
+        }
+      },
+      "status": "answered",
+      "direction": null,
+      "meaningfulness": null,
+      "raw_answer": "Still unresolved\u2014A has the younger vintage, but B has northwest\u2019s provenance advantage, lighter amber shade and 5 lb lower tare. It\u2019s very close, but I wouldn\u2019t call it a tie.",
+      "exact_price_instruction": false,
+      "resolution_status": "unresolved",
+      "explicitly_not_tie": true,
+      "interpretation": "Explicitly still unresolved on both axes, not a tie. Younger vintage favors A; Domestic Northwest provenance, lighter amber shade and5lb lower tare favor B. No winner, equality or practical-similarity label inferred."
+    },
+    {
+      "id": "round48-10",
+      "number": 10,
+      "revisits": "round47-18",
+      "a": [
+        "southwest",
+        "golden",
+        30,
+        125
+      ],
+      "b": [
+        "northwest",
+        "golden",
+        25,
+        130
+      ],
+      "predictions": {
+        "v25": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.29242509310816933,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v25_combined"
+        },
+        "v24": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.29242509310816933,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v24_adjacent_shade"
+        }
+      },
+      "status": "answered",
+      "direction": null,
+      "meaningfulness": null,
+      "raw_answer": "Still unresolved\u2014A has southwest\u2019s provenance advantage and 5 lb lower tare, while B has the five-year younger vintage. It\u2019s very close, but I wouldn\u2019t call it a tie.",
+      "exact_price_instruction": false,
+      "resolution_status": "unresolved",
+      "explicitly_not_tie": true,
+      "interpretation": "Explicitly still unresolved on both axes, not a tie. Southwest provenance and5lb lower tare favor A; five-year younger vintage favors B. No winner, equality or practical-similarity label inferred."
+    }
+  ],
+  "rule_statements": [
+    {
+      "source": "round48-1",
+      "revisits": "round27-7",
+      "statement": "Domestic Central golden25/110 versus Northeast golden20/125: lean B; provenance and vintage enough in this case.",
+      "scope": "This comparison; meaningfulness unspecified, frozen models unchanged."
+    },
+    {
+      "source": "round48-2",
+      "revisits": "round27-11",
+      "statement": "West Central Asia pale30/120 versus brown20/120 remains unresolved, not tied: shade and10-year vintage compete; provenance or tare differentiator needed.",
+      "scope": "This comparison; frozen models unchanged."
+    },
+    {
+      "source": "round48-3",
+      "revisits": "round38-3",
+      "statement": "Domestic Central brown35/120 versus Eastern Europe brown35/120: no clear direction and practical similarity; provenance alone insufficient for meaningful premium, taste/preference decides.",
+      "scope": "This comparison; frozen models unchanged."
+    },
+    {
+      "source": "round48-4",
+      "revisits": "round42-3",
+      "statement": "Domestic Southwest golden20/125 versus Western Europe golden25/115 remains unresolved, not tied: younger vintage competes with10lb lower tare between premium provenances.",
+      "scope": "This comparison; frozen models unchanged."
+    },
+    {
+      "source": "round48-5",
+      "revisits": "round42-10",
+      "statement": "Domestic Northeast amber30/120 versus Northwest amber25/125 remains unresolved, not tied: provenance and5lb tare advantages compete with five-year younger vintage.",
+      "scope": "This comparison; frozen models unchanged."
+    },
+    {
+      "source": "round48-6",
+      "revisits": "round42-12",
+      "statement": "Western Europe copper25/125 versus amber30/115 remains unresolved, not tied: younger vintage competes with lighter amber shade and10lb lower tare.",
+      "scope": "This comparison; frozen models unchanged."
+    },
+    {
+      "source": "round48-7",
+      "revisits": "round45-12",
+      "statement": "Domestic Northwest golden20/125 versus Northeast golden25/115 remains unresolved, not tied: younger vintage competes with Northeast provenance and10lb lower tare.",
+      "scope": "This comparison; frozen models unchanged."
+    },
+    {
+      "source": "round48-8",
+      "revisits": "round47-1",
+      "statement": "Domestic Southeast copper25/125 versus Central amber30/115 remains unresolved, not tied: younger vintage and provenance compete with lighter shade and10lb lower tare.",
+      "scope": "This comparison; frozen models unchanged."
+    },
+    {
+      "source": "round48-9",
+      "revisits": "round47-12",
+      "statement": "Eastern Europe copper20/125 versus Domestic Northwest amber25/120 remains unresolved, not tied: younger vintage competes with Northwest provenance, lighter shade and5lb lower tare.",
+      "scope": "This comparison; frozen models unchanged."
+    },
+    {
+      "source": "round48-10",
+      "revisits": "round47-18",
+      "statement": "Domestic Southwest golden30/125 versus Northwest golden25/130 remains unresolved, not tied: provenance and5lb lower tare compete with five-year younger vintage.",
+      "scope": "This comparison; frozen models unchanged."
+    }
+  ],
+  "scores": null,
+  "revisit_outcomes": {
+    "still_unresolved": [
+      {
+        "number": 2,
+        "source_id": "round27-11",
+        "clarification_id": "round48-2"
+      },
+      {
+        "number": 4,
+        "source_id": "round42-3",
+        "clarification_id": "round48-4"
+      },
+      {
+        "number": 5,
+        "source_id": "round42-10",
+        "clarification_id": "round48-5"
+      },
+      {
+        "number": 6,
+        "source_id": "round42-12",
+        "clarification_id": "round48-6"
+      },
+      {
+        "number": 7,
+        "source_id": "round45-12",
+        "clarification_id": "round48-7"
+      },
+      {
+        "number": 8,
+        "source_id": "round47-1",
+        "clarification_id": "round48-8"
+      },
+      {
+        "number": 9,
+        "source_id": "round47-12",
+        "clarification_id": "round48-9"
+      },
+      {
+        "number": 10,
+        "source_id": "round47-18",
+        "clarification_id": "round48-10"
+      }
+    ],
+    "direction_resolved_size_unspecified": [
+      {
+        "number": 1,
+        "source_id": "round27-7",
+        "direction": "B",
+        "meaningfulness": null
+      }
+    ],
+    "practical_similarity_resolved": [
+      {
+        "number": 3,
+        "source_id": "round38-3",
+        "direction": null,
+        "meaningfulness": "no_meaningful_difference"
+      }
+    ]
+  },
+  "scoring_note": "Neutral repeats, not prospective accuracy. Eight remain unresolved on both axes;Q1 directionB/lean only,size unspecified;Q3 explicitly practical/no clear direction. No evidence incorporation/refit; prior history retained for later reconciliation."
+}

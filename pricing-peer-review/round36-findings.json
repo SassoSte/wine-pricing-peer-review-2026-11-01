@@ -1,0 +1,28 @@
+{
+  "round": "round36-fixed.json",
+  "round_sha256": "8f0b34708efbaa8be0243f302a64ee014fac7453ba603774f5e6699ef1a7d18a",
+  "models_changed": false,
+  "refit_performed": false,
+  "findings": [
+    {
+      "block": "northwest_shade_age",
+      "scope": "Amber at25/30/35 years and copper30, all115 lb.",
+      "user_pattern": "Western Europe slight advantage in all4, all practically similar.",
+      "implication": "No tested shade/age reversal at115 lb. Does not overwrite earlier130 lb comparisons. Added context loses Q3 relative to additive baseline."
+    },
+    {
+      "block": "west_central_asia_shade",
+      "scope": "Amber/golden/pale-straw/copper, all25 years and110 lb.",
+      "user_pattern": "West Central Asia slight advantage in all4, all practically similar.",
+      "implication": "Both models have the wrong small provenance ordering throughout this tested block; shade reversal not observed here. Does not automatically relabel older30-year120 lb records."
+    },
+    {
+      "block": "domestic_foreign_age_shade",
+      "scope": "Pale/straw30 versus golden25, matched115 lb; Eastern/Western Europe versus Central/Southwest.",
+      "user_pattern": "Foreign: older pale/straw slightly favored, practical similarity. Domestic: younger golden meaningfully favored; user explicitly says domestic golden/pale shade difference negligible.",
+      "implication": "Direct support for provenance-group-specific relative shade/vintage effect. Both models overstate and reverse the foreign vintage preference. Domestic negligible shade guidance is not a hard exact-price zero."
+    }
+  ],
+  "next_work": "Use these recorded patterns for a focused correction and check transfer; no need to repeat this batch. Keep old direction interpretations scoped to their original age/tare context. No new questionnaire or model fit initiated here.",
+  "limits": "12 targeted neighboring comparisons,10 practically similar and2 meaningful. Both detect2/2 meaningful but falsely call2/10 practical cases meaningful. Meaningfulness precision2/4; direction failure confined to practical cases. Not population accuracy."
+}

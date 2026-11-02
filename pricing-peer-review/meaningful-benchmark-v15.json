@@ -1,0 +1,258 @@
+{
+  "status": "refitted simple materiality benchmark; not prospectively validated",
+  "evidence": "evidence-v15.json",
+  "target_view": "benchmark-targets-v15.json",
+  "source_hashes": {
+    "evidence-v15.json": "40ac084c3b4ab5cbbf4195879764ffd4f04fa011f822dbfcf10670c0e3919867",
+    "benchmark-targets-v15.json": "67a883f8c9993b186da398c64fc455ce55ca501182beaec612e963b803aac188",
+    "build_meaningful_benchmark.py": "32517ea5c19f7d11fc665fdef6b9c4a79f724ff899fdea2ec3c90bcc79c748f7",
+    "compare_models.py": "da2067d3d2ef99849ce2e30be16208bff0145bc6b036111535542c2daf00fa5f"
+  },
+  "architecture": "Same18-coefficient monotone additive model; no new architecture or hard price equalities.",
+  "alpha": 0.1,
+  "decision_radius": 0.5,
+  "coefficients": [
+    0.4144612483129729,
+    -0.30763253156949144,
+    -0.26619811643517854,
+    -0.5171455503158913,
+    0.4072134314767899,
+    0.4390617331563859,
+    0.37015842104776653,
+    0.5472630015480031,
+    0.5693531324657534,
+    0.9295873293373025,
+    0.0,
+    0.027576070702462433,
+    0.5677610060104094,
+    0.41634967123980415,
+    0.6202604078134097,
+    0.9994548612125781,
+    0.23367900455512636,
+    0.32090558075399456
+  ],
+  "feature_names": [
+    "origin:Western Europe vs Eastern Europe",
+    "origin:West Central Asia vs Eastern Europe",
+    "origin:South/Eastern Asia vs Eastern Europe",
+    "origin:West Asia / Middle East vs Eastern Europe",
+    "origin:central vs Eastern Europe",
+    "origin:northeast vs Eastern Europe",
+    "origin:northwest vs Eastern Europe",
+    "origin:southwest vs Eastern Europe",
+    "origin:southeast vs Eastern Europe",
+    "shade increment:copper",
+    "shade increment:amber",
+    "shade increment:golden",
+    "shade increment:pale/straw",
+    "age increment:35",
+    "age increment:30",
+    "age increment:25",
+    "age increment:20",
+    "lightness per 5 lb"
+  ],
+  "inner_calibration_scores": {
+    "0.001/0.1": {
+      "known_n": 184,
+      "no_meaningful_preference_n": 149,
+      "balanced_accuracy": 0.5905081495685522,
+      "accuracy": 0.4076086956521739,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation.",
+      "meaningful_direct_or_proxy_n": 35
+    },
+    "0.001/0.2": {
+      "known_n": 184,
+      "no_meaningful_preference_n": 149,
+      "balanced_accuracy": 0.6408437200383509,
+      "accuracy": 0.4891304347826087,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation.",
+      "meaningful_direct_or_proxy_n": 35
+    },
+    "0.001/0.25": {
+      "known_n": 184,
+      "no_meaningful_preference_n": 149,
+      "balanced_accuracy": 0.7180249280920421,
+      "accuracy": 0.6141304347826086,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation.",
+      "meaningful_direct_or_proxy_n": 35
+    },
+    "0.001/0.3": {
+      "known_n": 184,
+      "no_meaningful_preference_n": 149,
+      "balanced_accuracy": 0.7817833173537871,
+      "accuracy": 0.717391304347826,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation.",
+      "meaningful_direct_or_proxy_n": 35
+    },
+    "0.001/0.5": {
+      "known_n": 184,
+      "no_meaningful_preference_n": 149,
+      "balanced_accuracy": 0.876510067114094,
+      "accuracy": 0.9239130434782609,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation.",
+      "meaningful_direct_or_proxy_n": 35
+    },
+    "0.001/0.75": {
+      "known_n": 184,
+      "no_meaningful_preference_n": 149,
+      "balanced_accuracy": 0.8285714285714285,
+      "accuracy": 0.9347826086956522,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation.",
+      "meaningful_direct_or_proxy_n": 35
+    },
+    "0.01/0.1": {
+      "known_n": 184,
+      "no_meaningful_preference_n": 149,
+      "balanced_accuracy": 0.5905081495685522,
+      "accuracy": 0.4076086956521739,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation.",
+      "meaningful_direct_or_proxy_n": 35
+    },
+    "0.01/0.2": {
+      "known_n": 184,
+      "no_meaningful_preference_n": 149,
+      "balanced_accuracy": 0.6408437200383509,
+      "accuracy": 0.4891304347826087,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation.",
+      "meaningful_direct_or_proxy_n": 35
+    },
+    "0.01/0.25": {
+      "known_n": 184,
+      "no_meaningful_preference_n": 149,
+      "balanced_accuracy": 0.7180249280920421,
+      "accuracy": 0.6141304347826086,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation.",
+      "meaningful_direct_or_proxy_n": 35
+    },
+    "0.01/0.3": {
+      "known_n": 184,
+      "no_meaningful_preference_n": 149,
+      "balanced_accuracy": 0.7817833173537871,
+      "accuracy": 0.717391304347826,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation.",
+      "meaningful_direct_or_proxy_n": 35
+    },
+    "0.01/0.5": {
+      "known_n": 184,
+      "no_meaningful_preference_n": 149,
+      "balanced_accuracy": 0.8798657718120806,
+      "accuracy": 0.9293478260869565,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation.",
+      "meaningful_direct_or_proxy_n": 35
+    },
+    "0.01/0.75": {
+      "known_n": 184,
+      "no_meaningful_preference_n": 149,
+      "balanced_accuracy": 0.8285714285714285,
+      "accuracy": 0.9347826086956522,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation.",
+      "meaningful_direct_or_proxy_n": 35
+    },
+    "0.1/0.1": {
+      "known_n": 184,
+      "no_meaningful_preference_n": 149,
+      "balanced_accuracy": 0.5905081495685522,
+      "accuracy": 0.4076086956521739,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation.",
+      "meaningful_direct_or_proxy_n": 35
+    },
+    "0.1/0.2": {
+      "known_n": 184,
+      "no_meaningful_preference_n": 149,
+      "balanced_accuracy": 0.6542665388302972,
+      "accuracy": 0.5108695652173914,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation.",
+      "meaningful_direct_or_proxy_n": 35
+    },
+    "0.1/0.25": {
+      "known_n": 184,
+      "no_meaningful_preference_n": 149,
+      "balanced_accuracy": 0.7247363374880154,
+      "accuracy": 0.625,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation.",
+      "meaningful_direct_or_proxy_n": 35
+    },
+    "0.1/0.3": {
+      "known_n": 184,
+      "no_meaningful_preference_n": 149,
+      "balanced_accuracy": 0.7674976030680729,
+      "accuracy": 0.7119565217391305,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation.",
+      "meaningful_direct_or_proxy_n": 35
+    },
+    "0.1/0.5": {
+      "known_n": 184,
+      "no_meaningful_preference_n": 149,
+      "balanced_accuracy": 0.8865771812080537,
+      "accuracy": 0.9402173913043478,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation.",
+      "meaningful_direct_or_proxy_n": 35
+    },
+    "0.1/0.75": {
+      "known_n": 184,
+      "no_meaningful_preference_n": 149,
+      "balanced_accuracy": 0.7714285714285714,
+      "accuracy": 0.9130434782608695,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation.",
+      "meaningful_direct_or_proxy_n": 35
+    },
+    "1.0/0.1": {
+      "known_n": 184,
+      "no_meaningful_preference_n": 149,
+      "balanced_accuracy": 0.5334611697027805,
+      "accuracy": 0.31521739130434784,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation.",
+      "meaningful_direct_or_proxy_n": 35
+    },
+    "1.0/0.2": {
+      "known_n": 184,
+      "no_meaningful_preference_n": 149,
+      "balanced_accuracy": 0.7607861936720997,
+      "accuracy": 0.7010869565217391,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation.",
+      "meaningful_direct_or_proxy_n": 35
+    },
+    "1.0/0.25": {
+      "known_n": 184,
+      "no_meaningful_preference_n": 149,
+      "balanced_accuracy": 0.7137104506232024,
+      "accuracy": 0.6956521739130435,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation.",
+      "meaningful_direct_or_proxy_n": 35
+    },
+    "1.0/0.3": {
+      "known_n": 184,
+      "no_meaningful_preference_n": 149,
+      "balanced_accuracy": 0.8412272291466922,
+      "accuracy": 0.9021739130434783,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation.",
+      "meaningful_direct_or_proxy_n": 35
+    },
+    "1.0/0.5": {
+      "known_n": 184,
+      "no_meaningful_preference_n": 149,
+      "balanced_accuracy": 0.825215723873442,
+      "accuracy": 0.9293478260869565,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation.",
+      "meaningful_direct_or_proxy_n": 35
+    },
+    "1.0/0.75": {
+      "known_n": 184,
+      "no_meaningful_preference_n": 149,
+      "balanced_accuracy": 0.7109300095877277,
+      "accuracy": 0.8858695652173914,
+      "note": "Calibration diagnostics on a coarsened/partly proxy target, not independent or dollar-price validation.",
+      "meaningful_direct_or_proxy_n": 35
+    }
+  },
+  "outputs": "Meaningfulness and score direction reported separately. No currency price, exact-price guarantee, or confidence probability inferred.",
+  "corrected_pair_check": {
+    "id": "round35-3",
+    "recorded_materiality": "no_meaningful_difference",
+    "recorded_direction": "A",
+    "model_materiality": "no_meaningful_difference",
+    "model_direction": "B",
+    "margin": -0.05048845724827378
+  },
+  "validation_note": "Round35 original8/12 remains a historical frozen receipt under its original coding. The later clarification is training information, not a fresh score improvement."
+}

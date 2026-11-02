@@ -1,0 +1,1792 @@
+{
+  "round": 23,
+  "status": "complete; scored without refitting",
+  "protocol": "20 preselected fresh varied pairs in fixed order. Models, parameters, local context list, thresholds, questions/order and predictions frozen. Keep predictions hidden. Exactly equal differs from unresolved; unresolved unscored. Purposeful varied sample, not random population accuracy. Previous model means contextual v7 trained on 310 rows.",
+  "response_options": [
+    "Price A higher than B",
+    "Price B higher than A",
+    "Give them exactly the same price",
+    "Leave this unresolved"
+  ],
+  "file_sha256": {
+    "compare_models.py": "da2067d3d2ef99849ce2e30be16208bff0145bc6b036111535542c2daf00fa5f",
+    "compare_tare_models.py": "6ee6623380260502ea3b7b17621261ce413ccea3f7fdf2af835bb50bf4c716d2",
+    "provenance_tare_model.py": "c5aba387479f9581a4553fb10c6e660d000de6ea7783f351357717c9b94988b4",
+    "provenance-tare-comparison.json": "2b8a5e488a064f606d9e5838d86334b407c6aa5c26a3f4c5d3d9ae5478b00f53",
+    "contextual-comparison-v7.json": "55dd44c9d220ea7d3d3cbcaae4bc43913743ea6032d4f2ab5705b1bbb0299655",
+    "evidence-v7.json": "0422c64505c0507988c5511e0ea1c6f8a16b8ddf579899c323e082433e875ec6"
+  },
+  "provenance_scoped_snapshot": {
+    "alpha": 0.1,
+    "pooling": 1.0,
+    "threshold": 0.2,
+    "local_contexts": [
+      [
+        "Eastern Europe",
+        "amber",
+        20
+      ],
+      [
+        "Eastern Europe",
+        "pale/straw",
+        20
+      ],
+      [
+        "South/Eastern Asia",
+        "amber",
+        20
+      ],
+      [
+        "South/Eastern Asia",
+        "brown",
+        30
+      ],
+      [
+        "West Asia / Middle East",
+        "golden",
+        35
+      ],
+      [
+        "West Central Asia",
+        "brown",
+        25
+      ],
+      [
+        "West Central Asia",
+        "brown",
+        35
+      ],
+      [
+        "West Central Asia",
+        "pale/straw",
+        20
+      ],
+      [
+        "West Central Asia",
+        "pale/straw",
+        25
+      ],
+      [
+        "West Central Asia",
+        "pale/straw",
+        35
+      ],
+      [
+        "Western Europe",
+        "copper",
+        35
+      ],
+      [
+        "Western Europe",
+        "golden",
+        40
+      ],
+      [
+        "central",
+        "brown",
+        40
+      ],
+      [
+        "central",
+        "golden",
+        40
+      ],
+      [
+        "northeast",
+        "amber",
+        30
+      ],
+      [
+        "northeast",
+        "brown",
+        40
+      ],
+      [
+        "northeast",
+        "pale/straw",
+        30
+      ],
+      [
+        "northwest",
+        "amber",
+        40
+      ],
+      [
+        "northwest",
+        "brown",
+        40
+      ],
+      [
+        "northwest",
+        "golden",
+        35
+      ],
+      [
+        "southeast",
+        "brown",
+        40
+      ],
+      [
+        "southeast",
+        "copper",
+        35
+      ],
+      [
+        "southwest",
+        "brown",
+        30
+      ],
+      [
+        "southwest",
+        "copper",
+        30
+      ],
+      [
+        "southwest",
+        "golden",
+        40
+      ],
+      [
+        "southwest",
+        "pale/straw",
+        20
+      ],
+      [
+        "southwest",
+        "pale/straw",
+        30
+      ]
+    ],
+    "feature_names": [
+      "origin:Western Europe vs Eastern Europe",
+      "origin:West Central Asia vs Eastern Europe",
+      "origin:South/Eastern Asia vs Eastern Europe",
+      "origin:West Asia / Middle East vs Eastern Europe",
+      "origin:central vs Eastern Europe",
+      "origin:northeast vs Eastern Europe",
+      "origin:northwest vs Eastern Europe",
+      "origin:southwest vs Eastern Europe",
+      "origin:southeast vs Eastern Europe",
+      "shade increment:copper",
+      "shade increment:amber",
+      "shade increment:golden",
+      "shade increment:pale/straw",
+      "age increment:35",
+      "age increment:30",
+      "age increment:25",
+      "age increment:20",
+      "tare step to 125 lb at brown/40 years",
+      "tare step to 120 lb at brown/40 years",
+      "tare step to 115 lb at brown/40 years",
+      "tare step to 110 lb at brown/40 years",
+      "tare step to 125 lb at brown/35 years",
+      "tare step to 120 lb at brown/35 years",
+      "tare step to 115 lb at brown/35 years",
+      "tare step to 110 lb at brown/35 years",
+      "tare step to 125 lb at brown/30 years",
+      "tare step to 120 lb at brown/30 years",
+      "tare step to 115 lb at brown/30 years",
+      "tare step to 110 lb at brown/30 years",
+      "tare step to 125 lb at brown/25 years",
+      "tare step to 120 lb at brown/25 years",
+      "tare step to 115 lb at brown/25 years",
+      "tare step to 110 lb at brown/25 years",
+      "tare step to 125 lb at brown/20 years",
+      "tare step to 120 lb at brown/20 years",
+      "tare step to 115 lb at brown/20 years",
+      "tare step to 110 lb at brown/20 years",
+      "tare step to 125 lb at copper/40 years",
+      "tare step to 120 lb at copper/40 years",
+      "tare step to 115 lb at copper/40 years",
+      "tare step to 110 lb at copper/40 years",
+      "tare step to 125 lb at copper/35 years",
+      "tare step to 120 lb at copper/35 years",
+      "tare step to 115 lb at copper/35 years",
+      "tare step to 110 lb at copper/35 years",
+      "tare step to 125 lb at copper/30 years",
+      "tare step to 120 lb at copper/30 years",
+      "tare step to 115 lb at copper/30 years",
+      "tare step to 110 lb at copper/30 years",
+      "tare step to 125 lb at copper/25 years",
+      "tare step to 120 lb at copper/25 years",
+      "tare step to 115 lb at copper/25 years",
+      "tare step to 110 lb at copper/25 years",
+      "tare step to 125 lb at copper/20 years",
+      "tare step to 120 lb at copper/20 years",
+      "tare step to 115 lb at copper/20 years",
+      "tare step to 110 lb at copper/20 years",
+      "tare step to 125 lb at amber/40 years",
+      "tare step to 120 lb at amber/40 years",
+      "tare step to 115 lb at amber/40 years",
+      "tare step to 110 lb at amber/40 years",
+      "tare step to 125 lb at amber/35 years",
+      "tare step to 120 lb at amber/35 years",
+      "tare step to 115 lb at amber/35 years",
+      "tare step to 110 lb at amber/35 years",
+      "tare step to 125 lb at amber/30 years",
+      "tare step to 120 lb at amber/30 years",
+      "tare step to 115 lb at amber/30 years",
+      "tare step to 110 lb at amber/30 years",
+      "tare step to 125 lb at amber/25 years",
+      "tare step to 120 lb at amber/25 years",
+      "tare step to 115 lb at amber/25 years",
+      "tare step to 110 lb at amber/25 years",
+      "tare step to 125 lb at amber/20 years",
+      "tare step to 120 lb at amber/20 years",
+      "tare step to 115 lb at amber/20 years",
+      "tare step to 110 lb at amber/20 years",
+      "tare step to 125 lb at golden/40 years",
+      "tare step to 120 lb at golden/40 years",
+      "tare step to 115 lb at golden/40 years",
+      "tare step to 110 lb at golden/40 years",
+      "tare step to 125 lb at golden/35 years",
+      "tare step to 120 lb at golden/35 years",
+      "tare step to 115 lb at golden/35 years",
+      "tare step to 110 lb at golden/35 years",
+      "tare step to 125 lb at golden/30 years",
+      "tare step to 120 lb at golden/30 years",
+      "tare step to 115 lb at golden/30 years",
+      "tare step to 110 lb at golden/30 years",
+      "tare step to 125 lb at golden/25 years",
+      "tare step to 120 lb at golden/25 years",
+      "tare step to 115 lb at golden/25 years",
+      "tare step to 110 lb at golden/25 years",
+      "tare step to 125 lb at golden/20 years",
+      "tare step to 120 lb at golden/20 years",
+      "tare step to 115 lb at golden/20 years",
+      "tare step to 110 lb at golden/20 years",
+      "tare step to 125 lb at pale/straw/40 years",
+      "tare step to 120 lb at pale/straw/40 years",
+      "tare step to 115 lb at pale/straw/40 years",
+      "tare step to 110 lb at pale/straw/40 years",
+      "tare step to 125 lb at pale/straw/35 years",
+      "tare step to 120 lb at pale/straw/35 years",
+      "tare step to 115 lb at pale/straw/35 years",
+      "tare step to 110 lb at pale/straw/35 years",
+      "tare step to 125 lb at pale/straw/30 years",
+      "tare step to 120 lb at pale/straw/30 years",
+      "tare step to 115 lb at pale/straw/30 years",
+      "tare step to 110 lb at pale/straw/30 years",
+      "tare step to 125 lb at pale/straw/25 years",
+      "tare step to 120 lb at pale/straw/25 years",
+      "tare step to 115 lb at pale/straw/25 years",
+      "tare step to 110 lb at pale/straw/25 years",
+      "tare step to 125 lb at pale/straw/20 years",
+      "tare step to 120 lb at pale/straw/20 years",
+      "tare step to 115 lb at pale/straw/20 years",
+      "tare step to 110 lb at pale/straw/20 years",
+      "local tare step to 125 lb at Eastern Europe/amber/20",
+      "local tare step to 120 lb at Eastern Europe/amber/20",
+      "local tare step to 115 lb at Eastern Europe/amber/20",
+      "local tare step to 110 lb at Eastern Europe/amber/20",
+      "local tare step to 125 lb at Eastern Europe/pale/straw/20",
+      "local tare step to 120 lb at Eastern Europe/pale/straw/20",
+      "local tare step to 115 lb at Eastern Europe/pale/straw/20",
+      "local tare step to 110 lb at Eastern Europe/pale/straw/20",
+      "local tare step to 125 lb at South/Eastern Asia/amber/20",
+      "local tare step to 120 lb at South/Eastern Asia/amber/20",
+      "local tare step to 115 lb at South/Eastern Asia/amber/20",
+      "local tare step to 110 lb at South/Eastern Asia/amber/20",
+      "local tare step to 125 lb at South/Eastern Asia/brown/30",
+      "local tare step to 120 lb at South/Eastern Asia/brown/30",
+      "local tare step to 115 lb at South/Eastern Asia/brown/30",
+      "local tare step to 110 lb at South/Eastern Asia/brown/30",
+      "local tare step to 125 lb at West Asia / Middle East/golden/35",
+      "local tare step to 120 lb at West Asia / Middle East/golden/35",
+      "local tare step to 115 lb at West Asia / Middle East/golden/35",
+      "local tare step to 110 lb at West Asia / Middle East/golden/35",
+      "local tare step to 125 lb at West Central Asia/brown/25",
+      "local tare step to 120 lb at West Central Asia/brown/25",
+      "local tare step to 115 lb at West Central Asia/brown/25",
+      "local tare step to 110 lb at West Central Asia/brown/25",
+      "local tare step to 125 lb at West Central Asia/brown/35",
+      "local tare step to 120 lb at West Central Asia/brown/35",
+      "local tare step to 115 lb at West Central Asia/brown/35",
+      "local tare step to 110 lb at West Central Asia/brown/35",
+      "local tare step to 125 lb at West Central Asia/pale/straw/20",
+      "local tare step to 120 lb at West Central Asia/pale/straw/20",
+      "local tare step to 115 lb at West Central Asia/pale/straw/20",
+      "local tare step to 110 lb at West Central Asia/pale/straw/20",
+      "local tare step to 125 lb at West Central Asia/pale/straw/25",
+      "local tare step to 120 lb at West Central Asia/pale/straw/25",
+      "local tare step to 115 lb at West Central Asia/pale/straw/25",
+      "local tare step to 110 lb at West Central Asia/pale/straw/25",
+      "local tare step to 125 lb at West Central Asia/pale/straw/35",
+      "local tare step to 120 lb at West Central Asia/pale/straw/35",
+      "local tare step to 115 lb at West Central Asia/pale/straw/35",
+      "local tare step to 110 lb at West Central Asia/pale/straw/35",
+      "local tare step to 125 lb at Western Europe/copper/35",
+      "local tare step to 120 lb at Western Europe/copper/35",
+      "local tare step to 115 lb at Western Europe/copper/35",
+      "local tare step to 110 lb at Western Europe/copper/35",
+      "local tare step to 125 lb at Western Europe/golden/40",
+      "local tare step to 120 lb at Western Europe/golden/40",
+      "local tare step to 115 lb at Western Europe/golden/40",
+      "local tare step to 110 lb at Western Europe/golden/40",
+      "local tare step to 125 lb at central/brown/40",
+      "local tare step to 120 lb at central/brown/40",
+      "local tare step to 115 lb at central/brown/40",
+      "local tare step to 110 lb at central/brown/40",
+      "local tare step to 125 lb at central/golden/40",
+      "local tare step to 120 lb at central/golden/40",
+      "local tare step to 115 lb at central/golden/40",
+      "local tare step to 110 lb at central/golden/40",
+      "local tare step to 125 lb at northeast/amber/30",
+      "local tare step to 120 lb at northeast/amber/30",
+      "local tare step to 115 lb at northeast/amber/30",
+      "local tare step to 110 lb at northeast/amber/30",
+      "local tare step to 125 lb at northeast/brown/40",
+      "local tare step to 120 lb at northeast/brown/40",
+      "local tare step to 115 lb at northeast/brown/40",
+      "local tare step to 110 lb at northeast/brown/40",
+      "local tare step to 125 lb at northeast/pale/straw/30",
+      "local tare step to 120 lb at northeast/pale/straw/30",
+      "local tare step to 115 lb at northeast/pale/straw/30",
+      "local tare step to 110 lb at northeast/pale/straw/30",
+      "local tare step to 125 lb at northwest/amber/40",
+      "local tare step to 120 lb at northwest/amber/40",
+      "local tare step to 115 lb at northwest/amber/40",
+      "local tare step to 110 lb at northwest/amber/40",
+      "local tare step to 125 lb at northwest/brown/40",
+      "local tare step to 120 lb at northwest/brown/40",
+      "local tare step to 115 lb at northwest/brown/40",
+      "local tare step to 110 lb at northwest/brown/40",
+      "local tare step to 125 lb at northwest/golden/35",
+      "local tare step to 120 lb at northwest/golden/35",
+      "local tare step to 115 lb at northwest/golden/35",
+      "local tare step to 110 lb at northwest/golden/35",
+      "local tare step to 125 lb at southeast/brown/40",
+      "local tare step to 120 lb at southeast/brown/40",
+      "local tare step to 115 lb at southeast/brown/40",
+      "local tare step to 110 lb at southeast/brown/40",
+      "local tare step to 125 lb at southeast/copper/35",
+      "local tare step to 120 lb at southeast/copper/35",
+      "local tare step to 115 lb at southeast/copper/35",
+      "local tare step to 110 lb at southeast/copper/35",
+      "local tare step to 125 lb at southwest/brown/30",
+      "local tare step to 120 lb at southwest/brown/30",
+      "local tare step to 115 lb at southwest/brown/30",
+      "local tare step to 110 lb at southwest/brown/30",
+      "local tare step to 125 lb at southwest/copper/30",
+      "local tare step to 120 lb at southwest/copper/30",
+      "local tare step to 115 lb at southwest/copper/30",
+      "local tare step to 110 lb at southwest/copper/30",
+      "local tare step to 125 lb at southwest/golden/40",
+      "local tare step to 120 lb at southwest/golden/40",
+      "local tare step to 115 lb at southwest/golden/40",
+      "local tare step to 110 lb at southwest/golden/40",
+      "local tare step to 125 lb at southwest/pale/straw/20",
+      "local tare step to 120 lb at southwest/pale/straw/20",
+      "local tare step to 115 lb at southwest/pale/straw/20",
+      "local tare step to 110 lb at southwest/pale/straw/20",
+      "local tare step to 125 lb at southwest/pale/straw/30",
+      "local tare step to 120 lb at southwest/pale/straw/30",
+      "local tare step to 115 lb at southwest/pale/straw/30",
+      "local tare step to 110 lb at southwest/pale/straw/30"
+    ],
+    "coefficients": [
+      0.6920374731928166,
+      -1.6284402211920628,
+      -1.6956291039905427,
+      -1.632291113368895,
+      0.64166119532043,
+      1.388372076122935,
+      0.6605150664479232,
+      1.3732955429146354,
+      1.4280776442469472,
+      1.7714254610708908,
+      1.108384521237286,
+      0.4679856205936332,
+      1.1344863425399687,
+      1.2246467959783278,
+      0.9874171103347242,
+      2.3939268474468354,
+      1.2623105862807178,
+      1.2287471561574326,
+      0.9622923543821947,
+      0.1966868680868926,
+      0.8385144734926759,
+      1.2152719710704776,
+      0.6825109132751492,
+      0.7809729622172136,
+      0.6866570395337442,
+      1.1910396425546488,
+      0.3644919886074635,
+      0.7412877360923587,
+      0.6866670593630295,
+      0.898350237295534,
+      0.0,
+      2.1766506002711665,
+      0.4819782278843972,
+      1.8283577604097765,
+      0.05949815878175698,
+      1.3863426514263817,
+      0.6866711870478268,
+      1.1083845212372925,
+      0.6916960922924027,
+      0.7867391276288372,
+      0.6866698346758867,
+      1.9067551485556409,
+      1.199818752142187,
+      0.38081448819033586,
+      0.686688334401578,
+      1.8908586900952147,
+      0.6812996883862217,
+      0.8860461397826819,
+      0.6134005242896862,
+      1.2348205041363505,
+      0.8292540434975595,
+      0.7867433887465274,
+      0.6866690731706664,
+      1.4405507462036808,
+      1.1667065589317103,
+      0.7867384261684335,
+      0.6866649554319282,
+      0.8836653830001177,
+      0.8118959939041616,
+      0.9091915792095859,
+      0.6866512280962925,
+      0.7983706273183531,
+      1.1998187521421997,
+      0.38081448819034047,
+      1.000699988652553,
+      1.4911890672222003,
+      0.4278954230763416,
+      0.6770700097311294,
+      0.5401333769885777,
+      0.49926323805697564,
+      0.6262243989054819,
+      0.7441486472896977,
+      1.2061244634362114,
+      1.6495336266214355,
+      0.1299000839355098,
+      0.6836910885364672,
+      0.6866820757078875,
+      1.6378778917664272,
+      1.0974067728949306,
+      0.40038037837417895,
+      0.6866521389867879,
+      1.4774885765678585,
+      0.05271518229896403,
+      0.5837798169454977,
+      0.8436698978051457,
+      1.0562317962866294,
+      0.8389701029977018,
+      0.7639850948061642,
+      0.686666381766285,
+      0.03127761746330484,
+      1.1693715887167178,
+      0.9937762728119656,
+      0.6866650717706169,
+      1.2447717142290704,
+      0.6916909711396623,
+      0.7867403293433433,
+      0.6866644107551181,
+      1.0524565353138124,
+      1.0247648616106915,
+      0.0,
+      0.6866600899367501,
+      0.9830359230716471,
+      0.36004612184387624,
+      0.7867270076123516,
+      0.6866590003433032,
+      1.5510322813226751,
+      0.9235375277528961,
+      1.6263476708625741,
+      0.015241047887225264,
+      1.6049029312535614,
+      1.064466855029432,
+      0.786718125087155,
+      0.6866533482693091,
+      1.425045335190412,
+      0.19824429411837163,
+      0.7867384473307556,
+      0.6866791409066906,
+      1.5636377938956412,
+      0.0,
+      0.8791904800843906,
+      0.6866880938073217,
+      1.425032820532769,
+      0.19824513612065586,
+      0.7867393458979699,
+      0.6866821158612079,
+      1.712757334822732,
+      0.0,
+      0.6837073391364857,
+      0.6866865831605172,
+      1.2230296295268765,
+      0.3964903260152451,
+      0.7412825412753323,
+      0.6866722740063329,
+      1.5302037588668629,
+      0.0,
+      0.38081448819033187,
+      1.0006999886525552,
+      2.754735567548273,
+      8.167958500508047e-17,
+      1.7817735893503592,
+      0.4819878567506814,
+      1.179231446526948,
+      0.654194152990194,
+      0.7809657814510216,
+      0.6866519188613377,
+      1.4250316226203643,
+      0.0,
+      0.7867375877337932,
+      0.6866827076824893,
+      1.5728937895671122,
+      1.0324857637207923,
+      0.7867098735660355,
+      0.6866447991592155,
+      0.9942730637184057,
+      0.28875199876961516,
+      0.7867143054461083,
+      0.6866550229447533,
+      1.906755148555635,
+      0.0,
+      0.3808087163194489,
+      0.6866975881651053,
+      1.6228469698002534,
+      1.0823787137666983,
+      0.40038706949297237,
+      0.6866482687767326,
+      1.4924581089711821,
+      1.2260029748388421,
+      0.0,
+      0.9904035772809902,
+      1.64766293095867,
+      1.1071876238865268,
+      0.0,
+      0.6866476518982063,
+      1.52421741688029,
+      0.0,
+      0.8256025801465119,
+      0.613400524289691,
+      1.2287460855956802,
+      0.9622910222616835,
+      0.1966924020704716,
+      0.8385031187189804,
+      1.5510360799343377,
+      0.9235422147892554,
+      1.6263439269762021,
+      0.0152372902979768,
+      0.0,
+      0.8785354449665096,
+      0.9091896211103452,
+      0.686640617401459,
+      1.2287585568511712,
+      0.9623034227188295,
+      0.0,
+      0.8385031187189808,
+      1.5302037588668644,
+      0.0,
+      0.5837798588563706,
+      0.8436369269400535,
+      0.9650379691886062,
+      0.9725980583233527,
+      0.0,
+      0.8385031187189806,
+      1.8806639583812939,
+      1.173736970386632,
+      0.3808211427799935,
+      0.6866996664139673,
+      1.3932338476682469,
+      0.0,
+      0.7412811287805978,
+      0.6866721402720412,
+      2.266962025173682,
+      0.0,
+      0.8860399495892364,
+      0.6134024055287773,
+      1.6450573057037252,
+      1.104586513654889,
+      0.0,
+      0.6866478254325661,
+      1.481672334265844,
+      0.0,
+      0.8802608415033226,
+      0.7802048149884179,
+      1.5689969578307292,
+      0.9415030926856472,
+      1.644300678329778,
+      0.0
+    ],
+    "in_sample": {
+      "n": 310,
+      "matched": 280,
+      "accuracy": 0.9032258064516129,
+      "balanced_accuracy": 0.9075012936857716,
+      "recall": {
+        "B": 0.9538461538461539,
+        "tie": 0.8411214953271028,
+        "A": 0.927536231884058
+      },
+      "confusion_actual_to_predicted": {
+        "B": {
+          "B": 62,
+          "tie": 3,
+          "A": 0
+        },
+        "tie": {
+          "B": 9,
+          "tie": 90,
+          "A": 8
+        },
+        "A": {
+          "B": 0,
+          "tie": 10,
+          "A": 128
+        }
+      },
+      "opposite_winner_errors": 0,
+      "predicted_ties": 103
+    },
+    "forced_strict_preference_ids": [],
+    "pure_tare_tie_audit": {
+      "n": 16,
+      "exact_score_equalities": 16
+    },
+    "target_predictions": [
+      {
+        "id": "round14-2",
+        "answer": "B",
+        "prediction": "B",
+        "margin": -1.173736970386632,
+        "exact_score_equality": false
+      },
+      {
+        "id": "round21-3",
+        "answer": "tie",
+        "prediction": "B",
+        "margin": -0.32132123374615573,
+        "exact_score_equality": false
+      },
+      {
+        "id": "round21-8",
+        "answer": "A",
+        "prediction": "tie",
+        "margin": -0.01448009798868144,
+        "exact_score_equality": false
+      },
+      {
+        "id": "round21-11",
+        "answer": "tie",
+        "prediction": "tie",
+        "margin": -0.048104882866389254,
+        "exact_score_equality": false
+      },
+      {
+        "id": "round21-12",
+        "answer": "tie",
+        "prediction": "tie",
+        "margin": 0.0,
+        "exact_score_equality": true
+      }
+    ]
+  },
+  "contextual_v7_snapshot": {
+    "alpha": 0.1,
+    "pooling": 1.0,
+    "threshold": 0.2,
+    "inner_balanced_accuracy": 0.7696346770300447,
+    "feature_names": [
+      "origin:Western Europe vs Eastern Europe",
+      "origin:West Central Asia vs Eastern Europe",
+      "origin:South/Eastern Asia vs Eastern Europe",
+      "origin:West Asia / Middle East vs Eastern Europe",
+      "origin:central vs Eastern Europe",
+      "origin:northeast vs Eastern Europe",
+      "origin:northwest vs Eastern Europe",
+      "origin:southwest vs Eastern Europe",
+      "origin:southeast vs Eastern Europe",
+      "shade increment:copper",
+      "shade increment:amber",
+      "shade increment:golden",
+      "shade increment:pale/straw",
+      "age increment:35",
+      "age increment:30",
+      "age increment:25",
+      "age increment:20",
+      "tare step to 125 lb at brown/40 years",
+      "tare step to 120 lb at brown/40 years",
+      "tare step to 115 lb at brown/40 years",
+      "tare step to 110 lb at brown/40 years",
+      "tare step to 125 lb at brown/35 years",
+      "tare step to 120 lb at brown/35 years",
+      "tare step to 115 lb at brown/35 years",
+      "tare step to 110 lb at brown/35 years",
+      "tare step to 125 lb at brown/30 years",
+      "tare step to 120 lb at brown/30 years",
+      "tare step to 115 lb at brown/30 years",
+      "tare step to 110 lb at brown/30 years",
+      "tare step to 125 lb at brown/25 years",
+      "tare step to 120 lb at brown/25 years",
+      "tare step to 115 lb at brown/25 years",
+      "tare step to 110 lb at brown/25 years",
+      "tare step to 125 lb at brown/20 years",
+      "tare step to 120 lb at brown/20 years",
+      "tare step to 115 lb at brown/20 years",
+      "tare step to 110 lb at brown/20 years",
+      "tare step to 125 lb at copper/40 years",
+      "tare step to 120 lb at copper/40 years",
+      "tare step to 115 lb at copper/40 years",
+      "tare step to 110 lb at copper/40 years",
+      "tare step to 125 lb at copper/35 years",
+      "tare step to 120 lb at copper/35 years",
+      "tare step to 115 lb at copper/35 years",
+      "tare step to 110 lb at copper/35 years",
+      "tare step to 125 lb at copper/30 years",
+      "tare step to 120 lb at copper/30 years",
+      "tare step to 115 lb at copper/30 years",
+      "tare step to 110 lb at copper/30 years",
+      "tare step to 125 lb at copper/25 years",
+      "tare step to 120 lb at copper/25 years",
+      "tare step to 115 lb at copper/25 years",
+      "tare step to 110 lb at copper/25 years",
+      "tare step to 125 lb at copper/20 years",
+      "tare step to 120 lb at copper/20 years",
+      "tare step to 115 lb at copper/20 years",
+      "tare step to 110 lb at copper/20 years",
+      "tare step to 125 lb at amber/40 years",
+      "tare step to 120 lb at amber/40 years",
+      "tare step to 115 lb at amber/40 years",
+      "tare step to 110 lb at amber/40 years",
+      "tare step to 125 lb at amber/35 years",
+      "tare step to 120 lb at amber/35 years",
+      "tare step to 115 lb at amber/35 years",
+      "tare step to 110 lb at amber/35 years",
+      "tare step to 125 lb at amber/30 years",
+      "tare step to 120 lb at amber/30 years",
+      "tare step to 115 lb at amber/30 years",
+      "tare step to 110 lb at amber/30 years",
+      "tare step to 125 lb at amber/25 years",
+      "tare step to 120 lb at amber/25 years",
+      "tare step to 115 lb at amber/25 years",
+      "tare step to 110 lb at amber/25 years",
+      "tare step to 125 lb at amber/20 years",
+      "tare step to 120 lb at amber/20 years",
+      "tare step to 115 lb at amber/20 years",
+      "tare step to 110 lb at amber/20 years",
+      "tare step to 125 lb at golden/40 years",
+      "tare step to 120 lb at golden/40 years",
+      "tare step to 115 lb at golden/40 years",
+      "tare step to 110 lb at golden/40 years",
+      "tare step to 125 lb at golden/35 years",
+      "tare step to 120 lb at golden/35 years",
+      "tare step to 115 lb at golden/35 years",
+      "tare step to 110 lb at golden/35 years",
+      "tare step to 125 lb at golden/30 years",
+      "tare step to 120 lb at golden/30 years",
+      "tare step to 115 lb at golden/30 years",
+      "tare step to 110 lb at golden/30 years",
+      "tare step to 125 lb at golden/25 years",
+      "tare step to 120 lb at golden/25 years",
+      "tare step to 115 lb at golden/25 years",
+      "tare step to 110 lb at golden/25 years",
+      "tare step to 125 lb at golden/20 years",
+      "tare step to 120 lb at golden/20 years",
+      "tare step to 115 lb at golden/20 years",
+      "tare step to 110 lb at golden/20 years",
+      "tare step to 125 lb at pale/straw/40 years",
+      "tare step to 120 lb at pale/straw/40 years",
+      "tare step to 115 lb at pale/straw/40 years",
+      "tare step to 110 lb at pale/straw/40 years",
+      "tare step to 125 lb at pale/straw/35 years",
+      "tare step to 120 lb at pale/straw/35 years",
+      "tare step to 115 lb at pale/straw/35 years",
+      "tare step to 110 lb at pale/straw/35 years",
+      "tare step to 125 lb at pale/straw/30 years",
+      "tare step to 120 lb at pale/straw/30 years",
+      "tare step to 115 lb at pale/straw/30 years",
+      "tare step to 110 lb at pale/straw/30 years",
+      "tare step to 125 lb at pale/straw/25 years",
+      "tare step to 120 lb at pale/straw/25 years",
+      "tare step to 115 lb at pale/straw/25 years",
+      "tare step to 110 lb at pale/straw/25 years",
+      "tare step to 125 lb at pale/straw/20 years",
+      "tare step to 120 lb at pale/straw/20 years",
+      "tare step to 115 lb at pale/straw/20 years",
+      "tare step to 110 lb at pale/straw/20 years"
+    ],
+    "coefficients": [
+      0.5960581021671133,
+      -1.4105317359519913,
+      -1.4645842199857675,
+      -1.3878946321901167,
+      0.624252346435476,
+      1.099941458583377,
+      0.47747258286833166,
+      1.1135934536412602,
+      1.0815308795870122,
+      1.5341718650307132,
+      0.8684280612782671,
+      0.2955159796104972,
+      0.9281395768331973,
+      1.23795375595271,
+      0.9395193233949245,
+      2.2492686967256335,
+      1.1516421464343134,
+      1.031870499314888,
+      0.9449670604819237,
+      0.0,
+      1.4062383456928014,
+      1.1433296115200624,
+      0.585986960695517,
+      0.7282570254831114,
+      0.8958601426207731,
+      1.1958206627049377,
+      0.0,
+      0.7166595320708614,
+      0.8958951370944988,
+      0.6620468263148533,
+      1.2261672127897881e-14,
+      2.1891019538289824,
+      0.342818463161938,
+      1.6805568351101359,
+      0.02513489037768383,
+      1.28132903323472,
+      0.8958625698680152,
+      1.1212612854838095,
+      0.5858744655559197,
+      0.7220096386985957,
+      0.8958730033966733,
+      2.1908783465944834,
+      0.0,
+      0.6811842500659615,
+      0.8958725141446365,
+      2.2990835654135506,
+      0.0,
+      0.7041382295437534,
+      0.6409056366047938,
+      1.0780474899410448,
+      0.6731278602972764,
+      0.5953974848321933,
+      0.8958613756780741,
+      1.4020684889258916,
+      0.9411246039391362,
+      0.7282551382204081,
+      0.8958594623661076,
+      0.44806633146203423,
+      0.5236524879682064,
+      0.9626660054496639,
+      0.895855019626637,
+      1.3224502853162399,
+      0.017998035086596826,
+      0.6631862149793359,
+      1.5888586121907395,
+      1.4306555041352815,
+      0.0,
+      0.7041382295437635,
+      0.6409056366047756,
+      0.33425139867313086,
+      0.5901158817506088,
+      0.5537774933685221,
+      1.232934679166469,
+      1.4747650315867686,
+      0.0,
+      0.7432585620477793,
+      0.8958606825784513,
+      1.2989896963674366,
+      0.9838964003776772,
+      0.0,
+      0.895857717320505,
+      1.0449323407924276,
+      0.0,
+      0.6631862149793492,
+      1.588858612190736,
+      1.1351395245248326,
+      0.5732572394796357,
+      0.7233214731119313,
+      0.8958579847210499,
+      0.03873541906267191,
+      1.024861722425895,
+      0.982330679381576,
+      0.8958590664463287,
+      1.17924905197631,
+      0.5864457006948026,
+      0.7282712222519409,
+      0.8958598671341187,
+      0.49961595015940463,
+      1.3110686757718462,
+      5.5360776070856735e-15,
+      0.8958573164758883,
+      0.2346232577575425,
+      0.8761193746864677,
+      0.34332140056304933,
+      0.9147735581222061,
+      1.4643844751156858,
+      0.9280776536729125,
+      1.4555682100857565,
+      0.0,
+      1.594647004509879,
+      0.9574056515024416,
+      0.7282849321963043,
+      0.8958595313496442,
+      1.4180677415749017,
+      0.0,
+      0.7282739614864876,
+      0.8958595367774758
+    ],
+    "fixed_step_indices": [
+      19,
+      26,
+      42,
+      46,
+      66,
+      74,
+      79,
+      82,
+      108,
+      114
+    ],
+    "in_sample": {
+      "n": 310,
+      "matched": 269,
+      "accuracy": 0.867741935483871,
+      "balanced_accuracy": 0.8599290817088461,
+      "recall": {
+        "B": 0.8307692307692308,
+        "tie": 0.8504672897196262,
+        "A": 0.8985507246376812
+      },
+      "confusion_actual_to_predicted": {
+        "B": {
+          "B": 54,
+          "tie": 11,
+          "A": 0
+        },
+        "tie": {
+          "B": 6,
+          "tie": 91,
+          "A": 10
+        },
+        "A": {
+          "B": 0,
+          "tie": 14,
+          "A": 124
+        }
+      },
+      "opposite_winner_errors": 0,
+      "predicted_ties": 116
+    },
+    "pure_tare_tie_audit": {
+      "n": 16,
+      "exact_score_equalities": 16
+    },
+    "target_predictions": [
+      {
+        "id": "round14-2",
+        "answer": "B",
+        "prediction": "tie",
+        "margin": 0.0,
+        "exact_score_equality": true
+      },
+      {
+        "id": "round21-3",
+        "answer": "tie",
+        "prediction": "tie",
+        "margin": -0.03206257405424795,
+        "exact_score_equality": false
+      },
+      {
+        "id": "round21-8",
+        "answer": "A",
+        "prediction": "tie",
+        "margin": -0.007735867407595354,
+        "exact_score_equality": false
+      },
+      {
+        "id": "round21-11",
+        "answer": "tie",
+        "prediction": "tie",
+        "margin": 0.01365199505788306,
+        "exact_score_equality": false
+      },
+      {
+        "id": "round21-12",
+        "answer": "tie",
+        "prediction": "tie",
+        "margin": 0.0,
+        "exact_score_equality": true
+      }
+    ]
+  },
+  "questions_and_predictions_sha256": "107d1c999c5e796153e3a4dafd450761d6d292dcb145897d317a729f374989ec",
+  "questions": [
+    {
+      "id": "round23-1",
+      "a": [
+        "northeast",
+        "copper",
+        35,
+        120
+      ],
+      "b": [
+        "northeast",
+        "copper",
+        35,
+        125
+      ],
+      "category": "local_tare",
+      "predictions_before_answer": {
+        "provenance_scoped": "A",
+        "contextual_v7": "tie"
+      },
+      "margins": {
+        "provenance_scoped": 1.199818752142187,
+        "contextual_v7": 0.0
+      },
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "3. Give them exactly the same price."
+    },
+    {
+      "id": "round23-2",
+      "a": [
+        "southeast",
+        "golden",
+        40,
+        115
+      ],
+      "b": [
+        "southeast",
+        "golden",
+        40,
+        125
+      ],
+      "category": "wider_tare",
+      "predictions_before_answer": {
+        "provenance_scoped": "A",
+        "contextual_v7": "A"
+      },
+      "margins": {
+        "provenance_scoped": 1.4977871512691094,
+        "contextual_v7": 0.9838964003776772
+      },
+      "winner": "A",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "1. Price A higher than B."
+    },
+    {
+      "id": "round23-3",
+      "a": [
+        "Western Europe",
+        "amber",
+        30,
+        125
+      ],
+      "b": [
+        "northwest",
+        "amber",
+        30,
+        120
+      ],
+      "category": "provenance_tare",
+      "predictions_before_answer": {
+        "provenance_scoped": "B",
+        "contextual_v7": "tie"
+      },
+      "margins": {
+        "provenance_scoped": -0.3963730163314482,
+        "contextual_v7": 0.11858551929878164
+      },
+      "winner": null,
+      "strength": null,
+      "status": "unresolved",
+      "raw_answer": "4"
+    },
+    {
+      "id": "round23-4",
+      "a": [
+        "Eastern Europe",
+        "brown",
+        40,
+        115
+      ],
+      "b": [
+        "Eastern Europe",
+        "brown",
+        40,
+        120
+      ],
+      "category": "local_tare",
+      "predictions_before_answer": {
+        "provenance_scoped": "tie",
+        "contextual_v7": "tie"
+      },
+      "margins": {
+        "provenance_scoped": 0.1966868680868926,
+        "contextual_v7": 0.0
+      },
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "3. Give them exactly the same price."
+    },
+    {
+      "id": "round23-5",
+      "a": [
+        "West Asia / Middle East",
+        "golden",
+        25,
+        125
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "golden",
+        25,
+        125
+      ],
+      "category": "provenance",
+      "predictions_before_answer": {
+        "provenance_scoped": "tie",
+        "contextual_v7": "tie"
+      },
+      "margins": {
+        "provenance_scoped": 0.06333799062164758,
+        "contextual_v7": 0.07668958779565083
+      },
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "3. Give them exactly the same price."
+    },
+    {
+      "id": "round23-6",
+      "a": [
+        "central",
+        "pale/straw",
+        20,
+        130
+      ],
+      "b": [
+        "central",
+        "golden",
+        30,
+        115
+      ],
+      "category": "shade_vintage_tare",
+      "predictions_before_answer": {
+        "provenance_scoped": "A",
+        "contextual_v7": "A"
+      },
+      "margins": {
+        "provenance_scoped": 2.1315367821770264,
+        "contextual_v7": 1.8973321828767444
+      },
+      "winner": "A",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "1. Price A higher than B."
+    },
+    {
+      "id": "round23-7",
+      "a": [
+        "West Central Asia",
+        "copper",
+        35,
+        120
+      ],
+      "b": [
+        "West Central Asia",
+        "copper",
+        35,
+        125
+      ],
+      "category": "local_tare",
+      "predictions_before_answer": {
+        "provenance_scoped": "A",
+        "contextual_v7": "tie"
+      },
+      "margins": {
+        "provenance_scoped": 1.199818752142187,
+        "contextual_v7": 0.0
+      },
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "3. Give them exactly the same price."
+    },
+    {
+      "id": "round23-8",
+      "a": [
+        "southwest",
+        "brown",
+        40,
+        110
+      ],
+      "b": [
+        "southwest",
+        "brown",
+        40,
+        125
+      ],
+      "category": "wider_tare",
+      "predictions_before_answer": {
+        "provenance_scoped": "A",
+        "contextual_v7": "A"
+      },
+      "margins": {
+        "provenance_scoped": 1.997493695961763,
+        "contextual_v7": 2.351205406174725
+      },
+      "winner": "A",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "1. Price A higher than B."
+    },
+    {
+      "id": "round23-9",
+      "a": [
+        "southeast",
+        "amber",
+        25,
+        125
+      ],
+      "b": [
+        "northeast",
+        "amber",
+        25,
+        120
+      ],
+      "category": "provenance_tare",
+      "predictions_before_answer": {
+        "provenance_scoped": "B",
+        "contextual_v7": "B"
+      },
+      "margins": {
+        "provenance_scoped": -0.5865188307814697,
+        "contextual_v7": -0.6085264607469737
+      },
+      "winner": null,
+      "strength": null,
+      "status": "unresolved",
+      "raw_answer": "4"
+    },
+    {
+      "id": "round23-10",
+      "a": [
+        "central",
+        "pale/straw",
+        20,
+        120
+      ],
+      "b": [
+        "central",
+        "pale/straw",
+        20,
+        125
+      ],
+      "category": "local_tare",
+      "predictions_before_answer": {
+        "provenance_scoped": "tie",
+        "contextual_v7": "tie"
+      },
+      "margins": {
+        "provenance_scoped": 0.19824429411837163,
+        "contextual_v7": 0.0
+      },
+      "winner": "A",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "1"
+    },
+    {
+      "id": "round23-11",
+      "a": [
+        "Eastern Europe",
+        "copper",
+        20,
+        125
+      ],
+      "b": [
+        "Eastern Europe",
+        "amber",
+        30,
+        120
+      ],
+      "category": "shade_vintage_tare",
+      "predictions_before_answer": {
+        "provenance_scoped": "A",
+        "contextual_v7": "A"
+      },
+      "margins": {
+        "provenance_scoped": 2.069319168395406,
+        "contextual_v7": 2.5038957666722896
+      },
+      "winner": "A",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "1. Price A higher than B."
+    },
+    {
+      "id": "round23-12",
+      "a": [
+        "Western Europe",
+        "pale/straw",
+        30,
+        110
+      ],
+      "b": [
+        "Western Europe",
+        "pale/straw",
+        30,
+        120
+      ],
+      "category": "wider_tare",
+      "predictions_before_answer": {
+        "provenance_scoped": "A",
+        "contextual_v7": "A"
+      },
+      "margins": {
+        "provenance_scoped": 1.6415887187497995,
+        "contextual_v7": 1.4555682100857565
+      },
+      "winner": "A",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "1. Price A higher than B."
+    },
+    {
+      "id": "round23-13",
+      "a": [
+        "northwest",
+        "golden",
+        40,
+        115
+      ],
+      "b": [
+        "northwest",
+        "golden",
+        40,
+        120
+      ],
+      "category": "local_tare",
+      "predictions_before_answer": {
+        "provenance_scoped": "A",
+        "contextual_v7": "tie"
+      },
+      "margins": {
+        "provenance_scoped": 0.40038037837417895,
+        "contextual_v7": 0.0
+      },
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "3. Give them exactly the same price."
+    },
+    {
+      "id": "round23-14",
+      "a": [
+        "South/Eastern Asia",
+        "brown",
+        25,
+        125
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "brown",
+        35,
+        115
+      ],
+      "category": "vintage_tare",
+      "predictions_before_answer": {
+        "provenance_scoped": "A",
+        "contextual_v7": "A"
+      },
+      "margins": {
+        "provenance_scoped": 1.600938348514253,
+        "contextual_v7": 1.3932612487367204
+      },
+      "winner": "A",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "1. Price A higher than B."
+    },
+    {
+      "id": "round23-15",
+      "a": [
+        "southwest",
+        "golden",
+        25,
+        120
+      ],
+      "b": [
+        "southeast",
+        "golden",
+        25,
+        120
+      ],
+      "category": "provenance",
+      "predictions_before_answer": {
+        "provenance_scoped": "tie",
+        "contextual_v7": "tie"
+      },
+      "margins": {
+        "provenance_scoped": -0.05478210133231176,
+        "contextual_v7": 0.03206257405424795
+      },
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "Question 15 was a mistake - should have been a tie.",
+      "answer_history": [
+        {
+          "winner": "A",
+          "raw_answer": "1",
+          "status": "superseded by explicit user correction before scoring"
+        }
+      ],
+      "corrected": true
+    },
+    {
+      "id": "round23-16",
+      "a": [
+        "West Asia / Middle East",
+        "amber",
+        20,
+        120
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "amber",
+        20,
+        125
+      ],
+      "category": "local_tare",
+      "predictions_before_answer": {
+        "provenance_scoped": "tie",
+        "contextual_v7": "tie"
+      },
+      "margins": {
+        "provenance_scoped": 0.1299000839355098,
+        "contextual_v7": 0.0
+      },
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "As for 16, also tie."
+    },
+    {
+      "id": "round23-17",
+      "a": [
+        "central",
+        "copper",
+        30,
+        120
+      ],
+      "b": [
+        "central",
+        "copper",
+        30,
+        130
+      ],
+      "category": "wider_tare",
+      "predictions_before_answer": {
+        "provenance_scoped": "A",
+        "contextual_v7": "A"
+      },
+      "margins": {
+        "provenance_scoped": 2.5721583784814364,
+        "contextual_v7": 2.2990835654135506
+      },
+      "winner": "A",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "1. Price A higher than B."
+    },
+    {
+      "id": "round23-18",
+      "a": [
+        "Western Europe",
+        "golden",
+        25,
+        120
+      ],
+      "b": [
+        "northwest",
+        "golden",
+        25,
+        125
+      ],
+      "category": "provenance_tare",
+      "predictions_before_answer": {
+        "provenance_scoped": "A",
+        "contextual_v7": "A"
+      },
+      "margins": {
+        "provenance_scoped": 1.2008939954616111,
+        "contextual_v7": 1.1434472417246766
+      },
+      "winner": null,
+      "strength": null,
+      "status": "unresolved",
+      "raw_answer": "4"
+    },
+    {
+      "id": "round23-19",
+      "a": [
+        "southeast",
+        "brown",
+        30,
+        120
+      ],
+      "b": [
+        "southeast",
+        "brown",
+        30,
+        125
+      ],
+      "category": "local_tare",
+      "predictions_before_answer": {
+        "provenance_scoped": "A",
+        "contextual_v7": "tie"
+      },
+      "margins": {
+        "provenance_scoped": 0.3644919886074635,
+        "contextual_v7": 0.0
+      },
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "3. Give them exactly the same price."
+    },
+    {
+      "id": "round23-20",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        25,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "golden",
+        35,
+        115
+      ],
+      "category": "shade_vintage_tare",
+      "predictions_before_answer": {
+        "provenance_scoped": "A",
+        "contextual_v7": "A"
+      },
+      "margins": {
+        "provenance_scoped": 3.9747405140763203,
+        "contextual_v7": 4.003456045691857
+      },
+      "winner": "A",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "1. Price A higher than B."
+    }
+  ],
+  "scores": {
+    "provenance_scoped": {
+      "all": {
+        "n": 17,
+        "matched": 12,
+        "confusion_actual_to_predicted": {
+          "A": {
+            "A": 8,
+            "B": 0,
+            "tie": 1
+          },
+          "B": {
+            "A": 0,
+            "B": 0,
+            "tie": 0
+          },
+          "tie": {
+            "A": 4,
+            "B": 0,
+            "tie": 4
+          }
+        },
+        "opposite_winner_errors": 0,
+        "missed_questions": [
+          1,
+          7,
+          10,
+          13,
+          19
+        ]
+      },
+      "local_tare": {
+        "n": 7,
+        "matched": 2,
+        "confusion_actual_to_predicted": {
+          "A": {
+            "A": 0,
+            "B": 0,
+            "tie": 1
+          },
+          "B": {
+            "A": 0,
+            "B": 0,
+            "tie": 0
+          },
+          "tie": {
+            "A": 4,
+            "B": 0,
+            "tie": 2
+          }
+        },
+        "opposite_winner_errors": 0,
+        "missed_questions": [
+          1,
+          7,
+          10,
+          13,
+          19
+        ]
+      },
+      "wider_tare": {
+        "n": 4,
+        "matched": 4,
+        "confusion_actual_to_predicted": {
+          "A": {
+            "A": 4,
+            "B": 0,
+            "tie": 0
+          },
+          "B": {
+            "A": 0,
+            "B": 0,
+            "tie": 0
+          },
+          "tie": {
+            "A": 0,
+            "B": 0,
+            "tie": 0
+          }
+        },
+        "opposite_winner_errors": 0,
+        "missed_questions": []
+      },
+      "other_tradeoffs": {
+        "n": 6,
+        "matched": 6,
+        "confusion_actual_to_predicted": {
+          "A": {
+            "A": 4,
+            "B": 0,
+            "tie": 0
+          },
+          "B": {
+            "A": 0,
+            "B": 0,
+            "tie": 0
+          },
+          "tie": {
+            "A": 0,
+            "B": 0,
+            "tie": 2
+          }
+        },
+        "opposite_winner_errors": 0,
+        "missed_questions": []
+      }
+    },
+    "contextual_v7": {
+      "all": {
+        "n": 17,
+        "matched": 16,
+        "confusion_actual_to_predicted": {
+          "A": {
+            "A": 8,
+            "B": 0,
+            "tie": 1
+          },
+          "B": {
+            "A": 0,
+            "B": 0,
+            "tie": 0
+          },
+          "tie": {
+            "A": 0,
+            "B": 0,
+            "tie": 8
+          }
+        },
+        "opposite_winner_errors": 0,
+        "missed_questions": [
+          10
+        ]
+      },
+      "local_tare": {
+        "n": 7,
+        "matched": 6,
+        "confusion_actual_to_predicted": {
+          "A": {
+            "A": 0,
+            "B": 0,
+            "tie": 1
+          },
+          "B": {
+            "A": 0,
+            "B": 0,
+            "tie": 0
+          },
+          "tie": {
+            "A": 0,
+            "B": 0,
+            "tie": 6
+          }
+        },
+        "opposite_winner_errors": 0,
+        "missed_questions": [
+          10
+        ]
+      },
+      "wider_tare": {
+        "n": 4,
+        "matched": 4,
+        "confusion_actual_to_predicted": {
+          "A": {
+            "A": 4,
+            "B": 0,
+            "tie": 0
+          },
+          "B": {
+            "A": 0,
+            "B": 0,
+            "tie": 0
+          },
+          "tie": {
+            "A": 0,
+            "B": 0,
+            "tie": 0
+          }
+        },
+        "opposite_winner_errors": 0,
+        "missed_questions": []
+      },
+      "other_tradeoffs": {
+        "n": 6,
+        "matched": 6,
+        "confusion_actual_to_predicted": {
+          "A": {
+            "A": 4,
+            "B": 0,
+            "tie": 0
+          },
+          "B": {
+            "A": 0,
+            "B": 0,
+            "tie": 0
+          },
+          "tie": {
+            "A": 0,
+            "B": 0,
+            "tie": 2
+          }
+        },
+        "opposite_winner_errors": 0,
+        "missed_questions": []
+      }
+    }
+  },
+  "scoring_notes": "17 answered; Q3/Q9/Q18 unresolved excluded. Q15 explicitly corrected to tie before scoring; initial A preserved in history, counted once. Models, coefficients, local contexts, thresholds and all predictions verified unchanged. Purposeful sample, not random accuracy estimate. Predictions of ties need not be exact score equalities."
+}

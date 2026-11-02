@@ -1,0 +1,48 @@
+{
+  "status": "Pending next evidence reconciliation; models fixed",
+  "rows": [
+    {
+      "target_id": "round9-7",
+      "a": [
+        "central",
+        "brown",
+        35,
+        125
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "brown",
+        35,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "value_relation": "A_higher",
+      "raw_answer": "A very slightly more expensive",
+      "interpretation": "User chose A very slightly higher after explicit slightly-versus-meaningfully options. Practical similarity with a positive direction. Reaffirms older strict direction; does not resolve conflicting equal120lb equality."
+    },
+    {
+      "target_id": "round6-8",
+      "a": [
+        "central",
+        "brown",
+        35,
+        120
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "brown",
+        35,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "value_relation": "A_higher",
+      "raw_answer": "A very slightly. Central domestic has a significant edge compared to West Asia Middle East; the provenance gap is too wide with equality on every other attribute.",
+      "interpretation": "Explicit very slight price premium, not meaningful despite significant descriptive provenance gap. Supersedes previous exact-price equality. No numerical regional adjacency distance inferred."
+    }
+  ],
+  "finding": "Both equal120 and Central125 versus MiddleEast120 favor Central very slightly. Removing superseded round6-8 exact equality resolves this specific monotonicity contradiction. Does not establish that the two premiums are numerically identical."
+}

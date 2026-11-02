@@ -1,0 +1,252 @@
+{
+  "project": "wine-vessel-set",
+  "owner": "stefansassoon",
+  "rev": "A",
+  "date": "2026-10-26",
+  "status": "locked",
+  "units": "in",
+  "assumptions": {
+    "weight_type": "tare",
+    "oak_density_lb_ft3": 43,
+    "stave_in": 1.1,
+    "head_in": 1.0,
+    "hoop_mass_fraction": 0.2,
+    "length_ratio": 1.28,
+    "head_ratio": 0.78,
+    "ss_density_lb_in3": 0.29,
+    "ss_wall_mm": 2
+  },
+  "variant_oak": [
+    {
+      "id": 1,
+      "tare_lb": 110,
+      "bilge_in": 26.9,
+      "length_in": 34.4,
+      "head_in": 21.0,
+      "capacity_l": 254
+    },
+    {
+      "id": 2,
+      "tare_lb": 115,
+      "bilge_in": 27.5,
+      "length_in": 35.2,
+      "head_in": 21.5,
+      "capacity_l": 271
+    },
+    {
+      "id": 3,
+      "tare_lb": 120,
+      "bilge_in": 28.1,
+      "length_in": 36.0,
+      "head_in": 21.9,
+      "capacity_l": 289
+    },
+    {
+      "id": 4,
+      "tare_lb": 125,
+      "bilge_in": 28.7,
+      "length_in": 36.7,
+      "head_in": 22.4,
+      "capacity_l": 308
+    },
+    {
+      "id": 5,
+      "tare_lb": 130,
+      "bilge_in": 29.2,
+      "length_in": 37.4,
+      "head_in": 22.8,
+      "capacity_l": 324
+    }
+  ],
+  "variant_stainless_304L": {
+    "material": "304L",
+    "wall_mm": 2,
+    "height_range_in": [
+      66,
+      72
+    ],
+    "products": [
+      "pale/straw",
+      "golden",
+      "amber",
+      "copper",
+      "brown"
+    ],
+    "product_availability": "each product in every vessel",
+    "vintages_years": [
+      20,
+      25,
+      30,
+      35,
+      40
+    ],
+    "vintage_availability": "each vintage of each product in every vessel",
+    "terroir": {
+      "availability": "each domestic and foreign zone for every vintage of every product in every vessel",
+      "domestic": [
+        "northwest",
+        "southwest",
+        "northeast",
+        "southeast",
+        "central"
+      ],
+      "foreign": [
+        "Western Europe",
+        "Eastern Europe",
+        "West Central Asia",
+        "South/Eastern Asia",
+        "West Asia / Middle East"
+      ]
+    },
+    "pricing": {
+      "status": "revision E provisional fit \u2014 active rankings and exact ties",
+      "currency": null,
+      "same_in_every_vessel": false,
+      "vessel_size_is_a_factor": true,
+      "model": {
+        "formula": "u = shade_points + vintage_points + provenance_by_shade + provenance_shade_vintage_adjustment + baseline_lightness + narrow_tare_context_adjustment; t normalized over supported offering; price = P_floor * (P_ceiling / P_floor) ** t",
+        "point_lb": 5,
+        "lighter_costs_more": true,
+        "shade_points": {
+          "brown": 0,
+          "copper": 2.6,
+          "amber": 3.6,
+          "golden": 4.5,
+          "pale/straw": 6.5
+        },
+        "vintage_points": {
+          "40": 0,
+          "35": 1,
+          "30": 2,
+          "25": 3.1,
+          "20": 4.2
+        },
+        "coefficient_source": "pricing.py; provisional feasible fit, not unique measurements",
+        "evidence": "comparisons.json",
+        "active_comparisons": 101,
+        "deferred_comparisons": 10,
+        "superseded_comparisons": 2,
+        "qualitative_strengths": "retained as evidence, not numerically calibrated",
+        "normalization": "actual min/max of all 1250 supported combinations",
+        "round6_before_refit": {
+          "matched": 5,
+          "answered": 19,
+          "baseline_revision": "B"
+        },
+        "validation_scope": "in-sample ranking/tie consistency, not held-out predictive validation",
+        "point_lb_scope": "baseline; northeast pale/straw 20-year has an additional observed tare interaction",
+        "round7_before_refit": {
+          "matched": 5,
+          "answered": 17,
+          "baseline_revision": "C",
+          "includes_explicit_revisit": true
+        },
+        "tare_interaction": {
+          "provenance": "northeast",
+          "shade": "pale/straw",
+          "vintage_years": 20,
+          "tare_lb": [
+            120,
+            125,
+            130
+          ],
+          "utility_adjustment": 0.05,
+          "note": "provisional magnitude; reproduces southeast/northeast tie versus strict ranking at 110/115 lb"
+        },
+        "round8_before_refit": {
+          "matched": 6,
+          "answered": 17,
+          "baseline_revision": "D",
+          "predictions_recorded_before_answers": true,
+          "sampling": "adaptive gap-finding; not random holdout"
+        },
+        "round9_frozen_validation": {
+          "matched": 5,
+          "answered": 18,
+          "deferred": 2,
+          "model_revision": "E",
+          "model_sha256": "70cf711fdd3322750ffd5cdab45e156e3bc47a136ddb2155bac04727e7900906",
+          "model_unchanged": true,
+          "fitted": false,
+          "evidence": "round9-fixed.json",
+          "sampling": "preselected varied; not random",
+          "scoring": "exact A/B/tie; strengths unscored"
+        }
+      },
+      "most_expensive": {
+        "origin": "domestic",
+        "product": "pale/straw",
+        "vintage_years": 20,
+        "tare_lb": 110,
+        "terroir": [
+          "southeast",
+          "southwest"
+        ],
+        "status": "provisional model result"
+      },
+      "least_expensive": {
+        "origin": "foreign",
+        "product": "brown",
+        "vintage_years": 40,
+        "tare_lb": 130,
+        "terroir": [
+          "West Asia / Middle East",
+          "South/Eastern Asia"
+        ],
+        "status": "provisional model result"
+      },
+      "unset": "dollar amounts; exact verbal premium sizes; ten saved comparisons; unobserved interactions and generalization"
+    },
+    "vessels": [
+      {
+        "id": 1,
+        "tare_lb": 110,
+        "height_in": 66.0,
+        "height_ft_in": "5 ft 6 in",
+        "diameter_in": 20.1,
+        "capacity_l": 343
+      },
+      {
+        "id": 2,
+        "tare_lb": 115,
+        "height_in": 67.5,
+        "height_ft_in": "5 ft 7.5 in",
+        "diameter_in": 20.5,
+        "capacity_l": 365
+      },
+      {
+        "id": 3,
+        "tare_lb": 120,
+        "height_in": 69.0,
+        "height_ft_in": "5 ft 9 in",
+        "diameter_in": 21.0,
+        "capacity_l": 391
+      },
+      {
+        "id": 4,
+        "tare_lb": 125,
+        "height_in": 70.5,
+        "height_ft_in": "5 ft 10.5 in",
+        "diameter_in": 21.4,
+        "capacity_l": 415
+      },
+      {
+        "id": 5,
+        "tare_lb": 130,
+        "height_in": 72.0,
+        "height_ft_in": "6 ft 0 in",
+        "diameter_in": 21.8,
+        "capacity_l": 440
+      }
+    ]
+  },
+  "open_items": [
+    "head profile",
+    "weld/seam schedule",
+    "base stand",
+    "stiffener ring",
+    "dimensioned SVG",
+    "metric set",
+    "price amounts"
+  ]
+}

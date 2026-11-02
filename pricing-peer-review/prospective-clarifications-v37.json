@@ -1,0 +1,413 @@
+{
+  "status": "complete",
+  "rows": [
+    {
+      "clarification_id": "prospective-v37-1",
+      "a": [
+        "northeast",
+        "golden",
+        25,
+        130
+      ],
+      "b": [
+        "northeast",
+        "golden",
+        35,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "exact_price_equality": false,
+      "raw_answer": "A meaningfully more expensive\u2014the 10-year younger vintage outweighs B\u2019s 5 lb lower tare, with provenance and shade matching.",
+      "answer_history": []
+    },
+    {
+      "clarification_id": "prospective-v37-2",
+      "a": [
+        "South/Eastern Asia",
+        "pale/straw",
+        20,
+        120
+      ],
+      "b": [
+        "northeast",
+        "pale/straw",
+        25,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "raw_answer": "A slightly more.",
+      "answer_history": []
+    },
+    {
+      "clarification_id": "prospective-v37-3",
+      "a": [
+        "West Asia / Middle East",
+        "brown",
+        35,
+        130
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "copper",
+        40,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "exact_price_equality": true,
+      "raw_answer": "Very tricky; I'd say equal.",
+      "answer_history": []
+    },
+    {
+      "clarification_id": "prospective-v37-4",
+      "a": [
+        "Eastern Europe",
+        "pale/straw",
+        20,
+        115
+      ],
+      "b": [
+        "Eastern Europe",
+        "amber",
+        25,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "exact_price_equality": false,
+      "raw_answer": "A meaningfully more expensive\u2014the younger vintage, lighter shade and lower tare all favor A, with provenance matching.",
+      "answer_history": []
+    },
+    {
+      "clarification_id": "prospective-v37-5",
+      "a": [
+        "Western Europe",
+        "golden",
+        25,
+        125
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        40,
+        110
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "exact_price_equality": false,
+      "raw_answer": "A meaningful.",
+      "answer_history": []
+    },
+    {
+      "clarification_id": "prospective-v37-6",
+      "a": [
+        "southwest",
+        "amber",
+        35,
+        125
+      ],
+      "b": [
+        "northeast",
+        "brown",
+        35,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "raw_answer": "A slightly more expensive\u2014the amber shade outweighs B\u2019s provenance and 5 lb tare advantage, but at 35 years it\u2019s not a meaningful premium.",
+      "answer_history": []
+    },
+    {
+      "clarification_id": "prospective-v37-7",
+      "a": [
+        "central",
+        "pale/straw",
+        20,
+        115
+      ],
+      "b": [
+        "central",
+        "copper",
+        35,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "exact_price_equality": false,
+      "raw_answer": "A meaningful.",
+      "answer_history": []
+    },
+    {
+      "clarification_id": "prospective-v37-8",
+      "a": [
+        "northeast",
+        "copper",
+        35,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "copper",
+        30,
+        110
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "raw_answer": "B slightly more expensive\u2014the younger vintage and lower tare outweigh A\u2019s provenance advantage, but it\u2019s close.",
+      "answer_history": []
+    },
+    {
+      "clarification_id": "prospective-v37-9",
+      "a": [
+        "northwest",
+        "brown",
+        30,
+        120
+      ],
+      "b": [
+        "northwest",
+        "brown",
+        35,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "raw_answer": "A slightly more expensive\u2014the five-year younger vintage outweighs B\u2019s 5 lb lower tare, but with brown shade it\u2019s not a meaningful premium.",
+      "answer_history": []
+    },
+    {
+      "clarification_id": "prospective-v37-10",
+      "a": [
+        "southeast",
+        "brown",
+        30,
+        115
+      ],
+      "b": [
+        "northwest",
+        "copper",
+        25,
+        130
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "raw_answer": "B slightly .",
+      "answer_history": []
+    },
+    {
+      "clarification_id": "prospective-v37-11",
+      "a": [
+        "central",
+        "brown",
+        30,
+        110
+      ],
+      "b": [
+        "southeast",
+        "brown",
+        30,
+        110
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "raw_answer": "B slightly more expensive\u2014Southeast has a small provenance edge, but with shade, vintage and tare identical, it\u2019s not a meaningful premium.",
+      "answer_history": []
+    },
+    {
+      "clarification_id": "prospective-v37-12",
+      "a": [
+        "southwest",
+        "copper",
+        40,
+        120
+      ],
+      "b": [
+        "southwest",
+        "copper",
+        25,
+        110
+      ],
+      "known_direction": -1,
+      "materiality_target": -1,
+      "exact_price_equality": false,
+      "raw_answer": "B meaningfully more expensive\u2014the 15-year younger vintage and 10 lb lower tare both favor B, with provenance and shade matching.",
+      "answer_history": []
+    },
+    {
+      "clarification_id": "prospective-v37-13",
+      "a": [
+        "South/Eastern Asia",
+        "brown",
+        30,
+        115
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "amber",
+        30,
+        115
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "raw_answer": "B slightly - A's shade is a minus in this pairing.",
+      "answer_history": []
+    },
+    {
+      "clarification_id": "prospective-v37-14",
+      "a": [
+        "southeast",
+        "copper",
+        30,
+        110
+      ],
+      "b": [
+        "southeast",
+        "brown",
+        30,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "raw_answer": "A slightly.",
+      "answer_history": [
+        {
+          "raw_answer": "A meaningful",
+          "known_direction": 1,
+          "materiality_target": 1,
+          "status": "superseded_before_predictions_revealed"
+        }
+      ]
+    },
+    {
+      "clarification_id": "prospective-v37-15",
+      "a": [
+        "central",
+        "brown",
+        40,
+        115
+      ],
+      "b": [
+        "central",
+        "amber",
+        30,
+        110
+      ],
+      "known_direction": -1,
+      "materiality_target": -1,
+      "exact_price_equality": false,
+      "raw_answer": "B meaningful; I need to correct question 14; circle back around last.",
+      "answer_history": []
+    },
+    {
+      "clarification_id": "prospective-v37-16",
+      "a": [
+        "northwest",
+        "copper",
+        30,
+        110
+      ],
+      "b": [
+        "central",
+        "copper",
+        35,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "raw_answer": "A slightly more expensive\u2014the younger vintage and lower tare outweigh Central\u2019s provenance advantage, but it\u2019s close.",
+      "answer_history": []
+    },
+    {
+      "clarification_id": "prospective-v37-17",
+      "a": [
+        "northwest",
+        "amber",
+        35,
+        130
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "brown",
+        35,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "raw_answer": "A slightly.",
+      "answer_history": []
+    },
+    {
+      "clarification_id": "prospective-v37-18",
+      "a": [
+        "southeast",
+        "brown",
+        20,
+        120
+      ],
+      "b": [
+        "southeast",
+        "copper",
+        20,
+        115
+      ],
+      "known_direction": -1,
+      "materiality_target": -1,
+      "exact_price_equality": false,
+      "raw_answer": "B meaningfully more expensive\u2014the copper shade and lower tare both favor B, with provenance and vintage matching.",
+      "answer_history": []
+    },
+    {
+      "clarification_id": "prospective-v37-19",
+      "a": [
+        "Western Europe",
+        "amber",
+        20,
+        110
+      ],
+      "b": [
+        "Western Europe",
+        "brown",
+        20,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "exact_price_equality": false,
+      "raw_answer": "A meaningful",
+      "answer_history": []
+    },
+    {
+      "clarification_id": "prospective-v37-20",
+      "a": [
+        "northwest",
+        "brown",
+        30,
+        125
+      ],
+      "b": [
+        "northwest",
+        "brown",
+        35,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "raw_answer": "A slightly",
+      "answer_history": []
+    }
+  ],
+  "protocol": "Frozen20pair responses, Q14 correction beforedisclosure retained. Originaltest stays separate; now development evidence."
+}

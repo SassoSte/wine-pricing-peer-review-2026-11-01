@@ -1,0 +1,539 @@
+{
+  "round": 55,
+  "created_at": "2026-10-28T03:57:18.807115+00:00",
+  "status": "complete",
+  "protocol": "Explanation-led isolation of current WCA15lb premium miss, followed by premium-combination boundary check. Models fixed.110lb is minimum of current supported domain; user has not yet confirmed top-tier cutoff. Distinguish large-gap nonlinear tare from premium-combination interaction, preserve exact responses. Pending second original case:Southwest/Northwest slight preference from round47-18.",
+  "file_sha256": {
+    "evidence-v28.json": "13e64778ffe7458215211c666ffd3a48bbb10f37f8b6b51407f9e5e9850083f1",
+    "model-config-v28.json": "a9fed8e86977526c16e74ccdb0a6a75d919b3041bd602e5592d64e3086414dcf",
+    "predictor_v28.py": "c572cb63d47b531607efc66be1c65890b854d2f5a5087286858c25611191b7e3",
+    "predictor_v27.py": "293307f98d4c2434bfbbea8a73341a3522601604535647f3a7a6b0103b23f2ed"
+  },
+  "questions": [
+    {
+      "id": "round55-1",
+      "number": 1,
+      "revisits": "round53-2",
+      "a": [
+        "West Central Asia",
+        "golden",
+        30,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "golden",
+        25,
+        130
+      ],
+      "prediction_before_answer": {
+        "predicted_direction": "A",
+        "predicted_meaningfulness": "no_meaningful_difference",
+        "margin": 0.3077646153852067,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      },
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "meaningful_difference",
+      "strength": "moderately",
+      "raw_answer": "It\u2019s the size of the tare gap and where it sits on the spectrum. 115 lb is especially premium relative to 130, and B\u2019s five-year vintage advantage isn\u2019t enough to offset that. A is moderately more expensive. And furthermore, when there's the circumstances where the tar depth is big is, of course, meaningful on the spectrum. However, when it is especially premium is when it ends up being a differentiator where other properties are also high on the spectrum. So, for example, if, for example, shade is equal at the top, let's say it's pale, and that's tied. And then let's also assume that vintage is also high at 20, let's say high, when tar is the absolute highest relative to something that's just a shade or adjacent under, then it makes a big difference, because to be high on the spectrum in all four attributes is especially difficult and rare. So when faced with A or B, and all four, suppose, are being compared, all four attributes are being compared, and three out of the four for each are high, and then one happens to have all four, then it becomes especially meaningful, because it's so difficult to have that advantage in one attribute, let alone four. And to have it suggests not only a premium unto itself, but relative to the other attributes and to the competition's attributes.",
+      "raw_explanation": "It\u2019s the size of the tare gap and where it sits on the spectrum. 115 lb is especially premium relative to 130, and B\u2019s five-year vintage advantage isn\u2019t enough to offset that. A is moderately more expensive. And furthermore, when there's the circumstances where the tar depth is big is, of course, meaningful on the spectrum. However, when it is especially premium is when it ends up being a differentiator where other properties are also high on the spectrum. So, for example, if, for example, shade is equal at the top, let's say it's pale, and that's tied. And then let's also assume that vintage is also high at 20, let's say high, when tar is the absolute highest relative to something that's just a shade or adjacent under, then it makes a big difference, because to be high on the spectrum in all four attributes is especially difficult and rare. So when faced with A or B, and all four, suppose, are being compared, all four attributes are being compared, and three out of the four for each are high, and then one happens to have all four, then it becomes especially meaningful, because it's so difficult to have that advantage in one attribute, let alone four. And to have it suggests not only a premium unto itself, but relative to the other attributes and to the competition's attributes.",
+      "exact_price_instruction": false,
+      "interpretation": "Reaffirms A moderately more expensive on WCAgold30/115 versusgold25/130. Tare valuation depends on gap size and position;115 premium relative130 outweighs younger vintage. User additionally describes combination/completion premium when high tare quality joins top provenance,shade,vintage; rarity is user value rationale, not empirically measured market fact. Exact top-tier thresholds and5lb exception unspecified; do not assign numeric multipliers or globally redefine5lb rule yet."
+    },
+    {
+      "id": "round55-2",
+      "number": 2,
+      "factor_isolated": "Pure110vs115lb tare at matched premiumWesternEurope,pale,20years; test proposed all-top-tier completion effect",
+      "a": [
+        "Western Europe",
+        "pale/straw",
+        20,
+        110
+      ],
+      "b": [
+        "Western Europe",
+        "pale/straw",
+        20,
+        115
+      ],
+      "prediction_before_answer": {
+        "predicted_direction": "A",
+        "predicted_meaningfulness": "no_meaningful_difference",
+        "margin": 0.5384930769234713,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      },
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "So this is especially a great example because you have two, you have A and B, which by all appearances should actually be\u2014 one should only be relatively more expensive than the other. But in effect, it's actually the opposite of that in this case, because the attributes for A are MVP all around. This could almost be considered a collector's edition or a commemorative edition cask, because it's so rare that compared to B, you'd think, oh, it's only a little bit more expensive, but actually it's a lot more because it's very rare, right?",
+      "exact_price_instruction": false,
+      "strength": "much more",
+      "raw_explanation": "So this is especially a great example because you have two, you have A and B, which by all appearances should actually be\u2014 one should only be relatively more expensive than the other. But in effect, it's actually the opposite of that in this case, because the attributes for A are MVP all around. This could almost be considered a collector's edition or a commemorative edition cask, because it's so rare that compared to B, you'd think, oh, it's only a little bit more expensive, but actually it's a lot more because it's very rare, right?",
+      "interpretation": "Explicit A much more expensive/meaningful premium: WE,pale,20years,110lb completes all-top-tier profile. User collector/commemorative analogy explains subjective combination premium, not literal product designation or verified market rarity. Establishes scoped exception to prior blanket pure5lb nonmeaningfulness constraint; no numerical premium or general cutoff beyond testedpair inferred."
+    },
+    {
+      "id": "round55-3",
+      "number": 3,
+      "anchor": "round55-2",
+      "factor_changed": "Shift both tare values up5lb:110/115 ->115/120; same5lb gap and other attributes unchanged",
+      "a": [
+        "Western Europe",
+        "pale/straw",
+        20,
+        115
+      ],
+      "b": [
+        "Western Europe",
+        "pale/straw",
+        20,
+        120
+      ],
+      "prediction_before_answer": {
+        "predicted_direction": "A",
+        "predicted_meaningfulness": "no_meaningful_difference",
+        "margin": 0.5384930769234713,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      },
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "A, slightly\u2014practically similar, not a tie. Both are already highly premium; 115 lb gives A a small edge, but this isn't the exceptional all-top-tier 110 lb case.",
+      "exact_price_instruction": false,
+      "raw_explanation": "So here, what's important to note is that relative to the overall inventory, if you were to stack everything up one behind the other, A would not be the number one edition. But neither would B. But relative to each other, so the bracket matters here, right? So there's the bracket between A and B, and then there's the bracket between the pair and the overall inventory, and then there's the bracket between individual edition versus the overall edition. So it's a little bit tricky now that I'm talking out loud about it, because things have to be measured against themselves, against each other, against the bracket that they're in, against their zones, and against their regions, and on and on it goes. So, okay, is there a premium? There would be a premium here, because A is top tier all but for provenance. B is top tier all but for provenance and tar. Relative to each other, however, because they both are high bracketed, because vintage especially is heavily weighted overall as a general attribute that is more valuable than any other attribute relative to provenance, shade, and tar. Vintage actually should be weighted the highest, followed by tar, shade, or provenance and shade. So when you factor all those in relative to each other, A should be more expensive for sure. But the premium is already built in. It's not more expensive because it's related or it's in comparison to B. It just happens to be more expensive by itself and relative to B. Does that make sense?",
+      "interpretation": "Explicit A direction and practical similarity, not tie for displayedWEpale20/115 versus120. User distinguishes small positive tare premium here from meaningful110vs115 all-top-profile premium. Earlier intrinsic-value explanation retained; no numeric price or provenance change inferred.",
+      "contextual_explanation": {
+        "valuation": "Each offering has own value in inventory, bracket andregion; comparison reveals difference rather than creating premium.",
+        "vintage_priority": "Vintage generally greatest-weight attribute; no numerical weight or unconditional dominance inferred.",
+        "other_priority": "Tare mentioned next; shade/provenance ordering expressed uncertainly, not hardcoded.",
+        "provenance_caveat": "A top tier all but provenance/B all but provenance andtare does not clearly map to displayed identicalWesternEurope pair. Keep displayed attributes fixed pending clarification, do not infer different provenance.",
+        "net_judgment": "A slightly higher/practically similar/not tie; both premium, distinct from exceptional110lb all-top profile."
+      },
+      "strength": "slightly",
+      "explicitly_not_tie": true
+    },
+    {
+      "id": "round55-4",
+      "number": 4,
+      "anchor": "round55-2",
+      "factor_changed": "Both vintages20->25; return to110vs115 tare, other attributes fixed",
+      "a": [
+        "Western Europe",
+        "pale/straw",
+        25,
+        110
+      ],
+      "b": [
+        "Western Europe",
+        "pale/straw",
+        25,
+        115
+      ],
+      "prediction_before_answer": {
+        "predicted_direction": "A",
+        "predicted_meaningfulness": "no_meaningful_difference",
+        "margin": 0.5384930769234713,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      },
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "A, slightly\u2014practically similar, not a tie. The 110 lb tare still has value, but at 25 years it no longer completes the all-top-tier profile that commands the exceptional premium.",
+      "exact_price_instruction": false,
+      "strength": "slightly",
+      "explicitly_not_tie": true,
+      "interpretation": "Explicit A direction and practical similarity, not tie atWEpale25/110 versus115. Compared with20-year probe, vintage25 removes exceptional all-top-profile premium while preserving small positive light-tare benefit. Do not infer behavior for untested shades/provenances."
+    },
+    {
+      "id": "round55-5",
+      "number": 5,
+      "anchor": "round55-2",
+      "factor_changed": "Both shades pale/straw->golden relative to top-profile anchor;20-year vintage and110vs115 tare restored",
+      "a": [
+        "Western Europe",
+        "golden",
+        20,
+        110
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        20,
+        115
+      ],
+      "prediction_before_answer": {
+        "predicted_direction": "A",
+        "predicted_meaningfulness": "no_meaningful_difference",
+        "margin": 0.5384930769234713,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      },
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "A, slightly\u2014practically similar, not a tie. The 110 lb tare still has value, but golden doesn\u2019t complete the all-top-tier profile, so this isn\u2019t the exceptional premium, and the bracket itself is competitive - A is mathematically better, but in the real world, only a seasoned somolier could tell a difference, and he might not even know if one were better and why.",
+      "exact_price_instruction": false,
+      "strength": "slightly",
+      "explicitly_not_tie": true,
+      "interpretation": "Explicit A direction and practical similarity, not tie atWEgolden20/110vs115. Golden fails all-top-profile completion; small positive tare advantage remains. Sommelier remark illustrates practical difficulty perceiving a small difference, not a retraction of A direction or an established empirical sensory claim."
+    },
+    {
+      "id": "round55-6",
+      "number": 6,
+      "anchor": "round55-2",
+      "factor_changed": "Both provenances WesternEurope->DomesticNorthwest relative to top-profile anchor; pale20 and110vs115 tare unchanged",
+      "a": [
+        "northwest",
+        "pale/straw",
+        20,
+        110
+      ],
+      "b": [
+        "northwest",
+        "pale/straw",
+        20,
+        115
+      ],
+      "prediction_before_answer": {
+        "predicted_direction": "A",
+        "predicted_meaningfulness": "no_meaningful_difference",
+        "margin": 0.5384930769234713,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      },
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "A, slightly\u2014practically similar, not a tie. The 110 lb tare has value, but Northwest doesn\u2019t complete the all-top-tier profile, so there\u2019s no exceptional premium here. This is very similar to the prior example.  Now interestingly if you take the A/B from here and the A/B from the prior example, you get a better indication of which one actually has the real premium.  In fact you that might be a great way of isolating difficult pairings.",
+      "exact_price_instruction": false,
+      "strength": "slightly",
+      "raw_explanation": "A, slightly\u2014practically similar, not a tie. The 110 lb tare has value, but Northwest doesn\u2019t complete the all-top-tier profile, so there\u2019s no exceptional premium here. This is very similar to the prior example.  Now interestingly if you take the A/B from here and the A/B from the prior example, you get a better indication of which one actually has the real premium.  In fact you that might be a great way of isolating difficult pairings.",
+      "explicitly_not_tie": true,
+      "interpretation": "Explicit A direction and practical similarity, not tie, forNWpale20/110vs115. NW provenance does not complete exceptional all-top profile, though110lb retains positive value. User proposes crossing offerings from this and precedingWEgolden20/110vs115 pair to isolate relative profile premiums. No ranking of crossed profiles yet inferred."
+    },
+    {
+      "id": "round55-7",
+      "number": 7,
+      "anchors": [
+        "round55-5",
+        "round55-6"
+      ],
+      "factor_isolated": "Cross the two110lb A offerings: provenance/shade tradeoff with vintage/tare matched",
+      "a": [
+        "Western Europe",
+        "golden",
+        20,
+        110
+      ],
+      "b": [
+        "northwest",
+        "pale/straw",
+        20,
+        110
+      ],
+      "prediction_before_answer": {
+        "predicted_direction": "A",
+        "predicted_meaningfulness": "no_meaningful_difference",
+        "margin": 0.46157692307769016,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      },
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "A, slightly\u2014practically similar, not a tie. Western Europe\u2019s provenance advantage outweighs Northwest\u2019s pale shade advantage, with vintage and tare matching.  The shade adjacency is just 1x - so being \"Pale\" doesn\u2019t have quite the same grivitas as it would if A\u2019s shade were Brown for example or Copper.",
+      "exact_price_instruction": false,
+      "strength": "slightly",
+      "raw_explanation": "A, slightly\u2014practically similar, not a tie. Western Europe\u2019s provenance advantage outweighs Northwest\u2019s pale shade advantage, with vintage and tare matching.  The shade adjacency is just 1x - so being \"Pale\" doesn\u2019t have quite the same grivitas as it would if A\u2019s shade were Brown for example or Copper.",
+      "explicitly_not_tie": true,
+      "interpretation": "Explicit A direction and practical similarity, not tie forWEgolden20/110 vsNWpale20/110. WE provenance outweighs one-step golden/pale shade disadvantage. User contrasts small adjacent-shade advantage with larger separations from copper/brown; no numeric1x multiplier or unasked counterfactual labels inferred."
+    },
+    {
+      "id": "round55-8",
+      "number": 8,
+      "anchor": "round55-7",
+      "factor_changed": "Both tares110->115; crossed provenance/shade profiles unchanged",
+      "a": [
+        "Western Europe",
+        "golden",
+        20,
+        115
+      ],
+      "b": [
+        "northwest",
+        "pale/straw",
+        20,
+        115
+      ],
+      "prediction_before_answer": {
+        "predicted_direction": "A",
+        "predicted_meaningfulness": "no_meaningful_difference",
+        "margin": 0.46157692307769016,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      },
+      "status": "answered",
+      "direction": null,
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "Yes\u2014no clear price-based direction, practically similar overall. They should be priced approximately the same; taste or preference would decide, not cost.   B is 3 zones adjacent to its home geography bracket, and 1 tare adjacent to the most premium tare.  A is in the top zone of its home geography, and one shad adjacent from the top shade period.",
+      "exact_price_instruction": false,
+      "raw_explanation": "So here, we know that vintage and tar are the two most important, should be heavily weighed attributes. So when we know that they are both in a high bracket, which they are, 20 and 20, 115, 115 is the second, you know highest tier. That already is a push. So that really, compared to each other, that cancels each other out. Golden and pale straw, they're adjacent. So mathematically, yes, but because shade carries so little weight relative to the four overall, it's not really something that is going to garner a premium, if at all. The provenance, also similar, because we know that domestic Northwest, though is domestic, is the least valuable of the domestic, which makes it almost equal to, or somewhat arguably better, or on par to Western European. But considering that Western European unto itself has the top two, vintage and tar, is already equal, and maybe a shade less, this is one of those examples where it would be difficult to justify one being more expensive than the other, but for preference, taste, perhaps circumstances. Because again, the gold to pale is not something that is going to be highly sought after as the leading attribute differentiator.",
+      "interpretation": "Explicit no clear price-based direction and practical similarity/approximately equal pricing. Taste/preferences rather than cost decide. User describes relative positions within home geography and overall shade/tare ladders. Preserve B three-zone wording without inventing numeric ordinal map or multipliers. Both displayed tares remain115lb, one step above110; user omission of A tare does not change it. No exact mathematical equality inferred.",
+      "contextual_explanation": {
+        "priority": "Vintage and tare stated as two most important attributes, generally heavily weighted.",
+        "shared_profile": "Both20years and115lb, high shared bracket; no age/tare difference.115 explicitly second-highest tare tier.",
+        "shade": "Adjacent golden/pale is weak and not the leading differentiator here.",
+        "provenance": "Northwest weakest domestic, described as near/on-par/arguablybetter than WesternEurope in this comparison; no unambiguous strict provenance ordering supplied.",
+        "net_judgment": "No clear price-based direction, practically similar; approximately same price, preference/taste decides.",
+        "relative_position_guidance": "User: B is3 zones adjacent to its home geography bracket and1 tare adjacent to most premium; A topzone inhomegeography and1 shadeadjacent fromtop. Definitions/scale weights unspecified."
+      },
+      "practical_tie_statement": true
+    },
+    {
+      "id": "round55-9",
+      "number": 9,
+      "anchor": "round55-2",
+      "factor_changed": "Both provenances WesternEurope->DomesticNortheast; pale20 and110vs115 tare unchanged",
+      "a": [
+        "northeast",
+        "pale/straw",
+        20,
+        110
+      ],
+      "b": [
+        "northeast",
+        "pale/straw",
+        20,
+        115
+      ],
+      "prediction_before_answer": {
+        "predicted_direction": "A",
+        "predicted_meaningfulness": "no_meaningful_difference",
+        "margin": 0.5384930769234713,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      },
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "A, meaningful difference\u2014the 110 lb tare completes the all-top-tier profile. Like the Western Europe example, that rarity commands an exceptional premium over B.",
+      "exact_price_instruction": false,
+      "interpretation": "Explicit A meaningful premium forNEpale20/110vs115. User extends all-top-tier intrinsic completion premium fromWE toNE. Subjective rarity valuation, not empirically verified frequency or literal collector edition. Supports scoped pure5lb exception; do not assign premium status to untested regions/profiles."
+    },
+    {
+      "id": "round55-10",
+      "number": 10,
+      "revisits": "round47-18",
+      "family": "southwest_northwest_vintage_tare",
+      "a": [
+        "southwest",
+        "golden",
+        30,
+        125
+      ],
+      "b": [
+        "northwest",
+        "golden",
+        25,
+        130
+      ],
+      "prediction_before_answer": {
+        "predicted_direction": "B",
+        "predicted_meaningfulness": "no_meaningful_difference",
+        "margin": -0.384590769230854,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      },
+      "status": "answered",
+      "direction": null,
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "Yes\u2014no clear price-based direction, practically similar overall. Not an exact tie, but neither has enough of an advantage to justify a premium in this bracket.",
+      "exact_price_instruction": false,
+      "raw_explanation": "In this case, you'd be hard-pressed to justify one being more expensive than the other. I'm not saying they're tied, but one is not so superior that it commands a premium. These are relatively average harvests. Yes, there are some high points, but there is nothing exceptional that you see at first glance. There's just some nuance in terms of provenance, and the tar is so kind of insignificant in this bracket combo, which is 30-25 versus 125-130. So it's like a game between two very middle-tier teams.",
+      "explicitly_not_tie": true,
+      "interpretation": "Explicit no clear price-based direction and practical similarity; not exact equality. Supersedes prior A/slight directional label on source47-18 at next evidence reconciliation. Nonmeaningful size retained. Raw explanation preserved. Do not score either predicted direction as right/wrong when no directional target supplied.",
+      "contextual_explanation": {
+        "overall_profile": "Both relatively average/middle-tier, no exceptional all-attribute profile.",
+        "provenance": "Only nuanced difference in this comparison.",
+        "tare": "125vs130 contributes little in this25vs30 vintage combination bracket.",
+        "net_judgment": "No clear price-based direction, practically similar overall; not an exact tie and no justified premium here."
+      },
+      "practical_tie_statement": true,
+      "corrects": "round47-18"
+    }
+  ],
+  "rule_statements": [
+    {
+      "source": "round55-1",
+      "statement": "Tare premium depends on gap size,location on spectrum andquality of other attributes; completing an all-top-tier profile can make tare especially meaningful. WCA115vs130 original comparison reaffirmed A moderately higher.",
+      "scope": "Qualitative contextual mechanism; no numeric threshold or unconditional5lb exception inferred. Concrete top-profile check pending."
+    },
+    {
+      "source": "round55-2",
+      "statement": "WesternEurope pale20/110 versus pale20/115: A meaningfully more expensive, a lot more in user valuation, because110lb completes an all-top-tier profile; collector-like rarity premium.",
+      "scope": "This exact all-top profile and5lb contrast. Blanket5lb cap must not erase this explicit exception in future fitting; no other context automatically relabeled."
+    },
+    {
+      "source": "round55-3-explanation",
+      "statement": "Premium belongs to each offering itself based on attributes andposition within inventory/brackets; comparison with B reveals it, not causes it.",
+      "scope": "Architectural valuation guidance: distinguish intrinsic offering utility with context/interactions from competitor-dependent score adjustments. Current pair-comparator does not guarantee a single standalone price; do not claim otherwise."
+    },
+    {
+      "source": "round55-3-explanation",
+      "statement": "Vintage generally carries greatest weight overall.",
+      "scope": "General preference priority, not a fixed numerical coefficient or unconditional rule across all tradeoffs. Remaining attribute order not resolved."
+    },
+    {
+      "source": "round55-3",
+      "statement": "WesternEurope pale20/115 versus pale20/120: A slightly higher, practically similar, not tied; ordinary small tare edge rather than exceptional110lb completion premium.",
+      "scope": "This5lb interval andmatched premium attributes; avoid universalizing to other profiles."
+    },
+    {
+      "source": "round55-4",
+      "statement": "WesternEurope pale25/110 versus pale25/115: A slightly higher/practically similar/not tied;110lb value remains but25-year vintage does not complete exceptional all-top profile.",
+      "scope": "Observed vintage boundary for this provenance/shade/tare contrast; no numeric premium inferred."
+    },
+    {
+      "source": "round55-5",
+      "statement": "WesternEurope golden20/110 versus golden20/115: A slightly higher/practically similar/not tied. Moving pale->golden removes exceptional all-top-profile premium; small positive value may be difficult to discern in practice.",
+      "scope": "This shade-boundary comparison; preserve strict direction and small magnitude separately."
+    },
+    {
+      "source": "round55-6",
+      "statement": "DomesticNorthwest pale20/110 versus pale20/115: A slightly higher/practically similar/not tied; NW provenance prevents exceptional all-top-tier premium.",
+      "scope": "This provenance-boundary comparison; no numeric premium inferred."
+    },
+    {
+      "source": "round55-6-method",
+      "statement": "User suggests crossed comparisons between priorWEgolden andcurrentNWpale pairs at equal tare to isolate which profile commands the premium.",
+      "scope": "Method suggestion: compare110lb offerings first, then115lb; these are new judgments, not inferred from separate within-profile tare preferences."
+    },
+    {
+      "source": "round55-7",
+      "statement": "WEgolden20/110 versus NWpale20/110: A slightly higher/practically similar/not tied. WE provenance exceeds one-step shade disadvantage; pale has less relative impact against golden than against copper or brown.",
+      "scope": "This crossed-profile comparison plus qualitative shade-distance guidance; no numerical multiplier inferred."
+    },
+    {
+      "source": "round55-8-explanation",
+      "statement": "Vintage and tare are the two most important generally weighted attributes; at20years and115lb both offerings share a high bracket.",
+      "scope": "General priority guidance with context, not hard universal numerical dominance."
+    },
+    {
+      "source": "round55-8-explanation",
+      "statement": "WEgolden20/115 versusNWpale20/115 has little basis for differentiated pricing: golden/pale adjacency weak, regional difference not decisive here; taste/circumstances may decide.",
+      "scope": "Net category awaiting confirmation; do not infer exact equality or global NW>=WE ordering."
+    },
+    {
+      "source": "round55-8",
+      "statement": "WEgolden20/115 versusNWpale20/115: no clear price-based direction, practically similar, approximately same pricing.",
+      "scope": "This pair; not exact equality or universal regional equivalence."
+    },
+    {
+      "source": "round55-8-position",
+      "statement": "User evaluates positions relative to each home-geography bracket and attribute ladders; WE top of its homegeography, golden1stepbelowpale; NW described as3zonesadjacent inhomebracket,115tare1stepbelow110.",
+      "scope": "Qualitative/user-stated positions, no formal numeric distance model inferred; both displayedtares115 unchanged."
+    },
+    {
+      "source": "round55-9",
+      "statement": "DomesticNortheast pale20/110 versus pale20/115: A meaningfully higher;110lb completes all-top-tier profile and commands exceptional premium, as inWE case.",
+      "scope": "Second tested positive completion context. Existing negative controlsWE25,pale->golden,NW and115vs120 remain; blanket pure5lb cap invalid for these scoped exceptions."
+    },
+    {
+      "source": "round55-10-explanation",
+      "statement": "Southwest golden30/125 versus Northwest golden25/130: no meaningful overall premium justified; middling profiles,provenance nuance andlittle tare impact inthisbracket. Not an exact tie.",
+      "scope": "Specific comparison; A/B direction pending, no global removal of provenance/tare value or mathematical equality inferred."
+    },
+    {
+      "source": "round55-10",
+      "corrects": "round47-18",
+      "statement": "Southwest golden30/125 versus Northwest golden25/130: no clear price-based direction, practically similar, not exact tie; neither has enough advantage to justify premium in this bracket.",
+      "scope": "Explicit original-pair clarification, removes prior strictA target at next reconciliation without rewriting original frozen tests."
+    }
+  ],
+  "planned_cross_check": {
+    "a": [
+      "Western Europe",
+      "golden",
+      20,
+      115
+    ],
+    "b": [
+      "northwest",
+      "pale/straw",
+      20,
+      115
+    ],
+    "purpose": "Repeatcrossedprofilecomparison at115lb after110lb answer; no predicted/user label inferred."
+  },
+  "completion_premium_panel": {
+    "meaningful_profiles": [
+      {
+        "provenance": "Western Europe",
+        "shade": "pale/straw",
+        "vintage": 20,
+        "tare_pair": [
+          110,
+          115
+        ],
+        "source": "round55-2"
+      },
+      {
+        "provenance": "northeast",
+        "shade": "pale/straw",
+        "vintage": 20,
+        "tare_pair": [
+          110,
+          115
+        ],
+        "source": "round55-9"
+      }
+    ],
+    "small_premium_controls": [
+      "round55-3",
+      "round55-4",
+      "round55-5",
+      "round55-6"
+    ],
+    "crossed_profiles": [
+      "round55-7",
+      "round55-8"
+    ],
+    "qualification": "Scoped elicited outcomes only; no new fitted weights, no universal mapping for untested profiles, no empirical rarity claim."
+  },
+  "reconciliation_pending": true,
+  "qualification": "Ten explanation/isolation judgments saved. WCA15lb driver reaffirmed; scoped all-top5lb meaningful exceptions established; source47-18 direction clarified to none/practical. Intrinsic offering-value guidance retained. Old frozen tests/evidence not overwritten; pair deduplication and history required on incorporation."
+}

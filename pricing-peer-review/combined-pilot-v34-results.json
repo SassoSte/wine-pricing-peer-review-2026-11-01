@@ -1,0 +1,280 @@
+{
+  "protocol": "Frozen forecast scoring; no fitting. All12 answered against verified visual tables. Voice frontend presented incorrect next-question descriptions on several occasions, corrected by frozen tables before recorded answers; not a pristine voice delivery. No exact-equality or unresolved responses in this set.",
+  "summary": {
+    "combined": {
+      "direction_correct": 10,
+      "meaningfulness_correct": 9,
+      "both_correct": 7,
+      "total": 12,
+      "misses": [
+        3,
+        4,
+        6,
+        9,
+        10
+      ]
+    },
+    "v28": {
+      "direction_correct": 11,
+      "meaningfulness_correct": 9,
+      "both_correct": 8,
+      "total": 12,
+      "misses": [
+        3,
+        4,
+        6,
+        9
+      ]
+    }
+  },
+  "details": [
+    {
+      "model": "combined",
+      "question": 1,
+      "actual_direction": "A",
+      "actual_meaningful": true,
+      "predicted_direction": "A",
+      "predicted_meaningfulness": "meaningful_difference",
+      "direction_correct": true,
+      "meaningfulness_correct": true
+    },
+    {
+      "model": "combined",
+      "question": 2,
+      "actual_direction": "A",
+      "actual_meaningful": false,
+      "predicted_direction": "A",
+      "predicted_meaningfulness": "no_meaningful_difference",
+      "direction_correct": true,
+      "meaningfulness_correct": true
+    },
+    {
+      "model": "combined",
+      "question": 3,
+      "actual_direction": "B",
+      "actual_meaningful": false,
+      "predicted_direction": "A",
+      "predicted_meaningfulness": "no_meaningful_difference",
+      "direction_correct": false,
+      "meaningfulness_correct": true
+    },
+    {
+      "model": "combined",
+      "question": 4,
+      "actual_direction": "B",
+      "actual_meaningful": false,
+      "predicted_direction": "B",
+      "predicted_meaningfulness": "meaningful_difference",
+      "direction_correct": true,
+      "meaningfulness_correct": false
+    },
+    {
+      "model": "combined",
+      "question": 5,
+      "actual_direction": "A",
+      "actual_meaningful": true,
+      "predicted_direction": "A",
+      "predicted_meaningfulness": "meaningful_difference",
+      "direction_correct": true,
+      "meaningfulness_correct": true
+    },
+    {
+      "model": "combined",
+      "question": 6,
+      "actual_direction": "A",
+      "actual_meaningful": false,
+      "predicted_direction": "A",
+      "predicted_meaningfulness": "meaningful_difference",
+      "direction_correct": true,
+      "meaningfulness_correct": false
+    },
+    {
+      "model": "combined",
+      "question": 7,
+      "actual_direction": "B",
+      "actual_meaningful": true,
+      "predicted_direction": "B",
+      "predicted_meaningfulness": "meaningful_difference",
+      "direction_correct": true,
+      "meaningfulness_correct": true
+    },
+    {
+      "model": "combined",
+      "question": 8,
+      "actual_direction": "A",
+      "actual_meaningful": false,
+      "predicted_direction": "A",
+      "predicted_meaningfulness": "no_meaningful_difference",
+      "direction_correct": true,
+      "meaningfulness_correct": true
+    },
+    {
+      "model": "combined",
+      "question": 9,
+      "actual_direction": "A",
+      "actual_meaningful": true,
+      "predicted_direction": "A",
+      "predicted_meaningfulness": "no_meaningful_difference",
+      "direction_correct": true,
+      "meaningfulness_correct": false
+    },
+    {
+      "model": "combined",
+      "question": 10,
+      "actual_direction": "B",
+      "actual_meaningful": false,
+      "predicted_direction": "A",
+      "predicted_meaningfulness": "no_meaningful_difference",
+      "direction_correct": false,
+      "meaningfulness_correct": true
+    },
+    {
+      "model": "combined",
+      "question": 11,
+      "actual_direction": "A",
+      "actual_meaningful": true,
+      "predicted_direction": "A",
+      "predicted_meaningfulness": "meaningful_difference",
+      "direction_correct": true,
+      "meaningfulness_correct": true
+    },
+    {
+      "model": "combined",
+      "question": 12,
+      "actual_direction": "B",
+      "actual_meaningful": true,
+      "predicted_direction": "B",
+      "predicted_meaningfulness": "meaningful_difference",
+      "direction_correct": true,
+      "meaningfulness_correct": true
+    },
+    {
+      "model": "v28",
+      "question": 1,
+      "actual_direction": "A",
+      "actual_meaningful": true,
+      "predicted_direction": "A",
+      "predicted_meaningfulness": "meaningful_difference",
+      "direction_correct": true,
+      "meaningfulness_correct": true
+    },
+    {
+      "model": "v28",
+      "question": 2,
+      "actual_direction": "A",
+      "actual_meaningful": false,
+      "predicted_direction": "A",
+      "predicted_meaningfulness": "no_meaningful_difference",
+      "direction_correct": true,
+      "meaningfulness_correct": true
+    },
+    {
+      "model": "v28",
+      "question": 3,
+      "actual_direction": "B",
+      "actual_meaningful": false,
+      "predicted_direction": "A",
+      "predicted_meaningfulness": "no_meaningful_difference",
+      "direction_correct": false,
+      "meaningfulness_correct": true
+    },
+    {
+      "model": "v28",
+      "question": 4,
+      "actual_direction": "B",
+      "actual_meaningful": false,
+      "predicted_direction": "B",
+      "predicted_meaningfulness": "meaningful_difference",
+      "direction_correct": true,
+      "meaningfulness_correct": false
+    },
+    {
+      "model": "v28",
+      "question": 5,
+      "actual_direction": "A",
+      "actual_meaningful": true,
+      "predicted_direction": "A",
+      "predicted_meaningfulness": "meaningful_difference",
+      "direction_correct": true,
+      "meaningfulness_correct": true
+    },
+    {
+      "model": "v28",
+      "question": 6,
+      "actual_direction": "A",
+      "actual_meaningful": false,
+      "predicted_direction": "A",
+      "predicted_meaningfulness": "meaningful_difference",
+      "direction_correct": true,
+      "meaningfulness_correct": false
+    },
+    {
+      "model": "v28",
+      "question": 7,
+      "actual_direction": "B",
+      "actual_meaningful": true,
+      "predicted_direction": "B",
+      "predicted_meaningfulness": "meaningful_difference",
+      "direction_correct": true,
+      "meaningfulness_correct": true
+    },
+    {
+      "model": "v28",
+      "question": 8,
+      "actual_direction": "A",
+      "actual_meaningful": false,
+      "predicted_direction": "A",
+      "predicted_meaningfulness": "no_meaningful_difference",
+      "direction_correct": true,
+      "meaningfulness_correct": true
+    },
+    {
+      "model": "v28",
+      "question": 9,
+      "actual_direction": "A",
+      "actual_meaningful": true,
+      "predicted_direction": "A",
+      "predicted_meaningfulness": "no_meaningful_difference",
+      "direction_correct": true,
+      "meaningfulness_correct": false
+    },
+    {
+      "model": "v28",
+      "question": 10,
+      "actual_direction": "B",
+      "actual_meaningful": false,
+      "predicted_direction": "B",
+      "predicted_meaningfulness": "no_meaningful_difference",
+      "direction_correct": true,
+      "meaningfulness_correct": true
+    },
+    {
+      "model": "v28",
+      "question": 11,
+      "actual_direction": "A",
+      "actual_meaningful": true,
+      "predicted_direction": "A",
+      "predicted_meaningfulness": "meaningful_difference",
+      "direction_correct": true,
+      "meaningfulness_correct": true
+    },
+    {
+      "model": "v28",
+      "question": 12,
+      "actual_direction": "B",
+      "actual_meaningful": true,
+      "predicted_direction": "B",
+      "predicted_meaningfulness": "meaningful_difference",
+      "direction_correct": true,
+      "meaningfulness_correct": true
+    }
+  ],
+  "freeze_intact": true,
+  "source_hashes_verified": {
+    "combined-config-v34.json": true,
+    "predictor_combined_v34.py": true,
+    "model-config-v28.json": true,
+    "predictor_v27.py": true,
+    "freeze_combined_pilot_v34.py": true
+  }
+}

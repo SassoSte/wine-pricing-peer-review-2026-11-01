@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "model_id": "v27_tare_compensation",
+  "selection_status": "selected",
+  "domain": {
+    "provenances": [
+      "Eastern Europe",
+      "Western Europe",
+      "West Central Asia",
+      "South/Eastern Asia",
+      "West Asia / Middle East",
+      "central",
+      "northeast",
+      "northwest",
+      "southwest",
+      "southeast"
+    ],
+    "shades": [
+      "brown",
+      "copper",
+      "amber",
+      "golden",
+      "pale/straw"
+    ],
+    "vintage_years": [
+      40,
+      35,
+      30,
+      25,
+      20
+    ],
+    "tare_lb": [
+      110,
+      115,
+      120,
+      125,
+      130
+    ],
+    "domestic": [
+      "central",
+      "northwest",
+      "northeast",
+      "southwest",
+      "southeast"
+    ]
+  },
+  "feature_names": [
+    "provenance:Western Europe",
+    "provenance:West Central Asia",
+    "provenance:South/Eastern Asia",
+    "provenance:West Asia / Middle East",
+    "provenance:central",
+    "provenance:northeast",
+    "provenance:northwest",
+    "provenance:southwest",
+    "provenance:southeast",
+    "shade_increment:copper",
+    "shade_increment:amber",
+    "shade_increment:golden",
+    "shade_increment:pale/straw",
+    "vintage_increment:35",
+    "vintage_increment:30",
+    "vintage_increment:25",
+    "vintage_increment:20",
+    "lower_tare_per5lb",
+    "matched_provenance_five_year_golden_pale",
+    "younger_five_lb_heavier_compensation"
+  ],
+  "coefficients": [
+    0.49970500000000473,
+    -0.5002549999999953,
+    -0.5002649999999953,
+    -0.9999899999999983,
+    0.0005099999999841343,
+    0.0013099999999579054,
+    8.999999999581565e-05,
+    0.0008399999999730845,
+    0.0013199999999574663,
+    1.5002249999999924,
+    1e-05,
+    0.000249999999992756,
+    0.4997450000000079,
+    0.5003849999999916,
+    1.0001399999999991,
+    2.0002199999999917,
+    1.0001999999999915,
+    0.5002449999999922,
+    0.999370000000015,
+    0.500114999999991
+  ],
+  "offering_rules": {
+    "zero_golden_pale_tare": 130,
+    "tare_reference": 130,
+    "tare_step": 5
+  },
+  "matched_vintage": {
+    "age_gap": 5,
+    "shade_pair": [
+      "golden",
+      "pale/straw"
+    ],
+    "matching_provenance": true
+  },
+  "tare_compensation": {
+    "age_gap": 5,
+    "maximum_younger_age": 30,
+    "heavier_by_lb": 5,
+    "matching_provenance": true
+  },
+  "classification": {
+    "decision_radius": 1.0,
+    "direction_epsilon": 1e-07,
+    "meaningfulness_epsilon": 1e-08,
+    "exact_price_equality": null,
+    "units": "pair-comparison score, not a standalone price"
+  },
+  "qualification": "Two comparison-context coefficients over18 additive terms. Not a transitive standalone monetary price model. Uncertainty behaviour unchanged; no learned confidence claim.",
+  "source_hashes": {
+    "tare-compensation-candidate-v27.json": "836d2a118e9d6b02b1fd8aaddb20f4d61462489288a632954e89a3a4a3b7d588",
+    "tare-compensation-validation-v27.json": "48d3ab99f0c4d1d9be3a9b55eeecbcee7889d0b701f69a61253c2875af081467",
+    "tare_compensation_v27.py": "321a974c6c96a81c9068e42f062a186ff2303bc901caac8f98ef3174a3c01aad",
+    "matched_vintage_context_v27.py": "b37b8e84d13bbdf16c246ce48f94fa03bcb50923bf9be1338a3b4c9b1babf87a",
+    "domestic_vintage_context_v27.py": "116f4092fc72e59821643fe65e9a4676f9fe644f49e5d5e938a912ceb4dbf163",
+    "joint_models_v27.py": "65ef0fb9fc4fe15f6a218575a75cd72cfad8b39fda7272702c5c7b6d2e1cd385",
+    "compare_models.py": "da2067d3d2ef99849ce2e30be16208bff0145bc6b036111535542c2daf00fa5f",
+    "domestic_shade_model.py": "fdabc56fbde9f66365d565f94272675a7c45d6fb96bcfe444435436835b830ce",
+    "evidence-v27.json": "9a7b2e61996a38317db321808ae02acf025d66451d0092f5a7d44462a2653ecb",
+    "benchmark-targets-v27.json": "f5850a7bdcfd33146f138dd823f5c4bd34d3f06d1a56ca4a27d94a00adf83d2e",
+    "model-config.json": "a3bb8c74df3a5cef51ab71dee54a35113b2df8146a7fbdc76054cd5b0bd48e4c",
+    "predictor.py": "03d6d4f3d8fe47f31eb047832e578c4179fa545b85251f67362bc7d76f350166"
+  }
+}

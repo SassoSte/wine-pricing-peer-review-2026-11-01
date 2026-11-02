@@ -1,0 +1,249 @@
+{
+  "status": "complete",
+  "source": "combined-pilot-v34-fixed.json",
+  "rows": [
+    {
+      "clarification_id": "combined-pilot-v34-1",
+      "a": [
+        "Western Europe",
+        "pale/straw",
+        20,
+        115
+      ],
+      "b": [
+        "Western Europe",
+        "brown",
+        40,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "exact_price_equality": false,
+      "raw_answer": "A meaningfully higher",
+      "answer_history": []
+    },
+    {
+      "clarification_id": "combined-pilot-v34-2",
+      "a": [
+        "northwest",
+        "brown",
+        20,
+        110
+      ],
+      "b": [
+        "northwest",
+        "brown",
+        20,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "raw_answer": "A, practically similar",
+      "answer_history": []
+    },
+    {
+      "clarification_id": "combined-pilot-v34-3",
+      "a": [
+        "West Central Asia",
+        "golden",
+        40,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "golden",
+        35,
+        125
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "raw_answer": "B, slightly higher",
+      "answer_history": []
+    },
+    {
+      "clarification_id": "combined-pilot-v34-4",
+      "a": [
+        "West Asia / Middle East",
+        "brown",
+        35,
+        130
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "copper",
+        40,
+        125
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "raw_answer": "B, slightly higher",
+      "answer_history": []
+    },
+    {
+      "clarification_id": "combined-pilot-v34-5",
+      "a": [
+        "Western Europe",
+        "pale/straw",
+        20,
+        110
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        25,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "exact_price_equality": false,
+      "raw_answer": "I meant A meaningfully higher",
+      "answer_history": [
+        "B meaningfully higher \u2014 immediately retracted",
+        "A meaningfully higher \u2014 explicit correction"
+      ]
+    },
+    {
+      "clarification_id": "combined-pilot-v34-6",
+      "a": [
+        "northeast",
+        "amber",
+        20,
+        115
+      ],
+      "b": [
+        "southwest",
+        "amber",
+        25,
+        110
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "raw_answer": "A slightly higher",
+      "answer_history": []
+    },
+    {
+      "clarification_id": "combined-pilot-v34-7",
+      "a": [
+        "northwest",
+        "copper",
+        40,
+        130
+      ],
+      "b": [
+        "northwest",
+        "pale/straw",
+        25,
+        115
+      ],
+      "known_direction": -1,
+      "materiality_target": -1,
+      "exact_price_equality": false,
+      "raw_answer": "B, meaningfully higher",
+      "answer_history": []
+    },
+    {
+      "clarification_id": "combined-pilot-v34-8",
+      "a": [
+        "southwest",
+        "amber",
+        20,
+        125
+      ],
+      "b": [
+        "southwest",
+        "amber",
+        20,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "raw_answer": "Just by a hair, just barely A",
+      "answer_history": []
+    },
+    {
+      "clarification_id": "combined-pilot-v34-9",
+      "a": [
+        "southeast",
+        "amber",
+        30,
+        110
+      ],
+      "b": [
+        "southeast",
+        "amber",
+        25,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "exact_price_equality": false,
+      "raw_answer": "A; meaningful",
+      "answer_history": []
+    },
+    {
+      "clarification_id": "combined-pilot-v34-10",
+      "a": [
+        "southeast",
+        "brown",
+        35,
+        125
+      ],
+      "b": [
+        "southeast",
+        "amber",
+        40,
+        130
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "raw_answer": "B slightly",
+      "answer_history": []
+    },
+    {
+      "clarification_id": "combined-pilot-v34-11",
+      "a": [
+        "northeast",
+        "pale/straw",
+        20,
+        110
+      ],
+      "b": [
+        "northeast",
+        "golden",
+        25,
+        110
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "exact_price_equality": false,
+      "raw_answer": "A meaninful",
+      "answer_history": []
+    },
+    {
+      "clarification_id": "combined-pilot-v34-12",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        35,
+        120
+      ],
+      "b": [
+        "northeast",
+        "pale/straw",
+        35,
+        115
+      ],
+      "known_direction": -1,
+      "materiality_target": -1,
+      "exact_price_equality": false,
+      "raw_answer": "B meaninful",
+      "answer_history": []
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "model": {
+    "kind": "additive_matched_vintage_pair",
+    "coefficients": [
+      0.4997049999999176,
+      -0.5002550000000427,
+      -0.5002650000000427,
+      -0.9999900000000002,
+      0.0005100000000414218,
+      0.001310000000174505,
+      9.000000001191388e-05,
+      0.0008400000001243415,
+      0.0013200000001869494,
+      1.5002250000000632,
+      9.999999979553794e-06,
+      0.000250000000031554,
+      0.49974499999995714,
+      0.5003850000000943,
+      1.000140000000052,
+      2.00022,
+      1.0002000000000377,
+      0.5002450000000427,
+      0.9998599999999737
+    ],
+    "decision_radius": 1.0,
+    "protected_training_ids": [
+      "round49-2",
+      "round49-17",
+      "round50-4"
+    ],
+    "solver_status": 0,
+    "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "mip_gap": 0.0,
+    "objective": 0.03033431437468204,
+    "time_limit_seconds": 12.0,
+    "solver_tolerance_met": true,
+    "exact_optimum_proven": true
+  },
+  "promoted": false,
+  "validation_file": "matched-vintage-context-validation-v27.json"
+}

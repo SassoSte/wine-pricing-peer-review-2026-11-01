@@ -1,0 +1,390 @@
+{
+  "round": 56,
+  "status": "complete",
+  "scores": {
+    "wca_threshold": {
+      "n": 12,
+      "direction_correct": 9,
+      "meaningfulness_correct": 6,
+      "both_correct": 5,
+      "false_premiums": 4,
+      "missed_meaningful": 2,
+      "direction_misses": [
+        7,
+        8,
+        9
+      ],
+      "meaningfulness_misses": [
+        1,
+        5,
+        7,
+        8,
+        11,
+        12
+      ],
+      "joint_misses": [
+        1,
+        5,
+        7,
+        8,
+        9,
+        11,
+        12
+      ]
+    },
+    "v28": {
+      "n": 12,
+      "direction_correct": 7,
+      "meaningfulness_correct": 8,
+      "both_correct": 6,
+      "false_premiums": 0,
+      "missed_meaningful": 4,
+      "direction_misses": [
+        2,
+        5,
+        7,
+        8,
+        12
+      ],
+      "meaningfulness_misses": [
+        2,
+        5,
+        6,
+        12
+      ],
+      "joint_misses": [
+        2,
+        5,
+        6,
+        7,
+        8,
+        12
+      ]
+    }
+  },
+  "details": [
+    {
+      "number": 1,
+      "model": "wca_threshold",
+      "actual_direction": "B",
+      "actual_meaningfulness": "no_meaningful_difference",
+      "predicted_direction": "B",
+      "predicted_meaningfulness": "meaningful_difference",
+      "margin": -1.3750137500000434,
+      "radius": 0.25,
+      "direction_correct": true,
+      "meaningfulness_correct": false
+    },
+    {
+      "number": 2,
+      "model": "wca_threshold",
+      "actual_direction": "A",
+      "actual_meaningfulness": "meaningful_difference",
+      "predicted_direction": "A",
+      "predicted_meaningfulness": "meaningful_difference",
+      "margin": 0.5001150000000001,
+      "radius": 0.25,
+      "direction_correct": true,
+      "meaningfulness_correct": true
+    },
+    {
+      "number": 3,
+      "model": "wca_threshold",
+      "actual_direction": "B",
+      "actual_meaningfulness": "meaningful_difference",
+      "predicted_direction": "B",
+      "predicted_meaningfulness": "meaningful_difference",
+      "margin": -1.750067500000001,
+      "radius": 0.25,
+      "direction_correct": true,
+      "meaningfulness_correct": true
+    },
+    {
+      "number": 4,
+      "model": "wca_threshold",
+      "actual_direction": "A",
+      "actual_meaningfulness": "no_meaningful_difference",
+      "predicted_direction": "A",
+      "predicted_meaningfulness": "no_meaningful_difference",
+      "margin": 0.24978250000000024,
+      "radius": 0.25,
+      "direction_correct": true,
+      "meaningfulness_correct": true
+    },
+    {
+      "number": 5,
+      "model": "wca_threshold",
+      "actual_direction": "A",
+      "actual_meaningfulness": "meaningful_difference",
+      "predicted_direction": "A",
+      "predicted_meaningfulness": "no_meaningful_difference",
+      "margin": 0.1250112499999565,
+      "radius": 0.25,
+      "direction_correct": true,
+      "meaningfulness_correct": false
+    },
+    {
+      "number": 6,
+      "model": "wca_threshold",
+      "actual_direction": "B",
+      "actual_meaningfulness": "meaningful_difference",
+      "predicted_direction": "B",
+      "predicted_meaningfulness": "meaningful_difference",
+      "margin": -0.5001249999999557,
+      "radius": 0.25,
+      "direction_correct": true,
+      "meaningfulness_correct": true
+    },
+    {
+      "number": 7,
+      "model": "wca_threshold",
+      "actual_direction": "A",
+      "actual_meaningfulness": "no_meaningful_difference",
+      "predicted_direction": "B",
+      "predicted_meaningfulness": "meaningful_difference",
+      "margin": -0.7499475000000437,
+      "radius": 0.25,
+      "direction_correct": false,
+      "meaningfulness_correct": false
+    },
+    {
+      "number": 8,
+      "model": "wca_threshold",
+      "actual_direction": "B",
+      "actual_meaningfulness": "no_meaningful_difference",
+      "predicted_direction": "A",
+      "predicted_meaningfulness": "meaningful_difference",
+      "margin": 1.000010000000044,
+      "radius": 0.25,
+      "direction_correct": false,
+      "meaningfulness_correct": false
+    },
+    {
+      "number": 9,
+      "model": "wca_threshold",
+      "actual_direction": "B",
+      "actual_meaningfulness": "no_meaningful_difference",
+      "predicted_direction": "A",
+      "predicted_meaningfulness": "no_meaningful_difference",
+      "margin": 0.00015999999999927184,
+      "radius": 1.0,
+      "direction_correct": false,
+      "meaningfulness_correct": true
+    },
+    {
+      "number": 10,
+      "model": "wca_threshold",
+      "actual_direction": "A",
+      "actual_meaningfulness": "no_meaningful_difference",
+      "predicted_direction": "A",
+      "predicted_meaningfulness": "no_meaningful_difference",
+      "margin": 0.4998650000000002,
+      "radius": 1.0,
+      "direction_correct": true,
+      "meaningfulness_correct": true
+    },
+    {
+      "number": 11,
+      "model": "wca_threshold",
+      "actual_direction": "B",
+      "actual_meaningfulness": "no_meaningful_difference",
+      "predicted_direction": "B",
+      "predicted_meaningfulness": "meaningful_difference",
+      "margin": -1.3750137500000434,
+      "radius": 1.0,
+      "direction_correct": true,
+      "meaningfulness_correct": false
+    },
+    {
+      "number": 12,
+      "model": "wca_threshold",
+      "actual_direction": "A",
+      "actual_meaningfulness": "meaningful_difference",
+      "predicted_direction": "A",
+      "predicted_meaningfulness": "no_meaningful_difference",
+      "margin": 0.5001149999999992,
+      "radius": 1.0,
+      "direction_correct": true,
+      "meaningfulness_correct": false
+    },
+    {
+      "number": 1,
+      "model": "v28",
+      "actual_direction": "B",
+      "actual_meaningfulness": "no_meaningful_difference",
+      "predicted_direction": "B",
+      "predicted_meaningfulness": "no_meaningful_difference",
+      "margin": -0.999999996204685,
+      "radius": 1.0,
+      "direction_correct": true,
+      "meaningfulness_correct": true
+    },
+    {
+      "number": 2,
+      "model": "v28",
+      "actual_direction": "A",
+      "actual_meaningfulness": "meaningful_difference",
+      "predicted_direction": "B",
+      "predicted_meaningfulness": "no_meaningful_difference",
+      "margin": -0.3075546153828844,
+      "radius": 1.0,
+      "direction_correct": false,
+      "meaningfulness_correct": false
+    },
+    {
+      "number": 3,
+      "model": "v28",
+      "actual_direction": "B",
+      "actual_meaningfulness": "meaningful_difference",
+      "predicted_direction": "B",
+      "predicted_meaningfulness": "meaningful_difference",
+      "margin": -1.6154792307704138,
+      "radius": 1.0,
+      "direction_correct": true,
+      "meaningfulness_correct": true
+    },
+    {
+      "number": 4,
+      "model": "v28",
+      "actual_direction": "A",
+      "actual_meaningfulness": "no_meaningful_difference",
+      "predicted_direction": "A",
+      "predicted_meaningfulness": "no_meaningful_difference",
+      "margin": 0.3845707692307476,
+      "radius": 1.0,
+      "direction_correct": true,
+      "meaningfulness_correct": true
+    },
+    {
+      "number": 5,
+      "model": "v28",
+      "actual_direction": "A",
+      "actual_meaningfulness": "meaningful_difference",
+      "predicted_direction": "B",
+      "predicted_meaningfulness": "no_meaningful_difference",
+      "margin": -0.2306984577417881,
+      "radius": 1.0,
+      "direction_correct": false,
+      "meaningfulness_correct": false
+    },
+    {
+      "number": 6,
+      "model": "v28",
+      "actual_direction": "B",
+      "actual_meaningfulness": "meaningful_difference",
+      "predicted_direction": "B",
+      "predicted_meaningfulness": "no_meaningful_difference",
+      "margin": -0.5384530807187866,
+      "radius": 1.0,
+      "direction_correct": true,
+      "meaningfulness_correct": false
+    },
+    {
+      "number": 7,
+      "model": "v28",
+      "actual_direction": "A",
+      "actual_meaningfulness": "no_meaningful_difference",
+      "predicted_direction": "B",
+      "predicted_meaningfulness": "no_meaningful_difference",
+      "margin": -0.38460076543543265,
+      "radius": 1.0,
+      "direction_correct": false,
+      "meaningfulness_correct": true
+    },
+    {
+      "number": 8,
+      "model": "v28",
+      "actual_direction": "B",
+      "actual_meaningfulness": "no_meaningful_difference",
+      "predicted_direction": "A",
+      "predicted_meaningfulness": "no_meaningful_difference",
+      "margin": 0.6922553808194785,
+      "radius": 1.0,
+      "direction_correct": false,
+      "meaningfulness_correct": true
+    },
+    {
+      "number": 9,
+      "model": "v28",
+      "actual_direction": "B",
+      "actual_meaningfulness": "no_meaningful_difference",
+      "predicted_direction": "B",
+      "predicted_meaningfulness": "no_meaningful_difference",
+      "margin": -0.7691615384605743,
+      "radius": 1.0,
+      "direction_correct": true,
+      "meaningfulness_correct": true
+    },
+    {
+      "number": 10,
+      "model": "v28",
+      "actual_direction": "A",
+      "actual_meaningfulness": "no_meaningful_difference",
+      "predicted_direction": "A",
+      "predicted_meaningfulness": "no_meaningful_difference",
+      "margin": 0.8462476923086779,
+      "radius": 1.0,
+      "direction_correct": true,
+      "meaningfulness_correct": true
+    },
+    {
+      "number": 11,
+      "model": "v28",
+      "actual_direction": "B",
+      "actual_meaningfulness": "no_meaningful_difference",
+      "predicted_direction": "B",
+      "predicted_meaningfulness": "no_meaningful_difference",
+      "margin": -0.999999996204685,
+      "radius": 1.0,
+      "direction_correct": true,
+      "meaningfulness_correct": true
+    },
+    {
+      "number": 12,
+      "model": "v28",
+      "actual_direction": "A",
+      "actual_meaningfulness": "meaningful_difference",
+      "predicted_direction": "B",
+      "predicted_meaningfulness": "no_meaningful_difference",
+      "margin": -0.3075546153828844,
+      "radius": 1.0,
+      "direction_correct": false,
+      "meaningfulness_correct": false
+    }
+  ],
+  "qualification": "Fresh targeted challenge set, not random population accuracy. All24predictions frozen before answers. Direction and meaningfulness scored separately. No refit or evidence incorporation performed.",
+  "source_round_sha256": "6b7fa1cca52038dc3d572d4045c648a9d27ba0567ebc8076b08e66788a8500d4",
+  "freeze_verified": true,
+  "prediction_rechecks": 24,
+  "threshold_only_diagnostic": {
+    "status": "post-round counterfactual, not third frozen comparator",
+    "underlying_intrinsic_without_threshold_both_correct": 3,
+    "with_threshold_both_correct": 5,
+    "changed_calls": [
+      {
+        "question": 2,
+        "without_threshold": "no_meaningful_difference",
+        "with_threshold": "meaningful_difference",
+        "actual": "meaningful_difference"
+      },
+      {
+        "question": 6,
+        "without_threshold": "no_meaningful_difference",
+        "with_threshold": "meaningful_difference",
+        "actual": "meaningful_difference"
+      },
+      {
+        "question": 7,
+        "without_threshold": "no_meaningful_difference",
+        "with_threshold": "meaningful_difference",
+        "actual": "no_meaningful_difference"
+      }
+    ]
+  },
+  "interpretation": [
+    "Threshold candidate improves direction vs v28 but loses on joint correctness and generates4false premiums.",
+    "Threshold itself changes onlyQ2,Q6,Q7:corrects meaningfulnessQ2/Q6,adds false premiumQ7 where underlying direction was already wrong. Otherfalse premiumsQ1/Q8/Q11 are present at the original intrinsic radius1.",
+    "Q1/Q11 receive identical B/practical answers across WCA/WesternEurope. Q2/Q12 receive identical A/meaningful answers across WCA/EasternEurope. These controls do not support provenance alone as the differentiator in those specific contexts.",
+    "Q7/Q8 are direction reversals in both models; threshold-only tuning cannot repair those rankings."
+  ]
+}

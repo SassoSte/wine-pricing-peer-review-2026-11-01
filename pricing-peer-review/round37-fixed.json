@@ -1,0 +1,1816 @@
+{
+  "round": 37,
+  "status": "complete; both size clarifications included; frozen models unchanged",
+  "protocol": "12 fresh endpoint pairs selected before model evaluation:10 neighbors of remaining false-premium families plus2 wider controls. No duplicate or reversed pair in earlier rounds or current evidence. Targeted contexts, not random population sampling; some feature contrasts repeat to test transfer at different tare levels. No earlier answers or predictions shown during elicitation. Both models and all12 predictions frozen; no fitting, thresholds, or evidence incorporation until completion.",
+  "answer_fields": {
+    "direction": [
+      "A",
+      "B",
+      "no clear direction"
+    ],
+    "meaningfulness": [
+      "meaningful difference",
+      "practically similar",
+      "deliberately identical prices",
+      "unresolved"
+    ]
+  },
+  "scoring": "Direction only on supplied A/B labels; size only when independently supplied. A/B alone never implies meaningfulness. Practical similarity may retain a lean. Exact price instructions separate; unresolved or missing dimensions excluded with coverage reported. Wider controls reported separately so suppressing all premiums is visible.",
+  "file_sha256": {
+    "evidence-v17.json": "71763a0f60f5725774af1f48e0010ad01ec8d04a57979e43d405f7d99a018697",
+    "benchmark-targets-v17.json": "9d7c4761c9f1a65d158365901cda5337e607bc40b56f82de2fbf4433037ba44a",
+    "simple-benchmark-v16-delivery.json": "d07fa77cad3579bffd05f05ee9c88609398160bf106a311a1a6d39913a2a3022",
+    "precision-shade-candidate-v17.json": "faa067ea49daf2afc6589545314c50e831b73e54217cbfd1128086cff14439b4",
+    "false-premium-audit-v17.json": "bca663e1a05b60c839e8b89b49f0c8e8fcc384ba33df8e61be78e38c10df5a76",
+    "pricing_simple.py": "aed9409ef4239d1337cf3d5346200beb29fe60ca681d9aa7da16b58541f90e99",
+    "pricing_v17_precision.py": "8a07646cbfb3d64064d6ed420e5d47ce237b2214514b75ee02217e7cb6932681",
+    "pricing_v17.py": "cc643b93f6f14d721febeca3bf3a761926d7c656d70af2cf25ea68b2938db47c",
+    "domestic_shade_model.py": "fdabc56fbde9f66365d565f94272675a7c45d6fb96bcfe444435436835b830ce",
+    "compare_models.py": "da2067d3d2ef99849ce2e30be16208bff0145bc6b036111535542c2daf00fa5f"
+  },
+  "model_snapshots": {
+    "v16_additive": {
+      "selected_model": "v16_blended",
+      "model": {
+        "kind": "v16_blended",
+        "trained_evidence": "evidence-v16.json",
+        "alpha": 0.1,
+        "decision_radius": 0.320940715979069,
+        "coefficients": [
+          0.41029310215104803,
+          -0.5807681589416427,
+          -0.476193905283125,
+          -0.5116505377097532,
+          0.3937784453249939,
+          0.5578855782727229,
+          0.376609404634807,
+          0.6098620813001897,
+          0.5922682206846925,
+          0.9046626230993391,
+          0.0,
+          0.0,
+          0.40827364214126277,
+          0.42868212234802283,
+          0.6232082015720347,
+          0.7959165332589401,
+          0.3271430131718139,
+          0.3031770769642259
+        ],
+        "feature_names": [
+          "origin:Western Europe vs Eastern Europe",
+          "origin:West Central Asia vs Eastern Europe",
+          "origin:South/Eastern Asia vs Eastern Europe",
+          "origin:West Asia / Middle East vs Eastern Europe",
+          "origin:central vs Eastern Europe",
+          "origin:northeast vs Eastern Europe",
+          "origin:northwest vs Eastern Europe",
+          "origin:southwest vs Eastern Europe",
+          "origin:southeast vs Eastern Europe",
+          "shade increment:copper",
+          "shade increment:amber",
+          "shade increment:golden",
+          "shade increment:pale/straw",
+          "age increment:35",
+          "age increment:30",
+          "age increment:25",
+          "age increment:20",
+          "lightness per 5 lb"
+        ],
+        "training_score": {
+          "direction": {
+            "n": 270,
+            "correct": 255,
+            "accuracy": 0.9444444444444444,
+            "reversals": 15,
+            "zero_or_abstain": 0
+          },
+          "materiality": {
+            "n": 175,
+            "meaningful_n": 26,
+            "no_meaningful_n": 149,
+            "accuracy": 0.96,
+            "balanced_accuracy": 0.9606350025813113,
+            "meaningful_recall": 0.9615384615384616,
+            "no_meananingful_recall": 0.959731543624161,
+            "false_meaningful": 6,
+            "missed_meaningful": 1,
+            "correct_meaningful_direction": 25
+          },
+          "unknown_materiality_n": 238,
+          "directly_supported_materiality": {
+            "n": 41,
+            "meaningful_n": 1,
+            "no_meaningful_n": 40,
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "meaningful_recall": 1.0,
+            "no_meananingful_recall": 1.0,
+            "false_meaningful": 0,
+            "missed_meaningful": 0,
+            "correct_meaningful_direction": 1
+          }
+        }
+      },
+      "evidence": "evidence-v16.json",
+      "target_view": "benchmark-targets-v16.json",
+      "validation_file": "simple-benchmark-validation-v16.json",
+      "validation_sha256": "f7058e5f6d12b2fd9adf6b85dd769850d12802e4a06e75e11d1a5e58c75afd91",
+      "validation": {
+        "direction": {
+          "n": 270,
+          "correct": 244.8,
+          "accuracy": 0.9066666666666666,
+          "reversals": 25.2,
+          "zero_or_abstain": 0.0
+        },
+        "materiality": {
+          "n": 175,
+          "meaningful_n": 26,
+          "no_meaningful_n": 149,
+          "accuracy": 0.9302857142857143,
+          "balanced_accuracy": 0.8987351574599897,
+          "meaningful_recall": 0.853846153846154,
+          "no_meananingful_recall": 0.9436241610738255,
+          "false_meaningful": 8.4,
+          "missed_meaningful": 3.8,
+          "correct_meaningful_direction": 21.4
+        },
+        "directly_supported_materiality": {
+          "n": 41,
+          "meaningful_n": 1,
+          "no_meaningful_n": 40,
+          "accuracy": 1.0,
+          "balanced_accuracy": 1.0,
+          "meaningful_recall": 1.0,
+          "no_meananingful_recall": 1.0,
+          "false_meaningful": 0.0,
+          "missed_meaningful": 0.0,
+          "correct_meaningful_direction": 1.0
+        },
+        "unknown_materiality_n": 238
+      },
+      "prediction_source": "coefficients only; no recorded-answer lookup",
+      "qualification": "Direction and materiality estimated separately; no exact-price assertion or calibrated dollar amount.238 unknown materialities excluded from size scoring."
+    },
+    "v17_precision": {
+      "selected_model": "v17_precision_weighted",
+      "status": "precision-improved v17 candidate; residual false-call gap versus v16 disclosed",
+      "model": {
+        "kind": "v17_precision_weighted",
+        "trained_evidence": "evidence-v17.json",
+        "alpha": 0.01,
+        "legacy_negative_weight": 4.0,
+        "training_radius": 0.3,
+        "decision_radius": 0.3000001,
+        "coefficients": [
+          0.30059251209596727,
+          -0.4826433202627174,
+          -0.4827433202627174,
+          -0.4640245387499571,
+          0.395340398689864,
+          0.49105436886711173,
+          0.3004925120959673,
+          0.5335164881572831,
+          0.5073492033852847,
+          0.7556002873078896,
+          6.256835180915935e-22,
+          3.461062096949336e-21,
+          0.6636957908318052,
+          0.37156981323016397,
+          0.6270916207257354,
+          0.6635957908318052,
+          0.3330912438174751,
+          0.2491467586623201,
+          -0.36369579083180525
+        ],
+        "feature_names": [
+          "origin:Western Europe vs Eastern Europe",
+          "origin:West Central Asia vs Eastern Europe",
+          "origin:South/Eastern Asia vs Eastern Europe",
+          "origin:West Asia / Middle East vs Eastern Europe",
+          "origin:central vs Eastern Europe",
+          "origin:northeast vs Eastern Europe",
+          "origin:northwest vs Eastern Europe",
+          "origin:southwest vs Eastern Europe",
+          "origin:southeast vs Eastern Europe",
+          "shade increment:copper",
+          "shade increment:amber",
+          "shade increment:golden",
+          "shade increment:pale/straw",
+          "age increment:35",
+          "age increment:30",
+          "age increment:25",
+          "age increment:20",
+          "lightness per 5 lb",
+          "domestic x pale/straw"
+        ],
+        "training_score": {
+          "direction": {
+            "n": 282,
+            "correct": 267,
+            "accuracy": 0.9468085106382979,
+            "reversals": 15,
+            "zero_or_abstain": 0
+          },
+          "materiality": {
+            "n": 187,
+            "meaningful_n": 28,
+            "no_meaningful_n": 159,
+            "accuracy": 0.9572192513368984,
+            "balanced_accuracy": 0.9601302785265049,
+            "meaningful_recall": 0.9642857142857143,
+            "no_meananingful_recall": 0.9559748427672956,
+            "false_meaningful": 7,
+            "missed_meaningful": 1,
+            "correct_meaningful_direction": 27
+          },
+          "unknown_materiality_n": 238,
+          "directly_supported_materiality": {
+            "n": 53,
+            "meaningful_n": 3,
+            "no_meaningful_n": 50,
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "meaningful_recall": 1.0,
+            "no_meananingful_recall": 1.0,
+            "false_meaningful": 0,
+            "missed_meaningful": 0,
+            "correct_meaningful_direction": 3
+          },
+          "provenance_round36": {
+            "direction": {
+              "n": 8,
+              "correct": 8,
+              "accuracy": 1.0,
+              "reversals": 0,
+              "zero_or_abstain": 0
+            },
+            "materiality": {
+              "n": 8,
+              "meaningful_n": 0,
+              "no_meaningful_n": 8,
+              "accuracy": 1.0,
+              "balanced_accuracy": 1.0,
+              "meaningful_recall": null,
+              "no_meananingful_recall": 1.0,
+              "false_meaningful": 0,
+              "missed_meaningful": 0,
+              "correct_meaningful_direction": 0
+            },
+            "unknown_materiality_n": 0,
+            "directly_supported_materiality": {
+              "n": 8,
+              "meaningful_n": 0,
+              "no_meaningful_n": 8,
+              "accuracy": 1.0,
+              "balanced_accuracy": 1.0,
+              "meaningful_recall": null,
+              "no_meananingful_recall": 1.0,
+              "false_meaningful": 0,
+              "missed_meaningful": 0,
+              "correct_meaningful_direction": 0
+            },
+            "joint_correct": 8
+          },
+          "shade_vintage_round36": {
+            "direction": {
+              "n": 4,
+              "correct": 4,
+              "accuracy": 1.0,
+              "reversals": 0,
+              "zero_or_abstain": 0
+            },
+            "materiality": {
+              "n": 4,
+              "meaningful_n": 2,
+              "no_meaningful_n": 2,
+              "accuracy": 1.0,
+              "balanced_accuracy": 1.0,
+              "meaningful_recall": 1.0,
+              "no_meananingful_recall": 1.0,
+              "false_meaningful": 0,
+              "missed_meaningful": 0,
+              "correct_meaningful_direction": 2
+            },
+            "unknown_materiality_n": 0,
+            "directly_supported_materiality": {
+              "n": 4,
+              "meaningful_n": 2,
+              "no_meaningful_n": 2,
+              "accuracy": 1.0,
+              "balanced_accuracy": 1.0,
+              "meaningful_recall": 1.0,
+              "no_meananingful_recall": 1.0,
+              "false_meaningful": 0,
+              "missed_meaningful": 0,
+              "correct_meaningful_direction": 2
+            },
+            "joint_correct": 4
+          }
+        },
+        "round36_training_predictions": [
+          {
+            "id": "round36-1",
+            "direction": "B",
+            "materiality": "no_meaningful_difference"
+          },
+          {
+            "id": "round36-2",
+            "direction": "A",
+            "materiality": "no_meaningful_difference"
+          },
+          {
+            "id": "round36-3",
+            "direction": "B",
+            "materiality": "no_meaningful_difference"
+          },
+          {
+            "id": "round36-4",
+            "direction": "A",
+            "materiality": "no_meaningful_difference"
+          },
+          {
+            "id": "round36-5",
+            "direction": "A",
+            "materiality": "no_meaningful_difference"
+          },
+          {
+            "id": "round36-6",
+            "direction": "B",
+            "materiality": "no_meaningful_difference"
+          },
+          {
+            "id": "round36-7",
+            "direction": "A",
+            "materiality": "no_meaningful_difference"
+          },
+          {
+            "id": "round36-8",
+            "direction": "B",
+            "materiality": "no_meaningful_difference"
+          },
+          {
+            "id": "round36-9",
+            "direction": "A",
+            "materiality": "no_meaningful_difference"
+          },
+          {
+            "id": "round36-10",
+            "direction": "A",
+            "materiality": "meaningful_difference"
+          },
+          {
+            "id": "round36-11",
+            "direction": "B",
+            "materiality": "meaningful_difference"
+          },
+          {
+            "id": "round36-12",
+            "direction": "B",
+            "materiality": "no_meaningful_difference"
+          }
+        ]
+      },
+      "evidence": "evidence-v17.json",
+      "validation_file": "precision-shade-validation-v17.json",
+      "validation_sha256": "b46f662e140267e2b33d2e24493a846f21c2b83ed13670120e34b03a7ca473ce",
+      "validation": {
+        "direction": {
+          "n": 282,
+          "correct": 254.8,
+          "accuracy": 0.9035460992907801,
+          "reversals": 27.2,
+          "zero_or_abstain": 0.0
+        },
+        "materiality": {
+          "n": 187,
+          "meaningful_n": 28,
+          "no_meaningful_n": 159,
+          "accuracy": 0.9272727272727274,
+          "balanced_accuracy": 0.9130952380952382,
+          "meaningful_recall": 0.8928571428571429,
+          "no_meananingful_recall": 0.9333333333333333,
+          "false_meaningful": 10.6,
+          "missed_meaningful": 3.0,
+          "correct_meaningful_direction": 24.0
+        },
+        "directly_supported_materiality": {
+          "n": 53,
+          "meaningful_n": 3,
+          "no_meaningful_n": 50,
+          "accuracy": 0.9773584905660376,
+          "balanced_accuracy": 0.9880000000000001,
+          "meaningful_recall": 1.0,
+          "no_meananingful_recall": 0.976,
+          "false_meaningful": 1.2,
+          "missed_meaningful": 0.0,
+          "correct_meaningful_direction": 3.0
+        },
+        "unknown_materiality_n": 238,
+        "provenance_round36": {
+          "n": 8,
+          "direction_accuracy": 0.8,
+          "materiality_accuracy": 1.0,
+          "joint_correct": 6.4
+        },
+        "shade_vintage_round36": {
+          "n": 4,
+          "direction_accuracy": 0.9,
+          "materiality_accuracy": 0.9,
+          "joint_correct": 3.6
+        }
+      },
+      "residual_baseline_gap": {
+        "false_meaningful_candidate": 10.6,
+        "false_meaningful_v16": 10.2,
+        "note": "Strict no-regression gate against v16 not fully met; does improve original v17 false14.4 while preserving tested corrected behavior."
+      },
+      "prediction_source": "19 learned coefficients only; no stored-answer lookup",
+      "round36_training_consistency": {
+        "direction_correct": 12,
+        "meaningfulness_correct": 12,
+        "n": 12,
+        "note": "Training consistency, not a new prospective test."
+      }
+    }
+  },
+  "freeze_fields": [
+    "id",
+    "a",
+    "b",
+    "category",
+    "motivating_historical_case",
+    "predictions_before_answer"
+  ],
+  "questions_and_predictions_sha256": "3ca1495583d4817e8f8cc28479ce465e5d0632f5ac1ad8de32beb75b2586eda2",
+  "questions": [
+    {
+      "id": "round37-1",
+      "a": [
+        "Eastern Europe",
+        "amber",
+        30,
+        115
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        30,
+        130
+      ],
+      "category": "foreign_provenance_tare",
+      "motivating_historical_case": "r2-4",
+      "predictions_before_answer": {
+        "v16_additive": {
+          "direction": "A",
+          "meaningfulness": "meaningful_difference",
+          "margin": 0.4992381287416297,
+          "decision_radius": 0.320940715979069
+        },
+        "v17_precision": {
+          "direction": "A",
+          "meaningfulness": "meaningful_difference",
+          "margin": 0.446847763890993,
+          "decision_radius": 0.3000001
+        }
+      },
+      "status": "answered",
+      "raw_answer": "A meaningful. Tare is significant, and all things being equal sufficient to overcome provenance.",
+      "direction": "A",
+      "meaningfulness": "meaningful_difference",
+      "exact_price_instruction": false
+    },
+    {
+      "id": "round37-2",
+      "a": [
+        "Eastern Europe",
+        "amber",
+        35,
+        120
+      ],
+      "b": [
+        "Eastern Europe",
+        "amber",
+        30,
+        125
+      ],
+      "category": "vintage_tare",
+      "motivating_historical_case": "revision-8",
+      "predictions_before_answer": {
+        "v16_additive": {
+          "direction": "B",
+          "meaningfulness": "no_meaningful_difference",
+          "margin": -0.3200311246078088,
+          "decision_radius": 0.320940715979069
+        },
+        "v17_precision": {
+          "direction": "B",
+          "meaningfulness": "meaningful_difference",
+          "margin": -0.3779448620634153,
+          "decision_radius": 0.3000001
+        }
+      },
+      "status": "answered",
+      "raw_answer": "B, meaningful difference\u2014the five-year younger vintage outweighs the 5 lb tare difference, with shade and provenance matching.",
+      "direction": "B",
+      "meaningfulness": "meaningful_difference",
+      "exact_price_instruction": false,
+      "interpretation": "User explicitly clarified B direction and meaningful magnitude. Earlier size was unspecified; previous response retained in history.",
+      "answer_history": [
+        {
+          "raw_answer": "B, vintage trumps tare because tare is <10 lbs and shade/provenance equal.",
+          "direction": "B",
+          "meaningfulness": null,
+          "exact_price_instruction": null
+        }
+      ],
+      "clarified_by": "round37-clarify-1"
+    },
+    {
+      "id": "round37-3",
+      "a": [
+        "Western Europe",
+        "pale/straw",
+        30,
+        120
+      ],
+      "b": [
+        "central",
+        "pale/straw",
+        30,
+        125
+      ],
+      "category": "domestic_foreign_pale_tare",
+      "motivating_historical_case": "round9-12",
+      "predictions_before_answer": {
+        "v16_additive": {
+          "direction": "A",
+          "meaningfulness": "no_meaningful_difference",
+          "margin": 0.31969173379028004,
+          "decision_radius": 0.320940715979069
+        },
+        "v17_precision": {
+          "direction": "A",
+          "meaningfulness": "meaningful_difference",
+          "margin": 0.5180946629002288,
+          "decision_radius": 0.3000001
+        }
+      },
+      "status": "answered",
+      "raw_answer": "A, practically similar\u2014Western Europe has a slight provenance advantage, but the 5 lb tare difference isn't enough to make a meaningful distinction with shade and vintage matching.",
+      "direction": "A",
+      "meaningfulness": "practically_similar",
+      "exact_price_instruction": false
+    },
+    {
+      "id": "round37-4",
+      "a": [
+        "central",
+        "golden",
+        40,
+        110
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        40,
+        115
+      ],
+      "category": "older_domestic_foreign_tare",
+      "motivating_historical_case": "round19-15",
+      "predictions_before_answer": {
+        "v16_additive": {
+          "direction": "A",
+          "meaningfulness": "no_meaningful_difference",
+          "margin": 0.2866624201381718,
+          "decision_radius": 0.320940715979069
+        },
+        "v17_precision": {
+          "direction": "A",
+          "meaningfulness": "meaningful_difference",
+          "margin": 0.3438946452562168,
+          "decision_radius": 0.3000001
+        }
+      },
+      "status": "answered",
+      "raw_answer": "At >=35, equal shade, and adjacent provenance, the 5 lbs makes no meaninful difference; the value would be simply a matter of consumer taste/preference.",
+      "direction": null,
+      "meaningfulness": "practically_similar",
+      "exact_price_instruction": false,
+      "interpretation": "No meaningful difference explicitly stated; consumer preference decides, so no directional winner assigned. Not deliberate identical pricing or unresolved meaningfulness."
+    },
+    {
+      "id": "round37-5",
+      "a": [
+        "southeast",
+        "golden",
+        20,
+        110
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        20,
+        110
+      ],
+      "category": "premium_provenance",
+      "motivating_historical_case": "round7-16",
+      "predictions_before_answer": {
+        "v16_additive": {
+          "direction": "A",
+          "meaningfulness": "no_meaningful_difference",
+          "margin": 0.1819751185336445,
+          "decision_radius": 0.320940715979069
+        },
+        "v17_precision": {
+          "direction": "A",
+          "meaningfulness": "no_meaningful_difference",
+          "margin": 0.2067566912893174,
+          "decision_radius": 0.3000001
+        }
+      },
+      "status": "answered",
+      "raw_answer": "No clear direction, practically similar\u2014both are premium provenances, and with shade, vintage and tare matching, I\u2019d need another differentiator to make a meaningful distinction.",
+      "direction": null,
+      "meaningfulness": "practically_similar",
+      "exact_price_instruction": false
+    },
+    {
+      "id": "round37-6",
+      "a": [
+        "central",
+        "brown",
+        30,
+        110
+      ],
+      "b": [
+        "Eastern Europe",
+        "brown",
+        30,
+        110
+      ],
+      "category": "older_provenance",
+      "motivating_historical_case": "round7-2",
+      "predictions_before_answer": {
+        "v16_additive": {
+          "direction": "A",
+          "meaningfulness": "meaningful_difference",
+          "margin": 0.3937784453249939,
+          "decision_radius": 0.320940715979069
+        },
+        "v17_precision": {
+          "direction": "A",
+          "meaningfulness": "meaningful_difference",
+          "margin": 0.395340398689864,
+          "decision_radius": 0.3000001
+        }
+      },
+      "status": "answered",
+      "raw_answer": "No clear direction, practically similar\u2014at 30 years with brown shade and matching tare, provenance alone isn't enough to make a meaningful distinction.",
+      "direction": null,
+      "meaningfulness": "practically_similar",
+      "exact_price_instruction": false
+    },
+    {
+      "id": "round37-7",
+      "a": [
+        "northeast",
+        "brown",
+        30,
+        115
+      ],
+      "b": [
+        "southwest",
+        "brown",
+        30,
+        110
+      ],
+      "category": "domestic_provenance_tare",
+      "motivating_historical_case": "round17-13",
+      "predictions_before_answer": {
+        "v16_additive": {
+          "direction": "B",
+          "meaningfulness": "meaningful_difference",
+          "margin": -0.3551535799916927,
+          "decision_radius": 0.320940715979069
+        },
+        "v17_precision": {
+          "direction": "B",
+          "meaningfulness": "no_meaningful_difference",
+          "margin": -0.2916088779524915,
+          "decision_radius": 0.3000001
+        }
+      },
+      "status": "answered",
+      "raw_answer": "No clear direction, practically similar\u2014both are premium provenances, and at 30 years with brown shade, the 5 lb tare difference isn't enough to make a meaningful distinction.",
+      "direction": null,
+      "meaningfulness": "practically_similar",
+      "exact_price_instruction": false
+    },
+    {
+      "id": "round37-8",
+      "a": [
+        "southwest",
+        "copper",
+        30,
+        115
+      ],
+      "b": [
+        "southeast",
+        "copper",
+        30,
+        120
+      ],
+      "category": "domestic_provenance_tare",
+      "motivating_historical_case": "round21-3",
+      "predictions_before_answer": {
+        "v16_additive": {
+          "direction": "A",
+          "meaningfulness": "no_meaningful_difference",
+          "margin": 0.3207709375797231,
+          "decision_radius": 0.320940715979069
+        },
+        "v17_precision": {
+          "direction": "A",
+          "meaningfulness": "no_meaningful_difference",
+          "margin": 0.27531404343431864,
+          "decision_radius": 0.3000001
+        }
+      },
+      "status": "answered",
+      "raw_answer": "No clear direction, practically similar\u2014both are premium provenances, and with shade and vintage matching, the 5 lb tare difference isn't enough to make a meaningful distinction.",
+      "direction": null,
+      "meaningfulness": "practically_similar",
+      "exact_price_instruction": false
+    },
+    {
+      "id": "round37-9",
+      "a": [
+        "Eastern Europe",
+        "amber",
+        30,
+        125
+      ],
+      "b": [
+        "central",
+        "amber",
+        30,
+        125
+      ],
+      "category": "domestic_foreign_provenance",
+      "motivating_historical_case": "r1-5",
+      "predictions_before_answer": {
+        "v16_additive": {
+          "direction": "B",
+          "meaningfulness": "meaningful_difference",
+          "margin": -0.3937784453249939,
+          "decision_radius": 0.320940715979069
+        },
+        "v17_precision": {
+          "direction": "B",
+          "meaningfulness": "meaningful_difference",
+          "margin": -0.395340398689864,
+          "decision_radius": 0.3000001
+        }
+      },
+      "status": "answered",
+      "raw_answer": "B, meaningful difference\u2014Central domestic is more valuable than Eastern Europe when shade, vintage and tare are identical.",
+      "direction": "B",
+      "meaningfulness": "meaningful_difference",
+      "exact_price_instruction": false,
+      "interpretation": "User explicitly clarified B direction and meaningful magnitude. Earlier size was unspecified; previous response retained in history.",
+      "answer_history": [
+        {
+          "raw_answer": "B.  Reason being - Central domestic will be more valuable than Eastern European all other things being equal.",
+          "direction": "B",
+          "meaningfulness": null,
+          "exact_price_instruction": null
+        }
+      ],
+      "clarified_by": "round37-clarify-2"
+    },
+    {
+      "id": "round37-10",
+      "a": [
+        "southeast",
+        "brown",
+        40,
+        120
+      ],
+      "b": [
+        "central",
+        "brown",
+        40,
+        125
+      ],
+      "category": "older_domestic_tare",
+      "motivating_historical_case": "round15-4",
+      "predictions_before_answer": {
+        "v16_additive": {
+          "direction": "A",
+          "meaningfulness": "meaningful_difference",
+          "margin": 0.5016668523239245,
+          "decision_radius": 0.320940715979069
+        },
+        "v17_precision": {
+          "direction": "A",
+          "meaningfulness": "meaningful_difference",
+          "margin": 0.3611555633577408,
+          "decision_radius": 0.3000001
+        }
+      },
+      "status": "answered",
+      "raw_answer": "No clear direction, practically similar\u2014at 40 years with brown shade, the provenance and 5 lb tare differences aren't enough to make a meaningful distinction.",
+      "direction": null,
+      "meaningfulness": "practically_similar",
+      "exact_price_instruction": false
+    },
+    {
+      "id": "round37-11",
+      "a": [
+        "Western Europe",
+        "pale/straw",
+        20,
+        110
+      ],
+      "b": [
+        "Eastern Europe",
+        "copper",
+        35,
+        125
+      ],
+      "category": "wide_control",
+      "motivating_historical_case": null,
+      "predictions_before_answer": {
+        "v16_additive": {
+          "direction": "A",
+          "meaningfulness": "meaningful_difference",
+          "margin": 3.4743657231877774,
+          "decision_radius": 0.320940715979069
+        },
+        "v17_precision": {
+          "direction": "A",
+          "meaningfulness": "meaningful_difference",
+          "margin": 3.3355072342897483,
+          "decision_radius": 0.3000001
+        }
+      },
+      "status": "answered",
+      "raw_answer": "A, meaningful difference\u2014Western Europe has the provenance advantage, and the lighter shade, younger vintage and lower tare all reinforce it.",
+      "direction": "A",
+      "meaningfulness": "meaningful_difference",
+      "exact_price_instruction": false
+    },
+    {
+      "id": "round37-12",
+      "a": [
+        "Western Europe",
+        "golden",
+        35,
+        130
+      ],
+      "b": [
+        "central",
+        "golden",
+        25,
+        110
+      ],
+      "category": "wide_control",
+      "motivating_historical_case": null,
+      "predictions_before_answer": {
+        "v16_additive": {
+          "direction": "B",
+          "meaningfulness": "meaningful_difference",
+          "margin": -2.6153183858618245,
+          "decision_radius": 0.320940715979069
+        },
+        "v17_precision": {
+          "direction": "B",
+          "meaningfulness": "meaningful_difference",
+          "margin": -2.3820223328007177,
+          "decision_radius": 0.3000001
+        }
+      },
+      "status": "answered",
+      "raw_answer": "B, meaningful difference\u2014the 10-year younger vintage and 20 lb tare advantage outweigh Western Europe\u2019s provenance advantage, with shade matching.",
+      "direction": "B",
+      "meaningfulness": "meaningful_difference",
+      "exact_price_instruction": false
+    }
+  ],
+  "rule_statements": [
+    {
+      "source_question": "round37-1",
+      "raw_answer": "A meaningful. Tare is significant, and all things being equal sufficient to overcome provenance.",
+      "scope": "Eastern Europe amber30/115 versus Western Europe amber30/130.",
+      "interpretation": "A direction and meaningful difference explicitly supplied.15 lb lower tare outweighs provenance with shade and vintage matched here; no universal tare/provenance dominance or numeric premium inferred."
+    },
+    {
+      "source_question": "round37-2",
+      "raw_answer": "B, vintage trumps tare because tare is <10 lbs and shade/provenance equal.",
+      "scope": "Eastern Europe amber35/120 versus amber30/125; user cites a tare difference under10 lb with shade/provenance matched.",
+      "interpretation": "Younger vintage wins over the5 lb tare advantage in this pair. Preserve broader under10 lb rationale as qualitative guidance; do not infer a universal cutoff or a materiality label."
+    },
+    {
+      "source_question": "round37-3",
+      "raw_answer": "A, practically similar\u2014Western Europe has a slight provenance advantage, but the 5 lb tare difference isn't enough to make a meaningful distinction with shade and vintage matching.",
+      "scope": "Western Europe pale/straw30/120 versus Central pale/straw30/125.",
+      "interpretation": "A slight direction and practical similarity explicitly supplied. User cites provenance advantage and insufficient5 lb tare difference for meaningful distinction in this matched shade/vintage context; no exact equality, universal rule, or numeric premium inferred."
+    },
+    {
+      "source_question": "round37-4",
+      "raw_answer": "At >=35, equal shade, and adjacent provenance, the 5 lbs makes no meaninful difference; the value would be simply a matter of consumer taste/preference.",
+      "scope": "Central golden40/110 versus Western Europe golden40/115. User describes age>=35, equal shade and adjacent provenance as conditions.",
+      "interpretation": "Practical similarity with no clear direction. Preserve conditional guidance about5 lb differences at older vintages; adjacent provenance is the user description here, not a newly defined universal region-adjacency map. No numeric premium or exact equality inferred."
+    },
+    {
+      "source_question": "round37-5",
+      "raw_answer": "No clear direction, practically similar\u2014both are premium provenances, and with shade, vintage and tare matching, I\u2019d need another differentiator to make a meaningful distinction.",
+      "scope": "Southeast versus Western Europe, golden20/110 matched.",
+      "interpretation": "No clear direction and practical similarity explicitly supplied. Both provenances described as premium; another differentiator needed here. Not exact equality, unresolved size, or a universal provenance-equivalence rule."
+    },
+    {
+      "source_question": "round37-6",
+      "raw_answer": "No clear direction, practically similar\u2014at 30 years with brown shade and matching tare, provenance alone isn't enough to make a meaningful distinction.",
+      "scope": "Central versus Eastern Europe, brown30/110 matched.",
+      "interpretation": "No clear direction and practical similarity explicitly supplied; provenance alone does not establish a meaningful distinction in this context. No exact equality or universal provenance-equivalence rule inferred."
+    },
+    {
+      "source_question": "round37-7",
+      "raw_answer": "No clear direction, practically similar\u2014both are premium provenances, and at 30 years with brown shade, the 5 lb tare difference isn't enough to make a meaningful distinction.",
+      "scope": "Northeast brown30/115 versus Southwest brown30/110.",
+      "interpretation": "No clear direction and practical similarity explicitly supplied. Both regions are described as premium;5 lb tare difference does not establish a meaningful distinction in this context. No exact equality or numeric premium inferred."
+    },
+    {
+      "source_question": "round37-8",
+      "raw_answer": "No clear direction, practically similar\u2014both are premium provenances, and with shade and vintage matching, the 5 lb tare difference isn't enough to make a meaningful distinction.",
+      "scope": "Southwest copper30/115 versus Southeast copper30/120.",
+      "interpretation": "No clear direction and practical similarity explicitly supplied. Both regions described as premium; matched shade/vintage and5 lb tare difference do not establish a meaningful distinction here. No exact equality or numeric premium inferred."
+    },
+    {
+      "source_question": "round37-9",
+      "raw_answer": "B.  Reason being - Central domestic will be more valuable than Eastern European all other things being equal.",
+      "scope": "Eastern Europe versus Central, amber30/125 matched; user states Central domestic is more valuable than Eastern Europe all else equal.",
+      "interpretation": "Retain B direction and qualitative provenance guidance. No numeric premium or meaningfulness inferred; do not overwrite earlier context-specific judgments without reconciliation."
+    },
+    {
+      "source_question": "round37-10",
+      "raw_answer": "No clear direction, practically similar\u2014at 40 years with brown shade, the provenance and 5 lb tare differences aren't enough to make a meaningful distinction.",
+      "scope": "Southeast brown40/120 versus Central brown40/125.",
+      "interpretation": "No clear direction and practical similarity explicitly supplied. At this older brown context, provenance and5 lb tare differences do not create a meaningful distinction. No exact equality, universal provenance equivalence, or numeric premium inferred."
+    },
+    {
+      "source_question": "round37-11",
+      "raw_answer": "A, meaningful difference\u2014Western Europe has the provenance advantage, and the lighter shade, younger vintage and lower tare all reinforce it.",
+      "scope": "Western Europe pale/straw20/110 versus Eastern Europe copper35/125.",
+      "interpretation": "A direction and meaningful difference explicitly supplied; provenance, lighter shade, younger vintage and lower tare reinforce the preference in this pair. No numeric premium inferred."
+    },
+    {
+      "source_question": "round37-12",
+      "raw_answer": "B, meaningful difference\u2014the 10-year younger vintage and 20 lb tare advantage outweigh Western Europe\u2019s provenance advantage, with shade matching.",
+      "scope": "Western Europe golden35/130 versus Central golden25/110.",
+      "interpretation": "B direction and meaningful difference explicitly supplied;10-year younger vintage and20 lb tare advantage outweigh provenance with shade matched here. No universal dominance rule or numeric premium inferred."
+    },
+    {
+      "source_question": "round37-clarify-1",
+      "revisits": "round37-2",
+      "raw_answer": "B, meaningful difference\u2014the five-year younger vintage outweighs the 5 lb tare difference, with shade and provenance matching.",
+      "scope": "Eastern Europe amber35/120 versus amber30/125.",
+      "interpretation": "B meaningful: five-year younger vintage outweighs5 lb tare with shade/provenance matched. No numerical premium or universal cutoff inferred."
+    },
+    {
+      "source_question": "round37-clarify-2",
+      "revisits": "round37-9",
+      "raw_answer": "B, meaningful difference\u2014Central domestic is more valuable than Eastern Europe when shade, vintage and tare are identical.",
+      "scope": "Eastern Europe versus Central, amber30/125 matched.",
+      "interpretation": "B meaningful, attributed to Central domestic provenance advantage with other attributes matched. No numerical premium inferred; earlier brown-shade practical-similarity judgment remains separate."
+    }
+  ],
+  "scores": {
+    "v16_additive": {
+      "questions": 12,
+      "direction_n": 6,
+      "direction_correct": 6,
+      "size_n": 12,
+      "size_correct": 8,
+      "false_meaningful": [
+        "round37-6",
+        "round37-7",
+        "round37-10"
+      ],
+      "missed_meaningful": [
+        "round37-2"
+      ],
+      "targeted_cases": {
+        "questions": 10,
+        "direction_n": 4,
+        "direction_correct": 4,
+        "size_n": 10,
+        "size_correct": 6,
+        "false_meaningful": [
+          "round37-6",
+          "round37-7",
+          "round37-10"
+        ],
+        "missed_meaningful": [
+          "round37-2"
+        ]
+      },
+      "wide_controls": {
+        "questions": 2,
+        "direction_n": 2,
+        "direction_correct": 2,
+        "size_n": 2,
+        "size_correct": 2,
+        "false_meaningful": [],
+        "missed_meaningful": []
+      },
+      "details": [
+        {
+          "id": "round37-1",
+          "category": "foreign_provenance_tare",
+          "actual_direction": "A",
+          "predicted_direction": "A",
+          "direction_scored": true,
+          "direction_correct": true,
+          "actual_meaningfulness": "meaningful_difference",
+          "predicted_meaningfulness": "meaningful_difference",
+          "size_scored": true,
+          "size_correct": true
+        },
+        {
+          "id": "round37-2",
+          "category": "vintage_tare",
+          "actual_direction": "B",
+          "predicted_direction": "B",
+          "direction_scored": true,
+          "direction_correct": true,
+          "actual_meaningfulness": "meaningful_difference",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "size_scored": true,
+          "size_correct": false
+        },
+        {
+          "id": "round37-3",
+          "category": "domestic_foreign_pale_tare",
+          "actual_direction": "A",
+          "predicted_direction": "A",
+          "direction_scored": true,
+          "direction_correct": true,
+          "actual_meaningfulness": "no_meaningful_difference",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "size_scored": true,
+          "size_correct": true
+        },
+        {
+          "id": "round37-4",
+          "category": "older_domestic_foreign_tare",
+          "actual_direction": null,
+          "predicted_direction": "A",
+          "direction_scored": false,
+          "direction_correct": null,
+          "actual_meaningfulness": "no_meaningful_difference",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "size_scored": true,
+          "size_correct": true
+        },
+        {
+          "id": "round37-5",
+          "category": "premium_provenance",
+          "actual_direction": null,
+          "predicted_direction": "A",
+          "direction_scored": false,
+          "direction_correct": null,
+          "actual_meaningfulness": "no_meaningful_difference",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "size_scored": true,
+          "size_correct": true
+        },
+        {
+          "id": "round37-6",
+          "category": "older_provenance",
+          "actual_direction": null,
+          "predicted_direction": "A",
+          "direction_scored": false,
+          "direction_correct": null,
+          "actual_meaningfulness": "no_meaningful_difference",
+          "predicted_meaningfulness": "meaningful_difference",
+          "size_scored": true,
+          "size_correct": false
+        },
+        {
+          "id": "round37-7",
+          "category": "domestic_provenance_tare",
+          "actual_direction": null,
+          "predicted_direction": "B",
+          "direction_scored": false,
+          "direction_correct": null,
+          "actual_meaningfulness": "no_meaningful_difference",
+          "predicted_meaningfulness": "meaningful_difference",
+          "size_scored": true,
+          "size_correct": false
+        },
+        {
+          "id": "round37-8",
+          "category": "domestic_provenance_tare",
+          "actual_direction": null,
+          "predicted_direction": "A",
+          "direction_scored": false,
+          "direction_correct": null,
+          "actual_meaningfulness": "no_meaningful_difference",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "size_scored": true,
+          "size_correct": true
+        },
+        {
+          "id": "round37-9",
+          "category": "domestic_foreign_provenance",
+          "actual_direction": "B",
+          "predicted_direction": "B",
+          "direction_scored": true,
+          "direction_correct": true,
+          "actual_meaningfulness": "meaningful_difference",
+          "predicted_meaningfulness": "meaningful_difference",
+          "size_scored": true,
+          "size_correct": true
+        },
+        {
+          "id": "round37-10",
+          "category": "older_domestic_tare",
+          "actual_direction": null,
+          "predicted_direction": "A",
+          "direction_scored": false,
+          "direction_correct": null,
+          "actual_meaningfulness": "no_meaningful_difference",
+          "predicted_meaningfulness": "meaningful_difference",
+          "size_scored": true,
+          "size_correct": false
+        },
+        {
+          "id": "round37-11",
+          "category": "wide_control",
+          "actual_direction": "A",
+          "predicted_direction": "A",
+          "direction_scored": true,
+          "direction_correct": true,
+          "actual_meaningfulness": "meaningful_difference",
+          "predicted_meaningfulness": "meaningful_difference",
+          "size_scored": true,
+          "size_correct": true
+        },
+        {
+          "id": "round37-12",
+          "category": "wide_control",
+          "actual_direction": "B",
+          "predicted_direction": "B",
+          "direction_scored": true,
+          "direction_correct": true,
+          "actual_meaningfulness": "meaningful_difference",
+          "predicted_meaningfulness": "meaningful_difference",
+          "size_scored": true,
+          "size_correct": true
+        }
+      ]
+    },
+    "v17_precision": {
+      "questions": 12,
+      "direction_n": 6,
+      "direction_correct": 6,
+      "size_n": 12,
+      "size_correct": 8,
+      "false_meaningful": [
+        "round37-3",
+        "round37-4",
+        "round37-6",
+        "round37-10"
+      ],
+      "missed_meaningful": [],
+      "targeted_cases": {
+        "questions": 10,
+        "direction_n": 4,
+        "direction_correct": 4,
+        "size_n": 10,
+        "size_correct": 6,
+        "false_meaningful": [
+          "round37-3",
+          "round37-4",
+          "round37-6",
+          "round37-10"
+        ],
+        "missed_meaningful": []
+      },
+      "wide_controls": {
+        "questions": 2,
+        "direction_n": 2,
+        "direction_correct": 2,
+        "size_n": 2,
+        "size_correct": 2,
+        "false_meaningful": [],
+        "missed_meaningful": []
+      },
+      "details": [
+        {
+          "id": "round37-1",
+          "category": "foreign_provenance_tare",
+          "actual_direction": "A",
+          "predicted_direction": "A",
+          "direction_scored": true,
+          "direction_correct": true,
+          "actual_meaningfulness": "meaningful_difference",
+          "predicted_meaningfulness": "meaningful_difference",
+          "size_scored": true,
+          "size_correct": true
+        },
+        {
+          "id": "round37-2",
+          "category": "vintage_tare",
+          "actual_direction": "B",
+          "predicted_direction": "B",
+          "direction_scored": true,
+          "direction_correct": true,
+          "actual_meaningfulness": "meaningful_difference",
+          "predicted_meaningfulness": "meaningful_difference",
+          "size_scored": true,
+          "size_correct": true
+        },
+        {
+          "id": "round37-3",
+          "category": "domestic_foreign_pale_tare",
+          "actual_direction": "A",
+          "predicted_direction": "A",
+          "direction_scored": true,
+          "direction_correct": true,
+          "actual_meaningfulness": "no_meaningful_difference",
+          "predicted_meaningfulness": "meaningful_difference",
+          "size_scored": true,
+          "size_correct": false
+        },
+        {
+          "id": "round37-4",
+          "category": "older_domestic_foreign_tare",
+          "actual_direction": null,
+          "predicted_direction": "A",
+          "direction_scored": false,
+          "direction_correct": null,
+          "actual_meaningfulness": "no_meaningful_difference",
+          "predicted_meaningfulness": "meaningful_difference",
+          "size_scored": true,
+          "size_correct": false
+        },
+        {
+          "id": "round37-5",
+          "category": "premium_provenance",
+          "actual_direction": null,
+          "predicted_direction": "A",
+          "direction_scored": false,
+          "direction_correct": null,
+          "actual_meaningfulness": "no_meaningful_difference",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "size_scored": true,
+          "size_correct": true
+        },
+        {
+          "id": "round37-6",
+          "category": "older_provenance",
+          "actual_direction": null,
+          "predicted_direction": "A",
+          "direction_scored": false,
+          "direction_correct": null,
+          "actual_meaningfulness": "no_meaningful_difference",
+          "predicted_meaningfulness": "meaningful_difference",
+          "size_scored": true,
+          "size_correct": false
+        },
+        {
+          "id": "round37-7",
+          "category": "domestic_provenance_tare",
+          "actual_direction": null,
+          "predicted_direction": "B",
+          "direction_scored": false,
+          "direction_correct": null,
+          "actual_meaningfulness": "no_meaningful_difference",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "size_scored": true,
+          "size_correct": true
+        },
+        {
+          "id": "round37-8",
+          "category": "domestic_provenance_tare",
+          "actual_direction": null,
+          "predicted_direction": "A",
+          "direction_scored": false,
+          "direction_correct": null,
+          "actual_meaningfulness": "no_meaningful_difference",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "size_scored": true,
+          "size_correct": true
+        },
+        {
+          "id": "round37-9",
+          "category": "domestic_foreign_provenance",
+          "actual_direction": "B",
+          "predicted_direction": "B",
+          "direction_scored": true,
+          "direction_correct": true,
+          "actual_meaningfulness": "meaningful_difference",
+          "predicted_meaningfulness": "meaningful_difference",
+          "size_scored": true,
+          "size_correct": true
+        },
+        {
+          "id": "round37-10",
+          "category": "older_domestic_tare",
+          "actual_direction": null,
+          "predicted_direction": "A",
+          "direction_scored": false,
+          "direction_correct": null,
+          "actual_meaningfulness": "no_meaningful_difference",
+          "predicted_meaningfulness": "meaningful_difference",
+          "size_scored": true,
+          "size_correct": false
+        },
+        {
+          "id": "round37-11",
+          "category": "wide_control",
+          "actual_direction": "A",
+          "predicted_direction": "A",
+          "direction_scored": true,
+          "direction_correct": true,
+          "actual_meaningfulness": "meaningful_difference",
+          "predicted_meaningfulness": "meaningful_difference",
+          "size_scored": true,
+          "size_correct": true
+        },
+        {
+          "id": "round37-12",
+          "category": "wide_control",
+          "actual_direction": "B",
+          "predicted_direction": "B",
+          "direction_scored": true,
+          "direction_correct": true,
+          "actual_meaningfulness": "meaningful_difference",
+          "predicted_meaningfulness": "meaningful_difference",
+          "size_scored": true,
+          "size_correct": true
+        }
+      ]
+    }
+  },
+  "coverage": {
+    "direction_scored": 6,
+    "size_scored": 12,
+    "direction_missing": [
+      "round37-4",
+      "round37-5",
+      "round37-6",
+      "round37-7",
+      "round37-8",
+      "round37-10"
+    ],
+    "size_missing": []
+  },
+  "scoring_notes": "Q2 and Q9 sizes explicitly clarified as meaningful, before final results. Initial receipt retained separately. All12 sizes scorable; only6 directions supplied. No clear direction is not exact equality.7 practical and5 meaningful differences.10 targeted neighbors plus2 controls; not population sampling. No refit or prediction change.",
+  "initial_scoring_receipt": {
+    "scores": {
+      "v16_additive": {
+        "questions": 12,
+        "direction_n": 6,
+        "direction_correct": 6,
+        "size_n": 10,
+        "size_correct": 7,
+        "false_meaningful": [
+          "round37-6",
+          "round37-7",
+          "round37-10"
+        ],
+        "missed_meaningful": [],
+        "targeted_cases": {
+          "questions": 10,
+          "direction_n": 4,
+          "direction_correct": 4,
+          "size_n": 8,
+          "size_correct": 5,
+          "false_meaningful": [
+            "round37-6",
+            "round37-7",
+            "round37-10"
+          ],
+          "missed_meaningful": []
+        },
+        "wide_controls": {
+          "questions": 2,
+          "direction_n": 2,
+          "direction_correct": 2,
+          "size_n": 2,
+          "size_correct": 2,
+          "false_meaningful": [],
+          "missed_meaningful": []
+        },
+        "details": [
+          {
+            "id": "round37-1",
+            "category": "foreign_provenance_tare",
+            "actual_direction": "A",
+            "predicted_direction": "A",
+            "direction_scored": true,
+            "direction_correct": true,
+            "actual_meaningfulness": "meaningful_difference",
+            "predicted_meaningfulness": "meaningful_difference",
+            "size_scored": true,
+            "size_correct": true
+          },
+          {
+            "id": "round37-2",
+            "category": "vintage_tare",
+            "actual_direction": "B",
+            "predicted_direction": "B",
+            "direction_scored": true,
+            "direction_correct": true,
+            "actual_meaningfulness": null,
+            "predicted_meaningfulness": "no_meaningful_difference",
+            "size_scored": false,
+            "size_correct": null
+          },
+          {
+            "id": "round37-3",
+            "category": "domestic_foreign_pale_tare",
+            "actual_direction": "A",
+            "predicted_direction": "A",
+            "direction_scored": true,
+            "direction_correct": true,
+            "actual_meaningfulness": "no_meaningful_difference",
+            "predicted_meaningfulness": "no_meaningful_difference",
+            "size_scored": true,
+            "size_correct": true
+          },
+          {
+            "id": "round37-4",
+            "category": "older_domestic_foreign_tare",
+            "actual_direction": null,
+            "predicted_direction": "A",
+            "direction_scored": false,
+            "direction_correct": null,
+            "actual_meaningfulness": "no_meaningful_difference",
+            "predicted_meaningfulness": "no_meaningful_difference",
+            "size_scored": true,
+            "size_correct": true
+          },
+          {
+            "id": "round37-5",
+            "category": "premium_provenance",
+            "actual_direction": null,
+            "predicted_direction": "A",
+            "direction_scored": false,
+            "direction_correct": null,
+            "actual_meaningfulness": "no_meaningful_difference",
+            "predicted_meaningfulness": "no_meaningful_difference",
+            "size_scored": true,
+            "size_correct": true
+          },
+          {
+            "id": "round37-6",
+            "category": "older_provenance",
+            "actual_direction": null,
+            "predicted_direction": "A",
+            "direction_scored": false,
+            "direction_correct": null,
+            "actual_meaningfulness": "no_meaningful_difference",
+            "predicted_meaningfulness": "meaningful_difference",
+            "size_scored": true,
+            "size_correct": false
+          },
+          {
+            "id": "round37-7",
+            "category": "domestic_provenance_tare",
+            "actual_direction": null,
+            "predicted_direction": "B",
+            "direction_scored": false,
+            "direction_correct": null,
+            "actual_meaningfulness": "no_meaningful_difference",
+            "predicted_meaningfulness": "meaningful_difference",
+            "size_scored": true,
+            "size_correct": false
+          },
+          {
+            "id": "round37-8",
+            "category": "domestic_provenance_tare",
+            "actual_direction": null,
+            "predicted_direction": "A",
+            "direction_scored": false,
+            "direction_correct": null,
+            "actual_meaningfulness": "no_meaningful_difference",
+            "predicted_meaningfulness": "no_meaningful_difference",
+            "size_scored": true,
+            "size_correct": true
+          },
+          {
+            "id": "round37-9",
+            "category": "domestic_foreign_provenance",
+            "actual_direction": "B",
+            "predicted_direction": "B",
+            "direction_scored": true,
+            "direction_correct": true,
+            "actual_meaningfulness": null,
+            "predicted_meaningfulness": "meaningful_difference",
+            "size_scored": false,
+            "size_correct": null
+          },
+          {
+            "id": "round37-10",
+            "category": "older_domestic_tare",
+            "actual_direction": null,
+            "predicted_direction": "A",
+            "direction_scored": false,
+            "direction_correct": null,
+            "actual_meaningfulness": "no_meaningful_difference",
+            "predicted_meaningfulness": "meaningful_difference",
+            "size_scored": true,
+            "size_correct": false
+          },
+          {
+            "id": "round37-11",
+            "category": "wide_control",
+            "actual_direction": "A",
+            "predicted_direction": "A",
+            "direction_scored": true,
+            "direction_correct": true,
+            "actual_meaningfulness": "meaningful_difference",
+            "predicted_meaningfulness": "meaningful_difference",
+            "size_scored": true,
+            "size_correct": true
+          },
+          {
+            "id": "round37-12",
+            "category": "wide_control",
+            "actual_direction": "B",
+            "predicted_direction": "B",
+            "direction_scored": true,
+            "direction_correct": true,
+            "actual_meaningfulness": "meaningful_difference",
+            "predicted_meaningfulness": "meaningful_difference",
+            "size_scored": true,
+            "size_correct": true
+          }
+        ]
+      },
+      "v17_precision": {
+        "questions": 12,
+        "direction_n": 6,
+        "direction_correct": 6,
+        "size_n": 10,
+        "size_correct": 6,
+        "false_meaningful": [
+          "round37-3",
+          "round37-4",
+          "round37-6",
+          "round37-10"
+        ],
+        "missed_meaningful": [],
+        "targeted_cases": {
+          "questions": 10,
+          "direction_n": 4,
+          "direction_correct": 4,
+          "size_n": 8,
+          "size_correct": 4,
+          "false_meaningful": [
+            "round37-3",
+            "round37-4",
+            "round37-6",
+            "round37-10"
+          ],
+          "missed_meaningful": []
+        },
+        "wide_controls": {
+          "questions": 2,
+          "direction_n": 2,
+          "direction_correct": 2,
+          "size_n": 2,
+          "size_correct": 2,
+          "false_meaningful": [],
+          "missed_meaningful": []
+        },
+        "details": [
+          {
+            "id": "round37-1",
+            "category": "foreign_provenance_tare",
+            "actual_direction": "A",
+            "predicted_direction": "A",
+            "direction_scored": true,
+            "direction_correct": true,
+            "actual_meaningfulness": "meaningful_difference",
+            "predicted_meaningfulness": "meaningful_difference",
+            "size_scored": true,
+            "size_correct": true
+          },
+          {
+            "id": "round37-2",
+            "category": "vintage_tare",
+            "actual_direction": "B",
+            "predicted_direction": "B",
+            "direction_scored": true,
+            "direction_correct": true,
+            "actual_meaningfulness": null,
+            "predicted_meaningfulness": "meaningful_difference",
+            "size_scored": false,
+            "size_correct": null
+          },
+          {
+            "id": "round37-3",
+            "category": "domestic_foreign_pale_tare",
+            "actual_direction": "A",
+            "predicted_direction": "A",
+            "direction_scored": true,
+            "direction_correct": true,
+            "actual_meaningfulness": "no_meaningful_difference",
+            "predicted_meaningfulness": "meaningful_difference",
+            "size_scored": true,
+            "size_correct": false
+          },
+          {
+            "id": "round37-4",
+            "category": "older_domestic_foreign_tare",
+            "actual_direction": null,
+            "predicted_direction": "A",
+            "direction_scored": false,
+            "direction_correct": null,
+            "actual_meaningfulness": "no_meaningful_difference",
+            "predicted_meaningfulness": "meaningful_difference",
+            "size_scored": true,
+            "size_correct": false
+          },
+          {
+            "id": "round37-5",
+            "category": "premium_provenance",
+            "actual_direction": null,
+            "predicted_direction": "A",
+            "direction_scored": false,
+            "direction_correct": null,
+            "actual_meaningfulness": "no_meaningful_difference",
+            "predicted_meaningfulness": "no_meaningful_difference",
+            "size_scored": true,
+            "size_correct": true
+          },
+          {
+            "id": "round37-6",
+            "category": "older_provenance",
+            "actual_direction": null,
+            "predicted_direction": "A",
+            "direction_scored": false,
+            "direction_correct": null,
+            "actual_meaningfulness": "no_meaningful_difference",
+            "predicted_meaningfulness": "meaningful_difference",
+            "size_scored": true,
+            "size_correct": false
+          },
+          {
+            "id": "round37-7",
+            "category": "domestic_provenance_tare",
+            "actual_direction": null,
+            "predicted_direction": "B",
+            "direction_scored": false,
+            "direction_correct": null,
+            "actual_meaningfulness": "no_meaningful_difference",
+            "predicted_meaningfulness": "no_meaningful_difference",
+            "size_scored": true,
+            "size_correct": true
+          },
+          {
+            "id": "round37-8",
+            "category": "domestic_provenance_tare",
+            "actual_direction": null,
+            "predicted_direction": "A",
+            "direction_scored": false,
+            "direction_correct": null,
+            "actual_meaningfulness": "no_meaningful_difference",
+            "predicted_meaningfulness": "no_meaningful_difference",
+            "size_scored": true,
+            "size_correct": true
+          },
+          {
+            "id": "round37-9",
+            "category": "domestic_foreign_provenance",
+            "actual_direction": "B",
+            "predicted_direction": "B",
+            "direction_scored": true,
+            "direction_correct": true,
+            "actual_meaningfulness": null,
+            "predicted_meaningfulness": "meaningful_difference",
+            "size_scored": false,
+            "size_correct": null
+          },
+          {
+            "id": "round37-10",
+            "category": "older_domestic_tare",
+            "actual_direction": null,
+            "predicted_direction": "A",
+            "direction_scored": false,
+            "direction_correct": null,
+            "actual_meaningfulness": "no_meaningful_difference",
+            "predicted_meaningfulness": "meaningful_difference",
+            "size_scored": true,
+            "size_correct": false
+          },
+          {
+            "id": "round37-11",
+            "category": "wide_control",
+            "actual_direction": "A",
+            "predicted_direction": "A",
+            "direction_scored": true,
+            "direction_correct": true,
+            "actual_meaningfulness": "meaningful_difference",
+            "predicted_meaningfulness": "meaningful_difference",
+            "size_scored": true,
+            "size_correct": true
+          },
+          {
+            "id": "round37-12",
+            "category": "wide_control",
+            "actual_direction": "B",
+            "predicted_direction": "B",
+            "direction_scored": true,
+            "direction_correct": true,
+            "actual_meaningfulness": "meaningful_difference",
+            "predicted_meaningfulness": "meaningful_difference",
+            "size_scored": true,
+            "size_correct": true
+          }
+        ]
+      }
+    },
+    "coverage": {
+      "direction_scored": 6,
+      "size_scored": 10,
+      "direction_missing": [
+        "round37-4",
+        "round37-5",
+        "round37-6",
+        "round37-7",
+        "round37-8",
+        "round37-10"
+      ],
+      "size_missing": [
+        "round37-2",
+        "round37-9"
+      ]
+    },
+    "note": "Recorded before user-authorized re-posing of Q2/Q9; preserve if answers are clarified or corrected."
+  },
+  "post_round_clarifications": [
+    {
+      "id": "round37-clarify-1",
+      "revisits": "round37-2",
+      "a": [
+        "Eastern Europe",
+        "amber",
+        35,
+        120
+      ],
+      "b": [
+        "Eastern Europe",
+        "amber",
+        30,
+        125
+      ],
+      "original_response": {
+        "raw_answer": "B, vintage trumps tare because tare is <10 lbs and shade/provenance equal.",
+        "direction": "B",
+        "meaningfulness": null,
+        "exact_price_instruction": null
+      },
+      "status": "answered",
+      "raw_answer": "B, meaningful difference\u2014the five-year younger vintage outweighs the 5 lb tare difference, with shade and provenance matching.",
+      "direction": "B",
+      "meaningfulness": "meaningful_difference",
+      "exact_price_instruction": false
+    },
+    {
+      "id": "round37-clarify-2",
+      "revisits": "round37-9",
+      "a": [
+        "Eastern Europe",
+        "amber",
+        30,
+        125
+      ],
+      "b": [
+        "central",
+        "amber",
+        30,
+        125
+      ],
+      "original_response": {
+        "raw_answer": "B.  Reason being - Central domestic will be more valuable than Eastern European all other things being equal.",
+        "direction": "B",
+        "meaningfulness": null,
+        "exact_price_instruction": null
+      },
+      "status": "answered",
+      "raw_answer": "B, meaningful difference\u2014Central domestic is more valuable than Eastern Europe when shade, vintage and tare are identical.",
+      "direction": "B",
+      "meaningfulness": "meaningful_difference",
+      "exact_price_instruction": false
+    }
+  ],
+  "clarification_authorization": "I may have misanswered these or provided inadequate feedback, feel free to re-pose.",
+  "scoring_status": "final scores include clarifications; initial incomplete-axis receipt preserved"
+}

@@ -1,0 +1,751 @@
+{
+  "source_hashes": {
+    "evidence-v17.json": "71763a0f60f5725774af1f48e0010ad01ec8d04a57979e43d405f7d99a018697",
+    "benchmark-targets-v17.json": "9d7c4761c9f1a65d158365901cda5337e607bc40b56f82de2fbf4433037ba44a",
+    "precision-shade-validation-v17.json": "b46f662e140267e2b33d2e24493a846f21c2b83ed13670120e34b03a7ca473ce"
+  },
+  "note": "Counts across5 repeated splits, not independent observations. All target labels retained. No model-specific relabeling.",
+  "total_events": {
+    "v16_control": 51,
+    "v17_original": 72,
+    "v17_precision_weighted": 53
+  },
+  "records": [
+    {
+      "id": "r1-5",
+      "a": [
+        "Eastern Europe",
+        "amber",
+        30,
+        115
+      ],
+      "b": [
+        "central",
+        "amber",
+        30,
+        115
+      ],
+      "direct_materiality": false,
+      "target_basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "false_call_repeats": {
+        "v16_control": 1,
+        "v17_original": 4,
+        "v17_precision_weighted": 2
+      },
+      "raw_answer": null
+    },
+    {
+      "id": "r2-4",
+      "a": [
+        "Eastern Europe",
+        "amber",
+        30,
+        110
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        30,
+        125
+      ],
+      "direct_materiality": false,
+      "target_basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "false_call_repeats": {
+        "v16_control": 5,
+        "v17_original": 5,
+        "v17_precision_weighted": 5
+      },
+      "raw_answer": null
+    },
+    {
+      "id": "r5-3",
+      "a": [
+        "southeast",
+        "brown",
+        30,
+        120
+      ],
+      "b": [
+        "northwest",
+        "brown",
+        30,
+        120
+      ],
+      "direct_materiality": false,
+      "target_basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "false_call_repeats": {
+        "v16_control": 0,
+        "v17_original": 1,
+        "v17_precision_weighted": 1
+      },
+      "raw_answer": null
+    },
+    {
+      "id": "revision-7",
+      "a": [
+        "Eastern Europe",
+        "amber",
+        40,
+        115
+      ],
+      "b": [
+        "Eastern Europe",
+        "amber",
+        35,
+        120
+      ],
+      "direct_materiality": false,
+      "target_basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "false_call_repeats": {
+        "v16_control": 0,
+        "v17_original": 1,
+        "v17_precision_weighted": 1
+      },
+      "raw_answer": null
+    },
+    {
+      "id": "revision-8",
+      "a": [
+        "Eastern Europe",
+        "amber",
+        35,
+        115
+      ],
+      "b": [
+        "Eastern Europe",
+        "amber",
+        30,
+        120
+      ],
+      "direct_materiality": false,
+      "target_basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "false_call_repeats": {
+        "v16_control": 3,
+        "v17_original": 4,
+        "v17_precision_weighted": 4
+      },
+      "raw_answer": null
+    },
+    {
+      "id": "revision-14",
+      "a": [
+        "Eastern Europe",
+        "pale/straw",
+        30,
+        125
+      ],
+      "b": [
+        "Eastern Europe",
+        "golden",
+        30,
+        115
+      ],
+      "direct_materiality": false,
+      "target_basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "false_call_repeats": {
+        "v16_control": 1,
+        "v17_original": 1,
+        "v17_precision_weighted": 1
+      },
+      "raw_answer": null
+    },
+    {
+      "id": "round7-16",
+      "a": [
+        "southeast",
+        "golden",
+        20,
+        120
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        20,
+        120
+      ],
+      "direct_materiality": true,
+      "target_basis": "explicit practical similarity",
+      "false_call_repeats": {
+        "v16_control": 0,
+        "v17_original": 3,
+        "v17_precision_weighted": 3
+      },
+      "raw_answer": "3. Give them exactly the same price\u2014at this vintage and tare, I'd need a shade or tare differentiator to make a clear distinction."
+    },
+    {
+      "id": "round9-12",
+      "a": [
+        "Western Europe",
+        "pale/straw",
+        30,
+        110
+      ],
+      "b": [
+        "central",
+        "pale/straw",
+        30,
+        115
+      ],
+      "direct_materiality": false,
+      "target_basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "false_call_repeats": {
+        "v16_control": 1,
+        "v17_original": 4,
+        "v17_precision_weighted": 4
+      },
+      "raw_answer": "Tie"
+    },
+    {
+      "id": "round9-18",
+      "a": [
+        "southeast",
+        "pale/straw",
+        25,
+        130
+      ],
+      "b": [
+        "southeast",
+        "golden",
+        25,
+        120
+      ],
+      "direct_materiality": false,
+      "target_basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "false_call_repeats": {
+        "v16_control": 1,
+        "v17_original": 1,
+        "v17_precision_weighted": 1
+      },
+      "raw_answer": "tie"
+    },
+    {
+      "id": "round10-5",
+      "a": [
+        "northeast",
+        "amber",
+        35,
+        115
+      ],
+      "b": [
+        "southwest",
+        "amber",
+        35,
+        120
+      ],
+      "direct_materiality": false,
+      "target_basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "false_call_repeats": {
+        "v16_control": 1,
+        "v17_original": 2,
+        "v17_precision_weighted": 0
+      },
+      "raw_answer": "Tie."
+    },
+    {
+      "id": "round10-9",
+      "a": [
+        "southeast",
+        "golden",
+        35,
+        125
+      ],
+      "b": [
+        "northeast",
+        "golden",
+        35,
+        120
+      ],
+      "direct_materiality": false,
+      "target_basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "false_call_repeats": {
+        "v16_control": 0,
+        "v17_original": 1,
+        "v17_precision_weighted": 0
+      },
+      "raw_answer": "tie."
+    },
+    {
+      "id": "round10-11",
+      "a": [
+        "South/Eastern Asia",
+        "brown",
+        20,
+        125
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "brown",
+        20,
+        120
+      ],
+      "direct_materiality": false,
+      "target_basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "false_call_repeats": {
+        "v16_control": 2,
+        "v17_original": 2,
+        "v17_precision_weighted": 1
+      },
+      "raw_answer": "Tie"
+    },
+    {
+      "id": "round10-19",
+      "a": [
+        "South/Eastern Asia",
+        "golden",
+        25,
+        125
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "copper",
+        30,
+        115
+      ],
+      "direct_materiality": false,
+      "target_basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "false_call_repeats": {
+        "v16_control": 0,
+        "v17_original": 1,
+        "v17_precision_weighted": 1
+      },
+      "raw_answer": "tie"
+    },
+    {
+      "id": "round13-9",
+      "a": [
+        "northwest",
+        "amber",
+        40,
+        120
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        40,
+        125
+      ],
+      "direct_materiality": false,
+      "target_basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "false_call_repeats": {
+        "v16_control": 0,
+        "v17_original": 2,
+        "v17_precision_weighted": 1
+      },
+      "raw_answer": "3. Give them exactly the same price."
+    },
+    {
+      "id": "round15-4",
+      "a": [
+        "southeast",
+        "brown",
+        40,
+        115
+      ],
+      "b": [
+        "central",
+        "brown",
+        40,
+        120
+      ],
+      "direct_materiality": false,
+      "target_basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "false_call_repeats": {
+        "v16_control": 5,
+        "v17_original": 3,
+        "v17_precision_weighted": 2
+      },
+      "raw_answer": "3"
+    },
+    {
+      "id": "round15-14",
+      "a": [
+        "southwest",
+        "pale/straw",
+        30,
+        110
+      ],
+      "b": [
+        "southeast",
+        "pale/straw",
+        30,
+        115
+      ],
+      "direct_materiality": false,
+      "target_basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "false_call_repeats": {
+        "v16_control": 3,
+        "v17_original": 3,
+        "v17_precision_weighted": 2
+      },
+      "raw_answer": "3"
+    },
+    {
+      "id": "round15-3",
+      "a": [
+        "Eastern Europe",
+        "amber",
+        25,
+        120
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        25,
+        130
+      ],
+      "direct_materiality": false,
+      "target_basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "false_call_repeats": {
+        "v16_control": 1,
+        "v17_original": 3,
+        "v17_precision_weighted": 2
+      },
+      "raw_answer": "3"
+    },
+    {
+      "id": "round7-2",
+      "a": [
+        "central",
+        "brown",
+        30,
+        120
+      ],
+      "b": [
+        "Eastern Europe",
+        "brown",
+        30,
+        120
+      ],
+      "direct_materiality": false,
+      "target_basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "false_call_repeats": {
+        "v16_control": 3,
+        "v17_original": 4,
+        "v17_precision_weighted": 3
+      },
+      "raw_answer": "3. Give them exactly the same price."
+    },
+    {
+      "id": "round9-19",
+      "a": [
+        "Western Europe",
+        "amber",
+        35,
+        120
+      ],
+      "b": [
+        "northwest",
+        "amber",
+        35,
+        115
+      ],
+      "direct_materiality": false,
+      "target_basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "false_call_repeats": {
+        "v16_control": 0,
+        "v17_original": 2,
+        "v17_precision_weighted": 1
+      },
+      "raw_answer": "3. Give them exactly the same price."
+    },
+    {
+      "id": "round17-3",
+      "a": [
+        "Western Europe",
+        "amber",
+        20,
+        125
+      ],
+      "b": [
+        "Eastern Europe",
+        "amber",
+        20,
+        115
+      ],
+      "direct_materiality": false,
+      "target_basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "false_call_repeats": {
+        "v16_control": 1,
+        "v17_original": 3,
+        "v17_precision_weighted": 2
+      },
+      "raw_answer": "3. Give them exactly the same price."
+    },
+    {
+      "id": "round17-13",
+      "a": [
+        "northeast",
+        "brown",
+        30,
+        125
+      ],
+      "b": [
+        "southwest",
+        "brown",
+        30,
+        120
+      ],
+      "direct_materiality": false,
+      "target_basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "false_call_repeats": {
+        "v16_control": 3,
+        "v17_original": 3,
+        "v17_precision_weighted": 3
+      },
+      "raw_answer": "3"
+    },
+    {
+      "id": "round19-14",
+      "a": [
+        "southwest",
+        "pale/straw",
+        20,
+        120
+      ],
+      "b": [
+        "southeast",
+        "pale/straw",
+        20,
+        125
+      ],
+      "direct_materiality": false,
+      "target_basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "false_call_repeats": {
+        "v16_control": 3,
+        "v17_original": 3,
+        "v17_precision_weighted": 2
+      },
+      "raw_answer": "3. Give them exactly the same price."
+    },
+    {
+      "id": "round19-15",
+      "a": [
+        "Western Europe",
+        "golden",
+        40,
+        120
+      ],
+      "b": [
+        "central",
+        "golden",
+        40,
+        115
+      ],
+      "direct_materiality": false,
+      "target_basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "false_call_repeats": {
+        "v16_control": 1,
+        "v17_original": 4,
+        "v17_precision_weighted": 4
+      },
+      "raw_answer": "3"
+    },
+    {
+      "id": "round19-20",
+      "a": [
+        "West Central Asia",
+        "amber",
+        20,
+        125
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "amber",
+        20,
+        120
+      ],
+      "direct_materiality": false,
+      "target_basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "false_call_repeats": {
+        "v16_control": 3,
+        "v17_original": 0,
+        "v17_precision_weighted": 0
+      },
+      "raw_answer": "3"
+    },
+    {
+      "id": "round21-3",
+      "a": [
+        "southeast",
+        "copper",
+        30,
+        125
+      ],
+      "b": [
+        "southwest",
+        "copper",
+        30,
+        120
+      ],
+      "direct_materiality": false,
+      "target_basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "false_call_repeats": {
+        "v16_control": 3,
+        "v17_original": 3,
+        "v17_precision_weighted": 3
+      },
+      "raw_answer": "3. Give them exactly the same price."
+    },
+    {
+      "id": "round21-11",
+      "a": [
+        "southwest",
+        "amber",
+        30,
+        125
+      ],
+      "b": [
+        "northeast",
+        "amber",
+        30,
+        120
+      ],
+      "direct_materiality": false,
+      "target_basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "false_call_repeats": {
+        "v16_control": 1,
+        "v17_original": 2,
+        "v17_precision_weighted": 0
+      },
+      "raw_answer": "3. Give them exactly the same price."
+    },
+    {
+      "id": "round23-3",
+      "a": [
+        "Western Europe",
+        "amber",
+        30,
+        125
+      ],
+      "b": [
+        "northwest",
+        "amber",
+        30,
+        120
+      ],
+      "direct_materiality": false,
+      "target_basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "false_call_repeats": {
+        "v16_control": 0,
+        "v17_original": 2,
+        "v17_precision_weighted": 1
+      },
+      "raw_answer": "3. Give them exactly the same price."
+    },
+    {
+      "id": "round26-4",
+      "a": [
+        "central",
+        "brown",
+        30,
+        120
+      ],
+      "b": [
+        "southwest",
+        "brown",
+        30,
+        120
+      ],
+      "direct_materiality": false,
+      "target_basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "false_call_repeats": {
+        "v16_control": 0,
+        "v17_original": 1,
+        "v17_precision_weighted": 0
+      },
+      "raw_answer": "3. Give them exactly the same price\u2014with brown shade and vintage at 30 years, the provenance difference no longer creates a premium when tare matches."
+    },
+    {
+      "id": "round27-9",
+      "a": [
+        "central",
+        "brown",
+        35,
+        115
+      ],
+      "b": [
+        "southwest",
+        "brown",
+        35,
+        115
+      ],
+      "direct_materiality": false,
+      "target_basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "false_call_repeats": {
+        "v16_control": 0,
+        "v17_original": 1,
+        "v17_precision_weighted": 0
+      },
+      "raw_answer": "3. Give them exactly the same price\u2014with brown shade and vintage at 35 years, the provenance difference no longer creates a premium when tare matches."
+    },
+    {
+      "id": "round35-8",
+      "a": [
+        "southwest",
+        "amber",
+        30,
+        115
+      ],
+      "b": [
+        "northwest",
+        "golden",
+        25,
+        125
+      ],
+      "direct_materiality": true,
+      "target_basis": "direct meaningfulness response in frozen Round35; not an adjective-derived proxy",
+      "false_call_repeats": {
+        "v16_control": 0,
+        "v17_original": 1,
+        "v17_precision_weighted": 1
+      },
+      "raw_answer": "very very close.  #3"
+    },
+    {
+      "id": "round36-9",
+      "a": [
+        "Eastern Europe",
+        "pale/straw",
+        30,
+        115
+      ],
+      "b": [
+        "Eastern Europe",
+        "golden",
+        25,
+        115
+      ],
+      "direct_materiality": true,
+      "target_basis": "Direct separate direction and meaningfulness answers in frozen Round36; no size inferred from bare A/B.",
+      "false_call_repeats": {
+        "v16_control": 5,
+        "v17_original": 1,
+        "v17_precision_weighted": 1
+      },
+      "raw_answer": "A, practically similar\u2014the pale/straw shade gives A a slight advantage, but B\u2019s five-year younger vintage keeps it very close."
+    },
+    {
+      "id": "round36-12",
+      "a": [
+        "Western Europe",
+        "golden",
+        25,
+        115
+      ],
+      "b": [
+        "Western Europe",
+        "pale/straw",
+        30,
+        115
+      ],
+      "direct_materiality": true,
+      "target_basis": "Direct separate direction and meaningfulness answers in frozen Round36; no size inferred from bare A/B.",
+      "false_call_repeats": {
+        "v16_control": 4,
+        "v17_original": 1,
+        "v17_precision_weighted": 1
+      },
+      "raw_answer": "B, practically similar\u2014the pale/straw shade gives B a slight advantage, but A\u2019s five-year younger vintage keeps it very close."
+    }
+  ]
+}

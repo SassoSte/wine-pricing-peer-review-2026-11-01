@@ -1,0 +1,22 @@
+{
+  "round": 43,
+  "status": "complete",
+  "conclusion": "Both revisits explicitly prefer golden25 over pale30 meaningfully at matched115lb, for EasternEurope and WesternEurope. No ambiguity in either supplied axis.",
+  "pending_reconciliation": [
+    {
+      "source_id": "round36-9",
+      "clarification_id": "round43-1",
+      "direction": "B",
+      "meaningfulness": "meaningful_difference"
+    },
+    {
+      "source_id": "round36-12",
+      "clarification_id": "round43-2",
+      "direction": "A",
+      "meaningfulness": "meaningful_difference"
+    }
+  ],
+  "models_unchanged": true,
+  "evidence_unchanged": "evidence-v23.json",
+  "qualification": "These repeated pairs clarify evidence; not fresh-test accuracy. Preserve original history and supersede active labels in next evidence version, not duplicate-weight pairs."
+}

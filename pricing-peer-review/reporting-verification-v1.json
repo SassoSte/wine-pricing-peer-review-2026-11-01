@@ -1,0 +1,890 @@
+{
+  "peer_source_hash_checks": {
+    "peer-review-e1-step1-v35.json": {
+      "evidence-v35.json": true,
+      "benchmark-targets-v35.json": true,
+      "model-config-v28.json": true,
+      "predictor_v27.py": true,
+      "premium-winning-gap-validation-v35.json": true,
+      "tare-refit-validation-v28.json": true,
+      "benchmark-targets-v28.json": true
+    },
+    "peer-review-e2-v35.json": {
+      "global_positive_v33.py": true,
+      "compare_models.py": true,
+      "benchmark-targets-v35.json": true,
+      "evidence-v35.json": true,
+      "model-config-v28.json": true
+    },
+    "peer-review-e3-v35.json": {
+      "global_positive_v33.py": true,
+      "compare_models.py": true,
+      "benchmark-targets-v35.json": true,
+      "evidence-v35.json": true
+    }
+  },
+  "peer_verification_scope": "E1 calibration independently reproduced; E2/E3 receipt source identities and summary arithmetic inspected, refits not rerun.",
+  "band_selection_folds": [
+    {
+      "seed": 11,
+      "fold": 0,
+      "band": [
+        1.0,
+        1.5
+      ],
+      "metrics": {
+        "n": 87,
+        "boundary_n": 9,
+        "coverage": 0.896551724137931,
+        "retained_correct": 72,
+        "retained_n": 78,
+        "retained_accuracy": 0.9230769230769231,
+        "false_premiums": 0,
+        "missed_premiums": 6,
+        "true_premiums_withheld": 8,
+        "nonpremiums_withheld": 1
+      }
+    },
+    {
+      "seed": 11,
+      "fold": 1,
+      "band": [
+        1.0,
+        1.5
+      ],
+      "metrics": {
+        "n": 72,
+        "boundary_n": 7,
+        "coverage": 0.9027777777777778,
+        "retained_correct": 61,
+        "retained_n": 65,
+        "retained_accuracy": 0.9384615384615385,
+        "false_premiums": 0,
+        "missed_premiums": 4,
+        "true_premiums_withheld": 7,
+        "nonpremiums_withheld": 0
+      }
+    },
+    {
+      "seed": 11,
+      "fold": 2,
+      "band": [
+        1.0,
+        1.5
+      ],
+      "metrics": {
+        "n": 95,
+        "boundary_n": 8,
+        "coverage": 0.9157894736842105,
+        "retained_correct": 87,
+        "retained_n": 87,
+        "retained_accuracy": 1.0,
+        "false_premiums": 0,
+        "missed_premiums": 0,
+        "true_premiums_withheld": 6,
+        "nonpremiums_withheld": 2
+      }
+    },
+    {
+      "seed": 11,
+      "fold": 3,
+      "band": [
+        1.0,
+        1.5
+      ],
+      "metrics": {
+        "n": 70,
+        "boundary_n": 13,
+        "coverage": 0.8142857142857143,
+        "retained_correct": 54,
+        "retained_n": 57,
+        "retained_accuracy": 0.9473684210526315,
+        "false_premiums": 0,
+        "missed_premiums": 3,
+        "true_premiums_withheld": 6,
+        "nonpremiums_withheld": 7
+      }
+    },
+    {
+      "seed": 11,
+      "fold": 4,
+      "band": [
+        1.0,
+        1.5
+      ],
+      "metrics": {
+        "n": 89,
+        "boundary_n": 3,
+        "coverage": 0.9662921348314607,
+        "retained_correct": 84,
+        "retained_n": 86,
+        "retained_accuracy": 0.9767441860465116,
+        "false_premiums": 0,
+        "missed_premiums": 2,
+        "true_premiums_withheld": 3,
+        "nonpremiums_withheld": 0
+      }
+    },
+    {
+      "seed": 29,
+      "fold": 0,
+      "band": [
+        1.0,
+        1.5
+      ],
+      "metrics": {
+        "n": 89,
+        "boundary_n": 10,
+        "coverage": 0.8876404494382022,
+        "retained_correct": 75,
+        "retained_n": 79,
+        "retained_accuracy": 0.9493670886075949,
+        "false_premiums": 0,
+        "missed_premiums": 4,
+        "true_premiums_withheld": 8,
+        "nonpremiums_withheld": 2
+      }
+    },
+    {
+      "seed": 29,
+      "fold": 1,
+      "band": [
+        1.0,
+        1.5
+      ],
+      "metrics": {
+        "n": 91,
+        "boundary_n": 4,
+        "coverage": 0.9560439560439561,
+        "retained_correct": 83,
+        "retained_n": 87,
+        "retained_accuracy": 0.9540229885057471,
+        "false_premiums": 0,
+        "missed_premiums": 4,
+        "true_premiums_withheld": 3,
+        "nonpremiums_withheld": 1
+      }
+    },
+    {
+      "seed": 29,
+      "fold": 2,
+      "band": [
+        1.0,
+        1.5
+      ],
+      "metrics": {
+        "n": 79,
+        "boundary_n": 7,
+        "coverage": 0.9113924050632911,
+        "retained_correct": 70,
+        "retained_n": 72,
+        "retained_accuracy": 0.9722222222222222,
+        "false_premiums": 0,
+        "missed_premiums": 2,
+        "true_premiums_withheld": 6,
+        "nonpremiums_withheld": 1
+      }
+    },
+    {
+      "seed": 29,
+      "fold": 3,
+      "band": [
+        1.0,
+        1.5
+      ],
+      "metrics": {
+        "n": 77,
+        "boundary_n": 13,
+        "coverage": 0.8311688311688312,
+        "retained_correct": 60,
+        "retained_n": 64,
+        "retained_accuracy": 0.9375,
+        "false_premiums": 0,
+        "missed_premiums": 4,
+        "true_premiums_withheld": 8,
+        "nonpremiums_withheld": 5
+      }
+    },
+    {
+      "seed": 29,
+      "fold": 4,
+      "band": [
+        1.0,
+        1.5
+      ],
+      "metrics": {
+        "n": 77,
+        "boundary_n": 6,
+        "coverage": 0.922077922077922,
+        "retained_correct": 70,
+        "retained_n": 71,
+        "retained_accuracy": 0.9859154929577465,
+        "false_premiums": 0,
+        "missed_premiums": 1,
+        "true_premiums_withheld": 5,
+        "nonpremiums_withheld": 1
+      }
+    },
+    {
+      "seed": 47,
+      "fold": 0,
+      "band": [
+        1.0,
+        1.5
+      ],
+      "metrics": {
+        "n": 79,
+        "boundary_n": 5,
+        "coverage": 0.9367088607594937,
+        "retained_correct": 71,
+        "retained_n": 74,
+        "retained_accuracy": 0.9594594594594594,
+        "false_premiums": 0,
+        "missed_premiums": 3,
+        "true_premiums_withheld": 4,
+        "nonpremiums_withheld": 1
+      }
+    },
+    {
+      "seed": 47,
+      "fold": 1,
+      "band": [
+        1.0,
+        1.5
+      ],
+      "metrics": {
+        "n": 84,
+        "boundary_n": 7,
+        "coverage": 0.9166666666666666,
+        "retained_correct": 72,
+        "retained_n": 77,
+        "retained_accuracy": 0.935064935064935,
+        "false_premiums": 0,
+        "missed_premiums": 5,
+        "true_premiums_withheld": 7,
+        "nonpremiums_withheld": 0
+      }
+    },
+    {
+      "seed": 47,
+      "fold": 2,
+      "band": [
+        1.0,
+        1.5
+      ],
+      "metrics": {
+        "n": 89,
+        "boundary_n": 12,
+        "coverage": 0.8651685393258427,
+        "retained_correct": 75,
+        "retained_n": 77,
+        "retained_accuracy": 0.974025974025974,
+        "false_premiums": 0,
+        "missed_premiums": 2,
+        "true_premiums_withheld": 10,
+        "nonpremiums_withheld": 2
+      }
+    },
+    {
+      "seed": 47,
+      "fold": 3,
+      "band": [
+        1.0,
+        1.5
+      ],
+      "metrics": {
+        "n": 82,
+        "boundary_n": 10,
+        "coverage": 0.8780487804878049,
+        "retained_correct": 69,
+        "retained_n": 72,
+        "retained_accuracy": 0.9583333333333334,
+        "false_premiums": 0,
+        "missed_premiums": 3,
+        "true_premiums_withheld": 4,
+        "nonpremiums_withheld": 6
+      }
+    },
+    {
+      "seed": 47,
+      "fold": 4,
+      "band": [
+        1.0,
+        1.5
+      ],
+      "metrics": {
+        "n": 79,
+        "boundary_n": 6,
+        "coverage": 0.9240506329113924,
+        "retained_correct": 71,
+        "retained_n": 73,
+        "retained_accuracy": 0.9726027397260274,
+        "false_premiums": 0,
+        "missed_premiums": 2,
+        "true_premiums_withheld": 5,
+        "nonpremiums_withheld": 1
+      }
+    },
+    {
+      "seed": 71,
+      "fold": 0,
+      "band": [
+        1.0,
+        1.5
+      ],
+      "metrics": {
+        "n": 79,
+        "boundary_n": 4,
+        "coverage": 0.9493670886075949,
+        "retained_correct": 72,
+        "retained_n": 75,
+        "retained_accuracy": 0.96,
+        "false_premiums": 0,
+        "missed_premiums": 3,
+        "true_premiums_withheld": 3,
+        "nonpremiums_withheld": 1
+      }
+    },
+    {
+      "seed": 71,
+      "fold": 1,
+      "band": [
+        1.0,
+        1.5
+      ],
+      "metrics": {
+        "n": 87,
+        "boundary_n": 9,
+        "coverage": 0.896551724137931,
+        "retained_correct": 74,
+        "retained_n": 78,
+        "retained_accuracy": 0.9487179487179487,
+        "false_premiums": 0,
+        "missed_premiums": 4,
+        "true_premiums_withheld": 8,
+        "nonpremiums_withheld": 1
+      }
+    },
+    {
+      "seed": 71,
+      "fold": 2,
+      "band": [
+        1.0,
+        1.5
+      ],
+      "metrics": {
+        "n": 99,
+        "boundary_n": 11,
+        "coverage": 0.8888888888888888,
+        "retained_correct": 84,
+        "retained_n": 88,
+        "retained_accuracy": 0.9545454545454546,
+        "false_premiums": 0,
+        "missed_premiums": 4,
+        "true_premiums_withheld": 10,
+        "nonpremiums_withheld": 1
+      }
+    },
+    {
+      "seed": 71,
+      "fold": 3,
+      "band": [
+        1.0,
+        1.5
+      ],
+      "metrics": {
+        "n": 68,
+        "boundary_n": 13,
+        "coverage": 0.8088235294117647,
+        "retained_correct": 52,
+        "retained_n": 55,
+        "retained_accuracy": 0.9454545454545454,
+        "false_premiums": 0,
+        "missed_premiums": 3,
+        "true_premiums_withheld": 7,
+        "nonpremiums_withheld": 6
+      }
+    },
+    {
+      "seed": 71,
+      "fold": 4,
+      "band": [
+        1.0,
+        1.5
+      ],
+      "metrics": {
+        "n": 80,
+        "boundary_n": 3,
+        "coverage": 0.9625,
+        "retained_correct": 76,
+        "retained_n": 77,
+        "retained_accuracy": 0.987012987012987,
+        "false_premiums": 0,
+        "missed_premiums": 1,
+        "true_premiums_withheld": 2,
+        "nonpremiums_withheld": 1
+      }
+    },
+    {
+      "seed": 103,
+      "fold": 0,
+      "band": [
+        1.0,
+        1.5
+      ],
+      "metrics": {
+        "n": 82,
+        "boundary_n": 5,
+        "coverage": 0.9390243902439024,
+        "retained_correct": 74,
+        "retained_n": 77,
+        "retained_accuracy": 0.961038961038961,
+        "false_premiums": 0,
+        "missed_premiums": 3,
+        "true_premiums_withheld": 4,
+        "nonpremiums_withheld": 1
+      }
+    },
+    {
+      "seed": 103,
+      "fold": 1,
+      "band": [
+        1.0,
+        1.5
+      ],
+      "metrics": {
+        "n": 83,
+        "boundary_n": 8,
+        "coverage": 0.9036144578313253,
+        "retained_correct": 70,
+        "retained_n": 75,
+        "retained_accuracy": 0.9333333333333333,
+        "false_premiums": 0,
+        "missed_premiums": 5,
+        "true_premiums_withheld": 7,
+        "nonpremiums_withheld": 1
+      }
+    },
+    {
+      "seed": 103,
+      "fold": 2,
+      "band": [
+        1.0,
+        1.5
+      ],
+      "metrics": {
+        "n": 90,
+        "boundary_n": 7,
+        "coverage": 0.9222222222222223,
+        "retained_correct": 81,
+        "retained_n": 83,
+        "retained_accuracy": 0.9759036144578314,
+        "false_premiums": 0,
+        "missed_premiums": 2,
+        "true_premiums_withheld": 5,
+        "nonpremiums_withheld": 2
+      }
+    },
+    {
+      "seed": 103,
+      "fold": 3,
+      "band": [
+        1.0,
+        1.5
+      ],
+      "metrics": {
+        "n": 81,
+        "boundary_n": 11,
+        "coverage": 0.8641975308641975,
+        "retained_correct": 68,
+        "retained_n": 70,
+        "retained_accuracy": 0.9714285714285714,
+        "false_premiums": 0,
+        "missed_premiums": 2,
+        "true_premiums_withheld": 6,
+        "nonpremiums_withheld": 5
+      }
+    },
+    {
+      "seed": 103,
+      "fold": 4,
+      "band": [
+        1.0,
+        1.5
+      ],
+      "metrics": {
+        "n": 77,
+        "boundary_n": 9,
+        "coverage": 0.8831168831168831,
+        "retained_correct": 65,
+        "retained_n": 68,
+        "retained_accuracy": 0.9558823529411765,
+        "false_premiums": 0,
+        "missed_premiums": 3,
+        "true_premiums_withheld": 8,
+        "nonpremiums_withheld": 1
+      }
+    }
+  ],
+  "all": {
+    "n": 413,
+    "boundary_n": 40,
+    "coverage": 0.9031476997578692,
+    "retained_correct": 358,
+    "retained_n": 373,
+    "retained_accuracy": 0.9597855227882037,
+    "false_premiums": 0,
+    "missed_premiums": 15,
+    "true_premiums_withheld": 30,
+    "nonpremiums_withheld": 10
+  },
+  "direct": {
+    "n": 245,
+    "boundary_n": 31,
+    "coverage": 0.8734693877551021,
+    "retained_correct": 201,
+    "retained_n": 214,
+    "retained_accuracy": 0.9392523364485982,
+    "false_premiums": 0,
+    "missed_premiums": 13,
+    "true_premiums_withheld": 25,
+    "nonpremiums_withheld": 6
+  },
+  "abstained_ids": [
+    "r1-2",
+    "r1-3",
+    "r1-4",
+    "r2-1",
+    "r2-4",
+    "r3-5",
+    "r4-3",
+    "r5-2",
+    "r5-10",
+    "revision-4",
+    "revision-6",
+    "revision-8",
+    "revision-9",
+    "revision-14",
+    "revision-16",
+    "revision-19",
+    "round6-6",
+    "round6-7",
+    "round6-8",
+    "round6-9",
+    "round6-10",
+    "round6-14",
+    "round6-15",
+    "round6-16",
+    "round7-1",
+    "round8-17",
+    "round8-20",
+    "round9-2",
+    "round9-4",
+    "round9-6",
+    "round9-8",
+    "round9-9",
+    "round9-13",
+    "round9-18",
+    "round10-8",
+    "round11-3",
+    "round11-6",
+    "round11-7",
+    "round11-8",
+    "round11-11",
+    "round11-12",
+    "round11-14",
+    "round11-20",
+    "round13-7",
+    "round13-12",
+    "round14-8",
+    "round16-4",
+    "round16-8",
+    "round15-9",
+    "round17-4",
+    "round17-16",
+    "round17-18",
+    "round17-19",
+    "round18-2",
+    "round18-6",
+    "round18-9",
+    "round19-6",
+    "round19-7",
+    "round19-16",
+    "round20-3",
+    "round20-6",
+    "round20-9",
+    "round21-2",
+    "round21-5",
+    "round21-10",
+    "round21-13",
+    "round21-14",
+    "round21-18",
+    "round22-2",
+    "round22-6",
+    "round22-9",
+    "round22-10",
+    "round23-2",
+    "round23-12",
+    "round23-17",
+    "round24-1",
+    "round24-3",
+    "round24-4",
+    "round24-5",
+    "round24-6",
+    "round23-18",
+    "round25-5",
+    "round25-7",
+    "round25-8",
+    "round25-20",
+    "round26-3",
+    "round27-12",
+    "round27-17",
+    "round28-2",
+    "round30-2",
+    "round27-15",
+    "round37-1",
+    "round37-2",
+    "round38-11",
+    "round40-10",
+    "round45-5",
+    "round45-9",
+    "round45-20",
+    "round46-1",
+    "round46-3",
+    "round47-2",
+    "round47-5",
+    "round47-7",
+    "round47-8",
+    "round47-11",
+    "round49-12",
+    "round50-6",
+    "round51-5",
+    "round51-10",
+    "round51-11",
+    "round51-12",
+    "round51-20",
+    "round54-5",
+    "round54-13",
+    "round54-15",
+    "voice-provenance-isolation-110-amber",
+    "combined-pilot-v34-4",
+    "combined-pilot-v34-6"
+  ],
+  "regional_label_review": [
+    {
+      "id": "r2-2",
+      "a": [
+        "northwest",
+        "amber",
+        30,
+        130
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        30,
+        130
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null,
+      "exact_price_equality": null,
+      "value_relation": "B_higher"
+    },
+    {
+      "id": "r3-2",
+      "a": [
+        "northwest",
+        "pale/straw",
+        30,
+        130
+      ],
+      "b": [
+        "Western Europe",
+        "pale/straw",
+        30,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null,
+      "exact_price_equality": null,
+      "value_relation": "A_higher"
+    },
+    {
+      "id": "r4-7",
+      "a": [
+        "northwest",
+        "golden",
+        30,
+        130
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        30,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null,
+      "exact_price_equality": null,
+      "value_relation": "A_higher"
+    },
+    {
+      "id": "r4-8",
+      "a": [
+        "northwest",
+        "copper",
+        30,
+        130
+      ],
+      "b": [
+        "Western Europe",
+        "copper",
+        30,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null,
+      "exact_price_equality": null,
+      "value_relation": "A_higher"
+    },
+    {
+      "id": "r5-5",
+      "a": [
+        "northwest",
+        "amber",
+        25,
+        130
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        25,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null,
+      "exact_price_equality": null,
+      "value_relation": "A_higher"
+    },
+    {
+      "id": "r5-6",
+      "a": [
+        "northwest",
+        "amber",
+        35,
+        130
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        35,
+        130
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "leaning",
+      "exact_price_equality": null,
+      "value_relation": "B_higher"
+    },
+    {
+      "id": "round36-1",
+      "a": [
+        "northwest",
+        "amber",
+        30,
+        115
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        30,
+        115
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "basis": "Direct separate direction and meaningfulness answers in frozen Round36; no size inferred from bare A/B.",
+      "strength": "slightly",
+      "exact_price_equality": null,
+      "value_relation": "B_higher"
+    },
+    {
+      "id": "round36-2",
+      "a": [
+        "Western Europe",
+        "copper",
+        30,
+        115
+      ],
+      "b": [
+        "northwest",
+        "copper",
+        30,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "basis": "Direct separate direction and meaningfulness answers in frozen Round36; no size inferred from bare A/B.",
+      "strength": "slightly",
+      "exact_price_equality": null,
+      "value_relation": "A_higher"
+    },
+    {
+      "id": "round36-3",
+      "a": [
+        "northwest",
+        "amber",
+        25,
+        115
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        25,
+        115
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "basis": "Direct separate direction and meaningfulness answers in frozen Round36; no size inferred from bare A/B.",
+      "strength": "slightly",
+      "exact_price_equality": null,
+      "value_relation": "B_higher"
+    },
+    {
+      "id": "round36-4",
+      "a": [
+        "Western Europe",
+        "amber",
+        35,
+        115
+      ],
+      "b": [
+        "northwest",
+        "amber",
+        35,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "basis": "Direct separate direction and meaningfulness answers in frozen Round36; no size inferred from bare A/B.",
+      "strength": "slightly",
+      "exact_price_equality": null,
+      "value_relation": "A_higher"
+    }
+  ],
+  "qualification": "Conditional calibration around frozen historically trainedV28. Boundary doesnotestablish winner uncertainty or exact equality. No labelchanges. Candidate reporting remains uncalibrated.",
+  "tests": "5 tests passed: bothbackends655pair parity andswap checks; bandedges; invalidinputs; intrinsicspan3ties/474strict labels and1250offerings group spans; incompatibleweights rejection",
+  "peer_e2_e3_summary_arithmetic_verified": true,
+  "prospective_slice": "prospective-reporting-v1-sealed.json;16unasked pairs; not used to calibrate",
+  "exact_span_status": "Implemented/tested only for compatible intrinsic linear model. Not applied toV28 orlarge-tare output. Span membership depends on chosen representation; cannot erase strict labels claim requires explicit audit."
+}

@@ -1,0 +1,3681 @@
+{
+  "round": 29,
+  "status": "four isolation questions completed; original full comparison remains unresolved",
+  "protocol": "Isolate Round27 Q11 via shade only at30 years, then vintage30 versus20 in brown, then revisit original pair. Same West Central Asia provenance and120 lb throughout. Context-specific qualitative probes do not establish universal weights or additive intensity arithmetic. Original Round27 receipt unchanged. Only direct full-pair answer may resolve original. Repeated pairs flagged for deduplication. Predictions hidden during elicitation; no fitting.",
+  "file_sha256": {
+    "pricing.py": "70cf711fdd3322750ffd5cdab45e156e3bc47a136ddb2155bac04727e7900906",
+    "compare_models.py": "da2067d3d2ef99849ce2e30be16208bff0145bc6b036111535542c2daf00fa5f",
+    "compare_tare_models.py": "6ee6623380260502ea3b7b17621261ce413ccea3f7fdf2af835bb50bf4c716d2",
+    "provenance_tare_model.py": "c5aba387479f9581a4553fb10c6e660d000de6ea7783f351357717c9b94988b4",
+    "domestic_hierarchy_model.py": "e4c03829d90fa945d319991d5fe84bc6f28106043c760951675c33ed6c34e3df",
+    "weighted_domestic_model.py": "dcce51741c4bf14b85086f3322c210abb4f741c694ea1b679481d4fddf373984",
+    "weighted-hierarchy-comparison-v9.json": "3923ecc24fd361e2b311da327fb55863f3e9599e4ec8b762496770737df99b3d",
+    "weighted-domestic-comparison.json": "7fd3d6bfdd7fdd59b1a1701255bfdf3e24c20abd2899bc46eb6d6c32bc413d67",
+    "evidence-v9.json": "8e556698547b69d0756e2bf9df9f2d2830460632cc8fc9d2d9ea7b160e835956",
+    "evidence-v8.json": "595f0c2f12de8f6a6df300dc328693d0ff6307724f7e1d71382b66bcedb43a23",
+    "round27-fixed.json": "726feaa52066f79e27be7e2b78f5582d3bcc55dee462bceddf9d2828551f5644"
+  },
+  "model_snapshots": {
+    "weighted_v9": {
+      "prior_strength": 1.0,
+      "threshold": 0.2,
+      "offering_snapshot": {
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.2,
+        "local_contexts": [
+          [
+            "Eastern Europe",
+            "amber",
+            20
+          ],
+          [
+            "Eastern Europe",
+            "brown",
+            40
+          ],
+          [
+            "Eastern Europe",
+            "pale/straw",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "amber",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "brown",
+            30
+          ],
+          [
+            "West Asia / Middle East",
+            "amber",
+            20
+          ],
+          [
+            "West Asia / Middle East",
+            "golden",
+            35
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            25
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            35
+          ],
+          [
+            "West Central Asia",
+            "copper",
+            35
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            20
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            25
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            35
+          ],
+          [
+            "Western Europe",
+            "copper",
+            35
+          ],
+          [
+            "Western Europe",
+            "golden",
+            25
+          ],
+          [
+            "Western Europe",
+            "golden",
+            40
+          ],
+          [
+            "Western Europe",
+            "pale/straw",
+            30
+          ],
+          [
+            "central",
+            "brown",
+            40
+          ],
+          [
+            "central",
+            "copper",
+            25
+          ],
+          [
+            "central",
+            "copper",
+            30
+          ],
+          [
+            "central",
+            "golden",
+            40
+          ],
+          [
+            "central",
+            "pale/straw",
+            20
+          ],
+          [
+            "northeast",
+            "amber",
+            25
+          ],
+          [
+            "northeast",
+            "amber",
+            30
+          ],
+          [
+            "northeast",
+            "brown",
+            40
+          ],
+          [
+            "northeast",
+            "copper",
+            35
+          ],
+          [
+            "northeast",
+            "pale/straw",
+            30
+          ],
+          [
+            "northwest",
+            "amber",
+            30
+          ],
+          [
+            "northwest",
+            "amber",
+            40
+          ],
+          [
+            "northwest",
+            "brown",
+            40
+          ],
+          [
+            "northwest",
+            "copper",
+            40
+          ],
+          [
+            "northwest",
+            "golden",
+            35
+          ],
+          [
+            "northwest",
+            "golden",
+            40
+          ],
+          [
+            "southeast",
+            "brown",
+            30
+          ],
+          [
+            "southeast",
+            "brown",
+            40
+          ],
+          [
+            "southeast",
+            "copper",
+            35
+          ],
+          [
+            "southeast",
+            "golden",
+            40
+          ],
+          [
+            "southwest",
+            "brown",
+            30
+          ],
+          [
+            "southwest",
+            "brown",
+            40
+          ],
+          [
+            "southwest",
+            "copper",
+            30
+          ],
+          [
+            "southwest",
+            "golden",
+            40
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            20
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            30
+          ]
+        ],
+        "feature_names": [
+          "origin:Western Europe vs Eastern Europe",
+          "origin:West Central Asia vs Eastern Europe",
+          "origin:South/Eastern Asia vs Eastern Europe",
+          "origin:West Asia / Middle East vs Eastern Europe",
+          "origin:central vs Eastern Europe",
+          "origin:northeast vs Eastern Europe",
+          "origin:northwest vs Eastern Europe",
+          "origin:southwest vs Eastern Europe",
+          "origin:southeast vs Eastern Europe",
+          "shade increment:copper",
+          "shade increment:amber",
+          "shade increment:golden",
+          "shade increment:pale/straw",
+          "age increment:35",
+          "age increment:30",
+          "age increment:25",
+          "age increment:20",
+          "tare step to 125 lb at brown/40 years",
+          "tare step to 120 lb at brown/40 years",
+          "tare step to 115 lb at brown/40 years",
+          "tare step to 110 lb at brown/40 years",
+          "tare step to 125 lb at brown/35 years",
+          "tare step to 120 lb at brown/35 years",
+          "tare step to 115 lb at brown/35 years",
+          "tare step to 110 lb at brown/35 years",
+          "tare step to 125 lb at brown/30 years",
+          "tare step to 120 lb at brown/30 years",
+          "tare step to 115 lb at brown/30 years",
+          "tare step to 110 lb at brown/30 years",
+          "tare step to 125 lb at brown/25 years",
+          "tare step to 120 lb at brown/25 years",
+          "tare step to 115 lb at brown/25 years",
+          "tare step to 110 lb at brown/25 years",
+          "tare step to 125 lb at brown/20 years",
+          "tare step to 120 lb at brown/20 years",
+          "tare step to 115 lb at brown/20 years",
+          "tare step to 110 lb at brown/20 years",
+          "tare step to 125 lb at copper/40 years",
+          "tare step to 120 lb at copper/40 years",
+          "tare step to 115 lb at copper/40 years",
+          "tare step to 110 lb at copper/40 years",
+          "tare step to 125 lb at copper/35 years",
+          "tare step to 120 lb at copper/35 years",
+          "tare step to 115 lb at copper/35 years",
+          "tare step to 110 lb at copper/35 years",
+          "tare step to 125 lb at copper/30 years",
+          "tare step to 120 lb at copper/30 years",
+          "tare step to 115 lb at copper/30 years",
+          "tare step to 110 lb at copper/30 years",
+          "tare step to 125 lb at copper/25 years",
+          "tare step to 120 lb at copper/25 years",
+          "tare step to 115 lb at copper/25 years",
+          "tare step to 110 lb at copper/25 years",
+          "tare step to 125 lb at copper/20 years",
+          "tare step to 120 lb at copper/20 years",
+          "tare step to 115 lb at copper/20 years",
+          "tare step to 110 lb at copper/20 years",
+          "tare step to 125 lb at amber/40 years",
+          "tare step to 120 lb at amber/40 years",
+          "tare step to 115 lb at amber/40 years",
+          "tare step to 110 lb at amber/40 years",
+          "tare step to 125 lb at amber/35 years",
+          "tare step to 120 lb at amber/35 years",
+          "tare step to 115 lb at amber/35 years",
+          "tare step to 110 lb at amber/35 years",
+          "tare step to 125 lb at amber/30 years",
+          "tare step to 120 lb at amber/30 years",
+          "tare step to 115 lb at amber/30 years",
+          "tare step to 110 lb at amber/30 years",
+          "tare step to 125 lb at amber/25 years",
+          "tare step to 120 lb at amber/25 years",
+          "tare step to 115 lb at amber/25 years",
+          "tare step to 110 lb at amber/25 years",
+          "tare step to 125 lb at amber/20 years",
+          "tare step to 120 lb at amber/20 years",
+          "tare step to 115 lb at amber/20 years",
+          "tare step to 110 lb at amber/20 years",
+          "tare step to 125 lb at golden/40 years",
+          "tare step to 120 lb at golden/40 years",
+          "tare step to 115 lb at golden/40 years",
+          "tare step to 110 lb at golden/40 years",
+          "tare step to 125 lb at golden/35 years",
+          "tare step to 120 lb at golden/35 years",
+          "tare step to 115 lb at golden/35 years",
+          "tare step to 110 lb at golden/35 years",
+          "tare step to 125 lb at golden/30 years",
+          "tare step to 120 lb at golden/30 years",
+          "tare step to 115 lb at golden/30 years",
+          "tare step to 110 lb at golden/30 years",
+          "tare step to 125 lb at golden/25 years",
+          "tare step to 120 lb at golden/25 years",
+          "tare step to 115 lb at golden/25 years",
+          "tare step to 110 lb at golden/25 years",
+          "tare step to 125 lb at golden/20 years",
+          "tare step to 120 lb at golden/20 years",
+          "tare step to 115 lb at golden/20 years",
+          "tare step to 110 lb at golden/20 years",
+          "tare step to 125 lb at pale/straw/40 years",
+          "tare step to 120 lb at pale/straw/40 years",
+          "tare step to 115 lb at pale/straw/40 years",
+          "tare step to 110 lb at pale/straw/40 years",
+          "tare step to 125 lb at pale/straw/35 years",
+          "tare step to 120 lb at pale/straw/35 years",
+          "tare step to 115 lb at pale/straw/35 years",
+          "tare step to 110 lb at pale/straw/35 years",
+          "tare step to 125 lb at pale/straw/30 years",
+          "tare step to 120 lb at pale/straw/30 years",
+          "tare step to 115 lb at pale/straw/30 years",
+          "tare step to 110 lb at pale/straw/30 years",
+          "tare step to 125 lb at pale/straw/25 years",
+          "tare step to 120 lb at pale/straw/25 years",
+          "tare step to 115 lb at pale/straw/25 years",
+          "tare step to 110 lb at pale/straw/25 years",
+          "tare step to 125 lb at pale/straw/20 years",
+          "tare step to 120 lb at pale/straw/20 years",
+          "tare step to 115 lb at pale/straw/20 years",
+          "tare step to 110 lb at pale/straw/20 years",
+          "local tare step to 125 lb at Eastern Europe/amber/20",
+          "local tare step to 120 lb at Eastern Europe/amber/20",
+          "local tare step to 115 lb at Eastern Europe/amber/20",
+          "local tare step to 110 lb at Eastern Europe/amber/20",
+          "local tare step to 125 lb at Eastern Europe/brown/40",
+          "local tare step to 120 lb at Eastern Europe/brown/40",
+          "local tare step to 115 lb at Eastern Europe/brown/40",
+          "local tare step to 110 lb at Eastern Europe/brown/40",
+          "local tare step to 125 lb at Eastern Europe/pale/straw/20",
+          "local tare step to 120 lb at Eastern Europe/pale/straw/20",
+          "local tare step to 115 lb at Eastern Europe/pale/straw/20",
+          "local tare step to 110 lb at Eastern Europe/pale/straw/20",
+          "local tare step to 125 lb at South/Eastern Asia/amber/20",
+          "local tare step to 120 lb at South/Eastern Asia/amber/20",
+          "local tare step to 115 lb at South/Eastern Asia/amber/20",
+          "local tare step to 110 lb at South/Eastern Asia/amber/20",
+          "local tare step to 125 lb at South/Eastern Asia/brown/30",
+          "local tare step to 120 lb at South/Eastern Asia/brown/30",
+          "local tare step to 115 lb at South/Eastern Asia/brown/30",
+          "local tare step to 110 lb at South/Eastern Asia/brown/30",
+          "local tare step to 125 lb at West Asia / Middle East/amber/20",
+          "local tare step to 120 lb at West Asia / Middle East/amber/20",
+          "local tare step to 115 lb at West Asia / Middle East/amber/20",
+          "local tare step to 110 lb at West Asia / Middle East/amber/20",
+          "local tare step to 125 lb at West Asia / Middle East/golden/35",
+          "local tare step to 120 lb at West Asia / Middle East/golden/35",
+          "local tare step to 115 lb at West Asia / Middle East/golden/35",
+          "local tare step to 110 lb at West Asia / Middle East/golden/35",
+          "local tare step to 125 lb at West Central Asia/brown/25",
+          "local tare step to 120 lb at West Central Asia/brown/25",
+          "local tare step to 115 lb at West Central Asia/brown/25",
+          "local tare step to 110 lb at West Central Asia/brown/25",
+          "local tare step to 125 lb at West Central Asia/brown/35",
+          "local tare step to 120 lb at West Central Asia/brown/35",
+          "local tare step to 115 lb at West Central Asia/brown/35",
+          "local tare step to 110 lb at West Central Asia/brown/35",
+          "local tare step to 125 lb at West Central Asia/copper/35",
+          "local tare step to 120 lb at West Central Asia/copper/35",
+          "local tare step to 115 lb at West Central Asia/copper/35",
+          "local tare step to 110 lb at West Central Asia/copper/35",
+          "local tare step to 125 lb at West Central Asia/pale/straw/20",
+          "local tare step to 120 lb at West Central Asia/pale/straw/20",
+          "local tare step to 115 lb at West Central Asia/pale/straw/20",
+          "local tare step to 110 lb at West Central Asia/pale/straw/20",
+          "local tare step to 125 lb at West Central Asia/pale/straw/25",
+          "local tare step to 120 lb at West Central Asia/pale/straw/25",
+          "local tare step to 115 lb at West Central Asia/pale/straw/25",
+          "local tare step to 110 lb at West Central Asia/pale/straw/25",
+          "local tare step to 125 lb at West Central Asia/pale/straw/35",
+          "local tare step to 120 lb at West Central Asia/pale/straw/35",
+          "local tare step to 115 lb at West Central Asia/pale/straw/35",
+          "local tare step to 110 lb at West Central Asia/pale/straw/35",
+          "local tare step to 125 lb at Western Europe/copper/35",
+          "local tare step to 120 lb at Western Europe/copper/35",
+          "local tare step to 115 lb at Western Europe/copper/35",
+          "local tare step to 110 lb at Western Europe/copper/35",
+          "local tare step to 125 lb at Western Europe/golden/25",
+          "local tare step to 120 lb at Western Europe/golden/25",
+          "local tare step to 115 lb at Western Europe/golden/25",
+          "local tare step to 110 lb at Western Europe/golden/25",
+          "local tare step to 125 lb at Western Europe/golden/40",
+          "local tare step to 120 lb at Western Europe/golden/40",
+          "local tare step to 115 lb at Western Europe/golden/40",
+          "local tare step to 110 lb at Western Europe/golden/40",
+          "local tare step to 125 lb at Western Europe/pale/straw/30",
+          "local tare step to 120 lb at Western Europe/pale/straw/30",
+          "local tare step to 115 lb at Western Europe/pale/straw/30",
+          "local tare step to 110 lb at Western Europe/pale/straw/30",
+          "local tare step to 125 lb at central/brown/40",
+          "local tare step to 120 lb at central/brown/40",
+          "local tare step to 115 lb at central/brown/40",
+          "local tare step to 110 lb at central/brown/40",
+          "local tare step to 125 lb at central/copper/25",
+          "local tare step to 120 lb at central/copper/25",
+          "local tare step to 115 lb at central/copper/25",
+          "local tare step to 110 lb at central/copper/25",
+          "local tare step to 125 lb at central/copper/30",
+          "local tare step to 120 lb at central/copper/30",
+          "local tare step to 115 lb at central/copper/30",
+          "local tare step to 110 lb at central/copper/30",
+          "local tare step to 125 lb at central/golden/40",
+          "local tare step to 120 lb at central/golden/40",
+          "local tare step to 115 lb at central/golden/40",
+          "local tare step to 110 lb at central/golden/40",
+          "local tare step to 125 lb at central/pale/straw/20",
+          "local tare step to 120 lb at central/pale/straw/20",
+          "local tare step to 115 lb at central/pale/straw/20",
+          "local tare step to 110 lb at central/pale/straw/20",
+          "local tare step to 125 lb at northeast/amber/25",
+          "local tare step to 120 lb at northeast/amber/25",
+          "local tare step to 115 lb at northeast/amber/25",
+          "local tare step to 110 lb at northeast/amber/25",
+          "local tare step to 125 lb at northeast/amber/30",
+          "local tare step to 120 lb at northeast/amber/30",
+          "local tare step to 115 lb at northeast/amber/30",
+          "local tare step to 110 lb at northeast/amber/30",
+          "local tare step to 125 lb at northeast/brown/40",
+          "local tare step to 120 lb at northeast/brown/40",
+          "local tare step to 115 lb at northeast/brown/40",
+          "local tare step to 110 lb at northeast/brown/40",
+          "local tare step to 125 lb at northeast/copper/35",
+          "local tare step to 120 lb at northeast/copper/35",
+          "local tare step to 115 lb at northeast/copper/35",
+          "local tare step to 110 lb at northeast/copper/35",
+          "local tare step to 125 lb at northeast/pale/straw/30",
+          "local tare step to 120 lb at northeast/pale/straw/30",
+          "local tare step to 115 lb at northeast/pale/straw/30",
+          "local tare step to 110 lb at northeast/pale/straw/30",
+          "local tare step to 125 lb at northwest/amber/30",
+          "local tare step to 120 lb at northwest/amber/30",
+          "local tare step to 115 lb at northwest/amber/30",
+          "local tare step to 110 lb at northwest/amber/30",
+          "local tare step to 125 lb at northwest/amber/40",
+          "local tare step to 120 lb at northwest/amber/40",
+          "local tare step to 115 lb at northwest/amber/40",
+          "local tare step to 110 lb at northwest/amber/40",
+          "local tare step to 125 lb at northwest/brown/40",
+          "local tare step to 120 lb at northwest/brown/40",
+          "local tare step to 115 lb at northwest/brown/40",
+          "local tare step to 110 lb at northwest/brown/40",
+          "local tare step to 125 lb at northwest/copper/40",
+          "local tare step to 120 lb at northwest/copper/40",
+          "local tare step to 115 lb at northwest/copper/40",
+          "local tare step to 110 lb at northwest/copper/40",
+          "local tare step to 125 lb at northwest/golden/35",
+          "local tare step to 120 lb at northwest/golden/35",
+          "local tare step to 115 lb at northwest/golden/35",
+          "local tare step to 110 lb at northwest/golden/35",
+          "local tare step to 125 lb at northwest/golden/40",
+          "local tare step to 120 lb at northwest/golden/40",
+          "local tare step to 115 lb at northwest/golden/40",
+          "local tare step to 110 lb at northwest/golden/40",
+          "local tare step to 125 lb at southeast/brown/30",
+          "local tare step to 120 lb at southeast/brown/30",
+          "local tare step to 115 lb at southeast/brown/30",
+          "local tare step to 110 lb at southeast/brown/30",
+          "local tare step to 125 lb at southeast/brown/40",
+          "local tare step to 120 lb at southeast/brown/40",
+          "local tare step to 115 lb at southeast/brown/40",
+          "local tare step to 110 lb at southeast/brown/40",
+          "local tare step to 125 lb at southeast/copper/35",
+          "local tare step to 120 lb at southeast/copper/35",
+          "local tare step to 115 lb at southeast/copper/35",
+          "local tare step to 110 lb at southeast/copper/35",
+          "local tare step to 125 lb at southeast/golden/40",
+          "local tare step to 120 lb at southeast/golden/40",
+          "local tare step to 115 lb at southeast/golden/40",
+          "local tare step to 110 lb at southeast/golden/40",
+          "local tare step to 125 lb at southwest/brown/30",
+          "local tare step to 120 lb at southwest/brown/30",
+          "local tare step to 115 lb at southwest/brown/30",
+          "local tare step to 110 lb at southwest/brown/30",
+          "local tare step to 125 lb at southwest/brown/40",
+          "local tare step to 120 lb at southwest/brown/40",
+          "local tare step to 115 lb at southwest/brown/40",
+          "local tare step to 110 lb at southwest/brown/40",
+          "local tare step to 125 lb at southwest/copper/30",
+          "local tare step to 120 lb at southwest/copper/30",
+          "local tare step to 115 lb at southwest/copper/30",
+          "local tare step to 110 lb at southwest/copper/30",
+          "local tare step to 125 lb at southwest/golden/40",
+          "local tare step to 120 lb at southwest/golden/40",
+          "local tare step to 115 lb at southwest/golden/40",
+          "local tare step to 110 lb at southwest/golden/40",
+          "local tare step to 125 lb at southwest/pale/straw/20",
+          "local tare step to 120 lb at southwest/pale/straw/20",
+          "local tare step to 115 lb at southwest/pale/straw/20",
+          "local tare step to 110 lb at southwest/pale/straw/20",
+          "local tare step to 125 lb at southwest/pale/straw/30",
+          "local tare step to 120 lb at southwest/pale/straw/30",
+          "local tare step to 115 lb at southwest/pale/straw/30",
+          "local tare step to 110 lb at southwest/pale/straw/30"
+        ],
+        "coefficients": [
+          0.7067054797921434,
+          -1.5937941133018136,
+          -1.7072966689342435,
+          -1.6641822927063812,
+          0.6442012281584357,
+          1.3579647572145956,
+          0.6647709843980909,
+          1.3710192796436698,
+          1.437965076641261,
+          2.012388256733223,
+          1.2455695051125348,
+          0.3655618959329464,
+          1.0907792134346843,
+          1.408501443582123,
+          0.8693839352258563,
+          2.5047227392699773,
+          1.2725482878881154,
+          1.257776426866123,
+          0.954152310974239,
+          0.16624243978580527,
+          0.8779896241234884,
+          1.1905849053424227,
+          0.6266404952864187,
+          0.7888737882294544,
+          0.7602927695489902,
+          1.2516556569718844,
+          0.4087515625125179,
+          0.7040060541912161,
+          0.7603175721549478,
+          0.8427362511751755,
+          0.0,
+          2.2590140983768343,
+          0.6294955891178651,
+          1.8962509636687666,
+          0.07966597858869962,
+          1.469697904469872,
+          0.7602967303931742,
+          1.2206854054864513,
+          0.6415783466526986,
+          0.7940970380860873,
+          0.7603128100791203,
+          2.1611099168075354,
+          0.5789285540167055,
+          0.8311331439683436,
+          0.7602978773689042,
+          1.8769447834917814,
+          0.6435745648858954,
+          1.1196228532929324,
+          0.5901524744208719,
+          1.2718589994530451,
+          0.8630900837779979,
+          0.8312063915711426,
+          0.7603047514428137,
+          1.4312712124949523,
+          1.1451717980144382,
+          0.8311926495979686,
+          0.7603042074476871,
+          0.8827589208486492,
+          0.8282204257378928,
+          0.9716134722725716,
+          0.7602906688107215,
+          0.9985807891619835,
+          0.8995615578919854,
+          0.4628113657055371,
+          1.1690944613822318,
+          1.4847877839145232,
+          0.5188126093549819,
+          0.7282675324031163,
+          0.4487532586003676,
+          0.4474924635168938,
+          0.7124953808806358,
+          0.7254557740365508,
+          1.1198842351349645,
+          1.6285456462887784,
+          0.09763318360824923,
+          0.7148867298545716,
+          0.76031157664936,
+          1.5756444705901829,
+          0.9868191012360763,
+          0.20780385865951972,
+          0.7602952385143988,
+          1.4589743497214285,
+          0.07360610139948841,
+          0.6570999080002329,
+          0.974805919087534,
+          1.1192258879815478,
+          0.9274794493895197,
+          0.7122209059473568,
+          0.7603061504095274,
+          0.08193056758391212,
+          1.0852687209606813,
+          1.016905840894002,
+          0.798397591975242,
+          1.3659306459236684,
+          0.7032757658248211,
+          0.8311946799853596,
+          0.7602945744106451,
+          0.8469556858920413,
+          1.4397255941955922,
+          0.0,
+          0.7602984136294431,
+          1.01873087928278,
+          0.3729028243067347,
+          0.8312106563330306,
+          0.7603001222708636,
+          1.652492419029724,
+          0.9603181102197762,
+          1.6346755422883046,
+          0.3320457415480434,
+          1.646350187025335,
+          1.0575562451326426,
+          0.8311959762978911,
+          0.7602982410374036,
+          1.4508988785099843,
+          0.12182171410439756,
+          0.8311805997281028,
+          0.7603117503074853,
+          1.565001112191461,
+          0.0,
+          0.8770185796109513,
+          0.7603129161917808,
+          1.2577769158768093,
+          0.9541475627252424,
+          0.0,
+          0.8779817371635605,
+          1.4508815658542336,
+          0.1218169196462068,
+          0.8311695162236804,
+          0.7603070229186826,
+          1.731492541856639,
+          0.0,
+          0.7148878137179914,
+          0.7603152722778839,
+          1.3057109595573384,
+          0.46279251714872566,
+          0.7040105099861501,
+          0.7603171315397141,
+          1.6285522296609036,
+          0.0,
+          0.7148843336301929,
+          0.7603126057881832,
+          1.5325804511209566,
+          0.0,
+          0.46281136570552645,
+          1.169094461382243,
+          2.966822432095031,
+          1.0671551098553236e-15,
+          1.7513407025204184,
+          0.6295053231684149,
+          1.1235234082902286,
+          0.5844216159987878,
+          0.7888722216213686,
+          0.7602962051668084,
+          2.2441502942745264,
+          0.0,
+          0.8311219923362396,
+          0.7602990725924894,
+          1.450886635230473,
+          0.0,
+          0.8311693662076904,
+          0.7603071253724664,
+          1.5923061700842853,
+          1.0035031444280946,
+          0.8311949001605446,
+          0.7602884998226525,
+          0.994561056035239,
+          0.29169339484214635,
+          0.8312217798186163,
+          0.7602894308281564,
+          2.1611150012085734,
+          0.0,
+          0.8311233788897128,
+          0.7602986587873442,
+          0.08193056758392199,
+          1.1643632323131423,
+          1.016907040789464,
+          0.7983844692668862,
+          1.5602174928655208,
+          0.9713818284238774,
+          0.20781789434843206,
+          0.7602939492279563,
+          1.5562534574537257,
+          0.8640845659955575,
+          1.5384456490339564,
+          0.23582225884857336,
+          1.5256418339293512,
+          1.222012480777785,
+          0.0,
+          0.9957323228197349,
+          1.2718553534610528,
+          0.8630944507468709,
+          0.831218770247582,
+          0.7602922945654849,
+          1.9739072018480577,
+          0.7405463627228659,
+          1.1196135751476741,
+          0.5901409501779755,
+          1.5910814047040305,
+          1.0022504531733052,
+          0.0,
+          0.7602924572772817,
+          1.574381534512368,
+          0.0,
+          0.7655707970941938,
+          0.6947078047768199,
+          0.44749246351689304,
+          0.9615800535826847,
+          0.7254556424413586,
+          1.1198839792323605,
+          1.4376970432202456,
+          0.0,
+          0.9568756533377721,
+          0.5901524744208647,
+          1.2577798923850763,
+          0.9541505392335096,
+          0.16625177144594236,
+          0.8779805925079036,
+          2.161115001208574,
+          0.0,
+          0.8311233788897128,
+          0.7602986587873439,
+          1.652479758552751,
+          0.9603109061187489,
+          1.6346741446913728,
+          0.33205134947289083,
+          0.6313752783792235,
+          0.9372658636859527,
+          0.9385857555138074,
+          0.47749827339992995,
+          0.0,
+          0.8904603960382883,
+          0.9716032900435201,
+          0.7602834300778819,
+          1.2577757712211524,
+          0.9541464180695852,
+          0.0,
+          0.8779805925079036,
+          1.2206948857625592,
+          0.0,
+          0.79409878152668,
+          0.7603185670300636,
+          1.5325804511209569,
+          0.0,
+          0.6570999343006726,
+          0.9748097440218597,
+          1.7042030828381438,
+          1.1153745101839196,
+          0.0,
+          0.7602943898961664,
+          0.9903732822668181,
+          0.0,
+          0.7463419713656191,
+          0.7603125037356229,
+          0.9899168808309495,
+          0.9714799251875452,
+          0.0,
+          0.8779805925079036,
+          1.7154941267788584,
+          0.9597579063096852,
+          0.831120226992179,
+          0.7602987539432274,
+          1.7649563966634292,
+          1.1761254980396683,
+          0.20780668750257195,
+          0.760293245234681,
+          1.2236523492658518,
+          0.0,
+          0.7040098250733079,
+          0.7603165261809683,
+          1.2577757712211521,
+          0.9541479799254886,
+          0.16625015522829745,
+          0.8779821543638067,
+          2.236684056219741,
+          0.0,
+          1.1196204290772167,
+          0.5901455697327102,
+          1.5694312608017567,
+          0.9805988238149679,
+          0.0,
+          0.7602948545477688,
+          1.5174290902398928,
+          0.0,
+          0.8893887033057565,
+          0.8185205671870981,
+          1.6744369128884216,
+          0.982268060454419,
+          1.6566298949242724,
+          0.0
+        ]
+      },
+      "parameters": [
+        0.6534154615531597,
+        0.8427079259517354,
+        0.8924807239537771,
+        0.45705715834251104,
+        0.40603955925012336,
+        0.276755872907936,
+        0.2106517472385095,
+        0.1498610998530636,
+        0.4766246781838754,
+        0.2115908462497427,
+        0.21065558796779948,
+        0.2320132861188041,
+        0.10826302730691284,
+        0.28061593038649374,
+        1.6517770109463516e-17,
+        0.053192763527957265,
+        0.23552077550909822,
+        0.23705724478378357,
+        0.17990637358310518,
+        0.17003352525013746,
+        0.1335461712364133,
+        0.19902059264997599,
+        0.16334120420408813,
+        0.14340619072392521,
+        0.24139637403734074,
+        0.3193420810860443,
+        0.21800208152754044,
+        0.21079067756752323,
+        0.20362712304239017,
+        0.2399695369397859,
+        1.0681770333809393,
+        1.103588168000665,
+        0.9483611556367141
+      ],
+      "domestic_order": [
+        "northeast",
+        "southwest",
+        "southeast",
+        "central",
+        "northwest"
+      ],
+      "template": [
+        1.2,
+        0.19999999999999996,
+        0.19999999999999996,
+        -0.8,
+        -0.8
+      ],
+      "contexts": [
+        [
+          "brown",
+          40
+        ],
+        [
+          "brown",
+          35
+        ],
+        [
+          "brown",
+          30
+        ],
+        [
+          "brown",
+          25
+        ],
+        [
+          "brown",
+          20
+        ],
+        [
+          "copper",
+          40
+        ],
+        [
+          "copper",
+          35
+        ],
+        [
+          "copper",
+          30
+        ],
+        [
+          "copper",
+          25
+        ],
+        [
+          "copper",
+          20
+        ],
+        [
+          "amber",
+          40
+        ],
+        [
+          "amber",
+          35
+        ],
+        [
+          "amber",
+          30
+        ],
+        [
+          "amber",
+          25
+        ],
+        [
+          "amber",
+          20
+        ],
+        [
+          "golden",
+          40
+        ],
+        [
+          "golden",
+          35
+        ],
+        [
+          "golden",
+          30
+        ],
+        [
+          "golden",
+          25
+        ],
+        [
+          "golden",
+          20
+        ],
+        [
+          "pale/straw",
+          40
+        ],
+        [
+          "pale/straw",
+          35
+        ],
+        [
+          "pale/straw",
+          30
+        ],
+        [
+          "pale/straw",
+          25
+        ],
+        [
+          "pale/straw",
+          20
+        ]
+      ],
+      "domestic_component_scales": {
+        "shade": 1.0681770333809393,
+        "vintage": 1.103588168000665,
+        "tare": 0.9483611556367141
+      },
+      "in_sample": {
+        "n": 366,
+        "matched": 337,
+        "accuracy": 0.9207650273224044,
+        "balanced_accuracy": 0.9224642704028563,
+        "recall": {
+          "B": 0.9577464788732394,
+          "tie": 0.8515625,
+          "A": 0.9580838323353293
+        },
+        "confusion_actual_to_predicted": {
+          "B": {
+            "B": 68,
+            "tie": 3,
+            "A": 0
+          },
+          "tie": {
+            "B": 11,
+            "tie": 109,
+            "A": 8
+          },
+          "A": {
+            "B": 0,
+            "tie": 7,
+            "A": 160
+          }
+        },
+        "opposite_winner_errors": 0,
+        "predicted_ties": 119
+      },
+      "pure_tare_tie_audit": {
+        "n": 24,
+        "exact_score_equalities": 24
+      },
+      "target_predictions": [
+        {
+          "id": "round14-2",
+          "answer": "B",
+          "prediction": "B",
+          "margin": -0.910197117159326,
+          "exact_score_equality": false
+        },
+        {
+          "id": "round21-12",
+          "answer": "tie",
+          "prediction": "tie",
+          "margin": 0.0,
+          "exact_score_equality": true
+        },
+        {
+          "id": "round25-11",
+          "answer": "tie",
+          "prediction": "tie",
+          "margin": 0.17706333923759487,
+          "exact_score_equality": false
+        },
+        {
+          "id": "round25-13",
+          "answer": "tie",
+          "prediction": "tie",
+          "margin": 0.0,
+          "exact_score_equality": true
+        },
+        {
+          "id": "round25-18",
+          "answer": "B",
+          "prediction": "B",
+          "margin": -0.597241613858967,
+          "exact_score_equality": false
+        },
+        {
+          "id": "round26-1",
+          "answer": "A",
+          "prediction": "A",
+          "margin": 0.7923932784319659,
+          "exact_score_equality": false
+        },
+        {
+          "id": "round26-2",
+          "answer": "tie",
+          "prediction": "tie",
+          "margin": 0.13379203774681214,
+          "exact_score_equality": false
+        },
+        {
+          "id": "round26-4",
+          "answer": "tie",
+          "prediction": "tie",
+          "margin": -0.12131051401186022,
+          "exact_score_equality": false
+        },
+        {
+          "id": "round26-5",
+          "answer": "B",
+          "prediction": "B",
+          "margin": -0.8622754457930998,
+          "exact_score_equality": false
+        }
+      ],
+      "regional_diagnostics": [
+        {
+          "shade": "brown",
+          "vintage": 40,
+          "hierarchy_gain": 0.276755872907936,
+          "regional_premiums": {
+            "northeast": 0.9855225090426829,
+            "southwest": 0.8980591005333226,
+            "southeast": 0.9478318985353643,
+            "central": 0.23565246001616222,
+            "northwest": 0.18463486092377454
+          },
+          "regional_spread": 0.8008876481189083
+        },
+        {
+          "shade": "brown",
+          "vintage": 35,
+          "hierarchy_gain": 0.2106517472385095,
+          "regional_premiums": {
+            "northeast": 0.9061975582393711,
+            "southwest": 0.8848382753994373,
+            "southeast": 0.934611073401479,
+            "central": 0.28853576055170344,
+            "northwest": 0.23751816145931576
+          },
+          "regional_spread": 0.6970929119421632
+        },
+        {
+          "shade": "brown",
+          "vintage": 30,
+          "hierarchy_gain": 0.1498610998530636,
+          "regional_premiums": {
+            "northeast": 0.833248781376836,
+            "southwest": 0.8726801459223481,
+            "southeast": 0.9224529439243898,
+            "central": 0.33716827846006014,
+            "northwest": 0.28615067936767247
+          },
+          "regional_spread": 0.6363022645567173
+        },
+        {
+          "shade": "brown",
+          "vintage": 25,
+          "hierarchy_gain": 0.4766246781838754,
+          "regional_premiums": {
+            "northeast": 1.2253650753738101,
+            "southwest": 0.9380328615885104,
+            "southeast": 0.9878056595905521,
+            "central": 0.07575741579541073,
+            "northwest": 0.024739816703023054
+          },
+          "regional_spread": 1.200625258670787
+        },
+        {
+          "shade": "brown",
+          "vintage": 20,
+          "hierarchy_gain": 0.2115908462497427,
+          "regional_premiums": {
+            "northeast": 0.9073244770528509,
+            "southwest": 0.885026095201684,
+            "southeast": 0.9347988932037257,
+            "central": 0.28778448134271684,
+            "northwest": 0.23676688225032919
+          },
+          "regional_spread": 0.6980320109533965
+        },
+        {
+          "shade": "copper",
+          "vintage": 40,
+          "hierarchy_gain": 0.21065558796779948,
+          "regional_premiums": {
+            "northeast": 0.9062021671145191,
+            "southwest": 0.8848390435452953,
+            "southeast": 0.934611841547337,
+            "central": 0.2885326879682715,
+            "northwest": 0.23751508887588377
+          },
+          "regional_spread": 0.6970967526714532
+        },
+        {
+          "shade": "copper",
+          "vintage": 35,
+          "hierarchy_gain": 0.2320132861188041,
+          "regional_premiums": {
+            "northeast": 0.9318314048957246,
+            "southwest": 0.8891105831754962,
+            "southeast": 0.9388833811775379,
+            "central": 0.2714465294474678,
+            "northwest": 0.22042893035508007
+          },
+          "regional_spread": 0.7184544508224578
+        },
+        {
+          "shade": "copper",
+          "vintage": 30,
+          "hierarchy_gain": 0.10826302730691284,
+          "regional_premiums": {
+            "northeast": 0.7833310943214551,
+            "southwest": 0.864360531413118,
+            "southeast": 0.9141333294151597,
+            "central": 0.3704467364969808,
+            "northwest": 0.3194291374045931
+          },
+          "regional_spread": 0.5947041920105666
+        },
+        {
+          "shade": "copper",
+          "vintage": 25,
+          "hierarchy_gain": 0.28061593038649374,
+          "regional_premiums": {
+            "northeast": 0.9901545780169521,
+            "southwest": 0.8988311120290341,
+            "southeast": 0.9486039100310758,
+            "central": 0.23256441403331604,
+            "northwest": 0.18154681494092836
+          },
+          "regional_spread": 0.8086077630760237
+        },
+        {
+          "shade": "copper",
+          "vintage": 20,
+          "hierarchy_gain": 1.6517770109463516e-17,
+          "regional_premiums": {
+            "northeast": 0.6534154615531597,
+            "southwest": 0.8427079259517354,
+            "southeast": 0.8924807239537771,
+            "central": 0.45705715834251104,
+            "northwest": 0.40603955925012336
+          },
+          "regional_spread": 0.48644116470365373
+        },
+        {
+          "shade": "amber",
+          "vintage": 40,
+          "hierarchy_gain": 0.053192763527957265,
+          "regional_premiums": {
+            "northeast": 0.7172467777867084,
+            "southwest": 0.8533464786573268,
+            "southeast": 0.9031192766593685,
+            "central": 0.4145029475201452,
+            "northwest": 0.36348534842775754
+          },
+          "regional_spread": 0.5396339282316109
+        },
+        {
+          "shade": "amber",
+          "vintage": 35,
+          "hierarchy_gain": 0.23552077550909822,
+          "regional_premiums": {
+            "northeast": 0.9360403921640775,
+            "southwest": 0.889812081053555,
+            "southeast": 0.9395848790555967,
+            "central": 0.26864053793523246,
+            "northwest": 0.21762293884284478
+          },
+          "regional_spread": 0.721961940212752
+        },
+        {
+          "shade": "amber",
+          "vintage": 30,
+          "hierarchy_gain": 0.23705724478378357,
+          "regional_premiums": {
+            "northeast": 0.9378841552937,
+            "southwest": 0.8901193749084921,
+            "southeast": 0.9398921729105338,
+            "central": 0.26741136251548414,
+            "northwest": 0.2163937634230965
+          },
+          "regional_spread": 0.7234984094874374
+        },
+        {
+          "shade": "amber",
+          "vintage": 25,
+          "hierarchy_gain": 0.17990637358310518,
+          "regional_premiums": {
+            "northeast": 0.8693031098528858,
+            "southwest": 0.8786892006683564,
+            "southeast": 0.9284619986703981,
+            "central": 0.31313205947602685,
+            "northwest": 0.26211446038363917
+          },
+          "regional_spread": 0.666347538286759
+        },
+        {
+          "shade": "amber",
+          "vintage": 20,
+          "hierarchy_gain": 0.17003352525013746,
+          "regional_premiums": {
+            "northeast": 0.8574556918533246,
+            "southwest": 0.8767146310017628,
+            "southeast": 0.9264874290038045,
+            "central": 0.32103033814240106,
+            "northwest": 0.2700127390500134
+          },
+          "regional_spread": 0.6564746899537912
+        },
+        {
+          "shade": "golden",
+          "vintage": 40,
+          "hierarchy_gain": 0.1335461712364133,
+          "regional_premiums": {
+            "northeast": 0.8136708670368556,
+            "southwest": 0.869417160199018,
+            "southeast": 0.9191899582010598,
+            "central": 0.3502202213533804,
+            "northwest": 0.2992026222609927
+          },
+          "regional_spread": 0.619987335940067
+        },
+        {
+          "shade": "golden",
+          "vintage": 35,
+          "hierarchy_gain": 0.19902059264997599,
+          "regional_premiums": {
+            "northeast": 0.8922401727331308,
+            "southwest": 0.8825120444817306,
+            "southeast": 0.9322848424837723,
+            "central": 0.29784068422253024,
+            "northwest": 0.24682308513014256
+          },
+          "regional_spread": 0.6854617573536297
+        },
+        {
+          "shade": "golden",
+          "vintage": 30,
+          "hierarchy_gain": 0.16334120420408813,
+          "regional_premiums": {
+            "northeast": 0.8494249065980654,
+            "southwest": 0.875376166792553,
+            "southeast": 0.9251489647945947,
+            "central": 0.32638419497924054,
+            "northwest": 0.27536659588685286
+          },
+          "regional_spread": 0.6497823689077419
+        },
+        {
+          "shade": "golden",
+          "vintage": 25,
+          "hierarchy_gain": 0.14340619072392521,
+          "regional_premiums": {
+            "northeast": 0.82550289042187,
+            "southwest": 0.8713891640965205,
+            "southeast": 0.9211619620985622,
+            "central": 0.34233220576337087,
+            "northwest": 0.2913146066709832
+          },
+          "regional_spread": 0.629847355427579
+        },
+        {
+          "shade": "golden",
+          "vintage": 20,
+          "hierarchy_gain": 0.24139637403734074,
+          "regional_premiums": {
+            "northeast": 0.9430911103979686,
+            "southwest": 0.8909872007592036,
+            "southeast": 0.9407599987612453,
+            "central": 0.2639400591126384,
+            "northwest": 0.21292246002025075
+          },
+          "regional_spread": 0.7301686503777178
+        },
+        {
+          "shade": "pale/straw",
+          "vintage": 40,
+          "hierarchy_gain": 0.3193420810860443,
+          "regional_premiums": {
+            "northeast": 1.0366259588564128,
+            "southwest": 0.9065763421689442,
+            "southeast": 0.9563491401709859,
+            "central": 0.2015834934736756,
+            "northwest": 0.15056589438128792
+          },
+          "regional_spread": 0.8860600644751249
+        },
+        {
+          "shade": "pale/straw",
+          "vintage": 35,
+          "hierarchy_gain": 0.21800208152754044,
+          "regional_premiums": {
+            "northeast": 0.9150179593862082,
+            "southwest": 0.8863083422572434,
+            "southeast": 0.9360811402592851,
+            "central": 0.28265549312047866,
+            "northwest": 0.23163789402809098
+          },
+          "regional_spread": 0.7044432462311941
+        },
+        {
+          "shade": "pale/straw",
+          "vintage": 30,
+          "hierarchy_gain": 0.21079067756752323,
+          "regional_premiums": {
+            "northeast": 0.9063642746341876,
+            "southwest": 0.88486606146524,
+            "southeast": 0.9346388594672818,
+            "central": 0.2884246162884924,
+            "northwest": 0.23740701719610477
+          },
+          "regional_spread": 0.697231842271177
+        },
+        {
+          "shade": "pale/straw",
+          "vintage": 25,
+          "hierarchy_gain": 0.20362712304239017,
+          "regional_premiums": {
+            "northeast": 0.8977680092040279,
+            "southwest": 0.8834333505602134,
+            "southeast": 0.9332061485622551,
+            "central": 0.2941554599085989,
+            "northwest": 0.24313786081621122
+          },
+          "regional_spread": 0.6900682877460439
+        },
+        {
+          "shade": "pale/straw",
+          "vintage": 20,
+          "hierarchy_gain": 0.2399695369397859,
+          "regional_premiums": {
+            "northeast": 0.9413789058809028,
+            "southwest": 0.8907018333396926,
+            "southeast": 0.9404746313417343,
+            "central": 0.2650815287906823,
+            "northwest": 0.21406392969829463
+          },
+          "regional_spread": 0.7273149761826081
+        }
+      ]
+    },
+    "weighted_v8": {
+      "prior_strength": 10.0,
+      "threshold": 0.2,
+      "offering_snapshot": {
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.2,
+        "local_contexts": [
+          [
+            "Eastern Europe",
+            "amber",
+            20
+          ],
+          [
+            "Eastern Europe",
+            "brown",
+            40
+          ],
+          [
+            "Eastern Europe",
+            "pale/straw",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "amber",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "brown",
+            30
+          ],
+          [
+            "West Asia / Middle East",
+            "amber",
+            20
+          ],
+          [
+            "West Asia / Middle East",
+            "golden",
+            35
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            25
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            35
+          ],
+          [
+            "West Central Asia",
+            "copper",
+            35
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            20
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            25
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            35
+          ],
+          [
+            "Western Europe",
+            "copper",
+            35
+          ],
+          [
+            "Western Europe",
+            "golden",
+            25
+          ],
+          [
+            "Western Europe",
+            "golden",
+            40
+          ],
+          [
+            "Western Europe",
+            "pale/straw",
+            30
+          ],
+          [
+            "central",
+            "brown",
+            40
+          ],
+          [
+            "central",
+            "copper",
+            30
+          ],
+          [
+            "central",
+            "golden",
+            40
+          ],
+          [
+            "central",
+            "pale/straw",
+            20
+          ],
+          [
+            "northeast",
+            "amber",
+            25
+          ],
+          [
+            "northeast",
+            "amber",
+            30
+          ],
+          [
+            "northeast",
+            "brown",
+            40
+          ],
+          [
+            "northeast",
+            "copper",
+            35
+          ],
+          [
+            "northeast",
+            "pale/straw",
+            30
+          ],
+          [
+            "northwest",
+            "amber",
+            30
+          ],
+          [
+            "northwest",
+            "amber",
+            40
+          ],
+          [
+            "northwest",
+            "brown",
+            40
+          ],
+          [
+            "northwest",
+            "golden",
+            35
+          ],
+          [
+            "northwest",
+            "golden",
+            40
+          ],
+          [
+            "southeast",
+            "brown",
+            30
+          ],
+          [
+            "southeast",
+            "brown",
+            40
+          ],
+          [
+            "southeast",
+            "copper",
+            35
+          ],
+          [
+            "southeast",
+            "golden",
+            40
+          ],
+          [
+            "southwest",
+            "brown",
+            30
+          ],
+          [
+            "southwest",
+            "brown",
+            40
+          ],
+          [
+            "southwest",
+            "copper",
+            30
+          ],
+          [
+            "southwest",
+            "golden",
+            40
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            20
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            30
+          ]
+        ],
+        "feature_names": [
+          "origin:Western Europe vs Eastern Europe",
+          "origin:West Central Asia vs Eastern Europe",
+          "origin:South/Eastern Asia vs Eastern Europe",
+          "origin:West Asia / Middle East vs Eastern Europe",
+          "origin:central vs Eastern Europe",
+          "origin:northeast vs Eastern Europe",
+          "origin:northwest vs Eastern Europe",
+          "origin:southwest vs Eastern Europe",
+          "origin:southeast vs Eastern Europe",
+          "shade increment:copper",
+          "shade increment:amber",
+          "shade increment:golden",
+          "shade increment:pale/straw",
+          "age increment:35",
+          "age increment:30",
+          "age increment:25",
+          "age increment:20",
+          "tare step to 125 lb at brown/40 years",
+          "tare step to 120 lb at brown/40 years",
+          "tare step to 115 lb at brown/40 years",
+          "tare step to 110 lb at brown/40 years",
+          "tare step to 125 lb at brown/35 years",
+          "tare step to 120 lb at brown/35 years",
+          "tare step to 115 lb at brown/35 years",
+          "tare step to 110 lb at brown/35 years",
+          "tare step to 125 lb at brown/30 years",
+          "tare step to 120 lb at brown/30 years",
+          "tare step to 115 lb at brown/30 years",
+          "tare step to 110 lb at brown/30 years",
+          "tare step to 125 lb at brown/25 years",
+          "tare step to 120 lb at brown/25 years",
+          "tare step to 115 lb at brown/25 years",
+          "tare step to 110 lb at brown/25 years",
+          "tare step to 125 lb at brown/20 years",
+          "tare step to 120 lb at brown/20 years",
+          "tare step to 115 lb at brown/20 years",
+          "tare step to 110 lb at brown/20 years",
+          "tare step to 125 lb at copper/40 years",
+          "tare step to 120 lb at copper/40 years",
+          "tare step to 115 lb at copper/40 years",
+          "tare step to 110 lb at copper/40 years",
+          "tare step to 125 lb at copper/35 years",
+          "tare step to 120 lb at copper/35 years",
+          "tare step to 115 lb at copper/35 years",
+          "tare step to 110 lb at copper/35 years",
+          "tare step to 125 lb at copper/30 years",
+          "tare step to 120 lb at copper/30 years",
+          "tare step to 115 lb at copper/30 years",
+          "tare step to 110 lb at copper/30 years",
+          "tare step to 125 lb at copper/25 years",
+          "tare step to 120 lb at copper/25 years",
+          "tare step to 115 lb at copper/25 years",
+          "tare step to 110 lb at copper/25 years",
+          "tare step to 125 lb at copper/20 years",
+          "tare step to 120 lb at copper/20 years",
+          "tare step to 115 lb at copper/20 years",
+          "tare step to 110 lb at copper/20 years",
+          "tare step to 125 lb at amber/40 years",
+          "tare step to 120 lb at amber/40 years",
+          "tare step to 115 lb at amber/40 years",
+          "tare step to 110 lb at amber/40 years",
+          "tare step to 125 lb at amber/35 years",
+          "tare step to 120 lb at amber/35 years",
+          "tare step to 115 lb at amber/35 years",
+          "tare step to 110 lb at amber/35 years",
+          "tare step to 125 lb at amber/30 years",
+          "tare step to 120 lb at amber/30 years",
+          "tare step to 115 lb at amber/30 years",
+          "tare step to 110 lb at amber/30 years",
+          "tare step to 125 lb at amber/25 years",
+          "tare step to 120 lb at amber/25 years",
+          "tare step to 115 lb at amber/25 years",
+          "tare step to 110 lb at amber/25 years",
+          "tare step to 125 lb at amber/20 years",
+          "tare step to 120 lb at amber/20 years",
+          "tare step to 115 lb at amber/20 years",
+          "tare step to 110 lb at amber/20 years",
+          "tare step to 125 lb at golden/40 years",
+          "tare step to 120 lb at golden/40 years",
+          "tare step to 115 lb at golden/40 years",
+          "tare step to 110 lb at golden/40 years",
+          "tare step to 125 lb at golden/35 years",
+          "tare step to 120 lb at golden/35 years",
+          "tare step to 115 lb at golden/35 years",
+          "tare step to 110 lb at golden/35 years",
+          "tare step to 125 lb at golden/30 years",
+          "tare step to 120 lb at golden/30 years",
+          "tare step to 115 lb at golden/30 years",
+          "tare step to 110 lb at golden/30 years",
+          "tare step to 125 lb at golden/25 years",
+          "tare step to 120 lb at golden/25 years",
+          "tare step to 115 lb at golden/25 years",
+          "tare step to 110 lb at golden/25 years",
+          "tare step to 125 lb at golden/20 years",
+          "tare step to 120 lb at golden/20 years",
+          "tare step to 115 lb at golden/20 years",
+          "tare step to 110 lb at golden/20 years",
+          "tare step to 125 lb at pale/straw/40 years",
+          "tare step to 120 lb at pale/straw/40 years",
+          "tare step to 115 lb at pale/straw/40 years",
+          "tare step to 110 lb at pale/straw/40 years",
+          "tare step to 125 lb at pale/straw/35 years",
+          "tare step to 120 lb at pale/straw/35 years",
+          "tare step to 115 lb at pale/straw/35 years",
+          "tare step to 110 lb at pale/straw/35 years",
+          "tare step to 125 lb at pale/straw/30 years",
+          "tare step to 120 lb at pale/straw/30 years",
+          "tare step to 115 lb at pale/straw/30 years",
+          "tare step to 110 lb at pale/straw/30 years",
+          "tare step to 125 lb at pale/straw/25 years",
+          "tare step to 120 lb at pale/straw/25 years",
+          "tare step to 115 lb at pale/straw/25 years",
+          "tare step to 110 lb at pale/straw/25 years",
+          "tare step to 125 lb at pale/straw/20 years",
+          "tare step to 120 lb at pale/straw/20 years",
+          "tare step to 115 lb at pale/straw/20 years",
+          "tare step to 110 lb at pale/straw/20 years",
+          "local tare step to 125 lb at Eastern Europe/amber/20",
+          "local tare step to 120 lb at Eastern Europe/amber/20",
+          "local tare step to 115 lb at Eastern Europe/amber/20",
+          "local tare step to 110 lb at Eastern Europe/amber/20",
+          "local tare step to 125 lb at Eastern Europe/brown/40",
+          "local tare step to 120 lb at Eastern Europe/brown/40",
+          "local tare step to 115 lb at Eastern Europe/brown/40",
+          "local tare step to 110 lb at Eastern Europe/brown/40",
+          "local tare step to 125 lb at Eastern Europe/pale/straw/20",
+          "local tare step to 120 lb at Eastern Europe/pale/straw/20",
+          "local tare step to 115 lb at Eastern Europe/pale/straw/20",
+          "local tare step to 110 lb at Eastern Europe/pale/straw/20",
+          "local tare step to 125 lb at South/Eastern Asia/amber/20",
+          "local tare step to 120 lb at South/Eastern Asia/amber/20",
+          "local tare step to 115 lb at South/Eastern Asia/amber/20",
+          "local tare step to 110 lb at South/Eastern Asia/amber/20",
+          "local tare step to 125 lb at South/Eastern Asia/brown/30",
+          "local tare step to 120 lb at South/Eastern Asia/brown/30",
+          "local tare step to 115 lb at South/Eastern Asia/brown/30",
+          "local tare step to 110 lb at South/Eastern Asia/brown/30",
+          "local tare step to 125 lb at West Asia / Middle East/amber/20",
+          "local tare step to 120 lb at West Asia / Middle East/amber/20",
+          "local tare step to 115 lb at West Asia / Middle East/amber/20",
+          "local tare step to 110 lb at West Asia / Middle East/amber/20",
+          "local tare step to 125 lb at West Asia / Middle East/golden/35",
+          "local tare step to 120 lb at West Asia / Middle East/golden/35",
+          "local tare step to 115 lb at West Asia / Middle East/golden/35",
+          "local tare step to 110 lb at West Asia / Middle East/golden/35",
+          "local tare step to 125 lb at West Central Asia/brown/25",
+          "local tare step to 120 lb at West Central Asia/brown/25",
+          "local tare step to 115 lb at West Central Asia/brown/25",
+          "local tare step to 110 lb at West Central Asia/brown/25",
+          "local tare step to 125 lb at West Central Asia/brown/35",
+          "local tare step to 120 lb at West Central Asia/brown/35",
+          "local tare step to 115 lb at West Central Asia/brown/35",
+          "local tare step to 110 lb at West Central Asia/brown/35",
+          "local tare step to 125 lb at West Central Asia/copper/35",
+          "local tare step to 120 lb at West Central Asia/copper/35",
+          "local tare step to 115 lb at West Central Asia/copper/35",
+          "local tare step to 110 lb at West Central Asia/copper/35",
+          "local tare step to 125 lb at West Central Asia/pale/straw/20",
+          "local tare step to 120 lb at West Central Asia/pale/straw/20",
+          "local tare step to 115 lb at West Central Asia/pale/straw/20",
+          "local tare step to 110 lb at West Central Asia/pale/straw/20",
+          "local tare step to 125 lb at West Central Asia/pale/straw/25",
+          "local tare step to 120 lb at West Central Asia/pale/straw/25",
+          "local tare step to 115 lb at West Central Asia/pale/straw/25",
+          "local tare step to 110 lb at West Central Asia/pale/straw/25",
+          "local tare step to 125 lb at West Central Asia/pale/straw/35",
+          "local tare step to 120 lb at West Central Asia/pale/straw/35",
+          "local tare step to 115 lb at West Central Asia/pale/straw/35",
+          "local tare step to 110 lb at West Central Asia/pale/straw/35",
+          "local tare step to 125 lb at Western Europe/copper/35",
+          "local tare step to 120 lb at Western Europe/copper/35",
+          "local tare step to 115 lb at Western Europe/copper/35",
+          "local tare step to 110 lb at Western Europe/copper/35",
+          "local tare step to 125 lb at Western Europe/golden/25",
+          "local tare step to 120 lb at Western Europe/golden/25",
+          "local tare step to 115 lb at Western Europe/golden/25",
+          "local tare step to 110 lb at Western Europe/golden/25",
+          "local tare step to 125 lb at Western Europe/golden/40",
+          "local tare step to 120 lb at Western Europe/golden/40",
+          "local tare step to 115 lb at Western Europe/golden/40",
+          "local tare step to 110 lb at Western Europe/golden/40",
+          "local tare step to 125 lb at Western Europe/pale/straw/30",
+          "local tare step to 120 lb at Western Europe/pale/straw/30",
+          "local tare step to 115 lb at Western Europe/pale/straw/30",
+          "local tare step to 110 lb at Western Europe/pale/straw/30",
+          "local tare step to 125 lb at central/brown/40",
+          "local tare step to 120 lb at central/brown/40",
+          "local tare step to 115 lb at central/brown/40",
+          "local tare step to 110 lb at central/brown/40",
+          "local tare step to 125 lb at central/copper/30",
+          "local tare step to 120 lb at central/copper/30",
+          "local tare step to 115 lb at central/copper/30",
+          "local tare step to 110 lb at central/copper/30",
+          "local tare step to 125 lb at central/golden/40",
+          "local tare step to 120 lb at central/golden/40",
+          "local tare step to 115 lb at central/golden/40",
+          "local tare step to 110 lb at central/golden/40",
+          "local tare step to 125 lb at central/pale/straw/20",
+          "local tare step to 120 lb at central/pale/straw/20",
+          "local tare step to 115 lb at central/pale/straw/20",
+          "local tare step to 110 lb at central/pale/straw/20",
+          "local tare step to 125 lb at northeast/amber/25",
+          "local tare step to 120 lb at northeast/amber/25",
+          "local tare step to 115 lb at northeast/amber/25",
+          "local tare step to 110 lb at northeast/amber/25",
+          "local tare step to 125 lb at northeast/amber/30",
+          "local tare step to 120 lb at northeast/amber/30",
+          "local tare step to 115 lb at northeast/amber/30",
+          "local tare step to 110 lb at northeast/amber/30",
+          "local tare step to 125 lb at northeast/brown/40",
+          "local tare step to 120 lb at northeast/brown/40",
+          "local tare step to 115 lb at northeast/brown/40",
+          "local tare step to 110 lb at northeast/brown/40",
+          "local tare step to 125 lb at northeast/copper/35",
+          "local tare step to 120 lb at northeast/copper/35",
+          "local tare step to 115 lb at northeast/copper/35",
+          "local tare step to 110 lb at northeast/copper/35",
+          "local tare step to 125 lb at northeast/pale/straw/30",
+          "local tare step to 120 lb at northeast/pale/straw/30",
+          "local tare step to 115 lb at northeast/pale/straw/30",
+          "local tare step to 110 lb at northeast/pale/straw/30",
+          "local tare step to 125 lb at northwest/amber/30",
+          "local tare step to 120 lb at northwest/amber/30",
+          "local tare step to 115 lb at northwest/amber/30",
+          "local tare step to 110 lb at northwest/amber/30",
+          "local tare step to 125 lb at northwest/amber/40",
+          "local tare step to 120 lb at northwest/amber/40",
+          "local tare step to 115 lb at northwest/amber/40",
+          "local tare step to 110 lb at northwest/amber/40",
+          "local tare step to 125 lb at northwest/brown/40",
+          "local tare step to 120 lb at northwest/brown/40",
+          "local tare step to 115 lb at northwest/brown/40",
+          "local tare step to 110 lb at northwest/brown/40",
+          "local tare step to 125 lb at northwest/golden/35",
+          "local tare step to 120 lb at northwest/golden/35",
+          "local tare step to 115 lb at northwest/golden/35",
+          "local tare step to 110 lb at northwest/golden/35",
+          "local tare step to 125 lb at northwest/golden/40",
+          "local tare step to 120 lb at northwest/golden/40",
+          "local tare step to 115 lb at northwest/golden/40",
+          "local tare step to 110 lb at northwest/golden/40",
+          "local tare step to 125 lb at southeast/brown/30",
+          "local tare step to 120 lb at southeast/brown/30",
+          "local tare step to 115 lb at southeast/brown/30",
+          "local tare step to 110 lb at southeast/brown/30",
+          "local tare step to 125 lb at southeast/brown/40",
+          "local tare step to 120 lb at southeast/brown/40",
+          "local tare step to 115 lb at southeast/brown/40",
+          "local tare step to 110 lb at southeast/brown/40",
+          "local tare step to 125 lb at southeast/copper/35",
+          "local tare step to 120 lb at southeast/copper/35",
+          "local tare step to 115 lb at southeast/copper/35",
+          "local tare step to 110 lb at southeast/copper/35",
+          "local tare step to 125 lb at southeast/golden/40",
+          "local tare step to 120 lb at southeast/golden/40",
+          "local tare step to 115 lb at southeast/golden/40",
+          "local tare step to 110 lb at southeast/golden/40",
+          "local tare step to 125 lb at southwest/brown/30",
+          "local tare step to 120 lb at southwest/brown/30",
+          "local tare step to 115 lb at southwest/brown/30",
+          "local tare step to 110 lb at southwest/brown/30",
+          "local tare step to 125 lb at southwest/brown/40",
+          "local tare step to 120 lb at southwest/brown/40",
+          "local tare step to 115 lb at southwest/brown/40",
+          "local tare step to 110 lb at southwest/brown/40",
+          "local tare step to 125 lb at southwest/copper/30",
+          "local tare step to 120 lb at southwest/copper/30",
+          "local tare step to 115 lb at southwest/copper/30",
+          "local tare step to 110 lb at southwest/copper/30",
+          "local tare step to 125 lb at southwest/golden/40",
+          "local tare step to 120 lb at southwest/golden/40",
+          "local tare step to 115 lb at southwest/golden/40",
+          "local tare step to 110 lb at southwest/golden/40",
+          "local tare step to 125 lb at southwest/pale/straw/20",
+          "local tare step to 120 lb at southwest/pale/straw/20",
+          "local tare step to 115 lb at southwest/pale/straw/20",
+          "local tare step to 110 lb at southwest/pale/straw/20",
+          "local tare step to 125 lb at southwest/pale/straw/30",
+          "local tare step to 120 lb at southwest/pale/straw/30",
+          "local tare step to 115 lb at southwest/pale/straw/30",
+          "local tare step to 110 lb at southwest/pale/straw/30"
+        ],
+        "coefficients": [
+          0.7069793459987792,
+          -1.5853268871885784,
+          -1.6986826198763751,
+          -1.6517633326751684,
+          0.6465201551910468,
+          1.3439205801486567,
+          0.6651259855445312,
+          1.3355475431275865,
+          1.4191203258687222,
+          1.984207702980753,
+          1.2249902903423435,
+          0.38825162612391134,
+          1.096281321761975,
+          1.4190839740603478,
+          0.8722426725850239,
+          2.4733522897860447,
+          1.268796356174783,
+          1.257943569673543,
+          0.946268648407926,
+          0.16575959958032926,
+          0.8843011485238628,
+          1.2196855403970739,
+          0.6198070040469712,
+          0.7905790848785723,
+          0.7722430426774529,
+          1.3065371594931303,
+          0.2809453374303811,
+          0.7339307308489714,
+          0.7722760341522534,
+          0.8347535810684703,
+          0.0,
+          2.256705210375023,
+          0.6338257907665164,
+          1.8982128010971644,
+          0.07537651700533685,
+          1.4690558640315705,
+          0.7722684280587373,
+          1.1996744380155802,
+          0.6972364008983951,
+          0.7705279655310607,
+          0.7722642023411382,
+          2.1568952177631475,
+          0.5784523789301342,
+          0.8287394604744943,
+          0.7722694731465828,
+          1.8754420347569147,
+          0.637332005210295,
+          1.1009823146598017,
+          0.5922492909792751,
+          1.2845512543427748,
+          0.8549656255075918,
+          0.8287727039149865,
+          0.772262661984538,
+          1.443562288991746,
+          1.123201327505347,
+          0.8287703472958773,
+          0.7722696493293345,
+          0.8846008360425937,
+          0.8316094640171862,
+          0.9752131332745594,
+          0.7722702269333327,
+          1.017538754660622,
+          0.8803009227204365,
+          0.449623382874616,
+          1.191514863686367,
+          1.5054741016484408,
+          0.470204634312622,
+          0.7378154758841563,
+          0.45714404618679927,
+          0.48731336282427723,
+          0.6571079350833855,
+          0.7026406781246035,
+          1.182791144689965,
+          1.5997196375106084,
+          0.09782653045555427,
+          0.7192085125323078,
+          0.7722701438898812,
+          1.570295145444054,
+          0.9783173000026565,
+          0.20719384382387537,
+          0.7722566830064588,
+          1.4387032683644023,
+          0.07088478289271534,
+          0.649223455193598,
+          0.9919147913673972,
+          1.1172224755245235,
+          0.9031119468728305,
+          0.7257843735074094,
+          0.7722756795048201,
+          0.0990617367003581,
+          1.0807190512880753,
+          1.015991032760688,
+          0.7896239113154057,
+          1.3166306805830164,
+          0.7025320243203361,
+          0.8287774008056245,
+          0.7722729528137313,
+          0.819745944821366,
+          1.447837960018282,
+          0.0,
+          0.7722636632055953,
+          1.0036958627664503,
+          0.3589748880934542,
+          0.8287893553719656,
+          0.7722701641546045,
+          1.6338879379319735,
+          0.9559409526561512,
+          1.6173624836674851,
+          0.3375919268458969,
+          1.6473872903861562,
+          1.0475058498475667,
+          0.8287877019178888,
+          0.7722712216121912,
+          1.446212265690037,
+          0.14660538534507395,
+          0.8287632946481078,
+          0.7722711362241592,
+          1.538214590541105,
+          0.0,
+          0.8763826782197586,
+          0.7722696846438094,
+          1.2579436839165978,
+          0.9462638683791377,
+          0.0,
+          0.884293644342668,
+          1.4462083886967327,
+          0.1465987882512098,
+          0.8287608504665426,
+          0.772273303260395,
+          1.7048823067069316,
+          0.0,
+          0.7192078594053444,
+          0.7722700314942987,
+          1.3605212117553944,
+          0.3349184601529399,
+          0.7339187685875384,
+          0.7722743213380281,
+          1.5997123321926188,
+          0.0,
+          0.7192098560269812,
+          0.7722738983070305,
+          1.5095880512571354,
+          0.0,
+          0.4496233828746151,
+          1.1915148636863677,
+          2.9566193185578085,
+          2.432921946766064e-17,
+          1.7548222197510464,
+          0.6338227836418442,
+          1.1656938567666737,
+          0.5658399181779187,
+          0.7905885977961273,
+          0.772246017571325,
+          2.2425290450029665,
+          0.0,
+          0.8287315520094906,
+          0.7722700853088333,
+          1.4462044671377479,
+          0.0,
+          0.8287534367123736,
+          0.7722690501392745,
+          1.5934026329849793,
+          0.9935324035506734,
+          0.8287843412699211,
+          0.7722647770629382,
+          0.9732109157200297,
+          0.28363915974695825,
+          0.8287864705331713,
+          0.7722724443208867,
+          2.1568924929642685,
+          0.0,
+          0.8287307990846191,
+          0.77226998727731,
+          0.09906173670035823,
+          1.1652501365920258,
+          1.0159874779245635,
+          0.7896198079270955,
+          1.5573182315858023,
+          0.9653332388401527,
+          0.2071978303735672,
+          0.7722566678578331,
+          1.5368003298722768,
+          0.858850695424468,
+          1.520283624553414,
+          0.24050630047859725,
+          1.52126094519691,
+          1.20958112965945,
+          0.0,
+          0.9963571090249693,
+          1.9729015241779093,
+          0.7348066978764678,
+          1.098319715654037,
+          0.5896006106659502,
+          1.5832532987716725,
+          0.9992085567763843,
+          0.0,
+          0.7722565224525282,
+          1.447721307585403,
+          0.0,
+          0.8302734142515585,
+          0.7737846202453413,
+          0.4873133628242767,
+          1.035613470248967,
+          0.6852792943885082,
+          1.1654412307266937,
+          1.5044754881418112,
+          0.0,
+          0.8842905761428493,
+          0.5922492909792768,
+          1.2579463515132858,
+          0.9462665359758258,
+          0.16576574496126034,
+          0.8842987708831633,
+          2.1568924929642685,
+          0.0,
+          0.828730799084619,
+          0.77226998727731,
+          1.633888291825391,
+          0.955938657377582,
+          1.6173708743081254,
+          0.33759439270520386,
+          0.6504517444145689,
+          0.9332866940473379,
+          0.8978785047439566,
+          0.49939841205807967,
+          0.0,
+          0.8927996206966619,
+          0.9752077537285031,
+          0.7722738418668658,
+          1.2579488104570933,
+          0.946268994919633,
+          0.0,
+          0.8842987708831633,
+          1.509588051257139,
+          0.0,
+          0.6492218917117395,
+          0.9919189407117884,
+          1.69261067091319,
+          1.100619958783246,
+          0.0,
+          0.7722499428389418,
+          0.985655425279429,
+          0.0,
+          0.772173531458166,
+          0.7722842643004757,
+          0.9946277620153474,
+          0.9711773628513583,
+          0.0,
+          0.8842987708831633,
+          1.6952451507975588,
+          0.9592265408496287,
+          0.828732033220496,
+          0.7722719415040116,
+          1.7603299104297663,
+          1.1683421148877056,
+          0.20718464702421158,
+          0.7722550693794371,
+          1.3233068478700565,
+          0.0,
+          0.7339178218944357,
+          0.7722751648989965,
+          1.2579488104570933,
+          0.9462687906183778,
+          0.16576799960381255,
+          0.8842985665819081,
+          2.249528942873908,
+          0.0,
+          1.1009772240422087,
+          0.5922380387678846,
+          1.5742850041573362,
+          0.9823029203424931,
+          0.0,
+          0.7722573258216298,
+          1.5291440912888281,
+          0.0,
+          0.8988784476646359,
+          0.8423902557318974,
+          1.6612881429979773,
+          0.983338508550167,
+          1.6447671905149548,
+          0.0
+        ],
+        "in_sample": {
+          "n": 341,
+          "matched": 312,
+          "accuracy": 0.9149560117302052,
+          "balanced_accuracy": 0.9179986679986681,
+          "recall": {
+            "B": 0.9545454545454546,
+            "tie": 0.8571428571428571,
+            "A": 0.9423076923076923
+          },
+          "confusion_actual_to_predicted": {
+            "B": {
+              "B": 63,
+              "tie": 3,
+              "A": 0
+            },
+            "tie": {
+              "B": 11,
+              "tie": 102,
+              "A": 6
+            },
+            "A": {
+              "B": 0,
+              "tie": 9,
+              "A": 147
+            }
+          },
+          "opposite_winner_errors": 0,
+          "predicted_ties": 114
+        },
+        "forced_strict_preference_ids": [],
+        "pure_tare_tie_audit": {
+          "n": 23,
+          "exact_score_equalities": 23
+        },
+        "target_predictions": [
+          {
+            "id": "round14-2",
+            "answer": "B",
+            "answer_source": "round14-2",
+            "prediction": "B",
+            "margin": -0.9592265408496287,
+            "exact_score_equality": false
+          },
+          {
+            "id": "round21-12",
+            "answer": "tie",
+            "answer_source": "round21-12",
+            "prediction": "tie",
+            "margin": 0.0,
+            "exact_score_equality": true
+          },
+          {
+            "id": "round23-1",
+            "answer": "tie",
+            "answer_source": "round23-1",
+            "prediction": "tie",
+            "margin": 0.0,
+            "exact_score_equality": true
+          },
+          {
+            "id": "round23-7",
+            "answer": "tie",
+            "answer_source": "round23-7",
+            "prediction": "tie",
+            "margin": 0.0,
+            "exact_score_equality": true
+          },
+          {
+            "id": "round23-10",
+            "answer": "tie",
+            "answer_source": "round24-2",
+            "prediction": "tie",
+            "margin": 0.0,
+            "exact_score_equality": true
+          },
+          {
+            "id": "round23-13",
+            "answer": "tie",
+            "answer_source": "round23-13",
+            "prediction": "tie",
+            "margin": 0.0,
+            "exact_score_equality": true
+          },
+          {
+            "id": "round23-19",
+            "answer": "tie",
+            "answer_source": "round23-19",
+            "prediction": "tie",
+            "margin": 0.0,
+            "exact_score_equality": true
+          }
+        ]
+      },
+      "parameters": [
+        0.7190975641330867,
+        0.7759882364378221,
+        0.8266820575633135,
+        0.651821107056575,
+        0.5916426365787641,
+        0.19720926218073967,
+        0.12577532884407827,
+        0.15723076329987484,
+        0.1686417811118452,
+        0.04422126258348604,
+        0.12577536697803607,
+        0.13266352130633152,
+        0.13078417432333964,
+        0.14288688769953078,
+        0.039436899783198094,
+        0.11869983275033759,
+        0.16810369616256798,
+        0.19581990745094321,
+        0.1357548744745814,
+        0.052257014685137985,
+        0.1255710243541046,
+        0.12460311746702087,
+        0.151563555161113,
+        0.10919597707957901,
+        0.09884909561678928,
+        0.19110765697545143,
+        0.12501990045076794,
+        0.167880325092266,
+        0.13114430210882133,
+        0.12685383836383407,
+        1.0426379296835675,
+        1.0781836049614477,
+        0.9081875090740692
+      ],
+      "domestic_order": [
+        "northeast",
+        "southwest",
+        "southeast",
+        "central",
+        "northwest"
+      ],
+      "template": [
+        1.2,
+        0.19999999999999996,
+        0.19999999999999996,
+        -0.8,
+        -0.8
+      ],
+      "contexts": [
+        [
+          "brown",
+          40
+        ],
+        [
+          "brown",
+          35
+        ],
+        [
+          "brown",
+          30
+        ],
+        [
+          "brown",
+          25
+        ],
+        [
+          "brown",
+          20
+        ],
+        [
+          "copper",
+          40
+        ],
+        [
+          "copper",
+          35
+        ],
+        [
+          "copper",
+          30
+        ],
+        [
+          "copper",
+          25
+        ],
+        [
+          "copper",
+          20
+        ],
+        [
+          "amber",
+          40
+        ],
+        [
+          "amber",
+          35
+        ],
+        [
+          "amber",
+          30
+        ],
+        [
+          "amber",
+          25
+        ],
+        [
+          "amber",
+          20
+        ],
+        [
+          "golden",
+          40
+        ],
+        [
+          "golden",
+          35
+        ],
+        [
+          "golden",
+          30
+        ],
+        [
+          "golden",
+          25
+        ],
+        [
+          "golden",
+          20
+        ],
+        [
+          "pale/straw",
+          40
+        ],
+        [
+          "pale/straw",
+          35
+        ],
+        [
+          "pale/straw",
+          30
+        ],
+        [
+          "pale/straw",
+          25
+        ],
+        [
+          "pale/straw",
+          20
+        ]
+      ],
+      "domestic_component_scales": {
+        "shade": 1.0426379296835675,
+        "vintage": 1.0781836049614477,
+        "tare": 0.9081875090740692
+      },
+      "in_sample": {
+        "n": 341,
+        "matched": 306,
+        "accuracy": 0.8973607038123167,
+        "balanced_accuracy": 0.9005275769981652,
+        "recall": {
+          "B": 0.9545454545454546,
+          "tie": 0.7983193277310925,
+          "A": 0.9487179487179487
+        },
+        "confusion_actual_to_predicted": {
+          "B": {
+            "B": 63,
+            "tie": 3,
+            "A": 0
+          },
+          "tie": {
+            "B": 16,
+            "tie": 95,
+            "A": 8
+          },
+          "A": {
+            "B": 0,
+            "tie": 8,
+            "A": 148
+          }
+        },
+        "opposite_winner_errors": 0,
+        "predicted_ties": 106
+      },
+      "regional_diagnostics": [
+        {
+          "shade": "brown",
+          "vintage": 40,
+          "hierarchy_gain": 0.19720926218073967,
+          "regional_premiums": {
+            "northeast": 0.9557486787499743,
+            "southwest": 0.8154300888739701,
+            "southeast": 0.8661239099994614,
+            "central": 0.4940536973119833,
+            "northwest": 0.4338752268341724
+          },
+          "regional_spread": 0.5218734519158019,
+          "full_scores_at_120_lb": {
+            "northeast": 2.957587290507672,
+            "southwest": 2.8172729814519224,
+            "southeast": 2.6514435696771943,
+            "central": 2.974170358950444,
+            "northwest": 2.4357183049559725
+          },
+          "full_score_spread": 0.5384520539944715
+        },
+        {
+          "shade": "brown",
+          "vintage": 35,
+          "hierarchy_gain": 0.12577532884407827,
+          "regional_premiums": {
+            "northeast": 0.8700279587459806,
+            "southwest": 0.8011433022066378,
+            "southeast": 0.8518371233321291,
+            "central": 0.5512008439813124,
+            "northwest": 0.49102237350350153
+          },
+          "regional_spread": 0.37900558524247907,
+          "full_scores_at_120_lb": {
+            "northeast": 4.070665185540343,
+            "southwest": 4.0017805290010005,
+            "southeast": 4.0524743501264915,
+            "central": 3.751838070775675,
+            "northwest": 3.691659600297864
+          },
+          "full_score_spread": 0.3790055852424792
+        },
+        {
+          "shade": "brown",
+          "vintage": 30,
+          "hierarchy_gain": 0.15723076329987484,
+          "regional_premiums": {
+            "northeast": 0.9077744800929365,
+            "southwest": 0.8074343890977971,
+            "southeast": 0.8581282102232884,
+            "central": 0.5260364964166752,
+            "northwest": 0.4658580259388643
+          },
+          "regional_spread": 0.4419164541540722,
+          "full_scores_at_120_lb": {
+            "northeast": 4.819977078696915,
+            "southwest": 4.479715963029895,
+            "southeast": 4.223758979737488,
+            "central": 4.438239095020655,
+            "northwest": 4.378060624542844
+          },
+          "full_score_spread": 0.5962180989594277
+        },
+        {
+          "shade": "brown",
+          "vintage": 25,
+          "hierarchy_gain": 0.1686417811118452,
+          "regional_premiums": {
+            "northeast": 0.921467701467301,
+            "southwest": 0.8097165926601911,
+            "southeast": 0.8604104137856825,
+            "central": 0.5169076821670988,
+            "northwest": 0.456729211689288
+          },
+          "regional_spread": 0.46473848977801296,
+          "full_scores_at_120_lb": {
+            "northeast": 6.816779189114036,
+            "southwest": 6.705028080306926,
+            "southeast": 6.755721901432418,
+            "central": 6.4122191698138336,
+            "northwest": 6.3520406993360226
+          },
+          "full_score_spread": 0.46473848977801335
+        },
+        {
+          "shade": "brown",
+          "vintage": 20,
+          "hierarchy_gain": 0.04422126258348604,
+          "regional_premiums": {
+            "northeast": 0.7721630792332699,
+            "southwest": 0.7848324889545193,
+            "southeast": 0.8355263100800107,
+            "central": 0.6164440969897862,
+            "northwest": 0.5562656265119753
+          },
+          "regional_spread": 0.27926068356803535,
+          "full_scores_at_120_lb": {
+            "northeast": 9.06974638740395,
+            "southwest": 9.082415797125199,
+            "southeast": 9.13310961825069,
+            "central": 8.914027405160466,
+            "northwest": 8.853848934682656
+          },
+          "full_score_spread": 0.2792606835680349
+        },
+        {
+          "shade": "copper",
+          "vintage": 40,
+          "hierarchy_gain": 0.12577536697803607,
+          "regional_premiums": {
+            "northeast": 0.8700280045067299,
+            "southwest": 0.8011433098334293,
+            "southeast": 0.8518371309589207,
+            "central": 0.5512008134741462,
+            "northwest": 0.4910223429963353
+          },
+          "regional_spread": 0.3790056615103946,
+          "full_scores_at_120_lb": {
+            "northeast": 4.661588945733655,
+            "southwest": 4.592704251060355,
+            "southeast": 4.643398072185846,
+            "central": 4.342761754701072,
+            "northwest": 4.282583284223261
+          },
+          "full_score_spread": 0.3790056615103943
+        },
+        {
+          "shade": "copper",
+          "vintage": 35,
+          "hierarchy_gain": 0.13266352130633152,
+          "regional_premiums": {
+            "northeast": 0.8782937897006845,
+            "southwest": 0.8025209406990884,
+            "southeast": 0.8532147618245798,
+            "central": 0.5456902900115098,
+            "northwest": 0.48551181953369893
+          },
+          "regional_spread": 0.3927819701669856,
+          "full_scores_at_120_lb": {
+            "northeast": 6.435999896619906,
+            "southwest": 6.885572747385144,
+            "southeast": 6.862816081762713,
+            "central": 6.628742096697566,
+            "northwest": 6.568563626219754
+          },
+          "full_score_spread": 0.4495728507652377
+        },
+        {
+          "shade": "copper",
+          "vintage": 30,
+          "hierarchy_gain": 0.13078417432333964,
+          "regional_premiums": {
+            "northeast": 0.8760385733210942,
+            "southwest": 0.80214507130249,
+            "southeast": 0.8528388924279814,
+            "central": 0.5471937675979033,
+            "northwest": 0.48701529712009245
+          },
+          "regional_spread": 0.3890232762010018,
+          "full_scores_at_120_lb": {
+            "northeast": 7.697389605067271,
+            "southwest": 7.38442019404354,
+            "southeast": 7.674189924174158,
+            "central": 7.545581588607217,
+            "northwest": 7.308366328866269
+          },
+          "full_score_spread": 0.3890232762010024
+        },
+        {
+          "shade": "copper",
+          "vintage": 25,
+          "hierarchy_gain": 0.14288688769953078,
+          "regional_premiums": {
+            "northeast": 0.8905618293725236,
+            "southwest": 0.8045656139777283,
+            "southeast": 0.8552594351032197,
+            "central": 0.5375115968969504,
+            "northwest": 0.4773331264191395
+          },
+          "regional_spread": 0.4132287029533841,
+          "full_scores_at_120_lb": {
+            "northeast": 10.039653258769293,
+            "southwest": 9.953657043374498,
+            "southeast": 10.00435086449999,
+            "central": 9.68660302629372,
+            "northwest": 9.626424555815909
+          },
+          "full_score_spread": 0.41322870295338454
+        },
+        {
+          "shade": "copper",
+          "vintage": 20,
+          "hierarchy_gain": 0.039436899783198094,
+          "regional_premiums": {
+            "northeast": 0.7664218438729243,
+            "southwest": 0.7838756163944617,
+            "southeast": 0.834569437519953,
+            "central": 0.6202715872300165,
+            "northwest": 0.5600931167522056
+          },
+          "regional_spread": 0.2744763207677474,
+          "full_scores_at_120_lb": {
+            "northeast": 11.671528852047386,
+            "southwest": 11.688982624568922,
+            "southeast": 11.739676445694414,
+            "central": 11.52537859540448,
+            "northwest": 11.465200124926668
+          },
+          "full_score_spread": 0.27447632076774653
+        },
+        {
+          "shade": "amber",
+          "vintage": 40,
+          "hierarchy_gain": 0.11869983275033759,
+          "regional_premiums": {
+            "northeast": 0.8615373634334917,
+            "southwest": 0.7997282029878896,
+            "southeast": 0.850422024113381,
+            "central": 0.556861240856305,
+            "northwest": 0.49668277037849407
+          },
+          "regional_spread": 0.3648545930549977,
+          "full_scores_at_120_lb": {
+            "northeast": 5.766209672595096,
+            "southwest": 5.704400512149494,
+            "southeast": 5.755094333274986,
+            "central": 5.46153355001791,
+            "northwest": 4.653543785704322
+          },
+          "full_score_spread": 1.112665886890774
+        },
+        {
+          "shade": "amber",
+          "vintage": 35,
+          "hierarchy_gain": 0.16810369616256798,
+          "regional_premiums": {
+            "northeast": 0.9208219995281682,
+            "southwest": 0.8096089756703357,
+            "southeast": 0.8603027967958271,
+            "central": 0.5173381501265206,
+            "northwest": 0.45715967964870974
+          },
+          "regional_spread": 0.4636623198794585,
+          "full_scores_at_120_lb": {
+            "northeast": 7.520480915349262,
+            "southwest": 7.40926789149143,
+            "southeast": 7.459961712616922,
+            "central": 7.116997065947615,
+            "northwest": 7.056818595469805
+          },
+          "full_score_spread": 0.4636623198794574
+        },
+        {
+          "shade": "amber",
+          "vintage": 30,
+          "hierarchy_gain": 0.19581990745094321,
+          "regional_premiums": {
+            "northeast": 0.9540814530742185,
+            "southwest": 0.8151522179280107,
+            "southeast": 0.8658460390535021,
+            "central": 0.4951651810958204,
+            "northwest": 0.43498671061800953
+          },
+          "regional_spread": 0.519094742456209,
+          "full_scores_at_120_lb": {
+            "northeast": 8.136929674840108,
+            "southwest": 8.42594134359848,
+            "southeast": 8.47663516472397,
+            "central": 8.10595430676629,
+            "northwest": 7.689820553796969
+          },
+          "full_score_spread": 0.7868146109270002
+        },
+        {
+          "shade": "amber",
+          "vintage": 25,
+          "hierarchy_gain": 0.1357548744745814,
+          "regional_premiums": {
+            "northeast": 0.8820034135025844,
+            "southwest": 0.8031392113327384,
+            "southeast": 0.8538330324582297,
+            "central": 0.5432172074769099,
+            "northwest": 0.48303873699909905
+          },
+          "regional_spread": 0.3989646765034853,
+          "full_scores_at_120_lb": {
+            "northeast": 10.748336804401987,
+            "southwest": 10.325718603079366,
+            "southeast": 10.376412424204858,
+            "central": 10.065796599223537,
+            "northwest": 10.005618128745727
+          },
+          "full_score_spread": 0.7427186756562598
+        },
+        {
+          "shade": "amber",
+          "vintage": 20,
+          "hierarchy_gain": 0.052257014685137985,
+          "regional_premiums": {
+            "northeast": 0.7818059817552523,
+            "southwest": 0.7864396393748497,
+            "southeast": 0.8371334605003411,
+            "central": 0.6100154953084647,
+            "northwest": 0.5498370248306538
+          },
+          "regional_spread": 0.2872964356696873,
+          "full_scores_at_120_lb": {
+            "northeast": 12.174721900709702,
+            "southwest": 12.179355558329302,
+            "southeast": 12.230049379454794,
+            "central": 12.002931414262918,
+            "northwest": 11.942752943785106
+          },
+          "full_score_spread": 0.2872964356696883
+        },
+        {
+          "shade": "golden",
+          "vintage": 40,
+          "hierarchy_gain": 0.1255710243541046,
+          "regional_premiums": {
+            "northeast": 0.8697827933580122,
+            "southwest": 0.801102441308643,
+            "southeast": 0.8517962624341344,
+            "central": 0.5513642875732914,
+            "northwest": 0.4911858170954804
+          },
+          "regional_spread": 0.3785969762625318,
+          "full_scores_at_120_lb": {
+            "northeast": 6.935238205144598,
+            "southwest": 6.873801083550154,
+            "southeast": 7.262417037363285,
+            "central": 6.647561310803447,
+            "northwest": 6.7788004083100475
+          },
+          "full_score_spread": 0.6148557265598384
+        },
+        {
+          "shade": "golden",
+          "vintage": 35,
+          "hierarchy_gain": 0.12460311746702087,
+          "regional_premiums": {
+            "northeast": 0.8686213050935117,
+            "southwest": 0.8009088599312263,
+            "southeast": 0.8516026810567177,
+            "central": 0.5521386130829583,
+            "northwest": 0.4919601426051474
+          },
+          "regional_spread": 0.37666116248836423,
+          "full_scores_at_120_lb": {
+            "northeast": 7.520480815349261,
+            "southwest": 7.452768370186975,
+            "southeast": 7.503462191312467,
+            "central": 7.203998123338708,
+            "northwest": 7.143819652860916
+          },
+          "full_score_spread": 0.3766611624883449
+        },
+        {
+          "shade": "golden",
+          "vintage": 30,
+          "hierarchy_gain": 0.151563555161113,
+          "regional_premiums": {
+            "northeast": 0.9009738303264223,
+            "southwest": 0.8063009474700447,
+            "southeast": 0.856994768595536,
+            "central": 0.5305702629276846,
+            "northwest": 0.4703917924498737
+          },
+          "regional_spread": 0.4305820378765486,
+          "full_scores_at_120_lb": {
+            "northeast": 8.957124564285571,
+            "southwest": 8.862451681429194,
+            "southeast": 8.913145502554684,
+            "central": 8.586720996886834,
+            "northwest": 8.526542526409022
+          },
+          "full_score_spread": 0.43058203787654925
+        },
+        {
+          "shade": "golden",
+          "vintage": 25,
+          "hierarchy_gain": 0.10919597707957901,
+          "regional_premiums": {
+            "northeast": 0.8501327366285815,
+            "southwest": 0.797827431853738,
+            "southeast": 0.8485212529792293,
+            "central": 0.5644643253929118,
+            "northwest": 0.5042858549151009
+          },
+          "regional_spread": 0.34584688171348055,
+          "full_scores_at_120_lb": {
+            "northeast": 10.809631047251909,
+            "southwest": 10.757325742477065,
+            "southeast": 10.808019563602555,
+            "central": 10.523962636016236,
+            "northwest": 10.463784165538426
+          },
+          "full_score_spread": 0.34584688171348255
+        },
+        {
+          "shade": "golden",
+          "vintage": 20,
+          "hierarchy_gain": 0.09884909561678928,
+          "regional_premiums": {
+            "northeast": 0.8377164788732339,
+            "southwest": 0.79575805556118,
+            "southeast": 0.8464518766866713,
+            "central": 0.5727418305631435,
+            "northwest": 0.5125633600853328
+          },
+          "regional_spread": 0.33388851660133856,
+          "full_scores_at_120_lb": {
+            "northeast": 12.927526391043815,
+            "southwest": 12.88556796773176,
+            "southeast": 12.936261788857252,
+            "central": 12.662551742733722,
+            "northwest": 12.602373272255914
+          },
+          "full_score_spread": 0.33388851660133767
+        },
+        {
+          "shade": "pale/straw",
+          "vintage": 40,
+          "hierarchy_gain": 0.19110765697545143,
+          "regional_premiums": {
+            "northeast": 0.9484267525036284,
+            "southwest": 0.8142097678329124,
+            "southeast": 0.8649035889584038,
+            "central": 0.49893498147621385,
+            "northwest": 0.43875651099840296
+          },
+          "regional_spread": 0.5096702415052254,
+          "full_scores_at_120_lb": {
+            "northeast": 7.901680041690236,
+            "southwest": 7.767463057019521,
+            "southeast": 7.818156878145011,
+            "central": 7.4521882706628215,
+            "northwest": 7.392009800185011
+          },
+          "full_score_spread": 0.5096702415052246
+        },
+        {
+          "shade": "pale/straw",
+          "vintage": 35,
+          "hierarchy_gain": 0.12501990045076794,
+          "regional_premiums": {
+            "northeast": 0.8691214446740082,
+            "southwest": 0.8009922165279757,
+            "southeast": 0.8516860376534671,
+            "central": 0.5518051866959607,
+            "northwest": 0.4916267162181498
+          },
+          "regional_spread": 0.3774947284558584,
+          "full_scores_at_120_lb": {
+            "northeast": 8.530576985514797,
+            "southwest": 8.462447757368764,
+            "southeast": 8.513141578494256,
+            "central": 8.213260727536749,
+            "northwest": 8.153082257058939
+          },
+          "full_score_spread": 0.37749472845585785
+        },
+        {
+          "shade": "pale/straw",
+          "vintage": 30,
+          "hierarchy_gain": 0.167880325092266,
+          "regional_premiums": {
+            "northeast": 0.9205539542438059,
+            "southwest": 0.8095643014562753,
+            "southeast": 0.8602581225817667,
+            "central": 0.5175168469827622,
+            "northwest": 0.45733837650495135
+          },
+          "regional_spread": 0.4632155777388546,
+          "full_scores_at_120_lb": {
+            "northeast": 10.636935175231518,
+            "southwest": 10.57571392761485,
+            "southeast": 10.576641106711225,
+            "central": 10.233899831112222,
+            "northwest": 10.17372136063441
+          },
+          "full_score_spread": 0.46321381459710764
+        },
+        {
+          "shade": "pale/straw",
+          "vintage": 25,
+          "hierarchy_gain": 0.13114430210882133,
+          "regional_premiums": {
+            "northeast": 0.8764707266636722,
+            "southwest": 0.8022170968595864,
+            "southeast": 0.8529109179850778,
+            "central": 0.5469056653695179,
+            "northwest": 0.48672719489170707
+          },
+          "regional_spread": 0.38974353177196513,
+          "full_scores_at_120_lb": {
+            "northeast": 13.354999638112671,
+            "southwest": 13.280746008308586,
+            "southeast": 13.331439829434078,
+            "central": 13.025434576818519,
+            "northwest": 12.965256106340707
+          },
+          "full_score_spread": 0.3897435317719644
+        },
+        {
+          "shade": "pale/straw",
+          "vintage": 20,
+          "hierarchy_gain": 0.12685383836383407,
+          "regional_premiums": {
+            "northeast": 0.8713221701696876,
+            "southwest": 0.8013590041105889,
+            "southeast": 0.8520528252360803,
+            "central": 0.5503380363655077,
+            "northwest": 0.4901595658876969
+          },
+          "regional_spread": 0.3811626042819907,
+          "full_scores_at_120_lb": {
+            "northeast": 13.716955317534289,
+            "southwest": 13.589164619855335,
+            "southeast": 13.697685972600683,
+            "central": 13.264196496996764,
+            "northwest": 13.3357927132523
+          },
+          "full_score_spread": 0.45275882053752525
+        }
+      ],
+      "soft_dominance_prior_diagnostics": [
+        {
+          "a": [
+            "northeast",
+            "brown",
+            20,
+            130
+          ],
+          "b": [
+            "central",
+            "brown",
+            30,
+            110
+          ],
+          "margin": 1.471199955583618,
+          "note": "Prior scenario, not validation evidence"
+        },
+        {
+          "a": [
+            "northeast",
+            "copper",
+            20,
+            130
+          ],
+          "b": [
+            "central",
+            "copper",
+            30,
+            110
+          ],
+          "margin": 0.2618964515156872,
+          "note": "Prior scenario, not validation evidence"
+        },
+        {
+          "a": [
+            "northeast",
+            "amber",
+            20,
+            130
+          ],
+          "b": [
+            "central",
+            "amber",
+            30,
+            110
+          ],
+          "margin": 1.4418300563260331,
+          "note": "Prior scenario, not validation evidence"
+        },
+        {
+          "a": [
+            "northeast",
+            "golden",
+            20,
+            130
+          ],
+          "b": [
+            "central",
+            "golden",
+            30,
+            110
+          ],
+          "margin": 1.146507618787,
+          "note": "Prior scenario, not validation evidence"
+        },
+        {
+          "a": [
+            "northeast",
+            "pale/straw",
+            20,
+            130
+          ],
+          "b": [
+            "central",
+            "pale/straw",
+            30,
+            110
+          ],
+          "margin": 0.26101321508176767,
+          "note": "Prior scenario, not validation evidence"
+        },
+        {
+          "a": [
+            "northeast",
+            "brown",
+            20,
+            130
+          ],
+          "b": [
+            "northwest",
+            "brown",
+            30,
+            110
+          ],
+          "margin": 1.531378426061429,
+          "note": "Prior scenario, not validation evidence"
+        },
+        {
+          "a": [
+            "northeast",
+            "copper",
+            20,
+            130
+          ],
+          "b": [
+            "northwest",
+            "copper",
+            30,
+            110
+          ],
+          "margin": 0.49428807372183314,
+          "note": "Prior scenario, not validation evidence"
+        },
+        {
+          "a": [
+            "northeast",
+            "amber",
+            20,
+            130
+          ],
+          "b": [
+            "northwest",
+            "amber",
+            30,
+            110
+          ],
+          "margin": 1.6742216785321773,
+          "note": "Prior scenario, not validation evidence"
+        },
+        {
+          "a": [
+            "northeast",
+            "golden",
+            20,
+            130
+          ],
+          "b": [
+            "northwest",
+            "golden",
+            30,
+            110
+          ],
+          "margin": 1.206686089264812,
+          "note": "Prior scenario, not validation evidence"
+        },
+        {
+          "a": [
+            "northeast",
+            "pale/straw",
+            20,
+            130
+          ],
+          "b": [
+            "northwest",
+            "pale/straw",
+            30,
+            110
+          ],
+          "margin": 0.32119168555957955,
+          "note": "Prior scenario, not validation evidence"
+        },
+        {
+          "a": [
+            "southwest",
+            "brown",
+            20,
+            130
+          ],
+          "b": [
+            "central",
+            "brown",
+            30,
+            110
+          ],
+          "margin": 1.4838693653048676,
+          "note": "Prior scenario, not validation evidence"
+        },
+        {
+          "a": [
+            "southwest",
+            "copper",
+            20,
+            130
+          ],
+          "b": [
+            "central",
+            "copper",
+            30,
+            110
+          ],
+          "margin": 0.2793502240372234,
+          "note": "Prior scenario, not validation evidence"
+        },
+        {
+          "a": [
+            "southwest",
+            "amber",
+            20,
+            130
+          ],
+          "b": [
+            "central",
+            "amber",
+            30,
+            110
+          ],
+          "margin": 1.4464637139456311,
+          "note": "Prior scenario, not validation evidence"
+        },
+        {
+          "a": [
+            "southwest",
+            "golden",
+            20,
+            130
+          ],
+          "b": [
+            "central",
+            "golden",
+            30,
+            110
+          ],
+          "margin": 1.1045491954749451,
+          "note": "Prior scenario, not validation evidence"
+        },
+        {
+          "a": [
+            "southwest",
+            "pale/straw",
+            20,
+            130
+          ],
+          "b": [
+            "central",
+            "pale/straw",
+            30,
+            110
+          ],
+          "margin": 0.19105004902266742,
+          "note": "Prior scenario, not validation evidence"
+        },
+        {
+          "a": [
+            "southwest",
+            "brown",
+            20,
+            130
+          ],
+          "b": [
+            "northwest",
+            "brown",
+            30,
+            110
+          ],
+          "margin": 1.5440478357826786,
+          "note": "Prior scenario, not validation evidence"
+        },
+        {
+          "a": [
+            "southwest",
+            "copper",
+            20,
+            130
+          ],
+          "b": [
+            "northwest",
+            "copper",
+            30,
+            110
+          ],
+          "margin": 0.5117418462433694,
+          "note": "Prior scenario, not validation evidence"
+        },
+        {
+          "a": [
+            "southwest",
+            "amber",
+            20,
+            130
+          ],
+          "b": [
+            "northwest",
+            "amber",
+            30,
+            110
+          ],
+          "margin": 1.6788553361517753,
+          "note": "Prior scenario, not validation evidence"
+        },
+        {
+          "a": [
+            "southwest",
+            "golden",
+            20,
+            130
+          ],
+          "b": [
+            "northwest",
+            "golden",
+            30,
+            110
+          ],
+          "margin": 1.164727665952757,
+          "note": "Prior scenario, not validation evidence"
+        },
+        {
+          "a": [
+            "southwest",
+            "pale/straw",
+            20,
+            130
+          ],
+          "b": [
+            "northwest",
+            "pale/straw",
+            30,
+            110
+          ],
+          "margin": 0.2512285195004793,
+          "note": "Prior scenario, not validation evidence"
+        },
+        {
+          "a": [
+            "southeast",
+            "brown",
+            20,
+            130
+          ],
+          "b": [
+            "central",
+            "brown",
+            30,
+            110
+          ],
+          "margin": 1.5345631864303586,
+          "note": "Prior scenario, not validation evidence"
+        },
+        {
+          "a": [
+            "southeast",
+            "copper",
+            20,
+            130
+          ],
+          "b": [
+            "central",
+            "copper",
+            30,
+            110
+          ],
+          "margin": 0.33004404516271535,
+          "note": "Prior scenario, not validation evidence"
+        },
+        {
+          "a": [
+            "southeast",
+            "amber",
+            20,
+            130
+          ],
+          "b": [
+            "central",
+            "amber",
+            30,
+            110
+          ],
+          "margin": 1.4971575350711213,
+          "note": "Prior scenario, not validation evidence"
+        },
+        {
+          "a": [
+            "southeast",
+            "golden",
+            20,
+            130
+          ],
+          "b": [
+            "central",
+            "golden",
+            30,
+            110
+          ],
+          "margin": 1.155243016600437,
+          "note": "Prior scenario, not validation evidence"
+        },
+        {
+          "a": [
+            "southeast",
+            "pale/straw",
+            20,
+            130
+          ],
+          "b": [
+            "central",
+            "pale/straw",
+            30,
+            110
+          ],
+          "margin": 0.24174387014815935,
+          "note": "Prior scenario, not validation evidence"
+        },
+        {
+          "a": [
+            "southeast",
+            "brown",
+            20,
+            130
+          ],
+          "b": [
+            "northwest",
+            "brown",
+            30,
+            110
+          ],
+          "margin": 1.5947416569081696,
+          "note": "Prior scenario, not validation evidence"
+        },
+        {
+          "a": [
+            "southeast",
+            "copper",
+            20,
+            130
+          ],
+          "b": [
+            "northwest",
+            "copper",
+            30,
+            110
+          ],
+          "margin": 0.5624356673688613,
+          "note": "Prior scenario, not validation evidence"
+        },
+        {
+          "a": [
+            "southeast",
+            "amber",
+            20,
+            130
+          ],
+          "b": [
+            "northwest",
+            "amber",
+            30,
+            110
+          ],
+          "margin": 1.7295491572772654,
+          "note": "Prior scenario, not validation evidence"
+        },
+        {
+          "a": [
+            "southeast",
+            "golden",
+            20,
+            130
+          ],
+          "b": [
+            "northwest",
+            "golden",
+            30,
+            110
+          ],
+          "margin": 1.215421487078249,
+          "note": "Prior scenario, not validation evidence"
+        },
+        {
+          "a": [
+            "southeast",
+            "pale/straw",
+            20,
+            130
+          ],
+          "b": [
+            "northwest",
+            "pale/straw",
+            30,
+            110
+          ],
+          "margin": 0.30192234062597123,
+          "note": "Prior scenario, not validation evidence"
+        }
+      ]
+    }
+  },
+  "response_options": [
+    "Price A higher than B",
+    "Price B higher than A",
+    "Give them exactly the same price",
+    "Leave this unresolved / save for later"
+  ],
+  "current_target": "round27-11",
+  "freeze_fields": [
+    "id",
+    "target",
+    "a",
+    "b",
+    "factor",
+    "revisits",
+    "predictions_before_answer",
+    "margins"
+  ],
+  "initial_frozen_question_count": 3,
+  "questions_and_predictions_sha256": "cea9cf93a17bce54094804d5ed6e9ec5e60ac216510ac4bf88695ce024e74a20",
+  "questions": [
+    {
+      "id": "round29-1",
+      "target": "round27-11",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        30,
+        120
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        30,
+        120
+      ],
+      "factor": "shade only",
+      "revisits": [],
+      "predictions_before_answer": {
+        "weighted_v9": "A",
+        "weighted_v8": "A"
+      },
+      "margins": {
+        "weighted_v9": 5.666702180978486,
+        "weighted_v8": 5.696077334873596
+      },
+      "winner": "A",
+      "strength": null,
+      "raw_answer": "1. Price A higher than B\u2014the provenance, vintage and tare match, so the pale/straw shade gives A the advantage.",
+      "status": "answered"
+    },
+    {
+      "id": "round29-2",
+      "target": "round27-11",
+      "a": [
+        "West Central Asia",
+        "brown",
+        30,
+        120
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        20,
+        120
+      ],
+      "factor": "vintage only",
+      "revisits": [],
+      "predictions_before_answer": {
+        "weighted_v9": "B",
+        "weighted_v8": "B"
+      },
+      "margins": {
+        "weighted_v9": -4.092780749931157,
+        "weighted_v8": -4.128255467139818
+      },
+      "winner": "B",
+      "strength": null,
+      "raw_answer": "2. Price B higher than A\u2014the 10-year younger vintage gives B the advantage when provenance, shade and tare are identical.",
+      "status": "answered"
+    },
+    {
+      "id": "round29-3",
+      "target": "round27-11",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        30,
+        120
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        20,
+        120
+      ],
+      "factor": "original full comparison",
+      "revisits": [
+        {
+          "file": "round27-fixed.json",
+          "id": "round27-11"
+        }
+      ],
+      "predictions_before_answer": {
+        "weighted_v9": "A",
+        "weighted_v8": "A"
+      },
+      "margins": {
+        "weighted_v9": 1.5739214310473297,
+        "weighted_v8": 1.5678218677337785
+      },
+      "winner": null,
+      "strength": null,
+      "raw_answer": "Still too close to call. Let's reduce A's vintage to 25 years and keep everything else the same. Keep both models fixed and use the explicit pricing options.",
+      "status": "unresolved",
+      "review_tag": "superbowl",
+      "review_note": "Still too close to call after component isolation; not exact equality."
+    },
+    {
+      "id": "round29-4",
+      "target": "round27-11",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        25,
+        120
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        20,
+        120
+      ],
+      "factor": "adaptive full-pair follow-up; reduce only A vintage from30 to25 years",
+      "revisits": [],
+      "predictions_before_answer": {
+        "weighted_v9": "A",
+        "weighted_v8": "A"
+      },
+      "margins": {
+        "weighted_v9": 4.0616429555801865,
+        "weighted_v8": 4.038280303467351
+      },
+      "winner": "A",
+      "strength": "slightly",
+      "raw_answer": "1. Price A higher than B, but only slightly\u2014the pale/straw shade now outweighs the five-year vintage difference.",
+      "status": "answered"
+    }
+  ],
+  "rule_statements": [
+    {
+      "source_question": "round29-1",
+      "raw_answer": "1. Price A higher than B\u2014the provenance, vintage and tare match, so the pale/straw shade gives A the advantage.",
+      "scope": "West Central Asia, 30 years, 120 lb; pale/straw versus brown.",
+      "interpretation": "A strictly higher due to shade alone. Strength and numeric premium unspecified; original full pair remains unresolved. Not an additional sample beyond this comparison."
+    },
+    {
+      "source_question": "round29-2",
+      "raw_answer": "2. Price B higher than A\u2014the 10-year younger vintage gives B the advantage when provenance, shade and tare are identical.",
+      "scope": "West Central Asia, brown shade, 120 lb; A 30 years versus B 20 years.",
+      "interpretation": "B strictly higher due to the ten-year younger vintage. Strength and numeric premium unspecified; component answers do not resolve original full pair or imply additive subjective intensity arithmetic."
+    },
+    {
+      "source_question": "round29-3",
+      "raw_answer": "Still too close to call. Let's reduce A's vintage to 25 years and keep everything else the same. Keep both models fixed and use the explicit pricing options.",
+      "scope": "West Central Asia pale/straw30/120 versus brown20/120.",
+      "interpretation": "Original pair remains unresolved, not an exact tie. User requests follow-up changing only A vintage to25 years."
+    },
+    {
+      "source_question": "round29-4",
+      "raw_answer": "1. Price A higher than B, but only slightly\u2014the pale/straw shade now outweighs the five-year vintage difference.",
+      "scope": "West Central Asia, 120 lb; A pale/straw25 versus B brown20.",
+      "interpretation": "A slightly higher: pale/straw shade outweighs the five-year vintage difference here. Original pale/straw30 versus brown20 remains unresolved, not an exact tie. No numeric premium or precise crossover inferred."
+    }
+  ],
+  "adaptive_question_freezes": [
+    {
+      "question_id": "round29-4",
+      "freeze_fields": [
+        "id",
+        "target",
+        "a",
+        "b",
+        "factor",
+        "revisits",
+        "predictions_before_answer",
+        "margins"
+      ],
+      "sha256": "8654e1b320b0d510f9f5c1c9cb784acd38e08fddef7d864c9de910e740238c1e",
+      "reason": "Explicit user request after original full comparison remained unresolved; not part of initial three-question plan or Round27 test."
+    }
+  ],
+  "target_findings": {
+    "round27-11": {
+      "status": "unresolved",
+      "shade_probe": "Pale/straw over brown at30 years, 120 lb; strength unspecified.",
+      "vintage_probe": "Brown20 over brown30 at120 lb; strength unspecified.",
+      "full_pair": "Pale/straw30 versus brown20 remains too close to call, not exact equality.",
+      "adaptive_25_year_probe": "Pale/straw25 slightly higher than brown20, same provenance and120 lb.",
+      "limitations": "Context-specific qualitative observations; no precise indifference threshold or additive intensity arithmetic established."
+    }
+  }
+}

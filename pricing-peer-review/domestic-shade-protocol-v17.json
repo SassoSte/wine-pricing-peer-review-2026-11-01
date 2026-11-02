@@ -1,0 +1,20 @@
+{
+  "evidence": "evidence-v17.json",
+  "scope": "413 parent records unchanged plus12 Round36 observations. Both axes explicit. No prior record at a different age/tare is relabeled.",
+  "architecture": "19 coefficients: existing18 additive features plus domestic x pale/straw. This permits domestic golden-to-pale effect to be negligible while retaining a larger foreign effect. Discard unsupported NW-amber and WCA-light-shade interactions in this new candidate only; earlier models unchanged.",
+  "arms": {
+    "v16_control": "Verified frozen v16 training-fold fits on the413 old rows; evaluate both old and new425 targets on matched extended families.",
+    "v17_additive": "18-feature blended-loss data-update control, fitted on v17 with the same alpha grid and declared radius grid.",
+    "v17_shade_soft": "19-feature shade correction, same blended loss, global monotonicity and user materiality rules; no direct-answer protection.",
+    "v17_shade_protected": "Same19 features with training-only constraints for high-confidence directly supplied materiality observations. Preserve explicitly known tiny directions without forcing large margins. No output lookup."
+  },
+  "global_rules": "Same-provenance/shade/vintage5lb tare difference and same-provenance/vintage/tare domestic golden-pale difference remain within the learned practical band, not forced to zero. Global monotonicity maintained.",
+  "protection": "Use verified_materiality() eligibility on TRAINING evidence only: explicit materiality, practical-similarity records and user5lb clarification. Coarsened older ties,25 strength proxies and238 unspecified sizes are not hard protected. Practical abs(gap)<=radius; if direction explicitly known, signed gap>=1e-4. Explicit meaningful signed gap>=radius+1e-4. This numerical strictness is not a monetary premium. No per-pair prediction overrides.",
+  "alphas": [0.001, 0.01, 0.1, 1.0],
+  "training_radii": [0.1, 0.2, 0.25, 0.3, 0.5, 0.75],
+  "decision_tolerance": 1e-7,
+  "validation": "Preserve all413 v16 outer family assignments; allocate new families without labels.5 repeats x5 outer folds,3 inner grouped folds select alpha/radius. Only training rows generate confidence constraints. Candidate architecture and global shade rule follow new user guidance, so repeated validation remains exploratory, not another prospective test.",
+  "selection": "Same joint direction/materiality criterion as v16. Mean direction accuracy and binary materiality balanced accuracy; tie-break worst component, fewer sign reversals, stronger ridge, larger radius. Direction and meaningfulness reported separately; proxy/direct panels separate.",
+  "delivery": "Among v17 candidates require direction and materiality balanced accuracy not worse than matched v16 control, at least one improvement, no more sign reversals, false meaningful declarations or direct-materiality errors. Choose highest joint score; tie favors fewer coefficients. If none qualify, retain v16 and save candidates separately. No recorded-answer predictions in scoring.",
+  "interpretation": "Fresh patterns support a stable small provenance ordering at the tested settings and domestic-versus-foreign shade/vintage distinction. They do not prove all older heavier/older-vintage reversals are false. Meaningfulness data still partly rely on qualifier proxies; no dollar prices or new questionnaire."
+}

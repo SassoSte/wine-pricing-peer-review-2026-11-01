@@ -1,0 +1,3717 @@
+{
+  "selected": "v28_tare_compensation",
+  "best_experimental": "one_feature_minimum_norm",
+  "scores": {
+    "v28": {
+      "both_axes_correct": 186.0,
+      "both_axes_accuracy": 0.8454545454545455,
+      "direction_accuracy": 0.9293103448275861,
+      "balanced_joint_accuracy": 0.8905188882557493,
+      "false_premiums": 15.0,
+      "missed_meaningful": 18.8,
+      "round56_heldout_both": 4.4,
+      "repeat_correct": [
+        190,
+        186,
+        183,
+        187,
+        184
+      ]
+    },
+    "regional_original": {
+      "both_axes_correct": 162.4,
+      "both_axes_accuracy": 0.7381818181818183,
+      "direction_accuracy": 0.9116379310344828,
+      "balanced_joint_accuracy": 0.825103197679138,
+      "false_premiums": 20.8,
+      "missed_meaningful": 33.2,
+      "round56_heldout_both": 8.4,
+      "repeat_correct": [
+        164,
+        165,
+        166,
+        160,
+        157
+      ]
+    },
+    "regional_longer": {
+      "both_axes_correct": 162.8,
+      "both_axes_accuracy": 0.74,
+      "direction_accuracy": 0.9107758620689654,
+      "balanced_joint_accuracy": 0.8256390203870918,
+      "false_premiums": 20.6,
+      "missed_meaningful": 32.8,
+      "round56_heldout_both": 8.4,
+      "repeat_correct": [
+        165,
+        165,
+        167,
+        160,
+        157
+      ]
+    },
+    "regional_minimum_norm": {
+      "both_axes_correct": 163.0,
+      "both_axes_accuracy": 0.7409090909090909,
+      "direction_accuracy": 0.9112068965517242,
+      "balanced_joint_accuracy": 0.8273765662085333,
+      "false_premiums": 20.0,
+      "missed_meaningful": 33.2,
+      "round56_heldout_both": 8.6,
+      "repeat_correct": [
+        167,
+        164,
+        166,
+        161,
+        157
+      ]
+    },
+    "one_feature": {
+      "both_axes_correct": 172.6,
+      "both_axes_accuracy": 0.7845454545454545,
+      "direction_accuracy": 0.9280172413793103,
+      "balanced_joint_accuracy": 0.8531982087834307,
+      "false_premiums": 19.6,
+      "missed_meaningful": 29.6,
+      "round56_heldout_both": 8.8,
+      "repeat_correct": [
+        173,
+        169,
+        182,
+        175,
+        164
+      ]
+    },
+    "one_feature_minimum_norm": {
+      "both_axes_correct": 173.4,
+      "both_axes_accuracy": 0.7881818181818182,
+      "direction_accuracy": 0.9262931034482758,
+      "balanced_joint_accuracy": 0.8548250891265596,
+      "false_premiums": 19.0,
+      "missed_meaningful": 28.8,
+      "round56_heldout_both": 9.0,
+      "repeat_correct": [
+        173,
+        171,
+        182,
+        177,
+        164
+      ]
+    }
+  },
+  "training_and_stability": {
+    "regional_longer": {
+      "mean_training_both_accuracy": 0.8910468520800737,
+      "mean_coefficient_variance": 0.48447705824069437,
+      "mean_coefficient_norm": 5.005579809726878,
+      "SEA_coefficient_range": [
+        -1.6664133333333302,
+        1.4545640909090904
+      ],
+      "completion_coefficient_range": [
+        0.0,
+        8.0
+      ]
+    },
+    "regional_minimum_norm": {
+      "mean_training_both_accuracy": 0.8910468520800737,
+      "mean_coefficient_variance": 0.05527626019522921,
+      "mean_coefficient_norm": 3.8279721899298678,
+      "SEA_coefficient_range": [
+        -1.4443688868290352,
+        1.178451274341581e-12
+      ],
+      "completion_coefficient_range": [
+        0.0,
+        0.26840300000000133
+      ]
+    },
+    "one_feature": {
+      "mean_training_both_accuracy": 0.9050878199734127,
+      "mean_coefficient_variance": 0.45173544194867526,
+      "mean_coefficient_norm": 4.92900517536427,
+      "SEA_coefficient_range": [
+        -1.6037032075471689,
+        0.33333999999999286
+      ],
+      "completion_coefficient_range": [
+        0.0,
+        8.0
+      ],
+      "new_coefficient_range": [
+        0.0008000000000588253,
+        0.7499174999999995
+      ]
+    },
+    "one_feature_minimum_norm": {
+      "mean_training_both_accuracy": 0.9050878199734127,
+      "mean_coefficient_variance": 0.042122487578363774,
+      "mean_coefficient_norm": 3.759441291830314,
+      "SEA_coefficient_range": [
+        -1.3332900000000003,
+        6.843022267575937e-12
+      ],
+      "completion_coefficient_range": [
+        0.0,
+        0.27148698924731285
+      ],
+      "new_coefficient_range": [
+        0.25013999999999315,
+        0.5200016000736256
+      ]
+    }
+  },
+  "solver_reruns": [
+    {
+      "seed": 11,
+      "fold": 1,
+      "old_objective": 0.061543743967862156,
+      "new_objective": 0.06023063190487714,
+      "old_gap": 0.21467796839977055,
+      "new_gap": 0.0009904785236780145,
+      "new_selected": true
+    },
+    {
+      "seed": 11,
+      "fold": 3,
+      "old_objective": 0.08050209723357321,
+      "new_objective": 0.07739250838104875,
+      "old_gap": 0.15535318982374954,
+      "new_gap": 0.0009131179471616937,
+      "new_selected": true
+    },
+    {
+      "seed": 47,
+      "fold": 3,
+      "old_objective": 0.08912908851501701,
+      "new_objective": 0.08732854136947146,
+      "old_gap": 0.1568551912426822,
+      "new_gap": 0.0009897097657248293,
+      "new_selected": true
+    },
+    {
+      "seed": 71,
+      "fold": 3,
+      "old_objective": 0.0806483296869287,
+      "new_objective": 0.0806483296869287,
+      "old_gap": 0.03194660951591459,
+      "new_gap": 0.0009871321424094423,
+      "new_selected": true
+    },
+    {
+      "seed": 103,
+      "fold": 3,
+      "old_objective": 0.05434945218485208,
+      "new_objective": 0.05434945218485208,
+      "old_gap": 0.11199257624853254,
+      "new_gap": 0.0009830028678895603,
+      "new_selected": true
+    }
+  ],
+  "solver_tolerance_met": {
+    "longer_regional": 25,
+    "new_feature": 25
+  },
+  "full_fit_checks": {
+    "one_feature": {
+      "all_evidence": {
+        "supported_n": 640,
+        "correct": 595,
+        "accuracy": 0.9296875,
+        "balanced_accuracy": 0.9253545581173354,
+        "both_axes_n": 220,
+        "both_axes_correct": 194,
+        "both_axes_accuracy": 0.8818181818181818,
+        "signed_joint_loss": 0.028800887092561275,
+        "by_group": {
+          "meaningful": {
+            "n": 135,
+            "correct": 114,
+            "accuracy": 0.8444444444444444
+          },
+          "practical_direction": {
+            "n": 85,
+            "correct": 80,
+            "accuracy": 0.9411764705882353
+          },
+          "practical_only": {
+            "n": 176,
+            "correct": 172,
+            "accuracy": 0.9772727272727273
+          },
+          "direction_only": {
+            "n": 244,
+            "correct": 229,
+            "accuracy": 0.9385245901639344
+          }
+        }
+      },
+      "round56": {
+        "supported_n": 12,
+        "correct": 12,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "both_axes_n": 12,
+        "both_axes_correct": 12,
+        "both_axes_accuracy": 1.0,
+        "signed_joint_loss": 0.0002499000099999998,
+        "by_group": {
+          "meaningful": {
+            "n": 5,
+            "correct": 5,
+            "accuracy": 1.0
+          },
+          "practical_direction": {
+            "n": 7,
+            "correct": 7,
+            "accuracy": 1.0
+          },
+          "practical_only": {
+            "n": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "direction_only": {
+            "n": 0,
+            "correct": 0,
+            "accuracy": null
+          }
+        }
+      },
+      "new_coefficient": 0.6667166666666677,
+      "config": "regional-mature-shade-config-v30.json"
+    },
+    "one_feature_minimum_norm": {
+      "all_evidence": {
+        "supported_n": 640,
+        "correct": 595,
+        "accuracy": 0.9296875,
+        "balanced_accuracy": 0.9253545581173354,
+        "both_axes_n": 220,
+        "both_axes_correct": 194,
+        "both_axes_accuracy": 0.8818181818181818,
+        "signed_joint_loss": 0.029802106532066115,
+        "by_group": {
+          "meaningful": {
+            "n": 135,
+            "correct": 114,
+            "accuracy": 0.8444444444444444
+          },
+          "practical_direction": {
+            "n": 85,
+            "correct": 80,
+            "accuracy": 0.9411764705882353
+          },
+          "practical_only": {
+            "n": 176,
+            "correct": 172,
+            "accuracy": 0.9772727272727273
+          },
+          "direction_only": {
+            "n": 244,
+            "correct": 229,
+            "accuracy": 0.9385245901639344
+          }
+        }
+      },
+      "round56": {
+        "supported_n": 12,
+        "correct": 12,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "both_axes_n": 12,
+        "both_axes_correct": 12,
+        "both_axes_accuracy": 1.0,
+        "signed_joint_loss": 0.0005040813071499875,
+        "by_group": {
+          "meaningful": {
+            "n": 5,
+            "correct": 5,
+            "accuracy": 1.0
+          },
+          "practical_direction": {
+            "n": 7,
+            "correct": 7,
+            "accuracy": 1.0
+          },
+          "practical_only": {
+            "n": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "direction_only": {
+            "n": 0,
+            "correct": 0,
+            "accuracy": null
+          }
+        }
+      },
+      "new_coefficient": 0.5000549999998841,
+      "config": "regional-mature-shade-minnorm-config-v30.json"
+    }
+  },
+  "recurring_losses_vs_v28": {
+    "regional_longer": [
+      {
+        "id": "round37-2",
+        "lost_repeats": 5,
+        "a": [
+          "Eastern Europe",
+          "amber",
+          35,
+          120
+        ],
+        "b": [
+          "Eastern Europe",
+          "amber",
+          30,
+          125
+        ]
+      },
+      {
+        "id": "round40-12",
+        "lost_repeats": 5,
+        "a": [
+          "Eastern Europe",
+          "pale/straw",
+          30,
+          125
+        ],
+        "b": [
+          "Eastern Europe",
+          "golden",
+          25,
+          130
+        ]
+      },
+      {
+        "id": "round41-2",
+        "lost_repeats": 5,
+        "a": [
+          "Western Europe",
+          "pale/straw",
+          30,
+          120
+        ],
+        "b": [
+          "Western Europe",
+          "golden",
+          25,
+          125
+        ]
+      },
+      {
+        "id": "round44-8",
+        "lost_repeats": 5,
+        "a": [
+          "Western Europe",
+          "golden",
+          30,
+          125
+        ],
+        "b": [
+          "Western Europe",
+          "pale/straw",
+          35,
+          120
+        ]
+      },
+      {
+        "id": "round44-9",
+        "lost_repeats": 5,
+        "a": [
+          "West Central Asia",
+          "amber",
+          25,
+          120
+        ],
+        "b": [
+          "West Central Asia",
+          "copper",
+          30,
+          115
+        ]
+      },
+      {
+        "id": "round44-10",
+        "lost_repeats": 5,
+        "a": [
+          "Eastern Europe",
+          "pale/straw",
+          30,
+          120
+        ],
+        "b": [
+          "Eastern Europe",
+          "golden",
+          25,
+          125
+        ]
+      },
+      {
+        "id": "round45-5",
+        "lost_repeats": 5,
+        "a": [
+          "Eastern Europe",
+          "golden",
+          35,
+          115
+        ],
+        "b": [
+          "Eastern Europe",
+          "pale/straw",
+          40,
+          115
+        ]
+      },
+      {
+        "id": "round45-13",
+        "lost_repeats": 5,
+        "a": [
+          "southwest",
+          "pale/straw",
+          30,
+          115
+        ],
+        "b": [
+          "southwest",
+          "golden",
+          25,
+          120
+        ]
+      },
+      {
+        "id": "round47-2",
+        "lost_repeats": 5,
+        "a": [
+          "Eastern Europe",
+          "golden",
+          35,
+          125
+        ],
+        "b": [
+          "Eastern Europe",
+          "pale/straw",
+          40,
+          125
+        ]
+      },
+      {
+        "id": "round50-12",
+        "lost_repeats": 5,
+        "a": [
+          "Western Europe",
+          "amber",
+          35,
+          120
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          40,
+          120
+        ]
+      },
+      {
+        "id": "round51-1",
+        "lost_repeats": 5,
+        "a": [
+          "Western Europe",
+          "golden",
+          25,
+          130
+        ],
+        "b": [
+          "Western Europe",
+          "pale/straw",
+          30,
+          125
+        ]
+      },
+      {
+        "id": "round51-3",
+        "lost_repeats": 5,
+        "a": [
+          "West Central Asia",
+          "amber",
+          30,
+          120
+        ],
+        "b": [
+          "West Central Asia",
+          "copper",
+          35,
+          115
+        ]
+      },
+      {
+        "id": "round54-13",
+        "lost_repeats": 5,
+        "a": [
+          "Eastern Europe",
+          "copper",
+          20,
+          125
+        ],
+        "b": [
+          "Eastern Europe",
+          "amber",
+          25,
+          120
+        ]
+      },
+      {
+        "id": "round10-11",
+        "lost_repeats": 4,
+        "a": [
+          "South/Eastern Asia",
+          "brown",
+          20,
+          125
+        ],
+        "b": [
+          "West Asia / Middle East",
+          "brown",
+          20,
+          120
+        ]
+      },
+      {
+        "id": "round11-17",
+        "lost_repeats": 4,
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          25,
+          125
+        ],
+        "b": [
+          "West Central Asia",
+          "brown",
+          20,
+          125
+        ]
+      },
+      {
+        "id": "round29-4",
+        "lost_repeats": 4,
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          25,
+          120
+        ],
+        "b": [
+          "West Central Asia",
+          "brown",
+          20,
+          120
+        ]
+      },
+      {
+        "id": "round40-2",
+        "lost_repeats": 4,
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          35,
+          130
+        ],
+        "b": [
+          "West Central Asia",
+          "golden",
+          30,
+          130
+        ]
+      },
+      {
+        "id": "round42-7",
+        "lost_repeats": 4,
+        "a": [
+          "West Central Asia",
+          "golden",
+          25,
+          130
+        ],
+        "b": [
+          "West Central Asia",
+          "pale/straw",
+          30,
+          125
+        ]
+      },
+      {
+        "id": "round46-9",
+        "lost_repeats": 4,
+        "a": [
+          "West Central Asia",
+          "golden",
+          30,
+          120
+        ],
+        "b": [
+          "West Central Asia",
+          "pale/straw",
+          25,
+          125
+        ]
+      },
+      {
+        "id": "round49-10",
+        "lost_repeats": 4,
+        "a": [
+          "Eastern Europe",
+          "golden",
+          25,
+          125
+        ],
+        "b": [
+          "Eastern Europe",
+          "pale/straw",
+          30,
+          115
+        ]
+      },
+      {
+        "id": "round51-6",
+        "lost_repeats": 4,
+        "a": [
+          "central",
+          "golden",
+          25,
+          125
+        ],
+        "b": [
+          "central",
+          "pale/straw",
+          30,
+          120
+        ]
+      },
+      {
+        "id": "round54-7",
+        "lost_repeats": 4,
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          125
+        ],
+        "b": [
+          "Western Europe",
+          "copper",
+          30,
+          115
+        ]
+      },
+      {
+        "id": "round55-7",
+        "lost_repeats": 4,
+        "a": [
+          "Western Europe",
+          "golden",
+          20,
+          110
+        ],
+        "b": [
+          "northwest",
+          "pale/straw",
+          20,
+          110
+        ]
+      },
+      {
+        "id": "r5-1",
+        "lost_repeats": 4,
+        "a": [
+          "central",
+          "amber",
+          30,
+          115
+        ],
+        "b": [
+          "central",
+          "amber",
+          25,
+          125
+        ]
+      },
+      {
+        "id": "round15-4",
+        "lost_repeats": 3,
+        "a": [
+          "southeast",
+          "brown",
+          40,
+          115
+        ],
+        "b": [
+          "central",
+          "brown",
+          40,
+          120
+        ]
+      },
+      {
+        "id": "round20-7",
+        "lost_repeats": 3,
+        "a": [
+          "West Central Asia",
+          "amber",
+          20,
+          125
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "amber",
+          20,
+          125
+        ]
+      },
+      {
+        "id": "round21-11",
+        "lost_repeats": 3,
+        "a": [
+          "southwest",
+          "amber",
+          30,
+          125
+        ],
+        "b": [
+          "northeast",
+          "amber",
+          30,
+          120
+        ]
+      },
+      {
+        "id": "round37-10",
+        "lost_repeats": 3,
+        "a": [
+          "southeast",
+          "brown",
+          40,
+          120
+        ],
+        "b": [
+          "central",
+          "brown",
+          40,
+          125
+        ]
+      },
+      {
+        "id": "round38-4",
+        "lost_repeats": 3,
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          115
+        ],
+        "b": [
+          "central",
+          "copper",
+          25,
+          120
+        ]
+      },
+      {
+        "id": "round41-6",
+        "lost_repeats": 3,
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          25,
+          125
+        ],
+        "b": [
+          "West Central Asia",
+          "golden",
+          20,
+          130
+        ]
+      },
+      {
+        "id": "round42-2",
+        "lost_repeats": 3,
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          25,
+          120
+        ],
+        "b": [
+          "West Central Asia",
+          "golden",
+          20,
+          125
+        ]
+      },
+      {
+        "id": "round46-1",
+        "lost_repeats": 3,
+        "a": [
+          "West Central Asia",
+          "golden",
+          35,
+          110
+        ],
+        "b": [
+          "West Central Asia",
+          "pale/straw",
+          40,
+          110
+        ]
+      },
+      {
+        "id": "round54-15",
+        "lost_repeats": 3,
+        "a": [
+          "southwest",
+          "golden",
+          30,
+          125
+        ],
+        "b": [
+          "southwest",
+          "golden",
+          25,
+          130
+        ]
+      },
+      {
+        "id": "round56-4",
+        "lost_repeats": 3,
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          20,
+          130
+        ],
+        "b": [
+          "West Central Asia",
+          "golden",
+          30,
+          110
+        ]
+      },
+      {
+        "id": "r2-2",
+        "lost_repeats": 3,
+        "a": [
+          "northwest",
+          "amber",
+          30,
+          130
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          30,
+          130
+        ]
+      },
+      {
+        "id": "r5-6",
+        "lost_repeats": 3,
+        "a": [
+          "northwest",
+          "amber",
+          35,
+          130
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          35,
+          130
+        ]
+      },
+      {
+        "id": "revision-18",
+        "lost_repeats": 3,
+        "a": [
+          "northwest",
+          "amber",
+          40,
+          120
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          40,
+          120
+        ]
+      },
+      {
+        "id": "round9-12",
+        "lost_repeats": 3,
+        "a": [
+          "Western Europe",
+          "pale/straw",
+          30,
+          110
+        ],
+        "b": [
+          "central",
+          "pale/straw",
+          30,
+          115
+        ]
+      },
+      {
+        "id": "round14-4",
+        "lost_repeats": 3,
+        "a": [
+          "northwest",
+          "amber",
+          40,
+          125
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          40,
+          125
+        ]
+      },
+      {
+        "id": "round24-7",
+        "lost_repeats": 3,
+        "a": [
+          "Western Europe",
+          "amber",
+          30,
+          125
+        ],
+        "b": [
+          "northwest",
+          "amber",
+          30,
+          125
+        ]
+      },
+      {
+        "id": "round36-1",
+        "lost_repeats": 3,
+        "a": [
+          "northwest",
+          "amber",
+          30,
+          115
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          30,
+          115
+        ]
+      },
+      {
+        "id": "round36-3",
+        "lost_repeats": 3,
+        "a": [
+          "northwest",
+          "amber",
+          25,
+          115
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          25,
+          115
+        ]
+      },
+      {
+        "id": "round36-4",
+        "lost_repeats": 3,
+        "a": [
+          "Western Europe",
+          "amber",
+          35,
+          115
+        ],
+        "b": [
+          "northwest",
+          "amber",
+          35,
+          115
+        ]
+      },
+      {
+        "id": "round37-3",
+        "lost_repeats": 3,
+        "a": [
+          "Western Europe",
+          "pale/straw",
+          30,
+          120
+        ],
+        "b": [
+          "central",
+          "pale/straw",
+          30,
+          125
+        ]
+      },
+      {
+        "id": "round50-9",
+        "lost_repeats": 3,
+        "a": [
+          "Western Europe",
+          "brown",
+          35,
+          115
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          40,
+          120
+        ]
+      },
+      {
+        "id": "round54-20",
+        "lost_repeats": 3,
+        "a": [
+          "Eastern Europe",
+          "golden",
+          25,
+          125
+        ],
+        "b": [
+          "Eastern Europe",
+          "golden",
+          30,
+          115
+        ]
+      },
+      {
+        "id": "round10-16",
+        "lost_repeats": 3,
+        "a": [
+          "Eastern Europe",
+          "amber",
+          20,
+          120
+        ],
+        "b": [
+          "West Central Asia",
+          "amber",
+          20,
+          115
+        ]
+      },
+      {
+        "id": "round40-10",
+        "lost_repeats": 3,
+        "a": [
+          "Western Europe",
+          "pale/straw",
+          40,
+          125
+        ],
+        "b": [
+          "Western Europe",
+          "golden",
+          35,
+          125
+        ]
+      },
+      {
+        "id": "round45-20",
+        "lost_repeats": 3,
+        "a": [
+          "Western Europe",
+          "golden",
+          35,
+          110
+        ],
+        "b": [
+          "Western Europe",
+          "pale/straw",
+          40,
+          110
+        ]
+      },
+      {
+        "id": "round51-10",
+        "lost_repeats": 3,
+        "a": [
+          "Eastern Europe",
+          "amber",
+          25,
+          125
+        ],
+        "b": [
+          "Eastern Europe",
+          "amber",
+          30,
+          120
+        ]
+      },
+      {
+        "id": "r5-9",
+        "lost_repeats": 2,
+        "a": [
+          "southeast",
+          "pale/straw",
+          30,
+          120
+        ],
+        "b": [
+          "northwest",
+          "pale/straw",
+          30,
+          115
+        ]
+      },
+      {
+        "id": "round6-12",
+        "lost_repeats": 2,
+        "a": [
+          "central",
+          "brown",
+          25,
+          130
+        ],
+        "b": [
+          "West Asia / Middle East",
+          "brown",
+          25,
+          120
+        ]
+      },
+      {
+        "id": "round45-12",
+        "lost_repeats": 2,
+        "a": [
+          "northwest",
+          "golden",
+          20,
+          125
+        ],
+        "b": [
+          "northeast",
+          "golden",
+          25,
+          115
+        ]
+      },
+      {
+        "id": "round47-1",
+        "lost_repeats": 2,
+        "a": [
+          "southeast",
+          "copper",
+          25,
+          125
+        ],
+        "b": [
+          "central",
+          "amber",
+          30,
+          115
+        ]
+      },
+      {
+        "id": "round49-9",
+        "lost_repeats": 2,
+        "a": [
+          "northeast",
+          "brown",
+          25,
+          115
+        ],
+        "b": [
+          "southeast",
+          "amber",
+          30,
+          120
+        ]
+      },
+      {
+        "id": "round8-5",
+        "lost_repeats": 2,
+        "a": [
+          "Eastern Europe",
+          "copper",
+          30,
+          125
+        ],
+        "b": [
+          "West Central Asia",
+          "copper",
+          30,
+          120
+        ]
+      },
+      {
+        "id": "round8-8",
+        "lost_repeats": 2,
+        "a": [
+          "Eastern Europe",
+          "copper",
+          20,
+          125
+        ],
+        "b": [
+          "West Central Asia",
+          "copper",
+          20,
+          120
+        ]
+      },
+      {
+        "id": "round17-3",
+        "lost_repeats": 2,
+        "a": [
+          "Western Europe",
+          "amber",
+          20,
+          125
+        ],
+        "b": [
+          "Eastern Europe",
+          "amber",
+          20,
+          115
+        ]
+      },
+      {
+        "id": "round51-18",
+        "lost_repeats": 2,
+        "a": [
+          "West Asia / Middle East",
+          "brown",
+          30,
+          120
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "copper",
+          35,
+          115
+        ]
+      },
+      {
+        "id": "round11-14",
+        "lost_repeats": 2,
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          35,
+          125
+        ],
+        "b": [
+          "West Central Asia",
+          "brown",
+          25,
+          125
+        ]
+      },
+      {
+        "id": "round36-2",
+        "lost_repeats": 2,
+        "a": [
+          "Western Europe",
+          "copper",
+          30,
+          115
+        ],
+        "b": [
+          "northwest",
+          "copper",
+          30,
+          115
+        ]
+      },
+      {
+        "id": "round6-11",
+        "lost_repeats": 2,
+        "a": [
+          "central",
+          "brown",
+          25,
+          125
+        ],
+        "b": [
+          "West Asia / Middle East",
+          "brown",
+          25,
+          120
+        ]
+      },
+      {
+        "id": "round10-5",
+        "lost_repeats": 2,
+        "a": [
+          "northeast",
+          "amber",
+          35,
+          115
+        ],
+        "b": [
+          "southwest",
+          "amber",
+          35,
+          120
+        ]
+      },
+      {
+        "id": "round42-10",
+        "lost_repeats": 2,
+        "a": [
+          "northeast",
+          "amber",
+          30,
+          120
+        ],
+        "b": [
+          "northwest",
+          "amber",
+          25,
+          125
+        ]
+      },
+      {
+        "id": "round27-7",
+        "lost_repeats": 2,
+        "a": [
+          "central",
+          "golden",
+          25,
+          110
+        ],
+        "b": [
+          "northeast",
+          "golden",
+          20,
+          125
+        ]
+      },
+      {
+        "id": "round54-1",
+        "lost_repeats": 2,
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          30,
+          115
+        ],
+        "b": [
+          "West Central Asia",
+          "brown",
+          20,
+          120
+        ]
+      },
+      {
+        "id": "r5-7",
+        "lost_repeats": 1,
+        "a": [
+          "Eastern Europe",
+          "copper",
+          30,
+          120
+        ],
+        "b": [
+          "Eastern Europe",
+          "brown",
+          25,
+          120
+        ]
+      },
+      {
+        "id": "round11-18",
+        "lost_repeats": 1,
+        "a": [
+          "central",
+          "pale/straw",
+          25,
+          125
+        ],
+        "b": [
+          "central",
+          "brown",
+          20,
+          125
+        ]
+      },
+      {
+        "id": "round19-5",
+        "lost_repeats": 1,
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          30,
+          125
+        ],
+        "b": [
+          "West Asia / Middle East",
+          "pale/straw",
+          30,
+          120
+        ]
+      },
+      {
+        "id": "round19-20",
+        "lost_repeats": 1,
+        "a": [
+          "West Central Asia",
+          "amber",
+          20,
+          125
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "amber",
+          20,
+          120
+        ]
+      },
+      {
+        "id": "round32-4",
+        "lost_repeats": 1,
+        "a": [
+          "central",
+          "golden",
+          25,
+          110
+        ],
+        "b": [
+          "northeast",
+          "pale/straw",
+          20,
+          125
+        ]
+      },
+      {
+        "id": "round47-11",
+        "lost_repeats": 1,
+        "a": [
+          "West Asia / Middle East",
+          "brown",
+          25,
+          115
+        ],
+        "b": [
+          "West Asia / Middle East",
+          "copper",
+          25,
+          115
+        ]
+      },
+      {
+        "id": "round49-2",
+        "lost_repeats": 1,
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          120
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "pale/straw",
+          20,
+          125
+        ]
+      },
+      {
+        "id": "round50-2",
+        "lost_repeats": 1,
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          125
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "pale/straw",
+          20,
+          125
+        ]
+      },
+      {
+        "id": "round50-10",
+        "lost_repeats": 1,
+        "a": [
+          "Western Europe",
+          "brown",
+          35,
+          115
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          35,
+          120
+        ]
+      },
+      {
+        "id": "round54-18",
+        "lost_repeats": 1,
+        "a": [
+          "northeast",
+          "brown",
+          30,
+          115
+        ],
+        "b": [
+          "northeast",
+          "amber",
+          30,
+          120
+        ]
+      },
+      {
+        "id": "round56-6",
+        "lost_repeats": 1,
+        "a": [
+          "West Central Asia",
+          "copper",
+          30,
+          125
+        ],
+        "b": [
+          "West Central Asia",
+          "amber",
+          35,
+          110
+        ]
+      },
+      {
+        "id": "round7-16",
+        "lost_repeats": 1,
+        "a": [
+          "southeast",
+          "golden",
+          20,
+          120
+        ],
+        "b": [
+          "Western Europe",
+          "golden",
+          20,
+          120
+        ]
+      },
+      {
+        "id": "round13-11",
+        "lost_repeats": 1,
+        "a": [
+          "Eastern Europe",
+          "brown",
+          35,
+          115
+        ],
+        "b": [
+          "Eastern Europe",
+          "copper",
+          35,
+          125
+        ]
+      },
+      {
+        "id": "round37-5",
+        "lost_repeats": 1,
+        "a": [
+          "southeast",
+          "golden",
+          20,
+          110
+        ],
+        "b": [
+          "Western Europe",
+          "golden",
+          20,
+          110
+        ]
+      },
+      {
+        "id": "round42-3",
+        "lost_repeats": 1,
+        "a": [
+          "southwest",
+          "golden",
+          20,
+          125
+        ],
+        "b": [
+          "Western Europe",
+          "golden",
+          25,
+          115
+        ]
+      },
+      {
+        "id": "round45-8",
+        "lost_repeats": 1,
+        "a": [
+          "southwest",
+          "brown",
+          30,
+          120
+        ],
+        "b": [
+          "central",
+          "amber",
+          35,
+          115
+        ]
+      },
+      {
+        "id": "round45-9",
+        "lost_repeats": 1,
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          35,
+          115
+        ],
+        "b": [
+          "West Central Asia",
+          "golden",
+          25,
+          125
+        ]
+      },
+      {
+        "id": "round49-13",
+        "lost_repeats": 1,
+        "a": [
+          "West Central Asia",
+          "copper",
+          30,
+          120
+        ],
+        "b": [
+          "Eastern Europe",
+          "amber",
+          25,
+          125
+        ]
+      },
+      {
+        "id": "round50-3",
+        "lost_repeats": 1,
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          125
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "pale/straw",
+          25,
+          125
+        ]
+      },
+      {
+        "id": "round54-5",
+        "lost_repeats": 1,
+        "a": [
+          "northeast",
+          "amber",
+          30,
+          120
+        ],
+        "b": [
+          "northeast",
+          "amber",
+          25,
+          125
+        ]
+      },
+      {
+        "id": "round25-18",
+        "lost_repeats": 1,
+        "a": [
+          "central",
+          "brown",
+          20,
+          120
+        ],
+        "b": [
+          "southwest",
+          "brown",
+          20,
+          120
+        ]
+      },
+      {
+        "id": "round26-5",
+        "lost_repeats": 1,
+        "a": [
+          "central",
+          "brown",
+          25,
+          120
+        ],
+        "b": [
+          "southwest",
+          "brown",
+          25,
+          120
+        ]
+      },
+      {
+        "id": "round56-10",
+        "lost_repeats": 1,
+        "a": [
+          "West Central Asia",
+          "copper",
+          40,
+          120
+        ],
+        "b": [
+          "West Central Asia",
+          "amber",
+          40,
+          130
+        ]
+      },
+      {
+        "id": "r1-1",
+        "lost_repeats": 1,
+        "a": [
+          "northeast",
+          "amber",
+          30,
+          115
+        ],
+        "b": [
+          "southwest",
+          "amber",
+          30,
+          110
+        ]
+      },
+      {
+        "id": "round6-8",
+        "lost_repeats": 1,
+        "a": [
+          "central",
+          "brown",
+          35,
+          120
+        ],
+        "b": [
+          "West Asia / Middle East",
+          "brown",
+          35,
+          120
+        ]
+      },
+      {
+        "id": "round6-9",
+        "lost_repeats": 1,
+        "a": [
+          "central",
+          "brown",
+          25,
+          120
+        ],
+        "b": [
+          "West Asia / Middle East",
+          "brown",
+          25,
+          120
+        ]
+      },
+      {
+        "id": "round6-10",
+        "lost_repeats": 1,
+        "a": [
+          "central",
+          "brown",
+          20,
+          120
+        ],
+        "b": [
+          "West Asia / Middle East",
+          "brown",
+          20,
+          120
+        ]
+      },
+      {
+        "id": "round7-1",
+        "lost_repeats": 1,
+        "a": [
+          "central",
+          "brown",
+          30,
+          120
+        ],
+        "b": [
+          "West Asia / Middle East",
+          "brown",
+          30,
+          120
+        ]
+      },
+      {
+        "id": "round9-8",
+        "lost_repeats": 1,
+        "a": [
+          "southeast",
+          "amber",
+          20,
+          125
+        ],
+        "b": [
+          "southwest",
+          "amber",
+          20,
+          115
+        ]
+      },
+      {
+        "id": "round15-3",
+        "lost_repeats": 1,
+        "a": [
+          "Eastern Europe",
+          "amber",
+          25,
+          120
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          25,
+          130
+        ]
+      },
+      {
+        "id": "round9-1",
+        "lost_repeats": 1,
+        "a": [
+          "southwest",
+          "amber",
+          25,
+          120
+        ],
+        "b": [
+          "central",
+          "amber",
+          25,
+          115
+        ]
+      },
+      {
+        "id": "round32-3",
+        "lost_repeats": 1,
+        "a": [
+          "central",
+          "pale/straw",
+          25,
+          110
+        ],
+        "b": [
+          "northeast",
+          "golden",
+          20,
+          125
+        ]
+      },
+      {
+        "id": "round32-7",
+        "lost_repeats": 1,
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          30,
+          110
+        ],
+        "b": [
+          "West Central Asia",
+          "brown",
+          20,
+          120
+        ]
+      },
+      {
+        "id": "round46-11",
+        "lost_repeats": 1,
+        "a": [
+          "South/Eastern Asia",
+          "amber",
+          20,
+          125
+        ],
+        "b": [
+          "West Asia / Middle East",
+          "amber",
+          30,
+          115
+        ]
+      },
+      {
+        "id": "round47-12",
+        "lost_repeats": 1,
+        "a": [
+          "Eastern Europe",
+          "copper",
+          20,
+          125
+        ],
+        "b": [
+          "northwest",
+          "amber",
+          25,
+          120
+        ]
+      },
+      {
+        "id": "round51-2",
+        "lost_repeats": 1,
+        "a": [
+          "northeast",
+          "amber",
+          30,
+          115
+        ],
+        "b": [
+          "southwest",
+          "amber",
+          25,
+          125
+        ]
+      },
+      {
+        "id": "revision-20",
+        "lost_repeats": 1,
+        "a": [
+          "West Central Asia",
+          "amber",
+          30,
+          115
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "amber",
+          30,
+          120
+        ]
+      },
+      {
+        "id": "round8-2",
+        "lost_repeats": 1,
+        "a": [
+          "West Central Asia",
+          "golden",
+          30,
+          120
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "golden",
+          30,
+          120
+        ]
+      },
+      {
+        "id": "round9-7",
+        "lost_repeats": 1,
+        "a": [
+          "central",
+          "brown",
+          35,
+          125
+        ],
+        "b": [
+          "West Asia / Middle East",
+          "brown",
+          35,
+          120
+        ]
+      },
+      {
+        "id": "round9-10",
+        "lost_repeats": 1,
+        "a": [
+          "South/Eastern Asia",
+          "amber",
+          25,
+          115
+        ],
+        "b": [
+          "West Central Asia",
+          "amber",
+          25,
+          110
+        ]
+      },
+      {
+        "id": "round9-14",
+        "lost_repeats": 1,
+        "a": [
+          "West Asia / Middle East",
+          "copper",
+          25,
+          120
+        ],
+        "b": [
+          "Eastern Europe",
+          "copper",
+          25,
+          125
+        ]
+      },
+      {
+        "id": "round36-5",
+        "lost_repeats": 1,
+        "a": [
+          "West Central Asia",
+          "amber",
+          25,
+          110
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "amber",
+          25,
+          110
+        ]
+      },
+      {
+        "id": "round36-6",
+        "lost_repeats": 1,
+        "a": [
+          "South/Eastern Asia",
+          "golden",
+          25,
+          110
+        ],
+        "b": [
+          "West Central Asia",
+          "golden",
+          25,
+          110
+        ]
+      },
+      {
+        "id": "round36-8",
+        "lost_repeats": 1,
+        "a": [
+          "South/Eastern Asia",
+          "copper",
+          25,
+          110
+        ],
+        "b": [
+          "West Central Asia",
+          "copper",
+          25,
+          110
+        ]
+      },
+      {
+        "id": "round39-5",
+        "lost_repeats": 1,
+        "a": [
+          "Western Europe",
+          "golden",
+          25,
+          125
+        ],
+        "b": [
+          "Western Europe",
+          "pale/straw",
+          25,
+          125
+        ]
+      },
+      {
+        "id": "round47-5",
+        "lost_repeats": 1,
+        "a": [
+          "West Central Asia",
+          "golden",
+          25,
+          115
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "golden",
+          25,
+          125
+        ]
+      },
+      {
+        "id": "round49-16",
+        "lost_repeats": 1,
+        "a": [
+          "Western Europe",
+          "brown",
+          35,
+          115
+        ],
+        "b": [
+          "northwest",
+          "amber",
+          40,
+          120
+        ]
+      },
+      {
+        "id": "round51-4",
+        "lost_repeats": 1,
+        "a": [
+          "Eastern Europe",
+          "pale/straw",
+          25,
+          125
+        ],
+        "b": [
+          "Eastern Europe",
+          "golden",
+          25,
+          125
+        ]
+      },
+      {
+        "id": "round51-7",
+        "lost_repeats": 1,
+        "a": [
+          "Western Europe",
+          "brown",
+          40,
+          115
+        ],
+        "b": [
+          "northwest",
+          "amber",
+          35,
+          120
+        ]
+      }
+    ],
+    "one_feature_minimum_norm": [
+      {
+        "id": "round37-2",
+        "lost_repeats": 5,
+        "a": [
+          "Eastern Europe",
+          "amber",
+          35,
+          120
+        ],
+        "b": [
+          "Eastern Europe",
+          "amber",
+          30,
+          125
+        ]
+      },
+      {
+        "id": "round40-2",
+        "lost_repeats": 5,
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          35,
+          130
+        ],
+        "b": [
+          "West Central Asia",
+          "golden",
+          30,
+          130
+        ]
+      },
+      {
+        "id": "round40-12",
+        "lost_repeats": 5,
+        "a": [
+          "Eastern Europe",
+          "pale/straw",
+          30,
+          125
+        ],
+        "b": [
+          "Eastern Europe",
+          "golden",
+          25,
+          130
+        ]
+      },
+      {
+        "id": "round41-2",
+        "lost_repeats": 5,
+        "a": [
+          "Western Europe",
+          "pale/straw",
+          30,
+          120
+        ],
+        "b": [
+          "Western Europe",
+          "golden",
+          25,
+          125
+        ]
+      },
+      {
+        "id": "round44-8",
+        "lost_repeats": 5,
+        "a": [
+          "Western Europe",
+          "golden",
+          30,
+          125
+        ],
+        "b": [
+          "Western Europe",
+          "pale/straw",
+          35,
+          120
+        ]
+      },
+      {
+        "id": "round44-9",
+        "lost_repeats": 5,
+        "a": [
+          "West Central Asia",
+          "amber",
+          25,
+          120
+        ],
+        "b": [
+          "West Central Asia",
+          "copper",
+          30,
+          115
+        ]
+      },
+      {
+        "id": "round44-10",
+        "lost_repeats": 5,
+        "a": [
+          "Eastern Europe",
+          "pale/straw",
+          30,
+          120
+        ],
+        "b": [
+          "Eastern Europe",
+          "golden",
+          25,
+          125
+        ]
+      },
+      {
+        "id": "round45-13",
+        "lost_repeats": 5,
+        "a": [
+          "southwest",
+          "pale/straw",
+          30,
+          115
+        ],
+        "b": [
+          "southwest",
+          "golden",
+          25,
+          120
+        ]
+      },
+      {
+        "id": "round51-1",
+        "lost_repeats": 5,
+        "a": [
+          "Western Europe",
+          "golden",
+          25,
+          130
+        ],
+        "b": [
+          "Western Europe",
+          "pale/straw",
+          30,
+          125
+        ]
+      },
+      {
+        "id": "round51-3",
+        "lost_repeats": 5,
+        "a": [
+          "West Central Asia",
+          "amber",
+          30,
+          120
+        ],
+        "b": [
+          "West Central Asia",
+          "copper",
+          35,
+          115
+        ]
+      },
+      {
+        "id": "round54-13",
+        "lost_repeats": 5,
+        "a": [
+          "Eastern Europe",
+          "copper",
+          20,
+          125
+        ],
+        "b": [
+          "Eastern Europe",
+          "amber",
+          25,
+          120
+        ]
+      },
+      {
+        "id": "round42-7",
+        "lost_repeats": 4,
+        "a": [
+          "West Central Asia",
+          "golden",
+          25,
+          130
+        ],
+        "b": [
+          "West Central Asia",
+          "pale/straw",
+          30,
+          125
+        ]
+      },
+      {
+        "id": "round46-9",
+        "lost_repeats": 4,
+        "a": [
+          "West Central Asia",
+          "golden",
+          30,
+          120
+        ],
+        "b": [
+          "West Central Asia",
+          "pale/straw",
+          25,
+          125
+        ]
+      },
+      {
+        "id": "round49-10",
+        "lost_repeats": 4,
+        "a": [
+          "Eastern Europe",
+          "golden",
+          25,
+          125
+        ],
+        "b": [
+          "Eastern Europe",
+          "pale/straw",
+          30,
+          115
+        ]
+      },
+      {
+        "id": "round51-6",
+        "lost_repeats": 4,
+        "a": [
+          "central",
+          "golden",
+          25,
+          125
+        ],
+        "b": [
+          "central",
+          "pale/straw",
+          30,
+          120
+        ]
+      },
+      {
+        "id": "round54-7",
+        "lost_repeats": 4,
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          125
+        ],
+        "b": [
+          "Western Europe",
+          "copper",
+          30,
+          115
+        ]
+      },
+      {
+        "id": "r5-1",
+        "lost_repeats": 4,
+        "a": [
+          "central",
+          "amber",
+          30,
+          115
+        ],
+        "b": [
+          "central",
+          "amber",
+          25,
+          125
+        ]
+      },
+      {
+        "id": "round15-4",
+        "lost_repeats": 3,
+        "a": [
+          "southeast",
+          "brown",
+          40,
+          115
+        ],
+        "b": [
+          "central",
+          "brown",
+          40,
+          120
+        ]
+      },
+      {
+        "id": "round21-11",
+        "lost_repeats": 3,
+        "a": [
+          "southwest",
+          "amber",
+          30,
+          125
+        ],
+        "b": [
+          "northeast",
+          "amber",
+          30,
+          120
+        ]
+      },
+      {
+        "id": "round37-10",
+        "lost_repeats": 3,
+        "a": [
+          "southeast",
+          "brown",
+          40,
+          120
+        ],
+        "b": [
+          "central",
+          "brown",
+          40,
+          125
+        ]
+      },
+      {
+        "id": "round47-1",
+        "lost_repeats": 3,
+        "a": [
+          "southeast",
+          "copper",
+          25,
+          125
+        ],
+        "b": [
+          "central",
+          "amber",
+          30,
+          115
+        ]
+      },
+      {
+        "id": "round54-15",
+        "lost_repeats": 3,
+        "a": [
+          "southwest",
+          "golden",
+          30,
+          125
+        ],
+        "b": [
+          "southwest",
+          "golden",
+          25,
+          130
+        ]
+      },
+      {
+        "id": "round9-12",
+        "lost_repeats": 3,
+        "a": [
+          "Western Europe",
+          "pale/straw",
+          30,
+          110
+        ],
+        "b": [
+          "central",
+          "pale/straw",
+          30,
+          115
+        ]
+      },
+      {
+        "id": "round37-3",
+        "lost_repeats": 3,
+        "a": [
+          "Western Europe",
+          "pale/straw",
+          30,
+          120
+        ],
+        "b": [
+          "central",
+          "pale/straw",
+          30,
+          125
+        ]
+      },
+      {
+        "id": "round27-7",
+        "lost_repeats": 3,
+        "a": [
+          "central",
+          "golden",
+          25,
+          110
+        ],
+        "b": [
+          "northeast",
+          "golden",
+          20,
+          125
+        ]
+      },
+      {
+        "id": "round54-20",
+        "lost_repeats": 3,
+        "a": [
+          "Eastern Europe",
+          "golden",
+          25,
+          125
+        ],
+        "b": [
+          "Eastern Europe",
+          "golden",
+          30,
+          115
+        ]
+      },
+      {
+        "id": "round10-16",
+        "lost_repeats": 3,
+        "a": [
+          "Eastern Europe",
+          "amber",
+          20,
+          120
+        ],
+        "b": [
+          "West Central Asia",
+          "amber",
+          20,
+          115
+        ]
+      },
+      {
+        "id": "round51-10",
+        "lost_repeats": 3,
+        "a": [
+          "Eastern Europe",
+          "amber",
+          25,
+          125
+        ],
+        "b": [
+          "Eastern Europe",
+          "amber",
+          30,
+          120
+        ]
+      },
+      {
+        "id": "r5-9",
+        "lost_repeats": 2,
+        "a": [
+          "southeast",
+          "pale/straw",
+          30,
+          120
+        ],
+        "b": [
+          "northwest",
+          "pale/straw",
+          30,
+          115
+        ]
+      },
+      {
+        "id": "round6-12",
+        "lost_repeats": 2,
+        "a": [
+          "central",
+          "brown",
+          25,
+          130
+        ],
+        "b": [
+          "West Asia / Middle East",
+          "brown",
+          25,
+          120
+        ]
+      },
+      {
+        "id": "round11-18",
+        "lost_repeats": 2,
+        "a": [
+          "central",
+          "pale/straw",
+          25,
+          125
+        ],
+        "b": [
+          "central",
+          "brown",
+          20,
+          125
+        ]
+      },
+      {
+        "id": "round13-11",
+        "lost_repeats": 2,
+        "a": [
+          "Eastern Europe",
+          "brown",
+          35,
+          115
+        ],
+        "b": [
+          "Eastern Europe",
+          "copper",
+          35,
+          125
+        ]
+      },
+      {
+        "id": "round19-5",
+        "lost_repeats": 2,
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          30,
+          125
+        ],
+        "b": [
+          "West Asia / Middle East",
+          "pale/straw",
+          30,
+          120
+        ]
+      },
+      {
+        "id": "round41-6",
+        "lost_repeats": 2,
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          25,
+          125
+        ],
+        "b": [
+          "West Central Asia",
+          "golden",
+          20,
+          130
+        ]
+      },
+      {
+        "id": "round42-2",
+        "lost_repeats": 2,
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          25,
+          120
+        ],
+        "b": [
+          "West Central Asia",
+          "golden",
+          20,
+          125
+        ]
+      },
+      {
+        "id": "round45-8",
+        "lost_repeats": 2,
+        "a": [
+          "southwest",
+          "brown",
+          30,
+          120
+        ],
+        "b": [
+          "central",
+          "amber",
+          35,
+          115
+        ]
+      },
+      {
+        "id": "round49-9",
+        "lost_repeats": 2,
+        "a": [
+          "northeast",
+          "brown",
+          25,
+          115
+        ],
+        "b": [
+          "southeast",
+          "amber",
+          30,
+          120
+        ]
+      },
+      {
+        "id": "round56-4",
+        "lost_repeats": 2,
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          20,
+          130
+        ],
+        "b": [
+          "West Central Asia",
+          "golden",
+          30,
+          110
+        ]
+      },
+      {
+        "id": "round8-5",
+        "lost_repeats": 2,
+        "a": [
+          "Eastern Europe",
+          "copper",
+          30,
+          125
+        ],
+        "b": [
+          "West Central Asia",
+          "copper",
+          30,
+          120
+        ]
+      },
+      {
+        "id": "round8-8",
+        "lost_repeats": 2,
+        "a": [
+          "Eastern Europe",
+          "copper",
+          20,
+          125
+        ],
+        "b": [
+          "West Central Asia",
+          "copper",
+          20,
+          120
+        ]
+      },
+      {
+        "id": "round17-3",
+        "lost_repeats": 2,
+        "a": [
+          "Western Europe",
+          "amber",
+          20,
+          125
+        ],
+        "b": [
+          "Eastern Europe",
+          "amber",
+          20,
+          115
+        ]
+      },
+      {
+        "id": "round45-12",
+        "lost_repeats": 2,
+        "a": [
+          "northwest",
+          "golden",
+          20,
+          125
+        ],
+        "b": [
+          "northeast",
+          "golden",
+          25,
+          115
+        ]
+      },
+      {
+        "id": "round49-13",
+        "lost_repeats": 2,
+        "a": [
+          "West Central Asia",
+          "copper",
+          30,
+          120
+        ],
+        "b": [
+          "Eastern Europe",
+          "amber",
+          25,
+          125
+        ]
+      },
+      {
+        "id": "round51-18",
+        "lost_repeats": 2,
+        "a": [
+          "West Asia / Middle East",
+          "brown",
+          30,
+          120
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "copper",
+          35,
+          115
+        ]
+      },
+      {
+        "id": "round11-14",
+        "lost_repeats": 2,
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          35,
+          125
+        ],
+        "b": [
+          "West Central Asia",
+          "brown",
+          25,
+          125
+        ]
+      },
+      {
+        "id": "round20-7",
+        "lost_repeats": 2,
+        "a": [
+          "West Central Asia",
+          "amber",
+          20,
+          125
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "amber",
+          20,
+          125
+        ]
+      },
+      {
+        "id": "round6-11",
+        "lost_repeats": 2,
+        "a": [
+          "central",
+          "brown",
+          25,
+          125
+        ],
+        "b": [
+          "West Asia / Middle East",
+          "brown",
+          25,
+          120
+        ]
+      },
+      {
+        "id": "round9-7",
+        "lost_repeats": 2,
+        "a": [
+          "central",
+          "brown",
+          35,
+          125
+        ],
+        "b": [
+          "West Asia / Middle East",
+          "brown",
+          35,
+          120
+        ]
+      },
+      {
+        "id": "round9-14",
+        "lost_repeats": 2,
+        "a": [
+          "West Asia / Middle East",
+          "copper",
+          25,
+          120
+        ],
+        "b": [
+          "Eastern Europe",
+          "copper",
+          25,
+          125
+        ]
+      },
+      {
+        "id": "round10-5",
+        "lost_repeats": 2,
+        "a": [
+          "northeast",
+          "amber",
+          35,
+          115
+        ],
+        "b": [
+          "southwest",
+          "amber",
+          35,
+          120
+        ]
+      },
+      {
+        "id": "round10-11",
+        "lost_repeats": 2,
+        "a": [
+          "South/Eastern Asia",
+          "brown",
+          20,
+          125
+        ],
+        "b": [
+          "West Asia / Middle East",
+          "brown",
+          20,
+          120
+        ]
+      },
+      {
+        "id": "round11-17",
+        "lost_repeats": 2,
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          25,
+          125
+        ],
+        "b": [
+          "West Central Asia",
+          "brown",
+          20,
+          125
+        ]
+      },
+      {
+        "id": "round7-2",
+        "lost_repeats": 2,
+        "a": [
+          "central",
+          "brown",
+          30,
+          120
+        ],
+        "b": [
+          "Eastern Europe",
+          "brown",
+          30,
+          120
+        ]
+      },
+      {
+        "id": "round29-4",
+        "lost_repeats": 2,
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          25,
+          120
+        ],
+        "b": [
+          "West Central Asia",
+          "brown",
+          20,
+          120
+        ]
+      },
+      {
+        "id": "round37-6",
+        "lost_repeats": 2,
+        "a": [
+          "central",
+          "brown",
+          30,
+          110
+        ],
+        "b": [
+          "Eastern Europe",
+          "brown",
+          30,
+          110
+        ]
+      },
+      {
+        "id": "round38-3",
+        "lost_repeats": 2,
+        "a": [
+          "central",
+          "brown",
+          35,
+          120
+        ],
+        "b": [
+          "Eastern Europe",
+          "brown",
+          35,
+          120
+        ]
+      },
+      {
+        "id": "round47-14",
+        "lost_repeats": 2,
+        "a": [
+          "central",
+          "brown",
+          40,
+          120
+        ],
+        "b": [
+          "Eastern Europe",
+          "brown",
+          40,
+          120
+        ]
+      },
+      {
+        "id": "r5-7",
+        "lost_repeats": 1,
+        "a": [
+          "Eastern Europe",
+          "copper",
+          30,
+          120
+        ],
+        "b": [
+          "Eastern Europe",
+          "brown",
+          25,
+          120
+        ]
+      },
+      {
+        "id": "round49-2",
+        "lost_repeats": 1,
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          120
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "pale/straw",
+          20,
+          125
+        ]
+      },
+      {
+        "id": "round50-10",
+        "lost_repeats": 1,
+        "a": [
+          "Western Europe",
+          "brown",
+          35,
+          115
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          35,
+          120
+        ]
+      },
+      {
+        "id": "round54-18",
+        "lost_repeats": 1,
+        "a": [
+          "northeast",
+          "brown",
+          30,
+          115
+        ],
+        "b": [
+          "northeast",
+          "amber",
+          30,
+          120
+        ]
+      },
+      {
+        "id": "round55-7",
+        "lost_repeats": 1,
+        "a": [
+          "Western Europe",
+          "golden",
+          20,
+          110
+        ],
+        "b": [
+          "northwest",
+          "pale/straw",
+          20,
+          110
+        ]
+      },
+      {
+        "id": "round56-6",
+        "lost_repeats": 1,
+        "a": [
+          "West Central Asia",
+          "copper",
+          30,
+          125
+        ],
+        "b": [
+          "West Central Asia",
+          "amber",
+          35,
+          110
+        ]
+      },
+      {
+        "id": "round38-4",
+        "lost_repeats": 1,
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          115
+        ],
+        "b": [
+          "central",
+          "copper",
+          25,
+          120
+        ]
+      },
+      {
+        "id": "round42-3",
+        "lost_repeats": 1,
+        "a": [
+          "southwest",
+          "golden",
+          20,
+          125
+        ],
+        "b": [
+          "Western Europe",
+          "golden",
+          25,
+          115
+        ]
+      },
+      {
+        "id": "round45-9",
+        "lost_repeats": 1,
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          35,
+          115
+        ],
+        "b": [
+          "West Central Asia",
+          "golden",
+          25,
+          125
+        ]
+      },
+      {
+        "id": "round50-3",
+        "lost_repeats": 1,
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          125
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "pale/straw",
+          25,
+          125
+        ]
+      },
+      {
+        "id": "round27-11",
+        "lost_repeats": 1,
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          30,
+          120
+        ],
+        "b": [
+          "West Central Asia",
+          "brown",
+          20,
+          120
+        ]
+      },
+      {
+        "id": "round54-5",
+        "lost_repeats": 1,
+        "a": [
+          "northeast",
+          "amber",
+          30,
+          120
+        ],
+        "b": [
+          "northeast",
+          "amber",
+          25,
+          125
+        ]
+      },
+      {
+        "id": "round25-18",
+        "lost_repeats": 1,
+        "a": [
+          "central",
+          "brown",
+          20,
+          120
+        ],
+        "b": [
+          "southwest",
+          "brown",
+          20,
+          120
+        ]
+      },
+      {
+        "id": "round26-5",
+        "lost_repeats": 1,
+        "a": [
+          "central",
+          "brown",
+          25,
+          120
+        ],
+        "b": [
+          "southwest",
+          "brown",
+          25,
+          120
+        ]
+      },
+      {
+        "id": "round32-4",
+        "lost_repeats": 1,
+        "a": [
+          "central",
+          "golden",
+          25,
+          110
+        ],
+        "b": [
+          "northeast",
+          "pale/straw",
+          20,
+          125
+        ]
+      },
+      {
+        "id": "round56-10",
+        "lost_repeats": 1,
+        "a": [
+          "West Central Asia",
+          "copper",
+          40,
+          120
+        ],
+        "b": [
+          "West Central Asia",
+          "amber",
+          40,
+          130
+        ]
+      },
+      {
+        "id": "r1-1",
+        "lost_repeats": 1,
+        "a": [
+          "northeast",
+          "amber",
+          30,
+          115
+        ],
+        "b": [
+          "southwest",
+          "amber",
+          30,
+          110
+        ]
+      },
+      {
+        "id": "round6-8",
+        "lost_repeats": 1,
+        "a": [
+          "central",
+          "brown",
+          35,
+          120
+        ],
+        "b": [
+          "West Asia / Middle East",
+          "brown",
+          35,
+          120
+        ]
+      },
+      {
+        "id": "round6-9",
+        "lost_repeats": 1,
+        "a": [
+          "central",
+          "brown",
+          25,
+          120
+        ],
+        "b": [
+          "West Asia / Middle East",
+          "brown",
+          25,
+          120
+        ]
+      },
+      {
+        "id": "round6-10",
+        "lost_repeats": 1,
+        "a": [
+          "central",
+          "brown",
+          20,
+          120
+        ],
+        "b": [
+          "West Asia / Middle East",
+          "brown",
+          20,
+          120
+        ]
+      },
+      {
+        "id": "round7-1",
+        "lost_repeats": 1,
+        "a": [
+          "central",
+          "brown",
+          30,
+          120
+        ],
+        "b": [
+          "West Asia / Middle East",
+          "brown",
+          30,
+          120
+        ]
+      },
+      {
+        "id": "round9-8",
+        "lost_repeats": 1,
+        "a": [
+          "southeast",
+          "amber",
+          20,
+          125
+        ],
+        "b": [
+          "southwest",
+          "amber",
+          20,
+          115
+        ]
+      },
+      {
+        "id": "round15-3",
+        "lost_repeats": 1,
+        "a": [
+          "Eastern Europe",
+          "amber",
+          25,
+          120
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          25,
+          130
+        ]
+      },
+      {
+        "id": "round9-1",
+        "lost_repeats": 1,
+        "a": [
+          "southwest",
+          "amber",
+          25,
+          120
+        ],
+        "b": [
+          "central",
+          "amber",
+          25,
+          115
+        ]
+      },
+      {
+        "id": "round17-9",
+        "lost_repeats": 1,
+        "a": [
+          "southwest",
+          "amber",
+          40,
+          115
+        ],
+        "b": [
+          "central",
+          "amber",
+          40,
+          120
+        ]
+      },
+      {
+        "id": "round46-11",
+        "lost_repeats": 1,
+        "a": [
+          "South/Eastern Asia",
+          "amber",
+          20,
+          125
+        ],
+        "b": [
+          "West Asia / Middle East",
+          "amber",
+          30,
+          115
+        ]
+      },
+      {
+        "id": "round51-2",
+        "lost_repeats": 1,
+        "a": [
+          "northeast",
+          "amber",
+          30,
+          115
+        ],
+        "b": [
+          "southwest",
+          "amber",
+          25,
+          125
+        ]
+      },
+      {
+        "id": "round8-2",
+        "lost_repeats": 1,
+        "a": [
+          "West Central Asia",
+          "golden",
+          30,
+          120
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "golden",
+          30,
+          120
+        ]
+      },
+      {
+        "id": "round36-5",
+        "lost_repeats": 1,
+        "a": [
+          "West Central Asia",
+          "amber",
+          25,
+          110
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "amber",
+          25,
+          110
+        ]
+      },
+      {
+        "id": "round36-6",
+        "lost_repeats": 1,
+        "a": [
+          "South/Eastern Asia",
+          "golden",
+          25,
+          110
+        ],
+        "b": [
+          "West Central Asia",
+          "golden",
+          25,
+          110
+        ]
+      },
+      {
+        "id": "round36-8",
+        "lost_repeats": 1,
+        "a": [
+          "South/Eastern Asia",
+          "copper",
+          25,
+          110
+        ],
+        "b": [
+          "West Central Asia",
+          "copper",
+          25,
+          110
+        ]
+      },
+      {
+        "id": "round39-5",
+        "lost_repeats": 1,
+        "a": [
+          "Western Europe",
+          "golden",
+          25,
+          125
+        ],
+        "b": [
+          "Western Europe",
+          "pale/straw",
+          25,
+          125
+        ]
+      },
+      {
+        "id": "round42-10",
+        "lost_repeats": 1,
+        "a": [
+          "northeast",
+          "amber",
+          30,
+          120
+        ],
+        "b": [
+          "northwest",
+          "amber",
+          25,
+          125
+        ]
+      },
+      {
+        "id": "round47-5",
+        "lost_repeats": 1,
+        "a": [
+          "West Central Asia",
+          "golden",
+          25,
+          115
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "golden",
+          25,
+          125
+        ]
+      },
+      {
+        "id": "round51-4",
+        "lost_repeats": 1,
+        "a": [
+          "Eastern Europe",
+          "pale/straw",
+          25,
+          125
+        ],
+        "b": [
+          "Eastern Europe",
+          "golden",
+          25,
+          125
+        ]
+      },
+      {
+        "id": "round54-1",
+        "lost_repeats": 1,
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          30,
+          115
+        ],
+        "b": [
+          "West Central Asia",
+          "brown",
+          20,
+          120
+        ]
+      }
+    ]
+  },
+  "qualification": "Same evidencev30/family folds. Longer budget selected by training objective, never heldout labels. Minimum-L2 preserves correct training classifications, no feature or threshold changes. New feature chosen after representation audit; adaptive reused validation, not independent prospective accuracy. Full12-round fit is in-sample. Structural infeasibility is for specified feature family, not inconsistent human evidence.",
+  "evidence": "evidence-v30.json",
+  "active_runtime": "predictor_v28.py",
+  "active_config": "model-config-v28.json",
+  "experimental_runtime": "predictor_regional_mature_v30.py",
+  "experimental_config": "regional-mature-selected-config-v30.json",
+  "tests_passed": 25,
+  "runtime_verification": "regional-stability-verification-v30.json",
+  "diagnosis": [
+    "Solver time limits are a minor contributor:5reruns brought all25primary fits within0.1% gap tolerance, complete judgments only162.4->162.8/220.",
+    "Minimum-L2 removes arbitrary coefficient magnitude and reduces fold coefficient variance but barely improves heldout accuracy alone:162.8->163.0/220. This does not support excessive coefficient magnitude as the main explanation.",
+    "Some loss is structural underfitting: shared35-year increment cannot simultaneously fit meaningfulgolden35/pale40 and practicalamber35/amber40; two-row infeasibility verified with upper bounds removed.",
+    "One cumulative35-year vintage increment for golden/pale plus minimum-L2 improves to173.4/220 and wins against originalregional in all5repeats, but remains belowv28 186/220.",
+    "Perfect12-row full fit is in-sample; originalregional averages8.4/12on these withheld rows, revised9.0/12. Remaining family-transfer gap and missed meaningful premiums persist."
+  ],
+  "source_hashes": {
+    "evidence-v30.json": "3c659e9756b1ea612210a61bc9bae730a82bb5b845131508c218466ab91efd22",
+    "benchmark-targets-v30.json": "395982075d08f3475eef5ea60453317046f464fe44cdf6a89715c3f381290afe",
+    "model-config-v28.json": "a9fed8e86977526c16e74ccdb0a6a75d919b3041bd602e5592d64e3086414dcf",
+    "predictor_v28.py": "c572cb63d47b531607efc66be1c65890b854d2f5a5087286858c25611191b7e3",
+    "predictor_v27.py": "293307f98d4c2434bfbbea8a73341a3522601604535647f3a7a6b0103b23f2ed",
+    "regional-solver-audit-v30.json": "51fba8d2fc666bf546e52b2bd0a02bf61bf1bc1b9b1a23e58ee79c81ca5ca6c5",
+    "regional-minnorm-validation-v30.json": "679f37d12a42325e5a4f63994f70fcf01c132af586d4d41364f67efee4f24f61",
+    "regional-mature-shade-validation-v30.json": "d3e80cbc6dd22571198b95269665c15a19ebf4430e8b5570cd3ca25e9540e3d8",
+    "regional-representation-conflict-v30.json": "a4138898e8d0ab9ad0b3482ab349f8f55999865fc5fe407828c1c306ddffdebd",
+    "regional_mature_shade_v30.py": "b3912154da9d62ac7adb73e774b334206b56c171cb7946703026119f73b110c2",
+    "regional_minimum_norm_v30.py": "2881b14d52253260111ee2f4126cbcfb5d840af73555963605930fbff27974b4",
+    "regional_minimum_norm_robust_v30.py": "f2e6f2b9df8b031c0cbc2589301523c52e0be685f5bdad625379610ca04d6a33",
+    "test_regional_stability_v30.py": "baa7de3098a85b3da81f7654982a1a8304233bbef6bd352678cb277ee288c3b6"
+  }
+}

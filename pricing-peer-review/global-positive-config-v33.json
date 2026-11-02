@@ -1,0 +1,90 @@
+{
+  "status": "experimental_ranking_only",
+  "model_id": "global-positive-v33",
+  "domain": {
+    "provenances": [
+      "Eastern Europe",
+      "Western Europe",
+      "West Central Asia",
+      "South/Eastern Asia",
+      "West Asia / Middle East",
+      "central",
+      "northeast",
+      "northwest",
+      "southwest",
+      "southeast"
+    ],
+    "shades": [
+      "brown",
+      "copper",
+      "amber",
+      "golden",
+      "pale/straw"
+    ],
+    "vintage_years": [
+      40,
+      35,
+      30,
+      25,
+      20
+    ],
+    "tare_lb": [
+      110,
+      115,
+      120,
+      125,
+      130
+    ],
+    "domestic": [
+      "central",
+      "northwest",
+      "northeast",
+      "southwest",
+      "southeast"
+    ]
+  },
+  "value_model": {
+    "coefficients": [
+      0.8113443577663739,
+      -0.969188442533501,
+      -1.2603762060491386,
+      -1.429537645813583,
+      0.36613806664138354,
+      1.184719940040647,
+      0.31154753072296776,
+      0.7367198967939048,
+      1.4315362587611895,
+      1.6326873451577453,
+      0.3585810303821269,
+      0.4928047963170841,
+      0.3769907327178162,
+      1.3021637002876911,
+      1.3693212843191738,
+      1.8911458618421457,
+      1.8705898159695171,
+      0.7623682285870296,
+      0.8434601562078377,
+      0.689104675252181,
+      1.1886211324829867
+    ],
+    "alpha": 0.001,
+    "ordered": true,
+    "learned_ranges": {
+      "vintage": 6.4332206624185275,
+      "tare": 3.4835541925300353,
+      "provenance": 2.8610739045747726,
+      "shade": 2.8610639045747726
+    },
+    "training_pilot_extremes": {
+      "top": "southeast",
+      "bottom": "West Asia / Middle East"
+    },
+    "solver_status": "solved",
+    "inner_direction_counts": {
+      "0.001": 437,
+      "0.01": 432,
+      "0.1": 416
+    }
+  },
+  "source_validation": "positive-validation-v33.json"
+}

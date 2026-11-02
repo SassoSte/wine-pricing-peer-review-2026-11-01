@@ -1,0 +1,11 @@
+{
+  "evidence": "evidence-v27.json",
+  "diagnosis": "Worst repeated losses are same-provenance5-year golden/pale tradeoffs round41-6,round42-2,round44-8. A domestic20-only coefficient cannot help the foreign examples. Core foreign comparison round41-6 adds an infeasible shared-weight requirement to the first two clarified anchors even with domestic20 bonus.",
+  "refinement": "Replace domestic20 indicator with one signed comparison feature: matching provenance, exactly5-year vintage gap, golden/pale shade pair; sign favors younger offering. Still19 learned coefficients, not20. Refit all with same joint objective.",
+  "tradeoff": "Feature is comparison-dependent, unlike prior offering-level domestic20 bonus. It does not supply one transitive standalone price per offering. No monetary-price or global-transitivity claim.",
+  "anchors": ["round49-2", "round50-4", "round49-17"],
+  "protection": "Enforce anchors only when present in training partition; never held-out. Full fit must reconcile all3. No synthetic labels or pair lookups.",
+  "validation": "Same25 withheld-family partitions, evidence and three-second single-thread MILP budget as previous19-coefficient anchored model. Frozen v26 remains comparator. Full fit12seconds. Report solver gaps and contextual slice results. Evaluation is exploratory because hypothesis follows inspection of prior errors.",
+  "promotion": "Require reconciled anchors, improved balanced joint accuracy, noninferior fully-labelled joint accuracy and direction accuracy, and no more false premiums than v26. Otherwise retain v26.",
+  "safeguards": "Keep existing zero golden/pale premium at matched130lb and nonmeaningful standalone5lb differences. New feature is zero when vintage matches, so these constraints are unchanged."
+}

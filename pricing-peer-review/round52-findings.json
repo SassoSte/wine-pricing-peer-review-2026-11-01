@@ -1,0 +1,34 @@
+{
+  "round": 52,
+  "status": "complete",
+  "outcomes": [
+    {
+      "source_id": "round51-2",
+      "source_number": 2,
+      "clarification_id": "round52-1",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference",
+      "explicitly_not_tie": true
+    },
+    {
+      "source_id": "round51-15",
+      "source_number": 15,
+      "clarification_id": "round52-2",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference",
+      "explicitly_not_tie": true
+    },
+    {
+      "source_id": "round51-17",
+      "source_number": 17,
+      "clarification_id": "round52-3",
+      "direction": "B",
+      "meaningfulness": "no_meaningful_difference",
+      "explicitly_not_tie": true
+    }
+  ],
+  "all_practically_similar_with_strict_direction": true,
+  "pending_evidence_reconciliation": true,
+  "prediction_rechecks": 6,
+  "evidence_unchanged": "evidence-v27.json"
+}

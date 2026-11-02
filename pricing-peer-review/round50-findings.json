@@ -1,0 +1,44 @@
+{
+  "round": 50,
+  "status": "complete",
+  "active_judgments": 14,
+  "source_corrections": [
+    {
+      "source_id": "round49-2",
+      "clarification_id": "round50-1",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference"
+    },
+    {
+      "source_id": "round49-16",
+      "clarification_id": "round50-8",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference"
+    },
+    {
+      "source_id": "round49-6",
+      "clarification_id": "round50-13",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference"
+    }
+  ],
+  "key_points": [
+    "Practical similarity withA/B is a strictly positive small premium, not tie.",
+    "25-year copper115/120/125 and20vs25 brackets need contextual interpretation; all supplied pure/mixed judgments retained.",
+    "Brown-to-amber alone atWE35/115 meaningful; pure35vs40 atWEamber120 slight; offsetting advantages yield small net premiums.",
+    "NW versusWE golden25/120 has no cost-based preference;NW115 can have slight edge overWE120.",
+    "Original three apparent misses include two direction clarifications and one meaningfulness clarification, not solely arithmetic defects."
+  ],
+  "consistency": {
+    "active_questions": 14,
+    "simple_monotone_additive_feasible": true,
+    "hypothesis": "Existing19-feature additive utility, nonnegative monotone attribute increments, single normalized meaningfulness boundary. Small positive preferences retain strict signs; approximate sameness permits small gap either way.",
+    "scope": "These14 clarified isolation judgments only. Does not establish global adequacy, unique weights, causal interactions or dollar premiums. Normalized boundary1/strictness.01 are feasibility conventions, not elicited values. No model weights changed.",
+    "retracted_answer_excluded": "round50-4 initial meaningful answer not active",
+    "lesson": "The isolation does not mathematically require new interaction terms. Corrected labels and appropriate relative contributions suffice locally. Test any complexity against broader evidence rather than assuming it from explanatory wording."
+  },
+  "models_changed": false,
+  "evidence_unchanged": "evidence-v26.json",
+  "prediction_rechecks": 14,
+  "next_reconciliation": "Preserve all previous histories; supersede source judgments in new evidence version, do not duplicate-weight exact repeated pairs. Additional isolation pairs may overlap earlier evidence; deduplicate by unordered pair when incorporating."
+}

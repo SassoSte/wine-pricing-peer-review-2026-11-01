@@ -1,0 +1,91 @@
+{
+  "status": "complete",
+  "protocol": "Revisit four historical regional pairs individually; preserve baseline predictions and sealed prospective set. No generalization of one answer to other pairs.",
+  "rows": [
+    {
+      "target_id": "r3-2",
+      "a": [
+        "northwest",
+        "pale/straw",
+        30,
+        130
+      ],
+      "b": [
+        "Western Europe",
+        "pale/straw",
+        30,
+        130
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "value_relation": "B_higher",
+      "raw_answer": "B slightly more expensive\u2014Western Europe has the provenance edge, but with shade, vintage and tare identical it's not a meaningful premium. At 130 lb and 30 year vintage especially, B's western european provenance gets the nod.",
+      "interpretation": "Explicit B slight; supersedes earlier active A direction for this exact pair only. Preserve earlier history at next evidence reconciliation."
+    },
+    {
+      "target_id": "r4-7",
+      "a": [
+        "northwest",
+        "golden",
+        30,
+        130
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        30,
+        130
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "value_relation": "B_higher",
+      "raw_answer": "B slightly more expensive\u2014Western Europe has the provenance edge, but at 30 years and 130 lb, with shade matching, it's not a meaningful premium.",
+      "interpretation": "Explicit B slight; supersedes prior A direction for this exact pair only. Preserve earlier history when reconciling."
+    },
+    {
+      "target_id": "r4-8",
+      "a": [
+        "northwest",
+        "copper",
+        30,
+        130
+      ],
+      "b": [
+        "Western Europe",
+        "copper",
+        30,
+        130
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "value_relation": "B_higher",
+      "raw_answer": "B slightly more expensive\u2014Western Europe still has the provenance edge, but at 30 years and 130 lb with copper shade matching, it's not a meaningful premium.",
+      "interpretation": "Explicit B slight; supersedes prior A direction for this exact pair only. Preserve earlier history when reconciling."
+    },
+    {
+      "target_id": "r5-5",
+      "a": [
+        "northwest",
+        "amber",
+        25,
+        130
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        25,
+        130
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "value_relation": "B_higher",
+      "raw_answer": "B slightly more expensive\u2014Western Europe has the provenance edge, but at 25 years and 130 lb with amber shade matching, it's not a meaningful premium.",
+      "interpretation": "Explicit B slight; supersedes prior A direction for this exact pair only. Preserve earlier history when reconciling."
+    }
+  ],
+  "finding": "All four revisited pairs explicitly favor Western Europe slightly. Reconcile four existing rows once with history; no new independent observations or blanket provenance rule inferred."
+}

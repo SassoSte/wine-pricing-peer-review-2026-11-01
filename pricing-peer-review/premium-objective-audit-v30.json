@@ -1,0 +1,4100 @@
+{
+  "method": "Frozen outputs rescored, no model or evidence changes. Premiumprecision requires both an actuallymeaningful premium and thecorrectwinner. Sensitivity cost=lambda*(falsepremiums+wrongwinnerpremiums)+missedpremiums; it is an audit scenario,not an elicited usercost or a new trainingobjective. Direction-only labels excludedfrom premiumcosts; ranking must still be evaluatedseparately.",
+  "source_hashes": {
+    "evidence-v30.json": "3c659e9756b1ea612210a61bc9bae730a82bb5b845131508c218466ab91efd22",
+    "benchmark-targets-v30.json": "395982075d08f3475eef5ea60453317046f464fe44cdf6a89715c3f381290afe",
+    "foundation-amplifiers-validation-v30.json": "7c93d8c388b25844e36b78b68124c52d84379e04681252d5afaa3a3b8b8c69e6",
+    "vintage-tare-guarded-validation-v30.json": "ab9969af8356207b7211e37d44c665b20329dabbda56a443244faef8c7dfa40d",
+    "foundation_amplifiers_v30.py": "bebaf7d310b8f45a5f424e763b43d679f6359498ad056a311eb6a3d7df779ec7",
+    "joint_objective_v22.py": "5b02b658801bc14502c20eac66763f03a8add4079734c12756d3f6dd5f9236e6",
+    "model-config-v28.json": "a9fed8e86977526c16e74ccdb0a6a75d919b3041bd602e5592d64e3086414dcf",
+    "predictor_v28.py": "c572cb63d47b531607efc66be1c65890b854d2f5a5087286858c25611191b7e3",
+    "predictor_v27.py": "293307f98d4c2434bfbbea8a73341a3522601604535647f3a7a6b0103b23f2ed"
+  },
+  "objective_weights": {
+    "binary_balanced_premium_head": {
+      "positive_count": 135,
+      "negative_count": 261,
+      "positive_per_case": 0.003703703703703704,
+      "negative_per_case": 0.0019157088122605363,
+      "missed_to_false_per_case_weight_ratio": 1.9333333333333333
+    },
+    "joint_macro_groups": {
+      "meaningful": {
+        "n": 135,
+        "per_case_weight": 0.001851851851851852
+      },
+      "practical_direction": {
+        "n": 85,
+        "per_case_weight": 0.0029411764705882353
+      },
+      "practical_only": {
+        "n": 176,
+        "per_case_weight": 0.0014204545454545455
+      },
+      "direction_only": {
+        "n": 244,
+        "per_case_weight": 0.0010245901639344263
+      }
+    }
+  },
+  "results": {
+    "v28": {
+      "all_size_labels": {
+        "n": 396,
+        "positive_n": 135,
+        "negative_n": 261,
+        "mean": {
+          "correct_premiums": 115.2,
+          "false_premiums": 15.0,
+          "wrong_winner_premiums": 1.0,
+          "missed_premiums": 18.8,
+          "premium_precision": 0.8786365932410811,
+          "premium_recall_with_correct_direction": 0.8533333333333333
+        },
+        "mean_cost_sensitivity": {
+          "1": 34.8,
+          "1.5": 42.8,
+          "2": 50.8,
+          "3": 66.8
+        },
+        "repeats": [
+          {
+            "seed": 11,
+            "correct_premiums": 118,
+            "false_premiums": 17,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 17,
+            "premium_precision": 0.8740740740740741,
+            "premium_recall_with_correct_direction": 0.8740740740740741,
+            "cost_sensitivity": {
+              "1": 34.0,
+              "1.5": 42.5,
+              "2": 51.0,
+              "3": 68.0
+            }
+          },
+          {
+            "seed": 29,
+            "correct_premiums": 115,
+            "false_premiums": 14,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 20,
+            "premium_precision": 0.8914728682170543,
+            "premium_recall_with_correct_direction": 0.8518518518518519,
+            "cost_sensitivity": {
+              "1": 34.0,
+              "1.5": 41.0,
+              "2": 48.0,
+              "3": 62.0
+            }
+          },
+          {
+            "seed": 47,
+            "correct_premiums": 112,
+            "false_premiums": 15,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 23,
+            "premium_precision": 0.8818897637795275,
+            "premium_recall_with_correct_direction": 0.8296296296296296,
+            "cost_sensitivity": {
+              "1": 38.0,
+              "1.5": 45.5,
+              "2": 53.0,
+              "3": 68.0
+            }
+          },
+          {
+            "seed": 71,
+            "correct_premiums": 118,
+            "false_premiums": 16,
+            "wrong_winner_premiums": 5,
+            "missed_premiums": 12,
+            "premium_precision": 0.8489208633093526,
+            "premium_recall_with_correct_direction": 0.8740740740740741,
+            "cost_sensitivity": {
+              "1": 33.0,
+              "1.5": 43.5,
+              "2": 54.0,
+              "3": 75.0
+            }
+          },
+          {
+            "seed": 103,
+            "correct_premiums": 113,
+            "false_premiums": 13,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 22,
+            "premium_precision": 0.8968253968253969,
+            "premium_recall_with_correct_direction": 0.837037037037037,
+            "cost_sensitivity": {
+              "1": 35.0,
+              "1.5": 41.5,
+              "2": 48.0,
+              "3": 61.0
+            }
+          }
+        ]
+      },
+      "direct_size_labels": {
+        "n": 261,
+        "positive_n": 109,
+        "negative_n": 152,
+        "mean": {
+          "correct_premiums": 95.4,
+          "false_premiums": 9.4,
+          "wrong_winner_premiums": 1.0,
+          "missed_premiums": 12.6,
+          "premium_precision": 0.9027707749766574,
+          "premium_recall_with_correct_direction": 0.8752293577981651
+        },
+        "mean_cost_sensitivity": {
+          "1": 23.0,
+          "1.5": 28.2,
+          "2": 33.4,
+          "3": 43.8
+        },
+        "repeats": [
+          {
+            "seed": 11,
+            "correct_premiums": 96,
+            "false_premiums": 12,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 13,
+            "premium_precision": 0.8888888888888888,
+            "premium_recall_with_correct_direction": 0.8807339449541285,
+            "cost_sensitivity": {
+              "1": 25.0,
+              "1.5": 31.0,
+              "2": 37.0,
+              "3": 49.0
+            }
+          },
+          {
+            "seed": 29,
+            "correct_premiums": 97,
+            "false_premiums": 8,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 12,
+            "premium_precision": 0.9238095238095239,
+            "premium_recall_with_correct_direction": 0.8899082568807339,
+            "cost_sensitivity": {
+              "1": 20.0,
+              "1.5": 24.0,
+              "2": 28.0,
+              "3": 36.0
+            }
+          },
+          {
+            "seed": 47,
+            "correct_premiums": 94,
+            "false_premiums": 8,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 15,
+            "premium_precision": 0.9215686274509803,
+            "premium_recall_with_correct_direction": 0.8623853211009175,
+            "cost_sensitivity": {
+              "1": 23.0,
+              "1.5": 27.0,
+              "2": 31.0,
+              "3": 39.0
+            }
+          },
+          {
+            "seed": 71,
+            "correct_premiums": 95,
+            "false_premiums": 12,
+            "wrong_winner_premiums": 5,
+            "missed_premiums": 9,
+            "premium_precision": 0.8482142857142857,
+            "premium_recall_with_correct_direction": 0.8715596330275229,
+            "cost_sensitivity": {
+              "1": 26.0,
+              "1.5": 34.5,
+              "2": 43.0,
+              "3": 60.0
+            }
+          },
+          {
+            "seed": 103,
+            "correct_premiums": 95,
+            "false_premiums": 7,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 14,
+            "premium_precision": 0.9313725490196079,
+            "premium_recall_with_correct_direction": 0.8715596330275229,
+            "cost_sensitivity": {
+              "1": 21.0,
+              "1.5": 24.5,
+              "2": 28.0,
+              "3": 35.0
+            }
+          }
+        ]
+      }
+    },
+    "guarded_intrinsic": {
+      "all_size_labels": {
+        "n": 396,
+        "positive_n": 135,
+        "negative_n": 261,
+        "mean": {
+          "correct_premiums": 119.8,
+          "false_premiums": 19.0,
+          "wrong_winner_premiums": 0.0,
+          "missed_premiums": 15.2,
+          "premium_precision": 0.8637720995820096,
+          "premium_recall_with_correct_direction": 0.8874074074074073
+        },
+        "mean_cost_sensitivity": {
+          "1": 34.2,
+          "1.5": 43.7,
+          "2": 53.2,
+          "3": 72.2
+        },
+        "repeats": [
+          {
+            "seed": 11,
+            "correct_premiums": 121,
+            "false_premiums": 15,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 14,
+            "premium_precision": 0.8897058823529411,
+            "premium_recall_with_correct_direction": 0.8962962962962963,
+            "cost_sensitivity": {
+              "1": 29.0,
+              "1.5": 36.5,
+              "2": 44.0,
+              "3": 59.0
+            }
+          },
+          {
+            "seed": 29,
+            "correct_premiums": 117,
+            "false_premiums": 18,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 18,
+            "premium_precision": 0.8666666666666667,
+            "premium_recall_with_correct_direction": 0.8666666666666667,
+            "cost_sensitivity": {
+              "1": 36.0,
+              "1.5": 45.0,
+              "2": 54.0,
+              "3": 72.0
+            }
+          },
+          {
+            "seed": 47,
+            "correct_premiums": 123,
+            "false_premiums": 15,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 12,
+            "premium_precision": 0.8913043478260869,
+            "premium_recall_with_correct_direction": 0.9111111111111111,
+            "cost_sensitivity": {
+              "1": 27.0,
+              "1.5": 34.5,
+              "2": 42.0,
+              "3": 57.0
+            }
+          },
+          {
+            "seed": 71,
+            "correct_premiums": 119,
+            "false_premiums": 27,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 16,
+            "premium_precision": 0.815068493150685,
+            "premium_recall_with_correct_direction": 0.8814814814814815,
+            "cost_sensitivity": {
+              "1": 43.0,
+              "1.5": 56.5,
+              "2": 70.0,
+              "3": 97.0
+            }
+          },
+          {
+            "seed": 103,
+            "correct_premiums": 119,
+            "false_premiums": 20,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 16,
+            "premium_precision": 0.8561151079136691,
+            "premium_recall_with_correct_direction": 0.8814814814814815,
+            "cost_sensitivity": {
+              "1": 36.0,
+              "1.5": 46.0,
+              "2": 56.0,
+              "3": 76.0
+            }
+          }
+        ]
+      },
+      "direct_size_labels": {
+        "n": 261,
+        "positive_n": 109,
+        "negative_n": 152,
+        "mean": {
+          "correct_premiums": 100.0,
+          "false_premiums": 11.0,
+          "wrong_winner_premiums": 0.0,
+          "missed_premiums": 9.0,
+          "premium_precision": 0.9012497971919202,
+          "premium_recall_with_correct_direction": 0.9174311926605505
+        },
+        "mean_cost_sensitivity": {
+          "1": 20.0,
+          "1.5": 25.5,
+          "2": 31.0,
+          "3": 42.0
+        },
+        "repeats": [
+          {
+            "seed": 11,
+            "correct_premiums": 99,
+            "false_premiums": 10,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 10,
+            "premium_precision": 0.908256880733945,
+            "premium_recall_with_correct_direction": 0.908256880733945,
+            "cost_sensitivity": {
+              "1": 20.0,
+              "1.5": 25.0,
+              "2": 30.0,
+              "3": 40.0
+            }
+          },
+          {
+            "seed": 29,
+            "correct_premiums": 99,
+            "false_premiums": 11,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 10,
+            "premium_precision": 0.9,
+            "premium_recall_with_correct_direction": 0.908256880733945,
+            "cost_sensitivity": {
+              "1": 21.0,
+              "1.5": 26.5,
+              "2": 32.0,
+              "3": 43.0
+            }
+          },
+          {
+            "seed": 47,
+            "correct_premiums": 100,
+            "false_premiums": 8,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 9,
+            "premium_precision": 0.9259259259259259,
+            "premium_recall_with_correct_direction": 0.9174311926605505,
+            "cost_sensitivity": {
+              "1": 17.0,
+              "1.5": 21.0,
+              "2": 25.0,
+              "3": 33.0
+            }
+          },
+          {
+            "seed": 71,
+            "correct_premiums": 101,
+            "false_premiums": 14,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 8,
+            "premium_precision": 0.8782608695652174,
+            "premium_recall_with_correct_direction": 0.926605504587156,
+            "cost_sensitivity": {
+              "1": 22.0,
+              "1.5": 29.0,
+              "2": 36.0,
+              "3": 50.0
+            }
+          },
+          {
+            "seed": 103,
+            "correct_premiums": 101,
+            "false_premiums": 12,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 8,
+            "premium_precision": 0.8938053097345132,
+            "premium_recall_with_correct_direction": 0.926605504587156,
+            "cost_sensitivity": {
+              "1": 20.0,
+              "1.5": 26.0,
+              "2": 32.0,
+              "3": 44.0
+            }
+          }
+        ]
+      }
+    },
+    "foundation_balanced": {
+      "all_size_labels": {
+        "n": 396,
+        "positive_n": 135,
+        "negative_n": 261,
+        "mean": {
+          "correct_premiums": 118.6,
+          "false_premiums": 27.8,
+          "wrong_winner_premiums": 0.0,
+          "missed_premiums": 16.4,
+          "premium_precision": 0.8103734294685812,
+          "premium_recall_with_correct_direction": 0.8785185185185185
+        },
+        "mean_cost_sensitivity": {
+          "1": 44.2,
+          "1.5": 58.1,
+          "2": 72.0,
+          "3": 99.8
+        },
+        "repeats": [
+          {
+            "seed": 11,
+            "correct_premiums": 120,
+            "false_premiums": 25,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 15,
+            "premium_precision": 0.8275862068965517,
+            "premium_recall_with_correct_direction": 0.8888888888888888,
+            "cost_sensitivity": {
+              "1": 40.0,
+              "1.5": 52.5,
+              "2": 65.0,
+              "3": 90.0
+            }
+          },
+          {
+            "seed": 29,
+            "correct_premiums": 119,
+            "false_premiums": 25,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 16,
+            "premium_precision": 0.8263888888888888,
+            "premium_recall_with_correct_direction": 0.8814814814814815,
+            "cost_sensitivity": {
+              "1": 41.0,
+              "1.5": 53.5,
+              "2": 66.0,
+              "3": 91.0
+            }
+          },
+          {
+            "seed": 47,
+            "correct_premiums": 117,
+            "false_premiums": 30,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 18,
+            "premium_precision": 0.7959183673469388,
+            "premium_recall_with_correct_direction": 0.8666666666666667,
+            "cost_sensitivity": {
+              "1": 48.0,
+              "1.5": 63.0,
+              "2": 78.0,
+              "3": 108.0
+            }
+          },
+          {
+            "seed": 71,
+            "correct_premiums": 117,
+            "false_premiums": 27,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 18,
+            "premium_precision": 0.8125,
+            "premium_recall_with_correct_direction": 0.8666666666666667,
+            "cost_sensitivity": {
+              "1": 45.0,
+              "1.5": 58.5,
+              "2": 72.0,
+              "3": 99.0
+            }
+          },
+          {
+            "seed": 103,
+            "correct_premiums": 120,
+            "false_premiums": 32,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 15,
+            "premium_precision": 0.7894736842105263,
+            "premium_recall_with_correct_direction": 0.8888888888888888,
+            "cost_sensitivity": {
+              "1": 47.0,
+              "1.5": 63.0,
+              "2": 79.0,
+              "3": 111.0
+            }
+          }
+        ]
+      },
+      "direct_size_labels": {
+        "n": 261,
+        "positive_n": 109,
+        "negative_n": 152,
+        "mean": {
+          "correct_premiums": 97.8,
+          "false_premiums": 18.8,
+          "wrong_winner_premiums": 0.0,
+          "missed_premiums": 11.2,
+          "premium_precision": 0.8389303478565902,
+          "premium_recall_with_correct_direction": 0.8972477064220185
+        },
+        "mean_cost_sensitivity": {
+          "1": 30.0,
+          "1.5": 39.4,
+          "2": 48.8,
+          "3": 67.6
+        },
+        "repeats": [
+          {
+            "seed": 11,
+            "correct_premiums": 99,
+            "false_premiums": 17,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 10,
+            "premium_precision": 0.853448275862069,
+            "premium_recall_with_correct_direction": 0.908256880733945,
+            "cost_sensitivity": {
+              "1": 27.0,
+              "1.5": 35.5,
+              "2": 44.0,
+              "3": 61.0
+            }
+          },
+          {
+            "seed": 29,
+            "correct_premiums": 99,
+            "false_premiums": 18,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 10,
+            "premium_precision": 0.8461538461538461,
+            "premium_recall_with_correct_direction": 0.908256880733945,
+            "cost_sensitivity": {
+              "1": 28.0,
+              "1.5": 37.0,
+              "2": 46.0,
+              "3": 64.0
+            }
+          },
+          {
+            "seed": 47,
+            "correct_premiums": 96,
+            "false_premiums": 22,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 13,
+            "premium_precision": 0.8135593220338984,
+            "premium_recall_with_correct_direction": 0.8807339449541285,
+            "cost_sensitivity": {
+              "1": 35.0,
+              "1.5": 46.0,
+              "2": 57.0,
+              "3": 79.0
+            }
+          },
+          {
+            "seed": 71,
+            "correct_premiums": 96,
+            "false_premiums": 17,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 13,
+            "premium_precision": 0.8495575221238938,
+            "premium_recall_with_correct_direction": 0.8807339449541285,
+            "cost_sensitivity": {
+              "1": 30.0,
+              "1.5": 38.5,
+              "2": 47.0,
+              "3": 64.0
+            }
+          },
+          {
+            "seed": 103,
+            "correct_premiums": 99,
+            "false_premiums": 20,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 10,
+            "premium_precision": 0.8319327731092437,
+            "premium_recall_with_correct_direction": 0.908256880733945,
+            "cost_sensitivity": {
+              "1": 30.0,
+              "1.5": 40.0,
+              "2": 50.0,
+              "3": 70.0
+            }
+          }
+        ]
+      }
+    },
+    "foundation_joint_groups": {
+      "all_size_labels": {
+        "n": 396,
+        "positive_n": 135,
+        "negative_n": 261,
+        "mean": {
+          "correct_premiums": 96.0,
+          "false_premiums": 19.0,
+          "wrong_winner_premiums": 0.0,
+          "missed_premiums": 39.0,
+          "premium_precision": 0.8348583282012367,
+          "premium_recall_with_correct_direction": 0.7111111111111111
+        },
+        "mean_cost_sensitivity": {
+          "1": 58.0,
+          "1.5": 67.5,
+          "2": 77.0,
+          "3": 96.0
+        },
+        "repeats": [
+          {
+            "seed": 11,
+            "correct_premiums": 98,
+            "false_premiums": 20,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 37,
+            "premium_precision": 0.8305084745762712,
+            "premium_recall_with_correct_direction": 0.725925925925926,
+            "cost_sensitivity": {
+              "1": 57.0,
+              "1.5": 67.0,
+              "2": 77.0,
+              "3": 97.0
+            }
+          },
+          {
+            "seed": 29,
+            "correct_premiums": 92,
+            "false_premiums": 19,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 43,
+            "premium_precision": 0.8288288288288288,
+            "premium_recall_with_correct_direction": 0.6814814814814815,
+            "cost_sensitivity": {
+              "1": 62.0,
+              "1.5": 71.5,
+              "2": 81.0,
+              "3": 100.0
+            }
+          },
+          {
+            "seed": 47,
+            "correct_premiums": 92,
+            "false_premiums": 17,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 43,
+            "premium_precision": 0.8440366972477065,
+            "premium_recall_with_correct_direction": 0.6814814814814815,
+            "cost_sensitivity": {
+              "1": 60.0,
+              "1.5": 68.5,
+              "2": 77.0,
+              "3": 94.0
+            }
+          },
+          {
+            "seed": 71,
+            "correct_premiums": 97,
+            "false_premiums": 19,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 38,
+            "premium_precision": 0.8362068965517241,
+            "premium_recall_with_correct_direction": 0.7185185185185186,
+            "cost_sensitivity": {
+              "1": 57.0,
+              "1.5": 66.5,
+              "2": 76.0,
+              "3": 95.0
+            }
+          },
+          {
+            "seed": 103,
+            "correct_premiums": 101,
+            "false_premiums": 20,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 34,
+            "premium_precision": 0.8347107438016529,
+            "premium_recall_with_correct_direction": 0.7481481481481481,
+            "cost_sensitivity": {
+              "1": 54.0,
+              "1.5": 64.0,
+              "2": 74.0,
+              "3": 94.0
+            }
+          }
+        ]
+      },
+      "direct_size_labels": {
+        "n": 261,
+        "positive_n": 109,
+        "negative_n": 152,
+        "mean": {
+          "correct_premiums": 78.2,
+          "false_premiums": 12.2,
+          "wrong_winner_premiums": 0.0,
+          "missed_premiums": 30.8,
+          "premium_precision": 0.8648825536573153,
+          "premium_recall_with_correct_direction": 0.7174311926605504
+        },
+        "mean_cost_sensitivity": {
+          "1": 43.0,
+          "1.5": 49.1,
+          "2": 55.2,
+          "3": 67.4
+        },
+        "repeats": [
+          {
+            "seed": 11,
+            "correct_premiums": 78,
+            "false_premiums": 13,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 31,
+            "premium_precision": 0.8571428571428571,
+            "premium_recall_with_correct_direction": 0.7155963302752294,
+            "cost_sensitivity": {
+              "1": 44.0,
+              "1.5": 50.5,
+              "2": 57.0,
+              "3": 70.0
+            }
+          },
+          {
+            "seed": 29,
+            "correct_premiums": 76,
+            "false_premiums": 14,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 33,
+            "premium_precision": 0.8444444444444444,
+            "premium_recall_with_correct_direction": 0.6972477064220184,
+            "cost_sensitivity": {
+              "1": 47.0,
+              "1.5": 54.0,
+              "2": 61.0,
+              "3": 75.0
+            }
+          },
+          {
+            "seed": 47,
+            "correct_premiums": 75,
+            "false_premiums": 12,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 34,
+            "premium_precision": 0.8620689655172413,
+            "premium_recall_with_correct_direction": 0.6880733944954128,
+            "cost_sensitivity": {
+              "1": 46.0,
+              "1.5": 52.0,
+              "2": 58.0,
+              "3": 70.0
+            }
+          },
+          {
+            "seed": 71,
+            "correct_premiums": 79,
+            "false_premiums": 11,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 30,
+            "premium_precision": 0.8777777777777778,
+            "premium_recall_with_correct_direction": 0.7247706422018348,
+            "cost_sensitivity": {
+              "1": 41.0,
+              "1.5": 46.5,
+              "2": 52.0,
+              "3": 63.0
+            }
+          },
+          {
+            "seed": 103,
+            "correct_premiums": 83,
+            "false_premiums": 11,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 26,
+            "premium_precision": 0.8829787234042553,
+            "premium_recall_with_correct_direction": 0.7614678899082569,
+            "cost_sensitivity": {
+              "1": 37.0,
+              "1.5": 42.5,
+              "2": 48.0,
+              "3": 59.0
+            }
+          }
+        ]
+      }
+    },
+    "foundation_gap_only": {
+      "all_size_labels": {
+        "n": 396,
+        "positive_n": 135,
+        "negative_n": 261,
+        "mean": {
+          "correct_premiums": 85.4,
+          "false_premiums": 14.0,
+          "wrong_winner_premiums": 0.0,
+          "missed_premiums": 49.6,
+          "premium_precision": 0.8611432553502597,
+          "premium_recall_with_correct_direction": 0.6325925925925926
+        },
+        "mean_cost_sensitivity": {
+          "1": 63.6,
+          "1.5": 70.6,
+          "2": 77.6,
+          "3": 91.6
+        },
+        "repeats": [
+          {
+            "seed": 11,
+            "correct_premiums": 80,
+            "false_premiums": 10,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 55,
+            "premium_precision": 0.8888888888888888,
+            "premium_recall_with_correct_direction": 0.5925925925925926,
+            "cost_sensitivity": {
+              "1": 65.0,
+              "1.5": 70.0,
+              "2": 75.0,
+              "3": 85.0
+            }
+          },
+          {
+            "seed": 29,
+            "correct_premiums": 75,
+            "false_premiums": 10,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 60,
+            "premium_precision": 0.8823529411764706,
+            "premium_recall_with_correct_direction": 0.5555555555555556,
+            "cost_sensitivity": {
+              "1": 70.0,
+              "1.5": 75.0,
+              "2": 80.0,
+              "3": 90.0
+            }
+          },
+          {
+            "seed": 47,
+            "correct_premiums": 91,
+            "false_premiums": 18,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 44,
+            "premium_precision": 0.8348623853211009,
+            "premium_recall_with_correct_direction": 0.674074074074074,
+            "cost_sensitivity": {
+              "1": 62.0,
+              "1.5": 71.0,
+              "2": 80.0,
+              "3": 98.0
+            }
+          },
+          {
+            "seed": 71,
+            "correct_premiums": 90,
+            "false_premiums": 17,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 45,
+            "premium_precision": 0.8411214953271028,
+            "premium_recall_with_correct_direction": 0.6666666666666666,
+            "cost_sensitivity": {
+              "1": 62.0,
+              "1.5": 70.5,
+              "2": 79.0,
+              "3": 96.0
+            }
+          },
+          {
+            "seed": 103,
+            "correct_premiums": 91,
+            "false_premiums": 15,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 44,
+            "premium_precision": 0.8584905660377359,
+            "premium_recall_with_correct_direction": 0.674074074074074,
+            "cost_sensitivity": {
+              "1": 59.0,
+              "1.5": 66.5,
+              "2": 74.0,
+              "3": 89.0
+            }
+          }
+        ]
+      },
+      "direct_size_labels": {
+        "n": 261,
+        "positive_n": 109,
+        "negative_n": 152,
+        "mean": {
+          "correct_premiums": 68.6,
+          "false_premiums": 9.4,
+          "wrong_winner_premiums": 0.0,
+          "missed_premiums": 40.4,
+          "premium_precision": 0.881890692077857,
+          "premium_recall_with_correct_direction": 0.6293577981651376
+        },
+        "mean_cost_sensitivity": {
+          "1": 49.8,
+          "1.5": 54.5,
+          "2": 59.2,
+          "3": 68.6
+        },
+        "repeats": [
+          {
+            "seed": 11,
+            "correct_premiums": 64,
+            "false_premiums": 5,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 45,
+            "premium_precision": 0.927536231884058,
+            "premium_recall_with_correct_direction": 0.5871559633027523,
+            "cost_sensitivity": {
+              "1": 50.0,
+              "1.5": 52.5,
+              "2": 55.0,
+              "3": 60.0
+            }
+          },
+          {
+            "seed": 29,
+            "correct_premiums": 60,
+            "false_premiums": 7,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 49,
+            "premium_precision": 0.8955223880597015,
+            "premium_recall_with_correct_direction": 0.5504587155963303,
+            "cost_sensitivity": {
+              "1": 56.0,
+              "1.5": 59.5,
+              "2": 63.0,
+              "3": 70.0
+            }
+          },
+          {
+            "seed": 47,
+            "correct_premiums": 75,
+            "false_premiums": 12,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 34,
+            "premium_precision": 0.8620689655172413,
+            "premium_recall_with_correct_direction": 0.6880733944954128,
+            "cost_sensitivity": {
+              "1": 46.0,
+              "1.5": 52.0,
+              "2": 58.0,
+              "3": 70.0
+            }
+          },
+          {
+            "seed": 71,
+            "correct_premiums": 70,
+            "false_premiums": 13,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 39,
+            "premium_precision": 0.8433734939759037,
+            "premium_recall_with_correct_direction": 0.6422018348623854,
+            "cost_sensitivity": {
+              "1": 52.0,
+              "1.5": 58.5,
+              "2": 65.0,
+              "3": 78.0
+            }
+          },
+          {
+            "seed": 103,
+            "correct_premiums": 74,
+            "false_premiums": 10,
+            "wrong_winner_premiums": 0,
+            "missed_premiums": 35,
+            "premium_precision": 0.8809523809523809,
+            "premium_recall_with_correct_direction": 0.6788990825688074,
+            "cost_sensitivity": {
+              "1": 45.0,
+              "1.5": 50.0,
+              "2": 55.0,
+              "3": 65.0
+            }
+          }
+        ]
+      }
+    }
+  },
+  "repeated_bad_premium_claims": {
+    "v28": [
+      {
+        "id": "r2-4",
+        "a": [
+          "Eastern Europe",
+          "amber",
+          30,
+          110
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          30,
+          125
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "revision-8",
+        "a": [
+          "Eastern Europe",
+          "amber",
+          35,
+          115
+        ],
+        "b": [
+          "Eastern Europe",
+          "amber",
+          30,
+          120
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "revision-14",
+        "a": [
+          "Eastern Europe",
+          "pale/straw",
+          30,
+          125
+        ],
+        "b": [
+          "Eastern Europe",
+          "golden",
+          30,
+          115
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round9-18",
+        "a": [
+          "southeast",
+          "pale/straw",
+          25,
+          130
+        ],
+        "b": [
+          "southeast",
+          "golden",
+          25,
+          120
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round38-5",
+        "a": [
+          "southwest",
+          "golden",
+          40,
+          115
+        ],
+        "b": [
+          "northwest",
+          "golden",
+          40,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round50-4",
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          125
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "copper",
+          25,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round56-9",
+        "a": [
+          "West Central Asia",
+          "golden",
+          25,
+          115
+        ],
+        "b": [
+          "West Central Asia",
+          "pale/straw",
+          20,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round45-7",
+        "a": [
+          "West Asia / Middle East",
+          "amber",
+          35,
+          120
+        ],
+        "b": [
+          "Eastern Europe",
+          "amber",
+          35,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 4,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round51-7",
+        "a": [
+          "Western Europe",
+          "brown",
+          40,
+          115
+        ],
+        "b": [
+          "northwest",
+          "amber",
+          35,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 4,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round27-11",
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          30,
+          120
+        ],
+        "b": [
+          "West Central Asia",
+          "brown",
+          20,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 4,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round56-10",
+        "a": [
+          "West Central Asia",
+          "copper",
+          40,
+          120
+        ],
+        "b": [
+          "West Central Asia",
+          "amber",
+          40,
+          130
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 4,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round50-2",
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          125
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "pale/straw",
+          20,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 4,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round51-18",
+        "a": [
+          "West Asia / Middle East",
+          "brown",
+          30,
+          120
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "copper",
+          35,
+          115
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 2,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round10-5",
+        "a": [
+          "northeast",
+          "amber",
+          35,
+          115
+        ],
+        "b": [
+          "southwest",
+          "amber",
+          35,
+          120
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 2,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round21-11",
+        "a": [
+          "southwest",
+          "amber",
+          30,
+          125
+        ],
+        "b": [
+          "northeast",
+          "amber",
+          30,
+          120
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 2,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round15-4",
+        "a": [
+          "southeast",
+          "brown",
+          40,
+          115
+        ],
+        "b": [
+          "central",
+          "brown",
+          40,
+          120
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 2,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round37-10",
+        "a": [
+          "southeast",
+          "brown",
+          40,
+          120
+        ],
+        "b": [
+          "central",
+          "brown",
+          40,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 2,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round19-15",
+        "a": [
+          "Western Europe",
+          "golden",
+          40,
+          120
+        ],
+        "b": [
+          "central",
+          "golden",
+          40,
+          115
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round37-4",
+        "a": [
+          "central",
+          "golden",
+          40,
+          110
+        ],
+        "b": [
+          "Western Europe",
+          "golden",
+          40,
+          115
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round42-3",
+        "a": [
+          "southwest",
+          "golden",
+          20,
+          125
+        ],
+        "b": [
+          "Western Europe",
+          "golden",
+          25,
+          115
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round47-12",
+        "a": [
+          "Eastern Europe",
+          "copper",
+          20,
+          125
+        ],
+        "b": [
+          "northwest",
+          "amber",
+          25,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round50-3",
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          125
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "pale/straw",
+          25,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round56-11",
+        "a": [
+          "Western Europe",
+          "amber",
+          35,
+          115
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          25,
+          130
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round47-15",
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          35,
+          110
+        ],
+        "b": [
+          "West Central Asia",
+          "golden",
+          30,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 0,
+        "wrong_winner_premium_repeats": 1
+      },
+      {
+        "id": "round49-2",
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          120
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "pale/straw",
+          20,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round49-10",
+        "a": [
+          "Eastern Europe",
+          "golden",
+          25,
+          125
+        ],
+        "b": [
+          "Eastern Europe",
+          "pale/straw",
+          30,
+          115
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round50-5",
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          125
+        ],
+        "b": [
+          "Western Europe",
+          "pale/straw",
+          25,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round51-13",
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          30,
+          115
+        ],
+        "b": [
+          "West Central Asia",
+          "golden",
+          25,
+          130
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 0,
+        "wrong_winner_premium_repeats": 1
+      },
+      {
+        "id": "round56-2",
+        "a": [
+          "West Central Asia",
+          "golden",
+          30,
+          110
+        ],
+        "b": [
+          "West Central Asia",
+          "pale/straw",
+          25,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 0,
+        "wrong_winner_premium_repeats": 1
+      },
+      {
+        "id": "round56-5",
+        "a": [
+          "West Central Asia",
+          "golden",
+          35,
+          115
+        ],
+        "b": [
+          "West Central Asia",
+          "pale/straw",
+          30,
+          130
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 0,
+        "wrong_winner_premium_repeats": 1
+      },
+      {
+        "id": "round56-12",
+        "a": [
+          "Eastern Europe",
+          "golden",
+          30,
+          110
+        ],
+        "b": [
+          "Eastern Europe",
+          "pale/straw",
+          25,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 0,
+        "wrong_winner_premium_repeats": 1
+      },
+      {
+        "id": "round10-19",
+        "a": [
+          "South/Eastern Asia",
+          "golden",
+          25,
+          125
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "copper",
+          30,
+          115
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      }
+    ],
+    "guarded_intrinsic": [
+      {
+        "id": "r2-4",
+        "a": [
+          "Eastern Europe",
+          "amber",
+          30,
+          110
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          30,
+          125
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "revision-14",
+        "a": [
+          "Eastern Europe",
+          "pale/straw",
+          30,
+          125
+        ],
+        "b": [
+          "Eastern Europe",
+          "golden",
+          30,
+          115
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round9-18",
+        "a": [
+          "southeast",
+          "pale/straw",
+          25,
+          130
+        ],
+        "b": [
+          "southeast",
+          "golden",
+          25,
+          120
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round21-11",
+        "a": [
+          "southwest",
+          "amber",
+          30,
+          125
+        ],
+        "b": [
+          "northeast",
+          "amber",
+          30,
+          120
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round38-5",
+        "a": [
+          "southwest",
+          "golden",
+          40,
+          115
+        ],
+        "b": [
+          "northwest",
+          "golden",
+          40,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round50-4",
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          125
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "copper",
+          25,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round27-11",
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          30,
+          120
+        ],
+        "b": [
+          "West Central Asia",
+          "brown",
+          20,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round56-10",
+        "a": [
+          "West Central Asia",
+          "copper",
+          40,
+          120
+        ],
+        "b": [
+          "West Central Asia",
+          "amber",
+          40,
+          130
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round15-4",
+        "a": [
+          "southeast",
+          "brown",
+          40,
+          115
+        ],
+        "b": [
+          "central",
+          "brown",
+          40,
+          120
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 4,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round37-10",
+        "a": [
+          "southeast",
+          "brown",
+          40,
+          120
+        ],
+        "b": [
+          "central",
+          "brown",
+          40,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 4,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round51-18",
+        "a": [
+          "West Asia / Middle East",
+          "brown",
+          30,
+          120
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "copper",
+          35,
+          115
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 4,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round50-2",
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          125
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "pale/straw",
+          20,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 4,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round51-7",
+        "a": [
+          "Western Europe",
+          "brown",
+          40,
+          115
+        ],
+        "b": [
+          "northwest",
+          "amber",
+          35,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 3,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round9-12",
+        "a": [
+          "Western Europe",
+          "pale/straw",
+          30,
+          110
+        ],
+        "b": [
+          "central",
+          "pale/straw",
+          30,
+          115
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 3,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round37-3",
+        "a": [
+          "Western Europe",
+          "pale/straw",
+          30,
+          120
+        ],
+        "b": [
+          "central",
+          "pale/straw",
+          30,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 3,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round49-2",
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          120
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "pale/straw",
+          20,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 3,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round10-5",
+        "a": [
+          "northeast",
+          "amber",
+          35,
+          115
+        ],
+        "b": [
+          "southwest",
+          "amber",
+          35,
+          120
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 3,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round49-9",
+        "a": [
+          "northeast",
+          "brown",
+          25,
+          115
+        ],
+        "b": [
+          "southeast",
+          "amber",
+          30,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 2,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round17-3",
+        "a": [
+          "Western Europe",
+          "amber",
+          20,
+          125
+        ],
+        "b": [
+          "Eastern Europe",
+          "amber",
+          20,
+          115
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 2,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round20-7",
+        "a": [
+          "West Central Asia",
+          "amber",
+          20,
+          125
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "amber",
+          20,
+          125
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 2,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round10-11",
+        "a": [
+          "South/Eastern Asia",
+          "brown",
+          20,
+          125
+        ],
+        "b": [
+          "West Asia / Middle East",
+          "brown",
+          20,
+          120
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 2,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round7-2",
+        "a": [
+          "central",
+          "brown",
+          30,
+          120
+        ],
+        "b": [
+          "Eastern Europe",
+          "brown",
+          30,
+          120
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 2,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round37-6",
+        "a": [
+          "central",
+          "brown",
+          30,
+          110
+        ],
+        "b": [
+          "Eastern Europe",
+          "brown",
+          30,
+          110
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 2,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round38-3",
+        "a": [
+          "central",
+          "brown",
+          35,
+          120
+        ],
+        "b": [
+          "Eastern Europe",
+          "brown",
+          35,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 2,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round47-14",
+        "a": [
+          "central",
+          "brown",
+          40,
+          120
+        ],
+        "b": [
+          "Eastern Europe",
+          "brown",
+          40,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 2,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round50-10",
+        "a": [
+          "Western Europe",
+          "brown",
+          35,
+          115
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          35,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round54-18",
+        "a": [
+          "northeast",
+          "brown",
+          30,
+          115
+        ],
+        "b": [
+          "northeast",
+          "amber",
+          30,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round38-4",
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          115
+        ],
+        "b": [
+          "central",
+          "copper",
+          25,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round15-3",
+        "a": [
+          "Eastern Europe",
+          "amber",
+          25,
+          120
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          25,
+          130
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round9-1",
+        "a": [
+          "southwest",
+          "amber",
+          25,
+          120
+        ],
+        "b": [
+          "central",
+          "amber",
+          25,
+          115
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round45-7",
+        "a": [
+          "West Asia / Middle East",
+          "amber",
+          35,
+          120
+        ],
+        "b": [
+          "Eastern Europe",
+          "amber",
+          35,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round51-2",
+        "a": [
+          "northeast",
+          "amber",
+          30,
+          115
+        ],
+        "b": [
+          "southwest",
+          "amber",
+          25,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round54-1",
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          30,
+          115
+        ],
+        "b": [
+          "West Central Asia",
+          "brown",
+          20,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      }
+    ],
+    "foundation_balanced": [
+      {
+        "id": "r2-4",
+        "a": [
+          "Eastern Europe",
+          "amber",
+          30,
+          110
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          30,
+          125
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "revision-14",
+        "a": [
+          "Eastern Europe",
+          "pale/straw",
+          30,
+          125
+        ],
+        "b": [
+          "Eastern Europe",
+          "golden",
+          30,
+          115
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round9-18",
+        "a": [
+          "southeast",
+          "pale/straw",
+          25,
+          130
+        ],
+        "b": [
+          "southeast",
+          "golden",
+          25,
+          120
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round10-19",
+        "a": [
+          "South/Eastern Asia",
+          "golden",
+          25,
+          125
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "copper",
+          30,
+          115
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round15-3",
+        "a": [
+          "Eastern Europe",
+          "amber",
+          25,
+          120
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          25,
+          130
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round17-3",
+        "a": [
+          "Western Europe",
+          "amber",
+          20,
+          125
+        ],
+        "b": [
+          "Eastern Europe",
+          "amber",
+          20,
+          115
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round49-2",
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          120
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "pale/straw",
+          20,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round49-16",
+        "a": [
+          "Western Europe",
+          "brown",
+          35,
+          115
+        ],
+        "b": [
+          "northwest",
+          "amber",
+          40,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round50-2",
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          125
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "pale/straw",
+          20,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round50-3",
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          125
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "pale/straw",
+          25,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round50-5",
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          125
+        ],
+        "b": [
+          "Western Europe",
+          "pale/straw",
+          25,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round51-7",
+        "a": [
+          "Western Europe",
+          "brown",
+          40,
+          115
+        ],
+        "b": [
+          "northwest",
+          "amber",
+          35,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round54-18",
+        "a": [
+          "northeast",
+          "brown",
+          30,
+          115
+        ],
+        "b": [
+          "northeast",
+          "amber",
+          30,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round56-1",
+        "a": [
+          "West Central Asia",
+          "amber",
+          35,
+          115
+        ],
+        "b": [
+          "West Central Asia",
+          "amber",
+          25,
+          130
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round56-11",
+        "a": [
+          "Western Europe",
+          "amber",
+          35,
+          115
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          25,
+          130
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round9-12",
+        "a": [
+          "Western Europe",
+          "pale/straw",
+          30,
+          110
+        ],
+        "b": [
+          "central",
+          "pale/straw",
+          30,
+          115
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 4,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round49-9",
+        "a": [
+          "northeast",
+          "brown",
+          25,
+          115
+        ],
+        "b": [
+          "southeast",
+          "amber",
+          30,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 4,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round50-9",
+        "a": [
+          "Western Europe",
+          "brown",
+          35,
+          115
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          40,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 4,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round50-12",
+        "a": [
+          "Western Europe",
+          "amber",
+          35,
+          120
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          40,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 4,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round27-11",
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          30,
+          120
+        ],
+        "b": [
+          "West Central Asia",
+          "brown",
+          20,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 4,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round56-10",
+        "a": [
+          "West Central Asia",
+          "copper",
+          40,
+          120
+        ],
+        "b": [
+          "West Central Asia",
+          "amber",
+          40,
+          130
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 4,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round37-3",
+        "a": [
+          "Western Europe",
+          "pale/straw",
+          30,
+          120
+        ],
+        "b": [
+          "central",
+          "pale/straw",
+          30,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 4,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round51-15",
+        "a": [
+          "Eastern Europe",
+          "golden",
+          20,
+          125
+        ],
+        "b": [
+          "Western Europe",
+          "golden",
+          25,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 3,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round30-1",
+        "a": [
+          "southeast",
+          "copper",
+          20,
+          120
+        ],
+        "b": [
+          "southeast",
+          "golden",
+          20,
+          120
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 3,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round7-20",
+        "a": [
+          "Western Europe",
+          "golden",
+          20,
+          125
+        ],
+        "b": [
+          "Eastern Europe",
+          "golden",
+          20,
+          120
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 2,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round54-11",
+        "a": [
+          "southeast",
+          "copper",
+          25,
+          125
+        ],
+        "b": [
+          "southeast",
+          "amber",
+          30,
+          115
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 2,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round19-14",
+        "a": [
+          "southwest",
+          "pale/straw",
+          20,
+          120
+        ],
+        "b": [
+          "southeast",
+          "pale/straw",
+          20,
+          125
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 2,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round47-1",
+        "a": [
+          "southeast",
+          "copper",
+          25,
+          125
+        ],
+        "b": [
+          "central",
+          "amber",
+          30,
+          115
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 2,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round35-8",
+        "a": [
+          "southwest",
+          "amber",
+          30,
+          115
+        ],
+        "b": [
+          "northwest",
+          "golden",
+          25,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 2,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round38-4",
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          115
+        ],
+        "b": [
+          "central",
+          "copper",
+          25,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 2,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round47-18",
+        "a": [
+          "southwest",
+          "golden",
+          30,
+          125
+        ],
+        "b": [
+          "northwest",
+          "golden",
+          25,
+          130
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 2,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round10-11",
+        "a": [
+          "South/Eastern Asia",
+          "brown",
+          20,
+          125
+        ],
+        "b": [
+          "West Asia / Middle East",
+          "brown",
+          20,
+          120
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 2,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round50-10",
+        "a": [
+          "Western Europe",
+          "brown",
+          35,
+          115
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          35,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 2,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round54-1",
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          30,
+          115
+        ],
+        "b": [
+          "West Central Asia",
+          "brown",
+          20,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round42-10",
+        "a": [
+          "northeast",
+          "amber",
+          30,
+          120
+        ],
+        "b": [
+          "northwest",
+          "amber",
+          25,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round47-12",
+        "a": [
+          "Eastern Europe",
+          "copper",
+          20,
+          125
+        ],
+        "b": [
+          "northwest",
+          "amber",
+          25,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round56-4",
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          20,
+          130
+        ],
+        "b": [
+          "West Central Asia",
+          "golden",
+          30,
+          110
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round42-12",
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          125
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          30,
+          115
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round50-4",
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          125
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "copper",
+          25,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round19-20",
+        "a": [
+          "West Central Asia",
+          "amber",
+          20,
+          125
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "amber",
+          20,
+          120
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round56-7",
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          35,
+          110
+        ],
+        "b": [
+          "West Central Asia",
+          "pale/straw",
+          25,
+          130
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round15-14",
+        "a": [
+          "southwest",
+          "pale/straw",
+          30,
+          110
+        ],
+        "b": [
+          "southeast",
+          "pale/straw",
+          30,
+          115
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round35-3",
+        "a": [
+          "northwest",
+          "golden",
+          20,
+          130
+        ],
+        "b": [
+          "northwest",
+          "golden",
+          30,
+          110
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round56-8",
+        "a": [
+          "West Central Asia",
+          "amber",
+          30,
+          130
+        ],
+        "b": [
+          "West Central Asia",
+          "brown",
+          35,
+          110
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round56-9",
+        "a": [
+          "West Central Asia",
+          "golden",
+          25,
+          115
+        ],
+        "b": [
+          "West Central Asia",
+          "pale/straw",
+          20,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      }
+    ],
+    "foundation_joint_groups": [
+      {
+        "id": "r2-4",
+        "a": [
+          "Eastern Europe",
+          "amber",
+          30,
+          110
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          30,
+          125
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "revision-14",
+        "a": [
+          "Eastern Europe",
+          "pale/straw",
+          30,
+          125
+        ],
+        "b": [
+          "Eastern Europe",
+          "golden",
+          30,
+          115
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round9-18",
+        "a": [
+          "southeast",
+          "pale/straw",
+          25,
+          130
+        ],
+        "b": [
+          "southeast",
+          "golden",
+          25,
+          120
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round49-2",
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          120
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "pale/straw",
+          20,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round50-2",
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          125
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "pale/straw",
+          20,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round50-3",
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          125
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "pale/straw",
+          25,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round49-9",
+        "a": [
+          "northeast",
+          "brown",
+          25,
+          115
+        ],
+        "b": [
+          "southeast",
+          "amber",
+          30,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 4,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round49-16",
+        "a": [
+          "Western Europe",
+          "brown",
+          35,
+          115
+        ],
+        "b": [
+          "northwest",
+          "amber",
+          40,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 4,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round50-5",
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          125
+        ],
+        "b": [
+          "Western Europe",
+          "pale/straw",
+          25,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 4,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round51-7",
+        "a": [
+          "Western Europe",
+          "brown",
+          40,
+          115
+        ],
+        "b": [
+          "northwest",
+          "amber",
+          35,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 4,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round27-11",
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          30,
+          120
+        ],
+        "b": [
+          "West Central Asia",
+          "brown",
+          20,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 4,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round7-20",
+        "a": [
+          "Western Europe",
+          "golden",
+          20,
+          125
+        ],
+        "b": [
+          "Eastern Europe",
+          "golden",
+          20,
+          120
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 3,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round15-3",
+        "a": [
+          "Eastern Europe",
+          "amber",
+          25,
+          120
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          25,
+          130
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 3,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round17-3",
+        "a": [
+          "Western Europe",
+          "amber",
+          20,
+          125
+        ],
+        "b": [
+          "Eastern Europe",
+          "amber",
+          20,
+          115
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 3,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round50-9",
+        "a": [
+          "Western Europe",
+          "brown",
+          35,
+          115
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          40,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 3,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round56-11",
+        "a": [
+          "Western Europe",
+          "amber",
+          35,
+          115
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          25,
+          130
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 3,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round56-1",
+        "a": [
+          "West Central Asia",
+          "amber",
+          35,
+          115
+        ],
+        "b": [
+          "West Central Asia",
+          "amber",
+          25,
+          130
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 3,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round10-11",
+        "a": [
+          "South/Eastern Asia",
+          "brown",
+          20,
+          125
+        ],
+        "b": [
+          "West Asia / Middle East",
+          "brown",
+          20,
+          120
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 3,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round10-19",
+        "a": [
+          "South/Eastern Asia",
+          "golden",
+          25,
+          125
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "copper",
+          30,
+          115
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 2,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round56-10",
+        "a": [
+          "West Central Asia",
+          "copper",
+          40,
+          120
+        ],
+        "b": [
+          "West Central Asia",
+          "amber",
+          40,
+          130
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 2,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round19-14",
+        "a": [
+          "southwest",
+          "pale/straw",
+          20,
+          120
+        ],
+        "b": [
+          "southeast",
+          "pale/straw",
+          20,
+          125
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 2,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round54-18",
+        "a": [
+          "northeast",
+          "brown",
+          30,
+          115
+        ],
+        "b": [
+          "northeast",
+          "amber",
+          30,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 2,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round35-8",
+        "a": [
+          "southwest",
+          "amber",
+          30,
+          115
+        ],
+        "b": [
+          "northwest",
+          "golden",
+          25,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 2,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round35-3",
+        "a": [
+          "northwest",
+          "golden",
+          20,
+          130
+        ],
+        "b": [
+          "northwest",
+          "golden",
+          30,
+          110
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round54-1",
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          30,
+          115
+        ],
+        "b": [
+          "West Central Asia",
+          "brown",
+          20,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round47-1",
+        "a": [
+          "southeast",
+          "copper",
+          25,
+          125
+        ],
+        "b": [
+          "central",
+          "amber",
+          30,
+          115
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round47-12",
+        "a": [
+          "Eastern Europe",
+          "copper",
+          20,
+          125
+        ],
+        "b": [
+          "northwest",
+          "amber",
+          25,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round51-15",
+        "a": [
+          "Eastern Europe",
+          "golden",
+          20,
+          125
+        ],
+        "b": [
+          "Western Europe",
+          "golden",
+          25,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round30-1",
+        "a": [
+          "southeast",
+          "copper",
+          20,
+          120
+        ],
+        "b": [
+          "southeast",
+          "golden",
+          20,
+          120
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round38-4",
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          115
+        ],
+        "b": [
+          "central",
+          "copper",
+          25,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round50-4",
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          125
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "copper",
+          25,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round9-12",
+        "a": [
+          "Western Europe",
+          "pale/straw",
+          30,
+          110
+        ],
+        "b": [
+          "central",
+          "pale/straw",
+          30,
+          115
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round19-20",
+        "a": [
+          "West Central Asia",
+          "amber",
+          20,
+          125
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "amber",
+          20,
+          120
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round50-12",
+        "a": [
+          "Western Europe",
+          "amber",
+          35,
+          120
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          40,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round56-7",
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          35,
+          110
+        ],
+        "b": [
+          "West Central Asia",
+          "pale/straw",
+          25,
+          130
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round37-3",
+        "a": [
+          "Western Europe",
+          "pale/straw",
+          30,
+          120
+        ],
+        "b": [
+          "central",
+          "pale/straw",
+          30,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round47-18",
+        "a": [
+          "southwest",
+          "golden",
+          30,
+          125
+        ],
+        "b": [
+          "northwest",
+          "golden",
+          25,
+          130
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      }
+    ],
+    "foundation_gap_only": [
+      {
+        "id": "r2-4",
+        "a": [
+          "Eastern Europe",
+          "amber",
+          30,
+          110
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          30,
+          125
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round9-12",
+        "a": [
+          "Western Europe",
+          "pale/straw",
+          30,
+          110
+        ],
+        "b": [
+          "central",
+          "pale/straw",
+          30,
+          115
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round9-18",
+        "a": [
+          "southeast",
+          "pale/straw",
+          25,
+          130
+        ],
+        "b": [
+          "southeast",
+          "golden",
+          25,
+          120
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round37-3",
+        "a": [
+          "Western Europe",
+          "pale/straw",
+          30,
+          120
+        ],
+        "b": [
+          "central",
+          "pale/straw",
+          30,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round50-2",
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          125
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "pale/straw",
+          20,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 5,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round47-16",
+        "a": [
+          "northeast",
+          "golden",
+          25,
+          110
+        ],
+        "b": [
+          "northeast",
+          "golden",
+          25,
+          115
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 4,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round51-7",
+        "a": [
+          "Western Europe",
+          "brown",
+          40,
+          115
+        ],
+        "b": [
+          "northwest",
+          "amber",
+          35,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 4,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round50-4",
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          125
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "copper",
+          25,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 4,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "revision-14",
+        "a": [
+          "Eastern Europe",
+          "pale/straw",
+          30,
+          125
+        ],
+        "b": [
+          "Eastern Europe",
+          "golden",
+          30,
+          115
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 3,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round37-10",
+        "a": [
+          "southeast",
+          "brown",
+          40,
+          120
+        ],
+        "b": [
+          "central",
+          "brown",
+          40,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 3,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round38-4",
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          115
+        ],
+        "b": [
+          "central",
+          "copper",
+          25,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 3,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round45-19",
+        "a": [
+          "southeast",
+          "pale/straw",
+          25,
+          115
+        ],
+        "b": [
+          "northwest",
+          "pale/straw",
+          25,
+          115
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 3,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round55-5",
+        "a": [
+          "Western Europe",
+          "golden",
+          20,
+          110
+        ],
+        "b": [
+          "Western Europe",
+          "golden",
+          20,
+          115
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 3,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round55-6",
+        "a": [
+          "northwest",
+          "pale/straw",
+          20,
+          110
+        ],
+        "b": [
+          "northwest",
+          "pale/straw",
+          20,
+          115
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 3,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round15-4",
+        "a": [
+          "southeast",
+          "brown",
+          40,
+          115
+        ],
+        "b": [
+          "central",
+          "brown",
+          40,
+          120
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 2,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round49-2",
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          120
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "pale/straw",
+          20,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 2,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round50-5",
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          125
+        ],
+        "b": [
+          "Western Europe",
+          "pale/straw",
+          25,
+          125
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 2,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round54-18",
+        "a": [
+          "northeast",
+          "brown",
+          30,
+          115
+        ],
+        "b": [
+          "northeast",
+          "amber",
+          30,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 2,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round10-19",
+        "a": [
+          "South/Eastern Asia",
+          "golden",
+          25,
+          125
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "copper",
+          30,
+          115
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 2,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round55-4",
+        "a": [
+          "Western Europe",
+          "pale/straw",
+          25,
+          110
+        ],
+        "b": [
+          "Western Europe",
+          "pale/straw",
+          25,
+          115
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 2,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round30-1",
+        "a": [
+          "southeast",
+          "copper",
+          20,
+          120
+        ],
+        "b": [
+          "southeast",
+          "golden",
+          20,
+          120
+        ],
+        "direct_size_label": false,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round50-12",
+        "a": [
+          "Western Europe",
+          "amber",
+          35,
+          120
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          40,
+          120
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      },
+      {
+        "id": "round36-2",
+        "a": [
+          "Western Europe",
+          "copper",
+          30,
+          115
+        ],
+        "b": [
+          "northwest",
+          "copper",
+          30,
+          115
+        ],
+        "direct_size_label": true,
+        "false_premium_repeats": 1,
+        "wrong_winner_premium_repeats": 0
+      }
+    ]
+  },
+  "findings": [
+    "Balancedbinary head gives equal TOTAL weight to positive/negativeclasses,so each positivecase receives1.93times theweight of each nonpremiumcase. This favors premiumrecall and is not a mathematicalbug,but is misaligned with an obvious-premium interpretation if falsecalls shouldcost at least as much percase.",
+    "Complete-label accuracy excludes176knownnonpremium rows withouta directionlabel; candidate selection on thissubset can hide falsepremiums.",
+    "Macrogroup objective also changes percasecost depending on whetherdirection waselicited. Keep it forjointdiagnostics,but do notmistake it for a deliberate falsepremium costpolicy.",
+    "Evidenceprovenance matters:all-label versusdirect-label comparisons canprefer differentmodels. Do notdelete or relabel proxy/coarsened targets to make anarm win.",
+    "No numerical costratio or precisiontarget wasprovided by theuser. Ratios1..3 are sensitivity scenarios,not chosen requirements."
+  ],
+  "next_test": "Keep theexisting value/ranking head frozen. Compare its current class-balanced premiumloss with unbalanced per-case loss and a modest false-premium-weighted loss using training-only family calibration. Evaluate premiumprecision,recall andwrongwinner claims on both all-size anddirect-size views,retain protectedcases,andreject gains obtained merely by suppressing mostpremiums. Do not add valuefeatures or change evidence in that experiment.",
+  "verification": {
+    "saved_false_and_missed_counts_match": true,
+    "all_source_hashes_unchanged": true,
+    "no_refit": true,
+    "no_new_evidence": true
+  },
+  "scope_of_conclusion": "An objective/selection audit, not proof that a revised loss will improve heldout performance. Preserve precision AND meaningful-premium recognition; do not equate refusing every premium with improvement."
+}

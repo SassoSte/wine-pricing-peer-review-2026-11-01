@@ -1,0 +1,120 @@
+{
+  "status": "exploratory_anchor_mapping_not_validated_pricing_model",
+  "source": "Userinitialreleasewholecaskprices, samevolume/mint/comparableterms; exclude fees/taxes/delivery.",
+  "fit_anchors": [
+    "D-NEP20T10",
+    "D-NWP20T10"
+  ],
+  "check_anchors_not_used_for_scaling": [
+    "D-SEP20T10",
+    "D-CEP20T10"
+  ],
+  "reference_profile": [
+    "pale/straw",
+    20,
+    110
+  ],
+  "score_gap": 0.7692315384617358,
+  "linear_dollars_per_preference_unit": 129.99987000009665,
+  "log_dollars_scale": 0.12390310984248079,
+  "formulas": {
+    "linear": "P(x)=P(reference)+linear_scale*g(x,reference)",
+    "log": "P(x)=P(reference)*exp(log_scale*g(x,reference))"
+  },
+  "heldout_region_checks": [
+    {
+      "provenance": "southeast",
+      "observed_initial_release_price": 1075,
+      "linear_estimate": 1040.0054599946066,
+      "linear_error": -34.994540005393446,
+      "linear_absolute_percent_error": 3.255306047013344,
+      "log_estimate": 1038.8655244241895,
+      "log_error": -36.134475575810484
+    },
+    {
+      "provenance": "central",
+      "observed_initial_release_price": 1050,
+      "linear_estimate": 1039.9989600010929,
+      "linear_error": -10.001039998907117,
+      "linear_absolute_percent_error": 0.9524799998959159,
+      "log_estimate": 1038.8590885106526,
+      "log_error": -11.140911489347445
+    }
+  ],
+  "unvalidated_attribute_sensitivity": [
+    {
+      "shade": "pale/straw",
+      "vintage_years": 20,
+      "tare_lb": 115,
+      "prices": {
+        "northeast": {
+          "linear": 1029.9959700039967,
+          "log": 1029.0018070212302
+        },
+        "northwest": {
+          "linear": 929.9959700039967,
+          "log": 935.4561882011183
+        }
+      }
+    },
+    {
+      "shade": "pale/straw",
+      "vintage_years": 25,
+      "tare_lb": 110,
+      "prices": {
+        "northeast": {
+          "linear": 939.9924600074557,
+          "log": 944.4115023971497
+        },
+        "northwest": {
+          "linear": 839.9924600074557,
+          "log": 858.5559112701361
+        }
+      }
+    },
+    {
+      "shade": "golden",
+      "vintage_years": 20,
+      "tare_lb": 110,
+      "prices": {
+        "northeast": {
+          "linear": 1090.002209997841,
+          "log": 1089.5679790482466
+        },
+        "northwest": {
+          "linear": 990.002209997841,
+          "log": 990.5163445893152
+        }
+      }
+    },
+    {
+      "shade": "brown",
+      "vintage_years": 40,
+      "tare_lb": 130,
+      "prices": {
+        "northeast": {
+          "linear": 39.9612605318639,
+          "log": 400.5107590545482
+        },
+        "northwest": {
+          "linear": -60.0387394681361,
+          "log": 364.1006900495893
+        }
+      }
+    }
+  ],
+  "limits": [
+    "Regionalbounds onlywithin suppliedsameprofile; notglobalpricebounds.",
+    "Provenance,batchseatidentity andscarcitychange together.100dollargap cannot beidentified as provenanceonly.",
+    "Four anchors haveidentical shade/vintage/tare, so transferofregional dollarscale tootherattributes isunvalidated.",
+    "V28paircontextmaymake anchor-specificprice projections inconsistent acrossreferences.",
+    "Linearnegativeextrapolation is invalidprice, recorded as failurediagnostic; logmapping positivity isnotproof oftruth.",
+    "No automatic5\u201310percentdiscount extrapolation tootherprofiles. No market or completed-sale validation.",
+    "No model weights changed; figures areprice hypotheses,notproduction costs."
+  ],
+  "source_hashes": {
+    "model-config-v28.json": "a9fed8e86977526c16e74ccdb0a6a75d919b3041bd602e5592d64e3086414dcf",
+    "predictor_v27.py": "293307f98d4c2434bfbbea8a73341a3522601604535647f3a7a6b0103b23f2ed",
+    "pricing/anchors-v1.json": "0c0c568d40ca84fa52f79c2cdb3b11dbe85ff2f83d9c1b3d6981f818469e829e"
+  }
+}

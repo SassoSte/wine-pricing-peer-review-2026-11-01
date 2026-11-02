@@ -1,0 +1,465 @@
+{
+  "round": 9,
+  "protocol": "20 preselected varied comparisons; adaptive sampling disabled; no model or coefficient changes until all 20 answered or explicitly deferred. Keep predictions hidden during elicitation. Not a random representative sample.",
+  "model_revision": "E",
+  "model_sha256": "70cf711fdd3322750ffd5cdab45e156e3bc47a136ddb2155bac04727e7900906",
+  "questions": [
+    {
+      "id": "round9-1",
+      "a": [
+        "southwest",
+        "amber",
+        25,
+        120
+      ],
+      "b": [
+        "central",
+        "amber",
+        25,
+        115
+      ],
+      "prediction_before_answer": "A",
+      "winner": null,
+      "strength": null,
+      "status": "deferred",
+      "raw_answer": "save for later"
+    },
+    {
+      "id": "round9-2",
+      "a": [
+        "West Asia / Middle East",
+        "golden",
+        35,
+        115
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "golden",
+        30,
+        120
+      ],
+      "prediction_before_answer": "tie",
+      "winner": "B",
+      "strength": "very slightly",
+      "status": "answered",
+      "raw_answer": "B very slightly",
+      "prediction_matched": false
+    },
+    {
+      "id": "round9-3",
+      "a": [
+        "northeast",
+        "pale/straw",
+        35,
+        125
+      ],
+      "b": [
+        "southeast",
+        "pale/straw",
+        35,
+        125
+      ],
+      "prediction_before_answer": "B",
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "Tie",
+      "prediction_matched": false
+    },
+    {
+      "id": "round9-4",
+      "a": [
+        "Western Europe",
+        "brown",
+        25,
+        130
+      ],
+      "b": [
+        "Eastern Europe",
+        "brown",
+        25,
+        115
+      ],
+      "prediction_before_answer": "tie",
+      "winner": "B",
+      "strength": "slightly",
+      "status": "answered",
+      "raw_answer": "B slightly",
+      "prediction_matched": false
+    },
+    {
+      "id": "round9-5",
+      "a": [
+        "West Central Asia",
+        "copper",
+        35,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "copper",
+        35,
+        120
+      ],
+      "prediction_before_answer": "A",
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "Tie",
+      "prediction_matched": false
+    },
+    {
+      "id": "round9-6",
+      "a": [
+        "northwest",
+        "golden",
+        40,
+        115
+      ],
+      "b": [
+        "northwest",
+        "pale/straw",
+        40,
+        125
+      ],
+      "prediction_before_answer": "B",
+      "winner": "A",
+      "strength": "very slightly",
+      "status": "answered",
+      "raw_answer": "A very slightly",
+      "prediction_matched": false
+    },
+    {
+      "id": "round9-7",
+      "a": [
+        "central",
+        "brown",
+        35,
+        125
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "brown",
+        35,
+        120
+      ],
+      "prediction_before_answer": "B",
+      "winner": "A",
+      "strength": "very slightly",
+      "status": "answered",
+      "raw_answer": "A very slightly",
+      "prediction_matched": false
+    },
+    {
+      "id": "round9-8",
+      "a": [
+        "southeast",
+        "amber",
+        20,
+        125
+      ],
+      "b": [
+        "southwest",
+        "amber",
+        20,
+        115
+      ],
+      "prediction_before_answer": "A",
+      "winner": "B",
+      "strength": "moderately",
+      "status": "answered",
+      "raw_answer": "B moderately",
+      "prediction_matched": false
+    },
+    {
+      "id": "round9-9",
+      "a": [
+        "Eastern Europe",
+        "golden",
+        35,
+        120
+      ],
+      "b": [
+        "Eastern Europe",
+        "pale/straw",
+        40,
+        120
+      ],
+      "prediction_before_answer": "B",
+      "winner": "B",
+      "strength": "very slightly",
+      "status": "answered",
+      "raw_answer": "B very slightly",
+      "prediction_matched": true
+    },
+    {
+      "id": "round9-10",
+      "a": [
+        "South/Eastern Asia",
+        "amber",
+        25,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "amber",
+        25,
+        110
+      ],
+      "prediction_before_answer": "B",
+      "winner": "B",
+      "strength": "very slightly",
+      "status": "answered",
+      "raw_answer": "B very slightly",
+      "prediction_matched": true
+    },
+    {
+      "id": "round9-11",
+      "a": [
+        "northeast",
+        "copper",
+        25,
+        120
+      ],
+      "b": [
+        "southwest",
+        "copper",
+        25,
+        120
+      ],
+      "prediction_before_answer": "tie",
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "tie",
+      "prediction_matched": true
+    },
+    {
+      "id": "round9-12",
+      "a": [
+        "Western Europe",
+        "pale/straw",
+        30,
+        110
+      ],
+      "b": [
+        "central",
+        "pale/straw",
+        30,
+        115
+      ],
+      "prediction_before_answer": "tie",
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "Tie",
+      "prediction_matched": true
+    },
+    {
+      "id": "round9-13",
+      "a": [
+        "northwest",
+        "brown",
+        20,
+        115
+      ],
+      "b": [
+        "northwest",
+        "brown",
+        25,
+        110
+      ],
+      "prediction_before_answer": "A",
+      "winner": "A",
+      "strength": "very slightly",
+      "status": "answered",
+      "raw_answer": "A very slightly",
+      "prediction_matched": true
+    },
+    {
+      "id": "round9-14",
+      "a": [
+        "West Asia / Middle East",
+        "copper",
+        25,
+        120
+      ],
+      "b": [
+        "Eastern Europe",
+        "copper",
+        25,
+        125
+      ],
+      "prediction_before_answer": "A",
+      "winner": "B",
+      "strength": "very slightly",
+      "status": "answered",
+      "raw_answer": "B very slightly",
+      "prediction_matched": false
+    },
+    {
+      "id": "round9-15",
+      "a": [
+        "southwest",
+        "golden",
+        40,
+        120
+      ],
+      "b": [
+        "northeast",
+        "golden",
+        40,
+        120
+      ],
+      "prediction_before_answer": "A",
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "Tie",
+      "prediction_matched": false
+    },
+    {
+      "id": "round9-16",
+      "a": [
+        "West Central Asia",
+        "brown",
+        35,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "brown",
+        35,
+        120
+      ],
+      "prediction_before_answer": "A",
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "tie",
+      "prediction_matched": false
+    },
+    {
+      "id": "round9-17",
+      "a": [
+        "central",
+        "golden",
+        25,
+        125
+      ],
+      "b": [
+        "central",
+        "copper",
+        20,
+        115
+      ],
+      "prediction_before_answer": "A",
+      "winner": "B",
+      "strength": "moderately",
+      "status": "answered",
+      "raw_answer": "B moderately",
+      "prediction_matched": false
+    },
+    {
+      "id": "round9-18",
+      "a": [
+        "southeast",
+        "pale/straw",
+        25,
+        130
+      ],
+      "b": [
+        "southeast",
+        "golden",
+        25,
+        120
+      ],
+      "prediction_before_answer": "A",
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "tie",
+      "prediction_matched": false
+    },
+    {
+      "id": "round9-19",
+      "a": [
+        "Western Europe",
+        "amber",
+        35,
+        120
+      ],
+      "b": [
+        "northwest",
+        "amber",
+        35,
+        115
+      ],
+      "prediction_before_answer": "B",
+      "winner": null,
+      "strength": null,
+      "status": "deferred",
+      "raw_answer": "Question #19 change to \"save for later\".",
+      "answer_history": [
+        {
+          "winner": "tie",
+          "raw_answer": "Tie",
+          "status": "superseded by explicit deferral"
+        }
+      ]
+    },
+    {
+      "id": "round9-20",
+      "a": [
+        "northeast",
+        "amber",
+        20,
+        110
+      ],
+      "b": [
+        "southwest",
+        "amber",
+        20,
+        110
+      ],
+      "prediction_before_answer": "A",
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "Question 20: Tie.",
+      "prediction_matched": false
+    }
+  ],
+  "status": "complete; scored without refitting",
+  "score": {
+    "answered": 18,
+    "deferred": 2,
+    "matched": 5,
+    "matched_question_numbers": [
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "confusion_predicted_to_actual": {
+      "A": {
+        "A": 1,
+        "B": 3,
+        "tie": 5
+      },
+      "B": {
+        "A": 2,
+        "B": 2,
+        "tie": 1
+      },
+      "tie": {
+        "A": 0,
+        "B": 2,
+        "tie": 2
+      }
+    },
+    "model_unchanged": true,
+    "scope": "Exact A/B/tie classification only; verbal margin intensity not scored. Preselected varied sample, not random."
+  }
+}

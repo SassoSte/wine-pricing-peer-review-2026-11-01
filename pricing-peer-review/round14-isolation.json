@@ -1,0 +1,418 @@
+{
+  "round": 14,
+  "status": "complete diagnostic checkpoint; no refit",
+  "protocol": "Isolate Round 13 misses Q6, Q9, Q20 in order, one question at a time. Adaptive single-factor or matched wider comparisons, explicit A higher/B higher/exact equality/unresolved. Models frozen; predictions recorded before answers and hidden. No refit; this is diagnosis, not independent validation.",
+  "file_sha256": {
+    "pricing.py": "70cf711fdd3322750ffd5cdab45e156e3bc47a136ddb2155bac04727e7900906",
+    "compare_models.py": "da2067d3d2ef99849ce2e30be16208bff0145bc6b036111535542c2daf00fa5f",
+    "compare_interactions.py": "028a696908badf066ec5b8e73760bf067d31334a657c292b4b8230f81aa2f0c9",
+    "objective-comparison-v2.json": "1ddc4cd63dba9edc607d51a30a89f7f3eb676452d161442cbef46a59b994413c",
+    "evidence-v2.json": "8a512f572cf8ed4b5a2bd2655574762e5f5e548a5345627cf76513dc582aaa1f"
+  },
+  "reconciled_additive_snapshot": {
+    "evidence_version": 2,
+    "training_rows": 158,
+    "alpha": 0.1,
+    "pooling": 1.0,
+    "threshold": 0.4,
+    "inner_balanced_accuracy": 0.7525624883063559,
+    "feature_names": [
+      "origin:Western Europe vs Eastern Europe",
+      "origin:West Central Asia vs Eastern Europe",
+      "origin:South/Eastern Asia vs Eastern Europe",
+      "origin:West Asia / Middle East vs Eastern Europe",
+      "origin:central vs Eastern Europe",
+      "origin:northeast vs Eastern Europe",
+      "origin:northwest vs Eastern Europe",
+      "origin:southwest vs Eastern Europe",
+      "origin:southeast vs Eastern Europe",
+      "shade increment:copper",
+      "shade increment:amber",
+      "shade increment:golden",
+      "shade increment:pale/straw",
+      "age increment:35",
+      "age increment:30",
+      "age increment:25",
+      "age increment:20",
+      "lightness per 5 lb"
+    ],
+    "coefficients": [
+      0.6729750891376448,
+      -1.014769789663719,
+      -1.1469816051233666,
+      -1.2549228165784534,
+      0.7853326929104031,
+      1.2988614046324525,
+      0.6821244515897213,
+      1.2948306735973634,
+      1.377732856842797,
+      1.7188111827478272,
+      0.0,
+      0.0,
+      1.0260729349607633,
+      1.2341637057580397,
+      1.249715361966913,
+      1.3055658518240867,
+      1.4926041189793733,
+      0.567234767698218
+    ],
+    "in_sample": {
+      "n": 158,
+      "matched": 126,
+      "accuracy": 0.7974683544303798,
+      "balanced_accuracy": 0.7916913181328601,
+      "recall": {
+        "B": 0.7674418604651163,
+        "tie": 0.7857142857142857,
+        "A": 0.821917808219178
+      },
+      "confusion_actual_to_predicted": {
+        "B": {
+          "B": 33,
+          "tie": 10,
+          "A": 0
+        },
+        "tie": {
+          "B": 5,
+          "tie": 33,
+          "A": 4
+        },
+        "A": {
+          "B": 1,
+          "tie": 12,
+          "A": 60
+        }
+      },
+      "opposite_winner_errors": 1,
+      "predicted_ties": 55
+    },
+    "constraint_audit": {
+      "strict_rank_sign_violations": 10,
+      "ties_not_exactly_equal": 42
+    },
+    "highlighted_predictions": [
+      {
+        "id": "round7-9",
+        "answer": "tie",
+        "answer_source": "round12-3",
+        "prediction": "tie",
+        "margin": 0.07887145221034442
+      },
+      {
+        "id": "round11-14",
+        "answer": "B",
+        "answer_source": "round11-14",
+        "prediction": "tie",
+        "margin": 0.1896029039175906
+      },
+      {
+        "id": "round11-17",
+        "answer": "A",
+        "answer_source": "round12-4",
+        "prediction": "A",
+        "margin": 1.2522799987292172
+      },
+      {
+        "id": "round11-18",
+        "answer": "A",
+        "answer_source": "round11-18",
+        "prediction": "A",
+        "margin": 1.2522799987292172
+      },
+      {
+        "id": "round11-19",
+        "answer": "A",
+        "answer_source": "round11-19",
+        "prediction": "A",
+        "margin": 1.2522799987292172
+      },
+      {
+        "id": "round11-20",
+        "answer": "B",
+        "answer_source": "round11-20",
+        "prediction": "tie",
+        "margin": 0.1896029039175906
+      }
+    ]
+  },
+  "response_options": [
+    "Price A higher than B",
+    "Price B higher than A",
+    "Give them exactly the same price",
+    "Leave this unresolved"
+  ],
+  "target_pairs": [
+    "round13-6",
+    "round13-9",
+    "round13-20"
+  ],
+  "current_target": null,
+  "questions": [
+    {
+      "id": "round14-1",
+      "target": "round13-6",
+      "a": [
+        "southeast",
+        "copper",
+        35,
+        120
+      ],
+      "b": [
+        "southwest",
+        "copper",
+        35,
+        120
+      ],
+      "factor": "provenance only; equal tare",
+      "status": "answered",
+      "winner": "tie",
+      "strength": null,
+      "predictions_before_answer": {
+        "revision_e": "tie",
+        "reconciled_additive": "tie"
+      },
+      "reconciled_margin": 0.08290218324543353,
+      "raw_answer": "3. Give them exactly the same price."
+    },
+    {
+      "id": "round14-2",
+      "target": "round13-6",
+      "a": [
+        "southeast",
+        "copper",
+        35,
+        125
+      ],
+      "b": [
+        "southeast",
+        "copper",
+        35,
+        120
+      ],
+      "factor": "tare only within southeast",
+      "status": "answered",
+      "winner": "B",
+      "strength": "very very slightly",
+      "predictions_before_answer": {
+        "revision_e": "B",
+        "reconciled_additive": "B"
+      },
+      "reconciled_margin": -0.567234767698218,
+      "raw_answer": "B but very very slightly"
+    },
+    {
+      "id": "round14-3",
+      "target": "round13-6",
+      "revisits": "round13-6",
+      "a": [
+        "southeast",
+        "copper",
+        35,
+        125
+      ],
+      "b": [
+        "southwest",
+        "copper",
+        35,
+        120
+      ],
+      "factor": "explicit original-pair recheck after isolation",
+      "purpose": "Clarify original exact tie versus tiny strict preference; do not count repeat as independent evidence or supersede without answer.",
+      "status": "answered",
+      "winner": "B",
+      "strength": "very very slightly",
+      "predictions_before_answer": {
+        "revision_e": "B",
+        "reconciled_additive": "B"
+      },
+      "reconciled_margin": -0.4843325844527844,
+      "raw_answer": "2. Price B higher than A, but very, very slightly.",
+      "supersedes": "round13-6"
+    },
+    {
+      "id": "round14-4",
+      "target": "round13-9",
+      "a": [
+        "northwest",
+        "amber",
+        40,
+        125
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        40,
+        125
+      ],
+      "factor": "provenance only; equal tare",
+      "status": "answered",
+      "winner": "B",
+      "strength": "very slightly",
+      "predictions_before_answer": {
+        "revision_e": "B",
+        "reconciled_additive": "tie"
+      },
+      "reconciled_margin": 0.009149362452076537,
+      "raw_answer": "2. Price B higher than A, but only very slightly."
+    },
+    {
+      "id": "round14-5",
+      "target": "round13-9",
+      "a": [
+        "northwest",
+        "amber",
+        40,
+        120
+      ],
+      "b": [
+        "northwest",
+        "amber",
+        40,
+        125
+      ],
+      "factor": "tare only within northwest",
+      "status": "answered",
+      "winner": "A",
+      "strength": "very slightly",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "reconciled_additive": "A"
+      },
+      "reconciled_margin": 0.567234767698218,
+      "raw_answer": "1. Price A higher than B, but only very slightly."
+    },
+    {
+      "id": "round14-6",
+      "target": "round13-9",
+      "revisits": "round13-9",
+      "a": [
+        "northwest",
+        "amber",
+        40,
+        120
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        40,
+        125
+      ],
+      "factor": "original pair after separate provenance and tare checks",
+      "purpose": "Check whether two small advantages exactly offset; do not infer equality from identical strength words.",
+      "status": "answered",
+      "winner": "tie",
+      "strength": null,
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "reconciled_additive": "A"
+      },
+      "reconciled_margin": 0.5763841301502945,
+      "raw_answer": "3. Give them exactly the same price.",
+      "interpretation": "Explicit confirmation of round13-9, not a new independent observation."
+    },
+    {
+      "id": "round14-7",
+      "target": "round13-20",
+      "a": [
+        "southeast",
+        "golden",
+        35,
+        120
+      ],
+      "b": [
+        "southeast",
+        "pale/straw",
+        35,
+        120
+      ],
+      "factor": "shade only; equal vintage and tare",
+      "status": "answered",
+      "winner": "B",
+      "strength": "very slightly",
+      "predictions_before_answer": {
+        "revision_e": "B",
+        "reconciled_additive": "B"
+      },
+      "reconciled_margin": -1.0260729349607633,
+      "raw_answer": "2. Price B higher than A, but only very slightly."
+    },
+    {
+      "id": "round14-8",
+      "target": "round13-20",
+      "a": [
+        "southeast",
+        "golden",
+        30,
+        120
+      ],
+      "b": [
+        "southeast",
+        "golden",
+        35,
+        120
+      ],
+      "factor": "vintage only within golden",
+      "status": "answered",
+      "winner": "A",
+      "strength": "very slightly",
+      "predictions_before_answer": {
+        "revision_e": "A",
+        "reconciled_additive": "A"
+      },
+      "reconciled_margin": 1.249715361966913,
+      "raw_answer": "1. Price A higher than B, but only very slightly."
+    },
+    {
+      "id": "round14-9",
+      "target": "round13-20",
+      "revisits": "round13-20",
+      "a": [
+        "southeast",
+        "golden",
+        30,
+        120
+      ],
+      "b": [
+        "southeast",
+        "pale/straw",
+        35,
+        120
+      ],
+      "factor": "original pair after separate shade and vintage checks",
+      "purpose": "Directly compare the two small premiums; identical strength wording does not imply exact equality.",
+      "status": "answered",
+      "winner": "A",
+      "strength": "very slightly",
+      "predictions_before_answer": {
+        "revision_e": "B",
+        "reconciled_additive": "tie"
+      },
+      "reconciled_margin": 0.22364242700614967,
+      "raw_answer": "1. Price A higher than B, but only very slightly.",
+      "interpretation": "Confirms round13-20 direction and adds explicit strength; not an independent new observation."
+    }
+  ],
+  "evidence_overrides": [
+    {
+      "source_id": "round13-6",
+      "replacement_id": "round14-3",
+      "winner": "B",
+      "note": "Explicit original-pair correction from exact tie to tiny B premium; preserve frozen Round 13 score as originally answered."
+    }
+  ],
+  "target_findings": {
+    "round13-6": "Resolved by explicit correction: southeast120 equals southwest120, while southeast120 narrowly exceeds southeast125. Original pair now B very very slightly. No model change.",
+    "round13-9": "Original exact tie confirmed: Western Europe125 premium over northwest125 equals northwest120 lightness premium over northwest125 for amber/40-year. Both components were described very slightly; equality comes from direct answer, not adjectives.",
+    "round13-20": "Original A confirmed, very slightly: at southeast/120 lb, golden30 exceeds pale35. Isolated younger-vintage premium within golden exceeds the pale-over-golden premium at 35 years. Both components small; ordering established directly, not inferred from adjectives."
+  },
+  "summary": {
+    "responses": 9,
+    "fresh_component_pairs": 6,
+    "original_pair_rechecks": 3,
+    "corrections": 1,
+    "confirmations": 2,
+    "models_unchanged": true,
+    "scope": "Adaptive isolation, not fresh validation. Round13-6 override changes exact tie to tiny B; retain original frozen test score and apply override only in future reconciled evidence.",
+    "implication": "Do not globally widen or narrow tie band based on this alone: one genuine exact equality and one tiny strict preference remain."
+  }
+}

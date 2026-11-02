@@ -1,0 +1,23 @@
+{
+  "status": "first_global_ranking_test_complete",
+  "ranking_only": true,
+  "strict_directions": 460,
+  "ordered_accuracy": 0.9339130434782609,
+  "unconstrained_same_curves_accuracy": 0.9304347826086955,
+  "v28_accuracy": 0.9291304347826088,
+  "clear_aligned_n": 29,
+  "clear_aligned_correct_by_repeat": [
+    29,
+    29,
+    29,
+    29,
+    29
+  ],
+  "learned_ranges": {
+    "vintage": 6.301312836279896,
+    "tare": 3.3257364605104405,
+    "provenance": 2.6915045488295632,
+    "shade": 2.691494548829563
+  },
+  "qualification": "Samefive repeated family partitions; no freshprospective accuracy. This iswinner-only,not theearlier85%winner-plus-premium measure. Orderedattributeimportance useslearnedcurves;provenance/shade ranges nearlyequal despite strictnumericalordering. No specialists fitted,baseline/defaultunchanged; equality/generalpremium behavior not solved bythis test."
+}

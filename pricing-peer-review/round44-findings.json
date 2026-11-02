@@ -1,0 +1,57 @@
+{
+  "round": 44,
+  "scores": {
+    "v24": {
+      "direction_n": 10,
+      "direction_correct": 10,
+      "direction_misses": [],
+      "meaningfulness_n": 12,
+      "meaningfulness_correct": 12,
+      "meaningfulness_misses": [],
+      "both_axes_n": 10,
+      "both_axes_correct": 10,
+      "false_premiums": [],
+      "missed_meaningful": [],
+      "zero_shade_premium_n": 2,
+      "zero_shade_premium_correct": 2,
+      "zero_shade_premium_misses": []
+    },
+    "joint_weight_refit": {
+      "direction_n": 10,
+      "direction_correct": 8,
+      "direction_misses": [
+        1,
+        4
+      ],
+      "meaningfulness_n": 12,
+      "meaningfulness_correct": 8,
+      "meaningfulness_misses": [
+        1,
+        2,
+        4,
+        6
+      ],
+      "both_axes_n": 10,
+      "both_axes_correct": 6,
+      "false_premiums": [],
+      "missed_meaningful": [
+        1,
+        2,
+        4,
+        6
+      ],
+      "zero_shade_premium_n": 2,
+      "zero_shade_premium_correct": 2,
+      "zero_shade_premium_misses": []
+    }
+  },
+  "findings": [
+    "V24 matches all supplied axes:10/10 A/B directions,12/12 sizes,10/10 both-axis rows,2/2 zero-shade checks.",
+    "Frozen joint weight refit direction8/10,size8/12,both6/10; missesQ1/4 direction andQ1/2/4/6 size.",
+    "Five-year fix corrects lower-tare foreign and domestic vintage tradeoffs without breaking zero-shade or pure5lb/same-age-shade/other-shade controls in this batch."
+  ],
+  "qualification": "Prospective frozen targeted exact-pair test,12 items from familiar attribute families. Not evidence of universal100% accuracy; earlier unresolvedQ42-3/10/12 remain unresolved.",
+  "prediction_rechecks": 24,
+  "models_unchanged": true,
+  "evidence_unchanged": "evidence-v24.json"
+}

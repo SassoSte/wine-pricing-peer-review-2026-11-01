@@ -1,0 +1,16 @@
+{
+  "evidence": "evidence-v18.json",
+  "minimal_fix": "Freeze improved-v17's19 utility coefficients. Learn ONE nonnegative bounded materiality-boundary coefficient eta in[0,1]. No direction-weight refit or answer lookup.",
+  "features": {
+    "matched_control": "Different provenance, equal shade and vintage, tare gap<=5. Context-free widening control cannot distinguish the new brown-versus-amber collision at the same provenance contrast.",
+    "mature_shade": "Matched control AND (shared vintage>=35 OR brown shade with vintage>=30). Uses existing qualitative older/brown guidance, not a hard equality rule.",
+    "shared_light_tare": "Matched control times(130-mean tare)/20. Competing one-coefficient hypothesis for the confounded absolute-tare context; no age/shade causality claim."
+  },
+  "proximity": "All features multiplied by1/(1+abs(frozen provenance-only score gap)/base radius). Soft model-derived proximity, not an invented geographic adjacency table. Large provenance gaps receive less extra tolerance.",
+  "boundary": "base_radius * (1+eta*context_feature). One extra coefficient, at most doubles the existing band. Numerical equality is NOT asserted; practical materiality may be context-dependent while underlying scores/directions remain unchanged.",
+  "eta_grid": [0,0.05,0.1,0.15,0.2,0.25,0.3,0.35,0.4,0.45,0.5,0.55,0.6,0.65,0.7,0.75,0.8,0.85,0.9,0.95,1.0],
+  "selection": "From training-only OOF predictions, allow no newly missed labeled meaningful example that the underlying baseline got right. Choose highest materiality balanced accuracy, then fewer false meaningful calls, then smaller eta. Meta-selector chooses between mature_shade and shared_light_tare inside training; ties prefer mature_shade because it has explicit qualitative support. matched_control is diagnostic only.",
+  "validation": "Same five outer family folds xfive seeds, preserve all425 old assignments, assign new families without labels. Underlying v17 outer fits and v16 fits are frozen caches. For eta calibration, refit only the underlying fixed v17 configuration on old inner TRAINING rows, excluding each validation family. New rows contribute only to eta calibration, never to underlying score fit. Old inner predictions reconstructed as a guard. No outer labels select eta or feature kind.",
+  "delivery": "Require false meaningful calls below improved v17 and no greater than v16, materiality balance no worse than either, no loss of meaningful recall or direct materiality accuracy versus improved v17, and no change in directions. Preserve corrected Round36 outcomes. If no one-coefficient candidate qualifies, retain improved v17 and report the limit. Selection of a candidate from prespecified variants is exploratory, not new prospective validation.",
+  "limits": "425 parent rows plus12 clarified responses.6 new directions and12 new size judgments. Shade and shared tare are confounded in key pair, so results can support a predictive rule but cannot establish causality. Bounded increase and proximity damping limit broad suppression; stronger-provenance cases remain able to exceed the new boundary. No numerical prices, exact-price equality claims, data relabeling, or questionnaire."
+}

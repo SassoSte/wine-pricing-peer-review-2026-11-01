@@ -1,0 +1,81 @@
+{
+  "round": 51,
+  "scores": {
+    "tare_compensation": {
+      "direction_n": 16,
+      "direction_correct": 15,
+      "direction_misses": [
+        13
+      ],
+      "meaningfulness_n": 17,
+      "meaningfulness_correct": 13,
+      "meaningfulness_misses": [
+        7,
+        11,
+        13,
+        18
+      ],
+      "both_axes_n": 15,
+      "both_axes_correct": 11,
+      "false_premiums": [
+        7,
+        18
+      ],
+      "missed_meaningful": [
+        11,
+        13
+      ],
+      "zero_shade_n": 2,
+      "zero_shade_correct": 2
+    },
+    "v26": {
+      "direction_n": 16,
+      "direction_correct": 15,
+      "direction_misses": [
+        13
+      ],
+      "meaningfulness_n": 17,
+      "meaningfulness_correct": 13,
+      "meaningfulness_misses": [
+        7,
+        11,
+        13,
+        18
+      ],
+      "both_axes_n": 15,
+      "both_axes_correct": 11,
+      "false_premiums": [
+        7,
+        18
+      ],
+      "missed_meaningful": [
+        11,
+        13
+      ],
+      "zero_shade_n": 2,
+      "zero_shade_correct": 2
+    }
+  },
+  "scoring_exclusions": {
+    "both_axes_unresolved": [
+      2,
+      15
+    ],
+    "meaningfulness_unspecified": [
+      17
+    ]
+  },
+  "categorical_prediction_disagreements": [
+    15
+  ],
+  "findings": [
+    "Both models score15/16 direction,13/17 size,11/15 both axes,zero2/2. Same scored misses.",
+    "Q7/Q18:correct direction but overstated meaningfulness in brown/amber or brown/copper mixed provenance trades.",
+    "Q11:younger DomesticCentral correctly favored overNW but meaningfulness understated.",
+    "Q13:both reverse preference in WCA pale30/115 vs golden25/130; user meaningfully prefers lighter pale vessel.",
+    "All4 eligible5year/heavier5lb comparison casesQ1/Q3/Q6/Q10 correct on both axes for both models. This batch does not show an incremental benefit for compensation."
+  ],
+  "prediction_rechecks": 40,
+  "evidence_unchanged": "evidence-v27.json",
+  "qualification": "Fresh broader selected exact pairs, not random population sample; identical scores are not proof of general model equivalence."
+}

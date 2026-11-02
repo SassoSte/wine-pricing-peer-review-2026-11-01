@@ -1,0 +1,161 @@
+{
+  "selected": "v28_tare_compensation",
+  "decision": "Select refit: complete judgments,direction andfalse premiums improve inall5 repeats. Missed meaningful premiums rise1.8/repeat andcorrect meaningful direction falls0.2/repeat; accepted tradeoff for6.6 additional complete judgments and6.6 fewerfalse premiums perrepeat. No claim all metrics improve.",
+  "runs": [
+    {
+      "seed": 11,
+      "old_both": 172,
+      "new_both": 179,
+      "old_direction": 410,
+      "new_direction": 420,
+      "old_false_premiums": 17,
+      "new_false_premiums": 15,
+      "old_missed_meaningful": 11,
+      "new_missed_meaningful": 12
+    },
+    {
+      "seed": 29,
+      "old_both": 171,
+      "new_both": 178,
+      "old_direction": 405,
+      "new_direction": 416,
+      "old_false_premiums": 17,
+      "new_false_premiums": 11,
+      "old_missed_meaningful": 12,
+      "new_missed_meaningful": 14
+    },
+    {
+      "seed": 47,
+      "old_both": 170,
+      "new_both": 173,
+      "old_direction": 414,
+      "new_direction": 415,
+      "old_false_premiums": 19,
+      "new_false_premiums": 14,
+      "old_missed_meaningful": 12,
+      "new_missed_meaningful": 17
+    },
+    {
+      "seed": 71,
+      "old_both": 166,
+      "new_both": 178,
+      "old_direction": 405,
+      "new_direction": 420,
+      "old_false_premiums": 23,
+      "new_false_premiums": 14,
+      "old_missed_meaningful": 17,
+      "new_missed_meaningful": 9
+    },
+    {
+      "seed": 103,
+      "old_both": 171,
+      "new_both": 175,
+      "old_direction": 405,
+      "new_direction": 413,
+      "old_false_premiums": 22,
+      "new_false_premiums": 11,
+      "old_missed_meaningful": 7,
+      "new_missed_meaningful": 16
+    }
+  ],
+  "comparison": {
+    "current_tare": {
+      "direction": {
+        "n": 446,
+        "correct": 407.8,
+        "accuracy": 0.9143497757847534,
+        "reversals": 36.6,
+        "zero_or_abstain": 1.6
+      },
+      "materiality": {
+        "n": 376,
+        "meaningful_n": 128,
+        "no_meaningful_n": 248,
+        "accuracy": 0.9164893617021276,
+        "balanced_accuracy": 0.914390120967742,
+        "meaningful_recall": 0.9078125,
+        "no_meananingful_recall": 0.9209677419354838,
+        "false_meaningful": 19.6,
+        "missed_meaningful": 11.8,
+        "correct_meaningful_direction": 114.2
+      },
+      "directly_supported_materiality": {
+        "n": 241,
+        "meaningful_n": 102,
+        "no_meaningful_n": 139,
+        "accuracy": 0.9195020746887966,
+        "balanced_accuracy": 0.9208209902666102,
+        "meaningful_recall": 0.9294117647058823,
+        "no_meananingful_recall": 0.9122302158273381,
+        "false_meaningful": 12.2,
+        "missed_meaningful": 7.2,
+        "correct_meaningful_direction": 92.8
+      },
+      "unknown_materiality_n": 244
+    },
+    "refit_v28": {
+      "direction": {
+        "n": 446,
+        "correct": 416.8,
+        "accuracy": 0.9345291479820628,
+        "reversals": 29.0,
+        "zero_or_abstain": 0.2
+      },
+      "materiality": {
+        "n": 376,
+        "meaningful_n": 128,
+        "no_meaningful_n": 248,
+        "accuracy": 0.9292553191489361,
+        "balanced_accuracy": 0.9206653225806452,
+        "meaningful_recall": 0.89375,
+        "no_meananingful_recall": 0.9475806451612904,
+        "false_meaningful": 13.0,
+        "missed_meaningful": 13.6,
+        "correct_meaningful_direction": 114.0
+      },
+      "directly_supported_materiality": {
+        "n": 241,
+        "meaningful_n": 102,
+        "no_meaningful_n": 139,
+        "accuracy": 0.9385892116182573,
+        "balanced_accuracy": 0.9371067851601073,
+        "meaningful_recall": 0.9274509803921569,
+        "no_meananingful_recall": 0.9467625899280575,
+        "false_meaningful": 7.4,
+        "missed_meaningful": 7.4,
+        "correct_meaningful_direction": 94.2
+      },
+      "unknown_materiality_n": 244
+    }
+  },
+  "joint_comparison": {
+    "current_tare": {
+      "supported_n": 620,
+      "correct": 552.6,
+      "accuracy": 0.8912903225806451,
+      "both_axes_n": 202,
+      "both_axes_correct": 170.0,
+      "both_axes_accuracy": 0.8415841584158417,
+      "balanced_accuracy": 0.8708382291014164,
+      "signed_joint_loss": 0.390665501807314
+    },
+    "refit_v28": {
+      "supported_n": 620,
+      "correct": 567.0,
+      "accuracy": 0.914516129032258,
+      "both_axes_n": 202,
+      "both_axes_correct": 176.6,
+      "both_axes_accuracy": 0.8742574257425743,
+      "balanced_accuracy": 0.9029787078450695,
+      "signed_joint_loss": 0.14379657687156527
+    }
+  },
+  "limitations": [
+    "Repeated family validation, not fresh test.",
+    "Full fit still understates WCA golden30/115 vs golden25/130 premium.",
+    "Full fit still reverses resolved Southwestgold30/125 vs Northwestgold25/130 slight preference.",
+    "These are known errors, not reasons to relabel user judgments."
+  ],
+  "evidence": "evidence-v28.json",
+  "validation_file": "tare-refit-validation-v28.json"
+}

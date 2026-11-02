@@ -1,0 +1,92 @@
+{
+  "status": "local_plausibility_assessment_not_market_validation",
+  "profile": [
+    "golden",
+    25,
+    115
+  ],
+  "comparisons": [
+    {
+      "region": "northeast",
+      "profile": [
+        "golden",
+        25,
+        115
+      ],
+      "anchor_price": 1100,
+      "model_price": 789.997010003041,
+      "price_deduction": 310.00298999695895,
+      "initial_expert_estimate": null,
+      "initial_expert_range": {
+        "lower": 850,
+        "upper": 900,
+        "currency": "USD"
+      },
+      "accepted_after_disclosure": true
+    },
+    {
+      "region": "southeast",
+      "profile": [
+        "golden",
+        25,
+        115
+      ],
+      "anchor_price": 1075,
+      "model_price": 764.997010003041,
+      "price_deduction": 310.00298999695895,
+      "initial_expert_estimate": {
+        "amount": 725,
+        "currency": "USD",
+        "precision": "approximate; no range supplied"
+      },
+      "initial_expert_range": null,
+      "accepted_after_disclosure": true
+    },
+    {
+      "region": "northwest",
+      "profile": [
+        "golden",
+        25,
+        115
+      ],
+      "anchor_price": 1000,
+      "model_price": 689.997010003041,
+      "price_deduction": 310.00298999695895,
+      "initial_expert_estimate": {
+        "amount": 625,
+        "currency": "USD",
+        "precision": "approximate; no range supplied"
+      },
+      "initial_expert_range": null,
+      "accepted_after_disclosure": true
+    },
+    {
+      "region": "central",
+      "profile": [
+        "golden",
+        25,
+        115
+      ],
+      "anchor_price": 1050,
+      "model_price": 739.997010003041,
+      "price_deduction": 310.00298999695895,
+      "initial_expert_estimate": {
+        "amount": 875,
+        "currency": "USD",
+        "precision": "approximate; no range supplied"
+      },
+      "initial_expert_range": null,
+      "accepted_after_disclosure": true
+    }
+  ],
+  "accepted_disclosed_model_prices": 4,
+  "total_checks": 4,
+  "key_interpretation": [
+    "Allfour proposedprices accepted asreasonable; onlyoneattribute profile testedacrossregions.",
+    "Eachregionuses itsown establishedseatanchor and identical310approx deduction; sharedprovenance cancels ineachwithinregionV28comparison. This doesnotdemonstrate learnedregional depreciation differences.",
+    "Initialestimates differfromfrozenpredictions; retainthese ratherthanrescorepost-disclosureacceptance asaccuracy.",
+    "Southeast/Centralheldoutanchorchecks were smallerrors attopprofile butsamebatch/rarityconfounding persists.",
+    "Mappingislocal: recordedlinearnegativepriceexample rulesoutunrestrictedextrapolation.",
+    "Noobservedout-of-sampletransactions supplied; futureexpertchecks shouldrecord acceptable rangesbeforepredictiondisclosure."
+  ]
+}

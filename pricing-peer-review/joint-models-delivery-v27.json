@@ -1,0 +1,51 @@
+{
+  "selected_model": "v26",
+  "model": null,
+  "retained_source": "model-config.json",
+  "evidence": "evidence-v27.json",
+  "validation_file": "joint-models-validation-v27.json",
+  "validation": {
+    "direction": {
+      "n": 406,
+      "correct": 378.0,
+      "accuracy": 0.9310344827586207,
+      "reversals": 27.4,
+      "zero_or_abstain": 0.6
+    },
+    "materiality": {
+      "n": 335,
+      "meaningful_n": 114,
+      "no_meaningful_n": 221,
+      "accuracy": 0.9283582089552238,
+      "balanced_accuracy": 0.9257402556164166,
+      "meaningful_recall": 0.9175438596491228,
+      "no_meananingful_recall": 0.9339366515837104,
+      "false_meaningful": 14.6,
+      "missed_meaningful": 9.4,
+      "correct_meaningful_direction": 103.4
+    },
+    "directly_supported_materiality": {
+      "n": 200,
+      "meaningful_n": 88,
+      "no_meaningful_n": 112,
+      "accuracy": 0.916,
+      "balanced_accuracy": 0.9167207792207792,
+      "meaningful_recall": 0.9227272727272726,
+      "no_meananingful_recall": 0.9107142857142858,
+      "false_meaningful": 10.0,
+      "missed_meaningful": 6.8,
+      "correct_meaningful_direction": 80.6
+    },
+    "unknown_materiality_n": 252
+  },
+  "joint_validation": {
+    "supported_n": 578,
+    "correct": 528.0,
+    "accuracy": 0.9134948096885813,
+    "both_axes_n": 163,
+    "both_axes_correct": 141.8,
+    "both_axes_accuracy": 0.8699386503067486,
+    "balanced_accuracy": 0.8899854148105592,
+    "signed_joint_loss": 0.08444037843237215
+  }
+}

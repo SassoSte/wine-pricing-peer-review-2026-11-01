@@ -1,0 +1,92 @@
+{
+  "recommendation": "Keep v37 as a narrowly supported experimental premium candidate. Retain V28 default and all frozen baselines; do not claim fresh validation.",
+  "mechanism": "One coefficient0.75 discounts positiveprovenance/shade premium contributions for copper/amberwinner againstbrownloser, scaled by winner tareheaviness above120lb. Doesnotchange value rankings or brown value globally.",
+  "baselines": {
+    "v28": {
+      "all": {
+        "n": 433,
+        "correct": 404,
+        "false_premiums": 14,
+        "missed_premiums": 15,
+        "both_n": 252,
+        "both_correct": 222
+      },
+      "direct": {
+        "n": 265,
+        "correct": 242,
+        "false_premiums": 10,
+        "missed_premiums": 13,
+        "both_n": 226,
+        "both_correct": 198
+      }
+    },
+    "large_tare": {
+      "all": {
+        "n": 433,
+        "correct": 407,
+        "false_premiums": 14,
+        "missed_premiums": 12,
+        "both_n": 252,
+        "both_correct": 225
+      },
+      "direct": {
+        "n": 265,
+        "correct": 245,
+        "false_premiums": 10,
+        "missed_premiums": 10,
+        "both_n": 226,
+        "both_correct": 201
+      }
+    }
+  },
+  "family_heldout_correction_mean": {
+    "all": {
+      "n": 433,
+      "correct": 410.6,
+      "false_premiums": 10.4,
+      "missed_premiums": 12,
+      "both_n": 252,
+      "both_correct": 228.6
+    },
+    "direct": {
+      "n": 265,
+      "correct": 248.6,
+      "false_premiums": 6.4,
+      "missed_premiums": 10,
+      "both_n": 226,
+      "both_correct": 204.6
+    }
+  },
+  "full_fit": {
+    "all": {
+      "n": 433,
+      "correct": 411,
+      "false_premiums": 10,
+      "missed_premiums": 12,
+      "both_n": 252,
+      "both_correct": 229
+    },
+    "direct": {
+      "n": 265,
+      "correct": 249,
+      "false_premiums": 6,
+      "missed_premiums": 10,
+      "both_n": 226,
+      "both_correct": 205
+    }
+  },
+  "newly_fixed_full_fit": [
+    "combined-pilot-v34-4",
+    "prospective-reporting-v1-5",
+    "prospective-reporting-v1-12",
+    "prospective-reporting-v1-14"
+  ],
+  "preservation": "Question15correct5/5; no loss of reference-correct meaningful labels in anyheldoutrepeat;1000pure5lbcontrols unchanged; alltopwinningpale noteligible. Existingmissedpremiums remain.",
+  "caveats": [
+    "Prospective slice is now development material; this is not a fresh prospective win.",
+    "V28 and0.7large-tare calibration are frozen historicalcomponents. Only newcoefficient selection usesfamilyholdouts.",
+    "Feature shape and120lbanchor were motivated by reviewed examples; residualselection optimism remains.",
+    "Threezone reporting band hasnotbeenrecalibrated for thiscandidate; do not reuseV28band."
+  ],
+  "evidence": "v37:671unique pairs;16newpairs incorporated once; originalprospective answers/results retained separately; Q11postdisclosure correction recorded."
+}

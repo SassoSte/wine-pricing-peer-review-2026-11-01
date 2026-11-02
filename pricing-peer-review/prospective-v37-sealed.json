@@ -1,0 +1,1673 @@
+{
+  "status": "sealed_unasked",
+  "protocol": "20fresh unorderedpairs,5attribute strata of4each, shuffled; selected before predictions, no answer/ranking-based selection. Targeted stress test, not population sample. Keep questions,models,bands,predictions frozen until all20 answered. No answers or elicitation yet.",
+  "evaluation_plan": {
+    "primary": "Compare binary size and joint accuracy plus three-zone coverage/errors separately; abstention never counts as correct.",
+    "report": [
+      "direction accuracy (must be identical acrossmodels)",
+      "binary size and joint accuracy",
+      "coverage and retained-size errors",
+      "false meaningful calls, missed premiums and genuine premiums withheld",
+      "per-stratum errors and protected-control regressions"
+    ],
+    "success_gate": "Consider promotion only if candidate improves size classification without new confirmed-premium losses in lower-tare controls; reporting should reduce false calls without lower retained accuracy and without more than5percentagepoints coverage loss versusV28. Mixed results inconclusive. Small20case test doesnotprove populationaccuracy.",
+    "no_retuning": "Do not use answers to select thresholds or alter this sealed test. Preserve first answers separately from any post-result corrections."
+  },
+  "freshness_source_hashes": {
+    "combined-pilot-v34-fixed.json": "6a261d8119a099e1cdd7a07ce3c85e5768e9ea2f15fe0bc334c33642d7328276",
+    "comparisons.json": "1a125dac50da322ea0bad27db4d8a19e1b241ce64c394793842b8f551ef4338c",
+    "evidence-v37.json": "ffd14d452d2f2cf351a9c2cddcf210c767f28fb67695266b0c3c662b2fce7720",
+    "prospective-reporting-v1-sealed.json": "d7b8b243c4ab6b8d8dc97ec491b723d6237265879b08a308d25de7b061c6c8d6",
+    "round10-fixed.json": "91af42fcf3f54fbc0835672744238ea3c1e084c0f69ed3452dbce996be1f3476",
+    "round11-isolation.json": "ccae90400a912356a5452fd28866c3d9d028b6391da16a1dde1b816816e98d8b",
+    "round12-clarification.json": "0c933690bc1d79098e577d2aabbbe2ef1e0228a10df37706584b31478eaaf04c",
+    "round13-fixed.json": "3ec55feb8fc4e0235c48612cb0f630f983c4f6edbd783710af0e2d710ee756af",
+    "round14-isolation.json": "2459341287287d9ea2436bc6bcb561a63dcf1d18e7800ef2b1564eca0ae7355e",
+    "round15-fixed.json": "30ecfdaa122a6b0a1920216834b82f651ab83efe2d76c9cf828eafe3b5bc7eec",
+    "round16-isolation.json": "9d1240e630561f4d738b3f113e4c96ea1966c3df0d24531c084c3421a201941e",
+    "round17-fixed.json": "d9318d78c2d6ec10a2c83e9ba77634ad198d177e1f2e8a68a8b2a067a4c22881",
+    "round18-isolation.json": "6b7fd4e5d095ef04e3379851a5c66be15a88da12ea1c21378e0befbdb66120ca",
+    "round19-fixed.json": "a21b7d2b2712160222569b4157048d3cb05de1167ac094dbfa8a23e0ad6ba6ef",
+    "round20-isolation.json": "dc6b77179b615c5ac00eb19f504e3bd2c9c71458b4a98d7dbbcb6e1fe072e73a",
+    "round21-fixed.json": "591319b2a1b40972227c2d6b3ef5d0572590025fae832fd43e225b17a5f6b3fc",
+    "round22-isolation.json": "b5ee454906e55cbf8a85718cd5b5c1bc64bd3fa5bc7b2f3a199df5fc647213c9",
+    "round23-fixed.json": "34e87f4b2d8e1bc4e6d587b7a26c170258c583e69fd87dd963ac4d6574c567d0",
+    "round24-isolation.json": "df50118a37511b8814fb794b520817d0922275e138a1845c2a46bc74174c56e5",
+    "round25-fixed.json": "010486d450a3ac98dea7defc0da10361d3346efd8e06f78f183ec8600708647a",
+    "round26-isolation.json": "a94191b4863575db8b0badd6e1bd997b5329b90329e51bae51f1d6d046a6b652",
+    "round27-fixed.json": "726feaa52066f79e27be7e2b78f5582d3bcc55dee462bceddf9d2828551f5644",
+    "round28-isolation.json": "c3ccdd1494a30e3de04a622cb381a9b9cb490011ee8e854c73e954e85a11a4c6",
+    "round29-isolation.json": "93a77dc33caec4c9781fc67c7cb096bc5e89245c233e96a72b4ae3f929a68ac0",
+    "round30-isolation.json": "938e47ff3c3e3af31acd81f640f3f5960a81bce1f6b318bc03fad86df8681705",
+    "round31-isolation.json": "0e66641069c1e2c0f0975ad5d8e9acc23c94a1df4788405810ccf4a98cbe4128",
+    "round32-isolation.json": "ce7358dae677dac16b85de04f88430f497cbda398248a978c2b366c6b32fb7fb",
+    "round33-reconciliation.json": "6a65cde20920693f2df2e7d89ba1080a2684ef5ebfe6a0996d1b471e87045fa3",
+    "round34-reconciliation.json": "4aa59ba50dc8ee6ba2dcd93fb8958de6076d521d8b6cae13609c36adfa85cbc3",
+    "round35-fixed.json": "aee3bf1d39e697649bc02169ecb8fa5d8d85c08ae4cf97b05b706bf4a94b4d45",
+    "round36-findings.json": "ff267f62e0b4a255f2514eefb90e6a02ffa7e6c6d2a4e0d993148405a7f12b7b",
+    "round36-fixed.json": "8f0b34708efbaa8be0243f302a64ee014fac7453ba603774f5e6699ef1a7d18a",
+    "round37-findings.json": "e35c8dc4ccf414081e1fb0b38ff5ee8beafec9dd1babfd389c3768d195aded8b",
+    "round37-fixed.json": "15fe1bbffa2ed4755c835c8b61b970f49ba77578032316f056db6ce9e59640f6",
+    "round38-findings.json": "f63a67080f3ecaa5b9105365c2b30b07fce7db64c047662eeeaae07afe9c4759",
+    "round38-fixed.json": "4019ce1f1822cba2463fb2fd0fe88b04bd33d564aea7044cf3f4915b87dcddfb",
+    "round39-findings.json": "6140110cd08bc9c7838d0a2542510c78cf561b91ad112b26e4231cbc7520d407",
+    "round39-fixed.json": "d1f544552406c8d60ae94a73c9693bf0029d5f838a312362837af2d6efb24512",
+    "round40-findings.json": "f92e4d95f0ea1df5df716005bf2bed9c4a243f9fb08a83eeace04f616b1e775d",
+    "round40-fixed.json": "5a5006b9acfaf7a4f9ad9c41ab41e0f84bdcb780fb969cebadd27edaeb404e94",
+    "round41-findings.json": "6b4805d8287fe3c51f79048c264d95b1ccccef023b135f64ad97550cbd3fc342",
+    "round41-fixed.json": "56f4fb5e60aa3e5aa4cd136bf34baf03e995c4f0186baa9b697cbda26f2e803f",
+    "round42-findings.json": "64930cb717422ab3341b7244bde2551148601f2bae720df7381d2031984a2959",
+    "round42-fixed.json": "e78a406cee93af70e1a148afb961e1df7c1aa9c75782953f687ddc6c6c9aeb11",
+    "round43-findings.json": "e0ea69c5ef2b83ef1705250b947a2a8f04fe59ab5bc9923640d8ea2a487c70a4",
+    "round43-fixed.json": "d4766b9d08d70e70c4184ba148e5107a2fa6cd79f4a2f6f09d830da5a244f857",
+    "round44-findings.json": "3534852550e8d5d30118aa4f9a77100ab58bd7b2e45a3d9b96ca4632d38c2bcb",
+    "round44-fixed.json": "cdab11092f2122d1939286160037c5a469bcc1ddd7dfda1d5501d2d1f2a8c20e",
+    "round45-findings.json": "29f13b73a178229724bbb2fc359a2c8b019229b7f0bdc07d912c0f3729e17b53",
+    "round45-fixed.json": "f09689543f0acc7db554a680c4eff95d4f3987d6b1a4ebacbb6a7b56e28f97c6",
+    "round46-findings.json": "9ba90cd5e34af24006fd165c9a92a37815adebe065422d8d3d91ebb63e85ac02",
+    "round46-fixed.json": "5d820008b69e85ecfed757674853143d957c3653672dc1a66728feb641861042",
+    "round47-findings.json": "fe03a21dffbd1c82e3b1f6cc9a518e17f148449d3fcedcc8b2a39b8d3382ec59",
+    "round47-fixed.json": "02b3d28cf44e355ee4781993ad94c1e9f8055d1eb8b6475c26c3dadfa9a3d2cb",
+    "round48-findings.json": "d01eeea6bb705f7e9fe82b03c848c6d8b2669b6a7a9f765fc2f97d2f6d42ae01",
+    "round48-fixed.json": "30c54ade5dc8291c8df1050f21760de8a0244370fcaa491d03ce49275faad4ad",
+    "round49-findings.json": "d7a466128a1057efaa4ef7c172943be5a2ac72a983724541866a860b1bb62733",
+    "round49-fixed.json": "4a3059d749b51a6bc8fc463ff66cb9b983599a796709ccdf8a915fd3cb5cf870",
+    "round50-consistency-check.json": "eb2e567bdfa3ba7acbf394b5371b7c2f23c1c471a8c50202448de183ce87632e",
+    "round50-findings.json": "9a47bbc7c6ad380a3306104e348489ce7e4ed382824c060c79e60231698df50e",
+    "round50-first-family-check.json": "76f89d039f1f673440bf7fe84a136b494183d7301bcc084ad7bc16298694db8f",
+    "round50-isolation.json": "75dba4330e32db971f9a6e40b5c1df8691bd189255db75da0f9cea93ade7f87b",
+    "round50-second-family-check.json": "50794595dc8d3647039a8e5e6166f7be39c404f8759689e33f803939f2d631c3",
+    "round51-findings.json": "cdf3f4a125ebe36a2fa10508e3a84e1ea52b0f65a30599a8b5c06a3ba4516b99",
+    "round51-fixed.json": "127df9af1fd6c265a5f1b2756ceaae99b086a92c75300a0383e5f50a1666001f",
+    "round52-clarifications.json": "e58dc7438b325b270fd8789fd23fb3dc8e819b9266ea0769bfac152f4d5abdae",
+    "round52-findings.json": "68017308e6dbf507f24ee6c5e8ddad3d399b618409c3d4e06d85ff0ea4fbb91c",
+    "round53-findings.json": "15816e33ccb01b8fa68f8f8c3c93a8862cba1d6f95f33866b58cd000f8d204bb",
+    "round53-isolation.json": "47fc27c13990134bec5c764a08f7e478f412d8adadd3944cd69d728bb98a20d5",
+    "round54-findings.json": "acc22ea26206af35a09c83a35afbd2f29ec9b3c617a12e32e7c6f8d36d361594",
+    "round54-unresolved-isolation.json": "3485f5a2053bafa0e9318419941ebcaa53ebf63f5157ad8745c576774aa82f88",
+    "round55-findings.json": "3d0687d084bc384865f2260c1d66c01e622140aab6245a1e9dda8b5af2bcc0b7",
+    "round55-tare-context-isolation.json": "9c010d33ccf1c32d0b8c83ecbded5a24e132c3d4b0cba76c8be93e833fa4e20b",
+    "round56-findings.json": "66755480f5ac61c78a7bbfcd636f0ac81b5823040c71e755654ddaea28d7994d",
+    "round56-fixed.json": "6b7fa1cca52038dc3d572d4045c648a9d27ba0567ebc8076b08e66788a8500d4",
+    "round57-consistent-misses-review.json": "ef3b26d40cabeb359780866486cc6dc634fe4816ca2f93070f5922c0a050d29f",
+    "round57-findings.json": "7a935acf971a94e8bbf69effa374db0813a1a5eb84b4c877f61e04f841a4450a",
+    "round57-reconciled-v31.json": "54030016ab0380a3501ae301492ef4397c38925755b81ddfa602049f86bfd9d9",
+    "round9-fixed.json": "3281cec3694c5177a6dc78b36c2f9b6a1b80981033dcd2048d36b0ce805ce0a7"
+  },
+  "source_hashes": {
+    "predictor_reporting_v2.py": "3e1937a9d5d6e1c62d0709d58cb0fcf1e3744c6fbd03eaa99bc317d4d4d1cad5",
+    "reporting-config-v2.json": "cc2742b7eb705e321ddbb33fbf1a1f694a0418ecc0d1370cc8699bbc3f9ad17d",
+    "predictor_v28.py": "c572cb63d47b531607efc66be1c65890b854d2f5a5087286858c25611191b7e3",
+    "predictor_v27.py": "293307f98d4c2434bfbbea8a73341a3522601604535647f3a7a6b0103b23f2ed",
+    "model-config-v28.json": "a9fed8e86977526c16e74ccdb0a6a75d919b3041bd602e5592d64e3086414dcf",
+    "predictor_premium_v35.py": "edbb4810fc2b6fc8ca8780a7b96a5538b8caef369ec9ab54cc0d0de80ea7399d",
+    "predictor_premium_v37.py": "a4f7dafda18989d8d60304111c3b0c60a5431469abe236d86468608cc8253262",
+    "premium-config-v37.json": "e6e2fe39b8a474981879cd7499a48df772632e8aade4c8d2f04e3cc566cee3d5",
+    "freeze_prospective_v37.py": "d54845e541a27053300367cd859eb816c3eb93be48f10e54b52db2a4e1a2270b"
+  },
+  "payload_sha256": "67b96d7a000bee5c0b7d46aa40c62abb12d6e9df514fc237364aa4e12c6d0184",
+  "questions": [
+    {
+      "stratum": "core_tradeoff",
+      "a": [
+        "northeast",
+        "golden",
+        25,
+        130
+      ],
+      "b": [
+        "northeast",
+        "golden",
+        35,
+        125
+      ],
+      "status": "sealed_unasked",
+      "id": "prospective-v37-1",
+      "number": 1
+    },
+    {
+      "stratum": "mixed_provenance",
+      "a": [
+        "South/Eastern Asia",
+        "pale/straw",
+        20,
+        120
+      ],
+      "b": [
+        "northeast",
+        "pale/straw",
+        25,
+        115
+      ],
+      "status": "sealed_unasked",
+      "id": "prospective-v37-2",
+      "number": 2
+    },
+    {
+      "stratum": "heavy_brown_comparison",
+      "a": [
+        "West Asia / Middle East",
+        "brown",
+        35,
+        130
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "copper",
+        40,
+        125
+      ],
+      "status": "sealed_unasked",
+      "id": "prospective-v37-3",
+      "number": 3
+    },
+    {
+      "stratum": "aligned_advantages",
+      "a": [
+        "Eastern Europe",
+        "pale/straw",
+        20,
+        115
+      ],
+      "b": [
+        "Eastern Europe",
+        "amber",
+        25,
+        120
+      ],
+      "status": "sealed_unasked",
+      "id": "prospective-v37-4",
+      "number": 4
+    },
+    {
+      "stratum": "core_tradeoff",
+      "a": [
+        "Western Europe",
+        "golden",
+        25,
+        125
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        40,
+        110
+      ],
+      "status": "sealed_unasked",
+      "id": "prospective-v37-5",
+      "number": 5
+    },
+    {
+      "stratum": "heavy_brown_comparison",
+      "a": [
+        "southwest",
+        "amber",
+        35,
+        125
+      ],
+      "b": [
+        "northeast",
+        "brown",
+        35,
+        120
+      ],
+      "status": "sealed_unasked",
+      "id": "prospective-v37-6",
+      "number": 6
+    },
+    {
+      "stratum": "aligned_advantages",
+      "a": [
+        "central",
+        "pale/straw",
+        20,
+        115
+      ],
+      "b": [
+        "central",
+        "copper",
+        35,
+        125
+      ],
+      "status": "sealed_unasked",
+      "id": "prospective-v37-7",
+      "number": 7
+    },
+    {
+      "stratum": "mixed_provenance",
+      "a": [
+        "northeast",
+        "copper",
+        35,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "copper",
+        30,
+        110
+      ],
+      "status": "sealed_unasked",
+      "id": "prospective-v37-8",
+      "number": 8
+    },
+    {
+      "stratum": "core_tradeoff",
+      "a": [
+        "northwest",
+        "brown",
+        30,
+        120
+      ],
+      "b": [
+        "northwest",
+        "brown",
+        35,
+        115
+      ],
+      "status": "sealed_unasked",
+      "id": "prospective-v37-9",
+      "number": 9
+    },
+    {
+      "stratum": "heavy_brown_comparison",
+      "a": [
+        "southeast",
+        "brown",
+        30,
+        115
+      ],
+      "b": [
+        "northwest",
+        "copper",
+        25,
+        130
+      ],
+      "status": "sealed_unasked",
+      "id": "prospective-v37-10",
+      "number": 10
+    },
+    {
+      "stratum": "mixed_provenance",
+      "a": [
+        "central",
+        "brown",
+        30,
+        110
+      ],
+      "b": [
+        "southeast",
+        "brown",
+        30,
+        110
+      ],
+      "status": "sealed_unasked",
+      "id": "prospective-v37-11",
+      "number": 11
+    },
+    {
+      "stratum": "aligned_advantages",
+      "a": [
+        "southwest",
+        "copper",
+        40,
+        120
+      ],
+      "b": [
+        "southwest",
+        "copper",
+        25,
+        110
+      ],
+      "status": "sealed_unasked",
+      "id": "prospective-v37-12",
+      "number": 12
+    },
+    {
+      "stratum": "lower_tare_shade_control",
+      "a": [
+        "South/Eastern Asia",
+        "brown",
+        30,
+        115
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "amber",
+        30,
+        115
+      ],
+      "status": "sealed_unasked",
+      "id": "prospective-v37-13",
+      "number": 13
+    },
+    {
+      "stratum": "lower_tare_shade_control",
+      "a": [
+        "southeast",
+        "copper",
+        30,
+        110
+      ],
+      "b": [
+        "southeast",
+        "brown",
+        30,
+        120
+      ],
+      "status": "sealed_unasked",
+      "id": "prospective-v37-14",
+      "number": 14
+    },
+    {
+      "stratum": "aligned_advantages",
+      "a": [
+        "central",
+        "brown",
+        40,
+        115
+      ],
+      "b": [
+        "central",
+        "amber",
+        30,
+        110
+      ],
+      "status": "sealed_unasked",
+      "id": "prospective-v37-15",
+      "number": 15
+    },
+    {
+      "stratum": "mixed_provenance",
+      "a": [
+        "northwest",
+        "copper",
+        30,
+        110
+      ],
+      "b": [
+        "central",
+        "copper",
+        35,
+        115
+      ],
+      "status": "sealed_unasked",
+      "id": "prospective-v37-16",
+      "number": 16
+    },
+    {
+      "stratum": "heavy_brown_comparison",
+      "a": [
+        "northwest",
+        "amber",
+        35,
+        130
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "brown",
+        35,
+        115
+      ],
+      "status": "sealed_unasked",
+      "id": "prospective-v37-17",
+      "number": 17
+    },
+    {
+      "stratum": "lower_tare_shade_control",
+      "a": [
+        "southeast",
+        "brown",
+        20,
+        120
+      ],
+      "b": [
+        "southeast",
+        "copper",
+        20,
+        115
+      ],
+      "status": "sealed_unasked",
+      "id": "prospective-v37-18",
+      "number": 18
+    },
+    {
+      "stratum": "lower_tare_shade_control",
+      "a": [
+        "Western Europe",
+        "amber",
+        20,
+        110
+      ],
+      "b": [
+        "Western Europe",
+        "brown",
+        20,
+        115
+      ],
+      "status": "sealed_unasked",
+      "id": "prospective-v37-19",
+      "number": 19
+    },
+    {
+      "stratum": "core_tradeoff",
+      "a": [
+        "northwest",
+        "brown",
+        30,
+        125
+      ],
+      "b": [
+        "northwest",
+        "brown",
+        35,
+        120
+      ],
+      "status": "sealed_unasked",
+      "id": "prospective-v37-20",
+      "number": 20
+    }
+  ],
+  "predictions": [
+    {
+      "id": "prospective-v37-1",
+      "v28": {
+        "backend": "v28",
+        "premium_reporting_score": 2.076986150051628,
+        "direction": "A",
+        "premium_zone": "meaningful_premium",
+        "meaningful_premium": true,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 2.076986150051628,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v28_tare_compensation"
+        },
+        "units": "preference score, not money"
+      },
+      "v37": {
+        "backend": "v37",
+        "premium_reporting_score": 2.076986150051628,
+        "direction": "A",
+        "premium_zone": "meaningful_premium",
+        "meaningful_premium": true,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 2.076986150051628,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v37_heavy_near_shade_premium_candidate",
+          "premium_correction": 0.0,
+          "premium_decision_score": 1.0769861500516278,
+          "premium_context_deduction": 0.0
+        },
+        "units": "preference score, not money"
+      }
+    },
+    {
+      "id": "prospective-v37-2",
+      "v28": {
+        "backend": "v28",
+        "premium_reporting_score": 0.5384030769223102,
+        "direction": "B",
+        "premium_zone": "small_directional_advantage",
+        "meaningful_premium": false,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.5384030769223102,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v28_tare_compensation"
+        },
+        "units": "preference score, not money"
+      },
+      "v37": {
+        "backend": "v37",
+        "premium_reporting_score": 0.5384030769223102,
+        "direction": "B",
+        "premium_zone": "small_directional_advantage",
+        "meaningful_premium": false,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.5384030769223102,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v37_heavy_near_shade_premium_candidate",
+          "premium_correction": 0.0,
+          "premium_decision_score": -0.46159692307768985,
+          "premium_context_deduction": 0.0
+        },
+        "units": "preference score, not money"
+      }
+    },
+    {
+      "id": "prospective-v37-3",
+      "v28": {
+        "backend": "v28",
+        "premium_reporting_score": 1.61551923077052,
+        "direction": "B",
+        "premium_zone": "meaningful_premium",
+        "meaningful_premium": true,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -1.61551923077052,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v28_tare_compensation"
+        },
+        "units": "preference score, not money"
+      },
+      "v37": {
+        "backend": "v37",
+        "premium_reporting_score": 1.009695769231575,
+        "direction": "B",
+        "premium_zone": "borderline_premium",
+        "meaningful_premium": null,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": true,
+          "premium_assessment_withheld": true,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -1.61551923077052,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v37_heavy_near_shade_premium_candidate",
+          "premium_correction": 0.0,
+          "premium_decision_score": 0.009695769231574891,
+          "premium_context_deduction": 0.6058234615389451
+        },
+        "units": "preference score, not money"
+      }
+    },
+    {
+      "id": "prospective-v37-4",
+      "v28": {
+        "backend": "v28",
+        "premium_reporting_score": 1.846227692308678,
+        "direction": "A",
+        "premium_zone": "meaningful_premium",
+        "meaningful_premium": true,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 1.846227692308678,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v28_tare_compensation"
+        },
+        "units": "preference score, not money"
+      },
+      "v37": {
+        "backend": "v37",
+        "premium_reporting_score": 1.846227692308678,
+        "direction": "A",
+        "premium_zone": "meaningful_premium",
+        "meaningful_premium": true,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 1.846227692308678,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v37_heavy_near_shade_premium_candidate",
+          "premium_correction": 0.0,
+          "premium_decision_score": 0.846227692308678,
+          "premium_context_deduction": 0.0
+        },
+        "units": "preference score, not money"
+      }
+    },
+    {
+      "id": "prospective-v37-5",
+      "v28": {
+        "backend": "v28",
+        "premium_reporting_score": 1.5385030731281564,
+        "direction": "A",
+        "premium_zone": "meaningful_premium",
+        "meaningful_premium": true,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 1.5385030731281564,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v28_tare_compensation"
+        },
+        "units": "preference score, not money"
+      },
+      "v37": {
+        "backend": "v37",
+        "premium_reporting_score": 1.5385030731281564,
+        "direction": "A",
+        "premium_zone": "meaningful_premium",
+        "meaningful_premium": true,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 1.5385030731281564,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v37_heavy_near_shade_premium_candidate",
+          "premium_correction": 0.0,
+          "premium_decision_score": 0.5385030731281564,
+          "premium_context_deduction": 0.0
+        },
+        "units": "preference score, not money"
+      }
+    },
+    {
+      "id": "prospective-v37-6",
+      "v28": {
+        "backend": "v28",
+        "premium_reporting_score": 0.6153692307691465,
+        "direction": "A",
+        "premium_zone": "small_directional_advantage",
+        "meaningful_premium": false,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.6153692307691465,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v28_tare_compensation"
+        },
+        "units": "preference score, not money"
+      },
+      "v37": {
+        "backend": "v37",
+        "premium_reporting_score": 0.03844557692284467,
+        "direction": "A",
+        "premium_zone": "small_directional_advantage",
+        "meaningful_premium": false,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.6153692307691465,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v37_heavy_near_shade_premium_candidate",
+          "premium_correction": 0.0,
+          "premium_decision_score": -0.9615544230771553,
+          "premium_context_deduction": 0.5769236538463018
+        },
+        "units": "preference score, not money"
+      }
+    },
+    {
+      "id": "prospective-v37-7",
+      "v28": {
+        "backend": "v28",
+        "premium_reporting_score": 5.230938457745513,
+        "direction": "A",
+        "premium_zone": "meaningful_premium",
+        "meaningful_premium": true,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 5.230938457745513,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v28_tare_compensation"
+        },
+        "units": "preference score, not money"
+      },
+      "v37": {
+        "backend": "v37",
+        "premium_reporting_score": 5.230938457745513,
+        "direction": "A",
+        "premium_zone": "meaningful_premium",
+        "meaningful_premium": true,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 5.230938457745513,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v37_heavy_near_shade_premium_candidate",
+          "premium_correction": 0.0,
+          "premium_decision_score": 4.230938457745513,
+          "premium_context_deduction": 0.0
+        },
+        "units": "preference score, not money"
+      }
+    },
+    {
+      "id": "prospective-v37-8",
+      "v28": {
+        "backend": "v28",
+        "premium_reporting_score": 0.6155292269743851,
+        "direction": "B",
+        "premium_zone": "small_directional_advantage",
+        "meaningful_premium": false,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.6155292269743851,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v28_tare_compensation"
+        },
+        "units": "preference score, not money"
+      },
+      "v37": {
+        "backend": "v37",
+        "premium_reporting_score": 0.6155292269743851,
+        "direction": "B",
+        "premium_zone": "small_directional_advantage",
+        "meaningful_premium": false,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.6155292269743851,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v37_heavy_near_shade_premium_candidate",
+          "premium_correction": 0.0,
+          "premium_decision_score": -0.38447077302561494,
+          "premium_context_deduction": 0.0
+        },
+        "units": "preference score, not money"
+      }
+    },
+    {
+      "id": "prospective-v37-9",
+      "v28": {
+        "backend": "v28",
+        "premium_reporting_score": 1.3077646115898918,
+        "direction": "A",
+        "premium_zone": "borderline_premium",
+        "meaningful_premium": null,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": true,
+          "premium_assessment_withheld": true,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 1.3077646115898918,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v28_tare_compensation"
+        },
+        "units": "preference score, not money"
+      },
+      "v37": {
+        "backend": "v37",
+        "premium_reporting_score": 1.3077646115898918,
+        "direction": "A",
+        "premium_zone": "borderline_premium",
+        "meaningful_premium": null,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": true,
+          "premium_assessment_withheld": true,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 1.3077646115898918,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v37_heavy_near_shade_premium_candidate",
+          "premium_correction": 0.0,
+          "premium_decision_score": 0.30776461158989177,
+          "premium_context_deduction": 0.0
+        },
+        "units": "preference score, not money"
+      }
+    },
+    {
+      "id": "prospective-v37-10",
+      "v28": {
+        "backend": "v28",
+        "premium_reporting_score": 0.6922253846147944,
+        "direction": "B",
+        "premium_zone": "small_directional_advantage",
+        "meaningful_premium": false,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.6922253846147944,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v28_tare_compensation"
+        },
+        "units": "preference score, not money"
+      },
+      "v37": {
+        "backend": "v37",
+        "premium_reporting_score": -0.2885680769241108,
+        "direction": "B",
+        "premium_zone": "small_directional_advantage",
+        "meaningful_premium": false,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.6922253846147944,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v37_heavy_near_shade_premium_candidate",
+          "premium_correction": 0.0,
+          "premium_decision_score": -1.2885680769241108,
+          "premium_context_deduction": 0.9807934615389053
+        },
+        "units": "preference score, not money"
+      }
+    },
+    {
+      "id": "prospective-v37-11",
+      "v28": {
+        "backend": "v28",
+        "premium_reporting_score": 5.000000010535466e-05,
+        "direction": "B",
+        "premium_zone": "small_directional_advantage",
+        "meaningful_premium": false,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -5.000000010535466e-05,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v28_tare_compensation"
+        },
+        "units": "preference score, not money"
+      },
+      "v37": {
+        "backend": "v37",
+        "premium_reporting_score": 5.000000010535466e-05,
+        "direction": "B",
+        "premium_zone": "small_directional_advantage",
+        "meaningful_premium": false,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -5.000000010535466e-05,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v37_heavy_near_shade_premium_candidate",
+          "premium_correction": 0.0,
+          "premium_decision_score": -0.9999499999998946,
+          "premium_context_deduction": 0.0
+        },
+        "units": "preference score, not money"
+      }
+    },
+    {
+      "id": "prospective-v37-12",
+      "v28": {
+        "backend": "v28",
+        "premium_reporting_score": 4.2309684577455124,
+        "direction": "B",
+        "premium_zone": "meaningful_premium",
+        "meaningful_premium": true,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -4.2309684577455124,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v28_tare_compensation"
+        },
+        "units": "preference score, not money"
+      },
+      "v37": {
+        "backend": "v37",
+        "premium_reporting_score": 4.2309684577455124,
+        "direction": "B",
+        "premium_zone": "meaningful_premium",
+        "meaningful_premium": true,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -4.2309684577455124,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v37_heavy_near_shade_premium_candidate",
+          "premium_correction": 0.0,
+          "premium_decision_score": 3.2309684577455124,
+          "premium_context_deduction": 0.0
+        },
+        "units": "preference score, not money"
+      }
+    },
+    {
+      "id": "prospective-v37-13",
+      "v28": {
+        "backend": "v28",
+        "premium_reporting_score": 1.5384630769234717,
+        "direction": "B",
+        "premium_zone": "meaningful_premium",
+        "meaningful_premium": true,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -1.5384630769234717,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v28_tare_compensation"
+        },
+        "units": "preference score, not money"
+      },
+      "v37": {
+        "backend": "v37",
+        "premium_reporting_score": 1.5384630769234717,
+        "direction": "B",
+        "premium_zone": "meaningful_premium",
+        "meaningful_premium": true,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -1.5384630769234717,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v37_heavy_near_shade_premium_candidate",
+          "premium_correction": 0.0,
+          "premium_decision_score": 0.5384630769234717,
+          "premium_context_deduction": 0.0
+        },
+        "units": "preference score, not money"
+      }
+    },
+    {
+      "id": "prospective-v37-14",
+      "v28": {
+        "backend": "v28",
+        "premium_reporting_score": 2.3847107692321496,
+        "direction": "A",
+        "premium_zone": "meaningful_premium",
+        "meaningful_premium": true,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 2.3847107692321496,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v28_tare_compensation"
+        },
+        "units": "preference score, not money"
+      },
+      "v37": {
+        "backend": "v37",
+        "premium_reporting_score": 2.3847107692321496,
+        "direction": "A",
+        "premium_zone": "meaningful_premium",
+        "meaningful_premium": true,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 2.3847107692321496,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v37_heavy_near_shade_premium_candidate",
+          "premium_correction": 0.0,
+          "premium_decision_score": 1.3847107692321496,
+          "premium_context_deduction": 0.0
+        },
+        "units": "preference score, not money"
+      }
+    },
+    {
+      "id": "prospective-v37-15",
+      "v28": {
+        "backend": "v28",
+        "premium_reporting_score": 3.923223842360306,
+        "direction": "B",
+        "premium_zone": "meaningful_premium",
+        "meaningful_premium": true,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -3.923223842360306,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v28_tare_compensation"
+        },
+        "units": "preference score, not money"
+      },
+      "v37": {
+        "backend": "v37",
+        "premium_reporting_score": 3.923223842360306,
+        "direction": "B",
+        "premium_zone": "meaningful_premium",
+        "meaningful_premium": true,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -3.923223842360306,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v37_heavy_near_shade_premium_candidate",
+          "premium_correction": 0.0,
+          "premium_decision_score": 2.923223842360306,
+          "premium_context_deduction": 0.0
+        },
+        "units": "preference score, not money"
+      }
+    },
+    {
+      "id": "prospective-v37-16",
+      "v28": {
+        "backend": "v28",
+        "premium_reporting_score": 1.5385730731282625,
+        "direction": "A",
+        "premium_zone": "meaningful_premium",
+        "meaningful_premium": true,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 1.5385730731282625,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v28_tare_compensation"
+        },
+        "units": "preference score, not money"
+      },
+      "v37": {
+        "backend": "v37",
+        "premium_reporting_score": 1.5385730731282625,
+        "direction": "A",
+        "premium_zone": "meaningful_premium",
+        "meaningful_premium": true,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 1.5385730731282625,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v37_heavy_near_shade_premium_candidate",
+          "premium_correction": 0.0,
+          "premium_decision_score": 0.5385730731282625,
+          "premium_context_deduction": 0.0
+        },
+        "units": "preference score, not money"
+      }
+    },
+    {
+      "id": "prospective-v37-17",
+      "v28": {
+        "backend": "v28",
+        "premium_reporting_score": 0.3844907692295866,
+        "direction": "A",
+        "premium_zone": "small_directional_advantage",
+        "meaningful_premium": false,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.3844907692295866,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v28_tare_compensation"
+        },
+        "units": "preference score, not money"
+      },
+      "v37": {
+        "backend": "v37",
+        "premium_reporting_score": -1.1154867307704137,
+        "direction": "A",
+        "premium_zone": "small_directional_advantage",
+        "meaningful_premium": false,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.3844907692295866,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v37_heavy_near_shade_premium_candidate",
+          "premium_correction": 0.0,
+          "premium_decision_score": -2.1154867307704137,
+          "premium_context_deduction": 1.4999775000000004
+        },
+        "units": "preference score, not money"
+      }
+    },
+    {
+      "id": "prospective-v37-18",
+      "v28": {
+        "backend": "v28",
+        "premium_reporting_score": 1.8462176923086784,
+        "direction": "B",
+        "premium_zone": "meaningful_premium",
+        "meaningful_premium": true,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -1.8462176923086784,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v28_tare_compensation"
+        },
+        "units": "preference score, not money"
+      },
+      "v37": {
+        "backend": "v37",
+        "premium_reporting_score": 1.8462176923086784,
+        "direction": "B",
+        "premium_zone": "meaningful_premium",
+        "meaningful_premium": true,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": -1.8462176923086784,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v37_heavy_near_shade_premium_candidate",
+          "premium_correction": 0.0,
+          "premium_decision_score": 0.8462176923086784,
+          "premium_context_deduction": 0.0
+        },
+        "units": "preference score, not money"
+      }
+    },
+    {
+      "id": "prospective-v37-19",
+      "v28": {
+        "backend": "v28",
+        "premium_reporting_score": 2.0769561538469428,
+        "direction": "A",
+        "premium_zone": "meaningful_premium",
+        "meaningful_premium": true,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 2.0769561538469428,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v28_tare_compensation"
+        },
+        "units": "preference score, not money"
+      },
+      "v37": {
+        "backend": "v37",
+        "premium_reporting_score": 2.0769561538469428,
+        "direction": "A",
+        "premium_zone": "meaningful_premium",
+        "meaningful_premium": true,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": false,
+          "premium_assessment_withheld": false,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 2.0769561538469428,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v37_heavy_near_shade_premium_candidate",
+          "premium_correction": 0.0,
+          "premium_decision_score": 1.0769561538469428,
+          "premium_context_deduction": 0.0
+        },
+        "units": "preference score, not money"
+      }
+    },
+    {
+      "id": "prospective-v37-20",
+      "v28": {
+        "backend": "v28",
+        "premium_reporting_score": 1.3077646115898918,
+        "direction": "A",
+        "premium_zone": "borderline_premium",
+        "meaningful_premium": null,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": true,
+          "premium_assessment_withheld": true,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 1.3077646115898918,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v28_tare_compensation"
+        },
+        "units": "preference score, not money"
+      },
+      "v37": {
+        "backend": "v37",
+        "premium_reporting_score": 1.3077646115898918,
+        "direction": "A",
+        "premium_zone": "borderline_premium",
+        "meaningful_premium": null,
+        "exact_price_equality": null,
+        "uncertainty": {
+          "premium_boundary": true,
+          "premium_assessment_withheld": true,
+          "calibrated_probability": null,
+          "direction_confidence": "not_calibrated",
+          "band_status": "conditional_family_calibration_not_probability"
+        },
+        "equality_status": "not_established_by_pair_comparator",
+        "legacy_prediction": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "meaningful_difference",
+          "margin": 1.3077646115898918,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v37_heavy_near_shade_premium_candidate",
+          "premium_correction": 0.0,
+          "premium_decision_score": 0.30776461158989177,
+          "premium_context_deduction": 0.0
+        },
+        "units": "preference score, not money"
+      }
+    }
+  ]
+}

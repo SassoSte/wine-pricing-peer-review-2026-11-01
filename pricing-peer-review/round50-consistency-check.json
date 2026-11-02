@@ -1,0 +1,8 @@
+{
+  "active_questions": 14,
+  "simple_monotone_additive_feasible": true,
+  "hypothesis": "Existing19-feature additive utility, nonnegative monotone attribute increments, single normalized meaningfulness boundary. Small positive preferences retain strict signs; approximate sameness permits small gap either way.",
+  "scope": "These14 clarified isolation judgments only. Does not establish global adequacy, unique weights, causal interactions or dollar premiums. Normalized boundary1/strictness.01 are feasibility conventions, not elicited values. No model weights changed.",
+  "retracted_answer_excluded": "round50-4 initial meaningful answer not active",
+  "lesson": "The isolation does not mathematically require new interaction terms. Corrected labels and appropriate relative contributions suffice locally. Test any complexity against broader evidence rather than assuming it from explanatory wording."
+}

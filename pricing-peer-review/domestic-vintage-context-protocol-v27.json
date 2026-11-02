@@ -1,0 +1,12 @@
+{
+  "evidence": "evidence-v27.json",
+  "base_architecture": "18-coefficient additive utility with fixed pale=golden at130lb and cap on tare+pale contribution so any standalone5lb step remains nonmeaningful.",
+  "single_added_feature": "Domestic provenance AND20-year vintage. One nonnegative coefficient adds a domestic20-year bonus; thus domestic20vs25 can differ from foreign20vs25. No named-region pair rules, price lookups or further context terms.",
+  "anchors": ["round49-2", "round50-4", "round49-17"],
+  "arms": ["unconstrained joint fit", "joint fit requiring the three anchors when present in training"],
+  "objective": "Same four-group balanced joint classification error as additive MILP comparison, with one shared error binary per record covering both supplied axes. Tiny coefficient L1 tie-break. Missing axes excluded.",
+  "validation": "Reuse exact25 prior withheld-family partitions. Train-only coefficient fitting and train-only anchor constraints. Never constrain or select parameters using validation labels. Compare cached additive18 and frozenv26 on identical evidence. Feature hypothesis itself informed by earlier evidence, so repeated-family evaluation is exploratory.",
+  "solver": "Single thread,3 seconds per outer fit and12 seconds full fit; report incumbent gaps and tolerance status, do not claim exact global optimality from a tolerance-based stop.",
+  "promotion": "Only promote a reconciled full fit if it improves joint balanced accuracy against v26 without lower fully-labelled joint accuracy or direction accuracy or higher false premiums. Otherwise retain v26 and report candidate as an experiment.",
+  "mathematical_check": "Verify18-variable infeasibility and19-variable feasibility on the three anchors with monotonicity and5lb constraints; distinguish feasibility from predictive validation."
+}

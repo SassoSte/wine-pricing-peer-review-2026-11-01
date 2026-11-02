@@ -1,0 +1,202 @@
+{
+  "scope": "Four anchored domesticregions; supportedvintages30/35/40 andtare130only, copperorbrown. No extrapolationabove40years or130lb. WholefilledcaskUSD;seat-origin/reference-status,samevolume,mint,initialrelease/distributorterms;fees,taxes,deliveryexcluded. Modelbounds acrossprofiles,notconfidenceintervals.",
+  "config_sha256": "5a12e1614975de7b0d390b42b8a00db0b4eed5658ae8322f0486902ffd968fb1",
+  "results": [
+    {
+      "region": "northeast",
+      "by_shade": {
+        "copper": {
+          "minimum": 354.9229233439947,
+          "maximum": 450.00311447301544,
+          "profiles": [
+            {
+              "vintage_years": 30,
+              "tare_lb": 130,
+              "price_usd": 450.00311447301544
+            },
+            {
+              "vintage_years": 35,
+              "tare_lb": 130,
+              "price_usd": 380.3642738205351
+            },
+            {
+              "vintage_years": 40,
+              "tare_lb": 130,
+              "price_usd": 354.9229233439947
+            }
+          ]
+        },
+        "brown": {
+          "minimum": 299.99999999999994,
+          "maximum": 380.3662295914481,
+          "profiles": [
+            {
+              "vintage_years": 30,
+              "tare_lb": 130,
+              "price_usd": 380.3662295914481
+            },
+            {
+              "vintage_years": 35,
+              "tare_lb": 130,
+              "price_usd": 321.5044017756066
+            },
+            {
+              "vintage_years": 40,
+              "tare_lb": 130,
+              "price_usd": 299.99999999999994
+            }
+          ]
+        }
+      },
+      "overall_min": 299.99999999999994,
+      "overall_max": 450.00311447301544
+    },
+    {
+      "region": "southeast",
+      "by_shade": {
+        "copper": {
+          "minimum": 346.85649326799484,
+          "maximum": 439.77577096226514,
+          "profiles": [
+            {
+              "vintage_years": 30,
+              "tare_lb": 130,
+              "price_usd": 439.77577096226514
+            },
+            {
+              "vintage_years": 35,
+              "tare_lb": 130,
+              "price_usd": 371.7196312337048
+            },
+            {
+              "vintage_years": 40,
+              "tare_lb": 130,
+              "price_usd": 346.85649326799484
+            }
+          ]
+        },
+        "brown": {
+          "minimum": 293.1818181818181,
+          "maximum": 371.7215425552788,
+          "profiles": [
+            {
+              "vintage_years": 30,
+              "tare_lb": 130,
+              "price_usd": 371.7215425552788
+            },
+            {
+              "vintage_years": 35,
+              "tare_lb": 130,
+              "price_usd": 314.1974835534337
+            },
+            {
+              "vintage_years": 40,
+              "tare_lb": 130,
+              "price_usd": 293.1818181818181
+            }
+          ]
+        }
+      },
+      "overall_min": 293.1818181818181,
+      "overall_max": 439.77577096226514
+    },
+    {
+      "region": "central",
+      "by_shade": {
+        "copper": {
+          "minimum": 338.79006319199493,
+          "maximum": 429.5484274515148,
+          "profiles": [
+            {
+              "vintage_years": 30,
+              "tare_lb": 130,
+              "price_usd": 429.5484274515148
+            },
+            {
+              "vintage_years": 35,
+              "tare_lb": 130,
+              "price_usd": 363.07498864687443
+            },
+            {
+              "vintage_years": 40,
+              "tare_lb": 130,
+              "price_usd": 338.79006319199493
+            }
+          ]
+        },
+        "brown": {
+          "minimum": 286.36363636363626,
+          "maximum": 363.07685551910953,
+          "profiles": [
+            {
+              "vintage_years": 30,
+              "tare_lb": 130,
+              "price_usd": 363.07685551910953
+            },
+            {
+              "vintage_years": 35,
+              "tare_lb": 130,
+              "price_usd": 306.89056533126086
+            },
+            {
+              "vintage_years": 40,
+              "tare_lb": 130,
+              "price_usd": 286.36363636363626
+            }
+          ]
+        }
+      },
+      "overall_min": 286.36363636363626,
+      "overall_max": 429.5484274515148
+    },
+    {
+      "region": "northwest",
+      "by_shade": {
+        "copper": {
+          "minimum": 322.6572030399952,
+          "maximum": 409.09374043001407,
+          "profiles": [
+            {
+              "vintage_years": 30,
+              "tare_lb": 130,
+              "price_usd": 409.09374043001407
+            },
+            {
+              "vintage_years": 35,
+              "tare_lb": 130,
+              "price_usd": 345.78570347321374
+            },
+            {
+              "vintage_years": 40,
+              "tare_lb": 130,
+              "price_usd": 322.6572030399952
+            }
+          ]
+        },
+        "brown": {
+          "minimum": 272.72727272727263,
+          "maximum": 345.787481446771,
+          "profiles": [
+            {
+              "vintage_years": 30,
+              "tare_lb": 130,
+              "price_usd": 345.787481446771
+            },
+            {
+              "vintage_years": 35,
+              "tare_lb": 130,
+              "price_usd": 292.27672888691507
+            },
+            {
+              "vintage_years": 40,
+              "tare_lb": 130,
+              "price_usd": 272.72727272727263
+            }
+          ]
+        }
+      },
+      "overall_min": 272.72727272727263,
+      "overall_max": 409.09374043001407
+    }
+  ]
+}

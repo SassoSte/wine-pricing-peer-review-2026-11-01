@@ -1,0 +1,123 @@
+{
+  "selected_model": "same_provenance",
+  "model": {
+    "base_model": {
+      "coefficients": [
+        0.30059251209596727,
+        -0.44364330726271745,
+        -0.44374330726271743,
+        -0.386024512749957,
+        0.398340399689864,
+        0.39955433836711174,
+        0.30049251209596733,
+        0.43001645365728314,
+        0.6003492343852845,
+        0.6266002443078896,
+        0.0,
+        0.0,
+        0.6636957908318052,
+        0.367069811730164,
+        0.9270917207257354,
+        0.6635957908318052,
+        0.5430913138174752,
+        0.2416467561623201,
+        -0.3636957208318152
+      ],
+      "training_joint_balanced_accuracy": 0.964875319594,
+      "training_both_axes_accuracy": 0.975308641975,
+      "training_signed_joint_loss": 0.027726171643,
+      "optimizer": "two-start constrained coordinate search; no global optimality claim",
+      "reference_context": {
+        "kind": "contextual_meaningfulness",
+        "underlying_source": "precision-shade-candidate-v17.json",
+        "underlying_coefficients": [
+          0.30059251209596727,
+          -0.4826433202627174,
+          -0.4827433202627174,
+          -0.4640245387499571,
+          0.395340398689864,
+          0.49105436886711173,
+          0.3004925120959673,
+          0.5335164881572831,
+          0.5073492033852847,
+          0.7556002873078896,
+          6.256835180915935e-22,
+          3.461062096949336e-21,
+          0.6636957908318052,
+          0.37156981323016397,
+          0.6270916207257354,
+          0.6635957908318052,
+          0.3330912438174751,
+          0.2491467586623201,
+          -0.36369579083180525
+        ],
+        "base_radius": 0.3000001,
+        "context_kind": "mature_shade",
+        "context_coefficient": 0.75,
+        "direction_weights_changed": false,
+        "calibration_evidence": "evidence-v21.json",
+        "shade_fraction": 0.0,
+        "boundary_increment": 0.35000000000000003,
+        "training_objective": 0.960558173251178,
+        "shade_coefficients": [
+          0.55,
+          0.0
+        ],
+        "shade_parameters": [
+          0.9,
+          0.9,
+          1.0
+        ],
+        "grid_size": 441,
+        "selected_arm": "pooled"
+      }
+    },
+    "five_year_fraction": 0.0,
+    "scope": "same_provenance",
+    "training_joint_balanced": 0.9542603418178865,
+    "training_joint_loss": 0.03198023225828395
+  },
+  "evidence": "evidence-v23.json",
+  "validation_file": "five-year-premium-validation-v23.json",
+  "validation": {
+    "direction": {
+      "n": 326,
+      "correct": 295.4,
+      "accuracy": 0.9061349693251535,
+      "reversals": 30.0,
+      "zero_or_abstain": 0.6
+    },
+    "materiality": {
+      "n": 249,
+      "meaningful_n": 63,
+      "no_meaningful_n": 186,
+      "accuracy": 0.9196787148594379,
+      "balanced_accuracy": 0.9021505376344086,
+      "meaningful_recall": 0.8666666666666666,
+      "no_meananingful_recall": 0.9376344086021506,
+      "false_meaningful": 11.6,
+      "missed_meaningful": 8.4,
+      "correct_meaningful_direction": 53.8
+    },
+    "directly_supported_materiality": {
+      "n": 114,
+      "meaningful_n": 37,
+      "no_meaningful_n": 77,
+      "accuracy": 0.9052631578947368,
+      "balanced_accuracy": 0.8877500877500879,
+      "meaningful_recall": 0.8378378378378379,
+      "no_meananingful_recall": 0.9376623376623376,
+      "false_meaningful": 4.8,
+      "missed_meaningful": 6.0,
+      "correct_meaningful_direction": 31.0
+    },
+    "unknown_materiality_n": 242
+  },
+  "joint_validation": {
+    "both_axes_correct": 73.4,
+    "both_axes_accuracy": 0.834090909090909,
+    "balanced_accuracy": 0.8693660130718955,
+    "signed_joint_loss": 0.1942911938080038
+  },
+  "baselines_unchanged": true
+}

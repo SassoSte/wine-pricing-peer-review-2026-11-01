@@ -1,0 +1,12 @@
+{
+  "status": "complete_frozen_expert_transfer_check",
+  "point_estimates_n": 3,
+  "point_mae_usd": 17.803030303030273,
+  "point_mean_signed_error_usd": 17.803030303030273,
+  "point_mean_absolute_percent_error": 4.378342245989297,
+  "ceiling_constraints_n": 3,
+  "ceilings_satisfied": 3,
+  "no_refit": true,
+  "qualification": "Three approximate valuations and three upperbounds; not six exactprices. Modelcurve frozen beforeanswers. PriorNE andearlierregionalscenarios visible; not independentmarkettransactions or fullyblindedregionalstudy.",
+  "interpretation": "Consistent withlimitedregionaltransfer; amberestimates allabove expertcenters,Central largestdifference. Brownceilingchecks constrainonlymaximum,not exact price, floor, orrelative ranking. No justifiedregionalcurve refit fromthissmallset."
+}

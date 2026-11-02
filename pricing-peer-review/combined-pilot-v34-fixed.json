@@ -1,0 +1,682 @@
+{
+  "status": "complete",
+  "protocol": "12 fresh unordered pairs, sampled by attributes only before predictions. One at a time. Direction separate from meaningfulness; exact equality, practical nondirection and unresolved distinct. No refitting until all answers complete. Baselinev28 comparator. Fullset andforecasts frozen.",
+  "freeze_fields": [
+    "id",
+    "number",
+    "category",
+    "a",
+    "b"
+  ],
+  "questions_sha256": "39997a4745d5ed0109943bcc0178e533f691f4674e7983a2cd05cc4e01597d32",
+  "source_hashes": {
+    "combined-config-v34.json": "abd75ba4fcf2397ef6c9603bdbb604041b1ec333052bc3de42713bdb4ec028a9",
+    "predictor_combined_v34.py": "c9e1d6c4d28d4b6ffe4556fa8a727c79aae40d441acd2b13bec2faf36fa1cc9d",
+    "model-config-v28.json": "a9fed8e86977526c16e74ccdb0a6a75d919b3041bd602e5592d64e3086414dcf",
+    "predictor_v27.py": "293307f98d4c2434bfbbea8a73341a3522601604535647f3a7a6b0103b23f2ed",
+    "freeze_combined_pilot_v34.py": "f7deaa3121c6433be0019c11af2096e6c9e62e20769ca0de7e2114740f46d4ed"
+  },
+  "freshness_files": [
+    "comparisons.json",
+    "evidence-v34.json",
+    "round10-fixed.json",
+    "round11-isolation.json",
+    "round12-clarification.json",
+    "round13-fixed.json",
+    "round14-isolation.json",
+    "round15-fixed.json",
+    "round16-isolation.json",
+    "round17-fixed.json",
+    "round18-isolation.json",
+    "round19-fixed.json",
+    "round20-isolation.json",
+    "round21-fixed.json",
+    "round22-isolation.json",
+    "round23-fixed.json",
+    "round24-isolation.json",
+    "round25-fixed.json",
+    "round26-isolation.json",
+    "round27-fixed.json",
+    "round28-isolation.json",
+    "round29-isolation.json",
+    "round30-isolation.json",
+    "round31-isolation.json",
+    "round32-isolation.json",
+    "round33-reconciliation.json",
+    "round34-reconciliation.json",
+    "round35-fixed.json",
+    "round36-findings.json",
+    "round36-fixed.json",
+    "round37-findings.json",
+    "round37-fixed.json",
+    "round38-findings.json",
+    "round38-fixed.json",
+    "round39-findings.json",
+    "round39-fixed.json",
+    "round40-findings.json",
+    "round40-fixed.json",
+    "round41-findings.json",
+    "round41-fixed.json",
+    "round42-findings.json",
+    "round42-fixed.json",
+    "round43-findings.json",
+    "round43-fixed.json",
+    "round44-findings.json",
+    "round44-fixed.json",
+    "round45-findings.json",
+    "round45-fixed.json",
+    "round46-findings.json",
+    "round46-fixed.json",
+    "round47-findings.json",
+    "round47-fixed.json",
+    "round48-findings.json",
+    "round48-fixed.json",
+    "round49-findings.json",
+    "round49-fixed.json",
+    "round50-consistency-check.json",
+    "round50-findings.json",
+    "round50-first-family-check.json",
+    "round50-isolation.json",
+    "round50-second-family-check.json",
+    "round51-findings.json",
+    "round51-fixed.json",
+    "round52-clarifications.json",
+    "round52-findings.json",
+    "round53-findings.json",
+    "round53-isolation.json",
+    "round54-findings.json",
+    "round54-unresolved-isolation.json",
+    "round55-findings.json",
+    "round55-tare-context-isolation.json",
+    "round56-findings.json",
+    "round56-fixed.json",
+    "round57-consistent-misses-review.json",
+    "round57-findings.json",
+    "round57-reconciled-v31.json",
+    "round9-fixed.json"
+  ],
+  "questions": [
+    {
+      "number": 1,
+      "id": "combined-pilot-v34-1",
+      "category": "clear_extreme",
+      "a": [
+        "Western Europe",
+        "pale/straw",
+        20,
+        115
+      ],
+      "b": [
+        "Western Europe",
+        "brown",
+        40,
+        130
+      ],
+      "status": "answered",
+      "raw_answer": "A meaningfully higher",
+      "known_direction": 1,
+      "materiality_target": 1,
+      "exact_price_equality": false,
+      "value_relation": "A_higher"
+    },
+    {
+      "number": 2,
+      "id": "combined-pilot-v34-2",
+      "category": "small_tare",
+      "a": [
+        "northwest",
+        "brown",
+        20,
+        110
+      ],
+      "b": [
+        "northwest",
+        "brown",
+        20,
+        115
+      ],
+      "status": "answered",
+      "raw_answer": "A, practically similar",
+      "known_direction": 1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "value_relation": "A_higher"
+    },
+    {
+      "number": 3,
+      "id": "combined-pilot-v34-3",
+      "category": "vintage_tare_tradeoff",
+      "a": [
+        "West Central Asia",
+        "golden",
+        40,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "golden",
+        35,
+        125
+      ],
+      "status": "answered",
+      "raw_answer": "B, slightly higher",
+      "known_direction": -1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "value_relation": "B_higher"
+    },
+    {
+      "number": 4,
+      "id": "combined-pilot-v34-4",
+      "category": "older_dark",
+      "a": [
+        "West Asia / Middle East",
+        "brown",
+        35,
+        130
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "copper",
+        40,
+        125
+      ],
+      "status": "answered",
+      "raw_answer": "B, slightly higher",
+      "known_direction": -1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "value_relation": "B_higher"
+    },
+    {
+      "number": 5,
+      "id": "combined-pilot-v34-5",
+      "category": "top_profile",
+      "a": [
+        "Western Europe",
+        "pale/straw",
+        20,
+        110
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        25,
+        120
+      ],
+      "status": "answered",
+      "raw_answer": "I meant A meaningfully higher",
+      "answer_history": [
+        "B meaningfully higher \u2014 immediately retracted",
+        "A meaningfully higher \u2014 explicit correction"
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "exact_price_equality": false,
+      "value_relation": "A_higher"
+    },
+    {
+      "number": 6,
+      "id": "combined-pilot-v34-6",
+      "category": "cross_provenance",
+      "a": [
+        "northeast",
+        "amber",
+        20,
+        115
+      ],
+      "b": [
+        "southwest",
+        "amber",
+        25,
+        110
+      ],
+      "status": "answered",
+      "raw_answer": "A slightly higher",
+      "known_direction": 1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "value_relation": "A_higher"
+    },
+    {
+      "number": 7,
+      "id": "combined-pilot-v34-7",
+      "category": "clear_extreme",
+      "a": [
+        "northwest",
+        "copper",
+        40,
+        130
+      ],
+      "b": [
+        "northwest",
+        "pale/straw",
+        25,
+        115
+      ],
+      "status": "answered",
+      "raw_answer": "B, meaningfully higher",
+      "known_direction": -1,
+      "materiality_target": -1,
+      "exact_price_equality": false,
+      "value_relation": "B_higher"
+    },
+    {
+      "number": 8,
+      "id": "combined-pilot-v34-8",
+      "category": "small_tare",
+      "a": [
+        "southwest",
+        "amber",
+        20,
+        125
+      ],
+      "b": [
+        "southwest",
+        "amber",
+        20,
+        130
+      ],
+      "status": "answered",
+      "raw_answer": "Just by a hair, just barely A",
+      "known_direction": 1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "value_relation": "A_higher"
+    },
+    {
+      "number": 9,
+      "id": "combined-pilot-v34-9",
+      "category": "vintage_tare_tradeoff",
+      "a": [
+        "southeast",
+        "amber",
+        30,
+        110
+      ],
+      "b": [
+        "southeast",
+        "amber",
+        25,
+        125
+      ],
+      "status": "answered",
+      "raw_answer": "A; meaningful",
+      "known_direction": 1,
+      "materiality_target": 1,
+      "exact_price_equality": false,
+      "value_relation": "A_higher"
+    },
+    {
+      "number": 10,
+      "id": "combined-pilot-v34-10",
+      "category": "older_dark",
+      "a": [
+        "southeast",
+        "brown",
+        35,
+        125
+      ],
+      "b": [
+        "southeast",
+        "amber",
+        40,
+        130
+      ],
+      "status": "answered",
+      "raw_answer": "B slightly",
+      "known_direction": -1,
+      "materiality_target": 0,
+      "exact_price_equality": false,
+      "value_relation": "B_higher"
+    },
+    {
+      "number": 11,
+      "id": "combined-pilot-v34-11",
+      "category": "top_profile",
+      "a": [
+        "northeast",
+        "pale/straw",
+        20,
+        110
+      ],
+      "b": [
+        "northeast",
+        "golden",
+        25,
+        110
+      ],
+      "status": "answered",
+      "raw_answer": "A meaninful",
+      "known_direction": 1,
+      "materiality_target": 1,
+      "exact_price_equality": false,
+      "value_relation": "A_higher"
+    },
+    {
+      "number": 12,
+      "id": "combined-pilot-v34-12",
+      "category": "cross_provenance",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        35,
+        120
+      ],
+      "b": [
+        "northeast",
+        "pale/straw",
+        35,
+        115
+      ],
+      "status": "answered",
+      "raw_answer": "B meaninful",
+      "known_direction": -1,
+      "materiality_target": -1,
+      "exact_price_equality": false,
+      "value_relation": "B_higher"
+    }
+  ],
+  "frozen_predictions": [
+    {
+      "id": "combined-pilot-v34-1",
+      "combined": {
+        "model": "combined-v34-frozen-pilot",
+        "predicted_direction": "A",
+        "exact_price_equality": false,
+        "predicted_meaningfulness": "meaningful_difference",
+        "margin": 11.589217627040348,
+        "premium_reference_direction": "A",
+        "premium_reference_margin": 7.615659226977662,
+        "head_conflict": false,
+        "prediction_source": "model_only",
+        "units": "preference scores, not money"
+      },
+      "v28": {
+        "predicted_direction": "A",
+        "predicted_meaningfulness": "meaningful_difference",
+        "margin": 7.615659226977662,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      }
+    },
+    {
+      "id": "combined-pilot-v34-2",
+      "combined": {
+        "model": "combined-v34-frozen-pilot",
+        "predicted_direction": "A",
+        "exact_price_equality": false,
+        "predicted_meaningfulness": "no_meaningful_difference",
+        "margin": 1.1886211324829867,
+        "premium_reference_direction": "A",
+        "premium_reference_margin": 0.5384930769234713,
+        "head_conflict": false,
+        "prediction_source": "model_only",
+        "units": "preference scores, not money"
+      },
+      "v28": {
+        "predicted_direction": "A",
+        "predicted_meaningfulness": "no_meaningful_difference",
+        "margin": 0.5384930769234713,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      }
+    },
+    {
+      "id": "combined-pilot-v34-3",
+      "combined": {
+        "model": "combined-v34-frozen-pilot",
+        "predicted_direction": "A",
+        "exact_price_equality": false,
+        "predicted_meaningfulness": "no_meaningful_difference",
+        "margin": 0.23040113117232752,
+        "premium_reference_direction": "A",
+        "premium_reference_margin": 0.5384830769234713,
+        "head_conflict": false,
+        "prediction_source": "model_only",
+        "units": "preference scores, not money"
+      },
+      "v28": {
+        "predicted_direction": "A",
+        "predicted_meaningfulness": "no_meaningful_difference",
+        "margin": 0.5384830769234713,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      }
+    },
+    {
+      "id": "combined-pilot-v34-4",
+      "combined": {
+        "model": "combined-v34-frozen-pilot",
+        "predicted_direction": "B",
+        "exact_price_equality": false,
+        "predicted_meaningfulness": "meaningful_difference",
+        "margin": -1.0928918734570838,
+        "premium_reference_direction": "B",
+        "premium_reference_margin": -1.307714615385207,
+        "head_conflict": false,
+        "prediction_source": "model_only",
+        "units": "preference scores, not money"
+      },
+      "v28": {
+        "predicted_direction": "B",
+        "predicted_meaningfulness": "meaningful_difference",
+        "margin": -1.307714615385207,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      }
+    },
+    {
+      "id": "combined-pilot-v34-5",
+      "combined": {
+        "model": "combined-v34-frozen-pilot",
+        "predicted_direction": "A",
+        "exact_price_equality": false,
+        "predicted_meaningfulness": "meaningful_difference",
+        "margin": 4.125306356422501,
+        "premium_reference_direction": "A",
+        "premium_reference_margin": 2.9231338461544594,
+        "head_conflict": false,
+        "prediction_source": "model_only",
+        "units": "preference scores, not money"
+      },
+      "v28": {
+        "predicted_direction": "A",
+        "predicted_meaningfulness": "meaningful_difference",
+        "margin": 2.9231338461544594,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      }
+    },
+    {
+      "id": "combined-pilot-v34-6",
+      "combined": {
+        "model": "combined-v34-frozen-pilot",
+        "predicted_direction": "A",
+        "exact_price_equality": false,
+        "predicted_meaningfulness": "meaningful_difference",
+        "margin": 1.1299687267332725,
+        "premium_reference_direction": "A",
+        "premium_reference_margin": 1.0769361538468083,
+        "head_conflict": false,
+        "prediction_source": "model_only",
+        "units": "preference scores, not money"
+      },
+      "v28": {
+        "predicted_direction": "A",
+        "predicted_meaningfulness": "meaningful_difference",
+        "margin": 1.0769361538468083,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      }
+    },
+    {
+      "id": "combined-pilot-v34-7",
+      "combined": {
+        "model": "combined-v34-frozen-pilot",
+        "predicted_direction": "B",
+        "exact_price_equality": false,
+        "predicted_meaningfulness": "meaningful_difference",
+        "margin": -8.085940465913087,
+        "premium_reference_direction": "B",
+        "premium_reference_margin": -5.07710615005303,
+        "head_conflict": false,
+        "prediction_source": "model_only",
+        "units": "preference scores, not money"
+      },
+      "v28": {
+        "predicted_direction": "B",
+        "predicted_meaningfulness": "meaningful_difference",
+        "margin": -5.07710615005303,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      }
+    },
+    {
+      "id": "combined-pilot-v34-8",
+      "combined": {
+        "model": "combined-v34-frozen-pilot",
+        "predicted_direction": "A",
+        "exact_price_equality": false,
+        "predicted_meaningfulness": "no_meaningful_difference",
+        "margin": 0.7623682285870296,
+        "premium_reference_direction": "A",
+        "premium_reference_margin": 0.5384930769234713,
+        "head_conflict": false,
+        "prediction_source": "model_only",
+        "units": "preference scores, not money"
+      },
+      "v28": {
+        "predicted_direction": "A",
+        "predicted_meaningfulness": "no_meaningful_difference",
+        "margin": 0.5384930769234713,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      }
+    },
+    {
+      "id": "combined-pilot-v34-9",
+      "combined": {
+        "model": "combined-v34-frozen-pilot",
+        "predicted_direction": "A",
+        "exact_price_equality": false,
+        "predicted_meaningfulness": "no_meaningful_difference",
+        "margin": 0.8300401021008597,
+        "premium_reference_direction": "A",
+        "premium_reference_margin": 0.3077646153852067,
+        "head_conflict": false,
+        "prediction_source": "model_only",
+        "units": "preference scores, not money"
+      },
+      "v28": {
+        "predicted_direction": "A",
+        "predicted_meaningfulness": "no_meaningful_difference",
+        "margin": 0.3077646153852067,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      }
+    },
+    {
+      "id": "combined-pilot-v34-10",
+      "combined": {
+        "model": "combined-v34-frozen-pilot",
+        "predicted_direction": "A",
+        "exact_price_equality": false,
+        "predicted_meaningfulness": "no_meaningful_difference",
+        "margin": 0.07326355333484852,
+        "premium_reference_direction": "B",
+        "premium_reference_margin": -0.4614669230765292,
+        "head_conflict": false,
+        "prediction_source": "model_only",
+        "units": "preference scores, not money"
+      },
+      "v28": {
+        "predicted_direction": "B",
+        "predicted_meaningfulness": "no_meaningful_difference",
+        "margin": -0.4614669230765292,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      }
+    },
+    {
+      "id": "combined-pilot-v34-11",
+      "combined": {
+        "model": "combined-v34-frozen-pilot",
+        "predicted_direction": "A",
+        "exact_price_equality": false,
+        "predicted_meaningfulness": "meaningful_difference",
+        "margin": 2.2475805486873335,
+        "premium_reference_direction": "A",
+        "premium_reference_margin": 1.8461476923075169,
+        "head_conflict": false,
+        "prediction_source": "model_only",
+        "units": "preference scores, not money"
+      },
+      "v28": {
+        "predicted_direction": "A",
+        "predicted_meaningfulness": "meaningful_difference",
+        "margin": 1.8461476923075169,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      }
+    },
+    {
+      "id": "combined-pilot-v34-12",
+      "combined": {
+        "model": "combined-v34-frozen-pilot",
+        "predicted_direction": "B",
+        "exact_price_equality": false,
+        "predicted_meaningfulness": "meaningful_difference",
+        "margin": -2.843013057826329,
+        "premium_reference_direction": "B",
+        "premium_reference_margin": -1.7692215384624492,
+        "head_conflict": false,
+        "prediction_source": "model_only",
+        "units": "preference scores, not money"
+      },
+      "v28": {
+        "predicted_direction": "B",
+        "predicted_meaningfulness": "meaningful_difference",
+        "margin": -1.7692215384624492,
+        "decision_radius": 1.0,
+        "exact_price_equality": null,
+        "prediction_source": "model_only",
+        "units": "pair-comparison score, not a standalone price",
+        "model": "v28_tare_compensation"
+      }
+    }
+  ]
+}

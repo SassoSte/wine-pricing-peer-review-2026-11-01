@@ -1,0 +1,82 @@
+{
+  "round": 54,
+  "status": "complete",
+  "original_anchor_count": 10,
+  "resolved_anchors": [
+    {
+      "source_id": "round27-11",
+      "clarification_id": "round54-2",
+      "direction": "B",
+      "meaningfulness": "no_meaningful_difference"
+    },
+    {
+      "source_id": "round42-3",
+      "clarification_id": "round54-4",
+      "direction": "B",
+      "meaningfulness": "no_meaningful_difference"
+    },
+    {
+      "source_id": "round42-10",
+      "clarification_id": "round54-6",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference"
+    },
+    {
+      "source_id": "round42-12",
+      "clarification_id": "round54-8",
+      "direction": "B",
+      "meaningfulness": "no_meaningful_difference"
+    },
+    {
+      "source_id": "round45-12",
+      "clarification_id": "round54-10",
+      "direction": "B",
+      "meaningfulness": "no_meaningful_difference"
+    },
+    {
+      "source_id": "round47-1",
+      "clarification_id": "round54-12",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference"
+    },
+    {
+      "source_id": "round47-12",
+      "clarification_id": "round54-14",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference"
+    },
+    {
+      "source_id": "round47-18",
+      "clarification_id": "round54-16",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference"
+    },
+    {
+      "source_id": "round49-9",
+      "clarification_id": "round54-19",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference"
+    },
+    {
+      "source_id": "round49-10",
+      "clarification_id": "round54-21",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference"
+    }
+  ],
+  "remaining_unresolved_probes": [],
+  "total_judgments": 21,
+  "pending_reconciliation": true,
+  "prediction_rechecks": 42,
+  "evidence_unchanged": "evidence-v27.json",
+  "note": "Reconcile original source IDs and any repeated probes by unordered pair; preserve history and avoid duplicate weighting. All original resolutions are small positive premiums, not equality.",
+  "direction_resolved_size_unspecified": [
+    {
+      "id": "round54-17",
+      "direction": "A",
+      "strength": "slightly",
+      "meaningfulness": null
+    }
+  ],
+  "post_completion_clarification": "User resolved last probe direction A/slightly; prior too-close answer preserved in history."
+}

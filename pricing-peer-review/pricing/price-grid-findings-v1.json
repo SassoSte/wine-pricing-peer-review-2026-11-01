@@ -1,0 +1,30 @@
+{
+  "status": "complete_stress_test_not_price_model",
+  "offering_count": 1250,
+  "region_count": 10,
+  "regions_with_user_anchors": 4,
+  "regions_without_user_anchors": 6,
+  "diagnostics": {
+    "invalid_linear_count": 15,
+    "unanchored_region_offerings": 750,
+    "mapping_divergence_over25pct": 529,
+    "path_sensitive_count": 190,
+    "max_path_difference": 139.99766000225577,
+    "within_region_rank_reversals_over1usd": 580,
+    "single_attribute_monotonicity_violations": 50
+  },
+  "substantial_pair_ranking_reversals": 540,
+  "verified_spreadsheet": {
+    "formulas": 7594,
+    "errors": [],
+    "all1250linear_and_log_prices_match_python": true,
+    "recalculation": "Headless LibreOffice conversion succeeded after macro-based recalc timedout. Cached formulas independently checked."
+  },
+  "recommendation": "Focus first on price-path/ordering consistency: use a coherent per-offering pricing representation rather than converting arbitraryV28pair scores to dollar adjustments. Then address low-endcurvature using realanchors; obtain missingregionanchors. Do not floor negativeprices arbitrarily orcall logscenario validated. No V28weightschanged.",
+  "artifacts": [
+    "pricing/all-region-price-grid-v1.xlsx",
+    "pricing/all-region-price-grid-v1.csv",
+    "pricing/all-region-price-grid-v1.json"
+  ],
+  "range_qualification": "Ranges are assumed-map sensitivity or withinregion modeledbounds,notmarket/confidenceintervals. Unanchoredregion estimates provisional. Regular-batch discount not extrapolated."
+}

@@ -1,0 +1,11 @@
+{
+  "evidence": "evidence-v16.json",
+  "targets": "benchmark-targets-v16.json",
+  "feature_fix": "Three independently learned terms: Northwest x amber indicator; domestic x centered younger-age score(30-age)/10; West Central Asia x golden-or-pale indicator.21 coefficients total, no pair lookups, no per-question effects, no tare interactions.",
+  "rationale": "NW amber term separates shade reversals in conflict sets1 and2. Shared domestic age slope separates age reversal in set1 and domestic/foreign shade-age tradeoff in set4. WCA light-shade step separates set3. Each term is necessary within this declared pool; not a claim of global mathematical minimum over arbitrarily engineered functions.",
+  "controls": "Same v16 blended loss, partial labels, regularization grid, threshold calibration, selection rule, outer/inner family splits and monotonicity. Compare against selected v16_blended recipe, not v15. Existing baselines unchanged.",
+  "validation": "5 outer family folds x5 seeds, inner3 folds only for regularization/threshold choice. Reproduce cached v16 margins exactly. Compare direction and binary meaningfulness independently, with proxy/direct subsets separated. No recorded-answer lookup.",
+  "selection": "Same v16 joint criterion: average direction accuracy and meaningfulness balanced accuracy; tie-break higher minimum, fewer reversals, stronger ridge, larger threshold. No new tuning choices.",
+  "delivery": "Use candidate only if held-out direction and balanced meaningfulness meet or exceed v16, at least one improves, sign reversals do not increase, false meaningful calls do not increase, and directly-supported materiality errors do not increase. Otherwise retain current v16 delivery; save candidate/results independently.",
+  "limits": "Terms were motivated by known conflict labels, so repeated-family validation is exploratory, not pristine feature-selection-independent validation.11 of15 conflict records lack verbatim text; no user-label changes or claims of subjective contradiction. Mathematical indistinguishability, not mere prediction error, motivated these terms. No questionnaire in this task."
+}

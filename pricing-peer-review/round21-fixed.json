@@ -1,0 +1,1399 @@
+{
+  "round": 21,
+  "status": "complete; Q11 review confirmed; scored without refitting",
+  "protocol": "20 preselected fresh varied comparisons; include 7 adjacent-tare probes, 5 wider-tare contrasts and 8 other trade-offs. Models, parameters, threshold, questions/order and predictions frozen until answered/unresolved. Predictions hidden. Exact equality distinct from uncertainty; unresolved unscored. Purposeful diagnostic sample, not random population accuracy.",
+  "response_options": [
+    "Price A higher than B",
+    "Price B higher than A",
+    "Give them exactly the same price",
+    "Leave this unresolved"
+  ],
+  "file_sha256": {
+    "compare_models.py": "da2067d3d2ef99849ce2e30be16208bff0145bc6b036111535542c2daf00fa5f",
+    "compare_tare_models.py": "6ee6623380260502ea3b7b17621261ce413ccea3f7fdf2af835bb50bf4c716d2",
+    "compare_exact_tare_ties.py": "e9b75183ff4f8ed094322022b7b9f0029f5c23aad6caf165012e30cb14f86a88",
+    "additive-comparison-v6.json": "6815589607be082593cec2d5fea668a97ba152519e10177198d010a7d30f62f9",
+    "exact-tare-comparison.json": "a7e81c2cc082801751d10c21d30508fca5b5b7cb7623623b6057ce3ff65f6933",
+    "evidence-v6.json": "bd4caa506b8774a1098302dc988ec1b5fbb2705f0fdb13d90a5f01082c6ce491"
+  },
+  "additive_v6_snapshot": {
+    "alpha": 0.1,
+    "pooling": 1.0,
+    "threshold": 0.2,
+    "inner_balanced_accuracy": 0.7815743284493285,
+    "feature_names": [
+      "origin:Western Europe vs Eastern Europe",
+      "origin:West Central Asia vs Eastern Europe",
+      "origin:South/Eastern Asia vs Eastern Europe",
+      "origin:West Asia / Middle East vs Eastern Europe",
+      "origin:central vs Eastern Europe",
+      "origin:northeast vs Eastern Europe",
+      "origin:northwest vs Eastern Europe",
+      "origin:southwest vs Eastern Europe",
+      "origin:southeast vs Eastern Europe",
+      "shade increment:copper",
+      "shade increment:amber",
+      "shade increment:golden",
+      "shade increment:pale/straw",
+      "age increment:35",
+      "age increment:30",
+      "age increment:25",
+      "age increment:20",
+      "lightness per 5 lb"
+    ],
+    "coefficients": [
+      0.6659434251906367,
+      -0.8416825947987195,
+      -0.8851841671826626,
+      -0.8128235661427271,
+      0.6503657815922146,
+      1.069139911053851,
+      0.4893199779771874,
+      1.0228243813121491,
+      1.0757951935063457,
+      1.9273402019914483,
+      0.0,
+      0.0,
+      0.9254160513582707,
+      1.1898580328462185,
+      1.4241227156338456,
+      1.3430282249606718,
+      1.4574733379931255,
+      0.5303479720619563
+    ],
+    "in_sample": {
+      "n": 281,
+      "matched": 227,
+      "accuracy": 0.8078291814946619,
+      "balanced_accuracy": 0.7974091880341879,
+      "recall": {
+        "B": 0.828125,
+        "tie": 0.6593406593406593,
+        "A": 0.9047619047619048
+      },
+      "confusion_actual_to_predicted": {
+        "B": {
+          "B": 53,
+          "tie": 10,
+          "A": 1
+        },
+        "tie": {
+          "B": 11,
+          "tie": 60,
+          "A": 20
+        },
+        "A": {
+          "B": 2,
+          "tie": 10,
+          "A": 114
+        }
+      },
+      "opposite_winner_errors": 3,
+      "predicted_ties": 80
+    },
+    "constraint_audit": {
+      "strict_rank_sign_violations": 11,
+      "ties_not_exactly_equal": 91
+    },
+    "target_predictions": [
+      {
+        "id": "round19-14",
+        "answer": "tie",
+        "answer_source": "round19-14",
+        "prediction": "A",
+        "margin": 0.47737715986775975
+      },
+      {
+        "id": "round19-15",
+        "answer": "tie",
+        "answer_source": "round19-15",
+        "prediction": "B",
+        "margin": -0.5147703284635342
+      },
+      {
+        "id": "round19-20",
+        "answer": "tie",
+        "answer_source": "round19-20",
+        "prediction": "B",
+        "margin": -0.48684639967801324
+      }
+    ]
+  },
+  "exact_tie_contextual_snapshot": {
+    "alpha": 0.1,
+    "pooling": 10.0,
+    "threshold": 0.2,
+    "inner_balanced_accuracy": 0.8009895197395197,
+    "feature_names": [
+      "origin:Western Europe vs Eastern Europe",
+      "origin:West Central Asia vs Eastern Europe",
+      "origin:South/Eastern Asia vs Eastern Europe",
+      "origin:West Asia / Middle East vs Eastern Europe",
+      "origin:central vs Eastern Europe",
+      "origin:northeast vs Eastern Europe",
+      "origin:northwest vs Eastern Europe",
+      "origin:southwest vs Eastern Europe",
+      "origin:southeast vs Eastern Europe",
+      "shade increment:copper",
+      "shade increment:amber",
+      "shade increment:golden",
+      "shade increment:pale/straw",
+      "age increment:35",
+      "age increment:30",
+      "age increment:25",
+      "age increment:20",
+      "tare step to 125 lb at brown/40 years",
+      "tare step to 120 lb at brown/40 years",
+      "tare step to 115 lb at brown/40 years",
+      "tare step to 110 lb at brown/40 years",
+      "tare step to 125 lb at brown/35 years",
+      "tare step to 120 lb at brown/35 years",
+      "tare step to 115 lb at brown/35 years",
+      "tare step to 110 lb at brown/35 years",
+      "tare step to 125 lb at brown/30 years",
+      "tare step to 120 lb at brown/30 years",
+      "tare step to 115 lb at brown/30 years",
+      "tare step to 110 lb at brown/30 years",
+      "tare step to 125 lb at brown/25 years",
+      "tare step to 120 lb at brown/25 years",
+      "tare step to 115 lb at brown/25 years",
+      "tare step to 110 lb at brown/25 years",
+      "tare step to 125 lb at brown/20 years",
+      "tare step to 120 lb at brown/20 years",
+      "tare step to 115 lb at brown/20 years",
+      "tare step to 110 lb at brown/20 years",
+      "tare step to 125 lb at copper/40 years",
+      "tare step to 120 lb at copper/40 years",
+      "tare step to 115 lb at copper/40 years",
+      "tare step to 110 lb at copper/40 years",
+      "tare step to 125 lb at copper/35 years",
+      "tare step to 120 lb at copper/35 years",
+      "tare step to 115 lb at copper/35 years",
+      "tare step to 110 lb at copper/35 years",
+      "tare step to 125 lb at copper/30 years",
+      "tare step to 120 lb at copper/30 years",
+      "tare step to 115 lb at copper/30 years",
+      "tare step to 110 lb at copper/30 years",
+      "tare step to 125 lb at copper/25 years",
+      "tare step to 120 lb at copper/25 years",
+      "tare step to 115 lb at copper/25 years",
+      "tare step to 110 lb at copper/25 years",
+      "tare step to 125 lb at copper/20 years",
+      "tare step to 120 lb at copper/20 years",
+      "tare step to 115 lb at copper/20 years",
+      "tare step to 110 lb at copper/20 years",
+      "tare step to 125 lb at amber/40 years",
+      "tare step to 120 lb at amber/40 years",
+      "tare step to 115 lb at amber/40 years",
+      "tare step to 110 lb at amber/40 years",
+      "tare step to 125 lb at amber/35 years",
+      "tare step to 120 lb at amber/35 years",
+      "tare step to 115 lb at amber/35 years",
+      "tare step to 110 lb at amber/35 years",
+      "tare step to 125 lb at amber/30 years",
+      "tare step to 120 lb at amber/30 years",
+      "tare step to 115 lb at amber/30 years",
+      "tare step to 110 lb at amber/30 years",
+      "tare step to 125 lb at amber/25 years",
+      "tare step to 120 lb at amber/25 years",
+      "tare step to 115 lb at amber/25 years",
+      "tare step to 110 lb at amber/25 years",
+      "tare step to 125 lb at amber/20 years",
+      "tare step to 120 lb at amber/20 years",
+      "tare step to 115 lb at amber/20 years",
+      "tare step to 110 lb at amber/20 years",
+      "tare step to 125 lb at golden/40 years",
+      "tare step to 120 lb at golden/40 years",
+      "tare step to 115 lb at golden/40 years",
+      "tare step to 110 lb at golden/40 years",
+      "tare step to 125 lb at golden/35 years",
+      "tare step to 120 lb at golden/35 years",
+      "tare step to 115 lb at golden/35 years",
+      "tare step to 110 lb at golden/35 years",
+      "tare step to 125 lb at golden/30 years",
+      "tare step to 120 lb at golden/30 years",
+      "tare step to 115 lb at golden/30 years",
+      "tare step to 110 lb at golden/30 years",
+      "tare step to 125 lb at golden/25 years",
+      "tare step to 120 lb at golden/25 years",
+      "tare step to 115 lb at golden/25 years",
+      "tare step to 110 lb at golden/25 years",
+      "tare step to 125 lb at golden/20 years",
+      "tare step to 120 lb at golden/20 years",
+      "tare step to 115 lb at golden/20 years",
+      "tare step to 110 lb at golden/20 years",
+      "tare step to 125 lb at pale/straw/40 years",
+      "tare step to 120 lb at pale/straw/40 years",
+      "tare step to 115 lb at pale/straw/40 years",
+      "tare step to 110 lb at pale/straw/40 years",
+      "tare step to 125 lb at pale/straw/35 years",
+      "tare step to 120 lb at pale/straw/35 years",
+      "tare step to 115 lb at pale/straw/35 years",
+      "tare step to 110 lb at pale/straw/35 years",
+      "tare step to 125 lb at pale/straw/30 years",
+      "tare step to 120 lb at pale/straw/30 years",
+      "tare step to 115 lb at pale/straw/30 years",
+      "tare step to 110 lb at pale/straw/30 years",
+      "tare step to 125 lb at pale/straw/25 years",
+      "tare step to 120 lb at pale/straw/25 years",
+      "tare step to 115 lb at pale/straw/25 years",
+      "tare step to 110 lb at pale/straw/25 years",
+      "tare step to 125 lb at pale/straw/20 years",
+      "tare step to 120 lb at pale/straw/20 years",
+      "tare step to 115 lb at pale/straw/20 years",
+      "tare step to 110 lb at pale/straw/20 years"
+    ],
+    "coefficients": [
+      0.6643980244317911,
+      -1.2608198703697269,
+      -1.2795985711811797,
+      -1.2531586807152937,
+      0.6219908370884509,
+      1.1314071421034935,
+      0.5107921227941145,
+      1.1174712988923239,
+      1.1003617993833874,
+      1.604354665668907,
+      0.5380205798982054,
+      0.24731559147372356,
+      0.9430235914297979,
+      1.0105058260009547,
+      1.2128643645031731,
+      1.7903307518884999,
+      1.6794108577347273,
+      1.005226830966651,
+      0.7156544789621949,
+      0.0,
+      1.0918272617413518,
+      1.0805977483134963,
+      0.5307849798872152,
+      0.45333205432094453,
+      0.7052841900416383,
+      1.1042255845766642,
+      0.0,
+      0.5518438835198329,
+      0.7052882160603802,
+      1.0888763102986765,
+      4.456589595625762e-15,
+      1.3821301858933597,
+      0.7041861945968247,
+      1.272158902943396,
+      0.3359002361261988,
+      0.7197809582632961,
+      0.705283787472715,
+      1.0940674343047776,
+      0.5922733195073,
+      0.5416878052673474,
+      0.7052830606785389,
+      1.3377459136819458,
+      0.8747001178575391,
+      0.5250204275006226,
+      0.7052841887094642,
+      1.3677230195989276,
+      0.7435292697124383,
+      0.502174494655695,
+      0.6715917475805064,
+      1.1777139744607077,
+      0.6086355955419639,
+      0.5518412593975272,
+      0.7052846653018858,
+      1.1428905072153734,
+      0.7750914082249329,
+      0.551841149519168,
+      0.705284160075328,
+      0.9045747536946458,
+      0.4947523754173495,
+      0.6854863549126627,
+      0.7052841288014667,
+      0.9222502165044844,
+      0.7521752351368179,
+      0.5250204275006196,
+      0.7980637857986875,
+      1.1253034393706012,
+      0.46475387243522326,
+      0.5045835535054767,
+      0.6523570863380762,
+      0.7780468256029642,
+      0.49694756522618105,
+      0.6228994522214784,
+      0.9424928203833592,
+      1.3799613355421307,
+      0.0,
+      0.691989924479028,
+      0.7052839495651955,
+      1.4830497364336968,
+      0.9545659497349006,
+      0.0,
+      0.7052845297671364,
+      1.4271098601676735,
+      0.0,
+      0.525020427500626,
+      0.798063785798695,
+      0.8779878478969149,
+      0.7103063844223625,
+      0.6105769393145422,
+      0.7052836268209004,
+      0.5307312341292799,
+      0.5987037414866958,
+      0.886436900685873,
+      0.7052824815449706,
+      1.1326457440684397,
+      0.5973484642941993,
+      0.551840262982122,
+      0.7052839713273323,
+      0.9331313994197166,
+      0.7977531701938407,
+      0.05558457588932771,
+      0.7052838343320073,
+      0.7331606774047492,
+      0.5465471014691254,
+      0.2890241275939676,
+      0.7052832967192475,
+      1.3082442102666914,
+      0.8895314269719914,
+      0.9651299173645185,
+      0.0,
+      1.3502374857342772,
+      0.776318784442062,
+      0.5518409259714543,
+      0.7052840591020554,
+      1.1042199793993364,
+      0.0,
+      0.5518409409510359,
+      0.7052840636525178
+    ],
+    "fixed_step_indices": [
+      19,
+      26,
+      74,
+      79,
+      82,
+      108,
+      114
+    ],
+    "in_sample": {
+      "n": 281,
+      "matched": 250,
+      "accuracy": 0.8896797153024911,
+      "balanced_accuracy": 0.8863324175824175,
+      "recall": {
+        "B": 0.90625,
+        "tie": 0.8241758241758241,
+        "A": 0.9285714285714286
+      },
+      "confusion_actual_to_predicted": {
+        "B": {
+          "B": 58,
+          "tie": 6,
+          "A": 0
+        },
+        "tie": {
+          "B": 7,
+          "tie": 75,
+          "A": 9
+        },
+        "A": {
+          "B": 1,
+          "tie": 8,
+          "A": 117
+        }
+      },
+      "opposite_winner_errors": 1,
+      "predicted_ties": 89
+    },
+    "diagnostics": [
+      {
+        "id": "r1-4",
+        "answer": "A",
+        "prediction": "A",
+        "margin": 1.1569406398435529,
+        "exact_score_equality": false
+      },
+      {
+        "id": "round11-3",
+        "answer": "A",
+        "prediction": "A",
+        "margin": 1.3821301858933641,
+        "exact_score_equality": false
+      },
+      {
+        "id": "round11-6",
+        "answer": "A",
+        "prediction": "A",
+        "margin": 1.3281597104135163,
+        "exact_score_equality": false
+      },
+      {
+        "id": "round11-7",
+        "answer": "A",
+        "prediction": "A",
+        "margin": 0.835571229063093,
+        "exact_score_equality": false
+      },
+      {
+        "id": "round11-8",
+        "answer": "A",
+        "prediction": "A",
+        "margin": 0.9841170342081598,
+        "exact_score_equality": false
+      },
+      {
+        "id": "round14-2",
+        "answer": "B",
+        "prediction": "B",
+        "margin": -0.8747001178575391,
+        "exact_score_equality": false
+      },
+      {
+        "id": "round14-5",
+        "answer": "A",
+        "prediction": "A",
+        "margin": 0.4947523754173495,
+        "exact_score_equality": false
+      },
+      {
+        "id": "round16-2",
+        "answer": "tie",
+        "prediction": "tie",
+        "margin": 0.0,
+        "exact_score_equality": true
+      },
+      {
+        "id": "round16-3",
+        "answer": "A",
+        "prediction": "A",
+        "margin": 1.720881309928846,
+        "exact_score_equality": false
+      },
+      {
+        "id": "round16-4",
+        "answer": "A",
+        "prediction": "A",
+        "margin": 0.7156544789621949,
+        "exact_score_equality": false
+      },
+      {
+        "id": "round16-6",
+        "answer": "tie",
+        "prediction": "tie",
+        "margin": 0.0,
+        "exact_score_equality": true
+      },
+      {
+        "id": "round16-7",
+        "answer": "A",
+        "prediction": "A",
+        "margin": 3.162905554603201,
+        "exact_score_equality": false
+      },
+      {
+        "id": "round16-8",
+        "answer": "A",
+        "prediction": "A",
+        "margin": 0.9651299173645185,
+        "exact_score_equality": false
+      },
+      {
+        "id": "round18-2",
+        "answer": "A",
+        "prediction": "A",
+        "margin": 0.691989924479028,
+        "exact_score_equality": false
+      },
+      {
+        "id": "round18-5",
+        "answer": "tie",
+        "prediction": "tie",
+        "margin": 0.0,
+        "exact_score_equality": true
+      },
+      {
+        "id": "round18-6",
+        "answer": "A",
+        "prediction": "A",
+        "margin": 1.1042255845766642,
+        "exact_score_equality": false
+      },
+      {
+        "id": "round18-8",
+        "answer": "tie",
+        "prediction": "tie",
+        "margin": 0.0,
+        "exact_score_equality": true
+      },
+      {
+        "id": "round18-9",
+        "answer": "A",
+        "prediction": "A",
+        "margin": 1.4271098601676735,
+        "exact_score_equality": false
+      },
+      {
+        "id": "round19-14",
+        "answer": "tie",
+        "prediction": "tie",
+        "margin": 0.017109499508936477,
+        "exact_score_equality": false
+      },
+      {
+        "id": "round19-15",
+        "answer": "tie",
+        "prediction": "tie",
+        "margin": 0.04240718734334015,
+        "exact_score_equality": false
+      },
+      {
+        "id": "round19-20",
+        "answer": "tie",
+        "prediction": "tie",
+        "margin": 0.01877870081145283,
+        "exact_score_equality": false
+      },
+      {
+        "id": "round20-2",
+        "answer": "tie",
+        "prediction": "tie",
+        "margin": 0.0,
+        "exact_score_equality": true
+      },
+      {
+        "id": "round20-3",
+        "answer": "A",
+        "prediction": "A",
+        "margin": 1.1042199793993364,
+        "exact_score_equality": false
+      },
+      {
+        "id": "round20-5",
+        "answer": "tie",
+        "prediction": "tie",
+        "margin": 0.0,
+        "exact_score_equality": true
+      },
+      {
+        "id": "round20-6",
+        "answer": "A",
+        "prediction": "A",
+        "margin": 0.9545659497349006,
+        "exact_score_equality": false
+      },
+      {
+        "id": "round20-8",
+        "answer": "tie",
+        "prediction": "tie",
+        "margin": 0.0,
+        "exact_score_equality": true
+      },
+      {
+        "id": "round20-9",
+        "answer": "A",
+        "prediction": "A",
+        "margin": 1.3799613355421307,
+        "exact_score_equality": false
+      }
+    ]
+  },
+  "questions_and_predictions_sha256": "f53d9341070edb74637b3caf2f51800121641c5740f82d684a373fa71c3fdd3f",
+  "questions": [
+    {
+      "id": "round21-1",
+      "a": [
+        "central",
+        "brown",
+        40,
+        115
+      ],
+      "b": [
+        "central",
+        "brown",
+        40,
+        120
+      ],
+      "category": "local_tare",
+      "predictions_before_answer": {
+        "additive_v6": "A",
+        "exact_tie_contextual": "tie"
+      },
+      "margins": {
+        "additive_v6": 0.5303479720619563,
+        "exact_tie_contextual": 0.0
+      },
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "3. Give them exactly the same price."
+    },
+    {
+      "id": "round21-2",
+      "a": [
+        "Western Europe",
+        "golden",
+        40,
+        115
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        40,
+        125
+      ],
+      "category": "wider_tare",
+      "predictions_before_answer": {
+        "additive_v6": "A",
+        "exact_tie_contextual": "A"
+      },
+      "margins": {
+        "additive_v6": 1.0606959441239125,
+        "exact_tie_contextual": 0.9545659497349006
+      },
+      "winner": "A",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "1. Price A higher than B."
+    },
+    {
+      "id": "round21-3",
+      "a": [
+        "southeast",
+        "copper",
+        30,
+        125
+      ],
+      "b": [
+        "southwest",
+        "copper",
+        30,
+        120
+      ],
+      "category": "provenance_tare",
+      "predictions_before_answer": {
+        "additive_v6": "B",
+        "exact_tie_contextual": "B"
+      },
+      "margins": {
+        "additive_v6": -0.47737715986775986,
+        "exact_tie_contextual": -0.7606387692213747
+      },
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "3. Give them exactly the same price."
+    },
+    {
+      "id": "round21-4",
+      "a": [
+        "Eastern Europe",
+        "amber",
+        20,
+        120
+      ],
+      "b": [
+        "Eastern Europe",
+        "amber",
+        20,
+        125
+      ],
+      "category": "local_tare",
+      "predictions_before_answer": {
+        "additive_v6": "A",
+        "exact_tie_contextual": "tie"
+      },
+      "margins": {
+        "additive_v6": 0.5303479720619563,
+        "exact_tie_contextual": 0.0
+      },
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "3. Give them exactly the same price."
+    },
+    {
+      "id": "round21-5",
+      "a": [
+        "northeast",
+        "pale/straw",
+        30,
+        110
+      ],
+      "b": [
+        "northeast",
+        "pale/straw",
+        30,
+        120
+      ],
+      "category": "wider_tare",
+      "predictions_before_answer": {
+        "additive_v6": "A",
+        "exact_tie_contextual": "A"
+      },
+      "margins": {
+        "additive_v6": 1.0606959441239125,
+        "exact_tie_contextual": 0.9651299173645185
+      },
+      "winner": "A",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "1. Price A higher than B."
+    },
+    {
+      "id": "round21-6",
+      "a": [
+        "West Central Asia",
+        "golden",
+        25,
+        115
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "golden",
+        25,
+        115
+      ],
+      "category": "provenance",
+      "predictions_before_answer": {
+        "additive_v6": "tie",
+        "exact_tie_contextual": "tie"
+      },
+      "margins": {
+        "additive_v6": 0.04350157238394303,
+        "exact_tie_contextual": 0.01877870081145283
+      },
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "3. Give them exactly the same price."
+    },
+    {
+      "id": "round21-7",
+      "a": [
+        "West Asia / Middle East",
+        "golden",
+        35,
+        120
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "golden",
+        35,
+        125
+      ],
+      "category": "local_tare",
+      "predictions_before_answer": {
+        "additive_v6": "A",
+        "exact_tie_contextual": "tie"
+      },
+      "margins": {
+        "additive_v6": 0.5303479720619563,
+        "exact_tie_contextual": 0.0
+      },
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "3. Give them exactly the same price."
+    },
+    {
+      "id": "round21-8",
+      "a": [
+        "central",
+        "golden",
+        25,
+        120
+      ],
+      "b": [
+        "central",
+        "pale/straw",
+        30,
+        120
+      ],
+      "category": "shade_vintage",
+      "predictions_before_answer": {
+        "additive_v6": "A",
+        "exact_tie_contextual": "B"
+      },
+      "margins": {
+        "additive_v6": 0.4176121736024011,
+        "exact_tie_contextual": -0.22103350116400522
+      },
+      "winner": "A",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "1. Price A higher than B."
+    },
+    {
+      "id": "round21-9",
+      "a": [
+        "northwest",
+        "brown",
+        40,
+        115
+      ],
+      "b": [
+        "northwest",
+        "brown",
+        40,
+        120
+      ],
+      "category": "local_tare",
+      "predictions_before_answer": {
+        "additive_v6": "A",
+        "exact_tie_contextual": "tie"
+      },
+      "margins": {
+        "additive_v6": 0.5303479720619563,
+        "exact_tie_contextual": 0.0
+      },
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "3. Give them exactly the same price."
+    },
+    {
+      "id": "round21-10",
+      "a": [
+        "Eastern Europe",
+        "pale/straw",
+        20,
+        120
+      ],
+      "b": [
+        "Eastern Europe",
+        "pale/straw",
+        20,
+        130
+      ],
+      "category": "wider_tare",
+      "predictions_before_answer": {
+        "additive_v6": "A",
+        "exact_tie_contextual": "A"
+      },
+      "margins": {
+        "additive_v6": 1.0606959441239125,
+        "exact_tie_contextual": 1.1042199793993364
+      },
+      "winner": "A",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "1. Price A higher than B."
+    },
+    {
+      "id": "round21-11",
+      "a": [
+        "southwest",
+        "amber",
+        30,
+        125
+      ],
+      "b": [
+        "northeast",
+        "amber",
+        30,
+        120
+      ],
+      "category": "provenance_tare",
+      "predictions_before_answer": {
+        "additive_v6": "B",
+        "exact_tie_contextual": "B"
+      },
+      "margins": {
+        "additive_v6": -0.5766635018036583,
+        "exact_tie_contextual": -0.47868971564639284
+      },
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "3. Give them exactly the same price.",
+      "revisit_requested": true,
+      "answer_history": [
+        {
+          "winner": "tie",
+          "raw_answer": "3. Give them exactly the same price.",
+          "event": "initial answer; later explicitly confirmed"
+        }
+      ],
+      "review_confirmed": true
+    },
+    {
+      "id": "round21-12",
+      "a": [
+        "Western Europe",
+        "copper",
+        35,
+        120
+      ],
+      "b": [
+        "Western Europe",
+        "copper",
+        35,
+        125
+      ],
+      "category": "local_tare",
+      "predictions_before_answer": {
+        "additive_v6": "A",
+        "exact_tie_contextual": "A"
+      },
+      "margins": {
+        "additive_v6": 0.5303479720619563,
+        "exact_tie_contextual": 0.8747001178575391
+      },
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "Let's come back to question 11 once we're done; as for question 12, it's a tie."
+    },
+    {
+      "id": "round21-13",
+      "a": [
+        "southeast",
+        "pale/straw",
+        30,
+        120
+      ],
+      "b": [
+        "southeast",
+        "pale/straw",
+        35,
+        115
+      ],
+      "category": "vintage_tare",
+      "predictions_before_answer": {
+        "additive_v6": "A",
+        "exact_tie_contextual": "A"
+      },
+      "margins": {
+        "additive_v6": 0.8937747435718894,
+        "exact_tie_contextual": 1.8419080952740137
+      },
+      "winner": "A",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "1. Price A higher than B."
+    },
+    {
+      "id": "round21-14",
+      "a": [
+        "South/Eastern Asia",
+        "brown",
+        30,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "brown",
+        30,
+        130
+      ],
+      "category": "wider_tare",
+      "predictions_before_answer": {
+        "additive_v6": "A",
+        "exact_tie_contextual": "A"
+      },
+      "margins": {
+        "additive_v6": 1.0606959441239125,
+        "exact_tie_contextual": 1.1042255845766642
+      },
+      "winner": "A",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "1. Price A higher than B."
+    },
+    {
+      "id": "round21-15",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        20,
+        120
+      ],
+      "b": [
+        "West Central Asia",
+        "pale/straw",
+        20,
+        125
+      ],
+      "category": "local_tare",
+      "predictions_before_answer": {
+        "additive_v6": "A",
+        "exact_tie_contextual": "tie"
+      },
+      "margins": {
+        "additive_v6": 0.5303479720619563,
+        "exact_tie_contextual": 0.0
+      },
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "3. Give them exactly the same price."
+    },
+    {
+      "id": "round21-16",
+      "a": [
+        "central",
+        "amber",
+        35,
+        120
+      ],
+      "b": [
+        "northwest",
+        "amber",
+        35,
+        120
+      ],
+      "category": "provenance",
+      "predictions_before_answer": {
+        "additive_v6": "tie",
+        "exact_tie_contextual": "tie"
+      },
+      "margins": {
+        "additive_v6": 0.16104580361502718,
+        "exact_tie_contextual": 0.11119871429433648
+      },
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "3. Give them exactly the same price."
+    },
+    {
+      "id": "round21-17",
+      "a": [
+        "southwest",
+        "golden",
+        40,
+        115
+      ],
+      "b": [
+        "southwest",
+        "golden",
+        40,
+        120
+      ],
+      "category": "local_tare",
+      "predictions_before_answer": {
+        "additive_v6": "A",
+        "exact_tie_contextual": "tie"
+      },
+      "margins": {
+        "additive_v6": 0.5303479720619563,
+        "exact_tie_contextual": 0.0
+      },
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "3. Give them exactly the same price."
+    },
+    {
+      "id": "round21-18",
+      "a": [
+        "West Asia / Middle East",
+        "copper",
+        25,
+        120
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "copper",
+        30,
+        115
+      ],
+      "category": "vintage_tare",
+      "predictions_before_answer": {
+        "additive_v6": "A",
+        "exact_tie_contextual": "A"
+      },
+      "margins": {
+        "additive_v6": 0.8126802528987155,
+        "exact_tie_contextual": 0.9632535379241106
+      },
+      "winner": "A",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "1. Price A higher than B."
+    },
+    {
+      "id": "round21-19",
+      "a": [
+        "northeast",
+        "brown",
+        40,
+        115
+      ],
+      "b": [
+        "northeast",
+        "brown",
+        40,
+        130
+      ],
+      "category": "wider_tare",
+      "predictions_before_answer": {
+        "additive_v6": "A",
+        "exact_tie_contextual": "A"
+      },
+      "margins": {
+        "additive_v6": 1.591043916185869,
+        "exact_tie_contextual": 1.720881309928846
+      },
+      "winner": "A",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "1. Price A higher than B."
+    },
+    {
+      "id": "round21-20",
+      "a": [
+        "northwest",
+        "copper",
+        30,
+        125
+      ],
+      "b": [
+        "Western Europe",
+        "copper",
+        30,
+        125
+      ],
+      "category": "provenance",
+      "predictions_before_answer": {
+        "additive_v6": "tie",
+        "exact_tie_contextual": "tie"
+      },
+      "margins": {
+        "additive_v6": -0.17662344721344925,
+        "exact_tie_contextual": -0.15360590163767662
+      },
+      "winner": "tie",
+      "strength": null,
+      "status": "answered",
+      "raw_answer": "3. Give them exactly the same price."
+    }
+  ],
+  "post_round_review": [
+    {
+      "question_id": "round21-11",
+      "status": "complete",
+      "instruction": "User requested returning to Q11 after completing Q20. Preserve current tie until explicitly confirmed/changed; complete review before final scoring.",
+      "outcome": "exact tie confirmed; no answer change"
+    }
+  ],
+  "scores": {
+    "additive_v6": {
+      "all": {
+        "n": 20,
+        "matched": 11,
+        "confusion_actual_to_predicted": {
+          "A": {
+            "A": 8,
+            "B": 0,
+            "tie": 0
+          },
+          "B": {
+            "A": 0,
+            "B": 0,
+            "tie": 0
+          },
+          "tie": {
+            "A": 7,
+            "B": 2,
+            "tie": 3
+          }
+        },
+        "opposite_winner_errors": 0,
+        "missed_questions": [
+          1,
+          3,
+          4,
+          7,
+          9,
+          11,
+          12,
+          15,
+          17
+        ]
+      },
+      "local_tare": {
+        "n": 7,
+        "matched": 0,
+        "confusion_actual_to_predicted": {
+          "A": {
+            "A": 0,
+            "B": 0,
+            "tie": 0
+          },
+          "B": {
+            "A": 0,
+            "B": 0,
+            "tie": 0
+          },
+          "tie": {
+            "A": 7,
+            "B": 0,
+            "tie": 0
+          }
+        },
+        "opposite_winner_errors": 0,
+        "missed_questions": [
+          1,
+          4,
+          7,
+          9,
+          12,
+          15,
+          17
+        ]
+      },
+      "wider_tare": {
+        "n": 5,
+        "matched": 5,
+        "confusion_actual_to_predicted": {
+          "A": {
+            "A": 5,
+            "B": 0,
+            "tie": 0
+          },
+          "B": {
+            "A": 0,
+            "B": 0,
+            "tie": 0
+          },
+          "tie": {
+            "A": 0,
+            "B": 0,
+            "tie": 0
+          }
+        },
+        "opposite_winner_errors": 0,
+        "missed_questions": []
+      },
+      "other_tradeoffs": {
+        "n": 8,
+        "matched": 6,
+        "confusion_actual_to_predicted": {
+          "A": {
+            "A": 3,
+            "B": 0,
+            "tie": 0
+          },
+          "B": {
+            "A": 0,
+            "B": 0,
+            "tie": 0
+          },
+          "tie": {
+            "A": 0,
+            "B": 2,
+            "tie": 3
+          }
+        },
+        "opposite_winner_errors": 0,
+        "missed_questions": [
+          3,
+          11
+        ]
+      }
+    },
+    "exact_tie_contextual": {
+      "all": {
+        "n": 20,
+        "matched": 16,
+        "confusion_actual_to_predicted": {
+          "A": {
+            "A": 7,
+            "B": 1,
+            "tie": 0
+          },
+          "B": {
+            "A": 0,
+            "B": 0,
+            "tie": 0
+          },
+          "tie": {
+            "A": 1,
+            "B": 2,
+            "tie": 9
+          }
+        },
+        "opposite_winner_errors": 1,
+        "missed_questions": [
+          3,
+          8,
+          11,
+          12
+        ]
+      },
+      "local_tare": {
+        "n": 7,
+        "matched": 6,
+        "confusion_actual_to_predicted": {
+          "A": {
+            "A": 0,
+            "B": 0,
+            "tie": 0
+          },
+          "B": {
+            "A": 0,
+            "B": 0,
+            "tie": 0
+          },
+          "tie": {
+            "A": 1,
+            "B": 0,
+            "tie": 6
+          }
+        },
+        "opposite_winner_errors": 0,
+        "missed_questions": [
+          12
+        ]
+      },
+      "wider_tare": {
+        "n": 5,
+        "matched": 5,
+        "confusion_actual_to_predicted": {
+          "A": {
+            "A": 5,
+            "B": 0,
+            "tie": 0
+          },
+          "B": {
+            "A": 0,
+            "B": 0,
+            "tie": 0
+          },
+          "tie": {
+            "A": 0,
+            "B": 0,
+            "tie": 0
+          }
+        },
+        "opposite_winner_errors": 0,
+        "missed_questions": []
+      },
+      "other_tradeoffs": {
+        "n": 8,
+        "matched": 5,
+        "confusion_actual_to_predicted": {
+          "A": {
+            "A": 2,
+            "B": 1,
+            "tie": 0
+          },
+          "B": {
+            "A": 0,
+            "B": 0,
+            "tie": 0
+          },
+          "tie": {
+            "A": 0,
+            "B": 2,
+            "tie": 3
+          }
+        },
+        "opposite_winner_errors": 1,
+        "missed_questions": [
+          3,
+          8,
+          11
+        ]
+      }
+    }
+  },
+  "scoring_notes": "20 answered, no unresolved exclusions. Q11 explicitly reconfirmed before scoring and counted once. Models, question sequence, and pre-answer predictions verified unchanged. Report planned subgroups separately. Purposeful diagnostic sample, not random population accuracy. Classifier ties do not imply exact underlying score equality."
+}

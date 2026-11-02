@@ -1,0 +1,122 @@
+{
+  "round": 53,
+  "created_at": "2026-10-28T02:44:12.230038+00:00",
+  "status": "complete",
+  "protocol": "Explanation-led isolation of Round51 Q13. Source answer reaffirmed A/moderate; one-factor check removes pale advantage to distinguish tare-led effect from shade interaction. Models fixed, answers/rationale preserved; repeated original is not new prospective evidence or duplicate training row.",
+  "file_sha256": {
+    "round51-fixed.json": "127df9af1fd6c265a5f1b2756ceaae99b086a92c75300a0383e5f50a1666001f",
+    "predictor_v27.py": "293307f98d4c2434bfbbea8a73341a3522601604535647f3a7a6b0103b23f2ed",
+    "model-config-v27.json": "38acf873fe5c333b8364cb677b438067b1a8f1cece7883ea39bb2008625d6ee6",
+    "predictor.py": "03d6d4f3d8fe47f31eb047832e578c4179fa545b85251f67362bc7d76f350166",
+    "model-config.json": "a3bb8c74df3a5cef51ab71dee54a35113b2df8146a7fbdc76054cd5b0bd48e4c"
+  },
+  "questions": [
+    {
+      "id": "round53-1",
+      "number": 1,
+      "revisits": "round51-13",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        30,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "golden",
+        25,
+        130
+      ],
+      "predictions": {
+        "tare_compensation": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.9991100000000221,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v27_tare_compensation"
+        },
+        "v26": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.05900777767894236,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        }
+      },
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "meaningful_difference",
+      "strength": "moderately",
+      "raw_answer": "The 15 lb tare advantage is the main driver. Pale adds a little more, and B\u2019s five-year younger vintage isn\u2019t enough to overcome both. A is moderately more expensive here.",
+      "exact_price_instruction": false,
+      "interpretation": "Explicit A direction and moderate/meaningful premium.15lb lower tare is main driver; pale shade adds smaller benefit; younger vintage insufficient to offset both. Existing source direction/size reaffirmed, explanation/strength added; do not duplicate-weight pair."
+    },
+    {
+      "id": "round53-2",
+      "number": 2,
+      "anchor": "round53-1",
+      "factor_changed": "A shade pale/straw->golden; shade now matched",
+      "a": [
+        "West Central Asia",
+        "golden",
+        30,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "golden",
+        25,
+        130
+      ],
+      "predictions": {
+        "tare_compensation": {
+          "predicted_direction": "B",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": -0.49948500000001506,
+          "decision_radius": 1.0,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v27_tare_compensation"
+        },
+        "v26": {
+          "predicted_direction": "A",
+          "predicted_meaningfulness": "no_meaningful_difference",
+          "margin": 0.05984447715515506,
+          "decision_radius": 0.3000001,
+          "exact_price_equality": null,
+          "prediction_source": "model_only",
+          "units": "pair-comparison score, not a standalone price",
+          "model": "v26_joint_refit_candidate"
+        }
+      },
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "A, meaningful difference\u2014the 15 lb lower tare still outweighs B\u2019s five-year younger vintage, even with shade equal. The premium is a little smaller without the pale shade advantage, but it\u2019s still meaningful.",
+      "exact_price_instruction": false,
+      "interpretation": "Explicit A direction and meaningful difference with shade matched.15lb lower tare alone outweighs5-year younger vintage in WCA golden30vs25 at115vs130lb. User says removal of pale advantage reduces premium but does not remove meaningfulness; no numeric premium inferred."
+    }
+  ],
+  "rule_statements": [
+    {
+      "source": "round53-1",
+      "revisits": "round51-13",
+      "statement": "WCA pale30/115 versus golden25/130: A moderately more expensive, primarily15lb tare advantage; pale adds a little, younger vintage does not offset both.",
+      "scope": "This vintage/tare context; no universal tare multiplier or numerical price premium inferred."
+    },
+    {
+      "source": "round53-2",
+      "statement": "WCA golden30/115 versus golden25/130: A meaningfully higher;15lb tare advantage outweighs5-year vintage disadvantage even with shade equal. Smaller premium than pale30/115 but still meaningful.",
+      "scope": "This vintage/tare comparison; not a universal15lb dominance rule."
+    }
+  ],
+  "reconciliation_pending": true,
+  "qualification": "Explanation-led isolation; repeated source plus one shade-matched probe. No model/evidence updates; original pair must be enriched rather than duplicate-weighted."
+}

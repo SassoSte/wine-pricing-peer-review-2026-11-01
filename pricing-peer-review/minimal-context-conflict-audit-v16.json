@@ -1,0 +1,365 @@
+{
+  "source_hashes": {
+    "evidence-v16.json": "d3fe285003091b1125cc4ff306d52eb944ca84c3b101b67f03849c64e32b3eaa",
+    "simple-direction-feasibility-v16.json": "c58d4f6400a9cb1374c61882dd5e950e312c72feb360e0a67d2fb72e91ec7032",
+    "minimal_context_model.py": "3e57be7adff157188f8a780f3132f78e3fd1af722ec77e3bab401f46df9840d9"
+  },
+  "conflict_records": [
+    {
+      "id": "r2-2",
+      "a": [
+        "northwest",
+        "amber",
+        30,
+        130
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        30,
+        130
+      ],
+      "direction": "B",
+      "raw_answer": null,
+      "strength": null,
+      "verbatim_available": false
+    },
+    {
+      "id": "r3-2",
+      "a": [
+        "northwest",
+        "pale/straw",
+        30,
+        130
+      ],
+      "b": [
+        "Western Europe",
+        "pale/straw",
+        30,
+        130
+      ],
+      "direction": "A",
+      "raw_answer": null,
+      "strength": null,
+      "verbatim_available": false
+    },
+    {
+      "id": "r4-7",
+      "a": [
+        "northwest",
+        "golden",
+        30,
+        130
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        30,
+        130
+      ],
+      "direction": "A",
+      "raw_answer": null,
+      "strength": null,
+      "verbatim_available": false
+    },
+    {
+      "id": "r4-8",
+      "a": [
+        "northwest",
+        "copper",
+        30,
+        130
+      ],
+      "b": [
+        "Western Europe",
+        "copper",
+        30,
+        130
+      ],
+      "direction": "A",
+      "raw_answer": null,
+      "strength": null,
+      "verbatim_available": false
+    },
+    {
+      "id": "r5-5",
+      "a": [
+        "northwest",
+        "amber",
+        25,
+        130
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        25,
+        130
+      ],
+      "direction": "A",
+      "raw_answer": null,
+      "strength": null,
+      "verbatim_available": false
+    },
+    {
+      "id": "r5-6",
+      "a": [
+        "northwest",
+        "amber",
+        35,
+        130
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        35,
+        130
+      ],
+      "direction": "B",
+      "raw_answer": null,
+      "strength": "leaning",
+      "verbatim_available": false
+    },
+    {
+      "id": "revision-18",
+      "a": [
+        "northwest",
+        "amber",
+        40,
+        120
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        40,
+        120
+      ],
+      "direction": "B",
+      "raw_answer": null,
+      "strength": "very slightly",
+      "verbatim_available": false
+    },
+    {
+      "id": "round14-4",
+      "a": [
+        "northwest",
+        "amber",
+        40,
+        125
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        40,
+        125
+      ],
+      "direction": "B",
+      "raw_answer": "2. Price B higher than A, but only very slightly.",
+      "strength": "very slightly",
+      "verbatim_available": true
+    },
+    {
+      "id": "round24-7",
+      "a": [
+        "Western Europe",
+        "amber",
+        30,
+        125
+      ],
+      "b": [
+        "northwest",
+        "amber",
+        30,
+        125
+      ],
+      "direction": "A",
+      "raw_answer": "1. Price A higher than B, but only very slightly.",
+      "strength": "very slightly",
+      "verbatim_available": true
+    },
+    {
+      "id": "r4-9",
+      "a": [
+        "southeast",
+        "amber",
+        30,
+        120
+      ],
+      "b": [
+        "northwest",
+        "amber",
+        30,
+        115
+      ],
+      "direction": "A",
+      "raw_answer": null,
+      "strength": null,
+      "verbatim_available": false
+    },
+    {
+      "id": "r5-9",
+      "a": [
+        "southeast",
+        "pale/straw",
+        30,
+        120
+      ],
+      "b": [
+        "northwest",
+        "pale/straw",
+        30,
+        115
+      ],
+      "direction": "B",
+      "raw_answer": null,
+      "strength": "leaning",
+      "verbatim_available": false
+    },
+    {
+      "id": "r5-4",
+      "a": [
+        "West Central Asia",
+        "amber",
+        30,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "amber",
+        30,
+        120
+      ],
+      "direction": "B",
+      "raw_answer": null,
+      "strength": "leaning",
+      "verbatim_available": false
+    },
+    {
+      "id": "round8-2",
+      "a": [
+        "West Central Asia",
+        "golden",
+        30,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "golden",
+        30,
+        120
+      ],
+      "direction": "A",
+      "raw_answer": "A very slightly.",
+      "strength": "very slightly",
+      "verbatim_available": true
+    },
+    {
+      "id": "revision-13",
+      "a": [
+        "Eastern Europe",
+        "pale/straw",
+        30,
+        120
+      ],
+      "b": [
+        "Eastern Europe",
+        "golden",
+        25,
+        120
+      ],
+      "direction": "A",
+      "raw_answer": null,
+      "strength": "slightly",
+      "verbatim_available": false
+    },
+    {
+      "id": "round21-8",
+      "a": [
+        "central",
+        "golden",
+        25,
+        120
+      ],
+      "b": [
+        "central",
+        "pale/straw",
+        30,
+        120
+      ],
+      "direction": "A",
+      "raw_answer": "1. Price A higher than B.",
+      "strength": null,
+      "verbatim_available": true
+    }
+  ],
+  "verbatim_available_n": 4,
+  "basis_subset_feasibility": [
+    {
+      "active_terms": [],
+      "parameters": 18,
+      "conflict_set_directions_feasible": false,
+      "solver_status": 2
+    },
+    {
+      "active_terms": [
+        "northwest x amber"
+      ],
+      "parameters": 19,
+      "conflict_set_directions_feasible": false,
+      "solver_status": 2
+    },
+    {
+      "active_terms": [
+        "domestic x (30-vintage)/10"
+      ],
+      "parameters": 19,
+      "conflict_set_directions_feasible": false,
+      "solver_status": 2
+    },
+    {
+      "active_terms": [
+        "West Central Asia x golden-or-pale"
+      ],
+      "parameters": 19,
+      "conflict_set_directions_feasible": false,
+      "solver_status": 2
+    },
+    {
+      "active_terms": [
+        "northwest x amber",
+        "domestic x (30-vintage)/10"
+      ],
+      "parameters": 20,
+      "conflict_set_directions_feasible": false,
+      "solver_status": 2
+    },
+    {
+      "active_terms": [
+        "northwest x amber",
+        "West Central Asia x golden-or-pale"
+      ],
+      "parameters": 20,
+      "conflict_set_directions_feasible": false,
+      "solver_status": 2
+    },
+    {
+      "active_terms": [
+        "domestic x (30-vintage)/10",
+        "West Central Asia x golden-or-pale"
+      ],
+      "parameters": 20,
+      "conflict_set_directions_feasible": false,
+      "solver_status": 2
+    },
+    {
+      "active_terms": [
+        "northwest x amber",
+        "domestic x (30-vintage)/10",
+        "West Central Asia x golden-or-pale"
+      ],
+      "parameters": 21,
+      "conflict_set_directions_feasible": true,
+      "solver_status": 0
+    }
+  ],
+  "interpretation": "Three added coefficients are sufficient and every subset fails within this simple interpretable pool. This does not prove every other direction can be fitted, or justify changing old labels. All records preserved."
+}

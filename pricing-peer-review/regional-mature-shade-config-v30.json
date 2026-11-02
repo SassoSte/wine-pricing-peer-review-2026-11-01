@@ -1,0 +1,100 @@
+{
+  "kind": "regional_mature_shade",
+  "coefficients": [
+    0.6669766666666723,
+    -0.3330033333333277,
+    -0.3330133333333277,
+    -0.99999,
+    0.5557155555555566,
+    0.7779677777777794,
+    0.16682166666666798,
+    0.5557255555555571,
+    0.9446194444444458,
+    1.38899388888889,
+    0.11114111111111125,
+    0.0,
+    0.11114111111111136,
+    0.6110961111111108,
+    0.666586666666666,
+    1.38898388888889,
+    1.8889988888888904,
+    0.5555655555555556,
+    0.33335333333333317,
+    -0.11113111111111136,
+    0.05552055555555524,
+    0.22228222222222271,
+    0.16664166666666647,
+    -0.889118888888894,
+    0.6667166666666677
+  ],
+  "decision_radius": 1.0,
+  "protected_training_ids": [
+    "round49-2",
+    "round49-17",
+    "round50-4",
+    "round53-2",
+    "round55-2",
+    "round55-3",
+    "round55-4",
+    "round55-5",
+    "round55-6",
+    "round55-7",
+    "round55-9"
+  ],
+  "solver_status": 0,
+  "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "mip_gap": 0.000993400042579205,
+  "objective": 0.07464744188266464,
+  "time_limit_seconds": 90.0,
+  "domain": {
+    "provenances": [
+      "Eastern Europe",
+      "Western Europe",
+      "West Central Asia",
+      "South/Eastern Asia",
+      "West Asia / Middle East",
+      "central",
+      "northeast",
+      "northwest",
+      "southwest",
+      "southeast"
+    ],
+    "shades": [
+      "brown",
+      "copper",
+      "amber",
+      "golden",
+      "pale/straw"
+    ],
+    "vintage_years": [
+      40,
+      35,
+      30,
+      25,
+      20
+    ],
+    "tare_lb": [
+      110,
+      115,
+      120,
+      125,
+      130
+    ],
+    "domestic": [
+      "central",
+      "northwest",
+      "northeast",
+      "southwest",
+      "southeast"
+    ]
+  },
+  "extra_feature_names": [
+    "domestic_top_vintage",
+    "foreign_young_pale",
+    "premium_tare_hinge",
+    "young_tare_interaction",
+    "all_top_completion",
+    "SEA_top_vintage_adjustment",
+    "light_shade_mature_vintage"
+  ]
+}

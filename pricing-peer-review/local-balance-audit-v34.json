@@ -1,0 +1,170 @@
+{
+  "scope": "No new evidence or coefficients adopted. Read-only residual/identifiability audit of savedv34fits plus feasible tiny perturbations.",
+  "heldout_fits": [
+    {
+      "seed": 11,
+      "older_tie_gap": 0.011156871220618314,
+      "equal_tare_gap": -0.3657277584302823,
+      "interpolated_balance_tare_lb": 115.14801441001923,
+      "interpolation_note": "Diagnostic linear interpolation between learned5lb steps; off-grid weights not independently validated.",
+      "nearby_alternative_weights": [
+        {
+          "delta": -1e-05,
+          "training_direction_count_before": 353,
+          "training_direction_count_after": 353,
+          "older_pair_gap": 0.011146871220618304,
+          "training_equalities_preserved": true,
+          "training_single_step_sign_constraints_preserved": true
+        },
+        {
+          "delta": 1e-05,
+          "training_direction_count_before": 353,
+          "training_direction_count_after": 353,
+          "older_pair_gap": 0.011166871220618324,
+          "training_equalities_preserved": true,
+          "training_single_step_sign_constraints_preserved": true
+        }
+      ]
+    },
+    {
+      "seed": 29,
+      "older_tie_gap": 0.25937046421786925,
+      "equal_tare_gap": -0.4447194064695058,
+      "interpolated_balance_tare_lb": 116.84188464438961,
+      "interpolation_note": "Diagnostic linear interpolation between learned5lb steps; off-grid weights not independently validated.",
+      "nearby_alternative_weights": [
+        {
+          "delta": -1e-05,
+          "training_direction_count_before": 350,
+          "training_direction_count_after": 350,
+          "older_pair_gap": 0.2593604642178693,
+          "training_equalities_preserved": true,
+          "training_single_step_sign_constraints_preserved": true
+        },
+        {
+          "delta": 1e-05,
+          "training_direction_count_before": 350,
+          "training_direction_count_after": 350,
+          "older_pair_gap": 0.2593804642178692,
+          "training_equalities_preserved": true,
+          "training_single_step_sign_constraints_preserved": true
+        }
+      ]
+    },
+    {
+      "seed": 47,
+      "older_tie_gap": 0.2151182939387426,
+      "equal_tare_gap": -0.13011013804421928,
+      "interpolated_balance_tare_lb": 118.11559353184096,
+      "interpolation_note": "Diagnostic linear interpolation between learned5lb steps; off-grid weights not independently validated.",
+      "nearby_alternative_weights": [
+        {
+          "delta": -1e-05,
+          "training_direction_count_before": 347,
+          "training_direction_count_after": 347,
+          "older_pair_gap": 0.2151082939387426,
+          "training_equalities_preserved": true,
+          "training_single_step_sign_constraints_preserved": true
+        },
+        {
+          "delta": 1e-05,
+          "training_direction_count_before": 347,
+          "training_direction_count_after": 347,
+          "older_pair_gap": 0.2151282939387426,
+          "training_equalities_preserved": true,
+          "training_single_step_sign_constraints_preserved": true
+        }
+      ]
+    },
+    {
+      "seed": 71,
+      "older_tie_gap": -0.13612237237746,
+      "equal_tare_gap": -0.8896400331118266,
+      "interpolated_balance_tare_lb": 114.52923564360951,
+      "interpolation_note": "Diagnostic linear interpolation between learned5lb steps; off-grid weights not independently validated.",
+      "nearby_alternative_weights": [
+        {
+          "delta": -1e-05,
+          "training_direction_count_before": 359,
+          "training_direction_count_after": 359,
+          "older_pair_gap": -0.13613237237745995,
+          "training_equalities_preserved": true,
+          "training_single_step_sign_constraints_preserved": true
+        },
+        {
+          "delta": 1e-05,
+          "training_direction_count_before": 359,
+          "training_direction_count_after": 359,
+          "older_pair_gap": -0.13611237237746004,
+          "training_equalities_preserved": true,
+          "training_single_step_sign_constraints_preserved": true
+        }
+      ]
+    },
+    {
+      "seed": 103,
+      "older_tie_gap": 0.08329656076545966,
+      "equal_tare_gap": -0.28442405787340747,
+      "interpolated_balance_tare_lb": 116.13260661142398,
+      "interpolation_note": "Diagnostic linear interpolation between learned5lb steps; off-grid weights not independently validated.",
+      "nearby_alternative_weights": [
+        {
+          "delta": -1e-05,
+          "training_direction_count_before": 357,
+          "training_direction_count_after": 357,
+          "older_pair_gap": 0.08328656076545965,
+          "training_equalities_preserved": true,
+          "training_single_step_sign_constraints_preserved": true
+        },
+        {
+          "delta": 1e-05,
+          "training_direction_count_before": 357,
+          "training_direction_count_after": 357,
+          "older_pair_gap": 0.08330656076545967,
+          "training_equalities_preserved": true,
+          "training_single_step_sign_constraints_preserved": true
+        }
+      ]
+    }
+  ],
+  "local_full_fit": [
+    {
+      "id": "round50-9",
+      "gap": -5.551115123125783e-17,
+      "direction": null,
+      "exact": true
+    },
+    {
+      "id": "voice-older-we-equal-tare",
+      "gap": -0.37345144638290817,
+      "direction": -1,
+      "exact": false
+    },
+    {
+      "id": "round50-10",
+      "gap": -0.7907886369346225,
+      "direction": -1,
+      "exact": null
+    },
+    {
+      "id": "round50-11",
+      "gap": -1.1642400833175306,
+      "direction": -1,
+      "exact": null
+    },
+    {
+      "id": "round50-12",
+      "gap": 0.7907886369346225,
+      "direction": 1,
+      "exact": null
+    }
+  ],
+  "finding": "Existing architecture represents linked judgments and local ranking constraints. Heldout family has no exact equality identifying the specific35/40,brown/amber,115/120 exchange. Nearby valid tare-step allocations preserve known equality constraints and single-step signs while moving the older gap.",
+  "decision": "Do not add another regional or shade penalty. Preserve confirmed equality in training; report its limited transfer. No wider equality band, no answer lookup counted as prediction, no numerical premium inferred.",
+  "limitation": "Training direction counts preserved by small perturbations do not mean identical loss or equal statistical likelihood. Off-grid crossing is illustrative only. Exact equality of unobserved tradeoffs remains unsupported.",
+  "source_hashes": {
+    "benchmark-targets-v34.json": "5f7d743da44c89cdd73e45bbccfa9fd6a217018b514cdaf13468dd0910634fdd",
+    "brown-validation-v34.json": "37ebcf03705ef082d95665c470103ded051d220a1ac5c3de3a6e270c88057ebf",
+    "audit_local_balance_v34.py": "c1a2d92b03cef829f7f2d9ab39aaac819d75eadc22925b9e22c3eb11c5c6f243"
+  }
+}

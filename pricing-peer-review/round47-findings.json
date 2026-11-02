@@ -1,0 +1,48 @@
+{
+  "round": 47,
+  "scores": {
+    "v25": {
+      "direction_n": 15,
+      "direction_correct": 14,
+      "direction_misses": [
+        15
+      ],
+      "meaningfulness_n": 17,
+      "meaningfulness_correct": 15,
+      "meaningfulness_misses": [
+        13,
+        15
+      ],
+      "both_axes_n": 15,
+      "both_axes_correct": 13,
+      "zero_shade_n": 1,
+      "zero_shade_correct": 1
+    },
+    "v24": {
+      "direction_n": 15,
+      "direction_correct": 12,
+      "direction_misses": [
+        4,
+        15,
+        19
+      ],
+      "meaningfulness_n": 17,
+      "meaningfulness_correct": 14,
+      "meaningfulness_misses": [
+        10,
+        13,
+        15
+      ],
+      "both_axes_n": 15,
+      "both_axes_correct": 10,
+      "zero_shade_n": 1,
+      "zero_shade_correct": 1
+    }
+  },
+  "unresolved_questions": [
+    1,
+    12,
+    18
+  ],
+  "qualification": "Broader frozen fresh-pair comparison; unresolved excluded, prior labels/model unchanged. Neutral revisit queue follows in round48-fixed.json."
+}

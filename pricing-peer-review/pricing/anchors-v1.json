@@ -1,0 +1,599 @@
+{
+  "schema_version": 1,
+  "status": "four_exact_release_prices_plus_four_rule_derived_regular_ranges_no_fit",
+  "recorded_date": "2026-11-01",
+  "model_policy": "V28 locked. Separate pricing anchors; no preference evidence changes or price model fit.",
+  "anchors": [
+    {
+      "id": "D-NEP20T10",
+      "price": 1100,
+      "currency": "USD",
+      "price_basis": "initial release offer price",
+      "price_date": null,
+      "price_covers": "entire filled cask",
+      "provenance": "northeast",
+      "source_provenance": "Domestic NE",
+      "shade": "pale/straw",
+      "source_shade": "P",
+      "shade_interpretation": "P interpreted as pale/straw from established project vocabulary; not separately reconfirmed.",
+      "vintage_years": 20,
+      "tare_lb": 110,
+      "capacity": null,
+      "contents_volume": null,
+      "condition": "mint",
+      "included_costs": {
+        "fees": false,
+        "taxes": false,
+        "delivery": false
+      },
+      "batch_name": "Manhattan Hudson",
+      "regional_seat_batch": true,
+      "commemorative_seal_and_design": true,
+      "reported_batch_share_percent": 2,
+      "reported_share_population": "domestic Northeast",
+      "share_population_needs_clarification": false,
+      "raw_notes": "\u201cManhattan Hudson\u201d batch - the regional \u2018seat\u2019 batch with commemorative seal and cask design. Just 2% of all domestic Northeast casks produced from this batch.",
+      "source": "User supplied established offerings in chat",
+      "verification": "User-reported initial release offer price; completed transaction not established.",
+      "clarifications": [
+        {
+          "field": "price_covers",
+          "value": "entire filled cask",
+          "source": "User explicitly confirmed this applies to all four offerings."
+        },
+        {
+          "field": "price_basis",
+          "raw_answer": "These were the prices that were offered at the initial \"IPO\" so-to-speak. To distributers and insiders.",
+          "interpretation": "Initial-release offering prices to distributors and insiders; IPO is an analogy, not an assertion of securities issuance."
+        },
+        {
+          "field": "release_cohort",
+          "raw_answer": "All four were from the same release period. Treat them as comparable initial-release prices for now.",
+          "interpretation": "Shared release period confirmed; calendar date remains unspecified. No date adjustment assumed within this cohort."
+        },
+        {
+          "field": "contents_volume_group",
+          "raw_answer": "Same volume.",
+          "interpretation": "Equal contents volume across four offerings confirmed; absolute quantity and unit remain unspecified."
+        },
+        {
+          "field": "condition_and_costs",
+          "raw_answer": "Condition is all mint. Costs related to fees, taxes and delivery are not included, but would be fixed, relative to the geography, with costs ranging high to low (NE, SE, D, and NW).",
+          "interpretation": "Prices exclude fees,taxes,delivery. Ancillary costs described as fixed by geography, amounts unspecified. D provisionally interpreted as Central among the four supplied regions."
+        }
+      ],
+      "offered_to": [
+        "distributors",
+        "insiders"
+      ],
+      "completed_sale_confirmed": false,
+      "release_cohort": "initial-release-cohort-1",
+      "comparability_status": "User instructs treating all four as comparable initial-release prices for now.",
+      "contents_volume_group": "shared-volume-cohort-1",
+      "same_contents_volume_confirmed": true
+    },
+    {
+      "id": "D-SEP20T10",
+      "price": 1075,
+      "currency": "USD",
+      "price_basis": "initial release offer price",
+      "price_date": null,
+      "price_covers": "entire filled cask",
+      "provenance": "southeast",
+      "source_provenance": "Domestic SE",
+      "shade": "pale/straw",
+      "source_shade": "P",
+      "shade_interpretation": "P interpreted as pale/straw from established project vocabulary; not separately reconfirmed.",
+      "vintage_years": 20,
+      "tare_lb": 110,
+      "capacity": null,
+      "contents_volume": null,
+      "condition": "mint",
+      "included_costs": {
+        "fees": false,
+        "taxes": false,
+        "delivery": false
+      },
+      "batch_name": "Miami Vicecory",
+      "regional_seat_batch": true,
+      "commemorative_seal_and_design": true,
+      "reported_batch_share_percent": 3,
+      "reported_share_population": "domestic Southeast",
+      "share_population_needs_clarification": false,
+      "raw_notes": "\u201cMiami Vicecory\u201d batch - the regional \u2018seat\u2019 batch with commemorative seal and cask design. Just 3% of all domestic Southeast casks produced from this batch.",
+      "source": "User supplied established offerings in chat",
+      "verification": "User-reported initial release offer price; completed transaction not established.",
+      "clarifications": [
+        {
+          "field": "price_covers",
+          "value": "entire filled cask",
+          "source": "User explicitly confirmed this applies to all four offerings."
+        },
+        {
+          "field": "price_basis",
+          "raw_answer": "These were the prices that were offered at the initial \"IPO\" so-to-speak. To distributers and insiders.",
+          "interpretation": "Initial-release offering prices to distributors and insiders; IPO is an analogy, not an assertion of securities issuance."
+        },
+        {
+          "field": "release_cohort",
+          "raw_answer": "All four were from the same release period. Treat them as comparable initial-release prices for now.",
+          "interpretation": "Shared release period confirmed; calendar date remains unspecified. No date adjustment assumed within this cohort."
+        },
+        {
+          "field": "contents_volume_group",
+          "raw_answer": "Same volume.",
+          "interpretation": "Equal contents volume across four offerings confirmed; absolute quantity and unit remain unspecified."
+        },
+        {
+          "field": "condition_and_costs",
+          "raw_answer": "Condition is all mint. Costs related to fees, taxes and delivery are not included, but would be fixed, relative to the geography, with costs ranging high to low (NE, SE, D, and NW).",
+          "interpretation": "Prices exclude fees,taxes,delivery. Ancillary costs described as fixed by geography, amounts unspecified. D provisionally interpreted as Central among the four supplied regions."
+        }
+      ],
+      "offered_to": [
+        "distributors",
+        "insiders"
+      ],
+      "completed_sale_confirmed": false,
+      "release_cohort": "initial-release-cohort-1",
+      "comparability_status": "User instructs treating all four as comparable initial-release prices for now.",
+      "contents_volume_group": "shared-volume-cohort-1",
+      "same_contents_volume_confirmed": true
+    },
+    {
+      "id": "D-CEP20T10",
+      "price": 1050,
+      "currency": "USD",
+      "price_basis": "initial release offer price",
+      "price_date": null,
+      "price_covers": "entire filled cask",
+      "provenance": "central",
+      "source_provenance": "Domestic Central",
+      "shade": "pale/straw",
+      "source_shade": "P",
+      "shade_interpretation": "P interpreted as pale/straw from established project vocabulary; not separately reconfirmed.",
+      "vintage_years": 20,
+      "tare_lb": 110,
+      "capacity": null,
+      "contents_volume": null,
+      "condition": "mint",
+      "included_costs": {
+        "fees": false,
+        "taxes": false,
+        "delivery": false
+      },
+      "batch_name": "Fort Brent",
+      "regional_seat_batch": true,
+      "commemorative_seal_and_design": true,
+      "reported_batch_share_percent": 4,
+      "reported_share_population": "domestic Central",
+      "share_population_needs_clarification": false,
+      "raw_notes": "\u201cFort Brent\u201d batch - the regional \u2018seat\u2019 with commemorative seal and cask design. Just 4% of all domestic Southeast casks produced from this batch.",
+      "source": "User supplied established offerings in chat",
+      "verification": "User-reported initial release offer price; completed transaction not established.",
+      "correction_history": [
+        {
+          "field": "reported_share_population",
+          "previous_value": "domestic Southeast",
+          "corrected_value": "domestic Central",
+          "source": "User confirmed Southeast references were typos; corrected to each offering\u2019s stated region."
+        }
+      ],
+      "clarifications": [
+        {
+          "field": "price_covers",
+          "value": "entire filled cask",
+          "source": "User explicitly confirmed this applies to all four offerings."
+        },
+        {
+          "field": "price_basis",
+          "raw_answer": "These were the prices that were offered at the initial \"IPO\" so-to-speak. To distributers and insiders.",
+          "interpretation": "Initial-release offering prices to distributors and insiders; IPO is an analogy, not an assertion of securities issuance."
+        },
+        {
+          "field": "release_cohort",
+          "raw_answer": "All four were from the same release period. Treat them as comparable initial-release prices for now.",
+          "interpretation": "Shared release period confirmed; calendar date remains unspecified. No date adjustment assumed within this cohort."
+        },
+        {
+          "field": "contents_volume_group",
+          "raw_answer": "Same volume.",
+          "interpretation": "Equal contents volume across four offerings confirmed; absolute quantity and unit remain unspecified."
+        },
+        {
+          "field": "condition_and_costs",
+          "raw_answer": "Condition is all mint. Costs related to fees, taxes and delivery are not included, but would be fixed, relative to the geography, with costs ranging high to low (NE, SE, D, and NW).",
+          "interpretation": "Prices exclude fees,taxes,delivery. Ancillary costs described as fixed by geography, amounts unspecified. D provisionally interpreted as Central among the four supplied regions."
+        }
+      ],
+      "offered_to": [
+        "distributors",
+        "insiders"
+      ],
+      "completed_sale_confirmed": false,
+      "release_cohort": "initial-release-cohort-1",
+      "comparability_status": "User instructs treating all four as comparable initial-release prices for now.",
+      "contents_volume_group": "shared-volume-cohort-1",
+      "same_contents_volume_confirmed": true
+    },
+    {
+      "id": "D-NWP20T10",
+      "price": 1000,
+      "currency": "USD",
+      "price_basis": "initial release offer price",
+      "price_date": null,
+      "price_covers": "entire filled cask",
+      "provenance": "northwest",
+      "source_provenance": "Domestic NW",
+      "shade": "pale/straw",
+      "source_shade": "P",
+      "shade_interpretation": "P interpreted as pale/straw from established project vocabulary; not separately reconfirmed.",
+      "vintage_years": 20,
+      "tare_lb": 110,
+      "capacity": null,
+      "contents_volume": null,
+      "condition": "mint",
+      "included_costs": {
+        "fees": false,
+        "taxes": false,
+        "delivery": false
+      },
+      "batch_name": "Pearl Cliff",
+      "regional_seat_batch": true,
+      "commemorative_seal_and_design": true,
+      "reported_batch_share_percent": 5,
+      "reported_share_population": "domestic Northwest",
+      "share_population_needs_clarification": false,
+      "raw_notes": "\u201cPearl Cliff\u201d batch - the regional \u2018seat\u2019 batch with commemorative seal and cask design. Just 5% of all domestic Southeast casks produced from this batch.",
+      "source": "User supplied established offerings in chat",
+      "verification": "User-reported initial release offer price; completed transaction not established.",
+      "correction_history": [
+        {
+          "field": "reported_share_population",
+          "previous_value": "domestic Southeast",
+          "corrected_value": "domestic Northwest",
+          "source": "User confirmed Southeast references were typos; corrected to each offering\u2019s stated region."
+        }
+      ],
+      "clarifications": [
+        {
+          "field": "price_covers",
+          "value": "entire filled cask",
+          "source": "User explicitly confirmed this applies to all four offerings."
+        },
+        {
+          "field": "price_basis",
+          "raw_answer": "These were the prices that were offered at the initial \"IPO\" so-to-speak. To distributers and insiders.",
+          "interpretation": "Initial-release offering prices to distributors and insiders; IPO is an analogy, not an assertion of securities issuance."
+        },
+        {
+          "field": "release_cohort",
+          "raw_answer": "All four were from the same release period. Treat them as comparable initial-release prices for now.",
+          "interpretation": "Shared release period confirmed; calendar date remains unspecified. No date adjustment assumed within this cohort."
+        },
+        {
+          "field": "contents_volume_group",
+          "raw_answer": "Same volume.",
+          "interpretation": "Equal contents volume across four offerings confirmed; absolute quantity and unit remain unspecified."
+        },
+        {
+          "field": "condition_and_costs",
+          "raw_answer": "Condition is all mint. Costs related to fees, taxes and delivery are not included, but would be fixed, relative to the geography, with costs ranging high to low (NE, SE, D, and NW).",
+          "interpretation": "Prices exclude fees,taxes,delivery. Ancillary costs described as fixed by geography, amounts unspecified. D provisionally interpreted as Central among the four supplied regions."
+        }
+      ],
+      "offered_to": [
+        "distributors",
+        "insiders"
+      ],
+      "completed_sale_confirmed": false,
+      "release_cohort": "initial-release-cohort-1",
+      "comparability_status": "User instructs treating all four as comparable initial-release prices for now.",
+      "contents_volume_group": "shared-volume-cohort-1",
+      "same_contents_volume_confirmed": true
+    },
+    {
+      "id": "pending-regular-northeast",
+      "id_status": "temporary intake identifier; user ID not supplied",
+      "price": null,
+      "currency": "USD",
+      "price_basis": "initial release offer price",
+      "price_date": null,
+      "price_covers": "entire filled cask",
+      "provenance": "northeast",
+      "shade": "pale/straw",
+      "vintage_years": 20,
+      "tare_lb": 110,
+      "release_cohort": "initial-release-cohort-1",
+      "contents_volume_group": "shared-volume-cohort-1",
+      "same_contents_volume_confirmed": true,
+      "contents_volume": null,
+      "condition": "mint",
+      "included_costs": {
+        "fees": false,
+        "taxes": false,
+        "delivery": false
+      },
+      "offered_to": [
+        "distributors"
+      ],
+      "regional_seat_batch": false,
+      "commemorative_seal_and_design": false,
+      "batch_type": "regular noncommemorative Northeast, outside the regional seat",
+      "source": "User confirmed all prefilled comparison attributes and shared commercial terms; price pending",
+      "raw_clarification": "Same volume, mint condition, same release period and distributor terms. Fees, taxes and delivery excluded. The only difference is that this is the regular, noncommemorative batch. The only difference between commemorative and non-commemorative is that the non-commemorative hail from the northeast region, just not from the \"seat\".",
+      "relative_price_guidance": {
+        "raw_answer": "Varies from area to area, but it is within 5-10% of the initial-release price in USDC.",
+        "reference_anchor_id": "D-NEP20T10",
+        "reference_link_status": "Contextual reference to seat offering; interpretation pending",
+        "reported_percent_range": [
+          5,
+          10
+        ],
+        "direction": "below",
+        "variation_driver": "area within Northeast",
+        "interpretation": "Regular Northeast price is5\u201310% below the seat reference, depending on area. Relative range, not individual completed-sale observations.",
+        "direction_confirmation": "5-10% below it."
+      },
+      "clarifications": [
+        {
+          "field": "currency",
+          "value": "USDC",
+          "source": "User latest pricing statement; whether earlier four USD labels should also be USDC remains unconfirmed."
+        },
+        {
+          "raw_answer": "No, that's up to the distributers, inventory, collectors, etc.",
+          "interpretation": "No specific regular-area/batch point price provided. Retain990\u20131045USD as reported-derived range; actual prices depend on factors not captured by lockedfour-attribute model. No midpoint treated as observedprice."
+        },
+        {
+          "raw_answer": "Yes, use the same 5\u201310% discount for regular Southeast, Central and Northwest offerings with matching attributes. Actual prices will still depend on distributors, inventory and collectors.",
+          "interpretation": "Shared discount applies only to regular offerings with matching attributes and comparable terms."
+        }
+      ],
+      "correction_history": [
+        {
+          "field": "currency",
+          "previous_value": "USDC",
+          "corrected_value": "USD",
+          "raw_answer": "I'm sorry I'm meant US$ ... I use USDC interchangeably.",
+          "interpretation": "For these pricing records user meantUS dollars, notUSDC. No conversion orpeg assumption."
+        }
+      ],
+      "price_range": {
+        "lower": 990.0,
+        "upper": 1045.0,
+        "currency": "USD",
+        "type": "derived_range_from_user_discount",
+        "reference_anchor_id": "D-NEP20T10",
+        "calculation": "seat_price*(1-0.10) to seat_price*(1-0.05)",
+        "qualification": "Shared expert pricing guidance; not independent observed prices or transactions."
+      },
+      "specific_area_or_batch_price_available": false,
+      "price_variation_factors": [
+        "distributor decisions",
+        "inventory",
+        "collector demand"
+      ],
+      "shared_discount_rule_id": "regular-matching-profile-5-to-10-percent"
+    },
+    {
+      "price_basis": "initial release offer price",
+      "price_date": null,
+      "price_covers": "entire filled cask",
+      "provenance": "southeast",
+      "shade": "pale/straw",
+      "vintage_years": 20,
+      "tare_lb": 110,
+      "release_cohort": "initial-release-cohort-1",
+      "contents_volume_group": "shared-volume-cohort-1",
+      "same_contents_volume_confirmed": true,
+      "contents_volume": null,
+      "condition": "mint",
+      "included_costs": {
+        "fees": false,
+        "taxes": false,
+        "delivery": false
+      },
+      "offered_to": [
+        "distributors",
+        "insiders"
+      ],
+      "id": "pending-regular-southeast",
+      "id_status": "Temporary intake identifier, not a supplied batch ID",
+      "price": null,
+      "currency": "USD",
+      "regional_seat_batch": false,
+      "commemorative_seal_and_design": false,
+      "batch_type": "regular regional offering outside seat",
+      "specific_area_or_batch_price_available": false,
+      "price_range": {
+        "lower": 967.5,
+        "upper": 1021.25,
+        "currency": "USD",
+        "type": "derived_range_from_user_discount",
+        "reference_anchor_id": "D-SEP20T10",
+        "calculation": "seat_price*(1-0.10) to seat_price*(1-0.05)",
+        "qualification": "Shared expert pricing guidance; not independent observed prices or transactions."
+      },
+      "price_variation_factors": [
+        "distributor decisions",
+        "inventory",
+        "collector demand"
+      ],
+      "shared_discount_rule_id": "regular-matching-profile-5-to-10-percent",
+      "clarifications": [
+        {
+          "raw_answer": "Yes, use the same 5\u201310% discount for regular Southeast, Central and Northwest offerings with matching attributes. Actual prices will still depend on distributors, inventory and collectors.",
+          "interpretation": "Shared discount applies only to regular offerings with matching attributes and comparable terms."
+        }
+      ]
+    },
+    {
+      "price_basis": "initial release offer price",
+      "price_date": null,
+      "price_covers": "entire filled cask",
+      "provenance": "central",
+      "shade": "pale/straw",
+      "vintage_years": 20,
+      "tare_lb": 110,
+      "release_cohort": "initial-release-cohort-1",
+      "contents_volume_group": "shared-volume-cohort-1",
+      "same_contents_volume_confirmed": true,
+      "contents_volume": null,
+      "condition": "mint",
+      "included_costs": {
+        "fees": false,
+        "taxes": false,
+        "delivery": false
+      },
+      "offered_to": [
+        "distributors",
+        "insiders"
+      ],
+      "id": "pending-regular-central",
+      "id_status": "Temporary intake identifier, not a supplied batch ID",
+      "price": null,
+      "currency": "USD",
+      "regional_seat_batch": false,
+      "commemorative_seal_and_design": false,
+      "batch_type": "regular regional offering outside seat",
+      "specific_area_or_batch_price_available": false,
+      "price_range": {
+        "lower": 945.0,
+        "upper": 997.5,
+        "currency": "USD",
+        "type": "derived_range_from_user_discount",
+        "reference_anchor_id": "D-CEP20T10",
+        "calculation": "seat_price*(1-0.10) to seat_price*(1-0.05)",
+        "qualification": "Shared expert pricing guidance; not independent observed prices or transactions."
+      },
+      "price_variation_factors": [
+        "distributor decisions",
+        "inventory",
+        "collector demand"
+      ],
+      "shared_discount_rule_id": "regular-matching-profile-5-to-10-percent",
+      "clarifications": [
+        {
+          "raw_answer": "Yes, use the same 5\u201310% discount for regular Southeast, Central and Northwest offerings with matching attributes. Actual prices will still depend on distributors, inventory and collectors.",
+          "interpretation": "Shared discount applies only to regular offerings with matching attributes and comparable terms."
+        }
+      ]
+    },
+    {
+      "price_basis": "initial release offer price",
+      "price_date": null,
+      "price_covers": "entire filled cask",
+      "provenance": "northwest",
+      "shade": "pale/straw",
+      "vintage_years": 20,
+      "tare_lb": 110,
+      "release_cohort": "initial-release-cohort-1",
+      "contents_volume_group": "shared-volume-cohort-1",
+      "same_contents_volume_confirmed": true,
+      "contents_volume": null,
+      "condition": "mint",
+      "included_costs": {
+        "fees": false,
+        "taxes": false,
+        "delivery": false
+      },
+      "offered_to": [
+        "distributors",
+        "insiders"
+      ],
+      "id": "pending-regular-northwest",
+      "id_status": "Temporary intake identifier, not a supplied batch ID",
+      "price": null,
+      "currency": "USD",
+      "regional_seat_batch": false,
+      "commemorative_seal_and_design": false,
+      "batch_type": "regular regional offering outside seat",
+      "specific_area_or_batch_price_available": false,
+      "price_range": {
+        "lower": 900.0,
+        "upper": 950.0,
+        "currency": "USD",
+        "type": "derived_range_from_user_discount",
+        "reference_anchor_id": "D-NWP20T10",
+        "calculation": "seat_price*(1-0.10) to seat_price*(1-0.05)",
+        "qualification": "Shared expert pricing guidance; not independent observed prices or transactions."
+      },
+      "price_variation_factors": [
+        "distributor decisions",
+        "inventory",
+        "collector demand"
+      ],
+      "shared_discount_rule_id": "regular-matching-profile-5-to-10-percent",
+      "clarifications": [
+        {
+          "raw_answer": "Yes, use the same 5\u201310% discount for regular Southeast, Central and Northwest offerings with matching attributes. Actual prices will still depend on distributors, inventory and collectors.",
+          "interpretation": "Shared discount applies only to regular offerings with matching attributes and comparable terms."
+        }
+      ]
+    }
+  ],
+  "open_questions": [],
+  "analysis_limits": [
+    "All4 share pale/straw20years110lb; no variation to identify vintage,shade,tare priceeffects.",
+    "Provenance, batchidentity, design and reported rarity vary together; do not isolate causal provenance/rarity multipliers from4prices.",
+    "Batchshares are within stated regional populations, not directly comparable overallscarcity without productioncounts.",
+    "Shared release period confirmed; no calendar date provided. Comparability within this initial-release cohort is a user-supplied working assumption, not evidence of current market prices.",
+    "Equal contents volume permits within-cohort per-cask comparisons; no per-litre pricing without an absolute volume.",
+    "Seat provenance and commemorative designation are linked in this comparison; any price spread is a combined seat/batch premium, not an isolated decorative-design effect.",
+    "Regular Northeast range reflects area and distributor/inventory/collector influences. Do not invent a specific batch price or treat midpoint as an observed transaction."
+  ],
+  "ancillary_cost_guidance": {
+    "included_in_anchor_prices": false,
+    "reported_high_to_low": [
+      "NE",
+      "SE",
+      "D",
+      "NW"
+    ],
+    "normalized_high_to_low": [
+      "northeast",
+      "southeast",
+      "central",
+      "northwest"
+    ],
+    "D_interpretation": "Central, explicitly confirmed by user",
+    "amounts": null,
+    "application": "No numerical adjustment; retain separate from base release prices."
+  },
+  "cohort_clarifications": [
+    {
+      "raw_answer": "Yes, D means Central.",
+      "interpretation": "Confirmed ancillary-cost order: Northeast, Southeast, Central, Northwest, high to low."
+    },
+    {
+      "field": "currency",
+      "value": "USD",
+      "raw_answer": "I'm sorry I'm meant US$ ... I use USDC interchangeably.",
+      "scope": "All prices supplied in this intake areUSD; do not inferUSDCdenomination."
+    }
+  ],
+  "shared_pricing_rules": [
+    {
+      "id": "regular-matching-profile-5-to-10-percent",
+      "discount_from_seat_price": [
+        0.05,
+        0.1
+      ],
+      "applicable_provenances": [
+        "northeast",
+        "southeast",
+        "central",
+        "northwest"
+      ],
+      "profile": {
+        "shade": "pale/straw",
+        "vintage_years": 20,
+        "tare_lb": 110
+      },
+      "basis": "User-specified relative valuation guidance; not independently learned market coefficient",
+      "raw_answer": "Yes, use the same 5\u201310% discount for regular Southeast, Central and Northwest offerings with matching attributes. Actual prices will still depend on distributors, inventory and collectors.",
+      "scope": "Confirmed for otherwise matching regular counterparts to four supplied seat anchors; do not extrapolate automatically to other attribute profiles."
+    }
+  ]
+}

@@ -1,0 +1,6459 @@
+{
+  "method": {
+    "change": "Exact tare constraints scoped to provenance+shade+vintage, never the shared curve. Local curves activated only from training pure-tare comparison inputs; shrink to shared context curve. Unobserved local contexts use shared curve.",
+    "validation": "Same five seeds/outer withheld families and ORIGINAL TRAINING-SELECTED per-fold hyperparameters as contextual v7. Fixed-settings scope ablation, not a separately hyperparameter-tuned contender. Local contexts/constraints discovered inside training fold only.",
+    "constraints": "Nonnegative tare steps and full-grid weak shade/age monotonicity. Only exact pure-tare ties are hard constraints; ranking loss remains soft.",
+    "limits": "More parameters; exploratory use of known evidence. New prospective validation needed before promotion. Context transfer is soft, not proof every unobserved provenance shares a plateau.",
+    "historical_file_hashes": {
+      "pricing.py": "70cf711fdd3322750ffd5cdab45e156e3bc47a136ddb2155bac04727e7900906",
+      "compare_models.py": "da2067d3d2ef99849ce2e30be16208bff0145bc6b036111535542c2daf00fa5f",
+      "compare_interactions.py": "028a696908badf066ec5b8e73760bf067d31334a657c292b4b8230f81aa2f0c9",
+      "compare_objectives.py": "5bd3adf9a7b220dd81a745e35fde90382a730208c3cb5a7a0c337344fd88480d",
+      "compare_tare_models.py": "6ee6623380260502ea3b7b17621261ce413ccea3f7fdf2af835bb50bf4c716d2",
+      "compare_exact_tare_ties.py": "e9b75183ff4f8ed094322022b7b9f0029f5c23aad6caf165012e30cb14f86a88",
+      "evidence-v7.json": "0422c64505c0507988c5511e0ea1c6f8a16b8ddf579899c323e082433e875ec6",
+      "contextual-comparison-v7.json": "55dd44c9d220ea7d3d3cbcaae4bc43913743ea6032d4f2ab5705b1bbb0299655",
+      "exact-tare-comparison.json": "a7e81c2cc082801751d10c21d30508fca5b5b7cb7623623b6057ce3ff65f6933",
+      "additive-comparison-v6.json": "6815589607be082593cec2d5fea668a97ba152519e10177198d010a7d30f62f9"
+    }
+  },
+  "nested_cv": {
+    "summary": {
+      "all": {
+        "n": 310,
+        "accuracy": 0.7593548387096775,
+        "balanced_accuracy": 0.7446630339275605,
+        "opposite_winner_errors": 10.4,
+        "predicted_ties": 108.4,
+        "accuracy_range": [
+          0.7290322580645161,
+          0.7774193548387097
+        ],
+        "mean_recall": {
+          "B": 0.6984615384615385,
+          "tie": 0.7065420560747663,
+          "A": 0.8289855072463768
+        }
+      },
+      "pure_tare": {
+        "n": 41,
+        "accuracy": 0.7902439024390244,
+        "balanced_accuracy": 0.826388888888889,
+        "opposite_winner_errors": 0.0,
+        "predicted_ties": 9.0,
+        "accuracy_range": [
+          0.7317073170731707,
+          0.8536585365853658
+        ],
+        "mean_recall": {
+          "B": 1.0,
+          "tie": 0.5125,
+          "A": 0.9666666666666666
+        }
+      },
+      "confirmed_pure_tare_ties": {
+        "n": 16,
+        "accuracy": 0.5125,
+        "balanced_accuracy": 0.5125,
+        "opposite_winner_errors": 0.0,
+        "predicted_ties": 8.2,
+        "accuracy_range": [
+          0.375,
+          0.625
+        ],
+        "mean_recall": {
+          "tie": 0.5125
+        }
+      },
+      "pure_tare_preferences": {
+        "n": 25,
+        "accuracy": 0.968,
+        "balanced_accuracy": 0.9833333333333334,
+        "opposite_winner_errors": 0.0,
+        "predicted_ties": 0.8,
+        "accuracy_range": [
+          0.96,
+          1.0
+        ],
+        "mean_recall": {
+          "B": 1.0,
+          "A": 0.9666666666666666
+        }
+      },
+      "provenance_plus_tare": {
+        "n": 73,
+        "accuracy": 0.6438356164383561,
+        "balanced_accuracy": 0.6397900408769973,
+        "opposite_winner_errors": 0.2,
+        "predicted_ties": 25.6,
+        "accuracy_range": [
+          0.6301369863013698,
+          0.6712328767123288
+        ],
+        "mean_recall": {
+          "B": 0.7083333333333333,
+          "tie": 0.49565217391304356,
+          "A": 0.7153846153846153
+        }
+      }
+    },
+    "runs": [
+      {
+        "seed": 11,
+        "predictions": [
+          -1,
+          -1,
+          1,
+          1,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          -1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          1,
+          0,
+          -1,
+          -1,
+          -1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          -1,
+          0,
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          0,
+          1,
+          1,
+          -1,
+          0,
+          0,
+          -1,
+          -1,
+          0,
+          1,
+          1,
+          0,
+          -1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          1,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          0,
+          -1,
+          0,
+          0,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          -1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          -1,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          1,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          -1,
+          -1,
+          -1,
+          1,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          -1,
+          0,
+          1,
+          -1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          -1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          -1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "metrics": {
+          "all": {
+            "n": 310,
+            "matched": 239,
+            "accuracy": 0.7709677419354839,
+            "balanced_accuracy": 0.7559660620205113,
+            "recall": {
+              "B": 0.7076923076923077,
+              "tie": 0.719626168224299,
+              "A": 0.8405797101449275
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 46,
+                "tie": 12,
+                "A": 7
+              },
+              "tie": {
+                "B": 10,
+                "tie": 77,
+                "A": 20
+              },
+              "A": {
+                "B": 4,
+                "tie": 18,
+                "A": 116
+              }
+            },
+            "opposite_winner_errors": 11,
+            "predicted_ties": 107
+          },
+          "pure_tare": {
+            "n": 41,
+            "matched": 33,
+            "accuracy": 0.8048780487804879,
+            "balanced_accuracy": 0.8402777777777778,
+            "recall": {
+              "B": 1.0,
+              "tie": 0.5625,
+              "A": 0.9583333333333334
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 1,
+                "tie": 0,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 9,
+                "A": 7
+              },
+              "A": {
+                "B": 0,
+                "tie": 1,
+                "A": 23
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 10
+          },
+          "confirmed_pure_tare_ties": {
+            "n": 16,
+            "matched": 9,
+            "accuracy": 0.5625,
+            "balanced_accuracy": 0.5625,
+            "recall": {
+              "tie": 0.5625
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 0,
+                "tie": 0,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 9,
+                "A": 7
+              },
+              "A": {
+                "B": 0,
+                "tie": 0,
+                "A": 0
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 9
+          },
+          "pure_tare_preferences": {
+            "n": 25,
+            "matched": 24,
+            "accuracy": 0.96,
+            "balanced_accuracy": 0.9791666666666667,
+            "recall": {
+              "B": 1.0,
+              "A": 0.9583333333333334
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 1,
+                "tie": 0,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 0,
+                "A": 0
+              },
+              "A": {
+                "B": 0,
+                "tie": 1,
+                "A": 23
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 1
+          },
+          "provenance_plus_tare": {
+            "n": 73,
+            "matched": 48,
+            "accuracy": 0.6575342465753424,
+            "balanced_accuracy": 0.653010033444816,
+            "recall": {
+              "B": 0.75,
+              "tie": 0.4782608695652174,
+              "A": 0.7307692307692307
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 18,
+                "tie": 5,
+                "A": 1
+              },
+              "tie": {
+                "B": 4,
+                "tie": 11,
+                "A": 8
+              },
+              "A": {
+                "B": 0,
+                "tie": 7,
+                "A": 19
+              }
+            },
+            "opposite_winner_errors": 1,
+            "predicted_ties": 23
+          }
+        }
+      },
+      {
+        "seed": 29,
+        "predictions": [
+          0,
+          0,
+          1,
+          1,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          -1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          0,
+          -1,
+          -1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          -1,
+          -1,
+          0,
+          0,
+          -1,
+          -1,
+          -1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          -1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          -1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          0,
+          -1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          1,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          -1,
+          -1,
+          1,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          -1,
+          1,
+          0,
+          1,
+          -1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "metrics": {
+          "all": {
+            "n": 310,
+            "matched": 236,
+            "accuracy": 0.7612903225806451,
+            "balanced_accuracy": 0.7325296853131066,
+            "recall": {
+              "B": 0.6,
+              "tie": 0.7570093457943925,
+              "A": 0.8405797101449275
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 39,
+                "tie": 20,
+                "A": 6
+              },
+              "tie": {
+                "B": 9,
+                "tie": 81,
+                "A": 17
+              },
+              "A": {
+                "B": 3,
+                "tie": 19,
+                "A": 116
+              }
+            },
+            "opposite_winner_errors": 9,
+            "predicted_ties": 120
+          },
+          "pure_tare": {
+            "n": 41,
+            "matched": 34,
+            "accuracy": 0.8292682926829268,
+            "balanced_accuracy": 0.8611111111111112,
+            "recall": {
+              "B": 1.0,
+              "tie": 0.625,
+              "A": 0.9583333333333334
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 1,
+                "tie": 0,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 10,
+                "A": 6
+              },
+              "A": {
+                "B": 0,
+                "tie": 1,
+                "A": 23
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 11
+          },
+          "confirmed_pure_tare_ties": {
+            "n": 16,
+            "matched": 10,
+            "accuracy": 0.625,
+            "balanced_accuracy": 0.625,
+            "recall": {
+              "tie": 0.625
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 0,
+                "tie": 0,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 10,
+                "A": 6
+              },
+              "A": {
+                "B": 0,
+                "tie": 0,
+                "A": 0
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 10
+          },
+          "pure_tare_preferences": {
+            "n": 25,
+            "matched": 24,
+            "accuracy": 0.96,
+            "balanced_accuracy": 0.9791666666666667,
+            "recall": {
+              "B": 1.0,
+              "A": 0.9583333333333334
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 1,
+                "tie": 0,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 0,
+                "A": 0
+              },
+              "A": {
+                "B": 0,
+                "tie": 1,
+                "A": 23
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 1
+          },
+          "provenance_plus_tare": {
+            "n": 73,
+            "matched": 46,
+            "accuracy": 0.6301369863013698,
+            "balanced_accuracy": 0.6243032329988851,
+            "recall": {
+              "B": 0.5,
+              "tie": 0.5652173913043478,
+              "A": 0.8076923076923077
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 12,
+                "tie": 12,
+                "A": 0
+              },
+              "tie": {
+                "B": 4,
+                "tie": 13,
+                "A": 6
+              },
+              "A": {
+                "B": 0,
+                "tie": 5,
+                "A": 21
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 30
+          }
+        }
+      },
+      {
+        "seed": 47,
+        "predictions": [
+          -1,
+          -1,
+          1,
+          1,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          -1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          0,
+          -1,
+          -1,
+          -1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          -1,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          -1,
+          -1,
+          1,
+          1,
+          -1,
+          -1,
+          -1,
+          1,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          -1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          -1,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          -1,
+          0,
+          1,
+          1,
+          -1,
+          0,
+          0,
+          -1,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          1,
+          1,
+          -1,
+          1,
+          0,
+          0,
+          -1,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          -1,
+          1,
+          0,
+          0,
+          -1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          -1,
+          0,
+          -1,
+          -1,
+          0,
+          1,
+          1,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          -1,
+          -1,
+          -1,
+          1,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          -1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          -1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          -1,
+          1,
+          1,
+          0,
+          0,
+          -1,
+          1,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          -1,
+          1,
+          -1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "metrics": {
+          "all": {
+            "n": 310,
+            "matched": 226,
+            "accuracy": 0.7290322580645161,
+            "balanced_accuracy": 0.7209795892851562,
+            "recall": {
+              "B": 0.7230769230769231,
+              "tie": 0.6355140186915887,
+              "A": 0.8043478260869565
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 47,
+                "tie": 12,
+                "A": 6
+              },
+              "tie": {
+                "B": 15,
+                "tie": 68,
+                "A": 24
+              },
+              "A": {
+                "B": 5,
+                "tie": 22,
+                "A": 111
+              }
+            },
+            "opposite_winner_errors": 11,
+            "predicted_ties": 102
+          },
+          "pure_tare": {
+            "n": 41,
+            "matched": 30,
+            "accuracy": 0.7317073170731707,
+            "balanced_accuracy": 0.7777777777777778,
+            "recall": {
+              "B": 1.0,
+              "tie": 0.375,
+              "A": 0.9583333333333334
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 1,
+                "tie": 0,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 6,
+                "A": 10
+              },
+              "A": {
+                "B": 0,
+                "tie": 1,
+                "A": 23
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 7
+          },
+          "confirmed_pure_tare_ties": {
+            "n": 16,
+            "matched": 6,
+            "accuracy": 0.375,
+            "balanced_accuracy": 0.375,
+            "recall": {
+              "tie": 0.375
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 0,
+                "tie": 0,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 6,
+                "A": 10
+              },
+              "A": {
+                "B": 0,
+                "tie": 0,
+                "A": 0
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 6
+          },
+          "pure_tare_preferences": {
+            "n": 25,
+            "matched": 24,
+            "accuracy": 0.96,
+            "balanced_accuracy": 0.9791666666666667,
+            "recall": {
+              "B": 1.0,
+              "A": 0.9583333333333334
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 1,
+                "tie": 0,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 0,
+                "A": 0
+              },
+              "A": {
+                "B": 0,
+                "tie": 1,
+                "A": 23
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 1
+          },
+          "provenance_plus_tare": {
+            "n": 73,
+            "matched": 46,
+            "accuracy": 0.6301369863013698,
+            "balanced_accuracy": 0.6284373838721665,
+            "recall": {
+              "B": 0.7916666666666666,
+              "tie": 0.4782608695652174,
+              "A": 0.6153846153846154
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 19,
+                "tie": 5,
+                "A": 0
+              },
+              "tie": {
+                "B": 5,
+                "tie": 11,
+                "A": 7
+              },
+              "A": {
+                "B": 0,
+                "tie": 10,
+                "A": 16
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 26
+          }
+        }
+      },
+      {
+        "seed": 71,
+        "predictions": [
+          -1,
+          -1,
+          1,
+          1,
+          -1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          -1,
+          1,
+          0,
+          1,
+          -1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          0,
+          0,
+          -1,
+          -1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          -1,
+          -1,
+          -1,
+          1,
+          -1,
+          -1,
+          -1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          -1,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          1,
+          -1,
+          1,
+          -1,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          0,
+          -1,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          -1,
+          -1,
+          1,
+          0,
+          0,
+          -1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          -1,
+          -1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          -1,
+          -1,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          -1,
+          0,
+          -1,
+          1,
+          1,
+          -1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          -1,
+          0,
+          1,
+          -1,
+          0,
+          1,
+          1,
+          -1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          -1,
+          1,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          -1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          -1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "metrics": {
+          "all": {
+            "n": 310,
+            "matched": 241,
+            "accuracy": 0.7774193548387097,
+            "balanced_accuracy": 0.7635097260859146,
+            "recall": {
+              "B": 0.7230769230769231,
+              "tie": 0.719626168224299,
+              "A": 0.8478260869565217
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 47,
+                "tie": 13,
+                "A": 5
+              },
+              "tie": {
+                "B": 15,
+                "tie": 77,
+                "A": 15
+              },
+              "A": {
+                "B": 4,
+                "tie": 17,
+                "A": 117
+              }
+            },
+            "opposite_winner_errors": 9,
+            "predicted_ties": 107
+          },
+          "pure_tare": {
+            "n": 41,
+            "matched": 35,
+            "accuracy": 0.8536585365853658,
+            "balanced_accuracy": 0.875,
+            "recall": {
+              "B": 1.0,
+              "tie": 0.625,
+              "A": 1.0
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 1,
+                "tie": 0,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 10,
+                "A": 6
+              },
+              "A": {
+                "B": 0,
+                "tie": 0,
+                "A": 24
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 10
+          },
+          "confirmed_pure_tare_ties": {
+            "n": 16,
+            "matched": 10,
+            "accuracy": 0.625,
+            "balanced_accuracy": 0.625,
+            "recall": {
+              "tie": 0.625
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 0,
+                "tie": 0,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 10,
+                "A": 6
+              },
+              "A": {
+                "B": 0,
+                "tie": 0,
+                "A": 0
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 10
+          },
+          "pure_tare_preferences": {
+            "n": 25,
+            "matched": 25,
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "recall": {
+              "B": 1.0,
+              "A": 1.0
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 1,
+                "tie": 0,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 0,
+                "A": 0
+              },
+              "A": {
+                "B": 0,
+                "tie": 0,
+                "A": 24
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 0
+          },
+          "provenance_plus_tare": {
+            "n": 73,
+            "matched": 49,
+            "accuracy": 0.6712328767123288,
+            "balanced_accuracy": 0.6675027870680045,
+            "recall": {
+              "B": 0.75,
+              "tie": 0.5217391304347826,
+              "A": 0.7307692307692307
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 18,
+                "tie": 6,
+                "A": 0
+              },
+              "tie": {
+                "B": 6,
+                "tie": 12,
+                "A": 5
+              },
+              "A": {
+                "B": 0,
+                "tie": 7,
+                "A": 19
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 25
+          }
+        }
+      },
+      {
+        "seed": 103,
+        "predictions": [
+          -1,
+          -1,
+          1,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          -1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          0,
+          -1,
+          0,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          -1,
+          -1,
+          1,
+          0,
+          -1,
+          -1,
+          -1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          -1,
+          0,
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          0,
+          1,
+          1,
+          -1,
+          0,
+          0,
+          -1,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          -1,
+          -1,
+          1,
+          0,
+          0,
+          -1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          0,
+          0,
+          -1,
+          1,
+          0,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          -1,
+          -1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          -1,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          1,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          -1,
+          1,
+          1,
+          -1,
+          -1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          -1,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          -1,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          -1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "metrics": {
+          "all": {
+            "n": 310,
+            "matched": 235,
+            "accuracy": 0.7580645161290323,
+            "balanced_accuracy": 0.7503301069331139,
+            "recall": {
+              "B": 0.7384615384615385,
+              "tie": 0.7009345794392523,
+              "A": 0.8115942028985508
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 48,
+                "tie": 9,
+                "A": 8
+              },
+              "tie": {
+                "B": 10,
+                "tie": 75,
+                "A": 22
+              },
+              "A": {
+                "B": 4,
+                "tie": 22,
+                "A": 112
+              }
+            },
+            "opposite_winner_errors": 12,
+            "predicted_ties": 106
+          },
+          "pure_tare": {
+            "n": 41,
+            "matched": 30,
+            "accuracy": 0.7317073170731707,
+            "balanced_accuracy": 0.7777777777777778,
+            "recall": {
+              "B": 1.0,
+              "tie": 0.375,
+              "A": 0.9583333333333334
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 1,
+                "tie": 0,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 6,
+                "A": 10
+              },
+              "A": {
+                "B": 0,
+                "tie": 1,
+                "A": 23
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 7
+          },
+          "confirmed_pure_tare_ties": {
+            "n": 16,
+            "matched": 6,
+            "accuracy": 0.375,
+            "balanced_accuracy": 0.375,
+            "recall": {
+              "tie": 0.375
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 0,
+                "tie": 0,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 6,
+                "A": 10
+              },
+              "A": {
+                "B": 0,
+                "tie": 0,
+                "A": 0
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 6
+          },
+          "pure_tare_preferences": {
+            "n": 25,
+            "matched": 24,
+            "accuracy": 0.96,
+            "balanced_accuracy": 0.9791666666666667,
+            "recall": {
+              "B": 1.0,
+              "A": 0.9583333333333334
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 1,
+                "tie": 0,
+                "A": 0
+              },
+              "tie": {
+                "B": 0,
+                "tie": 0,
+                "A": 0
+              },
+              "A": {
+                "B": 0,
+                "tie": 1,
+                "A": 23
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 1
+          },
+          "provenance_plus_tare": {
+            "n": 73,
+            "matched": 46,
+            "accuracy": 0.6301369863013698,
+            "balanced_accuracy": 0.6256967670011148,
+            "recall": {
+              "B": 0.75,
+              "tie": 0.43478260869565216,
+              "A": 0.6923076923076923
+            },
+            "confusion_actual_to_predicted": {
+              "B": {
+                "B": 18,
+                "tie": 6,
+                "A": 0
+              },
+              "tie": {
+                "B": 6,
+                "tie": 10,
+                "A": 7
+              },
+              "A": {
+                "B": 0,
+                "tie": 8,
+                "A": 18
+              }
+            },
+            "opposite_winner_errors": 0,
+            "predicted_ties": 24
+          }
+        }
+      }
+    ],
+    "fold_audits": [
+      {
+        "seed": 11,
+        "fold": 0,
+        "local_contexts": [
+          [
+            "Eastern Europe",
+            "amber",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "amber",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "brown",
+            30
+          ],
+          [
+            "West Asia / Middle East",
+            "golden",
+            35
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            25
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            35
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            20
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            25
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            35
+          ],
+          [
+            "Western Europe",
+            "copper",
+            35
+          ],
+          [
+            "Western Europe",
+            "golden",
+            40
+          ],
+          [
+            "central",
+            "brown",
+            40
+          ],
+          [
+            "central",
+            "golden",
+            40
+          ],
+          [
+            "northeast",
+            "amber",
+            30
+          ],
+          [
+            "northeast",
+            "brown",
+            40
+          ],
+          [
+            "northeast",
+            "pale/straw",
+            30
+          ],
+          [
+            "northwest",
+            "amber",
+            40
+          ],
+          [
+            "northwest",
+            "brown",
+            40
+          ],
+          [
+            "northwest",
+            "golden",
+            35
+          ],
+          [
+            "southeast",
+            "brown",
+            40
+          ],
+          [
+            "southeast",
+            "copper",
+            35
+          ],
+          [
+            "southwest",
+            "brown",
+            30
+          ],
+          [
+            "southwest",
+            "copper",
+            30
+          ],
+          [
+            "southwest",
+            "golden",
+            40
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            20
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            30
+          ]
+        ],
+        "parameters": 221,
+        "fixed_step_count": 16,
+        "alpha": 0.1,
+        "pooling": 10.0,
+        "threshold": 0.4
+      },
+      {
+        "seed": 11,
+        "fold": 1,
+        "local_contexts": [
+          [
+            "Eastern Europe",
+            "pale/straw",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "amber",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "brown",
+            30
+          ],
+          [
+            "West Asia / Middle East",
+            "golden",
+            35
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            25
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            35
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            20
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            25
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            35
+          ],
+          [
+            "Western Europe",
+            "copper",
+            35
+          ],
+          [
+            "central",
+            "golden",
+            40
+          ],
+          [
+            "northeast",
+            "pale/straw",
+            30
+          ],
+          [
+            "northwest",
+            "amber",
+            40
+          ],
+          [
+            "northwest",
+            "brown",
+            40
+          ],
+          [
+            "northwest",
+            "golden",
+            35
+          ],
+          [
+            "southeast",
+            "brown",
+            40
+          ],
+          [
+            "southeast",
+            "copper",
+            35
+          ],
+          [
+            "southwest",
+            "brown",
+            30
+          ],
+          [
+            "southwest",
+            "golden",
+            40
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            20
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            30
+          ]
+        ],
+        "parameters": 201,
+        "fixed_step_count": 12,
+        "alpha": 0.1,
+        "pooling": 10.0,
+        "threshold": 0.2
+      },
+      {
+        "seed": 11,
+        "fold": 2,
+        "local_contexts": [
+          [
+            "Eastern Europe",
+            "amber",
+            20
+          ],
+          [
+            "Eastern Europe",
+            "pale/straw",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "amber",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "brown",
+            30
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            25
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            35
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            20
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            25
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            35
+          ],
+          [
+            "Western Europe",
+            "copper",
+            35
+          ],
+          [
+            "Western Europe",
+            "golden",
+            40
+          ],
+          [
+            "central",
+            "brown",
+            40
+          ],
+          [
+            "central",
+            "golden",
+            40
+          ],
+          [
+            "northeast",
+            "amber",
+            30
+          ],
+          [
+            "northeast",
+            "brown",
+            40
+          ],
+          [
+            "northwest",
+            "amber",
+            40
+          ],
+          [
+            "northwest",
+            "brown",
+            40
+          ],
+          [
+            "northwest",
+            "golden",
+            35
+          ],
+          [
+            "southeast",
+            "brown",
+            40
+          ],
+          [
+            "southeast",
+            "copper",
+            35
+          ],
+          [
+            "southwest",
+            "brown",
+            30
+          ],
+          [
+            "southwest",
+            "copper",
+            30
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            20
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            30
+          ]
+        ],
+        "parameters": 213,
+        "fixed_step_count": 14,
+        "alpha": 1.0,
+        "pooling": 10.0,
+        "threshold": 0.3
+      },
+      {
+        "seed": 11,
+        "fold": 3,
+        "local_contexts": [
+          [
+            "Eastern Europe",
+            "amber",
+            20
+          ],
+          [
+            "Eastern Europe",
+            "pale/straw",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "amber",
+            20
+          ],
+          [
+            "West Asia / Middle East",
+            "golden",
+            35
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            25
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            35
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            20
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            25
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            35
+          ],
+          [
+            "Western Europe",
+            "golden",
+            40
+          ],
+          [
+            "central",
+            "brown",
+            40
+          ],
+          [
+            "central",
+            "golden",
+            40
+          ],
+          [
+            "northeast",
+            "amber",
+            30
+          ],
+          [
+            "northeast",
+            "brown",
+            40
+          ],
+          [
+            "northeast",
+            "pale/straw",
+            30
+          ],
+          [
+            "southeast",
+            "brown",
+            40
+          ],
+          [
+            "southwest",
+            "brown",
+            30
+          ],
+          [
+            "southwest",
+            "copper",
+            30
+          ],
+          [
+            "southwest",
+            "golden",
+            40
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            20
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            30
+          ]
+        ],
+        "parameters": 201,
+        "fixed_step_count": 13,
+        "alpha": 0.1,
+        "pooling": 10.0,
+        "threshold": 0.4
+      },
+      {
+        "seed": 11,
+        "fold": 4,
+        "local_contexts": [
+          [
+            "Eastern Europe",
+            "amber",
+            20
+          ],
+          [
+            "Eastern Europe",
+            "pale/straw",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "brown",
+            30
+          ],
+          [
+            "West Asia / Middle East",
+            "golden",
+            35
+          ],
+          [
+            "Western Europe",
+            "copper",
+            35
+          ],
+          [
+            "Western Europe",
+            "golden",
+            40
+          ],
+          [
+            "central",
+            "brown",
+            40
+          ],
+          [
+            "northeast",
+            "amber",
+            30
+          ],
+          [
+            "northeast",
+            "brown",
+            40
+          ],
+          [
+            "northeast",
+            "pale/straw",
+            30
+          ],
+          [
+            "northwest",
+            "amber",
+            40
+          ],
+          [
+            "northwest",
+            "brown",
+            40
+          ],
+          [
+            "northwest",
+            "golden",
+            35
+          ],
+          [
+            "southeast",
+            "copper",
+            35
+          ],
+          [
+            "southwest",
+            "copper",
+            30
+          ],
+          [
+            "southwest",
+            "golden",
+            40
+          ]
+        ],
+        "parameters": 181,
+        "fixed_step_count": 9,
+        "alpha": 0.1,
+        "pooling": 10.0,
+        "threshold": 0.4
+      },
+      {
+        "seed": 29,
+        "fold": 0,
+        "local_contexts": [
+          [
+            "Eastern Europe",
+            "amber",
+            20
+          ],
+          [
+            "Eastern Europe",
+            "pale/straw",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "amber",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "brown",
+            30
+          ],
+          [
+            "West Asia / Middle East",
+            "golden",
+            35
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            25
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            35
+          ],
+          [
+            "Western Europe",
+            "copper",
+            35
+          ],
+          [
+            "Western Europe",
+            "golden",
+            40
+          ],
+          [
+            "central",
+            "brown",
+            40
+          ],
+          [
+            "central",
+            "golden",
+            40
+          ],
+          [
+            "northeast",
+            "amber",
+            30
+          ],
+          [
+            "northeast",
+            "brown",
+            40
+          ],
+          [
+            "northeast",
+            "pale/straw",
+            30
+          ],
+          [
+            "northwest",
+            "amber",
+            40
+          ],
+          [
+            "northwest",
+            "brown",
+            40
+          ],
+          [
+            "southeast",
+            "brown",
+            40
+          ],
+          [
+            "southwest",
+            "brown",
+            30
+          ],
+          [
+            "southwest",
+            "golden",
+            40
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            20
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            30
+          ]
+        ],
+        "parameters": 201,
+        "fixed_step_count": 13,
+        "alpha": 0.1,
+        "pooling": 10.0,
+        "threshold": 0.3
+      },
+      {
+        "seed": 29,
+        "fold": 1,
+        "local_contexts": [
+          [
+            "Eastern Europe",
+            "amber",
+            20
+          ],
+          [
+            "Eastern Europe",
+            "pale/straw",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "amber",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "brown",
+            30
+          ],
+          [
+            "West Asia / Middle East",
+            "golden",
+            35
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            25
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            35
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            20
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            25
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            35
+          ],
+          [
+            "Western Europe",
+            "copper",
+            35
+          ],
+          [
+            "Western Europe",
+            "golden",
+            40
+          ],
+          [
+            "central",
+            "brown",
+            40
+          ],
+          [
+            "central",
+            "golden",
+            40
+          ],
+          [
+            "northeast",
+            "amber",
+            30
+          ],
+          [
+            "northeast",
+            "pale/straw",
+            30
+          ],
+          [
+            "northwest",
+            "amber",
+            40
+          ],
+          [
+            "northwest",
+            "golden",
+            35
+          ],
+          [
+            "southeast",
+            "copper",
+            35
+          ],
+          [
+            "southwest",
+            "brown",
+            30
+          ],
+          [
+            "southwest",
+            "copper",
+            30
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            20
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            30
+          ]
+        ],
+        "parameters": 209,
+        "fixed_step_count": 13,
+        "alpha": 0.1,
+        "pooling": 10.0,
+        "threshold": 0.4
+      },
+      {
+        "seed": 29,
+        "fold": 2,
+        "local_contexts": [
+          [
+            "Eastern Europe",
+            "amber",
+            20
+          ],
+          [
+            "Eastern Europe",
+            "pale/straw",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "brown",
+            30
+          ],
+          [
+            "West Asia / Middle East",
+            "golden",
+            35
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            20
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            25
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            35
+          ],
+          [
+            "Western Europe",
+            "copper",
+            35
+          ],
+          [
+            "central",
+            "brown",
+            40
+          ],
+          [
+            "central",
+            "golden",
+            40
+          ],
+          [
+            "northeast",
+            "brown",
+            40
+          ],
+          [
+            "northeast",
+            "pale/straw",
+            30
+          ],
+          [
+            "northwest",
+            "brown",
+            40
+          ],
+          [
+            "northwest",
+            "golden",
+            35
+          ],
+          [
+            "southeast",
+            "brown",
+            40
+          ],
+          [
+            "southeast",
+            "copper",
+            35
+          ],
+          [
+            "southwest",
+            "brown",
+            30
+          ],
+          [
+            "southwest",
+            "copper",
+            30
+          ],
+          [
+            "southwest",
+            "golden",
+            40
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            20
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            30
+          ]
+        ],
+        "parameters": 201,
+        "fixed_step_count": 14,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.5
+      },
+      {
+        "seed": 29,
+        "fold": 3,
+        "local_contexts": [
+          [
+            "South/Eastern Asia",
+            "amber",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "brown",
+            30
+          ],
+          [
+            "West Asia / Middle East",
+            "golden",
+            35
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            25
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            35
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            20
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            25
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            35
+          ],
+          [
+            "Western Europe",
+            "golden",
+            40
+          ],
+          [
+            "central",
+            "brown",
+            40
+          ],
+          [
+            "central",
+            "golden",
+            40
+          ],
+          [
+            "northeast",
+            "amber",
+            30
+          ],
+          [
+            "northeast",
+            "brown",
+            40
+          ],
+          [
+            "northwest",
+            "amber",
+            40
+          ],
+          [
+            "northwest",
+            "brown",
+            40
+          ],
+          [
+            "northwest",
+            "golden",
+            35
+          ],
+          [
+            "southeast",
+            "brown",
+            40
+          ],
+          [
+            "southeast",
+            "copper",
+            35
+          ],
+          [
+            "southwest",
+            "brown",
+            30
+          ],
+          [
+            "southwest",
+            "copper",
+            30
+          ],
+          [
+            "southwest",
+            "golden",
+            40
+          ]
+        ],
+        "parameters": 201,
+        "fixed_step_count": 12,
+        "alpha": 0.1,
+        "pooling": 100.0,
+        "threshold": 0.3
+      },
+      {
+        "seed": 29,
+        "fold": 4,
+        "local_contexts": [
+          [
+            "Eastern Europe",
+            "amber",
+            20
+          ],
+          [
+            "Eastern Europe",
+            "pale/straw",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "amber",
+            20
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            25
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            35
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            20
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            25
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            35
+          ],
+          [
+            "Western Europe",
+            "copper",
+            35
+          ],
+          [
+            "Western Europe",
+            "golden",
+            40
+          ],
+          [
+            "northeast",
+            "amber",
+            30
+          ],
+          [
+            "northeast",
+            "brown",
+            40
+          ],
+          [
+            "northeast",
+            "pale/straw",
+            30
+          ],
+          [
+            "northwest",
+            "amber",
+            40
+          ],
+          [
+            "northwest",
+            "brown",
+            40
+          ],
+          [
+            "northwest",
+            "golden",
+            35
+          ],
+          [
+            "southeast",
+            "brown",
+            40
+          ],
+          [
+            "southeast",
+            "copper",
+            35
+          ],
+          [
+            "southwest",
+            "copper",
+            30
+          ],
+          [
+            "southwest",
+            "golden",
+            40
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            20
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            30
+          ]
+        ],
+        "parameters": 205,
+        "fixed_step_count": 12,
+        "alpha": 0.1,
+        "pooling": 10.0,
+        "threshold": 0.3
+      },
+      {
+        "seed": 47,
+        "fold": 0,
+        "local_contexts": [
+          [
+            "Eastern Europe",
+            "amber",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "amber",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "brown",
+            30
+          ],
+          [
+            "West Asia / Middle East",
+            "golden",
+            35
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            25
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            35
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            20
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            25
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            35
+          ],
+          [
+            "Western Europe",
+            "copper",
+            35
+          ],
+          [
+            "Western Europe",
+            "golden",
+            40
+          ],
+          [
+            "central",
+            "brown",
+            40
+          ],
+          [
+            "central",
+            "golden",
+            40
+          ],
+          [
+            "northeast",
+            "amber",
+            30
+          ],
+          [
+            "northeast",
+            "brown",
+            40
+          ],
+          [
+            "northeast",
+            "pale/straw",
+            30
+          ],
+          [
+            "northwest",
+            "amber",
+            40
+          ],
+          [
+            "northwest",
+            "brown",
+            40
+          ],
+          [
+            "northwest",
+            "golden",
+            35
+          ],
+          [
+            "southeast",
+            "copper",
+            35
+          ],
+          [
+            "southwest",
+            "brown",
+            30
+          ],
+          [
+            "southwest",
+            "copper",
+            30
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            20
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            30
+          ]
+        ],
+        "parameters": 213,
+        "fixed_step_count": 14,
+        "alpha": 0.1,
+        "pooling": 100.0,
+        "threshold": 0.3
+      },
+      {
+        "seed": 47,
+        "fold": 1,
+        "local_contexts": [
+          [
+            "Eastern Europe",
+            "pale/straw",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "amber",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "brown",
+            30
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            25
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            35
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            20
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            25
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            35
+          ],
+          [
+            "Western Europe",
+            "golden",
+            40
+          ],
+          [
+            "central",
+            "brown",
+            40
+          ],
+          [
+            "central",
+            "golden",
+            40
+          ],
+          [
+            "northeast",
+            "amber",
+            30
+          ],
+          [
+            "northeast",
+            "brown",
+            40
+          ],
+          [
+            "northeast",
+            "pale/straw",
+            30
+          ],
+          [
+            "northwest",
+            "golden",
+            35
+          ],
+          [
+            "southeast",
+            "brown",
+            40
+          ],
+          [
+            "southeast",
+            "copper",
+            35
+          ],
+          [
+            "southwest",
+            "copper",
+            30
+          ],
+          [
+            "southwest",
+            "golden",
+            40
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            20
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            30
+          ]
+        ],
+        "parameters": 201,
+        "fixed_step_count": 11,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.2
+      },
+      {
+        "seed": 47,
+        "fold": 2,
+        "local_contexts": [
+          [
+            "Eastern Europe",
+            "amber",
+            20
+          ],
+          [
+            "Eastern Europe",
+            "pale/straw",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "amber",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "brown",
+            30
+          ],
+          [
+            "West Asia / Middle East",
+            "golden",
+            35
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            25
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            35
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            20
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            25
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            35
+          ],
+          [
+            "Western Europe",
+            "copper",
+            35
+          ],
+          [
+            "Western Europe",
+            "golden",
+            40
+          ],
+          [
+            "central",
+            "brown",
+            40
+          ],
+          [
+            "northeast",
+            "amber",
+            30
+          ],
+          [
+            "northeast",
+            "brown",
+            40
+          ],
+          [
+            "northwest",
+            "amber",
+            40
+          ],
+          [
+            "northwest",
+            "brown",
+            40
+          ],
+          [
+            "northwest",
+            "golden",
+            35
+          ],
+          [
+            "southeast",
+            "brown",
+            40
+          ],
+          [
+            "southeast",
+            "copper",
+            35
+          ],
+          [
+            "southwest",
+            "brown",
+            30
+          ],
+          [
+            "southwest",
+            "copper",
+            30
+          ],
+          [
+            "southwest",
+            "golden",
+            40
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            20
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            30
+          ]
+        ],
+        "parameters": 217,
+        "fixed_step_count": 15,
+        "alpha": 1.0,
+        "pooling": 10.0,
+        "threshold": 0.3
+      },
+      {
+        "seed": 47,
+        "fold": 3,
+        "local_contexts": [
+          [
+            "Eastern Europe",
+            "amber",
+            20
+          ],
+          [
+            "Eastern Europe",
+            "pale/straw",
+            20
+          ],
+          [
+            "West Asia / Middle East",
+            "golden",
+            35
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            25
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            35
+          ],
+          [
+            "Western Europe",
+            "copper",
+            35
+          ],
+          [
+            "central",
+            "golden",
+            40
+          ],
+          [
+            "northeast",
+            "amber",
+            30
+          ],
+          [
+            "northeast",
+            "brown",
+            40
+          ],
+          [
+            "northeast",
+            "pale/straw",
+            30
+          ],
+          [
+            "northwest",
+            "amber",
+            40
+          ],
+          [
+            "northwest",
+            "brown",
+            40
+          ],
+          [
+            "southeast",
+            "brown",
+            40
+          ],
+          [
+            "southwest",
+            "brown",
+            30
+          ],
+          [
+            "southwest",
+            "copper",
+            30
+          ],
+          [
+            "southwest",
+            "golden",
+            40
+          ]
+        ],
+        "parameters": 181,
+        "fixed_step_count": 10,
+        "alpha": 0.1,
+        "pooling": 10.0,
+        "threshold": 0.15
+      },
+      {
+        "seed": 47,
+        "fold": 4,
+        "local_contexts": [
+          [
+            "Eastern Europe",
+            "amber",
+            20
+          ],
+          [
+            "Eastern Europe",
+            "pale/straw",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "amber",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "brown",
+            30
+          ],
+          [
+            "West Asia / Middle East",
+            "golden",
+            35
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            20
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            25
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            35
+          ],
+          [
+            "Western Europe",
+            "copper",
+            35
+          ],
+          [
+            "Western Europe",
+            "golden",
+            40
+          ],
+          [
+            "central",
+            "brown",
+            40
+          ],
+          [
+            "central",
+            "golden",
+            40
+          ],
+          [
+            "northeast",
+            "pale/straw",
+            30
+          ],
+          [
+            "northwest",
+            "amber",
+            40
+          ],
+          [
+            "northwest",
+            "brown",
+            40
+          ],
+          [
+            "northwest",
+            "golden",
+            35
+          ],
+          [
+            "southeast",
+            "brown",
+            40
+          ],
+          [
+            "southeast",
+            "copper",
+            35
+          ],
+          [
+            "southwest",
+            "brown",
+            30
+          ],
+          [
+            "southwest",
+            "golden",
+            40
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            20
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            30
+          ]
+        ],
+        "parameters": 205,
+        "fixed_step_count": 14,
+        "alpha": 1.0,
+        "pooling": 1.0,
+        "threshold": 0.15
+      },
+      {
+        "seed": 71,
+        "fold": 0,
+        "local_contexts": [
+          [
+            "Eastern Europe",
+            "pale/straw",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "amber",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "brown",
+            30
+          ],
+          [
+            "West Asia / Middle East",
+            "golden",
+            35
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            25
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            35
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            20
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            25
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            35
+          ],
+          [
+            "Western Europe",
+            "copper",
+            35
+          ],
+          [
+            "Western Europe",
+            "golden",
+            40
+          ],
+          [
+            "central",
+            "brown",
+            40
+          ],
+          [
+            "central",
+            "golden",
+            40
+          ],
+          [
+            "northeast",
+            "amber",
+            30
+          ],
+          [
+            "northeast",
+            "brown",
+            40
+          ],
+          [
+            "northwest",
+            "amber",
+            40
+          ],
+          [
+            "northwest",
+            "golden",
+            35
+          ],
+          [
+            "southeast",
+            "copper",
+            35
+          ],
+          [
+            "southwest",
+            "brown",
+            30
+          ],
+          [
+            "southwest",
+            "copper",
+            30
+          ],
+          [
+            "southwest",
+            "golden",
+            40
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            20
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            30
+          ]
+        ],
+        "parameters": 209,
+        "fixed_step_count": 13,
+        "alpha": 0.1,
+        "pooling": 10.0,
+        "threshold": 0.5
+      },
+      {
+        "seed": 71,
+        "fold": 1,
+        "local_contexts": [
+          [
+            "Eastern Europe",
+            "amber",
+            20
+          ],
+          [
+            "Eastern Europe",
+            "pale/straw",
+            20
+          ],
+          [
+            "West Asia / Middle East",
+            "golden",
+            35
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            25
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            35
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            20
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            25
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            35
+          ],
+          [
+            "Western Europe",
+            "golden",
+            40
+          ],
+          [
+            "central",
+            "brown",
+            40
+          ],
+          [
+            "central",
+            "golden",
+            40
+          ],
+          [
+            "northeast",
+            "amber",
+            30
+          ],
+          [
+            "northeast",
+            "brown",
+            40
+          ],
+          [
+            "northeast",
+            "pale/straw",
+            30
+          ],
+          [
+            "northwest",
+            "amber",
+            40
+          ],
+          [
+            "northwest",
+            "brown",
+            40
+          ],
+          [
+            "northwest",
+            "golden",
+            35
+          ],
+          [
+            "southeast",
+            "brown",
+            40
+          ],
+          [
+            "southwest",
+            "brown",
+            30
+          ],
+          [
+            "southwest",
+            "golden",
+            40
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            20
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            30
+          ]
+        ],
+        "parameters": 205,
+        "fixed_step_count": 13,
+        "alpha": 0.1,
+        "pooling": 10.0,
+        "threshold": 0.3
+      },
+      {
+        "seed": 71,
+        "fold": 2,
+        "local_contexts": [
+          [
+            "Eastern Europe",
+            "amber",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "amber",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "brown",
+            30
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            25
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            35
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            20
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            25
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            35
+          ],
+          [
+            "Western Europe",
+            "copper",
+            35
+          ],
+          [
+            "Western Europe",
+            "golden",
+            40
+          ],
+          [
+            "central",
+            "golden",
+            40
+          ],
+          [
+            "northeast",
+            "amber",
+            30
+          ],
+          [
+            "northeast",
+            "brown",
+            40
+          ],
+          [
+            "northeast",
+            "pale/straw",
+            30
+          ],
+          [
+            "northwest",
+            "amber",
+            40
+          ],
+          [
+            "northwest",
+            "brown",
+            40
+          ],
+          [
+            "northwest",
+            "golden",
+            35
+          ],
+          [
+            "southeast",
+            "brown",
+            40
+          ],
+          [
+            "southeast",
+            "copper",
+            35
+          ],
+          [
+            "southwest",
+            "brown",
+            30
+          ],
+          [
+            "southwest",
+            "copper",
+            30
+          ],
+          [
+            "southwest",
+            "golden",
+            40
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            20
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            30
+          ]
+        ],
+        "parameters": 213,
+        "fixed_step_count": 14,
+        "alpha": 0.1,
+        "pooling": 10.0,
+        "threshold": 0.2
+      },
+      {
+        "seed": 71,
+        "fold": 3,
+        "local_contexts": [
+          [
+            "Eastern Europe",
+            "amber",
+            20
+          ],
+          [
+            "Eastern Europe",
+            "pale/straw",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "amber",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "brown",
+            30
+          ],
+          [
+            "West Asia / Middle East",
+            "golden",
+            35
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            25
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            35
+          ],
+          [
+            "Western Europe",
+            "copper",
+            35
+          ],
+          [
+            "central",
+            "brown",
+            40
+          ],
+          [
+            "northeast",
+            "amber",
+            30
+          ],
+          [
+            "northeast",
+            "brown",
+            40
+          ],
+          [
+            "northeast",
+            "pale/straw",
+            30
+          ],
+          [
+            "northwest",
+            "brown",
+            40
+          ],
+          [
+            "northwest",
+            "golden",
+            35
+          ],
+          [
+            "southeast",
+            "brown",
+            40
+          ],
+          [
+            "southeast",
+            "copper",
+            35
+          ],
+          [
+            "southwest",
+            "copper",
+            30
+          ],
+          [
+            "southwest",
+            "golden",
+            40
+          ]
+        ],
+        "parameters": 189,
+        "fixed_step_count": 11,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.2
+      },
+      {
+        "seed": 71,
+        "fold": 4,
+        "local_contexts": [
+          [
+            "Eastern Europe",
+            "amber",
+            20
+          ],
+          [
+            "Eastern Europe",
+            "pale/straw",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "amber",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "brown",
+            30
+          ],
+          [
+            "West Asia / Middle East",
+            "golden",
+            35
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            20
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            25
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            35
+          ],
+          [
+            "Western Europe",
+            "copper",
+            35
+          ],
+          [
+            "Western Europe",
+            "golden",
+            40
+          ],
+          [
+            "central",
+            "brown",
+            40
+          ],
+          [
+            "central",
+            "golden",
+            40
+          ],
+          [
+            "northeast",
+            "pale/straw",
+            30
+          ],
+          [
+            "northwest",
+            "amber",
+            40
+          ],
+          [
+            "northwest",
+            "brown",
+            40
+          ],
+          [
+            "southeast",
+            "brown",
+            40
+          ],
+          [
+            "southeast",
+            "copper",
+            35
+          ],
+          [
+            "southwest",
+            "brown",
+            30
+          ],
+          [
+            "southwest",
+            "copper",
+            30
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            20
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            30
+          ]
+        ],
+        "parameters": 201,
+        "fixed_step_count": 13,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.5
+      },
+      {
+        "seed": 103,
+        "fold": 0,
+        "local_contexts": [
+          [
+            "Eastern Europe",
+            "amber",
+            20
+          ],
+          [
+            "Eastern Europe",
+            "pale/straw",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "amber",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "brown",
+            30
+          ],
+          [
+            "West Asia / Middle East",
+            "golden",
+            35
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            25
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            35
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            20
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            25
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            35
+          ],
+          [
+            "Western Europe",
+            "copper",
+            35
+          ],
+          [
+            "central",
+            "brown",
+            40
+          ],
+          [
+            "central",
+            "golden",
+            40
+          ],
+          [
+            "northeast",
+            "amber",
+            30
+          ],
+          [
+            "northeast",
+            "brown",
+            40
+          ],
+          [
+            "northwest",
+            "amber",
+            40
+          ],
+          [
+            "northwest",
+            "brown",
+            40
+          ],
+          [
+            "northwest",
+            "golden",
+            35
+          ],
+          [
+            "southeast",
+            "brown",
+            40
+          ],
+          [
+            "southeast",
+            "copper",
+            35
+          ],
+          [
+            "southwest",
+            "brown",
+            30
+          ],
+          [
+            "southwest",
+            "copper",
+            30
+          ],
+          [
+            "southwest",
+            "golden",
+            40
+          ]
+        ],
+        "parameters": 209,
+        "fixed_step_count": 14,
+        "alpha": 0.1,
+        "pooling": 100.0,
+        "threshold": 0.3
+      },
+      {
+        "seed": 103,
+        "fold": 1,
+        "local_contexts": [
+          [
+            "Eastern Europe",
+            "pale/straw",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "brown",
+            30
+          ],
+          [
+            "West Asia / Middle East",
+            "golden",
+            35
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            25
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            35
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            20
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            25
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            35
+          ],
+          [
+            "Western Europe",
+            "golden",
+            40
+          ],
+          [
+            "northeast",
+            "amber",
+            30
+          ],
+          [
+            "northeast",
+            "brown",
+            40
+          ],
+          [
+            "northeast",
+            "pale/straw",
+            30
+          ],
+          [
+            "northwest",
+            "amber",
+            40
+          ],
+          [
+            "northwest",
+            "golden",
+            35
+          ],
+          [
+            "southeast",
+            "brown",
+            40
+          ],
+          [
+            "southeast",
+            "copper",
+            35
+          ],
+          [
+            "southwest",
+            "brown",
+            30
+          ],
+          [
+            "southwest",
+            "copper",
+            30
+          ],
+          [
+            "southwest",
+            "golden",
+            40
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            20
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            30
+          ]
+        ],
+        "parameters": 201,
+        "fixed_step_count": 10,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.15
+      },
+      {
+        "seed": 103,
+        "fold": 2,
+        "local_contexts": [
+          [
+            "Eastern Europe",
+            "amber",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "amber",
+            20
+          ],
+          [
+            "West Asia / Middle East",
+            "golden",
+            35
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            20
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            25
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            35
+          ],
+          [
+            "Western Europe",
+            "copper",
+            35
+          ],
+          [
+            "Western Europe",
+            "golden",
+            40
+          ],
+          [
+            "central",
+            "brown",
+            40
+          ],
+          [
+            "central",
+            "golden",
+            40
+          ],
+          [
+            "northeast",
+            "amber",
+            30
+          ],
+          [
+            "northeast",
+            "brown",
+            40
+          ],
+          [
+            "northeast",
+            "pale/straw",
+            30
+          ],
+          [
+            "northwest",
+            "brown",
+            40
+          ],
+          [
+            "northwest",
+            "golden",
+            35
+          ],
+          [
+            "southeast",
+            "brown",
+            40
+          ],
+          [
+            "southeast",
+            "copper",
+            35
+          ],
+          [
+            "southwest",
+            "copper",
+            30
+          ],
+          [
+            "southwest",
+            "golden",
+            40
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            20
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            30
+          ]
+        ],
+        "parameters": 201,
+        "fixed_step_count": 15,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.4
+      },
+      {
+        "seed": 103,
+        "fold": 3,
+        "local_contexts": [
+          [
+            "Eastern Europe",
+            "amber",
+            20
+          ],
+          [
+            "Eastern Europe",
+            "pale/straw",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "amber",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "brown",
+            30
+          ],
+          [
+            "West Asia / Middle East",
+            "golden",
+            35
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            25
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            35
+          ],
+          [
+            "Western Europe",
+            "copper",
+            35
+          ],
+          [
+            "Western Europe",
+            "golden",
+            40
+          ],
+          [
+            "central",
+            "brown",
+            40
+          ],
+          [
+            "central",
+            "golden",
+            40
+          ],
+          [
+            "northeast",
+            "brown",
+            40
+          ],
+          [
+            "northeast",
+            "pale/straw",
+            30
+          ],
+          [
+            "northwest",
+            "amber",
+            40
+          ],
+          [
+            "northwest",
+            "brown",
+            40
+          ],
+          [
+            "northwest",
+            "golden",
+            35
+          ],
+          [
+            "southeast",
+            "brown",
+            40
+          ],
+          [
+            "southeast",
+            "copper",
+            35
+          ],
+          [
+            "southwest",
+            "brown",
+            30
+          ],
+          [
+            "southwest",
+            "copper",
+            30
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            20
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            30
+          ]
+        ],
+        "parameters": 205,
+        "fixed_step_count": 13,
+        "alpha": 0.1,
+        "pooling": 10.0,
+        "threshold": 0.3
+      },
+      {
+        "seed": 103,
+        "fold": 4,
+        "local_contexts": [
+          [
+            "Eastern Europe",
+            "amber",
+            20
+          ],
+          [
+            "Eastern Europe",
+            "pale/straw",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "amber",
+            20
+          ],
+          [
+            "South/Eastern Asia",
+            "brown",
+            30
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            25
+          ],
+          [
+            "West Central Asia",
+            "brown",
+            35
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            20
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            25
+          ],
+          [
+            "West Central Asia",
+            "pale/straw",
+            35
+          ],
+          [
+            "Western Europe",
+            "copper",
+            35
+          ],
+          [
+            "Western Europe",
+            "golden",
+            40
+          ],
+          [
+            "central",
+            "brown",
+            40
+          ],
+          [
+            "central",
+            "golden",
+            40
+          ],
+          [
+            "northeast",
+            "amber",
+            30
+          ],
+          [
+            "northeast",
+            "pale/straw",
+            30
+          ],
+          [
+            "northwest",
+            "amber",
+            40
+          ],
+          [
+            "northwest",
+            "brown",
+            40
+          ],
+          [
+            "southwest",
+            "brown",
+            30
+          ],
+          [
+            "southwest",
+            "golden",
+            40
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            20
+          ],
+          [
+            "southwest",
+            "pale/straw",
+            30
+          ]
+        ],
+        "parameters": 201,
+        "fixed_step_count": 12,
+        "alpha": 0.1,
+        "pooling": 10.0,
+        "threshold": 0.5
+      }
+    ],
+    "row_ids": [
+      "r1-1",
+      "r1-2",
+      "r1-3",
+      "r1-4",
+      "r1-5",
+      "r2-1",
+      "r2-2",
+      "r2-3",
+      "r2-4",
+      "r2-5",
+      "r3-1",
+      "r3-2",
+      "r3-3",
+      "r3-4",
+      "r3-5",
+      "r4-1",
+      "r4-2",
+      "r4-3",
+      "r4-4",
+      "r4-5",
+      "r4-6",
+      "r4-7",
+      "r4-8",
+      "r4-9",
+      "r5-2",
+      "r5-3",
+      "r5-4",
+      "r5-5",
+      "r5-6",
+      "r5-7",
+      "r5-9",
+      "r5-10",
+      "revision-3",
+      "revision-4",
+      "revision-5",
+      "revision-6",
+      "revision-7",
+      "revision-8",
+      "revision-9",
+      "revision-10",
+      "revision-11",
+      "revision-13",
+      "revision-14",
+      "revision-16",
+      "revision-17",
+      "revision-18",
+      "revision-19",
+      "revision-20",
+      "round6-1",
+      "round6-2",
+      "round6-3",
+      "round6-4",
+      "round6-5",
+      "round6-6",
+      "round6-7",
+      "round6-8",
+      "round6-9",
+      "round6-10",
+      "round6-11",
+      "round6-12",
+      "round6-14",
+      "round6-15",
+      "round6-16",
+      "round6-17",
+      "round6-18",
+      "round6-19",
+      "round6-20",
+      "round7-1",
+      "round7-3",
+      "round7-4",
+      "round7-5",
+      "round7-6",
+      "round7-7",
+      "round7-8",
+      "round7-9",
+      "round7-10",
+      "round7-11",
+      "round7-12",
+      "round7-13",
+      "round7-14",
+      "round7-15",
+      "round7-16",
+      "round7-19",
+      "round7-20",
+      "round8-1",
+      "round8-2",
+      "round8-3",
+      "round8-4",
+      "round8-5",
+      "round8-6",
+      "round8-7",
+      "round8-8",
+      "round8-10",
+      "round8-11",
+      "round8-12",
+      "round8-13",
+      "round8-15",
+      "round8-17",
+      "round8-18",
+      "round8-19",
+      "round8-20",
+      "round9-2",
+      "round9-3",
+      "round9-4",
+      "round9-5",
+      "round9-6",
+      "round9-7",
+      "round9-8",
+      "round9-9",
+      "round9-10",
+      "round9-11",
+      "round9-12",
+      "round9-13",
+      "round9-14",
+      "round9-15",
+      "round9-16",
+      "round9-17",
+      "round9-18",
+      "round9-20",
+      "round10-1",
+      "round10-2",
+      "round10-3",
+      "round10-4",
+      "round10-5",
+      "round10-6",
+      "round10-7",
+      "round10-8",
+      "round10-9",
+      "round10-10",
+      "round10-11",
+      "round10-12",
+      "round10-13",
+      "round10-14",
+      "round10-15",
+      "round10-16",
+      "round10-17",
+      "round10-18",
+      "round10-19",
+      "round10-20",
+      "round11-1",
+      "round11-2",
+      "round11-3",
+      "round11-4",
+      "round11-5",
+      "round11-6",
+      "round11-7",
+      "round11-8",
+      "round11-9",
+      "round11-10",
+      "round11-11",
+      "round11-12",
+      "round11-14",
+      "round11-15",
+      "round11-16",
+      "round11-17",
+      "round11-18",
+      "round11-19",
+      "round11-20",
+      "round13-1",
+      "round13-2",
+      "round13-3",
+      "round13-4",
+      "round13-5",
+      "round13-6",
+      "round13-7",
+      "round13-8",
+      "round13-9",
+      "round13-10",
+      "round13-11",
+      "round13-12",
+      "round13-13",
+      "round13-15",
+      "round13-16",
+      "round13-17",
+      "round13-18",
+      "round13-19",
+      "round13-20",
+      "round14-1",
+      "round14-2",
+      "round14-4",
+      "round14-5",
+      "round14-7",
+      "round14-8",
+      "round15-1",
+      "round15-2",
+      "round15-4",
+      "round15-5",
+      "round15-6",
+      "round15-7",
+      "round15-8",
+      "round15-10",
+      "round15-11",
+      "round15-12",
+      "round15-13",
+      "round15-14",
+      "round15-15",
+      "round15-16",
+      "round15-17",
+      "round15-18",
+      "round15-19",
+      "round15-20",
+      "round16-1",
+      "round16-2",
+      "round16-3",
+      "round16-4",
+      "round16-5",
+      "round16-6",
+      "round16-7",
+      "round16-8",
+      "r5-1",
+      "revision-12",
+      "revision-15",
+      "round13-14",
+      "round15-3",
+      "round15-9",
+      "round6-13",
+      "round7-17",
+      "round7-18",
+      "round7-2",
+      "round8-14",
+      "round8-16",
+      "round8-9",
+      "round9-1",
+      "round9-19",
+      "round17-1",
+      "round17-2",
+      "round17-3",
+      "round17-4",
+      "round17-5",
+      "round17-6",
+      "round17-7",
+      "round17-8",
+      "round17-9",
+      "round17-10",
+      "round17-11",
+      "round17-12",
+      "round17-13",
+      "round17-14",
+      "round17-15",
+      "round17-16",
+      "round17-17",
+      "round17-18",
+      "round17-19",
+      "round17-20",
+      "round18-1",
+      "round18-2",
+      "round18-4",
+      "round18-5",
+      "round18-6",
+      "round18-7",
+      "round18-8",
+      "round18-9",
+      "round19-1",
+      "round19-2",
+      "round19-3",
+      "round19-4",
+      "round19-5",
+      "round19-6",
+      "round19-7",
+      "round19-8",
+      "round19-9",
+      "round19-10",
+      "round19-11",
+      "round19-12",
+      "round19-13",
+      "round19-14",
+      "round19-15",
+      "round19-16",
+      "round19-17",
+      "round19-18",
+      "round19-19",
+      "round19-20",
+      "round20-1",
+      "round20-2",
+      "round20-3",
+      "round20-4",
+      "round20-5",
+      "round20-6",
+      "round20-7",
+      "round20-8",
+      "round20-9",
+      "round21-1",
+      "round21-2",
+      "round21-3",
+      "round21-4",
+      "round21-5",
+      "round21-6",
+      "round21-7",
+      "round21-8",
+      "round21-9",
+      "round21-10",
+      "round21-11",
+      "round21-12",
+      "round21-13",
+      "round21-14",
+      "round21-15",
+      "round21-16",
+      "round21-17",
+      "round21-18",
+      "round21-19",
+      "round21-20",
+      "round22-1",
+      "round22-2",
+      "round22-4",
+      "round22-5",
+      "round22-6",
+      "round22-7",
+      "round22-8",
+      "round22-9",
+      "round22-10"
+    ]
+  },
+  "shared_scope_baseline_summary": {
+    "all": {
+      "n": 310,
+      "accuracy": 0.7574193548387097,
+      "balanced_accuracy": 0.7411473343127143,
+      "opposite_winner_errors": 10.2,
+      "predicted_ties": 118.8,
+      "accuracy_range": [
+        0.7419354838709677,
+        0.7774193548387097
+      ],
+      "mean_recall": {
+        "B": 0.6676923076923076,
+        "tie": 0.7514018691588785,
+        "A": 0.8043478260869567
+      }
+    },
+    "pure_tare": {
+      "n": 41,
+      "accuracy": 0.8195121951219513,
+      "balanced_accuracy": 0.675,
+      "opposite_winner_errors": 0.0,
+      "predicted_ties": 14.6,
+      "accuracy_range": [
+        0.7560975609756098,
+        0.8780487804878049
+      ],
+      "mean_recall": {
+        "B": 0.4,
+        "tie": 0.725,
+        "A": 0.9
+      }
+    },
+    "confirmed_pure_tare_ties": {
+      "n": 16,
+      "accuracy": 0.725,
+      "balanced_accuracy": 0.725,
+      "opposite_winner_errors": 0.0,
+      "predicted_ties": 11.6,
+      "accuracy_range": [
+        0.625,
+        0.8125
+      ],
+      "mean_recall": {
+        "tie": 0.725
+      }
+    },
+    "pure_tare_preferences": {
+      "n": 25,
+      "accuracy": 0.8800000000000001,
+      "balanced_accuracy": 0.65,
+      "opposite_winner_errors": 0.0,
+      "predicted_ties": 3.0,
+      "accuracy_range": [
+        0.84,
+        0.92
+      ],
+      "mean_recall": {
+        "B": 0.4,
+        "A": 0.9
+      }
+    },
+    "provenance_plus_tare": {
+      "n": 73,
+      "accuracy": 0.621917808219178,
+      "balanced_accuracy": 0.6192121887774061,
+      "opposite_winner_errors": 0.2,
+      "predicted_ties": 28.4,
+      "accuracy_range": [
+        0.6027397260273972,
+        0.6438356164383562
+      ],
+      "mean_recall": {
+        "B": 0.6666666666666667,
+        "tie": 0.5217391304347826,
+        "A": 0.6692307692307692
+      }
+    }
+  },
+  "candidate_fit_all_310": {
+    "alpha": 0.1,
+    "pooling": 1.0,
+    "threshold": 0.2,
+    "local_contexts": [
+      [
+        "Eastern Europe",
+        "amber",
+        20
+      ],
+      [
+        "Eastern Europe",
+        "pale/straw",
+        20
+      ],
+      [
+        "South/Eastern Asia",
+        "amber",
+        20
+      ],
+      [
+        "South/Eastern Asia",
+        "brown",
+        30
+      ],
+      [
+        "West Asia / Middle East",
+        "golden",
+        35
+      ],
+      [
+        "West Central Asia",
+        "brown",
+        25
+      ],
+      [
+        "West Central Asia",
+        "brown",
+        35
+      ],
+      [
+        "West Central Asia",
+        "pale/straw",
+        20
+      ],
+      [
+        "West Central Asia",
+        "pale/straw",
+        25
+      ],
+      [
+        "West Central Asia",
+        "pale/straw",
+        35
+      ],
+      [
+        "Western Europe",
+        "copper",
+        35
+      ],
+      [
+        "Western Europe",
+        "golden",
+        40
+      ],
+      [
+        "central",
+        "brown",
+        40
+      ],
+      [
+        "central",
+        "golden",
+        40
+      ],
+      [
+        "northeast",
+        "amber",
+        30
+      ],
+      [
+        "northeast",
+        "brown",
+        40
+      ],
+      [
+        "northeast",
+        "pale/straw",
+        30
+      ],
+      [
+        "northwest",
+        "amber",
+        40
+      ],
+      [
+        "northwest",
+        "brown",
+        40
+      ],
+      [
+        "northwest",
+        "golden",
+        35
+      ],
+      [
+        "southeast",
+        "brown",
+        40
+      ],
+      [
+        "southeast",
+        "copper",
+        35
+      ],
+      [
+        "southwest",
+        "brown",
+        30
+      ],
+      [
+        "southwest",
+        "copper",
+        30
+      ],
+      [
+        "southwest",
+        "golden",
+        40
+      ],
+      [
+        "southwest",
+        "pale/straw",
+        20
+      ],
+      [
+        "southwest",
+        "pale/straw",
+        30
+      ]
+    ],
+    "feature_names": [
+      "origin:Western Europe vs Eastern Europe",
+      "origin:West Central Asia vs Eastern Europe",
+      "origin:South/Eastern Asia vs Eastern Europe",
+      "origin:West Asia / Middle East vs Eastern Europe",
+      "origin:central vs Eastern Europe",
+      "origin:northeast vs Eastern Europe",
+      "origin:northwest vs Eastern Europe",
+      "origin:southwest vs Eastern Europe",
+      "origin:southeast vs Eastern Europe",
+      "shade increment:copper",
+      "shade increment:amber",
+      "shade increment:golden",
+      "shade increment:pale/straw",
+      "age increment:35",
+      "age increment:30",
+      "age increment:25",
+      "age increment:20",
+      "tare step to 125 lb at brown/40 years",
+      "tare step to 120 lb at brown/40 years",
+      "tare step to 115 lb at brown/40 years",
+      "tare step to 110 lb at brown/40 years",
+      "tare step to 125 lb at brown/35 years",
+      "tare step to 120 lb at brown/35 years",
+      "tare step to 115 lb at brown/35 years",
+      "tare step to 110 lb at brown/35 years",
+      "tare step to 125 lb at brown/30 years",
+      "tare step to 120 lb at brown/30 years",
+      "tare step to 115 lb at brown/30 years",
+      "tare step to 110 lb at brown/30 years",
+      "tare step to 125 lb at brown/25 years",
+      "tare step to 120 lb at brown/25 years",
+      "tare step to 115 lb at brown/25 years",
+      "tare step to 110 lb at brown/25 years",
+      "tare step to 125 lb at brown/20 years",
+      "tare step to 120 lb at brown/20 years",
+      "tare step to 115 lb at brown/20 years",
+      "tare step to 110 lb at brown/20 years",
+      "tare step to 125 lb at copper/40 years",
+      "tare step to 120 lb at copper/40 years",
+      "tare step to 115 lb at copper/40 years",
+      "tare step to 110 lb at copper/40 years",
+      "tare step to 125 lb at copper/35 years",
+      "tare step to 120 lb at copper/35 years",
+      "tare step to 115 lb at copper/35 years",
+      "tare step to 110 lb at copper/35 years",
+      "tare step to 125 lb at copper/30 years",
+      "tare step to 120 lb at copper/30 years",
+      "tare step to 115 lb at copper/30 years",
+      "tare step to 110 lb at copper/30 years",
+      "tare step to 125 lb at copper/25 years",
+      "tare step to 120 lb at copper/25 years",
+      "tare step to 115 lb at copper/25 years",
+      "tare step to 110 lb at copper/25 years",
+      "tare step to 125 lb at copper/20 years",
+      "tare step to 120 lb at copper/20 years",
+      "tare step to 115 lb at copper/20 years",
+      "tare step to 110 lb at copper/20 years",
+      "tare step to 125 lb at amber/40 years",
+      "tare step to 120 lb at amber/40 years",
+      "tare step to 115 lb at amber/40 years",
+      "tare step to 110 lb at amber/40 years",
+      "tare step to 125 lb at amber/35 years",
+      "tare step to 120 lb at amber/35 years",
+      "tare step to 115 lb at amber/35 years",
+      "tare step to 110 lb at amber/35 years",
+      "tare step to 125 lb at amber/30 years",
+      "tare step to 120 lb at amber/30 years",
+      "tare step to 115 lb at amber/30 years",
+      "tare step to 110 lb at amber/30 years",
+      "tare step to 125 lb at amber/25 years",
+      "tare step to 120 lb at amber/25 years",
+      "tare step to 115 lb at amber/25 years",
+      "tare step to 110 lb at amber/25 years",
+      "tare step to 125 lb at amber/20 years",
+      "tare step to 120 lb at amber/20 years",
+      "tare step to 115 lb at amber/20 years",
+      "tare step to 110 lb at amber/20 years",
+      "tare step to 125 lb at golden/40 years",
+      "tare step to 120 lb at golden/40 years",
+      "tare step to 115 lb at golden/40 years",
+      "tare step to 110 lb at golden/40 years",
+      "tare step to 125 lb at golden/35 years",
+      "tare step to 120 lb at golden/35 years",
+      "tare step to 115 lb at golden/35 years",
+      "tare step to 110 lb at golden/35 years",
+      "tare step to 125 lb at golden/30 years",
+      "tare step to 120 lb at golden/30 years",
+      "tare step to 115 lb at golden/30 years",
+      "tare step to 110 lb at golden/30 years",
+      "tare step to 125 lb at golden/25 years",
+      "tare step to 120 lb at golden/25 years",
+      "tare step to 115 lb at golden/25 years",
+      "tare step to 110 lb at golden/25 years",
+      "tare step to 125 lb at golden/20 years",
+      "tare step to 120 lb at golden/20 years",
+      "tare step to 115 lb at golden/20 years",
+      "tare step to 110 lb at golden/20 years",
+      "tare step to 125 lb at pale/straw/40 years",
+      "tare step to 120 lb at pale/straw/40 years",
+      "tare step to 115 lb at pale/straw/40 years",
+      "tare step to 110 lb at pale/straw/40 years",
+      "tare step to 125 lb at pale/straw/35 years",
+      "tare step to 120 lb at pale/straw/35 years",
+      "tare step to 115 lb at pale/straw/35 years",
+      "tare step to 110 lb at pale/straw/35 years",
+      "tare step to 125 lb at pale/straw/30 years",
+      "tare step to 120 lb at pale/straw/30 years",
+      "tare step to 115 lb at pale/straw/30 years",
+      "tare step to 110 lb at pale/straw/30 years",
+      "tare step to 125 lb at pale/straw/25 years",
+      "tare step to 120 lb at pale/straw/25 years",
+      "tare step to 115 lb at pale/straw/25 years",
+      "tare step to 110 lb at pale/straw/25 years",
+      "tare step to 125 lb at pale/straw/20 years",
+      "tare step to 120 lb at pale/straw/20 years",
+      "tare step to 115 lb at pale/straw/20 years",
+      "tare step to 110 lb at pale/straw/20 years",
+      "local tare step to 125 lb at Eastern Europe/amber/20",
+      "local tare step to 120 lb at Eastern Europe/amber/20",
+      "local tare step to 115 lb at Eastern Europe/amber/20",
+      "local tare step to 110 lb at Eastern Europe/amber/20",
+      "local tare step to 125 lb at Eastern Europe/pale/straw/20",
+      "local tare step to 120 lb at Eastern Europe/pale/straw/20",
+      "local tare step to 115 lb at Eastern Europe/pale/straw/20",
+      "local tare step to 110 lb at Eastern Europe/pale/straw/20",
+      "local tare step to 125 lb at South/Eastern Asia/amber/20",
+      "local tare step to 120 lb at South/Eastern Asia/amber/20",
+      "local tare step to 115 lb at South/Eastern Asia/amber/20",
+      "local tare step to 110 lb at South/Eastern Asia/amber/20",
+      "local tare step to 125 lb at South/Eastern Asia/brown/30",
+      "local tare step to 120 lb at South/Eastern Asia/brown/30",
+      "local tare step to 115 lb at South/Eastern Asia/brown/30",
+      "local tare step to 110 lb at South/Eastern Asia/brown/30",
+      "local tare step to 125 lb at West Asia / Middle East/golden/35",
+      "local tare step to 120 lb at West Asia / Middle East/golden/35",
+      "local tare step to 115 lb at West Asia / Middle East/golden/35",
+      "local tare step to 110 lb at West Asia / Middle East/golden/35",
+      "local tare step to 125 lb at West Central Asia/brown/25",
+      "local tare step to 120 lb at West Central Asia/brown/25",
+      "local tare step to 115 lb at West Central Asia/brown/25",
+      "local tare step to 110 lb at West Central Asia/brown/25",
+      "local tare step to 125 lb at West Central Asia/brown/35",
+      "local tare step to 120 lb at West Central Asia/brown/35",
+      "local tare step to 115 lb at West Central Asia/brown/35",
+      "local tare step to 110 lb at West Central Asia/brown/35",
+      "local tare step to 125 lb at West Central Asia/pale/straw/20",
+      "local tare step to 120 lb at West Central Asia/pale/straw/20",
+      "local tare step to 115 lb at West Central Asia/pale/straw/20",
+      "local tare step to 110 lb at West Central Asia/pale/straw/20",
+      "local tare step to 125 lb at West Central Asia/pale/straw/25",
+      "local tare step to 120 lb at West Central Asia/pale/straw/25",
+      "local tare step to 115 lb at West Central Asia/pale/straw/25",
+      "local tare step to 110 lb at West Central Asia/pale/straw/25",
+      "local tare step to 125 lb at West Central Asia/pale/straw/35",
+      "local tare step to 120 lb at West Central Asia/pale/straw/35",
+      "local tare step to 115 lb at West Central Asia/pale/straw/35",
+      "local tare step to 110 lb at West Central Asia/pale/straw/35",
+      "local tare step to 125 lb at Western Europe/copper/35",
+      "local tare step to 120 lb at Western Europe/copper/35",
+      "local tare step to 115 lb at Western Europe/copper/35",
+      "local tare step to 110 lb at Western Europe/copper/35",
+      "local tare step to 125 lb at Western Europe/golden/40",
+      "local tare step to 120 lb at Western Europe/golden/40",
+      "local tare step to 115 lb at Western Europe/golden/40",
+      "local tare step to 110 lb at Western Europe/golden/40",
+      "local tare step to 125 lb at central/brown/40",
+      "local tare step to 120 lb at central/brown/40",
+      "local tare step to 115 lb at central/brown/40",
+      "local tare step to 110 lb at central/brown/40",
+      "local tare step to 125 lb at central/golden/40",
+      "local tare step to 120 lb at central/golden/40",
+      "local tare step to 115 lb at central/golden/40",
+      "local tare step to 110 lb at central/golden/40",
+      "local tare step to 125 lb at northeast/amber/30",
+      "local tare step to 120 lb at northeast/amber/30",
+      "local tare step to 115 lb at northeast/amber/30",
+      "local tare step to 110 lb at northeast/amber/30",
+      "local tare step to 125 lb at northeast/brown/40",
+      "local tare step to 120 lb at northeast/brown/40",
+      "local tare step to 115 lb at northeast/brown/40",
+      "local tare step to 110 lb at northeast/brown/40",
+      "local tare step to 125 lb at northeast/pale/straw/30",
+      "local tare step to 120 lb at northeast/pale/straw/30",
+      "local tare step to 115 lb at northeast/pale/straw/30",
+      "local tare step to 110 lb at northeast/pale/straw/30",
+      "local tare step to 125 lb at northwest/amber/40",
+      "local tare step to 120 lb at northwest/amber/40",
+      "local tare step to 115 lb at northwest/amber/40",
+      "local tare step to 110 lb at northwest/amber/40",
+      "local tare step to 125 lb at northwest/brown/40",
+      "local tare step to 120 lb at northwest/brown/40",
+      "local tare step to 115 lb at northwest/brown/40",
+      "local tare step to 110 lb at northwest/brown/40",
+      "local tare step to 125 lb at northwest/golden/35",
+      "local tare step to 120 lb at northwest/golden/35",
+      "local tare step to 115 lb at northwest/golden/35",
+      "local tare step to 110 lb at northwest/golden/35",
+      "local tare step to 125 lb at southeast/brown/40",
+      "local tare step to 120 lb at southeast/brown/40",
+      "local tare step to 115 lb at southeast/brown/40",
+      "local tare step to 110 lb at southeast/brown/40",
+      "local tare step to 125 lb at southeast/copper/35",
+      "local tare step to 120 lb at southeast/copper/35",
+      "local tare step to 115 lb at southeast/copper/35",
+      "local tare step to 110 lb at southeast/copper/35",
+      "local tare step to 125 lb at southwest/brown/30",
+      "local tare step to 120 lb at southwest/brown/30",
+      "local tare step to 115 lb at southwest/brown/30",
+      "local tare step to 110 lb at southwest/brown/30",
+      "local tare step to 125 lb at southwest/copper/30",
+      "local tare step to 120 lb at southwest/copper/30",
+      "local tare step to 115 lb at southwest/copper/30",
+      "local tare step to 110 lb at southwest/copper/30",
+      "local tare step to 125 lb at southwest/golden/40",
+      "local tare step to 120 lb at southwest/golden/40",
+      "local tare step to 115 lb at southwest/golden/40",
+      "local tare step to 110 lb at southwest/golden/40",
+      "local tare step to 125 lb at southwest/pale/straw/20",
+      "local tare step to 120 lb at southwest/pale/straw/20",
+      "local tare step to 115 lb at southwest/pale/straw/20",
+      "local tare step to 110 lb at southwest/pale/straw/20",
+      "local tare step to 125 lb at southwest/pale/straw/30",
+      "local tare step to 120 lb at southwest/pale/straw/30",
+      "local tare step to 115 lb at southwest/pale/straw/30",
+      "local tare step to 110 lb at southwest/pale/straw/30"
+    ],
+    "coefficients": [
+      0.6920374731928166,
+      -1.6284402211920628,
+      -1.6956291039905427,
+      -1.632291113368895,
+      0.64166119532043,
+      1.388372076122935,
+      0.6605150664479232,
+      1.3732955429146354,
+      1.4280776442469472,
+      1.7714254610708908,
+      1.108384521237286,
+      0.4679856205936332,
+      1.1344863425399687,
+      1.2246467959783278,
+      0.9874171103347242,
+      2.3939268474468354,
+      1.2623105862807178,
+      1.2287471561574326,
+      0.9622923543821947,
+      0.1966868680868926,
+      0.8385144734926759,
+      1.2152719710704776,
+      0.6825109132751492,
+      0.7809729622172136,
+      0.6866570395337442,
+      1.1910396425546488,
+      0.3644919886074635,
+      0.7412877360923587,
+      0.6866670593630295,
+      0.898350237295534,
+      0.0,
+      2.1766506002711665,
+      0.4819782278843972,
+      1.8283577604097765,
+      0.05949815878175698,
+      1.3863426514263817,
+      0.6866711870478268,
+      1.1083845212372925,
+      0.6916960922924027,
+      0.7867391276288372,
+      0.6866698346758867,
+      1.9067551485556409,
+      1.199818752142187,
+      0.38081448819033586,
+      0.686688334401578,
+      1.8908586900952147,
+      0.6812996883862217,
+      0.8860461397826819,
+      0.6134005242896862,
+      1.2348205041363505,
+      0.8292540434975595,
+      0.7867433887465274,
+      0.6866690731706664,
+      1.4405507462036808,
+      1.1667065589317103,
+      0.7867384261684335,
+      0.6866649554319282,
+      0.8836653830001177,
+      0.8118959939041616,
+      0.9091915792095859,
+      0.6866512280962925,
+      0.7983706273183531,
+      1.1998187521421997,
+      0.38081448819034047,
+      1.000699988652553,
+      1.4911890672222003,
+      0.4278954230763416,
+      0.6770700097311294,
+      0.5401333769885777,
+      0.49926323805697564,
+      0.6262243989054819,
+      0.7441486472896977,
+      1.2061244634362114,
+      1.6495336266214355,
+      0.1299000839355098,
+      0.6836910885364672,
+      0.6866820757078875,
+      1.6378778917664272,
+      1.0974067728949306,
+      0.40038037837417895,
+      0.6866521389867879,
+      1.4774885765678585,
+      0.05271518229896403,
+      0.5837798169454977,
+      0.8436698978051457,
+      1.0562317962866294,
+      0.8389701029977018,
+      0.7639850948061642,
+      0.686666381766285,
+      0.03127761746330484,
+      1.1693715887167178,
+      0.9937762728119656,
+      0.6866650717706169,
+      1.2447717142290704,
+      0.6916909711396623,
+      0.7867403293433433,
+      0.6866644107551181,
+      1.0524565353138124,
+      1.0247648616106915,
+      0.0,
+      0.6866600899367501,
+      0.9830359230716471,
+      0.36004612184387624,
+      0.7867270076123516,
+      0.6866590003433032,
+      1.5510322813226751,
+      0.9235375277528961,
+      1.6263476708625741,
+      0.015241047887225264,
+      1.6049029312535614,
+      1.064466855029432,
+      0.786718125087155,
+      0.6866533482693091,
+      1.425045335190412,
+      0.19824429411837163,
+      0.7867384473307556,
+      0.6866791409066906,
+      1.5636377938956412,
+      0.0,
+      0.8791904800843906,
+      0.6866880938073217,
+      1.425032820532769,
+      0.19824513612065586,
+      0.7867393458979699,
+      0.6866821158612079,
+      1.712757334822732,
+      0.0,
+      0.6837073391364857,
+      0.6866865831605172,
+      1.2230296295268765,
+      0.3964903260152451,
+      0.7412825412753323,
+      0.6866722740063329,
+      1.5302037588668629,
+      0.0,
+      0.38081448819033187,
+      1.0006999886525552,
+      2.754735567548273,
+      8.167958500508047e-17,
+      1.7817735893503592,
+      0.4819878567506814,
+      1.179231446526948,
+      0.654194152990194,
+      0.7809657814510216,
+      0.6866519188613377,
+      1.4250316226203643,
+      0.0,
+      0.7867375877337932,
+      0.6866827076824893,
+      1.5728937895671122,
+      1.0324857637207923,
+      0.7867098735660355,
+      0.6866447991592155,
+      0.9942730637184057,
+      0.28875199876961516,
+      0.7867143054461083,
+      0.6866550229447533,
+      1.906755148555635,
+      0.0,
+      0.3808087163194489,
+      0.6866975881651053,
+      1.6228469698002534,
+      1.0823787137666983,
+      0.40038706949297237,
+      0.6866482687767326,
+      1.4924581089711821,
+      1.2260029748388421,
+      0.0,
+      0.9904035772809902,
+      1.64766293095867,
+      1.1071876238865268,
+      0.0,
+      0.6866476518982063,
+      1.52421741688029,
+      0.0,
+      0.8256025801465119,
+      0.613400524289691,
+      1.2287460855956802,
+      0.9622910222616835,
+      0.1966924020704716,
+      0.8385031187189804,
+      1.5510360799343377,
+      0.9235422147892554,
+      1.6263439269762021,
+      0.0152372902979768,
+      0.0,
+      0.8785354449665096,
+      0.9091896211103452,
+      0.686640617401459,
+      1.2287585568511712,
+      0.9623034227188295,
+      0.0,
+      0.8385031187189808,
+      1.5302037588668644,
+      0.0,
+      0.5837798588563706,
+      0.8436369269400535,
+      0.9650379691886062,
+      0.9725980583233527,
+      0.0,
+      0.8385031187189806,
+      1.8806639583812939,
+      1.173736970386632,
+      0.3808211427799935,
+      0.6866996664139673,
+      1.3932338476682469,
+      0.0,
+      0.7412811287805978,
+      0.6866721402720412,
+      2.266962025173682,
+      0.0,
+      0.8860399495892364,
+      0.6134024055287773,
+      1.6450573057037252,
+      1.104586513654889,
+      0.0,
+      0.6866478254325661,
+      1.481672334265844,
+      0.0,
+      0.8802608415033226,
+      0.7802048149884179,
+      1.5689969578307292,
+      0.9415030926856472,
+      1.644300678329778,
+      0.0
+    ],
+    "in_sample": {
+      "n": 310,
+      "matched": 280,
+      "accuracy": 0.9032258064516129,
+      "balanced_accuracy": 0.9075012936857716,
+      "recall": {
+        "B": 0.9538461538461539,
+        "tie": 0.8411214953271028,
+        "A": 0.927536231884058
+      },
+      "confusion_actual_to_predicted": {
+        "B": {
+          "B": 62,
+          "tie": 3,
+          "A": 0
+        },
+        "tie": {
+          "B": 9,
+          "tie": 90,
+          "A": 8
+        },
+        "A": {
+          "B": 0,
+          "tie": 10,
+          "A": 128
+        }
+      },
+      "opposite_winner_errors": 0,
+      "predicted_ties": 103
+    },
+    "forced_strict_preference_ids": [],
+    "pure_tare_tie_audit": {
+      "n": 16,
+      "exact_score_equalities": 16
+    },
+    "target_predictions": [
+      {
+        "id": "round14-2",
+        "answer": "B",
+        "prediction": "B",
+        "margin": -1.173736970386632,
+        "exact_score_equality": false
+      },
+      {
+        "id": "round21-3",
+        "answer": "tie",
+        "prediction": "B",
+        "margin": -0.32132123374615573,
+        "exact_score_equality": false
+      },
+      {
+        "id": "round21-8",
+        "answer": "A",
+        "prediction": "tie",
+        "margin": -0.01448009798868144,
+        "exact_score_equality": false
+      },
+      {
+        "id": "round21-11",
+        "answer": "tie",
+        "prediction": "tie",
+        "margin": -0.048104882866389254,
+        "exact_score_equality": false
+      },
+      {
+        "id": "round21-12",
+        "answer": "tie",
+        "prediction": "tie",
+        "margin": 0.0,
+        "exact_score_equality": true
+      }
+    ]
+  }
+}

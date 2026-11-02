@@ -1,0 +1,205 @@
+{
+  "model_id": "consistent-price-layer-v1",
+  "status": "experimental_calibrated_to_plausibility_not_market_data",
+  "domain": {
+    "provenances": [
+      "Eastern Europe",
+      "Western Europe",
+      "West Central Asia",
+      "South/Eastern Asia",
+      "West Asia / Middle East",
+      "central",
+      "northeast",
+      "northwest",
+      "southwest",
+      "southeast"
+    ],
+    "shades": [
+      "brown",
+      "copper",
+      "amber",
+      "golden",
+      "pale/straw"
+    ],
+    "vintage_years": [
+      40,
+      35,
+      30,
+      25,
+      20
+    ],
+    "tare_lb": [
+      110,
+      115,
+      120,
+      125,
+      130
+    ],
+    "domestic": [
+      "central",
+      "northwest",
+      "northeast",
+      "southwest",
+      "southeast"
+    ]
+  },
+  "base_coefficients": [
+    0.3078046153853131,
+    -0.6921753846154004,
+    -0.6921853846146869,
+    -0.99999,
+    0.07700615384694243,
+    0.5385530769235776,
+    -0.23067846153815819,
+    0.1539523076927236,
+    0.07705615384704778,
+    1.3077246153852071,
+    0.23073846153826455,
+    0.0,
+    0.07690615384578114,
+    0.5385030769234712,
+    1.3077646115898918,
+    1.307714615385207,
+    1.2308284615394256,
+    0.5384930769234713,
+    0.53841307692231,
+    0.5384930769234713
+  ],
+  "regional_anchors": {
+    "Eastern Europe": {
+      "price": 1029.9881700117828,
+      "status": "model_inferred"
+    },
+    "Western Europe": {
+      "price": 1070.0027299973033,
+      "status": "model_inferred"
+    },
+    "West Central Asia": {
+      "price": 940.0054599945139,
+      "status": "model_inferred"
+    },
+    "South/Eastern Asia": {
+      "price": 940.0041599959067,
+      "status": "model_inferred"
+    },
+    "West Asia / Middle East": {
+      "price": 899.9896000103862,
+      "status": "model_inferred"
+    },
+    "central": {
+      "price": 1050,
+      "status": "user_established"
+    },
+    "northeast": {
+      "price": 1100,
+      "status": "user_established"
+    },
+    "northwest": {
+      "price": 1000,
+      "status": "user_established"
+    },
+    "southwest": {
+      "price": 1050.0019499980517,
+      "status": "model_inferred"
+    },
+    "southeast": {
+      "price": 1075,
+      "status": "user_established"
+    }
+  },
+  "calibration_offerings": [
+    [
+      "northeast",
+      "pale/straw",
+      20,
+      115
+    ],
+    [
+      "northeast",
+      "pale/straw",
+      25,
+      110
+    ],
+    [
+      "northeast",
+      "golden",
+      20,
+      110
+    ],
+    [
+      "northwest",
+      "pale/straw",
+      20,
+      115
+    ],
+    [
+      "northwest",
+      "pale/straw",
+      25,
+      110
+    ],
+    [
+      "northwest",
+      "golden",
+      20,
+      110
+    ],
+    [
+      "northeast",
+      "golden",
+      25,
+      115
+    ],
+    [
+      "southeast",
+      "golden",
+      25,
+      115
+    ],
+    [
+      "northwest",
+      "golden",
+      25,
+      115
+    ],
+    [
+      "central",
+      "golden",
+      25,
+      115
+    ]
+  ],
+  "log_discount_knots": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.07690615384578114,
+      0.00959140970838699
+    ],
+    [
+      0.5384930769234713,
+      0.0691610351988079
+    ],
+    [
+      1.2308284615394256,
+      0.16576948533359503
+    ],
+    [
+      1.846227692308678,
+      0.34804788960120187
+    ]
+  ],
+  "price_basis": "Wholefilledcask; seat/reference-status assumed comparable; samevolume,mint,initialrelease/distributorterms; fees/taxes/deliveryexcluded. Regularbatchdiscount notapplied.",
+  "source_hashes": {
+    "model-config-v28.json": "a9fed8e86977526c16e74ccdb0a6a75d919b3041bd602e5592d64e3086414dcf",
+    "pricing/all-region-price-grid-v1.json": "1530caa295146c3d7599ef37fe871ab0a5346fd074bf82888c5f825a779ed166",
+    "pricing/anchors-v1.json": "0c0c568d40ca84fa52f79c2cdb3b11dbe85ff2f83d9c1b3d6981f818469e829e",
+    "pricing/valuation-checks-v1.json": "45c2f96364938ca1d1d81bbc360918d03f463f190abc767f1eff3a24c49bbbe3",
+    "pricing/independent-checks-v2.json": "89f27e09672ecfcdcde9a6b2c365c57f55f612221ea3b9f0a08ee1fb6bb8855d",
+    "pricing/consistent-price-protocol-v1.json": "ff65c33ba03c5528d7d7003f1f98183918a434e51ad46a82921f6a945741b76a",
+    "pricing/consistent_price_layer.py": "85d343200a8e93bb88b55d4bc742963b4e7f6e185b792f915513d29f0c2ebab0",
+    "pricing/calibrate_consistent_prices.py": "f1cc6c2f48537a305a5e1032a03e42d2de2d3aa108a7a17b07a058c07b991991"
+  }
+}

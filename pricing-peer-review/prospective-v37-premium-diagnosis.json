@@ -1,0 +1,122 @@
+{
+  "scope": "Analysis only. No fitting, band changes, evidence incorporation, or new questionnaire.",
+  "decompositions": [
+    {
+      "number": 13,
+      "a": [
+        "South/Eastern Asia",
+        "brown",
+        30,
+        115
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "amber",
+        30,
+        115
+      ],
+      "absolute_margin": 1.5384630769234717,
+      "winner_contributions": {
+        "provenance": -0.0,
+        "shade": 1.5384630769234717,
+        "vintage": -0.0,
+        "tare": -0.0
+      }
+    },
+    {
+      "number": 14,
+      "a": [
+        "southeast",
+        "copper",
+        30,
+        110
+      ],
+      "b": [
+        "southeast",
+        "brown",
+        30,
+        120
+      ],
+      "absolute_margin": 2.3847107692321496,
+      "winner_contributions": {
+        "provenance": 0.0,
+        "shade": 1.3077246153852071,
+        "vintage": 0.0,
+        "tare": 1.0769861538469425
+      }
+    },
+    {
+      "number": 16,
+      "a": [
+        "northwest",
+        "copper",
+        30,
+        110
+      ],
+      "b": [
+        "central",
+        "copper",
+        35,
+        115
+      ],
+      "absolute_margin": 1.5385730731282625,
+      "winner_contributions": {
+        "provenance": -0.3076846153851006,
+        "shade": 0.0,
+        "vintage": 1.3077646115898918,
+        "tare": 0.5384930769234713
+      }
+    },
+    {
+      "number": 18,
+      "a": [
+        "southeast",
+        "brown",
+        20,
+        120
+      ],
+      "b": [
+        "southeast",
+        "copper",
+        20,
+        115
+      ],
+      "absolute_margin": 1.8462176923086784,
+      "winner_contributions": {
+        "provenance": -0.0,
+        "shade": 1.3077246153852071,
+        "vintage": -0.0,
+        "tare": 0.5384930769234713
+      }
+    }
+  ],
+  "shared_pattern": "All three predicted winners are30year offerings; additive gains are mapped to premium size without sufficient bracket/provenance context. This is a hypothesis about missing structure, not proof that all remaining error has this cause.",
+  "case13_counterexample": {
+    "new_case": "South/EasternAsia brown30/115 vsamber30/115: Bslight",
+    "recorded_comparator": "round45-14: WestAsia/MiddleEast brown30/115 vsamber30/115: Bmeaningful",
+    "inference": "Shared globalshade increment cannot express both premium magnitudes; this is context dependence or residuallabel inconsistency, not established noise."
+  },
+  "case14_counterexample": {
+    "new_case14": "Southeast copper30/110 vsbrown30/120: Aslight",
+    "new_case18": "Southeast brown20/120 vscopper20/115: Bmeaningful",
+    "inference": "Modelscore14>18 but14slight/18meaningful; no single monotone scalar size cutoff separates them correctly. Agebracket matters or evidence has unresolvedcontext; 110lb alone doesnotensuremeaningful."
+  },
+  "case16": "No shade difference atall. Younger vintage plus5lblower tare offsets Northwest provenance disadvantage but expertpremium remains slight. Extending brown-specific fix cannotaddress this.",
+  "counterexamples_to_blanket_age30_suppression": [
+    "round49-5 EasternEurope brown30/110 vsbrown30/130 meaningful",
+    "round53-2 WCA golden30/115 vsgolden25/130 meaningful"
+  ],
+  "recommendation": "Stop local coefficient/band tuning in this model family. Keep ranking and uncertaintyreporting provisional; v37notpromoted becausefreshbinarysize/jointaccuracy didnotimprove. Any futurework should be a separatelyspecified contextualpremium model with explicitstoppingcriteria and untouchedvalidation, not anothercasepatch. Do not automaticallystartthatwork.",
+  "qualifications": [
+    "Q13andQ16scores~1.538 areclose tobandedge1.5; movingedgecouldwithholdthem butwouldnotfixQ14~2.385.",
+    "These examples do not establish a calibratedconfidence or an irreduciblenoisefloor.",
+    "Strongpredictordirectionisnot strongpricepremium; preserve small strictadvantages."
+  ],
+  "source_hashes": {
+    "model-config-v28.json": "a9fed8e86977526c16e74ccdb0a6a75d919b3041bd602e5592d64e3086414dcf",
+    "benchmark-targets-v37.json": "a9555b90e018ef8c2d834c36c6e61b5e535b5530190f956b01e3cb9b66e7af03",
+    "prospective-v37-sealed.json": "e46aa7109f78b41e386c9d853ff288c238f41f04334fd21269421638d6a3c62a",
+    "prospective-v37-progress.json": "c75207a950d8eae9478813d4e6f3e58d4e3abf49c1f2f5a1f4d71bf060f25681",
+    "prospective-v37-results.json": "48d7d712cc5e1836c8bc0426813fd4fd3f4789b7244d50a64deeb9d1ccb68456"
+  }
+}

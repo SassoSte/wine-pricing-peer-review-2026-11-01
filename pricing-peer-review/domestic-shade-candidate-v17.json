@@ -1,0 +1,212 @@
+{
+  "selected_model": "v17_shade_protected",
+  "status": "corrected candidate; not an unqualified replacement for retained v16 baseline",
+  "model": {
+    "kind": "v17_shade_protected",
+    "trained_evidence": "evidence-v17.json",
+    "alpha": 0.01,
+    "training_radius": 0.3,
+    "decision_radius": 0.3000001,
+    "coefficients": [
+      0.3743691956210216,
+      -0.5195343214583995,
+      -0.5196343214583995,
+      -0.4517080517457548,
+      0.460151932545831,
+      0.607383410475055,
+      0.3742691956210216,
+      0.7003539231533851,
+      0.6560829261596832,
+      0.8730873127878245,
+      1.3976466827144766e-21,
+      4.676090193909922e-21,
+      0.775805393974349,
+      0.33039918269656776,
+      0.8031135926451817,
+      0.775705393974349,
+      0.3481939980298994,
+      0.2809498480010621,
+      -0.475805393974349
+    ],
+    "feature_names": [
+      "origin:Western Europe vs Eastern Europe",
+      "origin:West Central Asia vs Eastern Europe",
+      "origin:South/Eastern Asia vs Eastern Europe",
+      "origin:West Asia / Middle East vs Eastern Europe",
+      "origin:central vs Eastern Europe",
+      "origin:northeast vs Eastern Europe",
+      "origin:northwest vs Eastern Europe",
+      "origin:southwest vs Eastern Europe",
+      "origin:southeast vs Eastern Europe",
+      "shade increment:copper",
+      "shade increment:amber",
+      "shade increment:golden",
+      "shade increment:pale/straw",
+      "age increment:35",
+      "age increment:30",
+      "age increment:25",
+      "age increment:20",
+      "lightness per 5 lb",
+      "domestic x pale/straw"
+    ],
+    "global_rules": {
+      "five_pound_tare_contribution": 0.2809498480010621,
+      "domestic_golden_pale_contribution": 0.3
+    },
+    "training_score": {
+      "direction": {
+        "n": 282,
+        "correct": 267,
+        "accuracy": 0.9468085106382979,
+        "reversals": 15,
+        "zero_or_abstain": 0
+      },
+      "materiality": {
+        "n": 187,
+        "meaningful_n": 28,
+        "no_meaningful_n": 159,
+        "accuracy": 0.93048128342246,
+        "balanced_accuracy": 0.9444070080862534,
+        "meaningful_recall": 0.9642857142857143,
+        "no_meananingful_recall": 0.9245283018867925,
+        "false_meaningful": 12,
+        "missed_meaningful": 1,
+        "correct_meaningful_direction": 27
+      },
+      "unknown_materiality_n": 238,
+      "directly_supported_materiality": {
+        "n": 53,
+        "meaningful_n": 3,
+        "no_meaningful_n": 50,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "meaningful_recall": 1.0,
+        "no_meananingful_recall": 1.0,
+        "false_meaningful": 0,
+        "missed_meaningful": 0,
+        "correct_meaningful_direction": 3
+      }
+    },
+    "round36_training_predictions": [
+      {
+        "id": "round36-1",
+        "direction": "B",
+        "materiality": "no_meaningful_difference",
+        "margin": -9.999999999998899e-05
+      },
+      {
+        "id": "round36-2",
+        "direction": "A",
+        "materiality": "no_meaningful_difference",
+        "margin": 9.999999999998899e-05
+      },
+      {
+        "id": "round36-3",
+        "direction": "B",
+        "materiality": "no_meaningful_difference",
+        "margin": -9.999999999998899e-05
+      },
+      {
+        "id": "round36-4",
+        "direction": "A",
+        "materiality": "no_meaningful_difference",
+        "margin": 9.999999999998899e-05
+      },
+      {
+        "id": "round36-5",
+        "direction": "A",
+        "materiality": "no_meaningful_difference",
+        "margin": 9.999999999998899e-05
+      },
+      {
+        "id": "round36-6",
+        "direction": "B",
+        "materiality": "no_meaningful_difference",
+        "margin": -9.999999999998899e-05
+      },
+      {
+        "id": "round36-7",
+        "direction": "A",
+        "materiality": "no_meaningful_difference",
+        "margin": 9.999999999998899e-05
+      },
+      {
+        "id": "round36-8",
+        "direction": "B",
+        "materiality": "no_meaningful_difference",
+        "margin": -9.999999999998899e-05
+      },
+      {
+        "id": "round36-9",
+        "direction": "A",
+        "materiality": "no_meaningful_difference",
+        "margin": 9.999999999998899e-05
+      },
+      {
+        "id": "round36-10",
+        "direction": "A",
+        "materiality": "meaningful_difference",
+        "margin": 0.47570539397434897
+      },
+      {
+        "id": "round36-11",
+        "direction": "B",
+        "materiality": "meaningful_difference",
+        "margin": -0.47570539397434897
+      },
+      {
+        "id": "round36-12",
+        "direction": "B",
+        "materiality": "no_meaningful_difference",
+        "margin": -9.999999999998899e-05
+      }
+    ]
+  },
+  "evidence": "evidence-v17.json",
+  "target_view": "benchmark-targets-v17.json",
+  "validation_file": "domestic-shade-validation-v17.json",
+  "validation_sha256": "9b04e41bcde715e8cd749595592e7a2915b48ee8f10ba092f0cf103684997dd0",
+  "validation": {
+    "direction": {
+      "n": 282,
+      "correct": 254.8,
+      "accuracy": 0.9035460992907801,
+      "reversals": 27.2,
+      "zero_or_abstain": 0.0
+    },
+    "materiality": {
+      "n": 187,
+      "meaningful_n": 28,
+      "no_meaningful_n": 159,
+      "accuracy": 0.9080213903743315,
+      "balanced_accuracy": 0.9047169811320754,
+      "meaningful_recall": 0.9,
+      "no_meananingful_recall": 0.909433962264151,
+      "false_meaningful": 14.4,
+      "missed_meaningful": 2.8,
+      "correct_meaningful_direction": 24.2
+    },
+    "directly_supported_materiality": {
+      "n": 53,
+      "meaningful_n": 3,
+      "no_meaningful_n": 50,
+      "accuracy": 0.9773584905660376,
+      "balanced_accuracy": 0.9880000000000001,
+      "meaningful_recall": 1.0,
+      "no_meananingful_recall": 0.976,
+      "false_meaningful": 1.2,
+      "missed_meaningful": 0.0,
+      "correct_meaningful_direction": 3.0
+    },
+    "unknown_materiality_n": 238
+  },
+  "incumbent": "v16_control",
+  "remaining_regression": "Higher false-meaningful rate on the full materiality target set, principally older coarsened labels; all labels retained.",
+  "round36_training_consistency": {
+    "direction_correct": 12,
+    "meaningfulness_correct": 12,
+    "n": 12,
+    "note": "These answers were used for fitting; this is not new prospective accuracy and does not replace the frozen6/12 versus5/12 receipt."
+  },
+  "prediction_source": "19 coefficients; no recorded-answer lookup"
+}

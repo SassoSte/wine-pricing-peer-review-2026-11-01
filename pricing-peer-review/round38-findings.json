@@ -1,0 +1,62 @@
+{
+  "round": 38,
+  "scores": {
+    "v18": {
+      "direction_n": 7,
+      "direction_correct": 6,
+      "direction_misses": [
+        8
+      ],
+      "meaningfulness_n": 11,
+      "meaningfulness_correct": 9,
+      "meaningfulness_misses": [
+        5,
+        8
+      ],
+      "explicit_meaningfulness_n": 10,
+      "explicit_meaningfulness_correct": 9,
+      "false_premiums": [
+        5
+      ],
+      "missed_meaningful_premiums": [
+        8
+      ]
+    },
+    "improved_v17": {
+      "direction_n": 7,
+      "direction_correct": 6,
+      "direction_misses": [
+        8
+      ],
+      "meaningfulness_n": 11,
+      "meaningfulness_correct": 9,
+      "meaningfulness_misses": [
+        5,
+        8
+      ],
+      "explicit_meaningfulness_n": 10,
+      "explicit_meaningfulness_correct": 9,
+      "false_premiums": [
+        5
+      ],
+      "missed_meaningful_premiums": [
+        8
+      ]
+    }
+  },
+  "prediction_disagreement_questions": [
+    3
+  ],
+  "conclusion": "Models tie on scored answers. Only size disagreement is Q3, whose size was unspecified: v18 practical, improved v17 meaningful. Cannot establish a v18 advantage.",
+  "shared_misses": {
+    "5": "False premium for Southwest golden40/115 vs Northwest golden40/120.",
+    "8": "Both predict tiny B/practical for Western Europe golden25/125 vs pale30/125; user A strongly."
+  },
+  "limitations": [
+    "Q3 size unspecified; no-clear directions excluded from direction accuracy.",
+    "Q8 strongly interpreted as meaningful; explicit-size-only score9/10 each.",
+    "Fresh pairs but familiar families; not random population sample."
+  ],
+  "models_unchanged": true,
+  "evidence_unchanged": "evidence-v18.json"
+}

@@ -1,0 +1,1852 @@
+{
+  "model": "soft_domestic_order_frozen_premium",
+  "definition": "A pair misses if any supplied axis is wrong; missing labels are not scored. Counts over five reused family-validation repeats.",
+  "counts": {
+    "5": 38,
+    "4": 10,
+    "3": 7
+  },
+  "rows": [
+    {
+      "id": "r2-4",
+      "a": [
+        "Eastern Europe",
+        "amber",
+        30,
+        110
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        30,
+        125
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null,
+      "missed_runs": 5,
+      "error_types": {
+        "false premium": 5
+      },
+      "predictions": [
+        {
+          "direction": 1,
+          "meaningful": true,
+          "runs": 5
+        }
+      ],
+      "v28_missed_runs": 5
+    },
+    {
+      "id": "r3-2",
+      "a": [
+        "northwest",
+        "pale/straw",
+        30,
+        130
+      ],
+      "b": [
+        "Western Europe",
+        "pale/straw",
+        30,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null,
+      "missed_runs": 5,
+      "error_types": {
+        "direction": 5
+      },
+      "predictions": [
+        {
+          "direction": -1,
+          "meaningful": false,
+          "runs": 5
+        }
+      ],
+      "v28_missed_runs": 5
+    },
+    {
+      "id": "r4-7",
+      "a": [
+        "northwest",
+        "golden",
+        30,
+        130
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        30,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null,
+      "missed_runs": 5,
+      "error_types": {
+        "direction": 5
+      },
+      "predictions": [
+        {
+          "direction": -1,
+          "meaningful": false,
+          "runs": 5
+        }
+      ],
+      "v28_missed_runs": 5
+    },
+    {
+      "id": "r4-8",
+      "a": [
+        "northwest",
+        "copper",
+        30,
+        130
+      ],
+      "b": [
+        "Western Europe",
+        "copper",
+        30,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null,
+      "missed_runs": 5,
+      "error_types": {
+        "direction": 5
+      },
+      "predictions": [
+        {
+          "direction": -1,
+          "meaningful": false,
+          "runs": 5
+        }
+      ],
+      "v28_missed_runs": 5
+    },
+    {
+      "id": "r5-4",
+      "a": [
+        "West Central Asia",
+        "amber",
+        30,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "amber",
+        30,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "leaning",
+      "missed_runs": 5,
+      "error_types": {
+        "direction": 5
+      },
+      "predictions": [
+        {
+          "direction": 1,
+          "meaningful": false,
+          "runs": 5
+        }
+      ],
+      "v28_missed_runs": 5
+    },
+    {
+      "id": "r5-5",
+      "a": [
+        "northwest",
+        "amber",
+        25,
+        130
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        25,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null,
+      "missed_runs": 5,
+      "error_types": {
+        "direction": 5
+      },
+      "predictions": [
+        {
+          "direction": -1,
+          "meaningful": false,
+          "runs": 5
+        }
+      ],
+      "v28_missed_runs": 5
+    },
+    {
+      "id": "r5-7",
+      "a": [
+        "Eastern Europe",
+        "copper",
+        30,
+        120
+      ],
+      "b": [
+        "Eastern Europe",
+        "brown",
+        25,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null,
+      "missed_runs": 5,
+      "error_types": {
+        "direction": 5
+      },
+      "predictions": [
+        {
+          "direction": -1,
+          "meaningful": true,
+          "runs": 5
+        }
+      ],
+      "v28_missed_runs": 4
+    },
+    {
+      "id": "r5-9",
+      "a": [
+        "southeast",
+        "pale/straw",
+        30,
+        120
+      ],
+      "b": [
+        "northwest",
+        "pale/straw",
+        30,
+        115
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "leaning",
+      "missed_runs": 5,
+      "error_types": {
+        "direction": 5
+      },
+      "predictions": [
+        {
+          "direction": 1,
+          "meaningful": false,
+          "runs": 5
+        }
+      ],
+      "v28_missed_runs": 2
+    },
+    {
+      "id": "revision-11",
+      "a": [
+        "Eastern Europe",
+        "pale/straw",
+        30,
+        120
+      ],
+      "b": [
+        "Eastern Europe",
+        "golden",
+        30,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly",
+      "missed_runs": 5,
+      "error_types": {
+        "direction": 5
+      },
+      "predictions": [
+        {
+          "direction": -1,
+          "meaningful": false,
+          "runs": 5
+        }
+      ],
+      "v28_missed_runs": 5
+    },
+    {
+      "id": "revision-4",
+      "a": [
+        "Eastern Europe",
+        "copper",
+        35,
+        120
+      ],
+      "b": [
+        "Eastern Europe",
+        "brown",
+        25,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly",
+      "missed_runs": 5,
+      "error_types": {
+        "direction": 5
+      },
+      "predictions": [
+        {
+          "direction": -1,
+          "meaningful": true,
+          "runs": 5
+        }
+      ],
+      "v28_missed_runs": 5
+    },
+    {
+      "id": "round10-13",
+      "a": [
+        "Western Europe",
+        "golden",
+        35,
+        125
+      ],
+      "b": [
+        "Eastern Europe",
+        "golden",
+        35,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly",
+      "missed_runs": 5,
+      "error_types": {
+        "direction": 5
+      },
+      "predictions": [
+        {
+          "direction": -1,
+          "meaningful": false,
+          "runs": 5
+        }
+      ],
+      "v28_missed_runs": 5
+    },
+    {
+      "id": "round13-11",
+      "a": [
+        "Eastern Europe",
+        "brown",
+        35,
+        115
+      ],
+      "b": [
+        "Eastern Europe",
+        "copper",
+        35,
+        125
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": null,
+      "missed_runs": 5,
+      "error_types": {
+        "direction": 5
+      },
+      "predictions": [
+        {
+          "direction": 1,
+          "meaningful": false,
+          "runs": 5
+        }
+      ],
+      "v28_missed_runs": 3
+    },
+    {
+      "id": "round27-11",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        30,
+        120
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        20,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "strength": "slightly",
+      "basis": "Latest explicit judgment from round54-2; repeated pair reconciled once, retracted answers excluded",
+      "missed_runs": 5,
+      "error_types": {
+        "false premium": 4,
+        "direction": 1
+      },
+      "predictions": [
+        {
+          "direction": -1,
+          "meaningful": true,
+          "runs": 4
+        },
+        {
+          "direction": 1,
+          "meaningful": false,
+          "runs": 1
+        }
+      ],
+      "v28_missed_runs": 4
+    },
+    {
+      "id": "round27-7",
+      "a": [
+        "central",
+        "golden",
+        25,
+        110
+      ],
+      "b": [
+        "northeast",
+        "golden",
+        20,
+        125
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "strength": "lean B",
+      "basis": "Explicit supplied axes; unresolved is not tie, no missing size inferred. Source round48-fixed.json",
+      "missed_runs": 5,
+      "error_types": {
+        "direction": 5
+      },
+      "predictions": [
+        {
+          "direction": 1,
+          "meaningful": true,
+          "runs": 5
+        }
+      ],
+      "v28_missed_runs": 2
+    },
+    {
+      "id": "round35-4",
+      "a": [
+        "South/Eastern Asia",
+        "golden",
+        25,
+        115
+      ],
+      "b": [
+        "Eastern Europe",
+        "amber",
+        20,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction confirmed; materiality inferred from prompt but unconfirmed in response; prior interpretation retained in evidence, not a verified magnitude target",
+      "strength": null,
+      "missed_runs": 5,
+      "error_types": {
+        "direction": 5
+      },
+      "predictions": [
+        {
+          "direction": -1,
+          "meaningful": false,
+          "runs": 4
+        },
+        {
+          "direction": -1,
+          "meaningful": true,
+          "runs": 1
+        }
+      ],
+      "v28_missed_runs": 5
+    },
+    {
+      "id": "round35-6",
+      "a": [
+        "southeast",
+        "pale/straw",
+        25,
+        125
+      ],
+      "b": [
+        "northeast",
+        "amber",
+        20,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction confirmed; materiality inferred from prompt but unconfirmed in response; prior interpretation retained in evidence, not a verified magnitude target",
+      "strength": null,
+      "missed_runs": 5,
+      "error_types": {
+        "direction": 5
+      },
+      "predictions": [
+        {
+          "direction": -1,
+          "meaningful": true,
+          "runs": 5
+        }
+      ],
+      "v28_missed_runs": 5
+    },
+    {
+      "id": "round37-9",
+      "a": [
+        "Eastern Europe",
+        "amber",
+        30,
+        125
+      ],
+      "b": [
+        "central",
+        "amber",
+        30,
+        125
+      ],
+      "known_direction": -1,
+      "materiality_target": -1,
+      "basis": "Explicit Round37 size, including Q2/Q9 clarifications. No clear direction stays missing; not an equality or guessed winner.",
+      "strength": null,
+      "missed_runs": 5,
+      "error_types": {
+        "missed premium": 5,
+        "direction": 1
+      },
+      "predictions": [
+        {
+          "direction": -1,
+          "meaningful": false,
+          "runs": 4
+        },
+        {
+          "direction": 1,
+          "meaningful": false,
+          "runs": 1
+        }
+      ],
+      "v28_missed_runs": 5
+    },
+    {
+      "id": "round42-12",
+      "a": [
+        "Western Europe",
+        "copper",
+        25,
+        125
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        30,
+        115
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "strength": "slightly",
+      "basis": "Latest explicit judgment from round54-8; repeated pair reconciled once, retracted answers excluded",
+      "missed_runs": 5,
+      "error_types": {
+        "direction": 5
+      },
+      "predictions": [
+        {
+          "direction": 1,
+          "meaningful": false,
+          "runs": 5
+        }
+      ],
+      "v28_missed_runs": 3
+    },
+    {
+      "id": "round49-2",
+      "a": [
+        "Western Europe",
+        "copper",
+        25,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "pale/straw",
+        20,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "strength": "slightly",
+      "basis": "Latest explicit judgment from round50-1; repeated pair reconciled once, retracted answers excluded",
+      "missed_runs": 5,
+      "error_types": {
+        "direction": 5,
+        "false premium": 5
+      },
+      "predictions": [
+        {
+          "direction": -1,
+          "meaningful": true,
+          "runs": 5
+        }
+      ],
+      "v28_missed_runs": 4
+    },
+    {
+      "id": "round50-2",
+      "a": [
+        "Western Europe",
+        "copper",
+        25,
+        125
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "pale/straw",
+        20,
+        125
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "strength": "slightly",
+      "basis": "Latest explicit judgment from round50-2; repeated pair reconciled once, retracted answers excluded",
+      "missed_runs": 5,
+      "error_types": {
+        "false premium": 5
+      },
+      "predictions": [
+        {
+          "direction": -1,
+          "meaningful": true,
+          "runs": 5
+        }
+      ],
+      "v28_missed_runs": 4
+    },
+    {
+      "id": "round50-3",
+      "a": [
+        "Western Europe",
+        "copper",
+        25,
+        125
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "pale/straw",
+        25,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "strength": "slightly",
+      "basis": "Latest explicit judgment from round50-3; repeated pair reconciled once, retracted answers excluded",
+      "missed_runs": 5,
+      "error_types": {
+        "direction": 5,
+        "false premium": 3
+      },
+      "predictions": [
+        {
+          "direction": -1,
+          "meaningful": true,
+          "runs": 3
+        },
+        {
+          "direction": -1,
+          "meaningful": false,
+          "runs": 2
+        }
+      ],
+      "v28_missed_runs": 3
+    },
+    {
+      "id": "round50-9",
+      "a": [
+        "Western Europe",
+        "brown",
+        35,
+        115
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        40,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "strength": "slightly",
+      "basis": "Latest explicit judgment from round50-9; repeated pair reconciled once, retracted answers excluded",
+      "missed_runs": 5,
+      "error_types": {
+        "direction": 5
+      },
+      "predictions": [
+        {
+          "direction": 1,
+          "meaningful": false,
+          "runs": 5
+        }
+      ],
+      "v28_missed_runs": 1
+    },
+    {
+      "id": "round51-11",
+      "a": [
+        "northwest",
+        "golden",
+        25,
+        120
+      ],
+      "b": [
+        "central",
+        "golden",
+        20,
+        125
+      ],
+      "known_direction": -1,
+      "materiality_target": -1,
+      "strength": null,
+      "basis": "Latest explicit judgment from round51-11; repeated pair reconciled once, retracted answers excluded",
+      "missed_runs": 5,
+      "error_types": {
+        "missed premium": 5
+      },
+      "predictions": [
+        {
+          "direction": -1,
+          "meaningful": false,
+          "runs": 5
+        }
+      ],
+      "v28_missed_runs": 0
+    },
+    {
+      "id": "round51-7",
+      "a": [
+        "Western Europe",
+        "brown",
+        40,
+        115
+      ],
+      "b": [
+        "northwest",
+        "amber",
+        35,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "strength": null,
+      "basis": "Latest explicit judgment from round51-7; repeated pair reconciled once, retracted answers excluded",
+      "missed_runs": 5,
+      "error_types": {
+        "false premium": 5
+      },
+      "predictions": [
+        {
+          "direction": -1,
+          "meaningful": true,
+          "runs": 5
+        }
+      ],
+      "v28_missed_runs": 4
+    },
+    {
+      "id": "round53-2",
+      "a": [
+        "West Central Asia",
+        "golden",
+        30,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "golden",
+        25,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "strength": "moderately",
+      "basis": "Latest explicit judgment from round55-1; repeated pair reconciled once, retracted answers excluded",
+      "missed_runs": 5,
+      "error_types": {
+        "missed premium": 5
+      },
+      "predictions": [
+        {
+          "direction": 1,
+          "meaningful": false,
+          "runs": 5
+        }
+      ],
+      "v28_missed_runs": 5
+    },
+    {
+      "id": "round54-1",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        30,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        20,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "strength": "slightly",
+      "basis": "Latest explicit judgment from round54-1; repeated pair reconciled once, retracted answers excluded",
+      "missed_runs": 5,
+      "error_types": {
+        "false premium": 4,
+        "direction": 3
+      },
+      "predictions": [
+        {
+          "direction": -1,
+          "meaningful": true,
+          "runs": 2
+        },
+        {
+          "direction": 1,
+          "meaningful": false,
+          "runs": 1
+        },
+        {
+          "direction": 1,
+          "meaningful": true,
+          "runs": 2
+        }
+      ],
+      "v28_missed_runs": 1
+    },
+    {
+      "id": "round56-7",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        35,
+        110
+      ],
+      "b": [
+        "West Central Asia",
+        "pale/straw",
+        25,
+        130
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "strength": "slightly",
+      "basis": "Latest explicit judgment from round56-7; repeated pair reconciled once, retracted answers excluded",
+      "missed_runs": 5,
+      "error_types": {
+        "false premium": 4,
+        "direction": 1
+      },
+      "predictions": [
+        {
+          "direction": 1,
+          "meaningful": true,
+          "runs": 4
+        },
+        {
+          "direction": -1,
+          "meaningful": false,
+          "runs": 1
+        }
+      ],
+      "v28_missed_runs": 4
+    },
+    {
+      "id": "round56-8",
+      "a": [
+        "West Central Asia",
+        "amber",
+        30,
+        130
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        35,
+        110
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "strength": "slightly",
+      "basis": "Latest explicit judgment from round56-8; repeated pair reconciled once, retracted answers excluded",
+      "missed_runs": 5,
+      "error_types": {
+        "direction": 5
+      },
+      "predictions": [
+        {
+          "direction": 1,
+          "meaningful": false,
+          "runs": 5
+        }
+      ],
+      "v28_missed_runs": 5
+    },
+    {
+      "id": "round6-10",
+      "a": [
+        "central",
+        "brown",
+        20,
+        120
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "brown",
+        20,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+      "strength": "moderately",
+      "missed_runs": 5,
+      "error_types": {
+        "missed premium": 5
+      },
+      "predictions": [
+        {
+          "direction": 1,
+          "meaningful": false,
+          "runs": 5
+        }
+      ],
+      "v28_missed_runs": 3
+    },
+    {
+      "id": "round6-12",
+      "a": [
+        "central",
+        "brown",
+        25,
+        130
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "brown",
+        25,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly",
+      "missed_runs": 5,
+      "error_types": {
+        "direction": 5
+      },
+      "predictions": [
+        {
+          "direction": -1,
+          "meaningful": false,
+          "runs": 3
+        },
+        {
+          "direction": -1,
+          "meaningful": true,
+          "runs": 2
+        }
+      ],
+      "v28_missed_runs": 3
+    },
+    {
+      "id": "round6-8",
+      "a": [
+        "central",
+        "brown",
+        35,
+        120
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "brown",
+        35,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+      "strength": "moderately",
+      "missed_runs": 5,
+      "error_types": {
+        "missed premium": 5
+      },
+      "predictions": [
+        {
+          "direction": 1,
+          "meaningful": false,
+          "runs": 5
+        }
+      ],
+      "v28_missed_runs": 3
+    },
+    {
+      "id": "round6-9",
+      "a": [
+        "central",
+        "brown",
+        25,
+        120
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "brown",
+        25,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+      "strength": "moderately",
+      "missed_runs": 5,
+      "error_types": {
+        "missed premium": 5
+      },
+      "predictions": [
+        {
+          "direction": 1,
+          "meaningful": false,
+          "runs": 5
+        }
+      ],
+      "v28_missed_runs": 3
+    },
+    {
+      "id": "round7-1",
+      "a": [
+        "central",
+        "brown",
+        30,
+        120
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "brown",
+        30,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+      "strength": "moderately",
+      "missed_runs": 5,
+      "error_types": {
+        "missed premium": 5
+      },
+      "predictions": [
+        {
+          "direction": 1,
+          "meaningful": false,
+          "runs": 5
+        }
+      ],
+      "v28_missed_runs": 3
+    },
+    {
+      "id": "round8-4",
+      "a": [
+        "Eastern Europe",
+        "copper",
+        30,
+        120
+      ],
+      "b": [
+        "West Central Asia",
+        "copper",
+        30,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+      "strength": "moderately",
+      "missed_runs": 5,
+      "error_types": {
+        "missed premium": 5
+      },
+      "predictions": [
+        {
+          "direction": 1,
+          "meaningful": false,
+          "runs": 5
+        }
+      ],
+      "v28_missed_runs": 5
+    },
+    {
+      "id": "round8-5",
+      "a": [
+        "Eastern Europe",
+        "copper",
+        30,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "copper",
+        30,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly",
+      "missed_runs": 5,
+      "error_types": {
+        "direction": 5
+      },
+      "predictions": [
+        {
+          "direction": -1,
+          "meaningful": false,
+          "runs": 5
+        }
+      ],
+      "v28_missed_runs": 3
+    },
+    {
+      "id": "round8-8",
+      "a": [
+        "Eastern Europe",
+        "copper",
+        20,
+        125
+      ],
+      "b": [
+        "West Central Asia",
+        "copper",
+        20,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly",
+      "missed_runs": 5,
+      "error_types": {
+        "direction": 5
+      },
+      "predictions": [
+        {
+          "direction": -1,
+          "meaningful": false,
+          "runs": 5
+        }
+      ],
+      "v28_missed_runs": 3
+    },
+    {
+      "id": "round9-18",
+      "a": [
+        "southeast",
+        "pale/straw",
+        25,
+        130
+      ],
+      "b": [
+        "southeast",
+        "golden",
+        25,
+        120
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null,
+      "missed_runs": 5,
+      "error_types": {
+        "false premium": 5
+      },
+      "predictions": [
+        {
+          "direction": -1,
+          "meaningful": true,
+          "runs": 5
+        }
+      ],
+      "v28_missed_runs": 5
+    },
+    {
+      "id": "round9-9",
+      "a": [
+        "Eastern Europe",
+        "golden",
+        35,
+        120
+      ],
+      "b": [
+        "Eastern Europe",
+        "pale/straw",
+        40,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly",
+      "missed_runs": 5,
+      "error_types": {
+        "direction": 5
+      },
+      "predictions": [
+        {
+          "direction": 1,
+          "meaningful": true,
+          "runs": 5
+        }
+      ],
+      "v28_missed_runs": 5
+    },
+    {
+      "id": "revision-14",
+      "a": [
+        "Eastern Europe",
+        "pale/straw",
+        30,
+        125
+      ],
+      "b": [
+        "Eastern Europe",
+        "golden",
+        30,
+        115
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null,
+      "missed_runs": 4,
+      "error_types": {
+        "false premium": 4
+      },
+      "predictions": [
+        {
+          "direction": -1,
+          "meaningful": true,
+          "runs": 4
+        },
+        {
+          "direction": -1,
+          "meaningful": false,
+          "runs": 1
+        }
+      ],
+      "v28_missed_runs": 5
+    },
+    {
+      "id": "round11-3",
+      "a": [
+        "West Central Asia",
+        "brown",
+        25,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        25,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+      "strength": "strongly",
+      "missed_runs": 4,
+      "error_types": {
+        "missed premium": 4
+      },
+      "predictions": [
+        {
+          "direction": 1,
+          "meaningful": false,
+          "runs": 4
+        },
+        {
+          "direction": 1,
+          "meaningful": true,
+          "runs": 1
+        }
+      ],
+      "v28_missed_runs": 0
+    },
+    {
+      "id": "round27-2-provenance-swap",
+      "a": [
+        "southeast",
+        "amber",
+        30,
+        110
+      ],
+      "b": [
+        "central",
+        "amber",
+        20,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly",
+      "missed_runs": 4,
+      "error_types": {
+        "direction": 4
+      },
+      "predictions": [
+        {
+          "direction": -1,
+          "meaningful": false,
+          "runs": 2
+        },
+        {
+          "direction": -1,
+          "meaningful": true,
+          "runs": 2
+        },
+        {
+          "direction": 1,
+          "meaningful": true,
+          "runs": 1
+        }
+      ],
+      "v28_missed_runs": 5
+    },
+    {
+      "id": "round32-4",
+      "a": [
+        "central",
+        "golden",
+        25,
+        110
+      ],
+      "b": [
+        "northeast",
+        "pale/straw",
+        20,
+        125
+      ],
+      "known_direction": -1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "slightly",
+      "missed_runs": 4,
+      "error_types": {
+        "direction": 4
+      },
+      "predictions": [
+        {
+          "direction": 1,
+          "meaningful": true,
+          "runs": 4
+        },
+        {
+          "direction": -1,
+          "meaningful": false,
+          "runs": 1
+        }
+      ],
+      "v28_missed_runs": 0
+    },
+    {
+      "id": "round42-10",
+      "a": [
+        "northeast",
+        "amber",
+        30,
+        120
+      ],
+      "b": [
+        "northwest",
+        "amber",
+        25,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "strength": "slightly",
+      "basis": "Latest explicit judgment from round54-6; repeated pair reconciled once, retracted answers excluded",
+      "missed_runs": 4,
+      "error_types": {
+        "direction": 4
+      },
+      "predictions": [
+        {
+          "direction": -1,
+          "meaningful": false,
+          "runs": 4
+        },
+        {
+          "direction": 1,
+          "meaningful": false,
+          "runs": 1
+        }
+      ],
+      "v28_missed_runs": 3
+    },
+    {
+      "id": "round49-6",
+      "a": [
+        "northwest",
+        "golden",
+        25,
+        115
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        25,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "strength": "slightly",
+      "basis": "Latest explicit judgment from round50-13; repeated pair reconciled once, retracted answers excluded",
+      "missed_runs": 4,
+      "error_types": {
+        "direction": 4
+      },
+      "predictions": [
+        {
+          "direction": -1,
+          "meaningful": false,
+          "runs": 4
+        },
+        {
+          "direction": 1,
+          "meaningful": false,
+          "runs": 1
+        }
+      ],
+      "v28_missed_runs": 1
+    },
+    {
+      "id": "round51-2",
+      "a": [
+        "northeast",
+        "amber",
+        30,
+        115
+      ],
+      "b": [
+        "southwest",
+        "amber",
+        25,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": 0,
+      "strength": "slightly",
+      "basis": "Latest explicit judgment from round52-1; repeated pair reconciled once, retracted answers excluded",
+      "missed_runs": 4,
+      "error_types": {
+        "direction": 4
+      },
+      "predictions": [
+        {
+          "direction": -1,
+          "meaningful": false,
+          "runs": 4
+        },
+        {
+          "direction": 1,
+          "meaningful": false,
+          "runs": 1
+        }
+      ],
+      "v28_missed_runs": 0
+    },
+    {
+      "id": "round54-11",
+      "a": [
+        "southeast",
+        "copper",
+        25,
+        125
+      ],
+      "b": [
+        "southeast",
+        "amber",
+        30,
+        115
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "strength": "slightly",
+      "basis": "Latest explicit judgment from round54-11; repeated pair reconciled once, retracted answers excluded",
+      "missed_runs": 4,
+      "error_types": {
+        "direction": 4
+      },
+      "predictions": [
+        {
+          "direction": 1,
+          "meaningful": false,
+          "runs": 4
+        },
+        {
+          "direction": -1,
+          "meaningful": false,
+          "runs": 1
+        }
+      ],
+      "v28_missed_runs": 3
+    },
+    {
+      "id": "round56-2",
+      "a": [
+        "West Central Asia",
+        "golden",
+        30,
+        110
+      ],
+      "b": [
+        "West Central Asia",
+        "pale/straw",
+        25,
+        125
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "strength": null,
+      "basis": "Latest explicit judgment from round56-2; repeated pair reconciled once, retracted answers excluded",
+      "missed_runs": 4,
+      "error_types": {
+        "missed premium": 4
+      },
+      "predictions": [
+        {
+          "direction": 1,
+          "meaningful": true,
+          "runs": 1
+        },
+        {
+          "direction": 1,
+          "meaningful": false,
+          "runs": 4
+        }
+      ],
+      "v28_missed_runs": 5
+    },
+    {
+      "id": "round9-12",
+      "a": [
+        "Western Europe",
+        "pale/straw",
+        30,
+        110
+      ],
+      "b": [
+        "central",
+        "pale/straw",
+        30,
+        115
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null,
+      "missed_runs": 4,
+      "error_types": {
+        "false premium": 4
+      },
+      "predictions": [
+        {
+          "direction": 1,
+          "meaningful": true,
+          "runs": 4
+        },
+        {
+          "direction": 1,
+          "meaningful": false,
+          "runs": 1
+        }
+      ],
+      "v28_missed_runs": 0
+    },
+    {
+      "id": "round15-3",
+      "a": [
+        "Eastern Europe",
+        "amber",
+        25,
+        120
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        25,
+        130
+      ],
+      "known_direction": null,
+      "materiality_target": 0,
+      "basis": "coarsened recorded tie: no expressed meaningful preference; exact/practical interpretation remains as audited",
+      "strength": null,
+      "missed_runs": 3,
+      "error_types": {
+        "false premium": 3
+      },
+      "predictions": [
+        {
+          "direction": 1,
+          "meaningful": true,
+          "runs": 3
+        },
+        {
+          "direction": 1,
+          "meaningful": false,
+          "runs": 2
+        }
+      ],
+      "v28_missed_runs": 0
+    },
+    {
+      "id": "round42-3",
+      "a": [
+        "southwest",
+        "golden",
+        20,
+        125
+      ],
+      "b": [
+        "Western Europe",
+        "golden",
+        25,
+        115
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "strength": "slightly",
+      "basis": "Latest explicit judgment from round54-4; repeated pair reconciled once, retracted answers excluded",
+      "missed_runs": 3,
+      "error_types": {
+        "direction": 3
+      },
+      "predictions": [
+        {
+          "direction": 1,
+          "meaningful": false,
+          "runs": 3
+        },
+        {
+          "direction": -1,
+          "meaningful": false,
+          "runs": 2
+        }
+      ],
+      "v28_missed_runs": 4
+    },
+    {
+      "id": "round49-12",
+      "a": [
+        "southwest",
+        "golden",
+        20,
+        130
+      ],
+      "b": [
+        "central",
+        "golden",
+        30,
+        115
+      ],
+      "known_direction": 1,
+      "materiality_target": 1,
+      "strength": null,
+      "basis": "Latest explicit judgment from round49-12; repeated pair reconciled once, retracted answers excluded",
+      "missed_runs": 3,
+      "error_types": {
+        "missed premium": 3
+      },
+      "predictions": [
+        {
+          "direction": 1,
+          "meaningful": false,
+          "runs": 3
+        },
+        {
+          "direction": 1,
+          "meaningful": true,
+          "runs": 2
+        }
+      ],
+      "v28_missed_runs": 5
+    },
+    {
+      "id": "round50-5",
+      "a": [
+        "Western Europe",
+        "copper",
+        25,
+        125
+      ],
+      "b": [
+        "Western Europe",
+        "pale/straw",
+        25,
+        125
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "strength": "slightly",
+      "basis": "Latest explicit judgment from round50-5; repeated pair reconciled once, retracted answers excluded",
+      "missed_runs": 3,
+      "error_types": {
+        "false premium": 3
+      },
+      "predictions": [
+        {
+          "direction": -1,
+          "meaningful": true,
+          "runs": 3
+        },
+        {
+          "direction": -1,
+          "meaningful": false,
+          "runs": 2
+        }
+      ],
+      "v28_missed_runs": 1
+    },
+    {
+      "id": "round54-18",
+      "a": [
+        "northeast",
+        "brown",
+        30,
+        115
+      ],
+      "b": [
+        "northeast",
+        "amber",
+        30,
+        120
+      ],
+      "known_direction": -1,
+      "materiality_target": 0,
+      "strength": "slightly",
+      "basis": "Latest explicit judgment from round54-18; repeated pair reconciled once, retracted answers excluded",
+      "missed_runs": 3,
+      "error_types": {
+        "false premium": 3
+      },
+      "predictions": [
+        {
+          "direction": -1,
+          "meaningful": false,
+          "runs": 2
+        },
+        {
+          "direction": -1,
+          "meaningful": true,
+          "runs": 3
+        }
+      ],
+      "v28_missed_runs": 0
+    },
+    {
+      "id": "round6-11",
+      "a": [
+        "central",
+        "brown",
+        25,
+        125
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "brown",
+        25,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly",
+      "missed_runs": 3,
+      "error_types": {
+        "direction": 3
+      },
+      "predictions": [
+        {
+          "direction": -1,
+          "meaningful": false,
+          "runs": 3
+        },
+        {
+          "direction": 1,
+          "meaningful": false,
+          "runs": 2
+        }
+      ],
+      "v28_missed_runs": 0
+    },
+    {
+      "id": "round9-7",
+      "a": [
+        "central",
+        "brown",
+        35,
+        125
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "brown",
+        35,
+        120
+      ],
+      "known_direction": 1,
+      "materiality_target": null,
+      "basis": "direction known; meaningfulness unspecified, not assumed from A/B or slight adjective",
+      "strength": "very slightly",
+      "missed_runs": 3,
+      "error_types": {
+        "direction": 3
+      },
+      "predictions": [
+        {
+          "direction": -1,
+          "meaningful": false,
+          "runs": 3
+        },
+        {
+          "direction": 1,
+          "meaningful": false,
+          "runs": 2
+        }
+      ],
+      "v28_missed_runs": 0
+    }
+  ]
+}

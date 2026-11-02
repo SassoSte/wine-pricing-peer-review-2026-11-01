@@ -1,0 +1,1194 @@
+{
+  "round": 57,
+  "created_at": "2026-10-29T02:28:27.623511+00:00",
+  "status": "complete",
+  "protocol": "Review18fullyspecified pairs missed inallfive validationrepeats by latestcandidate. Starts withfive examples alreadyshown,inthatorder,thenremaining13inpreviouslistorder. Notfreshcomparisons ornewvalidation. Oneat a time;preserve detailed explanations andanyexplicitcorrections. Existing answers/modelerror summaries alreadyshown to user; notblindelicitation. Do not infer categorical axes ornumericweights fromambiguous explanations. Models remainfixed; recordclarifications separately anddo notdoublecount orupdateevidence untillater reconciliation.",
+  "file_sha256": {
+    "evidence-v30.json": "3c659e9756b1ea612210a61bc9bae730a82bb5b845131508c218466ab91efd22",
+    "benchmark-targets-v30.json": "395982075d08f3475eef5ea60453317046f464fe44cdf6a89715c3f381290afe",
+    "model-config-v28.json": "a9fed8e86977526c16e74ccdb0a6a75d919b3041bd602e5592d64e3086414dcf",
+    "predictor_v28.py": "c572cb63d47b531607efc66be1c65890b854d2f5a5087286858c25611191b7e3",
+    "predictor_v27.py": "293307f98d4c2434bfbbea8a73341a3522601604535647f3a7a6b0103b23f2ed",
+    "rank-soft-order-frozen-premium-config-v30.json": "727a0cad0c6524bc08c5a923587d5680b3c57ba7262180b2cdda1b81fffea356",
+    "predictor_rank_soft_order_v30.py": "3e5ab7717daab708b14e59354af15d807cc45fbd98233f94868087eacbd2e845",
+    "predictor_premium_context_extended_v30.py": "bd1ef3f4842bea811f2031f360ccafc1e4ab78be8374f2f56ade5ca403dba710",
+    "predictor_premium_context_v30.py": "a78f6b2e87ff2090e58ca1454530e890ae14e9ffeb531b3adeb9f6e4e2c1af8b",
+    "predictor_foundation_amplifiers_v30.py": "e1f7308724b4b0464f35b31e5795fec070f5f0a359d13cb599c9bf92d99bd189",
+    "consistent-misses-sample-v30.json": "fbb211049ba2dc0f3816c90285ffdfc5430bf1343776595e1f7e998af2600c7b"
+  },
+  "freeze_fields": [
+    "id",
+    "number",
+    "source_id",
+    "a",
+    "b",
+    "source_validation_result"
+  ],
+  "questions_sha256": "f3fdaa44cfbc132d4bb5305b27231402db90e187d853d930f2558f4224384f94",
+  "questions": [
+    {
+      "id": "round57-1",
+      "number": 1,
+      "source_id": "round50-9",
+      "a": [
+        "Western Europe",
+        "brown",
+        35,
+        115
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        40,
+        120
+      ],
+      "status": "answered",
+      "direction": null,
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "The price here, this goes a tie. An absolute tie. This is as close to a true tie as you would get that really I don't think we've quite identified before. But this is equal in cost.",
+      "source_validation_result": {
+        "id": "round50-9",
+        "a": [
+          "Western Europe",
+          "brown",
+          35,
+          115
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          40,
+          120
+        ],
+        "known_direction": -1,
+        "materiality_target": 0,
+        "strength": "slightly",
+        "basis": "Latest explicit judgment from round50-9; repeated pair reconciled once, retracted answers excluded",
+        "missed_runs": 5,
+        "error_types": {
+          "direction": 5
+        },
+        "predictions": [
+          {
+            "direction": 1,
+            "meaningful": false,
+            "runs": 5
+          }
+        ],
+        "v28_missed_runs": 1
+      },
+      "raw_explanation": "Okay, so this is a great example where top tier for Western Europe in terms of the overall geography. But here in this bracket, vintage bracket, anything over 30, for which this qualifies, 35 and 40 respectively, this is bottom tier as far as overall value. There is no premium here except for weight, or tar, which would have been good in any other context, except for the fact that both A and B have just about the same, and everything else is weak to poor. There's nothing redeeming here of value relative to each other, or overall inventory. The only thing that makes this comparison palatable is that both vintages have a redeeming tar value. That's it. The shade for A makes it worse, as opposed to the shade for B making it better. Does that make sense?",
+      "interpretation": "User explicitly confirms exactly equal cost: an absolute price tie, not merely practical similarity, unknown direction or unresolved. This corrects the earlier B/slightly preference for source round50-9 when later reconciled. Keep the prior explanation: weak35/40-year core value despite premiumprovenance; similarly redeeming tare; brown drawback doesnot create a net price separation here.",
+      "clarification_pending": null,
+      "evidence_reconciliation_ready": true,
+      "answer_history": [
+        {
+          "raw_answer": "Okay, so this is a great example where top tier for Western Europe in terms of the overall geography. But here in this bracket, vintage bracket, anything over 30, for which this qualifies, 35 and 40 respectively, this is bottom tier as far as overall value. There is no premium here except for weight, or tar, which would have been good in any other context, except for the fact that both A and B have just about the same, and everything else is weak to poor. There's nothing redeeming here of value relative to each other, or overall inventory. The only thing that makes this comparison palatable is that both vintages have a redeeming tar value. That's it. The shade for A makes it worse, as opposed to the shade for B making it better. Does that make sense?",
+          "raw_explanation": "Okay, so this is a great example where top tier for Western Europe in terms of the overall geography. But here in this bracket, vintage bracket, anything over 30, for which this qualifies, 35 and 40 respectively, this is bottom tier as far as overall value. There is no premium here except for weight, or tar, which would have been good in any other context, except for the fact that both A and B have just about the same, and everything else is weak to poor. There's nothing redeeming here of value relative to each other, or overall inventory. The only thing that makes this comparison palatable is that both vintages have a redeeming tar value. That's it. The shade for A makes it worse, as opposed to the shade for B making it better. Does that make sense?",
+          "interpretation": "User describes both35/40-year offerings as bottom-tier vintage in this context despite top-geography WesternEurope. Both115/120lb tares are redeeming but similar; no obviouspremium is justified. Brown is a drawback toA rather than amber makingB a premium offering. Direction not explicit: Bsmallpositive edge versus no clearprice direction requires clarification. Do not overwrite priorB/practical label yet.",
+          "status": "awaiting_direction_clarification"
+        }
+      ],
+      "judgment_type": "exact_equality",
+      "exact_price_instruction": true,
+      "explicitly_not_tie": false,
+      "resolution_status": "resolved",
+      "supersedes_source_judgment": true
+    },
+    {
+      "id": "round57-2",
+      "number": 2,
+      "source_id": "round56-8",
+      "a": [
+        "West Central Asia",
+        "amber",
+        30,
+        130
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        35,
+        110
+      ],
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "B, slightly\u2014practically similar, not a tie. The 110 lb tare is the redeeming feature here. Its 20 lb advantage outweighs A\u2019s younger vintage and amber shade, but B\u2019s brown shade and older vintage keep it close.",
+      "source_validation_result": {
+        "id": "round56-8",
+        "a": [
+          "West Central Asia",
+          "amber",
+          30,
+          130
+        ],
+        "b": [
+          "West Central Asia",
+          "brown",
+          35,
+          110
+        ],
+        "known_direction": -1,
+        "materiality_target": 0,
+        "strength": "slightly",
+        "basis": "Latest explicit judgment from round56-8; repeated pair reconciled once, retracted answers excluded",
+        "missed_runs": 5,
+        "error_types": {
+          "direction": 5
+        },
+        "predictions": [
+          {
+            "direction": 1,
+            "meaningful": false,
+            "runs": 5
+          }
+        ],
+        "v28_missed_runs": 5
+      },
+      "strength": "slightly",
+      "judgment_type": "practical_similarity_with_direction",
+      "exact_price_instruction": false,
+      "explicitly_not_tie": true,
+      "resolution_status": "resolved",
+      "raw_explanation": "B, slightly\u2014practically similar, not a tie. The 110 lb tare is the redeeming feature here. Its 20 lb advantage outweighs A\u2019s younger vintage and amber shade, but B\u2019s brown shade and older vintage keep it close.",
+      "evidence_reconciliation_ready": true,
+      "interpretation": "Reaffirms B as slightly more expensive, practically similar, explicitly not a tie. Its110lb endpoint and20lb tare advantage are redeeming and outweigh A\u2019s30-year vintage/amber shade; B\u2019s35-year vintage andbrown shade limit the net advantage. No meaningful premium,numericprice or universalrule inferred."
+    },
+    {
+      "id": "round57-3",
+      "number": 3,
+      "source_id": "round53-2",
+      "a": [
+        "West Central Asia",
+        "golden",
+        30,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "golden",
+        25,
+        130
+      ],
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "A, meaningful difference\u2014the 15 lb tare advantage, especially 115 versus 130, outweighs B\u2019s five-year younger vintage. With provenance and shade matching, tare is the deciding factor here.",
+      "source_validation_result": {
+        "id": "round53-2",
+        "a": [
+          "West Central Asia",
+          "golden",
+          30,
+          115
+        ],
+        "b": [
+          "West Central Asia",
+          "golden",
+          25,
+          130
+        ],
+        "known_direction": 1,
+        "materiality_target": 1,
+        "strength": "moderately",
+        "basis": "Latest explicit judgment from round55-1; repeated pair reconciled once, retracted answers excluded",
+        "missed_runs": 5,
+        "error_types": {
+          "missed premium": 5
+        },
+        "predictions": [
+          {
+            "direction": 1,
+            "meaningful": false,
+            "runs": 5
+          }
+        ],
+        "v28_missed_runs": 5
+      },
+      "judgment_type": "meaningful_premium_with_direction",
+      "exact_price_instruction": false,
+      "explicitly_not_tie": true,
+      "resolution_status": "resolved",
+      "raw_explanation": "A, meaningful difference\u2014the 15 lb tare advantage, especially 115 versus 130, outweighs B\u2019s five-year younger vintage. With provenance and shade matching, tare is the deciding factor here.",
+      "evidence_reconciliation_ready": true,
+      "interpretation": "Reaffirms A as meaningfully more expensive. Its115lb versus130lb tare advantage outweighs B\u2019s25-year versus30-year vintage advantage with West Central Asia provenance andgolden shade matching. Tare is decisive in this comparison. No numericpremium or universalvintage/tare exchange rate inferred."
+    },
+    {
+      "id": "round57-4",
+      "number": 4,
+      "source_id": "round51-11",
+      "a": [
+        "northwest",
+        "golden",
+        25,
+        120
+      ],
+      "b": [
+        "central",
+        "golden",
+        20,
+        125
+      ],
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "B, meaningful difference\u2014the top-tier 20-year vintage and Central\u2019s provenance advantage outweigh A\u2019s 5 lb lower tare. With shade matching, that small tare difference isn\u2019t enough to offset B\u2019s advantages.",
+      "source_validation_result": {
+        "id": "round51-11",
+        "a": [
+          "northwest",
+          "golden",
+          25,
+          120
+        ],
+        "b": [
+          "central",
+          "golden",
+          20,
+          125
+        ],
+        "known_direction": -1,
+        "materiality_target": -1,
+        "strength": null,
+        "basis": "Latest explicit judgment from round51-11; repeated pair reconciled once, retracted answers excluded",
+        "missed_runs": 5,
+        "error_types": {
+          "missed premium": 5
+        },
+        "predictions": [
+          {
+            "direction": -1,
+            "meaningful": false,
+            "runs": 5
+          }
+        ],
+        "v28_missed_runs": 0
+      },
+      "judgment_type": "meaningful_premium_with_direction",
+      "exact_price_instruction": false,
+      "explicitly_not_tie": true,
+      "resolution_status": "resolved",
+      "raw_explanation": "B, meaningful difference\u2014the top-tier 20-year vintage and Central\u2019s provenance advantage outweigh A\u2019s 5 lb lower tare. With shade matching, that small tare difference isn\u2019t enough to offset B\u2019s advantages.",
+      "evidence_reconciliation_ready": true,
+      "interpretation": "Reaffirms B as meaningfully more expensive. Its top-tier20-year vintage and Central-over-Northwest provenance advantage outweigh A\u2019s120lb versus125lb tare advantage, with golden shade matching. The5lb difference is insufficient to offset these combined advantages in this bracket. No numerical weights or universal dominance rule inferred."
+    },
+    {
+      "id": "round57-5",
+      "number": 5,
+      "source_id": "round49-2",
+      "a": [
+        "Western Europe",
+        "copper",
+        25,
+        120
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "pale/straw",
+        20,
+        125
+      ],
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "A, slightly\u2014practically similar, not a tie. Western Europe\u2019s provenance and 5 lb lower tare just outweigh B\u2019s younger vintage and pale shade in this bracket, but it\u2019s very close.",
+      "source_validation_result": {
+        "id": "round49-2",
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          120
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "pale/straw",
+          20,
+          125
+        ],
+        "known_direction": 1,
+        "materiality_target": 0,
+        "strength": "slightly",
+        "basis": "Latest explicit judgment from round50-1; repeated pair reconciled once, retracted answers excluded",
+        "missed_runs": 5,
+        "error_types": {
+          "direction": 5,
+          "false premium": 5
+        },
+        "predictions": [
+          {
+            "direction": -1,
+            "meaningful": true,
+            "runs": 5
+          }
+        ],
+        "v28_missed_runs": 4
+      },
+      "strength": "slightly",
+      "judgment_type": "practical_similarity_with_direction",
+      "exact_price_instruction": false,
+      "explicitly_not_tie": true,
+      "resolution_status": "resolved",
+      "raw_explanation": "A, slightly\u2014practically similar, not a tie. Western Europe\u2019s provenance and 5 lb lower tare just outweigh B\u2019s younger vintage and pale shade in this bracket, but it\u2019s very close.",
+      "evidence_reconciliation_ready": true,
+      "interpretation": "Reaffirms A as slightly more expensive, practically similar and explicitly not a tie. Western Europe provenance and120lb versus125lb tare narrowly outweigh South/Eastern Asia\u2019s20-year versus25-year vintage andpale/straw versuscopper shade advantages in this bracket. No numericprice or universal attribute-weight ordering inferred."
+    },
+    {
+      "id": "round57-6",
+      "number": 6,
+      "source_id": "round27-11",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        30,
+        120
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        20,
+        120
+      ],
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "This comparison is B slightly, because the vintage is so good that it's just enough to slightly compensate for the shape being low. However, overall, this is not a great pair bracket in terms of either offering being of value. The only thing that gives B any value is that it's compared to A in terms of vintage.",
+      "source_validation_result": {
+        "id": "round27-11",
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          30,
+          120
+        ],
+        "b": [
+          "West Central Asia",
+          "brown",
+          20,
+          120
+        ],
+        "known_direction": -1,
+        "materiality_target": 0,
+        "strength": "slightly",
+        "basis": "Latest explicit judgment from round54-2; repeated pair reconciled once, retracted answers excluded",
+        "missed_runs": 5,
+        "error_types": {
+          "false premium": 4,
+          "direction": 1
+        },
+        "predictions": [
+          {
+            "direction": -1,
+            "meaningful": true,
+            "runs": 4
+          },
+          {
+            "direction": 1,
+            "meaningful": false,
+            "runs": 1
+          }
+        ],
+        "v28_missed_runs": 4
+      },
+      "strength": "slightly",
+      "judgment_type": "practical_similarity_with_direction",
+      "exact_price_instruction": false,
+      "resolution_status": "resolved",
+      "raw_explanation": "This comparison is B slightly, because the vintage is so good that it's just enough to slightly compensate for the shape being low. However, overall, this is not a great pair bracket in terms of either offering being of value. The only thing that gives B any value is that it's compared to A in terms of vintage.",
+      "evidence_reconciliation_ready": true,
+      "interpretation": "B is slightly more expensive; slight rather than meaningful was an explicit option in the question. Its20-year vintage narrowly compensates for its brown shade compared with A\u2019s30-year pale/straw profile, with provenance and120lb tare matching. User emphasizes low overall appeal/value for both offerings and B\u2019s relative vintage advantage. The word shape is understood as shade in this displayed comparison; verbatim wording retained. Do not infer zero intrinsic value, a numerical discount, or abandonment of the earlier intrinsic-value requirement from the comparison-relative explanation."
+    },
+    {
+      "id": "round57-7",
+      "number": 7,
+      "source_id": "round37-9",
+      "a": [
+        "Eastern Europe",
+        "amber",
+        30,
+        125
+      ],
+      "b": [
+        "central",
+        "amber",
+        30,
+        125
+      ],
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "This is also an interesting pairing because, unto themselves, in a vacuum, neither of these have a special premium. Relative to each other, however, they don't really offer that much premium either. What makes one think that one could have more value, again, is B, but it's not because it has more value inherently. It's because A just simply doesn't have as much value, if you know what I mean. Another way to look at it is that what makes anybody... nobody is going to seek this out. So, in terms of overall, however, because B is from a premium geography zone, it has just by virtue of being elsewhere a higher value, but no premium. So the answer here is B, ever so slightly, and potentially a tie on some days, depending on inventory.",
+      "source_validation_result": {
+        "id": "round37-9",
+        "a": [
+          "Eastern Europe",
+          "amber",
+          30,
+          125
+        ],
+        "b": [
+          "central",
+          "amber",
+          30,
+          125
+        ],
+        "known_direction": -1,
+        "materiality_target": -1,
+        "basis": "Explicit Round37 size, including Q2/Q9 clarifications. No clear direction stays missing; not an equality or guessed winner.",
+        "strength": null,
+        "missed_runs": 5,
+        "error_types": {
+          "missed premium": 5,
+          "direction": 1
+        },
+        "predictions": [
+          {
+            "direction": -1,
+            "meaningful": false,
+            "runs": 4
+          },
+          {
+            "direction": 1,
+            "meaningful": false,
+            "runs": 1
+          }
+        ],
+        "v28_missed_runs": 5
+      },
+      "strength": "ever so slightly",
+      "judgment_type": "practical_similarity_with_direction",
+      "exact_price_instruction": false,
+      "resolution_status": "resolved",
+      "raw_explanation": "This is also an interesting pairing because, unto themselves, in a vacuum, neither of these have a special premium. Relative to each other, however, they don't really offer that much premium either. What makes one think that one could have more value, again, is B, but it's not because it has more value inherently. It's because A just simply doesn't have as much value, if you know what I mean. Another way to look at it is that what makes anybody... nobody is going to seek this out. So, in terms of overall, however, because B is from a premium geography zone, it has just by virtue of being elsewhere a higher value, but no premium. So the answer here is B, ever so slightly, and potentially a tie on some days, depending on inventory.",
+      "evidence_reconciliation_ready": true,
+      "supersedes_source_judgment": true,
+      "inventory_qualification": "Potentially a tie on some days, depending on inventory; no inventory measurement or deterministic rule supplied.",
+      "interpretation": "User gives B a very small relative price advantage, with no meaningful premium. Neither profile is especially desirable; Central\u2019s geographic advantage is framed as A being less valuable rather than B being an exceptional offering. This revises the prior B/meaningful size label when later reconciled. Conditional inventory-dependent ties do not establish unconditional exact equality or an A preference; preserve the nominal B direction with the qualification. Do not infer measured inventory scarcity, numerical weights, or a universal provenance premium."
+    },
+    {
+      "id": "round57-8",
+      "number": 8,
+      "source_id": "round42-12",
+      "a": [
+        "Western Europe",
+        "copper",
+        25,
+        125
+      ],
+      "b": [
+        "Western Europe",
+        "amber",
+        30,
+        115
+      ],
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "B, slightly\u2014practically similar, not a tie. The 115 lb tare and amber shade just outweigh A\u2019s five-year younger vintage, but neither offering is exceptional enough to justify a meaningful premium.",
+      "source_validation_result": {
+        "id": "round42-12",
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          125
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          30,
+          115
+        ],
+        "known_direction": -1,
+        "materiality_target": 0,
+        "strength": "slightly",
+        "basis": "Latest explicit judgment from round54-8; repeated pair reconciled once, retracted answers excluded",
+        "missed_runs": 5,
+        "error_types": {
+          "direction": 5
+        },
+        "predictions": [
+          {
+            "direction": 1,
+            "meaningful": false,
+            "runs": 5
+          }
+        ],
+        "v28_missed_runs": 3
+      },
+      "strength": "slightly",
+      "judgment_type": "practical_similarity_with_direction",
+      "exact_price_instruction": false,
+      "explicitly_not_tie": true,
+      "resolution_status": "resolved",
+      "raw_explanation": "B, slightly\u2014practically similar, not a tie. The 115 lb tare and amber shade just outweigh A\u2019s five-year younger vintage, but neither offering is exceptional enough to justify a meaningful premium.",
+      "evidence_reconciliation_ready": true,
+      "interpretation": "Reaffirms B as slightly more expensive, practically similar and explicitly not a tie. Its115lb versus125lb tare andamber versuscopper shade narrowly outweigh A\u2019s25-year versus30-year vintage advantage, with WesternEurope provenance matching. Neither offering is exceptional enough for a meaningfulpremium in this context. No numericalpremium or universalattribute exchange rate inferred."
+    },
+    {
+      "id": "round57-9",
+      "number": 9,
+      "source_id": "round50-2",
+      "a": [
+        "Western Europe",
+        "copper",
+        25,
+        125
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "pale/straw",
+        20,
+        125
+      ],
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "meaningful_difference",
+      "raw_answer": "B is the winner here, more valuable. Certainly, it has a vintage that is the absolute top and a shade that is the absolute top. So that alone will trump a provenance that's one degree adjacent and tar is equal. So B has got a premium relative to A and relative to other offerings. That shade is, in this case, this is where shade comes into play. You have arguably a very close comparison here. And so this particular bracket, because vintage is the very top, most valuable attribute, when you then sprinkle in shade, it's more than enough to overcome lesser provenance, especially when the tar is equal and under 130 pounds.",
+      "source_validation_result": {
+        "id": "round50-2",
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          125
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "pale/straw",
+          20,
+          125
+        ],
+        "known_direction": -1,
+        "materiality_target": 0,
+        "strength": "slightly",
+        "basis": "Latest explicit judgment from round50-2; repeated pair reconciled once, retracted answers excluded",
+        "missed_runs": 5,
+        "error_types": {
+          "false premium": 5
+        },
+        "predictions": [
+          {
+            "direction": -1,
+            "meaningful": true,
+            "runs": 5
+          }
+        ],
+        "v28_missed_runs": 4
+      },
+      "judgment_type": "meaningful_premium_with_direction",
+      "exact_price_instruction": false,
+      "resolution_status": "resolved",
+      "raw_explanation": "B is the winner here, more valuable. Certainly, it has a vintage that is the absolute top and a shade that is the absolute top. So that alone will trump a provenance that's one degree adjacent and tar is equal. So B has got a premium relative to A and relative to other offerings. That shade is, in this case, this is where shade comes into play. You have arguably a very close comparison here. And so this particular bracket, because vintage is the very top, most valuable attribute, when you then sprinkle in shade, it's more than enough to overcome lesser provenance, especially when the tar is equal and under 130 pounds.",
+      "evidence_reconciliation_ready": true,
+      "supersedes_source_judgment": true,
+      "meaningfulness_basis": "Interpreted from the explicit premium relative to A and other offerings, and more-than-enough language in response to meaningful/slight/zero options; no numerical strength inferred.",
+      "interpretation": "B wins and commands a premium here: top-tier20-year vintage andpale/straw shade reinforce eachother, overcoming weaker provenance with both tares125lb. User emphasizes shade amplifies the top-vintage foundation when tare is equal andbelow130lb. This revises the prior B/slightly size interpretation on source round50-2 when reconciled. Preserve user wording one degree adjacent as their characterization ofthis comparison,not a global provenance-distance scale. Do not infer everyunder130lb profile or every20-year pale offering commands a premium."
+    },
+    {
+      "id": "round57-10",
+      "number": 10,
+      "source_id": "round50-3",
+      "a": [
+        "Western Europe",
+        "copper",
+        25,
+        125
+      ],
+      "b": [
+        "South/Eastern Asia",
+        "pale/straw",
+        25,
+        125
+      ],
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "A, slightly\u2014practically similar, not a tie. With vintage and tare equal at 25 years and 125 lb, Western Europe\u2019s provenance just outweighs B\u2019s pale shade, but neither has enough of an advantage for a meaningful premium.",
+      "source_validation_result": {
+        "id": "round50-3",
+        "a": [
+          "Western Europe",
+          "copper",
+          25,
+          125
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "pale/straw",
+          25,
+          125
+        ],
+        "known_direction": 1,
+        "materiality_target": 0,
+        "strength": "slightly",
+        "basis": "Latest explicit judgment from round50-3; repeated pair reconciled once, retracted answers excluded",
+        "missed_runs": 5,
+        "error_types": {
+          "direction": 5,
+          "false premium": 3
+        },
+        "predictions": [
+          {
+            "direction": -1,
+            "meaningful": true,
+            "runs": 3
+          },
+          {
+            "direction": -1,
+            "meaningful": false,
+            "runs": 2
+          }
+        ],
+        "v28_missed_runs": 3
+      },
+      "strength": "slightly",
+      "judgment_type": "practical_similarity_with_direction",
+      "exact_price_instruction": false,
+      "explicitly_not_tie": true,
+      "resolution_status": "resolved",
+      "raw_explanation": "A, slightly\u2014practically similar, not a tie. With vintage and tare equal at 25 years and 125 lb, Western Europe\u2019s provenance just outweighs B\u2019s pale shade, but neither has enough of an advantage for a meaningful premium.",
+      "evidence_reconciliation_ready": true,
+      "interpretation": "Reaffirms A as slightly more expensive, practically similar and explicitly not a tie. With25-year vintage and125lb tare matching, Western Europe provenance narrowly outweighs South/Eastern Asia pale/straw versuscopper shade. Neither advantage is sufficient for a meaningfulpremium in this context. Do not extrapolate to20-year vintage or invent numericprovenance/shade weights."
+    },
+    {
+      "id": "round57-11",
+      "number": 11,
+      "source_id": "round51-7",
+      "a": [
+        "Western Europe",
+        "brown",
+        40,
+        115
+      ],
+      "b": [
+        "northwest",
+        "amber",
+        35,
+        120
+      ],
+      "status": "answered",
+      "direction": null,
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "2.",
+      "source_validation_result": {
+        "id": "round51-7",
+        "a": [
+          "Western Europe",
+          "brown",
+          40,
+          115
+        ],
+        "b": [
+          "northwest",
+          "amber",
+          35,
+          120
+        ],
+        "known_direction": -1,
+        "materiality_target": 0,
+        "strength": null,
+        "basis": "Latest explicit judgment from round51-7; repeated pair reconciled once, retracted answers excluded",
+        "missed_runs": 5,
+        "error_types": {
+          "false premium": 5
+        },
+        "predictions": [
+          {
+            "direction": -1,
+            "meaningful": true,
+            "runs": 5
+          }
+        ],
+        "v28_missed_runs": 4
+      },
+      "raw_explanation": "This is similar to an earlier example, where in this vintage's bracket, very little can be done to have either garner any value. Though the tar is exceptional for A, it isn't exceptional relative to B. So it's not enough to compensate for vintage, nor is it enough to compensate for shade. And so the only redeeming quality is the tar, which at this vintage almost garners no attention or desire. So in this case, what would probably be the deciding factor would ultimately come down to preference or taste. This is otherwise a tie.",
+      "evidence_reconciliation_ready": true,
+      "clarification_pending": null,
+      "interpretation": "User selected practicalsimilarity withno clearprice-based direction, explicitlydistinguished from exactequalprices. Preserve priorreasoning:botholder profiles haveweak overall appeal;A\u2019s115lb tare isnot sufficientlydifferent fromB\u2019s120lb tojustify apriceadvantage against vintage/shade. Taste/preference decides; tinycircumstantial differences allowed. This supersedes priorB/slightly direction forsource round51-7 uponlaterreconciliation. This isresolved nondirectional practicalsimilarity,not unresolved andnot exactequality.",
+      "answer_history": [
+        {
+          "raw_answer": "This is similar to an earlier example, where in this vintage's bracket, very little can be done to have either garner any value. Though the tar is exceptional for A, it isn't exceptional relative to B. So it's not enough to compensate for vintage, nor is it enough to compensate for shade. And so the only redeeming quality is the tar, which at this vintage almost garners no attention or desire. So in this case, what would probably be the deciding factor would ultimately come down to preference or taste. This is otherwise a tie.",
+          "raw_explanation": "This is similar to an earlier example, where in this vintage's bracket, very little can be done to have either garner any value. Though the tar is exceptional for A, it isn't exceptional relative to B. So it's not enough to compensate for vintage, nor is it enough to compensate for shade. And so the only redeeming quality is the tar, which at this vintage almost garners no attention or desire. So in this case, what would probably be the deciding factor would ultimately come down to preference or taste. This is otherwise a tie.",
+          "interpretation": "User describes lowoverall appeal ofboth35/40-year offerings. A\u2019s115lb tare is redeeming inisolation but not sufficientlydifferent from B\u2019s120lb tocompensate for vintage/shade; inthisolder bracket it attracts little demand. Preference/taste decides andusercalls itotherwiseatie. Do not retainoldB/slightly label asnewanswer, but exactpriceequality versuspracticalsimilarity needsconfirmation. No zeroabsolutevalue or numericdiscount inferred.",
+          "status": "awaiting_equality_clarification"
+        }
+      ],
+      "judgment_type": "practical_similarity_without_direction",
+      "exact_price_instruction": false,
+      "resolution_status": "resolved",
+      "selected_option_text": "Practically similar, with no clear price-based direction, allowing a tiny difference depending on inventory or circumstances.",
+      "supersedes_source_judgment": true
+    },
+    {
+      "id": "round57-12",
+      "number": 12,
+      "source_id": "round54-1",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        30,
+        115
+      ],
+      "b": [
+        "West Central Asia",
+        "brown",
+        20,
+        120
+      ],
+      "status": "answered",
+      "direction": "B",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "B, slightly\u2014practically similar, not a tie. The top-tier 20-year vintage just outweighs A\u2019s pale shade and 5 lb lower tare, but B\u2019s brown shade keeps it very close.",
+      "source_validation_result": {
+        "id": "round54-1",
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          30,
+          115
+        ],
+        "b": [
+          "West Central Asia",
+          "brown",
+          20,
+          120
+        ],
+        "known_direction": -1,
+        "materiality_target": 0,
+        "strength": "slightly",
+        "basis": "Latest explicit judgment from round54-1; repeated pair reconciled once, retracted answers excluded",
+        "missed_runs": 5,
+        "error_types": {
+          "false premium": 4,
+          "direction": 3
+        },
+        "predictions": [
+          {
+            "direction": -1,
+            "meaningful": true,
+            "runs": 2
+          },
+          {
+            "direction": 1,
+            "meaningful": false,
+            "runs": 1
+          },
+          {
+            "direction": 1,
+            "meaningful": true,
+            "runs": 2
+          }
+        ],
+        "v28_missed_runs": 1
+      },
+      "strength": "slightly",
+      "judgment_type": "practical_similarity_with_direction",
+      "exact_price_instruction": false,
+      "explicitly_not_tie": true,
+      "resolution_status": "resolved",
+      "raw_explanation": "B, slightly\u2014practically similar, not a tie. The top-tier 20-year vintage just outweighs A\u2019s pale shade and 5 lb lower tare, but B\u2019s brown shade keeps it very close.",
+      "evidence_reconciliation_ready": true,
+      "interpretation": "Reaffirms B as slightly more expensive, practically similar and explicitly not a tie. Its top-tier20-year versus30-year vintage narrowly outweighs A\u2019spale/straw versusbrown shade and115lb versus120lb tare advantage withWestCentralAsia provenance matching. B\u2019sbrown shade limits the net premium. No numericvalue or universalvintage dominance inferred."
+    },
+    {
+      "id": "round57-13",
+      "number": 13,
+      "source_id": "round56-7",
+      "a": [
+        "West Central Asia",
+        "pale/straw",
+        35,
+        110
+      ],
+      "b": [
+        "West Central Asia",
+        "pale/straw",
+        25,
+        130
+      ],
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "A, slightly\u2014practically similar, not a tie. The 110 lb tare and 20 lb advantage just outweigh B\u2019s 10-year younger vintage, but A\u2019s older vintage keeps it very close.",
+      "source_validation_result": {
+        "id": "round56-7",
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          35,
+          110
+        ],
+        "b": [
+          "West Central Asia",
+          "pale/straw",
+          25,
+          130
+        ],
+        "known_direction": 1,
+        "materiality_target": 0,
+        "strength": "slightly",
+        "basis": "Latest explicit judgment from round56-7; repeated pair reconciled once, retracted answers excluded",
+        "missed_runs": 5,
+        "error_types": {
+          "false premium": 4,
+          "direction": 1
+        },
+        "predictions": [
+          {
+            "direction": 1,
+            "meaningful": true,
+            "runs": 4
+          },
+          {
+            "direction": -1,
+            "meaningful": false,
+            "runs": 1
+          }
+        ],
+        "v28_missed_runs": 4
+      },
+      "strength": "slightly",
+      "judgment_type": "practical_similarity_with_direction",
+      "exact_price_instruction": false,
+      "explicitly_not_tie": true,
+      "resolution_status": "resolved",
+      "raw_explanation": "A, slightly\u2014practically similar, not a tie. The 110 lb tare and 20 lb advantage just outweigh B\u2019s 10-year younger vintage, but A\u2019s older vintage keeps it very close.",
+      "evidence_reconciliation_ready": true,
+      "interpretation": "Reaffirms A as slightly more expensive, practically similar and explicitly not a tie. Its110lb versus130lb tare advantage narrowly outweighs B\u2019s25-year versus35-year vintage advantage, withWestCentralAsia provenance andpale/straw shade matching. A\u2019solder vintage limits the net advantage. No numericalpremium or universal20lb dominance inferred."
+    },
+    {
+      "id": "round57-14",
+      "number": 14,
+      "source_id": "round6-10",
+      "a": [
+        "central",
+        "brown",
+        20,
+        120
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "brown",
+        20,
+        120
+      ],
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "A, slightly\u2014practically similar, not a tie. Neither is desirable; A is only a little more valuable because B\u2019s provenance is weaker, not because A warrants a meaningful premium.",
+      "source_validation_result": {
+        "id": "round6-10",
+        "a": [
+          "central",
+          "brown",
+          20,
+          120
+        ],
+        "b": [
+          "West Asia / Middle East",
+          "brown",
+          20,
+          120
+        ],
+        "known_direction": 1,
+        "materiality_target": 1,
+        "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+        "strength": "moderately",
+        "missed_runs": 5,
+        "error_types": {
+          "missed premium": 5
+        },
+        "predictions": [
+          {
+            "direction": 1,
+            "meaningful": false,
+            "runs": 5
+          }
+        ],
+        "v28_missed_runs": 3
+      },
+      "raw_explanation": "A, slightly\u2014practically similar, not a tie. Neither is desirable; A is only a little more valuable because B\u2019s provenance is weaker, not because A warrants a meaningful premium.",
+      "evidence_reconciliation_ready": true,
+      "clarification_pending": null,
+      "interpretation": "User confirms A slightly higher, practically similar and explicitly not a tie. Neither20-year brown120lb offering is desirable in this context; Central is only a little more valuable because WestAsia/MiddleEast provenance is weaker. No meaningfulpremium for A. This corrects the historical meaningful-size label forsource round6-10 upon laterreconciliation. Preserve initial poor-overall-value explanation in history; no numerical discount or universal provenance premium inferred.",
+      "answer_history": [
+        {
+          "raw_answer": "These are a pair of terrible options, unfortunately. This would be, A would be more than B, but only because B is already low.",
+          "raw_explanation": "These are a pair of terrible options, unfortunately. This would be, A would be more than B, but only because B is already low.",
+          "interpretation": "User explicitly ranks A above B and describes both as terrible options. A\u2019s relative advantage is framed as B already being weak, rather than A being desirable. Premium magnitude is not explicit; do not infer small or meaningful from low overall appeal or retain the historical meaningful label as the current answer. No numerical discount or universal provenance ranking inferred.",
+          "status": "awaiting_meaningfulness_clarification"
+        }
+      ],
+      "strength": "slightly",
+      "judgment_type": "practical_similarity_with_direction",
+      "exact_price_instruction": false,
+      "explicitly_not_tie": true,
+      "resolution_status": "resolved",
+      "supersedes_source_judgment": true
+    },
+    {
+      "id": "round57-15",
+      "number": 15,
+      "source_id": "round6-8",
+      "a": [
+        "central",
+        "brown",
+        35,
+        120
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "brown",
+        35,
+        120
+      ],
+      "status": "answered",
+      "direction": null,
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "This is an absolute tie.",
+      "source_validation_result": {
+        "id": "round6-8",
+        "a": [
+          "central",
+          "brown",
+          35,
+          120
+        ],
+        "b": [
+          "West Asia / Middle East",
+          "brown",
+          35,
+          120
+        ],
+        "known_direction": 1,
+        "materiality_target": 1,
+        "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+        "strength": "moderately",
+        "missed_runs": 5,
+        "error_types": {
+          "missed premium": 5
+        },
+        "predictions": [
+          {
+            "direction": 1,
+            "meaningful": false,
+            "runs": 5
+          }
+        ],
+        "v28_missed_runs": 3
+      },
+      "judgment_type": "exact_equality",
+      "exact_price_instruction": true,
+      "explicitly_not_tie": false,
+      "resolution_status": "resolved",
+      "raw_explanation": "This is an absolute tie.",
+      "evidence_reconciliation_ready": true,
+      "supersedes_source_judgment": true,
+      "interpretation": "User explicitly states an absolute price tie between Central and WestAsia/MiddleEast brown35-year120lb offerings. Exact equality, not merely practicalsimilarity or unresolved. Supersedes historical A/meaningful judgment forsource round6-8 uponlater reconciliation. No broader equality rule inferred."
+    },
+    {
+      "id": "round57-16",
+      "number": 16,
+      "source_id": "round6-9",
+      "a": [
+        "central",
+        "brown",
+        25,
+        120
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "brown",
+        25,
+        120
+      ],
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "A ever so slightly, because the provenance difference is more than 2 degrees adjascent.",
+      "source_validation_result": {
+        "id": "round6-9",
+        "a": [
+          "central",
+          "brown",
+          25,
+          120
+        ],
+        "b": [
+          "West Asia / Middle East",
+          "brown",
+          25,
+          120
+        ],
+        "known_direction": 1,
+        "materiality_target": 1,
+        "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+        "strength": "moderately",
+        "missed_runs": 5,
+        "error_types": {
+          "missed premium": 5
+        },
+        "predictions": [
+          {
+            "direction": 1,
+            "meaningful": false,
+            "runs": 5
+          }
+        ],
+        "v28_missed_runs": 3
+      },
+      "strength": "ever so slightly",
+      "judgment_type": "practical_similarity_with_direction",
+      "exact_price_instruction": false,
+      "resolution_status": "resolved",
+      "raw_explanation": "A ever so slightly, because the provenance difference is more than 2 degrees adjascent.",
+      "evidence_reconciliation_ready": true,
+      "supersedes_source_judgment": true,
+      "interpretation": "User selects A ever so slightly in response to meaningful/slight/exactlyzero options. Central provenance provides a very small positive price advantage over WestAsia/MiddleEast with brownshade,25-year vintage and120lb tare matching. User characterizes the provenance separation as morethan2degrees adjacent. Retain that qualitative distance statement without inventing a global ordinalmap,numericmultiplier or monetary spacing. This corrects the historical A/meaningful size label forsource round6-9 uponlater reconciliation; not exactequality."
+    },
+    {
+      "id": "round57-17",
+      "number": 17,
+      "source_id": "round7-1",
+      "a": [
+        "central",
+        "brown",
+        30,
+        120
+      ],
+      "b": [
+        "West Asia / Middle East",
+        "brown",
+        30,
+        120
+      ],
+      "status": "answered",
+      "direction": "A",
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "A by the slimmest possible margin due to Provenance",
+      "source_validation_result": {
+        "id": "round7-1",
+        "a": [
+          "central",
+          "brown",
+          30,
+          120
+        ],
+        "b": [
+          "West Asia / Middle East",
+          "brown",
+          30,
+          120
+        ],
+        "known_direction": 1,
+        "materiality_target": 1,
+        "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+        "strength": "moderately",
+        "missed_runs": 5,
+        "error_types": {
+          "missed premium": 5
+        },
+        "predictions": [
+          {
+            "direction": 1,
+            "meaningful": false,
+            "runs": 5
+          }
+        ],
+        "v28_missed_runs": 3
+      },
+      "strength": "slimmest possible margin",
+      "judgment_type": "practical_similarity_with_direction",
+      "exact_price_instruction": false,
+      "resolution_status": "resolved",
+      "raw_explanation": "A by the slimmest possible margin due to Provenance",
+      "evidence_reconciliation_ready": true,
+      "supersedes_source_judgment": true,
+      "interpretation": "User selects A higher by the slimmest possible positive margin due to provenance, in response to meaningful/slight/exactlyzero options. Withbrownshade,30-year vintage and120lb tare matching, Central has a tiny advantage overWestAsia/MiddleEast. This is a positive difference, not exact equality or a meaningful premium. Correct historical meaningful-size label forsource round7-1 uponlater reconciliation. No numericminimumprice or globalprovenance-distance scale inferred."
+    },
+    {
+      "id": "round57-18",
+      "number": 18,
+      "source_id": "round8-4",
+      "a": [
+        "Eastern Europe",
+        "copper",
+        30,
+        120
+      ],
+      "b": [
+        "West Central Asia",
+        "copper",
+        30,
+        120
+      ],
+      "status": "answered",
+      "direction": null,
+      "meaningfulness": "no_meaningful_difference",
+      "raw_answer": "This is also a total tie. There's, there are no... neither attribute is premium. Neither. So the pairing bracket is insignificant. This would be same cost, low.",
+      "source_validation_result": {
+        "id": "round8-4",
+        "a": [
+          "Eastern Europe",
+          "copper",
+          30,
+          120
+        ],
+        "b": [
+          "West Central Asia",
+          "copper",
+          30,
+          120
+        ],
+        "known_direction": 1,
+        "materiality_target": 1,
+        "basis": "qualifier-derived meaningfulness PROXY; explicit moderate/strong language, not a numeric economic anchor",
+        "strength": "moderately",
+        "missed_runs": 5,
+        "error_types": {
+          "missed premium": 5
+        },
+        "predictions": [
+          {
+            "direction": 1,
+            "meaningful": false,
+            "runs": 5
+          }
+        ],
+        "v28_missed_runs": 5
+      },
+      "judgment_type": "exact_equality",
+      "exact_price_instruction": true,
+      "explicitly_not_tie": false,
+      "resolution_status": "resolved",
+      "raw_explanation": "This is also a total tie. There's, there are no... neither attribute is premium. Neither. So the pairing bracket is insignificant. This would be same cost, low.",
+      "evidence_reconciliation_ready": true,
+      "supersedes_source_judgment": true,
+      "interpretation": "User explicitly states total price equality andsamecost,low, forEasternEurope versusWestCentralAsia copper30-year120lb offerings. Neither profile has a premium-generating advantage inthis pairing bracket. Exactequality,not merelypracticalsimilarity or unresolved. Supersedes theprior directional/meaningful judgment forsource round8-4 uponlaterreconciliation. No numericprice,zeroabsolutevalue or universalprovenance equality inferred."
+    }
+  ],
+  "rule_statements": [
+    {
+      "source": "round57-1",
+      "status": "explanation_recorded_direction_pending",
+      "statement": "Provenance quality is conditional oncorequality. Here35/40-year vintages are weak; bothsimilar tares redeem them butdo notjustify apremium. Brown can be a defect/discount ratherthan treating amber as anindependent premium.",
+      "scope": "This pair anduser-described over30 vintage bracket; no numericdiscount,zero-value rule,universalforeign hierarchy orotherpair label inferred."
+    },
+    {
+      "source": "round57-1",
+      "status": "explicit_exact_equality_confirmed",
+      "statement": "WesternEurope brown35/115 andamber40/120 have exactly equal price. User calls this anabsolute true tie. Preserve exact-equality semantics separately from practical similarity and unresolved.",
+      "scope": "This exactpair; do not infer allolder offerings orallbrown/amber comparisons areequal."
+    },
+    {
+      "source": "round57-9",
+      "statement": "Top20-year vintage pluspale/straw shade can justify a premium over thecompared stronger-provenance copper25 offering when tare matches at125lb. Shade amplifies thetop-vintage foundation here; user highlights equal tare below130lb.",
+      "scope": "This comparison andstated interaction hypothesis; no numericalmultiplier or universal provenance adjacency inferred."
+    }
+  ],
+  "scores": null,
+  "completed_at": "2026-10-29T03:07:28.164397+00:00",
+  "reconciliation_pending": true
+}

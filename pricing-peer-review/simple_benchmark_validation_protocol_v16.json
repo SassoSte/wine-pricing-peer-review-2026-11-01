@@ -1,0 +1,17 @@
+{
+  "evidence": "evidence-v16.json",
+  "targets": "benchmark-targets-v16.json",
+  "features": "Unchanged18 additive features, nonnegative shade/vintage/lighter-tare coefficients. No context overlays or evidence lookups.",
+  "arms": {
+    "v15_recipe_control": "Refit prior blended-loss recipe and its original signed-materiality selector on v15 training targets inside every outer fold; evaluate on current v16 targets.",
+    "v16_blended": "Same18 features and blended loss, using only v16 targets. Select regularization and threshold jointly on direction accuracy and binary materiality balanced accuracy from inner predictions.",
+    "v16_direction_first": "Same18 features; learn coefficients from known directional labels only using ridge logistic ranking. Calibrate meaningfulness separately from magnitude of inner predicted margins on available v16 materiality targets. No magnitude inferred for238 unspecified cases."
+  },
+  "alphas": [0.001, 0.01, 0.1, 1.0],
+  "candidate_thresholds": "Existing benchmark grid plus21 quantiles of absolute INNER out-of-fold margins on size-labeled rows, including0. Outer answers never set thresholds.",
+  "selection": "Equal-weight average of pooled direction accuracy and binary meaningfulness balanced accuracy; tie-break higher minimum of the two, fewer sign reversals, stronger ridge, larger radius. Materiality detection is scored independently of winner direction. Also report correct combined meaningful direction.",
+  "validation": "Five outer family folds by five seeds. Preserve v12 family assignments on first401 rows; assign new families without labels. Three inner family folds select settings. Every prediction uses only offer features and trained coefficients. No recorded-answer lookup, no full-fit score presented as held-out accuracy.",
+  "delivery": "Choose a v16 candidate only if its held-out direction accuracy and materiality balanced accuracy both meet or exceed the matched v15 control, at least one improves, and sign reversals do not increase. Pick highest mean of the two measures among eligible candidates; otherwise retain the frozen v15 fit and save v16 candidates separately.",
+  "materiality_limit": "175 size-labeled targets:149 negative/coarsened labels and26 positive labels;25 positives are old qualifier-derived proxies. Directly supported size subset has40 negative and1 clear positive.238 unspecified sizes excluded from size metrics and calibration; known directions still used. Not monetary calibration or fresh prospective confirmation.",
+  "questionnaire": "None in this task. Any later questions must address a demonstrated ambiguity or mathematical assumption; do not repeat settled pairs."
+}

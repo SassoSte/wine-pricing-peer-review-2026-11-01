@@ -1,0 +1,9 @@
+{
+  "evidence_pair_output_checks": 643,
+  "rank_outputs_match": true,
+  "premium_outputs_match": true,
+  "swap_checks_pass": true,
+  "historical_head_conflict_ids": [],
+  "fresh_questions": 12,
+  "freeze_sha256": "39997a4745d5ed0109943bcc0178e533f691f4674e7983a2cd05cc4e01597d32"
+}

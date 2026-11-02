@@ -1,0 +1,55 @@
+{
+  "round42-3": {
+    "a_advantage": "Five-year younger vintage",
+    "b_advantage": "10lb lower tare; foreign premium provenance versus premium domestic provenance",
+    "crux": "Whether5-year age advantage offsets10lb tare difference plus the cross-provenance tradeoff. The two115lb clarifications hold provenance and tare equal and do not answer this.",
+    "still_missing": "Net comparison of this combined tradeoff; user called it very close without selecting either axis.",
+    "status": "unresolved",
+    "no_label_inferred": true,
+    "raw_answer": "This is very very close and I'll tell you why; both premium vintages, equal shades.  Basically we're talking about the absolute best vintage of Napa vs a slightly lesser vintage Bordeaux - but that difference in Tare is really a thing.  Make sense ?",
+    "raw_clarification": null,
+    "existing_exact_one_factor_controls": []
+  },
+  "round42-10": {
+    "a_advantage": "Northeast provenance advantage and5lb lower tare",
+    "b_advantage": "Five-year younger vintage",
+    "crux": "Size of Northeast/Northwest provenance premium relative to the remaining vintage advantage after tare. Pure5lb insignificance does not imply it is irrelevant when combined with provenance.",
+    "still_missing": "Net winner and meaningfulness; user explicitly said not a tie.",
+    "status": "unresolved",
+    "no_label_inferred": true,
+    "raw_answer": "Closer than it looks.  This one would end up being a toss up in some views.  A has provenance and Tare, and just a 5 year gap.  But yes, I could see this going either way.",
+    "raw_clarification": "which is to say, it's not a tie - you know what I mean?",
+    "existing_exact_one_factor_controls": [
+      {
+        "attribute": "tare",
+        "anchor_side": "a",
+        "evidence_id": "round22-8",
+        "a": [
+          "northeast",
+          "amber",
+          30,
+          120
+        ],
+        "b": [
+          "northeast",
+          "amber",
+          30,
+          125
+        ],
+        "winner": "practical_similarity",
+        "explicit_materiality": null
+      }
+    ]
+  },
+  "round42-12": {
+    "a_advantage": "Five-year younger vintage",
+    "b_advantage": "Lighter amber versus copper shade and10lb lower tare",
+    "crux": "Age-versus10lb tare plus copper/amber shade tradeoff. The golden/pale clarification does not establish copper/amber equivalence.",
+    "still_missing": "Net winner and meaningfulness; user explicitly requested unresolved, not tied.",
+    "status": "unresolved",
+    "no_label_inferred": true,
+    "raw_answer": "This is very close\u2014A has the younger vintage, but B has the lighter shade and 10 lb lower tare. I'd leave this unresolved rather than call it a tie.",
+    "raw_clarification": null,
+    "existing_exact_one_factor_controls": []
+  }
+}

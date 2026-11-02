@@ -1,0 +1,25 @@
+{
+  "status": "declared_before_fit",
+  "scope": "One new contextual premium head, not another threshold patch. FrozenV28direction.",
+  "architecture": "Regularized logistic classifier; 13 generic pair/context features plus9provenance-specific shade deviations. Regions enter only through sharedshadeterm deviation, shrinkage toward0. No pair IDs/routing/answer lookup.",
+  "features": [
+    "intercept",
+    "absoluteV28margin",
+    "meanvintagequality",
+    "meantarequality",
+    "winningvintagequality",
+    "winningtarequality",
+    "winningshadedifference",
+    "winningprovenancecontribution",
+    "opposingcontribution",
+    "shade_x_winningvintage",
+    "shade_x_winningtare",
+    "alltopdistinction",
+    "ordinarypure5lb",
+    "9regionalshade deviations excludingEasternEurope reference"
+  ],
+  "fit": "Equal per-case binary logisticloss on knownsizeonly. Train-onlystandardization; ridge .001,.01,.1,1 selected via3innerfamilyfolds, balancedaccuracy primary thenaccuracy, strongerregularization tie-break. No cutoffsearch; .5decision. 25outerfamilyfolds. Nonnegative gap andalltop coefficients; ordinarypure5lb coefficient nonpositive.",
+  "baseline": "FrozenV28 andv37, unchanged. Conditional head comparison; base ranking has historicaltraining exposure. Latestprospectiveanswers nowdevelopmentdata.",
+  "success": "Must exceed bothbaselines in mean knownsize accuracy andjointaccuracy, with falsepremiumcount no higher thanV37; report genuinepremiumlosses andtargetcases independently. No adoption justfor fitting latestthree rows. Alltop/pure5lbcontrols mustnot regress.",
+  "stop": "Run this declared architecture once. If gatefails, reportfailure andstop; do not iterate features or lambdas afterlookingatresults. No questionnaire."
+}

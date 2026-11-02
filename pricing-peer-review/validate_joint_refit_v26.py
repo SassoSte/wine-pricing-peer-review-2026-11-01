@@ -1,0 +1,26 @@
+from pathlib import Path
+import json,hashlib
+import numpy as np
+import joint_refit_v26 as model
+import joint_objective_v22 as joint
+import refit_simple_benchmark_v16 as metrics
+from validate_contextual_meaningfulness_v18 import extend_folds
+from reconcile_and_compare import write_versioned
+R=Path(__file__).resolve().parent
+SOURCES=['evidence-v25.json','evidence-v26.json','benchmark-targets-v26.json','round46-fixed.json','round47-fixed.json','round48-fixed.json','older-dark-scoped-validation-v25.json','older-dark-scoped-delivery-v25.json','joint_refit_v26.py','validate_joint_refit_v26.py','older_dark_scoped_v25.py','joint_weight_refit_v22.py','joint_objective_v22.py']
+def main():
+ hashes={f:hashlib.sha256((R/f).read_bytes()).hexdigest() for f in SOURCES};old=json.loads((R/'older-dark-scoped-validation-v25.json').read_text());t=json.loads((R/'benchmark-targets-v26.json').read_text())['rows'];e=json.loads((R/'evidence-v26.json').read_text())['rows'];ix={q['id']:i for i,q in enumerate(t)};groups=model.linear.utility.arrays(t)[3];direct=metrics.verified_materiality(e);runs={'v25':[],'joint_refit':[]};audits=[]
+ for seed in metrics.SEEDS:
+  fs=sorted([q for q in old['nested_cv']['fold_audits'] if q['seed']==seed],key=lambda q:q['fold']);splits=[(np.array([ix[i] for i in f['training_ids']]),np.array([ix[i] for i in f['validation_ids']])) for f in fs];mm={a:np.zeros(len(t)) for a in runs};rr=np.zeros(len(t))
+  for fold,(tr,te) in enumerate(extend_folds(groups,groups[:523],splits,5,seed)):
+   f=fs[fold];reference={'base_model':f['base_model'],**f['choices']['combined']};assert [t[i]['id'] for i in tr if i<523]==f['training_ids'];assert not set(groups[tr])&set(groups[te]);train=[t[i] for i in tr];test=[t[i] for i in te];fit=model.fit(train,reference);x,offset,r=model.design(test,reference);rr[te]=r;beta=reference['base_model']['base_model']['coefficients'];mm['v25'][te]=x@beta+offset;mm['joint_refit'][te]=x@fit['coefficients']+offset
+   audits.append({'seed':seed,'fold':fold,'training_ids':[t[i]['id'] for i in tr],'validation_ids':[t[i]['id'] for i in te],'fit':fit})
+  prior=next(q for q in old['nested_cv']['runs']['combined'] if q['seed']==seed);np.testing.assert_allclose(mm['v25'][:523],prior['margins'],atol=1e-12);np.testing.assert_allclose(rr[:523],prior['radii'],atol=1e-12)
+  for arm in runs:runs[arm].append({'seed':seed,'margins':mm[arm].tolist(),'radii':rr.tolist(),'score':metrics.score(t,mm[arm],rr,direct),'joint_score':joint.score(t,mm[arm],rr)})
+ summary=metrics.summarize(runs);js={a:{k:(series[0]['joint_score'][k] if k.endswith('_n') else float(np.mean([q['joint_score'][k] for q in series]))) for k in ('supported_n','correct','accuracy','both_axes_n','both_axes_correct','both_axes_accuracy','balanced_accuracy','signed_joint_loss')} for a,series in runs.items()};s=summary['joint_refit'];base=summary['v25'];checks={'joint_improves':js['joint_refit']['balanced_accuracy']>js['v25']['balanced_accuracy']+1e-10,'both_axes_noninferior':js['joint_refit']['both_axes_accuracy']>=js['v25']['both_axes_accuracy']-1e-10,'direction_noninferior':s['direction']['accuracy']>=base['direction']['accuracy']-1e-10,'false_premiums_noninferior':s['materiality']['false_meaningful']<=base['materiality']['false_meaningful']+1e-10,'correct_meaningful_noninferior':s['materiality']['correct_meaningful_direction']>=base['materiality']['correct_meaningful_direction']-1e-10};winner='joint_refit' if all(checks.values()) else 'v25'
+ reference=json.loads((R/'older-dark-scoped-delivery-v25.json').read_text())['model'];full=model.fit(t,reference)
+ result={'source_hashes':hashes,'protocol':'Joint objective over all19 underlying weights, current v25 contextual transforms/five-year correction and residual correction offsets/boundary mapping frozen. Equivalent affine design verified against baseline. Original family folds extended label-free; weights fit only training rows. Four-group correctness with full-axis and signed-loss tie breaks; fixed deterministic two-start coordinate search. Monotone increments,pure5lb cap,domestic adjacent-shade cap and amber/copper cap including fixed microshade offset. Zero130 preserved algebraically. Eight unresolved registry entries are not ties;7 entirely unlabelled active rows contribute no objective/score. Legacy unresolved27-11 registry-only. No answer lookup. Reused-family validation exploratory.','row_ids':[q['id'] for q in t],'nested_cv':{'runs':runs,'summary':summary,'joint_summary':js,'fold_audits':audits},'full_model':full,'delivery':{'selected':winner,'checks':checks},'recent_full_predictions':{q['id']:model.predict(q['a'],q['b'],full) for q in t if q['id'].startswith(('round46-','round47-')) or q['id'] in ('round27-7','round38-3')}}
+ write_versioned(R/'joint-refit-validation-v26.json',result);write_versioned(R/'joint-refit-delivery-v26.json',{'selected_model':winner,'model':full if winner=='joint_refit' else reference,'evidence':'evidence-v26.json','validation_file':'joint-refit-validation-v26.json','validation':summary[winner],'joint_validation':js[winner],'baselines_unchanged':True})
+ for f,h in hashes.items():assert hashlib.sha256((R/f).read_bytes()).hexdigest()==h,f
+ print(json.dumps({'summary':summary,'joint':js,'delivery':result['delivery']},indent=2))
+if __name__=='__main__':main()

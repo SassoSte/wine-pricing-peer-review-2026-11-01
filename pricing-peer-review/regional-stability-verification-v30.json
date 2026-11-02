@@ -1,0 +1,15 @@
+{
+  "offering_values_checked": 1250,
+  "pair_predictions_checked": 1640,
+  "mismatches": 0,
+  "tests_passed": 25,
+  "active_model": "v28_tare_compensation",
+  "experimental_runtime": "predictor_regional_mature_v30.py",
+  "runtime_hashes": {
+    "predictor_regional_mature_v30.py": "89264a5fdacaab4d539eb4ec1804727dba744d5a35f9414b6953314334af29d4",
+    "regional-mature-selected-config-v30.json": "75e4eb8910d1b2957613b71c6361f0d59d3675d62688414760f9ff410c8309df",
+    "predictor_v28.py": "c572cb63d47b531607efc66be1c65890b854d2f5a5087286858c25611191b7e3",
+    "predictor_v27.py": "293307f98d4c2434bfbbea8a73341a3522601604535647f3a7a6b0103b23f2ed",
+    "model-config-v28.json": "a9fed8e86977526c16e74ccdb0a6a75d919b3041bd602e5592d64e3086414dcf"
+  }
+}

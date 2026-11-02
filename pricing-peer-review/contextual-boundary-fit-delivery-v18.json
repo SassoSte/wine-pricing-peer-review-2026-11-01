@@ -1,0 +1,72 @@
+{
+  "selected_model": "selected_context",
+  "model": {
+    "kind": "contextual_meaningfulness",
+    "underlying_source": "precision-shade-candidate-v17.json",
+    "underlying_coefficients": [
+      0.30059251209596727,
+      -0.4826433202627174,
+      -0.4827433202627174,
+      -0.4640245387499571,
+      0.395340398689864,
+      0.49105436886711173,
+      0.3004925120959673,
+      0.5335164881572831,
+      0.5073492033852847,
+      0.7556002873078896,
+      6.256835180915935e-22,
+      3.461062096949336e-21,
+      0.6636957908318052,
+      0.37156981323016397,
+      0.6270916207257354,
+      0.6635957908318052,
+      0.3330912438174751,
+      0.2491467586623201,
+      -0.36369579083180525
+    ],
+    "base_radius": 0.3000001,
+    "context_kind": "mature_shade",
+    "context_coefficient": 0.75,
+    "direction_weights_changed": false,
+    "calibration_evidence": "evidence-v18.json"
+  },
+  "evidence": "evidence-v18.json",
+  "validation_file": "contextual-boundary-fit-validation-v18.json",
+  "validation_sha256": "55c8c2b9719359d7f5a41676b3947b22cb9e500d270362890c7f448d2117f6b9",
+  "validation": {
+    "direction": {
+      "n": 288,
+      "correct": 260.8,
+      "accuracy": 0.9055555555555556,
+      "reversals": 27.2,
+      "zero_or_abstain": 0.0
+    },
+    "materiality": {
+      "n": 199,
+      "meaningful_n": 33,
+      "no_meaningful_n": 166,
+      "accuracy": 0.9135678391959798,
+      "balanced_accuracy": 0.9020627966411098,
+      "meaningful_recall": 0.884848484848485,
+      "no_meananingful_recall": 0.9192771084337348,
+      "false_meaningful": 13.4,
+      "missed_meaningful": 3.8,
+      "correct_meaningful_direction": 28.2
+    },
+    "directly_supported_materiality": {
+      "n": 65,
+      "meaningful_n": 8,
+      "no_meaningful_n": 57,
+      "accuracy": 0.9107692307692308,
+      "balanced_accuracy": 0.9061403508771931,
+      "meaningful_recall": 0.9,
+      "no_meananingful_recall": 0.9122807017543859,
+      "false_meaningful": 5.0,
+      "missed_meaningful": 0.8,
+      "correct_meaningful_direction": 7.2
+    },
+    "unknown_materiality_n": 238
+  },
+  "prediction_source": "frozen19 utility coefficients plus one learned materiality parameter; no answer lookup",
+  "qualification": "Exploratory family validation. Does not establish shade-versus-tare causality or dollar prices."
+}

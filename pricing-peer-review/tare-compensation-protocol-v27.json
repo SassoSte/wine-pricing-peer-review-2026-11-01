@@ -1,0 +1,12 @@
+{
+  "evidence": "evidence-v27.json",
+  "parent": "matched-vintage-context-validation-v27.json",
+  "diagnosis": "WEgold30/125 vs pale35/120 has correct direction but normalized held-out margins0.667-0.750 below meaningfulness1, with tare coefficient0.833-0.875 in most folds. Related misses WCAamber25/120 vs copper30/115 andEEamber30/125 vs amber35/120 share younger-vessel5lb disadvantage.",
+  "single_added_feature": "Matching provenance, exactly5-year age gap, younger offering age<=30 and exactly5lb heavier. Signed feature favors younger offering. One nonnegative coefficient, capped by existing per5lb tare coefficient, attenuates rather than reverses the tare penalty.",
+  "scope_reason": "Older35vs40 bracket excluded because current evidence includes small older-bracket vintage effects and practical age/tare tradeoffs. No region IDs or individual record IDs in feature.",
+  "architecture": "18 additive coefficients plus existing matched-provenance5year golden/pale feature plus this compensation coefficient:20 total.",
+  "anchors": ["round49-2", "round50-4", "round49-17"],
+  "validation": "Same evidence,joint objective,25 withheld-family partitions and3sec single-thread MILP budget as parent; full12sec. Anchor constraints only if present in training. No protection of the new target misses; they must be predicted on their merits. Frozen parent andv26 scored identically. Hypothesis follows inspected errors so exploratory, not prospective.",
+  "promotion": "Reconciles3 full-fit anchors; joint balanced accuracy improves versusv26, fully-labelled joint and direction noninferior, no additional false premiums.",
+  "safeguards": "Pure5lb pairs age-match and receive no compensation; zero golden/pale at130 preserved. Compensation<=tare contribution means heavier tare never rewarded within active comparison. Pair-dependent comparator, no standalone price/transitivity claim."
+}

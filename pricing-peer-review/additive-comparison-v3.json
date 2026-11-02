@@ -1,0 +1,5067 @@
+{
+  "method": {
+    "evidence_version": 3,
+    "evidence_file": "evidence-v3.json",
+    "evidence_sha256": "f5cc0483361938267e7f605811909939bc57d5bdbc963107392fcbcb4d525003",
+    "rows": 183,
+    "features": "unchanged 18-parameter additive",
+    "objective": "unchanged squared ranking hinge + squared tie gaps + ridge",
+    "validation": "5 outer grouped folds x 5 seeds, inner 3 grouped folds; same selection grids and seeds. Compare newly trained v2-evidence control vs v3-evidence candidate on IDENTICAL outer test families. Saved model coefficients are never edited.",
+    "limits": "Repeated nonrandom evidence, no pristine holdout. Weak monotonicity; soft tie penalty does not ensure exact price equality. Rechecks never add independent weight.",
+    "historical_file_hashes": {
+      "pricing.py": "70cf711fdd3322750ffd5cdab45e156e3bc47a136ddb2155bac04727e7900906",
+      "compare_models.py": "da2067d3d2ef99849ce2e30be16208bff0145bc6b036111535542c2daf00fa5f",
+      "compare_interactions.py": "028a696908badf066ec5b8e73760bf067d31334a657c292b4b8230f81aa2f0c9",
+      "compare_objectives.py": "5bd3adf9a7b220dd81a745e35fde90382a730208c3cb5a7a0c337344fd88480d",
+      "reconcile_and_compare.py": "5ce72928381b935a7400f5ca5d599dffd8054ace2e9626ea2f59e2169ef591cb",
+      "model-comparison.json": "121ed749ee62b681c1395809d4d416a4d797aaa385851abfd8325a2a6e35f412",
+      "interaction-comparison.json": "077c03d6c3f6e5e99b1b9ebee7a8c21a41ff5a8a4898d5583b8de8be9f59b858",
+      "objective-comparison.json": "3860a4e6fa1e9a029a95de52217b5261a89d7e0327e9ab633714dcb6689ef4b6",
+      "objective-comparison-v2.json": "1ddc4cd63dba9edc607d51a30a89f7f3eb676452d161442cbef46a59b994413c",
+      "evidence-v2.json": "8a512f572cf8ed4b5a2bd2655574762e5f5e548a5345627cf76513dc582aaa1f",
+      "comparisons.json": "1a125dac50da322ea0bad27db4d8a19e1b241ce64c394793842b8f551ef4338c",
+      "round9-fixed.json": "3281cec3694c5177a6dc78b36c2f9b6a1b80981033dcd2048d36b0ce805ce0a7",
+      "round10-fixed.json": "91af42fcf3f54fbc0835672744238ea3c1e084c0f69ed3452dbce996be1f3476",
+      "round11-isolation.json": "ccae90400a912356a5452fd28866c3d9d028b6391da16a1dde1b816816e98d8b",
+      "round12-clarification.json": "0c933690bc1d79098e577d2aabbbe2ef1e0228a10df37706584b31478eaaf04c",
+      "round13-fixed.json": "3ec55feb8fc4e0235c48612cb0f630f983c4f6edbd783710af0e2d710ee756af",
+      "round14-isolation.json": "2459341287287d9ea2436bc6bcb561a63dcf1d18e7800ef2b1564eca0ae7355e"
+    }
+  },
+  "nested_cv": {
+    "row_ids": [
+      "r1-1",
+      "r1-2",
+      "r1-3",
+      "r1-4",
+      "r1-5",
+      "r2-1",
+      "r2-2",
+      "r2-3",
+      "r2-4",
+      "r2-5",
+      "r3-1",
+      "r3-2",
+      "r3-3",
+      "r3-4",
+      "r3-5",
+      "r4-1",
+      "r4-2",
+      "r4-3",
+      "r4-4",
+      "r4-5",
+      "r4-6",
+      "r4-7",
+      "r4-8",
+      "r4-9",
+      "r5-2",
+      "r5-3",
+      "r5-4",
+      "r5-5",
+      "r5-6",
+      "r5-7",
+      "r5-9",
+      "r5-10",
+      "revision-3",
+      "revision-4",
+      "revision-5",
+      "revision-6",
+      "revision-7",
+      "revision-8",
+      "revision-9",
+      "revision-10",
+      "revision-11",
+      "revision-13",
+      "revision-14",
+      "revision-16",
+      "revision-17",
+      "revision-18",
+      "revision-19",
+      "revision-20",
+      "round6-1",
+      "round6-2",
+      "round6-3",
+      "round6-4",
+      "round6-5",
+      "round6-6",
+      "round6-7",
+      "round6-8",
+      "round6-9",
+      "round6-10",
+      "round6-11",
+      "round6-12",
+      "round6-14",
+      "round6-15",
+      "round6-16",
+      "round6-17",
+      "round6-18",
+      "round6-19",
+      "round6-20",
+      "round7-1",
+      "round7-3",
+      "round7-4",
+      "round7-5",
+      "round7-6",
+      "round7-7",
+      "round7-8",
+      "round7-9",
+      "round7-10",
+      "round7-11",
+      "round7-12",
+      "round7-13",
+      "round7-14",
+      "round7-15",
+      "round7-16",
+      "round7-19",
+      "round7-20",
+      "round8-1",
+      "round8-2",
+      "round8-3",
+      "round8-4",
+      "round8-5",
+      "round8-6",
+      "round8-7",
+      "round8-8",
+      "round8-10",
+      "round8-11",
+      "round8-12",
+      "round8-13",
+      "round8-15",
+      "round8-17",
+      "round8-18",
+      "round8-19",
+      "round8-20",
+      "round9-2",
+      "round9-3",
+      "round9-4",
+      "round9-5",
+      "round9-6",
+      "round9-7",
+      "round9-8",
+      "round9-9",
+      "round9-10",
+      "round9-11",
+      "round9-12",
+      "round9-13",
+      "round9-14",
+      "round9-15",
+      "round9-16",
+      "round9-17",
+      "round9-18",
+      "round9-20",
+      "round10-1",
+      "round10-2",
+      "round10-3",
+      "round10-4",
+      "round10-5",
+      "round10-6",
+      "round10-7",
+      "round10-8",
+      "round10-9",
+      "round10-10",
+      "round10-11",
+      "round10-12",
+      "round10-13",
+      "round10-14",
+      "round10-15",
+      "round10-16",
+      "round10-17",
+      "round10-18",
+      "round10-19",
+      "round10-20",
+      "round11-1",
+      "round11-2",
+      "round11-3",
+      "round11-4",
+      "round11-5",
+      "round11-6",
+      "round11-7",
+      "round11-8",
+      "round11-9",
+      "round11-10",
+      "round11-11",
+      "round11-12",
+      "round11-14",
+      "round11-15",
+      "round11-16",
+      "round11-17",
+      "round11-18",
+      "round11-19",
+      "round11-20",
+      "round13-1",
+      "round13-2",
+      "round13-3",
+      "round13-4",
+      "round13-5",
+      "round13-6",
+      "round13-7",
+      "round13-8",
+      "round13-9",
+      "round13-10",
+      "round13-11",
+      "round13-12",
+      "round13-13",
+      "round13-15",
+      "round13-16",
+      "round13-17",
+      "round13-18",
+      "round13-19",
+      "round13-20",
+      "round14-1",
+      "round14-2",
+      "round14-4",
+      "round14-5",
+      "round14-7",
+      "round14-8"
+    ],
+    "groups": 94,
+    "runs": {
+      "v2_evidence_control": [
+        {
+          "seed": 11,
+          "metrics": {
+            "all": {
+              "n": 183,
+              "matched": 125,
+              "accuracy": 0.6830601092896175,
+              "balanced_accuracy": 0.6769477911646585,
+              "recall": {
+                "B": 0.58,
+                "tie": 0.74,
+                "A": 0.7108433734939759
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 29,
+                  "tie": 19,
+                  "A": 2
+                },
+                "tie": {
+                  "B": 7,
+                  "tie": 37,
+                  "A": 6
+                },
+                "A": {
+                  "B": 4,
+                  "tie": 20,
+                  "A": 59
+                }
+              },
+              "opposite_winner_errors": 6,
+              "predicted_ties": 76
+            },
+            "prior_v2": {
+              "n": 158,
+              "matched": 106,
+              "accuracy": 0.6708860759493671,
+              "balanced_accuracy": 0.6681406979272543,
+              "recall": {
+                "B": 0.5813953488372093,
+                "tie": 0.7380952380952381,
+                "A": 0.684931506849315
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 25,
+                  "tie": 17,
+                  "A": 1
+                },
+                "tie": {
+                  "B": 7,
+                  "tie": 31,
+                  "A": 4
+                },
+                "A": {
+                  "B": 4,
+                  "tie": 19,
+                  "A": 50
+                }
+              },
+              "opposite_winner_errors": 5,
+              "predicted_ties": 67
+            },
+            "round13": {
+              "n": 19,
+              "matched": 14,
+              "accuracy": 0.7368421052631579,
+              "balanced_accuracy": 0.6964285714285715,
+              "recall": {
+                "B": 0.5,
+                "tie": 0.7142857142857143,
+                "A": 0.875
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 2,
+                  "tie": 1,
+                  "A": 1
+                },
+                "tie": {
+                  "B": 0,
+                  "tie": 5,
+                  "A": 2
+                },
+                "A": {
+                  "B": 0,
+                  "tie": 1,
+                  "A": 7
+                }
+              },
+              "opposite_winner_errors": 1,
+              "predicted_ties": 7
+            },
+            "isolation_components": {
+              "n": 6,
+              "matched": 5,
+              "accuracy": 0.8333333333333334,
+              "balanced_accuracy": 0.8888888888888888,
+              "recall": {
+                "B": 0.6666666666666666,
+                "tie": 1.0,
+                "A": 1.0
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 2,
+                  "tie": 1,
+                  "A": 0
+                },
+                "tie": {
+                  "B": 0,
+                  "tie": 1,
+                  "A": 0
+                },
+                "A": {
+                  "B": 0,
+                  "tie": 0,
+                  "A": 2
+                }
+              },
+              "opposite_winner_errors": 0,
+              "predicted_ties": 2
+            }
+          },
+          "predictions": [
+            -1,
+            0,
+            1,
+            1,
+            -1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            -1,
+            0,
+            -1,
+            1,
+            -1,
+            -1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            -1,
+            -1,
+            -1,
+            0,
+            0,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            -1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            -1,
+            -1,
+            1,
+            0,
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            -1,
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            -1,
+            0,
+            1,
+            1,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            1,
+            1,
+            -1,
+            1,
+            -1,
+            -1,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            -1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            -1,
+            1
+          ]
+        },
+        {
+          "seed": 29,
+          "metrics": {
+            "all": {
+              "n": 183,
+              "matched": 134,
+              "accuracy": 0.73224043715847,
+              "balanced_accuracy": 0.7316465863453816,
+              "recall": {
+                "B": 0.68,
+                "tie": 0.78,
+                "A": 0.7349397590361446
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 34,
+                  "tie": 11,
+                  "A": 5
+                },
+                "tie": {
+                  "B": 6,
+                  "tie": 39,
+                  "A": 5
+                },
+                "A": {
+                  "B": 4,
+                  "tie": 18,
+                  "A": 61
+                }
+              },
+              "opposite_winner_errors": 9,
+              "predicted_ties": 68
+            },
+            "prior_v2": {
+              "n": 158,
+              "matched": 114,
+              "accuracy": 0.7215189873417721,
+              "balanced_accuracy": 0.7207835879387329,
+              "recall": {
+                "B": 0.6744186046511628,
+                "tie": 0.7619047619047619,
+                "A": 0.726027397260274
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 29,
+                  "tie": 9,
+                  "A": 5
+                },
+                "tie": {
+                  "B": 6,
+                  "tie": 32,
+                  "A": 4
+                },
+                "A": {
+                  "B": 4,
+                  "tie": 16,
+                  "A": 53
+                }
+              },
+              "opposite_winner_errors": 9,
+              "predicted_ties": 57
+            },
+            "round13": {
+              "n": 19,
+              "matched": 15,
+              "accuracy": 0.7894736842105263,
+              "balanced_accuracy": 0.7857142857142857,
+              "recall": {
+                "B": 0.75,
+                "tie": 0.8571428571428571,
+                "A": 0.75
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 3,
+                  "tie": 1,
+                  "A": 0
+                },
+                "tie": {
+                  "B": 0,
+                  "tie": 6,
+                  "A": 1
+                },
+                "A": {
+                  "B": 0,
+                  "tie": 2,
+                  "A": 6
+                }
+              },
+              "opposite_winner_errors": 0,
+              "predicted_ties": 9
+            },
+            "isolation_components": {
+              "n": 6,
+              "matched": 5,
+              "accuracy": 0.8333333333333334,
+              "balanced_accuracy": 0.8888888888888888,
+              "recall": {
+                "B": 0.6666666666666666,
+                "tie": 1.0,
+                "A": 1.0
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 2,
+                  "tie": 1,
+                  "A": 0
+                },
+                "tie": {
+                  "B": 0,
+                  "tie": 1,
+                  "A": 0
+                },
+                "A": {
+                  "B": 0,
+                  "tie": 0,
+                  "A": 2
+                }
+              },
+              "opposite_winner_errors": 0,
+              "predicted_ties": 2
+            }
+          },
+          "predictions": [
+            -1,
+            -1,
+            1,
+            1,
+            -1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            -1,
+            1,
+            -1,
+            1,
+            -1,
+            -1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            1,
+            -1,
+            0,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            -1,
+            -1,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            -1,
+            0,
+            1,
+            -1,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            1,
+            1,
+            0,
+            1,
+            -1,
+            1,
+            -1,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            -1,
+            1
+          ]
+        },
+        {
+          "seed": 47,
+          "metrics": {
+            "all": {
+              "n": 183,
+              "matched": 138,
+              "accuracy": 0.7540983606557377,
+              "balanced_accuracy": 0.7344578313253013,
+              "recall": {
+                "B": 0.68,
+                "tie": 0.68,
+                "A": 0.8433734939759037
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 34,
+                  "tie": 5,
+                  "A": 11
+                },
+                "tie": {
+                  "B": 10,
+                  "tie": 34,
+                  "A": 6
+                },
+                "A": {
+                  "B": 5,
+                  "tie": 8,
+                  "A": 70
+                }
+              },
+              "opposite_winner_errors": 16,
+              "predicted_ties": 47
+            },
+            "prior_v2": {
+              "n": 158,
+              "matched": 117,
+              "accuracy": 0.740506329113924,
+              "balanced_accuracy": 0.720816456560324,
+              "recall": {
+                "B": 0.6976744186046512,
+                "tie": 0.6428571428571429,
+                "A": 0.821917808219178
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 30,
+                  "tie": 4,
+                  "A": 9
+                },
+                "tie": {
+                  "B": 10,
+                  "tie": 27,
+                  "A": 5
+                },
+                "A": {
+                  "B": 5,
+                  "tie": 8,
+                  "A": 60
+                }
+              },
+              "opposite_winner_errors": 14,
+              "predicted_ties": 39
+            },
+            "round13": {
+              "n": 19,
+              "matched": 17,
+              "accuracy": 0.8947368421052632,
+              "balanced_accuracy": 0.8690476190476191,
+              "recall": {
+                "B": 0.75,
+                "tie": 0.8571428571428571,
+                "A": 1.0
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 3,
+                  "tie": 0,
+                  "A": 1
+                },
+                "tie": {
+                  "B": 0,
+                  "tie": 6,
+                  "A": 1
+                },
+                "A": {
+                  "B": 0,
+                  "tie": 0,
+                  "A": 8
+                }
+              },
+              "opposite_winner_errors": 1,
+              "predicted_ties": 6
+            },
+            "isolation_components": {
+              "n": 6,
+              "matched": 4,
+              "accuracy": 0.6666666666666666,
+              "balanced_accuracy": 0.7777777777777777,
+              "recall": {
+                "B": 0.3333333333333333,
+                "tie": 1.0,
+                "A": 1.0
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 1,
+                  "tie": 1,
+                  "A": 1
+                },
+                "tie": {
+                  "B": 0,
+                  "tie": 1,
+                  "A": 0
+                },
+                "A": {
+                  "B": 0,
+                  "tie": 0,
+                  "A": 2
+                }
+              },
+              "opposite_winner_errors": 1,
+              "predicted_ties": 2
+            }
+          },
+          "predictions": [
+            -1,
+            -1,
+            1,
+            1,
+            -1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            -1,
+            1,
+            -1,
+            1,
+            -1,
+            -1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            -1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            -1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            -1,
+            0,
+            -1,
+            -1,
+            -1,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            1,
+            -1,
+            1,
+            -1,
+            0,
+            1,
+            1,
+            -1,
+            0,
+            0,
+            -1,
+            -1,
+            0,
+            1,
+            1,
+            0,
+            -1,
+            1,
+            1,
+            0,
+            1,
+            -1,
+            1,
+            -1,
+            1,
+            -1,
+            0,
+            -1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            0,
+            1,
+            -1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            1,
+            1,
+            0,
+            -1,
+            1,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "seed": 71,
+          "metrics": {
+            "all": {
+              "n": 183,
+              "matched": 133,
+              "accuracy": 0.726775956284153,
+              "balanced_accuracy": 0.7249799196787148,
+              "recall": {
+                "B": 0.7,
+                "tie": 0.74,
+                "A": 0.7349397590361446
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 35,
+                  "tie": 10,
+                  "A": 5
+                },
+                "tie": {
+                  "B": 8,
+                  "tie": 37,
+                  "A": 5
+                },
+                "A": {
+                  "B": 5,
+                  "tie": 17,
+                  "A": 61
+                }
+              },
+              "opposite_winner_errors": 10,
+              "predicted_ties": 64
+            },
+            "prior_v2": {
+              "n": 158,
+              "matched": 113,
+              "accuracy": 0.7151898734177216,
+              "balanced_accuracy": 0.7160328079410588,
+              "recall": {
+                "B": 0.6976744186046512,
+                "tie": 0.7380952380952381,
+                "A": 0.7123287671232876
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 30,
+                  "tie": 9,
+                  "A": 4
+                },
+                "tie": {
+                  "B": 7,
+                  "tie": 31,
+                  "A": 4
+                },
+                "A": {
+                  "B": 5,
+                  "tie": 16,
+                  "A": 52
+                }
+              },
+              "opposite_winner_errors": 9,
+              "predicted_ties": 56
+            },
+            "round13": {
+              "n": 19,
+              "matched": 15,
+              "accuracy": 0.7894736842105263,
+              "balanced_accuracy": 0.7797619047619048,
+              "recall": {
+                "B": 0.75,
+                "tie": 0.7142857142857143,
+                "A": 0.875
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 3,
+                  "tie": 0,
+                  "A": 1
+                },
+                "tie": {
+                  "B": 1,
+                  "tie": 5,
+                  "A": 1
+                },
+                "A": {
+                  "B": 0,
+                  "tie": 1,
+                  "A": 7
+                }
+              },
+              "opposite_winner_errors": 1,
+              "predicted_ties": 6
+            },
+            "isolation_components": {
+              "n": 6,
+              "matched": 5,
+              "accuracy": 0.8333333333333334,
+              "balanced_accuracy": 0.8888888888888888,
+              "recall": {
+                "B": 0.6666666666666666,
+                "tie": 1.0,
+                "A": 1.0
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 2,
+                  "tie": 1,
+                  "A": 0
+                },
+                "tie": {
+                  "B": 0,
+                  "tie": 1,
+                  "A": 0
+                },
+                "A": {
+                  "B": 0,
+                  "tie": 0,
+                  "A": 2
+                }
+              },
+              "opposite_winner_errors": 0,
+              "predicted_ties": 2
+            }
+          },
+          "predictions": [
+            0,
+            -1,
+            1,
+            1,
+            -1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            -1,
+            0,
+            -1,
+            1,
+            -1,
+            -1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            0,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            0,
+            -1,
+            -1,
+            -1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            -1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            -1,
+            -1,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            -1,
+            0,
+            1,
+            1,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            1,
+            1,
+            0,
+            1,
+            -1,
+            1,
+            -1,
+            1,
+            -1,
+            0,
+            -1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            -1,
+            0,
+            1,
+            -1,
+            1,
+            0,
+            1,
+            -1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            -1,
+            1
+          ]
+        },
+        {
+          "seed": 103,
+          "metrics": {
+            "all": {
+              "n": 183,
+              "matched": 133,
+              "accuracy": 0.726775956284153,
+              "balanced_accuracy": 0.711726907630522,
+              "recall": {
+                "B": 0.64,
+                "tie": 0.7,
+                "A": 0.7951807228915663
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 32,
+                  "tie": 9,
+                  "A": 9
+                },
+                "tie": {
+                  "B": 7,
+                  "tie": 35,
+                  "A": 8
+                },
+                "A": {
+                  "B": 5,
+                  "tie": 12,
+                  "A": 66
+                }
+              },
+              "opposite_winner_errors": 14,
+              "predicted_ties": 56
+            },
+            "prior_v2": {
+              "n": 158,
+              "matched": 112,
+              "accuracy": 0.7088607594936709,
+              "balanced_accuracy": 0.6951688182972031,
+              "recall": {
+                "B": 0.627906976744186,
+                "tie": 0.6904761904761905,
+                "A": 0.7671232876712328
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 27,
+                  "tie": 9,
+                  "A": 7
+                },
+                "tie": {
+                  "B": 6,
+                  "tie": 29,
+                  "A": 7
+                },
+                "A": {
+                  "B": 5,
+                  "tie": 12,
+                  "A": 56
+                }
+              },
+              "opposite_winner_errors": 12,
+              "predicted_ties": 50
+            },
+            "round13": {
+              "n": 19,
+              "matched": 16,
+              "accuracy": 0.8421052631578947,
+              "balanced_accuracy": 0.8214285714285715,
+              "recall": {
+                "B": 0.75,
+                "tie": 0.7142857142857143,
+                "A": 1.0
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 3,
+                  "tie": 0,
+                  "A": 1
+                },
+                "tie": {
+                  "B": 1,
+                  "tie": 5,
+                  "A": 1
+                },
+                "A": {
+                  "B": 0,
+                  "tie": 0,
+                  "A": 8
+                }
+              },
+              "opposite_winner_errors": 1,
+              "predicted_ties": 5
+            },
+            "isolation_components": {
+              "n": 6,
+              "matched": 5,
+              "accuracy": 0.8333333333333334,
+              "balanced_accuracy": 0.8888888888888888,
+              "recall": {
+                "B": 0.6666666666666666,
+                "tie": 1.0,
+                "A": 1.0
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 2,
+                  "tie": 0,
+                  "A": 1
+                },
+                "tie": {
+                  "B": 0,
+                  "tie": 1,
+                  "A": 0
+                },
+                "A": {
+                  "B": 0,
+                  "tie": 0,
+                  "A": 2
+                }
+              },
+              "opposite_winner_errors": 1,
+              "predicted_ties": 1
+            }
+          },
+          "predictions": [
+            -1,
+            0,
+            1,
+            1,
+            -1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            -1,
+            -1,
+            -1,
+            1,
+            -1,
+            -1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            0,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            0,
+            -1,
+            -1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            -1,
+            0,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            1,
+            1,
+            -1,
+            1,
+            -1,
+            0,
+            1,
+            1,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            1,
+            -1,
+            0,
+            -1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            -1,
+            0,
+            1,
+            -1,
+            1,
+            0,
+            1,
+            -1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            1,
+            1,
+            0,
+            -1,
+            1,
+            1,
+            -1,
+            1
+          ]
+        }
+      ],
+      "v3_evidence_candidate": [
+        {
+          "seed": 11,
+          "metrics": {
+            "all": {
+              "n": 183,
+              "matched": 138,
+              "accuracy": 0.7540983606557377,
+              "balanced_accuracy": 0.7583132530120483,
+              "recall": {
+                "B": 0.76,
+                "tie": 0.78,
+                "A": 0.7349397590361446
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 38,
+                  "tie": 10,
+                  "A": 2
+                },
+                "tie": {
+                  "B": 6,
+                  "tie": 39,
+                  "A": 5
+                },
+                "A": {
+                  "B": 5,
+                  "tie": 17,
+                  "A": 61
+                }
+              },
+              "opposite_winner_errors": 7,
+              "predicted_ties": 66
+            },
+            "prior_v2": {
+              "n": 158,
+              "matched": 117,
+              "accuracy": 0.740506329113924,
+              "balanced_accuracy": 0.7472251298310552,
+              "recall": {
+                "B": 0.7674418604651163,
+                "tie": 0.7619047619047619,
+                "A": 0.7123287671232876
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 33,
+                  "tie": 9,
+                  "A": 1
+                },
+                "tie": {
+                  "B": 6,
+                  "tie": 32,
+                  "A": 4
+                },
+                "A": {
+                  "B": 5,
+                  "tie": 16,
+                  "A": 52
+                }
+              },
+              "opposite_winner_errors": 6,
+              "predicted_ties": 57
+            },
+            "round13": {
+              "n": 19,
+              "matched": 16,
+              "accuracy": 0.8421052631578947,
+              "balanced_accuracy": 0.8273809523809524,
+              "recall": {
+                "B": 0.75,
+                "tie": 0.8571428571428571,
+                "A": 0.875
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 3,
+                  "tie": 0,
+                  "A": 1
+                },
+                "tie": {
+                  "B": 0,
+                  "tie": 6,
+                  "A": 1
+                },
+                "A": {
+                  "B": 0,
+                  "tie": 1,
+                  "A": 7
+                }
+              },
+              "opposite_winner_errors": 1,
+              "predicted_ties": 7
+            },
+            "isolation_components": {
+              "n": 6,
+              "matched": 5,
+              "accuracy": 0.8333333333333334,
+              "balanced_accuracy": 0.8888888888888888,
+              "recall": {
+                "B": 0.6666666666666666,
+                "tie": 1.0,
+                "A": 1.0
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 2,
+                  "tie": 1,
+                  "A": 0
+                },
+                "tie": {
+                  "B": 0,
+                  "tie": 1,
+                  "A": 0
+                },
+                "A": {
+                  "B": 0,
+                  "tie": 0,
+                  "A": 2
+                }
+              },
+              "opposite_winner_errors": 0,
+              "predicted_ties": 2
+            }
+          },
+          "predictions": [
+            -1,
+            -1,
+            1,
+            1,
+            -1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            -1,
+            1,
+            -1,
+            1,
+            -1,
+            -1,
+            1,
+            0,
+            1,
+            -1,
+            0,
+            -1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            0,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            -1,
+            0,
+            1,
+            1,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            1,
+            1,
+            0,
+            1,
+            -1,
+            -1,
+            -1,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            0,
+            1,
+            -1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            -1,
+            1
+          ]
+        },
+        {
+          "seed": 29,
+          "metrics": {
+            "all": {
+              "n": 183,
+              "matched": 132,
+              "accuracy": 0.7213114754098361,
+              "balanced_accuracy": 0.7209638554216867,
+              "recall": {
+                "B": 0.68,
+                "tie": 0.76,
+                "A": 0.7228915662650602
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 34,
+                  "tie": 10,
+                  "A": 6
+                },
+                "tie": {
+                  "B": 6,
+                  "tie": 38,
+                  "A": 6
+                },
+                "A": {
+                  "B": 5,
+                  "tie": 18,
+                  "A": 60
+                }
+              },
+              "opposite_winner_errors": 11,
+              "predicted_ties": 66
+            },
+            "prior_v2": {
+              "n": 158,
+              "matched": 113,
+              "accuracy": 0.7151898734177216,
+              "balanced_accuracy": 0.7160328079410588,
+              "recall": {
+                "B": 0.6976744186046512,
+                "tie": 0.7380952380952381,
+                "A": 0.7123287671232876
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 30,
+                  "tie": 8,
+                  "A": 5
+                },
+                "tie": {
+                  "B": 6,
+                  "tie": 31,
+                  "A": 5
+                },
+                "A": {
+                  "B": 4,
+                  "tie": 17,
+                  "A": 52
+                }
+              },
+              "opposite_winner_errors": 9,
+              "predicted_ties": 56
+            },
+            "round13": {
+              "n": 19,
+              "matched": 14,
+              "accuracy": 0.7368421052631579,
+              "balanced_accuracy": 0.7023809523809524,
+              "recall": {
+                "B": 0.5,
+                "tie": 0.8571428571428571,
+                "A": 0.75
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 2,
+                  "tie": 1,
+                  "A": 1
+                },
+                "tie": {
+                  "B": 0,
+                  "tie": 6,
+                  "A": 1
+                },
+                "A": {
+                  "B": 1,
+                  "tie": 1,
+                  "A": 6
+                }
+              },
+              "opposite_winner_errors": 2,
+              "predicted_ties": 8
+            },
+            "isolation_components": {
+              "n": 6,
+              "matched": 5,
+              "accuracy": 0.8333333333333334,
+              "balanced_accuracy": 0.8888888888888888,
+              "recall": {
+                "B": 0.6666666666666666,
+                "tie": 1.0,
+                "A": 1.0
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 2,
+                  "tie": 1,
+                  "A": 0
+                },
+                "tie": {
+                  "B": 0,
+                  "tie": 1,
+                  "A": 0
+                },
+                "A": {
+                  "B": 0,
+                  "tie": 0,
+                  "A": 2
+                }
+              },
+              "opposite_winner_errors": 0,
+              "predicted_ties": 2
+            }
+          },
+          "predictions": [
+            -1,
+            -1,
+            1,
+            1,
+            -1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            -1,
+            1,
+            -1,
+            1,
+            -1,
+            -1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            1,
+            -1,
+            0,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            -1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            -1,
+            0,
+            1,
+            -1,
+            -1,
+            0,
+            0,
+            -1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            -1,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            -1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            1,
+            -1,
+            0,
+            -1,
+            0,
+            1,
+            -1,
+            1
+          ]
+        },
+        {
+          "seed": 47,
+          "metrics": {
+            "all": {
+              "n": 183,
+              "matched": 137,
+              "accuracy": 0.7486338797814208,
+              "balanced_accuracy": 0.7383935742971888,
+              "recall": {
+                "B": 0.7,
+                "tie": 0.72,
+                "A": 0.7951807228915663
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 35,
+                  "tie": 8,
+                  "A": 7
+                },
+                "tie": {
+                  "B": 8,
+                  "tie": 36,
+                  "A": 6
+                },
+                "A": {
+                  "B": 5,
+                  "tie": 12,
+                  "A": 66
+                }
+              },
+              "opposite_winner_errors": 12,
+              "predicted_ties": 56
+            },
+            "prior_v2": {
+              "n": 158,
+              "matched": 116,
+              "accuracy": 0.7341772151898734,
+              "balanced_accuracy": 0.7261765702351877,
+              "recall": {
+                "B": 0.7209302325581395,
+                "tie": 0.6904761904761905,
+                "A": 0.7671232876712328
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 31,
+                  "tie": 6,
+                  "A": 6
+                },
+                "tie": {
+                  "B": 8,
+                  "tie": 29,
+                  "A": 5
+                },
+                "A": {
+                  "B": 5,
+                  "tie": 12,
+                  "A": 56
+                }
+              },
+              "opposite_winner_errors": 11,
+              "predicted_ties": 47
+            },
+            "round13": {
+              "n": 19,
+              "matched": 17,
+              "accuracy": 0.8947368421052632,
+              "balanced_accuracy": 0.8690476190476191,
+              "recall": {
+                "B": 0.75,
+                "tie": 0.8571428571428571,
+                "A": 1.0
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 3,
+                  "tie": 0,
+                  "A": 1
+                },
+                "tie": {
+                  "B": 0,
+                  "tie": 6,
+                  "A": 1
+                },
+                "A": {
+                  "B": 0,
+                  "tie": 0,
+                  "A": 8
+                }
+              },
+              "opposite_winner_errors": 1,
+              "predicted_ties": 6
+            },
+            "isolation_components": {
+              "n": 6,
+              "matched": 4,
+              "accuracy": 0.6666666666666666,
+              "balanced_accuracy": 0.7777777777777777,
+              "recall": {
+                "B": 0.3333333333333333,
+                "tie": 1.0,
+                "A": 1.0
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 1,
+                  "tie": 2,
+                  "A": 0
+                },
+                "tie": {
+                  "B": 0,
+                  "tie": 1,
+                  "A": 0
+                },
+                "A": {
+                  "B": 0,
+                  "tie": 0,
+                  "A": 2
+                }
+              },
+              "opposite_winner_errors": 0,
+              "predicted_ties": 3
+            }
+          },
+          "predictions": [
+            -1,
+            -1,
+            1,
+            1,
+            -1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            -1,
+            0,
+            -1,
+            1,
+            -1,
+            -1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            -1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            -1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            -1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            0,
+            -1,
+            0,
+            1,
+            1,
+            -1,
+            1,
+            -1,
+            0,
+            1,
+            1,
+            -1,
+            0,
+            0,
+            -1,
+            -1,
+            0,
+            1,
+            0,
+            1,
+            -1,
+            1,
+            1,
+            0,
+            1,
+            -1,
+            1,
+            -1,
+            1,
+            -1,
+            0,
+            -1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            0,
+            1,
+            -1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            1,
+            1,
+            0,
+            -1,
+            0,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "seed": 71,
+          "metrics": {
+            "all": {
+              "n": 183,
+              "matched": 137,
+              "accuracy": 0.7486338797814208,
+              "balanced_accuracy": 0.7410441767068273,
+              "recall": {
+                "B": 0.74,
+                "tie": 0.7,
+                "A": 0.7831325301204819
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 37,
+                  "tie": 8,
+                  "A": 5
+                },
+                "tie": {
+                  "B": 8,
+                  "tie": 35,
+                  "A": 7
+                },
+                "A": {
+                  "B": 4,
+                  "tie": 14,
+                  "A": 65
+                }
+              },
+              "opposite_winner_errors": 9,
+              "predicted_ties": 57
+            },
+            "prior_v2": {
+              "n": 158,
+              "matched": 116,
+              "accuracy": 0.7341772151898734,
+              "balanced_accuracy": 0.7293622981740217,
+              "recall": {
+                "B": 0.7441860465116279,
+                "tie": 0.6904761904761905,
+                "A": 0.7534246575342466
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 32,
+                  "tie": 6,
+                  "A": 5
+                },
+                "tie": {
+                  "B": 7,
+                  "tie": 29,
+                  "A": 6
+                },
+                "A": {
+                  "B": 4,
+                  "tie": 14,
+                  "A": 55
+                }
+              },
+              "opposite_winner_errors": 9,
+              "predicted_ties": 49
+            },
+            "round13": {
+              "n": 19,
+              "matched": 16,
+              "accuracy": 0.8421052631578947,
+              "balanced_accuracy": 0.8214285714285715,
+              "recall": {
+                "B": 0.75,
+                "tie": 0.7142857142857143,
+                "A": 1.0
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 3,
+                  "tie": 1,
+                  "A": 0
+                },
+                "tie": {
+                  "B": 1,
+                  "tie": 5,
+                  "A": 1
+                },
+                "A": {
+                  "B": 0,
+                  "tie": 0,
+                  "A": 8
+                }
+              },
+              "opposite_winner_errors": 0,
+              "predicted_ties": 6
+            },
+            "isolation_components": {
+              "n": 6,
+              "matched": 5,
+              "accuracy": 0.8333333333333334,
+              "balanced_accuracy": 0.8888888888888888,
+              "recall": {
+                "B": 0.6666666666666666,
+                "tie": 1.0,
+                "A": 1.0
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 2,
+                  "tie": 1,
+                  "A": 0
+                },
+                "tie": {
+                  "B": 0,
+                  "tie": 1,
+                  "A": 0
+                },
+                "A": {
+                  "B": 0,
+                  "tie": 0,
+                  "A": 2
+                }
+              },
+              "opposite_winner_errors": 0,
+              "predicted_ties": 2
+            }
+          },
+          "predictions": [
+            -1,
+            -1,
+            1,
+            1,
+            -1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            -1,
+            0,
+            -1,
+            1,
+            -1,
+            -1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            0,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            -1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            -1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            -1,
+            0,
+            1,
+            1,
+            -1,
+            0,
+            1,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            1,
+            1,
+            0,
+            1,
+            -1,
+            1,
+            -1,
+            1,
+            -1,
+            0,
+            -1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            -1,
+            0,
+            1,
+            -1,
+            1,
+            0,
+            1,
+            -1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            1,
+            1,
+            0,
+            -1,
+            0,
+            1,
+            -1,
+            1
+          ]
+        },
+        {
+          "seed": 103,
+          "metrics": {
+            "all": {
+              "n": 183,
+              "matched": 128,
+              "accuracy": 0.6994535519125683,
+              "balanced_accuracy": 0.6969477911646585,
+              "recall": {
+                "B": 0.7,
+                "tie": 0.68,
+                "A": 0.7108433734939759
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 35,
+                  "tie": 5,
+                  "A": 10
+                },
+                "tie": {
+                  "B": 9,
+                  "tie": 34,
+                  "A": 7
+                },
+                "A": {
+                  "B": 4,
+                  "tie": 20,
+                  "A": 59
+                }
+              },
+              "opposite_winner_errors": 14,
+              "predicted_ties": 59
+            },
+            "prior_v2": {
+              "n": 158,
+              "matched": 108,
+              "accuracy": 0.6835443037974683,
+              "balanced_accuracy": 0.6830908640402109,
+              "recall": {
+                "B": 0.6976744186046512,
+                "tie": 0.6666666666666666,
+                "A": 0.684931506849315
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 30,
+                  "tie": 5,
+                  "A": 8
+                },
+                "tie": {
+                  "B": 8,
+                  "tie": 28,
+                  "A": 6
+                },
+                "A": {
+                  "B": 4,
+                  "tie": 19,
+                  "A": 50
+                }
+              },
+              "opposite_winner_errors": 12,
+              "predicted_ties": 52
+            },
+            "round13": {
+              "n": 19,
+              "matched": 15,
+              "accuracy": 0.7894736842105263,
+              "balanced_accuracy": 0.7797619047619048,
+              "recall": {
+                "B": 0.75,
+                "tie": 0.7142857142857143,
+                "A": 0.875
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 3,
+                  "tie": 0,
+                  "A": 1
+                },
+                "tie": {
+                  "B": 1,
+                  "tie": 5,
+                  "A": 1
+                },
+                "A": {
+                  "B": 0,
+                  "tie": 1,
+                  "A": 7
+                }
+              },
+              "opposite_winner_errors": 1,
+              "predicted_ties": 6
+            },
+            "isolation_components": {
+              "n": 6,
+              "matched": 5,
+              "accuracy": 0.8333333333333334,
+              "balanced_accuracy": 0.8888888888888888,
+              "recall": {
+                "B": 0.6666666666666666,
+                "tie": 1.0,
+                "A": 1.0
+              },
+              "confusion_actual_to_predicted": {
+                "B": {
+                  "B": 2,
+                  "tie": 0,
+                  "A": 1
+                },
+                "tie": {
+                  "B": 0,
+                  "tie": 1,
+                  "A": 0
+                },
+                "A": {
+                  "B": 0,
+                  "tie": 0,
+                  "A": 2
+                }
+              },
+              "opposite_winner_errors": 1,
+              "predicted_ties": 1
+            }
+          },
+          "predictions": [
+            -1,
+            -1,
+            1,
+            1,
+            -1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            -1,
+            0,
+            -1,
+            1,
+            -1,
+            -1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            -1,
+            1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            0,
+            -1,
+            -1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            0,
+            -1,
+            0,
+            1,
+            1,
+            -1,
+            1,
+            -1,
+            0,
+            1,
+            1,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            -1,
+            1,
+            1,
+            0,
+            1,
+            -1,
+            0,
+            -1,
+            1,
+            -1,
+            0,
+            -1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            -1,
+            0,
+            1,
+            -1,
+            1,
+            0,
+            1,
+            -1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            1,
+            0,
+            0,
+            -1,
+            1,
+            1,
+            -1,
+            1
+          ]
+        }
+      ]
+    },
+    "summary": {
+      "v2_evidence_control": {
+        "all": {
+          "accuracy": 0.7245901639344263,
+          "balanced_accuracy": 0.7159518072289156,
+          "opposite_winner_errors": 11.0,
+          "predicted_ties": 62.2,
+          "n": 183,
+          "accuracy_range": [
+            0.6830601092896175,
+            0.7540983606557377
+          ],
+          "mean_recall": {
+            "B": 0.6559999999999999,
+            "tie": 0.7280000000000001,
+            "A": 0.763855421686747
+          }
+        },
+        "prior_v2": {
+          "accuracy": 0.7113924050632912,
+          "balanced_accuracy": 0.7041884737329146,
+          "opposite_winner_errors": 9.8,
+          "predicted_ties": 53.8,
+          "n": 158,
+          "accuracy_range": [
+            0.6708860759493671,
+            0.740506329113924
+          ],
+          "mean_recall": {
+            "B": 0.655813953488372,
+            "tie": 0.7142857142857142,
+            "A": 0.7424657534246575
+          }
+        },
+        "round13": {
+          "accuracy": 0.8105263157894737,
+          "balanced_accuracy": 0.7904761904761906,
+          "opposite_winner_errors": 0.8,
+          "predicted_ties": 6.6,
+          "n": 19,
+          "accuracy_range": [
+            0.7368421052631579,
+            0.8947368421052632
+          ],
+          "mean_recall": {
+            "B": 0.7,
+            "tie": 0.7714285714285715,
+            "A": 0.9
+          }
+        },
+        "isolation_components": {
+          "accuracy": 0.8,
+          "balanced_accuracy": 0.8666666666666666,
+          "opposite_winner_errors": 0.4,
+          "predicted_ties": 1.8,
+          "n": 6,
+          "accuracy_range": [
+            0.6666666666666666,
+            0.8333333333333334
+          ],
+          "mean_recall": {
+            "B": 0.5999999999999999,
+            "tie": 1.0,
+            "A": 1.0
+          }
+        }
+      },
+      "v3_evidence_candidate": {
+        "all": {
+          "accuracy": 0.7344262295081967,
+          "balanced_accuracy": 0.731132530120482,
+          "opposite_winner_errors": 10.6,
+          "predicted_ties": 60.8,
+          "n": 183,
+          "accuracy_range": [
+            0.6994535519125683,
+            0.7540983606557377
+          ],
+          "mean_recall": {
+            "B": 0.716,
+            "tie": 0.728,
+            "A": 0.7493975903614458
+          }
+        },
+        "prior_v2": {
+          "accuracy": 0.7215189873417722,
+          "balanced_accuracy": 0.7203775340443068,
+          "opposite_winner_errors": 9.4,
+          "predicted_ties": 52.2,
+          "n": 158,
+          "accuracy_range": [
+            0.6835443037974683,
+            0.740506329113924
+          ],
+          "mean_recall": {
+            "B": 0.7255813953488371,
+            "tie": 0.7095238095238096,
+            "A": 0.726027397260274
+          }
+        },
+        "round13": {
+          "accuracy": 0.8210526315789475,
+          "balanced_accuracy": 0.8,
+          "opposite_winner_errors": 1.0,
+          "predicted_ties": 6.6,
+          "n": 19,
+          "accuracy_range": [
+            0.7368421052631579,
+            0.8947368421052632
+          ],
+          "mean_recall": {
+            "B": 0.7,
+            "tie": 0.8,
+            "A": 0.9
+          }
+        },
+        "isolation_components": {
+          "accuracy": 0.8,
+          "balanced_accuracy": 0.8666666666666666,
+          "opposite_winner_errors": 0.2,
+          "predicted_ties": 2.0,
+          "n": 6,
+          "accuracy_range": [
+            0.6666666666666666,
+            0.8333333333333334
+          ],
+          "mean_recall": {
+            "B": 0.5999999999999999,
+            "tie": 1.0,
+            "A": 1.0
+          }
+        }
+      }
+    },
+    "selections": [
+      {
+        "seed": 11,
+        "fold": 0,
+        "model": "v2_evidence_control",
+        "train_n": 125,
+        "test_n": 37,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.8,
+        "inner_balanced_accuracy": 0.6188375350140056
+      },
+      {
+        "seed": 11,
+        "fold": 0,
+        "model": "v3_evidence_candidate",
+        "train_n": 146,
+        "test_n": 37,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.4,
+        "inner_balanced_accuracy": 0.6964978111319575
+      },
+      {
+        "seed": 11,
+        "fold": 1,
+        "model": "v2_evidence_control",
+        "train_n": 124,
+        "test_n": 37,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.2,
+        "inner_balanced_accuracy": 0.7382943619502759
+      },
+      {
+        "seed": 11,
+        "fold": 1,
+        "model": "v3_evidence_candidate",
+        "train_n": 146,
+        "test_n": 37,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.2,
+        "inner_balanced_accuracy": 0.7746965452847805
+      },
+      {
+        "seed": 11,
+        "fold": 2,
+        "model": "v2_evidence_control",
+        "train_n": 128,
+        "test_n": 37,
+        "alpha": 1.0,
+        "pooling": 1.0,
+        "threshold": 0.1,
+        "inner_balanced_accuracy": 0.7611282416192283
+      },
+      {
+        "seed": 11,
+        "fold": 2,
+        "model": "v3_evidence_candidate",
+        "train_n": 146,
+        "test_n": 37,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.4,
+        "inner_balanced_accuracy": 0.7748671748671748
+      },
+      {
+        "seed": 11,
+        "fold": 3,
+        "model": "v2_evidence_control",
+        "train_n": 125,
+        "test_n": 36,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.4,
+        "inner_balanced_accuracy": 0.7314616755793226
+      },
+      {
+        "seed": 11,
+        "fold": 3,
+        "model": "v3_evidence_candidate",
+        "train_n": 147,
+        "test_n": 36,
+        "alpha": 1.0,
+        "pooling": 1.0,
+        "threshold": 0.2,
+        "inner_balanced_accuracy": 0.7283914728682171
+      },
+      {
+        "seed": 11,
+        "fold": 4,
+        "model": "v2_evidence_control",
+        "train_n": 130,
+        "test_n": 36,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.4,
+        "inner_balanced_accuracy": 0.7256474519632414
+      },
+      {
+        "seed": 11,
+        "fold": 4,
+        "model": "v3_evidence_candidate",
+        "train_n": 147,
+        "test_n": 36,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.3,
+        "inner_balanced_accuracy": 0.7303215303215304
+      },
+      {
+        "seed": 29,
+        "fold": 0,
+        "model": "v2_evidence_control",
+        "train_n": 125,
+        "test_n": 37,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.5,
+        "inner_balanced_accuracy": 0.6912698412698414
+      },
+      {
+        "seed": 29,
+        "fold": 0,
+        "model": "v3_evidence_candidate",
+        "train_n": 146,
+        "test_n": 37,
+        "alpha": 1.0,
+        "pooling": 1.0,
+        "threshold": 0.1,
+        "inner_balanced_accuracy": 0.7604105571847507
+      },
+      {
+        "seed": 29,
+        "fold": 1,
+        "model": "v2_evidence_control",
+        "train_n": 133,
+        "test_n": 37,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.4,
+        "inner_balanced_accuracy": 0.7716750841750842
+      },
+      {
+        "seed": 29,
+        "fold": 1,
+        "model": "v3_evidence_candidate",
+        "train_n": 146,
+        "test_n": 37,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.5,
+        "inner_balanced_accuracy": 0.7916441274484268
+      },
+      {
+        "seed": 29,
+        "fold": 2,
+        "model": "v2_evidence_control",
+        "train_n": 123,
+        "test_n": 37,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.4,
+        "inner_balanced_accuracy": 0.702687081506685
+      },
+      {
+        "seed": 29,
+        "fold": 2,
+        "model": "v3_evidence_candidate",
+        "train_n": 146,
+        "test_n": 37,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.5,
+        "inner_balanced_accuracy": 0.750077399380805
+      },
+      {
+        "seed": 29,
+        "fold": 3,
+        "model": "v2_evidence_control",
+        "train_n": 127,
+        "test_n": 36,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.5,
+        "inner_balanced_accuracy": 0.7461309523809524
+      },
+      {
+        "seed": 29,
+        "fold": 3,
+        "model": "v3_evidence_candidate",
+        "train_n": 147,
+        "test_n": 36,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.4,
+        "inner_balanced_accuracy": 0.7599596004937718
+      },
+      {
+        "seed": 29,
+        "fold": 4,
+        "model": "v2_evidence_control",
+        "train_n": 124,
+        "test_n": 36,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.3,
+        "inner_balanced_accuracy": 0.7227633477633478
+      },
+      {
+        "seed": 29,
+        "fold": 4,
+        "model": "v3_evidence_candidate",
+        "train_n": 147,
+        "test_n": 36,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.3,
+        "inner_balanced_accuracy": 0.7443137824235385
+      },
+      {
+        "seed": 47,
+        "fold": 0,
+        "model": "v2_evidence_control",
+        "train_n": 125,
+        "test_n": 37,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.2,
+        "inner_balanced_accuracy": 0.726629035452565
+      },
+      {
+        "seed": 47,
+        "fold": 0,
+        "model": "v3_evidence_candidate",
+        "train_n": 146,
+        "test_n": 37,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.3,
+        "inner_balanced_accuracy": 0.7535389945047237
+      },
+      {
+        "seed": 47,
+        "fold": 1,
+        "model": "v2_evidence_control",
+        "train_n": 126,
+        "test_n": 37,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.5,
+        "inner_balanced_accuracy": 0.7318993075389071
+      },
+      {
+        "seed": 47,
+        "fold": 1,
+        "model": "v3_evidence_candidate",
+        "train_n": 146,
+        "test_n": 37,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.4,
+        "inner_balanced_accuracy": 0.7229459903878507
+      },
+      {
+        "seed": 47,
+        "fold": 2,
+        "model": "v2_evidence_control",
+        "train_n": 124,
+        "test_n": 37,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.15,
+        "inner_balanced_accuracy": 0.6182795698924731
+      },
+      {
+        "seed": 47,
+        "fold": 2,
+        "model": "v3_evidence_candidate",
+        "train_n": 146,
+        "test_n": 37,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.3,
+        "inner_balanced_accuracy": 0.7658525834952817
+      },
+      {
+        "seed": 47,
+        "fold": 3,
+        "model": "v2_evidence_control",
+        "train_n": 129,
+        "test_n": 36,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.3,
+        "inner_balanced_accuracy": 0.7585724416843961
+      },
+      {
+        "seed": 47,
+        "fold": 3,
+        "model": "v3_evidence_candidate",
+        "train_n": 147,
+        "test_n": 36,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.5,
+        "inner_balanced_accuracy": 0.7892680418996209
+      },
+      {
+        "seed": 47,
+        "fold": 4,
+        "model": "v2_evidence_control",
+        "train_n": 128,
+        "test_n": 36,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.3,
+        "inner_balanced_accuracy": 0.6838795191736368
+      },
+      {
+        "seed": 47,
+        "fold": 4,
+        "model": "v3_evidence_candidate",
+        "train_n": 147,
+        "test_n": 36,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.1,
+        "inner_balanced_accuracy": 0.712203213347378
+      },
+      {
+        "seed": 71,
+        "fold": 0,
+        "model": "v2_evidence_control",
+        "train_n": 126,
+        "test_n": 37,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.2,
+        "inner_balanced_accuracy": 0.7063132211158528
+      },
+      {
+        "seed": 71,
+        "fold": 0,
+        "model": "v3_evidence_candidate",
+        "train_n": 146,
+        "test_n": 37,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.2,
+        "inner_balanced_accuracy": 0.7316827316827318
+      },
+      {
+        "seed": 71,
+        "fold": 1,
+        "model": "v2_evidence_control",
+        "train_n": 123,
+        "test_n": 37,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.5,
+        "inner_balanced_accuracy": 0.7046524356869185
+      },
+      {
+        "seed": 71,
+        "fold": 1,
+        "model": "v3_evidence_candidate",
+        "train_n": 146,
+        "test_n": 37,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.3,
+        "inner_balanced_accuracy": 0.6700111158504273
+      },
+      {
+        "seed": 71,
+        "fold": 2,
+        "model": "v2_evidence_control",
+        "train_n": 126,
+        "test_n": 37,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.3,
+        "inner_balanced_accuracy": 0.7666666666666666
+      },
+      {
+        "seed": 71,
+        "fold": 2,
+        "model": "v3_evidence_candidate",
+        "train_n": 146,
+        "test_n": 37,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.5,
+        "inner_balanced_accuracy": 0.7956521739130435
+      },
+      {
+        "seed": 71,
+        "fold": 3,
+        "model": "v2_evidence_control",
+        "train_n": 128,
+        "test_n": 36,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.4,
+        "inner_balanced_accuracy": 0.683658620099298
+      },
+      {
+        "seed": 71,
+        "fold": 3,
+        "model": "v3_evidence_candidate",
+        "train_n": 147,
+        "test_n": 36,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.4,
+        "inner_balanced_accuracy": 0.7527932569796422
+      },
+      {
+        "seed": 71,
+        "fold": 4,
+        "model": "v2_evidence_control",
+        "train_n": 129,
+        "test_n": 36,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.3,
+        "inner_balanced_accuracy": 0.7191400325274565
+      },
+      {
+        "seed": 71,
+        "fold": 4,
+        "model": "v3_evidence_candidate",
+        "train_n": 147,
+        "test_n": 36,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.2,
+        "inner_balanced_accuracy": 0.7346357346357345
+      },
+      {
+        "seed": 103,
+        "fold": 0,
+        "model": "v2_evidence_control",
+        "train_n": 126,
+        "test_n": 37,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.4,
+        "inner_balanced_accuracy": 0.6886964886964887
+      },
+      {
+        "seed": 103,
+        "fold": 0,
+        "model": "v3_evidence_candidate",
+        "train_n": 146,
+        "test_n": 37,
+        "alpha": 1.0,
+        "pooling": 1.0,
+        "threshold": 0.2,
+        "inner_balanced_accuracy": 0.7229319912246742
+      },
+      {
+        "seed": 103,
+        "fold": 1,
+        "model": "v2_evidence_control",
+        "train_n": 126,
+        "test_n": 37,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.4,
+        "inner_balanced_accuracy": 0.7297385620915033
+      },
+      {
+        "seed": 103,
+        "fold": 1,
+        "model": "v3_evidence_candidate",
+        "train_n": 146,
+        "test_n": 37,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.3,
+        "inner_balanced_accuracy": 0.8018734535171438
+      },
+      {
+        "seed": 103,
+        "fold": 2,
+        "model": "v2_evidence_control",
+        "train_n": 127,
+        "test_n": 37,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.4,
+        "inner_balanced_accuracy": 0.7273504273504274
+      },
+      {
+        "seed": 103,
+        "fold": 2,
+        "model": "v3_evidence_candidate",
+        "train_n": 146,
+        "test_n": 37,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.3,
+        "inner_balanced_accuracy": 0.6860916778304662
+      },
+      {
+        "seed": 103,
+        "fold": 3,
+        "model": "v2_evidence_control",
+        "train_n": 127,
+        "test_n": 36,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.8,
+        "inner_balanced_accuracy": 0.5652686620428556
+      },
+      {
+        "seed": 103,
+        "fold": 3,
+        "model": "v3_evidence_candidate",
+        "train_n": 147,
+        "test_n": 36,
+        "alpha": 1.0,
+        "pooling": 1.0,
+        "threshold": 0.1,
+        "inner_balanced_accuracy": 0.7542969743198576
+      },
+      {
+        "seed": 103,
+        "fold": 4,
+        "model": "v2_evidence_control",
+        "train_n": 126,
+        "test_n": 36,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.2,
+        "inner_balanced_accuracy": 0.670449016313678
+      },
+      {
+        "seed": 103,
+        "fold": 4,
+        "model": "v3_evidence_candidate",
+        "train_n": 147,
+        "test_n": 36,
+        "alpha": 0.1,
+        "pooling": 1.0,
+        "threshold": 0.4,
+        "inner_balanced_accuracy": 0.7017197143055266
+      }
+    ]
+  },
+  "candidate_fit_all_183": {
+    "alpha": 0.1,
+    "pooling": 1.0,
+    "threshold": 0.4,
+    "inner_balanced_accuracy": 0.7396787148594378,
+    "feature_names": [
+      "origin:Western Europe vs Eastern Europe",
+      "origin:West Central Asia vs Eastern Europe",
+      "origin:South/Eastern Asia vs Eastern Europe",
+      "origin:West Asia / Middle East vs Eastern Europe",
+      "origin:central vs Eastern Europe",
+      "origin:northeast vs Eastern Europe",
+      "origin:northwest vs Eastern Europe",
+      "origin:southwest vs Eastern Europe",
+      "origin:southeast vs Eastern Europe",
+      "shade increment:copper",
+      "shade increment:amber",
+      "shade increment:golden",
+      "shade increment:pale/straw",
+      "age increment:35",
+      "age increment:30",
+      "age increment:25",
+      "age increment:20",
+      "lightness per 5 lb"
+    ],
+    "coefficients": [
+      0.7313852660692389,
+      -1.0334252891196984,
+      -1.1701528987338923,
+      -1.2665106744136472,
+      0.7514846087479473,
+      1.2727689613933024,
+      0.6269552449498782,
+      1.2967972897622597,
+      1.3333571688233374,
+      1.9575841518671628,
+      0.0,
+      0.0,
+      0.9820515212829323,
+      1.2486782333492026,
+      1.4601361283895478,
+      1.3321194588087664,
+      1.5145913418659411,
+      0.5903202206203665
+    ],
+    "in_sample": {
+      "n": 183,
+      "matched": 148,
+      "accuracy": 0.8087431693989071,
+      "balanced_accuracy": 0.8037751004016065,
+      "recall": {
+        "B": 0.78,
+        "tie": 0.8,
+        "A": 0.8313253012048193
+      },
+      "confusion_actual_to_predicted": {
+        "B": {
+          "B": 39,
+          "tie": 11,
+          "A": 0
+        },
+        "tie": {
+          "B": 5,
+          "tie": 40,
+          "A": 5
+        },
+        "A": {
+          "B": 1,
+          "tie": 13,
+          "A": 69
+        }
+      },
+      "opposite_winner_errors": 1,
+      "predicted_ties": 64
+    },
+    "constraint_audit": {
+      "strict_rank_sign_violations": 11,
+      "ties_not_exactly_equal": 50
+    },
+    "target_predictions": [
+      {
+        "id": "round13-6",
+        "answer": "B",
+        "answer_source": "round14-3",
+        "prediction": "B",
+        "margin": -0.5537603415592888
+      },
+      {
+        "id": "round13-9",
+        "answer": "tie",
+        "answer_source": "round13-9",
+        "prediction": "A",
+        "margin": 0.48589019950100576
+      },
+      {
+        "id": "round13-20",
+        "answer": "A",
+        "answer_source": "round13-20",
+        "prediction": "A",
+        "margin": 0.4780846071066155
+      }
+    ]
+  },
+  "hard_feasibility": {
+    "feasible": false,
+    "solver_status": 2,
+    "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "constraint_scope": "All observed strict directions with margin >=1, exact equality for ties, nonnegative age/shade/tare increments. Homogeneous scaling makes margin 1 equivalent to existence of strict positive margins."
+  },
+  "identical_feature_conflicts": [
+    [
+      {
+        "id": "r2-2",
+        "observed": "B",
+        "a": [
+          "northwest",
+          "amber",
+          30,
+          130
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          30,
+          130
+        ],
+        "canonical_label": 1
+      },
+      {
+        "id": "r3-2",
+        "observed": "A",
+        "a": [
+          "northwest",
+          "pale/straw",
+          30,
+          130
+        ],
+        "b": [
+          "Western Europe",
+          "pale/straw",
+          30,
+          130
+        ],
+        "canonical_label": -1
+      },
+      {
+        "id": "r4-7",
+        "observed": "A",
+        "a": [
+          "northwest",
+          "golden",
+          30,
+          130
+        ],
+        "b": [
+          "Western Europe",
+          "golden",
+          30,
+          130
+        ],
+        "canonical_label": -1
+      },
+      {
+        "id": "r4-8",
+        "observed": "A",
+        "a": [
+          "northwest",
+          "copper",
+          30,
+          130
+        ],
+        "b": [
+          "Western Europe",
+          "copper",
+          30,
+          130
+        ],
+        "canonical_label": -1
+      },
+      {
+        "id": "r5-5",
+        "observed": "A",
+        "a": [
+          "northwest",
+          "amber",
+          25,
+          130
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          25,
+          130
+        ],
+        "canonical_label": -1
+      },
+      {
+        "id": "r5-6",
+        "observed": "B",
+        "a": [
+          "northwest",
+          "amber",
+          35,
+          130
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          35,
+          130
+        ],
+        "canonical_label": 1
+      },
+      {
+        "id": "revision-17",
+        "observed": "tie",
+        "a": [
+          "northwest",
+          "amber",
+          20,
+          120
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          20,
+          120
+        ],
+        "canonical_label": 0
+      },
+      {
+        "id": "revision-18",
+        "observed": "B",
+        "a": [
+          "northwest",
+          "amber",
+          40,
+          120
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          40,
+          120
+        ],
+        "canonical_label": 1
+      },
+      {
+        "id": "round14-4",
+        "observed": "B",
+        "a": [
+          "northwest",
+          "amber",
+          40,
+          125
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          40,
+          125
+        ],
+        "canonical_label": 1
+      }
+    ],
+    [
+      {
+        "id": "r2-4",
+        "observed": "tie",
+        "a": [
+          "Eastern Europe",
+          "amber",
+          30,
+          110
+        ],
+        "b": [
+          "Western Europe",
+          "amber",
+          30,
+          125
+        ],
+        "canonical_label": 0
+      },
+      {
+        "id": "round9-4",
+        "observed": "B",
+        "a": [
+          "Western Europe",
+          "brown",
+          25,
+          130
+        ],
+        "b": [
+          "Eastern Europe",
+          "brown",
+          25,
+          115
+        ],
+        "canonical_label": -1
+      }
+    ],
+    [
+      {
+        "id": "r2-5",
+        "observed": "A",
+        "a": [
+          "southeast",
+          "amber",
+          30,
+          115
+        ],
+        "b": [
+          "northwest",
+          "amber",
+          30,
+          115
+        ],
+        "canonical_label": -1
+      },
+      {
+        "id": "r4-6",
+        "observed": "A",
+        "a": [
+          "southeast",
+          "pale/straw",
+          30,
+          120
+        ],
+        "b": [
+          "northwest",
+          "pale/straw",
+          30,
+          120
+        ],
+        "canonical_label": -1
+      },
+      {
+        "id": "r5-3",
+        "observed": "tie",
+        "a": [
+          "southeast",
+          "brown",
+          30,
+          120
+        ],
+        "b": [
+          "northwest",
+          "brown",
+          30,
+          120
+        ],
+        "canonical_label": 0
+      },
+      {
+        "id": "round7-5",
+        "observed": "A",
+        "a": [
+          "southeast",
+          "pale/straw",
+          40,
+          120
+        ],
+        "b": [
+          "northwest",
+          "pale/straw",
+          40,
+          120
+        ],
+        "canonical_label": -1
+      }
+    ],
+    [
+      {
+        "id": "r4-9",
+        "observed": "A",
+        "a": [
+          "southeast",
+          "amber",
+          30,
+          120
+        ],
+        "b": [
+          "northwest",
+          "amber",
+          30,
+          115
+        ],
+        "canonical_label": -1
+      },
+      {
+        "id": "r5-9",
+        "observed": "B",
+        "a": [
+          "southeast",
+          "pale/straw",
+          30,
+          120
+        ],
+        "b": [
+          "northwest",
+          "pale/straw",
+          30,
+          115
+        ],
+        "canonical_label": 1
+      }
+    ],
+    [
+      {
+        "id": "r5-4",
+        "observed": "B",
+        "a": [
+          "West Central Asia",
+          "amber",
+          30,
+          120
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "amber",
+          30,
+          120
+        ],
+        "canonical_label": -1
+      },
+      {
+        "id": "round8-1",
+        "observed": "A",
+        "a": [
+          "West Central Asia",
+          "copper",
+          30,
+          120
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "copper",
+          30,
+          120
+        ],
+        "canonical_label": 1
+      },
+      {
+        "id": "round8-2",
+        "observed": "A",
+        "a": [
+          "West Central Asia",
+          "golden",
+          30,
+          120
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "golden",
+          30,
+          120
+        ],
+        "canonical_label": 1
+      },
+      {
+        "id": "round8-3",
+        "observed": "tie",
+        "a": [
+          "West Central Asia",
+          "brown",
+          30,
+          120
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "brown",
+          30,
+          120
+        ],
+        "canonical_label": 0
+      },
+      {
+        "id": "round9-5",
+        "observed": "tie",
+        "a": [
+          "West Central Asia",
+          "copper",
+          35,
+          120
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "copper",
+          35,
+          120
+        ],
+        "canonical_label": 0
+      },
+      {
+        "id": "round9-16",
+        "observed": "tie",
+        "a": [
+          "West Central Asia",
+          "brown",
+          35,
+          120
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "brown",
+          35,
+          120
+        ],
+        "canonical_label": 0
+      },
+      {
+        "id": "round10-3",
+        "observed": "tie",
+        "a": [
+          "West Central Asia",
+          "golden",
+          40,
+          120
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "golden",
+          40,
+          120
+        ],
+        "canonical_label": 0
+      },
+      {
+        "id": "round13-8",
+        "observed": "tie",
+        "a": [
+          "West Central Asia",
+          "pale/straw",
+          25,
+          120
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "pale/straw",
+          25,
+          120
+        ],
+        "canonical_label": 0
+      }
+    ],
+    [
+      {
+        "id": "revision-7",
+        "observed": "tie",
+        "a": [
+          "Eastern Europe",
+          "amber",
+          40,
+          115
+        ],
+        "b": [
+          "Eastern Europe",
+          "amber",
+          35,
+          120
+        ],
+        "canonical_label": 0
+      },
+      {
+        "id": "round6-17",
+        "observed": "B",
+        "a": [
+          "southeast",
+          "pale/straw",
+          40,
+          115
+        ],
+        "b": [
+          "southeast",
+          "pale/straw",
+          35,
+          120
+        ],
+        "canonical_label": 1
+      },
+      {
+        "id": "round6-18",
+        "observed": "B",
+        "a": [
+          "southeast",
+          "brown",
+          40,
+          115
+        ],
+        "b": [
+          "southeast",
+          "brown",
+          35,
+          120
+        ],
+        "canonical_label": 1
+      },
+      {
+        "id": "round6-19",
+        "observed": "B",
+        "a": [
+          "southeast",
+          "amber",
+          40,
+          115
+        ],
+        "b": [
+          "southeast",
+          "amber",
+          35,
+          120
+        ],
+        "canonical_label": 1
+      },
+      {
+        "id": "round6-20",
+        "observed": "B",
+        "a": [
+          "southwest",
+          "amber",
+          40,
+          115
+        ],
+        "b": [
+          "southwest",
+          "amber",
+          35,
+          120
+        ],
+        "canonical_label": 1
+      },
+      {
+        "id": "round8-18",
+        "observed": "B",
+        "a": [
+          "West Central Asia",
+          "copper",
+          40,
+          115
+        ],
+        "b": [
+          "West Central Asia",
+          "copper",
+          35,
+          120
+        ],
+        "canonical_label": 1
+      },
+      {
+        "id": "round8-19",
+        "observed": "B",
+        "a": [
+          "South/Eastern Asia",
+          "copper",
+          40,
+          115
+        ],
+        "b": [
+          "South/Eastern Asia",
+          "copper",
+          35,
+          120
+        ],
+        "canonical_label": 1
+      }
+    ],
+    [
+      {
+        "id": "revision-14",
+        "observed": "tie",
+        "a": [
+          "Eastern Europe",
+          "pale/straw",
+          30,
+          125
+        ],
+        "b": [
+          "Eastern Europe",
+          "golden",
+          30,
+          115
+        ],
+        "canonical_label": 0
+      },
+      {
+        "id": "round9-6",
+        "observed": "A",
+        "a": [
+          "northwest",
+          "golden",
+          40,
+          115
+        ],
+        "b": [
+          "northwest",
+          "pale/straw",
+          40,
+          125
+        ],
+        "canonical_label": -1
+      },
+      {
+        "id": "round9-18",
+        "observed": "tie",
+        "a": [
+          "southeast",
+          "pale/straw",
+          25,
+          130
+        ],
+        "b": [
+          "southeast",
+          "golden",
+          25,
+          120
+        ],
+        "canonical_label": 0
+      }
+    ],
+    [
+      {
+        "id": "round6-2",
+        "observed": "A",
+        "a": [
+          "southeast",
+          "pale/straw",
+          20,
+          110
+        ],
+        "b": [
+          "northeast",
+          "pale/straw",
+          20,
+          110
+        ],
+        "canonical_label": -1
+      },
+      {
+        "id": "round7-4",
+        "observed": "tie",
+        "a": [
+          "southeast",
+          "pale/straw",
+          40,
+          120
+        ],
+        "b": [
+          "northeast",
+          "pale/straw",
+          40,
+          120
+        ],
+        "canonical_label": 0
+      },
+      {
+        "id": "round7-7",
+        "observed": "tie",
+        "a": [
+          "southeast",
+          "pale/straw",
+          20,
+          130
+        ],
+        "b": [
+          "northeast",
+          "pale/straw",
+          20,
+          130
+        ],
+        "canonical_label": 0
+      },
+      {
+        "id": "round7-8",
+        "observed": "tie",
+        "a": [
+          "southeast",
+          "pale/straw",
+          20,
+          120
+        ],
+        "b": [
+          "northeast",
+          "pale/straw",
+          20,
+          120
+        ],
+        "canonical_label": 0
+      },
+      {
+        "id": "round7-9",
+        "observed": "tie",
+        "a": [
+          "southeast",
+          "pale/straw",
+          20,
+          115
+        ],
+        "b": [
+          "northeast",
+          "pale/straw",
+          20,
+          115
+        ],
+        "canonical_label": 0
+      },
+      {
+        "id": "round7-10",
+        "observed": "tie",
+        "a": [
+          "southeast",
+          "pale/straw",
+          20,
+          125
+        ],
+        "b": [
+          "northeast",
+          "pale/straw",
+          20,
+          125
+        ],
+        "canonical_label": 0
+      },
+      {
+        "id": "round7-13",
+        "observed": "tie",
+        "a": [
+          "southeast",
+          "golden",
+          20,
+          120
+        ],
+        "b": [
+          "northeast",
+          "golden",
+          20,
+          120
+        ],
+        "canonical_label": 0
+      },
+      {
+        "id": "round9-3",
+        "observed": "tie",
+        "a": [
+          "northeast",
+          "pale/straw",
+          35,
+          125
+        ],
+        "b": [
+          "southeast",
+          "pale/straw",
+          35,
+          125
+        ],
+        "canonical_label": 0
+      },
+      {
+        "id": "round13-13",
+        "observed": "tie",
+        "a": [
+          "southeast",
+          "pale/straw",
+          40,
+          130
+        ],
+        "b": [
+          "northeast",
+          "pale/straw",
+          40,
+          130
+        ],
+        "canonical_label": 0
+      }
+    ],
+    [
+      {
+        "id": "round7-20",
+        "observed": "tie",
+        "a": [
+          "Western Europe",
+          "golden",
+          20,
+          125
+        ],
+        "b": [
+          "Eastern Europe",
+          "golden",
+          20,
+          120
+        ],
+        "canonical_label": 0
+      },
+      {
+        "id": "round10-13",
+        "observed": "A",
+        "a": [
+          "Western Europe",
+          "golden",
+          35,
+          125
+        ],
+        "b": [
+          "Eastern Europe",
+          "golden",
+          35,
+          120
+        ],
+        "canonical_label": 1
+      },
+      {
+        "id": "round13-3",
+        "observed": "tie",
+        "a": [
+          "Western Europe",
+          "copper",
+          40,
+          125
+        ],
+        "b": [
+          "Eastern Europe",
+          "copper",
+          40,
+          120
+        ],
+        "canonical_label": 0
+      }
+    ]
+  ],
+  "unchanged_baseline_rescoring": {
+    "frozen_v2_additive": {
+      "round13_corrected_labels": {
+        "n": 19,
+        "matched": 17,
+        "accuracy": 0.8947368421052632,
+        "balanced_accuracy": 0.9107142857142857,
+        "recall": {
+          "B": 1.0,
+          "tie": 0.8571428571428571,
+          "A": 0.875
+        },
+        "confusion_actual_to_predicted": {
+          "B": {
+            "B": 4,
+            "tie": 0,
+            "A": 0
+          },
+          "tie": {
+            "B": 0,
+            "tie": 6,
+            "A": 1
+          },
+          "A": {
+            "B": 0,
+            "tie": 1,
+            "A": 7
+          }
+        },
+        "opposite_winner_errors": 0,
+        "predicted_ties": 7
+      },
+      "six_isolation_components": {
+        "n": 6,
+        "matched": 5,
+        "accuracy": 0.8333333333333334,
+        "balanced_accuracy": 0.8888888888888888,
+        "recall": {
+          "B": 0.6666666666666666,
+          "tie": 1.0,
+          "A": 1.0
+        },
+        "confusion_actual_to_predicted": {
+          "B": {
+            "B": 2,
+            "tie": 1,
+            "A": 0
+          },
+          "tie": {
+            "B": 0,
+            "tie": 1,
+            "A": 0
+          },
+          "A": {
+            "B": 0,
+            "tie": 0,
+            "A": 2
+          }
+        },
+        "opposite_winner_errors": 0,
+        "predicted_ties": 2
+      },
+      "scope": "Descriptive rescoring, not new prospective accuracy; original frozen Round13 score remains unchanged."
+    },
+    "revision_e": {
+      "round13_corrected_labels": {
+        "n": 19,
+        "matched": 12,
+        "accuracy": 0.631578947368421,
+        "balanced_accuracy": 0.6369047619047619,
+        "recall": {
+          "B": 0.75,
+          "tie": 0.2857142857142857,
+          "A": 0.875
+        },
+        "confusion_actual_to_predicted": {
+          "B": {
+            "B": 3,
+            "tie": 0,
+            "A": 1
+          },
+          "tie": {
+            "B": 2,
+            "tie": 2,
+            "A": 3
+          },
+          "A": {
+            "B": 1,
+            "tie": 0,
+            "A": 7
+          }
+        },
+        "opposite_winner_errors": 2,
+        "predicted_ties": 2
+      },
+      "six_isolation_components": {
+        "n": 6,
+        "matched": 6,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "recall": {
+          "B": 1.0,
+          "tie": 1.0,
+          "A": 1.0
+        },
+        "confusion_actual_to_predicted": {
+          "B": {
+            "B": 3,
+            "tie": 0,
+            "A": 0
+          },
+          "tie": {
+            "B": 0,
+            "tie": 1,
+            "A": 0
+          },
+          "A": {
+            "B": 0,
+            "tie": 0,
+            "A": 2
+          }
+        },
+        "opposite_winner_errors": 0,
+        "predicted_ties": 1
+      },
+      "scope": "Descriptive rescoring, not new prospective accuracy; original frozen Round13 score remains unchanged."
+    }
+  }
+}

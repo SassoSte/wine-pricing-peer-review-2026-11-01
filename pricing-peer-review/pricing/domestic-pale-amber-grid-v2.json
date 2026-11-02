@@ -1,0 +1,454 @@
+{
+  "scope": "64combinations,canonicalpricingv2,wholefilledcaskUSD,comparable seat-origin status/samevolume/mint/initialrelease distributor terms;fees taxesdeliveryexcluded. No modelchange.",
+  "config_sha256": "5a12e1614975de7b0d390b42b8a00db0b4eed5658ae8322f0486902ffd968fb1",
+  "rows": [
+    {
+      "region": "northeast",
+      "shade": "pale/straw",
+      "vintage_years": 20,
+      "tare_lb": 110,
+      "price_usd": 1100.0
+    },
+    {
+      "region": "northeast",
+      "shade": "pale/straw",
+      "vintage_years": 20,
+      "tare_lb": 115,
+      "price_usd": 1026.49
+    },
+    {
+      "region": "northeast",
+      "shade": "pale/straw",
+      "vintage_years": 20,
+      "tare_lb": 120,
+      "price_usd": 952.19
+    },
+    {
+      "region": "northeast",
+      "shade": "pale/straw",
+      "vintage_years": 20,
+      "tare_lb": 125,
+      "price_usd": 831.61
+    },
+    {
+      "region": "northeast",
+      "shade": "pale/straw",
+      "vintage_years": 25,
+      "tare_lb": 110,
+      "price_usd": 931.97
+    },
+    {
+      "region": "northeast",
+      "shade": "pale/straw",
+      "vintage_years": 25,
+      "tare_lb": 115,
+      "price_usd": 794.57
+    },
+    {
+      "region": "northeast",
+      "shade": "pale/straw",
+      "vintage_years": 25,
+      "tare_lb": 120,
+      "price_usd": 717.05
+    },
+    {
+      "region": "northeast",
+      "shade": "pale/straw",
+      "vintage_years": 25,
+      "tare_lb": 125,
+      "price_usd": 653.25
+    },
+    {
+      "region": "northeast",
+      "shade": "amber",
+      "vintage_years": 20,
+      "tare_lb": 110,
+      "price_usd": 1089.5
+    },
+    {
+      "region": "northeast",
+      "shade": "amber",
+      "vintage_years": 20,
+      "tare_lb": 115,
+      "price_usd": 1015.54
+    },
+    {
+      "region": "northeast",
+      "shade": "amber",
+      "vintage_years": 20,
+      "tare_lb": 120,
+      "price_usd": 942.02
+    },
+    {
+      "region": "northeast",
+      "shade": "amber",
+      "vintage_years": 20,
+      "tare_lb": 125,
+      "price_usd": 812.88
+    },
+    {
+      "region": "northeast",
+      "shade": "amber",
+      "vintage_years": 25,
+      "tare_lb": 110,
+      "price_usd": 910.98
+    },
+    {
+      "region": "northeast",
+      "shade": "amber",
+      "vintage_years": 25,
+      "tare_lb": 115,
+      "price_usd": 776.67
+    },
+    {
+      "region": "northeast",
+      "shade": "amber",
+      "vintage_years": 25,
+      "tare_lb": 120,
+      "price_usd": 707.57
+    },
+    {
+      "region": "northeast",
+      "shade": "amber",
+      "vintage_years": 25,
+      "tare_lb": 125,
+      "price_usd": 644.62
+    },
+    {
+      "region": "southeast",
+      "shade": "pale/straw",
+      "vintage_years": 20,
+      "tare_lb": 110,
+      "price_usd": 1075.0
+    },
+    {
+      "region": "southeast",
+      "shade": "pale/straw",
+      "vintage_years": 20,
+      "tare_lb": 115,
+      "price_usd": 1003.16
+    },
+    {
+      "region": "southeast",
+      "shade": "pale/straw",
+      "vintage_years": 20,
+      "tare_lb": 120,
+      "price_usd": 930.55
+    },
+    {
+      "region": "southeast",
+      "shade": "pale/straw",
+      "vintage_years": 20,
+      "tare_lb": 125,
+      "price_usd": 812.71
+    },
+    {
+      "region": "southeast",
+      "shade": "pale/straw",
+      "vintage_years": 25,
+      "tare_lb": 110,
+      "price_usd": 910.78
+    },
+    {
+      "region": "southeast",
+      "shade": "pale/straw",
+      "vintage_years": 25,
+      "tare_lb": 115,
+      "price_usd": 776.51
+    },
+    {
+      "region": "southeast",
+      "shade": "pale/straw",
+      "vintage_years": 25,
+      "tare_lb": 120,
+      "price_usd": 700.75
+    },
+    {
+      "region": "southeast",
+      "shade": "pale/straw",
+      "vintage_years": 25,
+      "tare_lb": 125,
+      "price_usd": 638.4
+    },
+    {
+      "region": "southeast",
+      "shade": "amber",
+      "vintage_years": 20,
+      "tare_lb": 110,
+      "price_usd": 1064.74
+    },
+    {
+      "region": "southeast",
+      "shade": "amber",
+      "vintage_years": 20,
+      "tare_lb": 115,
+      "price_usd": 992.46
+    },
+    {
+      "region": "southeast",
+      "shade": "amber",
+      "vintage_years": 20,
+      "tare_lb": 120,
+      "price_usd": 920.62
+    },
+    {
+      "region": "southeast",
+      "shade": "amber",
+      "vintage_years": 20,
+      "tare_lb": 125,
+      "price_usd": 794.41
+    },
+    {
+      "region": "southeast",
+      "shade": "amber",
+      "vintage_years": 25,
+      "tare_lb": 110,
+      "price_usd": 890.27
+    },
+    {
+      "region": "southeast",
+      "shade": "amber",
+      "vintage_years": 25,
+      "tare_lb": 115,
+      "price_usd": 759.02
+    },
+    {
+      "region": "southeast",
+      "shade": "amber",
+      "vintage_years": 25,
+      "tare_lb": 120,
+      "price_usd": 691.49
+    },
+    {
+      "region": "southeast",
+      "shade": "amber",
+      "vintage_years": 25,
+      "tare_lb": 125,
+      "price_usd": 629.96
+    },
+    {
+      "region": "central",
+      "shade": "pale/straw",
+      "vintage_years": 20,
+      "tare_lb": 110,
+      "price_usd": 1050.0
+    },
+    {
+      "region": "central",
+      "shade": "pale/straw",
+      "vintage_years": 20,
+      "tare_lb": 115,
+      "price_usd": 979.84
+    },
+    {
+      "region": "central",
+      "shade": "pale/straw",
+      "vintage_years": 20,
+      "tare_lb": 120,
+      "price_usd": 908.91
+    },
+    {
+      "region": "central",
+      "shade": "pale/straw",
+      "vintage_years": 20,
+      "tare_lb": 125,
+      "price_usd": 793.81
+    },
+    {
+      "region": "central",
+      "shade": "pale/straw",
+      "vintage_years": 25,
+      "tare_lb": 110,
+      "price_usd": 889.6
+    },
+    {
+      "region": "central",
+      "shade": "pale/straw",
+      "vintage_years": 25,
+      "tare_lb": 115,
+      "price_usd": 758.45
+    },
+    {
+      "region": "central",
+      "shade": "pale/straw",
+      "vintage_years": 25,
+      "tare_lb": 120,
+      "price_usd": 684.46
+    },
+    {
+      "region": "central",
+      "shade": "pale/straw",
+      "vintage_years": 25,
+      "tare_lb": 125,
+      "price_usd": 623.56
+    },
+    {
+      "region": "central",
+      "shade": "amber",
+      "vintage_years": 20,
+      "tare_lb": 110,
+      "price_usd": 1039.98
+    },
+    {
+      "region": "central",
+      "shade": "amber",
+      "vintage_years": 20,
+      "tare_lb": 115,
+      "price_usd": 969.38
+    },
+    {
+      "region": "central",
+      "shade": "amber",
+      "vintage_years": 20,
+      "tare_lb": 120,
+      "price_usd": 899.21
+    },
+    {
+      "region": "central",
+      "shade": "amber",
+      "vintage_years": 20,
+      "tare_lb": 125,
+      "price_usd": 775.93
+    },
+    {
+      "region": "central",
+      "shade": "amber",
+      "vintage_years": 25,
+      "tare_lb": 110,
+      "price_usd": 869.57
+    },
+    {
+      "region": "central",
+      "shade": "amber",
+      "vintage_years": 25,
+      "tare_lb": 115,
+      "price_usd": 741.37
+    },
+    {
+      "region": "central",
+      "shade": "amber",
+      "vintage_years": 25,
+      "tare_lb": 120,
+      "price_usd": 675.41
+    },
+    {
+      "region": "central",
+      "shade": "amber",
+      "vintage_years": 25,
+      "tare_lb": 125,
+      "price_usd": 615.31
+    },
+    {
+      "region": "northwest",
+      "shade": "pale/straw",
+      "vintage_years": 20,
+      "tare_lb": 110,
+      "price_usd": 1000.0
+    },
+    {
+      "region": "northwest",
+      "shade": "pale/straw",
+      "vintage_years": 20,
+      "tare_lb": 115,
+      "price_usd": 933.18
+    },
+    {
+      "region": "northwest",
+      "shade": "pale/straw",
+      "vintage_years": 20,
+      "tare_lb": 120,
+      "price_usd": 865.63
+    },
+    {
+      "region": "northwest",
+      "shade": "pale/straw",
+      "vintage_years": 20,
+      "tare_lb": 125,
+      "price_usd": 756.01
+    },
+    {
+      "region": "northwest",
+      "shade": "pale/straw",
+      "vintage_years": 25,
+      "tare_lb": 110,
+      "price_usd": 847.24
+    },
+    {
+      "region": "northwest",
+      "shade": "pale/straw",
+      "vintage_years": 25,
+      "tare_lb": 115,
+      "price_usd": 722.33
+    },
+    {
+      "region": "northwest",
+      "shade": "pale/straw",
+      "vintage_years": 25,
+      "tare_lb": 120,
+      "price_usd": 651.86
+    },
+    {
+      "region": "northwest",
+      "shade": "pale/straw",
+      "vintage_years": 25,
+      "tare_lb": 125,
+      "price_usd": 593.86
+    },
+    {
+      "region": "northwest",
+      "shade": "amber",
+      "vintage_years": 20,
+      "tare_lb": 110,
+      "price_usd": 990.45
+    },
+    {
+      "region": "northwest",
+      "shade": "amber",
+      "vintage_years": 20,
+      "tare_lb": 115,
+      "price_usd": 923.22
+    },
+    {
+      "region": "northwest",
+      "shade": "amber",
+      "vintage_years": 20,
+      "tare_lb": 120,
+      "price_usd": 856.39
+    },
+    {
+      "region": "northwest",
+      "shade": "amber",
+      "vintage_years": 20,
+      "tare_lb": 125,
+      "price_usd": 738.98
+    },
+    {
+      "region": "northwest",
+      "shade": "amber",
+      "vintage_years": 25,
+      "tare_lb": 110,
+      "price_usd": 828.16
+    },
+    {
+      "region": "northwest",
+      "shade": "amber",
+      "vintage_years": 25,
+      "tare_lb": 115,
+      "price_usd": 706.07
+    },
+    {
+      "region": "northwest",
+      "shade": "amber",
+      "vintage_years": 25,
+      "tare_lb": 120,
+      "price_usd": 643.24
+    },
+    {
+      "region": "northwest",
+      "shade": "amber",
+      "vintage_years": 25,
+      "tare_lb": 125,
+      "price_usd": 586.01
+    }
+  ]
+}

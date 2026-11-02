@@ -1,0 +1,142 @@
+{
+  "model_id": "v35_winning_tare_premium_candidate",
+  "status": "experimental_not_default",
+  "baseline": {
+    "schema_version": 1,
+    "model_id": "v28_tare_compensation",
+    "selection_status": "selected",
+    "domain": {
+      "provenances": [
+        "Eastern Europe",
+        "Western Europe",
+        "West Central Asia",
+        "South/Eastern Asia",
+        "West Asia / Middle East",
+        "central",
+        "northeast",
+        "northwest",
+        "southwest",
+        "southeast"
+      ],
+      "shades": [
+        "brown",
+        "copper",
+        "amber",
+        "golden",
+        "pale/straw"
+      ],
+      "vintage_years": [
+        40,
+        35,
+        30,
+        25,
+        20
+      ],
+      "tare_lb": [
+        110,
+        115,
+        120,
+        125,
+        130
+      ],
+      "domestic": [
+        "central",
+        "northwest",
+        "northeast",
+        "southwest",
+        "southeast"
+      ]
+    },
+    "feature_names": [
+      "provenance:Western Europe",
+      "provenance:West Central Asia",
+      "provenance:South/Eastern Asia",
+      "provenance:West Asia / Middle East",
+      "provenance:central",
+      "provenance:northeast",
+      "provenance:northwest",
+      "provenance:southwest",
+      "provenance:southeast",
+      "shade_increment:copper",
+      "shade_increment:amber",
+      "shade_increment:golden",
+      "shade_increment:pale/straw",
+      "vintage_increment:35",
+      "vintage_increment:30",
+      "vintage_increment:25",
+      "vintage_increment:20",
+      "lower_tare_per5lb",
+      "matched_provenance_five_year_golden_pale",
+      "younger_five_lb_heavier_compensation"
+    ],
+    "coefficients": [
+      0.3078046153853131,
+      -0.6921753846154004,
+      -0.6921853846146869,
+      -0.99999,
+      0.07700615384694243,
+      0.5385530769235776,
+      -0.23067846153815819,
+      0.1539523076927236,
+      0.07705615384704778,
+      1.3077246153852071,
+      0.23073846153826455,
+      0.0,
+      0.07690615384578114,
+      0.5385030769234712,
+      1.3077646115898918,
+      1.307714615385207,
+      1.2308284615394256,
+      0.5384930769234713,
+      0.53841307692231,
+      0.5384930769234713
+    ],
+    "offering_rules": {
+      "zero_golden_pale_tare": 130,
+      "tare_reference": 130,
+      "tare_step": 5
+    },
+    "matched_vintage": {
+      "age_gap": 5,
+      "shade_pair": [
+        "golden",
+        "pale/straw"
+      ],
+      "matching_provenance": true
+    },
+    "tare_compensation": {
+      "age_gap": 5,
+      "maximum_younger_age": 30,
+      "heavier_by_lb": 5,
+      "matching_provenance": true
+    },
+    "classification": {
+      "decision_radius": 1.0,
+      "direction_epsilon": 1e-07,
+      "meaningfulness_epsilon": 1e-08,
+      "exact_price_equality": null,
+      "units": "pair-comparison score, not a standalone price"
+    },
+    "qualification": "Two comparison-context coefficients over18 additive terms. Not a transitive standalone monetary price model. Uncertainty behaviour unchanged; no learned confidence claim.",
+    "source_hashes": {
+      "tare-refit-validation-v28.json": "570fa9ad6d6e0761e8099ec3d34f9c1dcc608169b3632cf5dd6a7180ff2b5e9b",
+      "tare-refit-candidate-v28.json": "411c6240bebc3c8d8d1c95c2089a4f8bf06b49373bc6561b70ed219afd96cd9d",
+      "evidence-v28.json": "13e64778ffe7458215211c666ffd3a48bbb10f37f8b6b51407f9e5e9850083f1",
+      "benchmark-targets-v28.json": "41a6558c7360c2827919b87ad60e2144945f14f11021f8c9cc53c31cadf00efd",
+      "model-config-v27.json": "38acf873fe5c333b8364cb677b438067b1a8f1cece7883ea39bb2008625d6ee6",
+      "predictor_v27.py": "293307f98d4c2434bfbbea8a73341a3522601604535647f3a7a6b0103b23f2ed",
+      "tare_compensation_v27.py": "321a974c6c96a81c9068e42f062a186ff2303bc901caac8f98ef3174a3c01aad"
+    },
+    "training_evidence": "evidence-v28.json",
+    "selection_audit": "model-selection-v28.json",
+    "validation_file": "tare-refit-validation-v28.json"
+  },
+  "baseline_sha256": "a9fed8e86977526c16e74ccdb0a6a75d919b3041bd602e5592d64e3086414dcf",
+  "premium_correction": {
+    "coefficient": 0.7,
+    "scope": "Five-year opposing vintage/tare tradeoff, tare gap greater than10lb, frozenv28rank favors lighter offering. Correction scales excess gap in5lb steps.",
+    "units": "preference score adjustment, not money"
+  },
+  "validation": "premium-winning-gap-validation-v35.json",
+  "qualification": "Ranks frozen. Calibrator family-heldout, baseline previously trained on historical evidence. Newpilot used for hypothesis design; posthoc improvements are not fresh validation."
+}
