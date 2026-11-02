@@ -6,28 +6,41 @@ input, lock, model, workbook, or ZIP. This memo records an elicitation conducted
 in chat after the peer review closed, and its analysis. It is not part of the
 accepted review verdict and changes no finding in `reviews/2026-11-01-kimi.md`.
 
+**Revision 2** (same commit date): the preregistered confirmation set in §5 has
+been executed. Pin 2 is discarded per the frozen rule and replaced; findings and
+the grid are updated. Revision 1 remains in git history.
+
 ## 1. Protocol
 
 Two-pin elicitation preregistered in chat before answers were given; protocol
 SHA-256 `a4caac25064138dacb8c6a5318df8b146318d4a4195921bdd0d5a80ac69bcc70`.
 Frozen decision rule for shape transfer: SW amber 30/115 answer compared to
 pin 1 × 0.563077 (the locked factor); deviation ≤10% supports transfer, >20%
-questions it, between is inconclusive. Two further tail pins were then requested
-and given. Basis word ("established offering" vs "rough sense") was requested
-for every pin.
+questions it, between is inconclusive. A forced-choice refraction ladder
+(eye-doctor style, ratio-first, no informant-named numbers) was preregistered
+for re-eliciting pin 2 out of sequence, with a frozen scoring rule:
+
+- Lens A (≥90%) or B (~70%) → pin 2 confirmed genuine flat mid-range.
+- Lens C (~55%, the locked factor) → pin 2 discarded as sequence-anchored;
+  locked transfer supported at this knot.
+- Lens D (≤ ~35%) → cliff starts before 30 years.
+- One bisection inside the chosen band; the chosen band replaces pin 2.
 
 Single informant (the packet author). All answers: **"rough sense"** — the
-lowest evidential tier. Two answers were given as ceilings and are recorded as
-bounds, not points. One independent unit of observation throughout.
+lowest evidential tier. Ceilings recorded as bounds, not points. One
+independent unit of observation throughout.
 
 ## 2. Pins (verbatim)
 
-| # | Profile | Answer (verbatim) | Form | Basis |
+| # | Profile | Answer (verbatim) | Form | Status |
 |---|---|---|---|---|
-| 1 | SW pale/straw 20 yr 110 lb | "1100-1200" | range | rough sense |
-| 2 | SW amber 30 yr 115 lb | "950-1050" | range | rough sense |
-| 3 | SW amber 35 yr 120 lb | "320 max" | ceiling (bound) | rough sense |
-| 4 | SW brown 40 yr 130 lb | "no more than 300" | ceiling (bound) | rough sense |
+| 1 | SW pale/straw 20 yr 110 lb | "1100-1200" | range | active |
+| 2 | SW amber 30 yr 115 lb | "950-1050" | range | **DISCARDED** — sequence-anchored; superseded by pin 5 per frozen rule |
+| 3 | SW amber 35 yr 120 lb | "320 max" | ceiling (bound) | active |
+| 4 | SW brown 40 yr 130 lb | "no more than 300" | ceiling (bound) | active |
+| 5 | SW amber 30 yr 115 lb (fresh, out of sequence) | Lens "C", bisection "slightly above" | 55–60% of anchor → $605–$660 | active (replaces pin 2) |
+| 6 | SW golden 30 yr 115 lb | "Same as amber, slightly above" | 55–60% of anchor → $605–$660 | active |
+| 7 | SW copper 35 yr 120 lb | "Shade blind at 35/120" | ≤ $320 (same zone as pin 3) | active |
 
 Informant's stated rationale (verbatim): "Southwest, because it consists of the
 beach cities, commands a high premium, and the 20/110 harvest are among the most
@@ -44,59 +57,61 @@ A ∈ [1100, 1200]: $300.00–$327.27). Intersection pins the anchor at exactly
 This replaces (as a proposal) the retired v1 `model_inferred` value 1050.002,
 which the review already bars from use.
 
-### 3.2 Shape — locked transfer falsified twice, in opposite directions
+### 3.2 Shape — locked transfer SUPPORTED through 30 years; a single cliff is the only departure
 
-| Stretch | Informant-implied ratio | Locked ratio | Verdict |
+| Stretch | Informant evidence | Locked | Verdict |
 |---|---|---|---|
-| 20/110 → amber 30/115 | 0.79–0.95 | 0.5631 | much flatter |
-| amber 30/115 → amber 35/120 | ≤ 0.30–0.34 | 0.7265 | much steeper |
-| → brown 40/130 (cumulative) | ≤ 0.273 | 0.2727 | on the curve |
+| pale/straw 20/110 (L=0) | $1,100 | $1,100 | anchor, pinned |
+| amber 30/115 (L=3.154) | $605–$660 (pin 5) | $619 | **on the curve** — transfer supported |
+| golden 30/115 (L=3.154) | $605–$660 (pin 6) | $619 | **on the curve**; shade-blind at fixed loss |
+| amber 35/120 (L=5.000) | ≤ $320 (pin 3) | $450 | **cliff** — 29% below curve |
+| copper 35/120 (L=5.231) | ≤ $320 (pin 7) | $437 | **cliff is shade-blind** at 35/120 |
+| brown 40/130 (L=8.154) | ≤ $300 (pin 4) | $300 | rejoins the curve at the corner |
 
-Per the frozen rule, pin 2 alone questioned transfer (+41% to +70% deviation,
->20% threshold). Pin 3 falsifies it again the other way: locked prediction
-$450–$491 vs bound ≤$320 (29–35% below); under locked shape it would force
-A_SW ≤ $782, contradicting pin 1. The implied SW curve is **flat, then a cliff
-between 30 and 35 years, then rejoining the locked tail**.
+The revision-1 "flat mid-range" finding is reversed: it was a sequence-anchoring
+artifact (pin 2 given immediately after the top-profile figure) and is discarded
+per the frozen rule. The confirmed picture: SW rides the standard domestic curve
+from the anchor down to 30 years, falls off a **shade-blind cliff between 30 and
+35 years**, and lands back on the locked curve at the deep corner — matching the
+informant's demand-concentration rationale with no leftover anomalies.
 
-Regional specificity check: the four pre-disclosure regional judgments at
-amber 35/120 (NE 450, SE 425, Central 400, NW 400; ratios 0.38–0.41) sit
-essentially on the locked curve (0.4091). The locked shape is therefore the
-informant's *generic* domestic curve at that profile; the SW ≤320 bound is a
-genuine regional departure — SW mid-tail would be the cheapest in the domestic
-set in absolute dollars despite the joint-highest anchor, matching the stated
-demand-concentration rationale.
+Loss-axis sufficiency check (preregistered): golden and amber 30/115 sit at
+identical loss in the locked curve (L = 3.154, factor 0.563 both); the informant
+independently placed them in the same band. At 35/120 the informant again made
+the cliff shade-blind (copper joins amber ≤ $320). Two slices, both consistent
+with the loss axis transferring to SW even where discount magnitudes do not.
 
-### 3.3 Pin 2 is an outlier — flagged, not smoothed over
+Backward-interpolation sanity check: golden 25/115 falls at $775–$816 under the
+confirmed knots; locked curve says $777 — inside the band.
 
-Pins 1, 3, 4 draw a coherent flat–cliff–tail curve. Pin 2 ($950–$1,050 for
-amber 30/115) contradicts both the locked curve and that pattern (≈5–21% decay
-over 10 years followed by ≈70% over the next 5 is not a smooth schedule). Most
-plausible cause: anchoring on the top-profile figure quoted moments earlier in
-sequence. It is retained in the grid as given and flagged; see §5 for the
-preregistered re-elicitation.
+Regional specificity: the four pre-disclosure regional judgments at amber 35/120
+(NE 450, SE 425, Central 400, NW 400; ratios 0.38–0.41) sit essentially on the
+locked curve (0.4091), so the cliff is SW-specific, not curve-generic. SW
+mid-tail would be the cheapest in the domestic set in absolute dollars despite
+the joint-highest anchor.
 
-## 4. Expanded SW grid (A_SW = $1,100; informant-interpolated)
+## 4. Expanded SW grid (A_SW = $1,100; confirmed knots)
 
-Interpolation is piecewise-linear in loss L between the pins: (L=0, $1,100);
-(L=3.154, $950–$1,050 band); (L=5.000, ≤$320 bound); (L=8.154, ≤$300 bound).
+Interpolation is piecewise-linear in loss L between: (L=0, $1,100);
+(L=3.154, $605–$660 band); (L=5.000, ≤$320 bound); (L=8.154, ≤$300 bound).
 Coverage of the 125-profile domain: 44 profiles two-sided (L ≤ 3.154), 44 in the
-cliff zone (semi-bounded), 37 deep-tail (ceiling-only, because pins 3–4 are
-bounds). Locked-shape prices shown for contrast as contradicted scenario S1.
+cliff zone (ceiling-only), 37 deep-tail (ceiling-only). Locked-shape prices shown
+for contrast.
 
-| Profile | Locked S1 (contradicted) | Informant band |
+| Profile | Locked | Confirmed SW band |
 |---|---|---|
 | pale/straw 20/110 | $1,100 | $1,100 (pin 1) |
-| pale/straw 20/115 | $1,026 | $1,073–$1,091 |
-| golden 20/110 | $1,089 | $1,096–$1,099 |
-| pale/straw 25/110 | $932 | $1,039–$1,080 |
-| golden 25/115 | $777 | $1,010–$1,070 |
-| golden 30/115 | $619 | ≤ $1,050 (same L as pin 2) |
-| amber 30/115 | $619 | ≤ $1,050 (pin 2, **flagged outlier**) |
-| copper 30/115 | $595 | ≤ $905 |
-| amber 30/120 | $564 | ≤ $742 |
-| amber 35/115 | $494 | ≤ $453 |
+| pale/straw 20/115 | $1,026 | $993–$1,008 |
+| golden 20/110 | $1,089 | $1,084–$1,086 |
+| pale/straw 25/110 | $932 | $871–$901 |
+| golden 25/115 | $777 | $775–$816 |
+| amber 30/115 | $619 | $605–$660 (pin 5) |
+| golden 30/115 | $619 | $605–$660 (pin 6) |
+| copper 30/115 | $595 | ≤ $603 |
+| amber 30/120 | $564 | ≤ $534 |
+| amber 35/115 | $494 | ≤ $395 |
 | amber 35/120 | $450 | ≤ $320 (pin 3) |
-| copper 35/120 | $437 | ≤ $318 |
+| copper 35/120 | $437 | ≤ $320 (pin 7) |
 | brown 35/120 | $369 | ≤ $310 |
 | brown 40/110 | $396 | ≤ $314 |
 | copper 40/130 | $355 | ≤ $308 |
@@ -106,28 +121,31 @@ bounds). Locked-shape prices shown for contrast as contradicted scenario S1.
 Representative rows shown; the full 125-profile grid can be generated from the
 pinned interpolation above if this proposal advances.
 
-## 5. Preregistered confirmation (required before any v3 lock)
+## 5. Preregistered confirmation — EXECUTED
 
-This design is a **proposal requiring preregistration** before execution:
+All four preregistered elements ran:
 
-1. **Re-elicit amber 30/115 fresh, out of sequence** (the flagged outlier).
-   Frozen rule: if the fresh answer falls below $800, pin 2 is discarded as
-   sequence-anchored; if it repeats $950+, the flat mid-range is accepted as
-   genuine and the cliff moves to the 30–35 stretch as drawn.
-2. **Elicit golden 30/115** — identical loss L = 3.154 to amber 30/115 in the
-   locked curve (factor 0.563078 both). Tests whether shade itself moves price
-   at fixed age/tare, i.e., whether the loss axis is sufficient for SW at all.
-3. **One copper pin in the cliff zone** (e.g., copper 35/120) to locate the
-   cliff's position and steepness with a second shade.
-4. Basis word required for every answer; ceilings recorded as bounds; ideally a
-   second independent informant to break the single-unit dependence.
+1. **Amber 30/115 re-elicited fresh, out of sequence** (refraction ladder):
+   Lens C, bisected slightly above → $605–$660. Per the frozen rule, pin 2 is
+   discarded as sequence-anchored and locked transfer is supported at this knot.
+2. **Golden 30/115 elicited**: same band → shade does not move SW price at
+   fixed age/tare (slice 1).
+3. **Copper 35/120 elicited** (cliff zone, second shade): "shade blind" →
+   ≤$320, joining amber (slice 2).
+4. Basis word captured for all pins ("rough sense"); ceilings recorded as
+   bounds.
+
+Remaining before any v3 lock: independent replication (a second informant or
+transaction evidence) — the entire set is one independent unit of observation.
 
 ## 6. Limitations
 
 - One informant, rough-sense basis throughout; zero independent replication.
-- Two of four pins are one-sided bounds; the deep tail is ceiling-only.
-- Pin 2 unresolved (§3.3); the mid-range premium is the least reliable part.
-- Interpolation in loss space assumes the locked loss *ordering* transfers to SW
-  even though the locked discount *magnitudes* do not; confirmation pin 2 tests
-  a slice of this assumption only.
+- Three of five active pins are one-sided bounds; the cliff zone and deep tail
+  are ceiling-only.
+- The cliff's exact position and steepness between L=3.154 and L=5.000 is
+  interpolated, not observed; no pin exists inside the cliff.
+- Interpolation in loss space assumes the locked loss *ordering* transfers to
+  SW; two shade-at-fixed-loss slices support this, but it is not exhaustively
+  tested.
 - No transaction data; nothing here is independently validated market pricing.
